@@ -1,0 +1,6 @@
+train: ptb
+valid: ptb
+tokenizer_name_or_path: gpt2
+cache_dir: /work/shared/users/ugrad/sl3558/mdlm/data
+wrap: True
+streaming: False

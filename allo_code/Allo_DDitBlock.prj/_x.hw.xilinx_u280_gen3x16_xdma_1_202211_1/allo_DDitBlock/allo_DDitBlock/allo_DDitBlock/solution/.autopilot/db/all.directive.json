@@ -1,0 +1,18 @@
+{"sourceFile": [{
+      "name": "",
+      "directive": [{
+          "functionName": "allo_DDitBlock",
+          "label": "",
+          "functionLabel": "",
+          "id": "1",
+          "sourceFile": "\/work\/shared\/users\/ugrad\/sl3558\/mdlm\/dit_numpy_allo\/Allo_DDitBlock.prj\/_x.hw.xilinx_u280_gen3x16_xdma_1_202211_1\/allo_DDitBlock\/allo_DDitBlock\/allo_DDitBlock.tcl",
+          "sourceLine": "23",
+          "pragma": {
+            "name": "TOP",
+            "option": [{
+                "name": "name",
+                "value": "allo_DDitBlock"
+              }]
+          }
+        }]
+    }]}

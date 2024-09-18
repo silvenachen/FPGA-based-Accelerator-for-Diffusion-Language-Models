@@ -1,0 +1,6 @@
+train: wikitext103
+valid: wikitext103
+tokenizer_name_or_path: gpt2
+cache_dir: /work/shared/users/ugrad/sl3558/mdlm/data
+wrap: True
+streaming: False

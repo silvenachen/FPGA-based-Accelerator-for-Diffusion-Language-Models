@@ -1,0 +1,33 @@
+
+****** Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.1.2 (64-bit)
+  **** SW Build 3605665 on Fri Aug  5 22:52:02 MDT 2022
+  **** IP Build 3603185 on Sat Aug  6 04:07:44 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source /opt/xilinx/2022.1/Vitis_HLS/2022.1/scripts/vitis_hls/hls.tcl -notrace
+INFO: [HLS 200-10] Running '/opt/xilinx/2022.1/Vitis_HLS/2022.1/bin/unwrapped/lnx64.o/vitis_hls'
+INFO: [HLS 200-10] For user 'sl3558' on host 'en-ec-brg-zhang-xcel.coecis.cornell.edu' (Linux_x86_64 version 3.10.0-1160.76.1.el7.x86_64) on Wed Sep 18 00:41:31 EDT 2024
+INFO: [HLS 200-10] On os "CentOS Linux release 7.9.2009 (Core)"
+INFO: [HLS 200-10] In directory '/work/shared/users/ugrad/sl3558/mdlm/dit_numpy_allo/Allo_DDitBlock.prj'
+Sourcing Tcl script 'run.tcl'
+INFO: [HLS 200-1510] Running: open_project out.prj -reset 
+INFO: [HLS 200-10] Opening and resetting project '/work/shared/users/ugrad/sl3558/mdlm/dit_numpy_allo/Allo_DDitBlock.prj/out.prj'.
+WARNING: [HLS 200-40] No /work/shared/users/ugrad/sl3558/mdlm/dit_numpy_allo/Allo_DDitBlock.prj/out.prj/solution1/solution1.aps file found.
+INFO: [HLS 200-1510] Running: open_solution -reset solution1 -flow_target vivado 
+INFO: [HLS 200-10] Creating and opening solution '/work/shared/users/ugrad/sl3558/mdlm/dit_numpy_allo/Allo_DDitBlock.prj/out.prj/solution1'.
+INFO: [HLS 200-10] Cleaning up the solution database.
+WARNING: [HLS 200-40] No /work/shared/users/ugrad/sl3558/mdlm/dit_numpy_allo/Allo_DDitBlock.prj/out.prj/solution1/solution1.aps file found.
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.1;t=hls+guidance;d=200-1505.html
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vivado' configuration: config_interface -m_axi_latency=0
+INFO: [HLS 200-1510] Running: set_top allo_DDitBlock 
+INFO: [HLS 200-1510] Running: add_files kernel.cpp 
+INFO: [HLS 200-10] Adding design file 'kernel.cpp' to the project
+INFO: [HLS 200-1510] Running: add_files -tb tb_ddit.cpp -cflags -std=gnu++0x 
+INFO: [HLS 200-10] Adding test bench file 'tb_ddit.cpp' to the project
+INFO: [HLS 200-1510] Running: open_solution solution1 
+INFO: [HLS 200-10] Opening solution '/work/shared/users/ugrad/sl3558/mdlm/dit_numpy_allo/Allo_DDitBlock.prj/out.prj/solution1'.
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.1;t=hls+guidance;d=200-1505.html
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_latency=0
+INFO: [HLS 200-1510] Running: set_part xcu280-fsvh2892-2L-e 

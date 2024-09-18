@@ -1,0 +1,10 @@
+Thu Sep 12 18:37:57 2024: Server was asked to start on port: '37819'
+Thu Sep 12 18:37:57 2024: Server is using token UUID: '7e93c7ed-d953-4185-93ea-390d43f57db8'
+Thu Sep 12 18:37:57 2024: Attempting to start server on port '37819'
+Thu Sep 12 18:37:57 2024: XRC main fifo: created main fifo '/tmp/xrcmain7e93c7ed-d953-4185-93ea-390d43f57db8', fd read = 13
+Thu Sep 12 18:37:57 2024: Running Rule Check Server
+Thu Sep 12 18:37:57 2024: Version 1.6.1
+Thu Sep 12 18:37:57 2024: Rule Check Server: Accepted socket connection from client
+Thu Sep 12 18:37:57 2024: EXCHANGE_TOKEN received, server token: 7e93c7ed-d953-4185-93ea-390d43f57db8, passed token: 7e93c7ed-d953-4185-93ea-390d43f57db8
+Thu Sep 12 18:37:57 2024: SESSION_MGR: creating session with session uuid: '9a4c9db1-f6c9-44c3-a03d-0ed1143de0cc' and name 'v++_compile_allo_DDitBlock'
+Thu Sep 12 18:38:57 2024: Rule Check Server: Accepted socket connection from client

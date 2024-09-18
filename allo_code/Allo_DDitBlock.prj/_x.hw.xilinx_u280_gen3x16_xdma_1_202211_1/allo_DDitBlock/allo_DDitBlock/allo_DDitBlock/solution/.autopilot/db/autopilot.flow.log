@@ -1,0 +1,216 @@
+INFO-FLOW: Workspace /work/shared/users/ugrad/sl3558/mdlm/dit_numpy_allo/Allo_DDitBlock.prj/_x.hw.xilinx_u280_gen3x16_xdma_1_202211_1/allo_DDitBlock/allo_DDitBlock/allo_DDitBlock/solution opened at Thu Sep 12 18:38:13 EDT 2024
+Execute       send_msg_by_id INFO @200-1505@%s%s  vitis 
+INFO: [HLS 200-1505] Using flow_target 'vitis'
+Execute       get_config_interface -m_axi_latency 
+Execute       send_msg_by_id INFO @200-435@%s%s 'open_solution -flow_target vitis' config_interface -m_axi_latency=64 
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vitis' configuration: config_interface -m_axi_latency=64
+Execute       config_interface -m_axi_latency=64 
+Execute       get_config_interface -m_axi_alignment_byte_size 
+Execute       send_msg_by_id INFO @200-435@%s%s 'open_solution -flow_target vitis' config_interface -m_axi_alignment_byte_size=64 
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vitis' configuration: config_interface -m_axi_alignment_byte_size=64
+Execute       config_interface -m_axi_alignment_byte_size=64 
+Execute       get_config_interface -m_axi_max_widen_bitwidth 
+Execute       send_msg_by_id INFO @200-435@%s%s 'open_solution -flow_target vitis' config_interface -m_axi_max_widen_bitwidth=512 
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vitis' configuration: config_interface -m_axi_max_widen_bitwidth=512
+Execute       config_interface -m_axi_max_widen_bitwidth=512 
+Execute       get_config_interface -default_interface 
+INFO-FLOW: Setting macro_cmd open_solution -flow_target vitis configuration: config_interface -default_interface=kernel
+Execute       config_interface -default_interface=kernel 
+Command       config_interface done; 0.64 sec.
+Execute       get_config_rtl -register_reset_num 
+Execute       send_msg_by_id INFO @200-435@%s%s 'open_solution -flow_target vitis' config_rtl -register_reset_num=3 
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vitis' configuration: config_rtl -register_reset_num=3
+Execute       config_rtl -register_reset_num=3 
+Command       config_rtl done; 0.58 sec.
+Command     open_solution done; 3.29 sec.
+Execute     set_part xcu280-fsvh2892-2L-e 
+INFO: [HLS 200-1510] Running: set_part xcu280-fsvh2892-2L-e 
+Execute       create_platform xcu280-fsvh2892-2L-e -board  
+DBG:HLSDevice: Trying to load device library: /opt/xilinx/2022.1/Vitis_HLS/2022.1/lib/lnx64.o/librdi_hlsvwrap.so
+DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: /opt/xilinx/2022.1/Vivado/2022.1/data/parts/arch.xml
+DBG:HLSDevice: init success
+INFO: [HLS 200-1611] Setting target device to 'xcu280-fsvh2892-2L-e'
+Command       create_platform done; 4.75 sec.
+Execute       source /opt/xilinx/2022.1/Vitis_HLS/2022.1/common/technology/xilinx/common/xilinx.gen 
+Execute         source /opt/xilinx/2022.1/Vitis_HLS/2022.1/common/technology/xilinx/interface/plb46.gen 
+Execute         source /opt/xilinx/2022.1/Vitis_HLS/2022.1/common/technology/xilinx/interface/axi4.gen 
+Execute         source /opt/xilinx/2022.1/Vitis_HLS/2022.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source /opt/xilinx/2022.1/Vitis_HLS/2022.1/common/technology/xilinx/interface/saxilite.gen 
+Execute         source /opt/xilinx/2022.1/Vitis_HLS/2022.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source /opt/xilinx/2022.1/Vitis_HLS/2022.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source /opt/xilinx/2022.1/Vitis_HLS/2022.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source /opt/xilinx/2022.1/Vitis_HLS/2022.1/common/technology/xilinx/ip/util.gen 
+Execute         source /opt/xilinx/2022.1/Vitis_HLS/2022.1/common/technology/xilinx/ip/xfft.gen 
+Command         ap_source done; 0.11 sec.
+Execute         source /opt/xilinx/2022.1/Vitis_HLS/2022.1/common/technology/xilinx/ip/xfir.gen 
+Execute         source /opt/xilinx/2022.1/Vitis_HLS/2022.1/common/technology/xilinx/DSP48/dsp48.gen 
+Command       ap_source done; 0.2 sec.
+Execute       ap_part_info -name xcu280-fsvh2892-2L-e -data info 
+Execute       config_compile -quiet -complex-mul-dsp=0 
+Command     set_part done; 5.02 sec.
+Execute     create_clock -period 300.000000MHz -name default 
+INFO: [HLS 200-1510] Running: create_clock -period 300.000000MHz -name default 
+Execute       ap_set_clock -name default -period 3.333 -unit ns -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 3.333ns.
+Command     create_clock done; 1.22 sec.
+Execute     config_dataflow -strict_mode warning 
+INFO: [HLS 200-1510] Running: config_dataflow -strict_mode warning 
+Command     config_dataflow done; 0.88 sec.
+Execute     config_export -deadlock_detection sim 
+INFO: [HLS 200-1510] Running: config_export -deadlock_detection sim 
+WARNING: [HLS 200-483] The 'config_export -deadlock_detection' command is deprecated and will be removed in a future release. Use 'config_rtl -deadlock_detection' as its replacement.
+INFO: [HLS 200-1907] Replacing 'config_export -deadlock_detection=sim' with 'config_rtl -deadlock_detection=sim' in current solution file
+Execute     config_interface -m_axi_conservative_mode=1 
+INFO: [HLS 200-1510] Running: config_interface -m_axi_conservative_mode=1 
+Command     config_interface done; 0.96 sec.
+Execute     config_interface -m_axi_addr64 
+INFO: [HLS 200-1510] Running: config_interface -m_axi_addr64 
+Command     config_interface done; 0.41 sec.
+Execute     config_interface -m_axi_auto_max_ports=0 
+INFO: [HLS 200-1510] Running: config_interface -m_axi_auto_max_ports=0 
+Execute     config_export -format xo -ipname allo_DDitBlock 
+INFO: [HLS 200-1510] Running: config_export -format xo -ipname allo_DDitBlock 
+INFO: [HLS 200-1907] Replacing 'config_export -deadlock_detection=sim' with 'config_rtl -deadlock_detection=sim' in current solution file
+Execute     csynth_design 
+INFO: [HLS 200-1510] Running: csynth_design 
+Execute       get_config_compile -effort 
+Execute       get_config_compile -enable_clang39 
+Execute       get_config_compile -g 
+Execute       get_config_compile -hw_syn 
+Execute       get_config_compile -ng 
+Execute       get_config_compile -opt_fp 
+Execute       get_config_compile -skip_cdt 
+Execute       get_config_compile -skip_syncheck 
+Execute       get_config_compile -skip_transform 
+Execute       get_config_compile -pre_tcl 
+Execute       get_config_compile -keep_printf 
+Execute       elaborate -effort=medium -skip_syncheck=0 -keep_printf=0 -skip_cdt=0 -skip_transform=0 -ng=0 -g=0 -opt_fp=0 -from_csynth_design=1 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.01 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.11 seconds; current allocated memory: 456.180 MB.
+INFO: [HLS 200-10] Analyzing design file '/work/shared/users/ugrad/sl3558/mdlm/dit_numpy_allo/Allo_DDitBlock.prj/kernel.cpp' ... 
+INFO-FLOW: Compiling one TU...
+Execute         get_config_compile -pragma_strict_mode 
+INFO-FLOW: Handling /work/shared/users/ugrad/sl3558/mdlm/dit_numpy_allo/Allo_DDitBlock.prj/kernel.cpp as C++
+Execute         ap_part_info -name xcu280-fsvh2892-2L-e -data info 
+INFO-FLOW: Running: GCC PP 39
+INFO-FLOW: Source preprocessing
+Execute         ap_eval exec -ignorestderr /opt/xilinx/2022.1/Vitis_HLS/2022.1/lnx64/tools/clang-3.9-csynth/bin/clang /work/shared/users/ugrad/sl3558/mdlm/dit_numpy_allo/Allo_DDitBlock.prj/kernel.cpp -foptimization-record-file=/work/shared/users/ugrad/sl3558/mdlm/dit_numpy_allo/Allo_DDitBlock.prj/_x.hw.xilinx_u280_gen3x16_xdma_1_202211_1/allo_DDitBlock/allo_DDitBlock/allo_DDitBlock/solution/.autopilot/db/kernel.cpp.clang.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll -mllvm -pass-remarks=reflow|pasta|unroll|inline -fno-limit-debug-info -gcc-toolchain /opt/xilinx/2022.1/Vitis_HLS/2022.1/tps/lnx64/gcc-8.3.0 -fhls -fno-exceptions -E -I/work/shared/users/ugrad/sl3558/mdlm/dit_numpy_allo/Allo_DDitBlock.prj -fno-math-errno -c -emit-llvm -mllvm -disable-llvm-optzns -Werror=implicit-function-declaration -Werror=implicit-hls-streams -Werror=return-type -Wpragmas -Wunused-parameter -Wdump-hls-pragmas -fno-threadsafe-statics -fno-use-cxa-atexit -std=gnu++14 -target fpga64-xilinx-linux-gnu -fno-threadsafe-statics -fno-use-cxa-atexit -D__VITIS_HLS__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I /opt/xilinx/2022.1/Vitis_HLS/2022.1/common/technology/autopilot -I /opt/xilinx/2022.1/Vitis_HLS/2022.1/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E2__ -I /usr/include/x86_64-linux-gnu -o /work/shared/users/ugrad/sl3558/mdlm/dit_numpy_allo/Allo_DDitBlock.prj/_x.hw.xilinx_u280_gen3x16_xdma_1_202211_1/allo_DDitBlock/allo_DDitBlock/allo_DDitBlock/solution/.autopilot/db/kernel.pp.0.cpp -hls-platform-db-name=/opt/xilinx/2022.1/Vitis_HLS/2022.1/common/technology/xilinx/common/platform.db -hls-platform-name=virtexuplus_medium -device-resource-info=BRAM_4032.000000_DSP_9024.000000_FF_2607360.000000_LUT_1303680.000000_SLICE_162960.000000_SLR_3.000000_URAM_960.000000 > /work/shared/users/ugrad/sl3558/mdlm/dit_numpy_allo/Allo_DDitBlock.prj/_x.hw.xilinx_u280_gen3x16_xdma_1_202211_1/allo_DDitBlock/allo_DDitBlock/allo_DDitBlock/solution/.autopilot/db/kernel.cpp.clang.out.log 2> /work/shared/users/ugrad/sl3558/mdlm/dit_numpy_allo/Allo_DDitBlock.prj/_x.hw.xilinx_u280_gen3x16_xdma_1_202211_1/allo_DDitBlock/allo_DDitBlock/allo_DDitBlock/solution/.autopilot/db/kernel.cpp.clang.err.log 
+Command         ap_eval done; 0.97 sec.
+INFO-FLOW: Done: GCC PP 39 time: 1 seconds per iteration
+Execute         set_directive_top allo_DDitBlock -name=allo_DDitBlock 
+Execute         source /opt/xilinx/2022.1/Vitis_HLS/2022.1/tps/tcl/tcllib1.11.1/yaml/huddle.tcl 
+Execute         source /opt/xilinx/2022.1/Vitis_HLS/2022.1/tps/tcl/tcllib1.11.1/yaml/json2huddle.tcl 
+INFO-FLOW: Source syntax check for synthesis
+Execute         ap_eval exec -ignorestderr /opt/xilinx/2022.1/Vitis_HLS/2022.1/lnx64/tools/clang-3.9-csynth/bin/clang -foptimization-record-file=/work/shared/users/ugrad/sl3558/mdlm/dit_numpy_allo/Allo_DDitBlock.prj/_x.hw.xilinx_u280_gen3x16_xdma_1_202211_1/allo_DDitBlock/allo_DDitBlock/allo_DDitBlock/solution/.autopilot/db/clang.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll -mllvm -pass-remarks=reflow|pasta|unroll|inline -fsyntax-only -fhls -target fpga64-xilinx-linux-gnu /work/shared/users/ugrad/sl3558/mdlm/dit_numpy_allo/Allo_DDitBlock.prj/_x.hw.xilinx_u280_gen3x16_xdma_1_202211_1/allo_DDitBlock/allo_DDitBlock/allo_DDitBlock/solution/.autopilot/db/kernel.pp.0.cpp -hls-platform-db-name=/opt/xilinx/2022.1/Vitis_HLS/2022.1/common/technology/xilinx/common/platform.db -hls-platform-name=virtexuplus_medium -device-resource-info=BRAM_4032.000000_DSP_9024.000000_FF_2607360.000000_LUT_1303680.000000_SLICE_162960.000000_SLR_3.000000_URAM_960.000000 > /work/shared/users/ugrad/sl3558/mdlm/dit_numpy_allo/Allo_DDitBlock.prj/_x.hw.xilinx_u280_gen3x16_xdma_1_202211_1/allo_DDitBlock/allo_DDitBlock/allo_DDitBlock/solution/.autopilot/db/clang.out.log 2> /work/shared/users/ugrad/sl3558/mdlm/dit_numpy_allo/Allo_DDitBlock.prj/_x.hw.xilinx_u280_gen3x16_xdma_1_202211_1/allo_DDitBlock/allo_DDitBlock/allo_DDitBlock/solution/.autopilot/db/clang.err.log 
+Command         ap_eval done; 3.92 sec.
+Execute         clang_tidy xilinx-systemc-detector -desc systemc-detector /work/shared/users/ugrad/sl3558/mdlm/dit_numpy_allo/Allo_DDitBlock.prj/_x.hw.xilinx_u280_gen3x16_xdma_1_202211_1/allo_DDitBlock/allo_DDitBlock/allo_DDitBlock/solution/.autopilot/db/kernel.pp.0.cpp std=gnu++14 -target fpga  -directive=/work/shared/users/ugrad/sl3558/mdlm/dit_numpy_allo/Allo_DDitBlock.prj/_x.hw.xilinx_u280_gen3x16_xdma_1_202211_1/allo_DDitBlock/allo_DDitBlock/allo_DDitBlock/solution/.autopilot/db/.systemc_flag 
+INFO-FLOW: exec /opt/xilinx/2022.1/Vitis_HLS/2022.1/lnx64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-systemc-detector -import-directive=/work/shared/users/ugrad/sl3558/mdlm/dit_numpy_allo/Allo_DDitBlock.prj/_x.hw.xilinx_u280_gen3x16_xdma_1_202211_1/allo_DDitBlock/allo_DDitBlock/allo_DDitBlock/solution/.autopilot/db/.systemc_flag -fix-errors /work/shared/users/ugrad/sl3558/mdlm/dit_numpy_allo/Allo_DDitBlock.prj/_x.hw.xilinx_u280_gen3x16_xdma_1_202211_1/allo_DDitBlock/allo_DDitBlock/allo_DDitBlock/solution/.autopilot/db/kernel.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0
+Command         clang_tidy done; 5.04 sec.
+INFO-FLOW: Running: clang-tidy CDT preprocess 39
+Execute         clang_tidy xilinx-directive2pragma -desc directive2pragma /work/shared/users/ugrad/sl3558/mdlm/dit_numpy_allo/Allo_DDitBlock.prj/_x.hw.xilinx_u280_gen3x16_xdma_1_202211_1/allo_DDitBlock/allo_DDitBlock/allo_DDitBlock/solution/.autopilot/db/kernel.pp.0.cpp std=gnu++14 -target fpga  -directive=/work/shared/users/ugrad/sl3558/mdlm/dit_numpy_allo/Allo_DDitBlock.prj/_x.hw.xilinx_u280_gen3x16_xdma_1_202211_1/allo_DDitBlock/allo_DDitBlock/allo_DDitBlock/solution/.autopilot/db/all.directive.json 
+INFO-FLOW: exec /opt/xilinx/2022.1/Vitis_HLS/2022.1/lnx64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-directive2pragma -import-directive=/work/shared/users/ugrad/sl3558/mdlm/dit_numpy_allo/Allo_DDitBlock.prj/_x.hw.xilinx_u280_gen3x16_xdma_1_202211_1/allo_DDitBlock/allo_DDitBlock/allo_DDitBlock/solution/.autopilot/db/all.directive.json -fix-errors /work/shared/users/ugrad/sl3558/mdlm/dit_numpy_allo/Allo_DDitBlock.prj/_x.hw.xilinx_u280_gen3x16_xdma_1_202211_1/allo_DDitBlock/allo_DDitBlock/allo_DDitBlock/solution/.autopilot/db/kernel.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0
+Command         clang_tidy done; 4.5 sec.
+Execute         clang_tidy xilinx-remove-assert -desc remove-assert /work/shared/users/ugrad/sl3558/mdlm/dit_numpy_allo/Allo_DDitBlock.prj/_x.hw.xilinx_u280_gen3x16_xdma_1_202211_1/allo_DDitBlock/allo_DDitBlock/allo_DDitBlock/solution/.autopilot/db/kernel.pp.0.cpp std=gnu++14 -target fpga  
+INFO-FLOW: exec /opt/xilinx/2022.1/Vitis_HLS/2022.1/lnx64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-remove-assert -fix-errors /work/shared/users/ugrad/sl3558/mdlm/dit_numpy_allo/Allo_DDitBlock.prj/_x.hw.xilinx_u280_gen3x16_xdma_1_202211_1/allo_DDitBlock/allo_DDitBlock/allo_DDitBlock/solution/.autopilot/db/kernel.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0
+Command         clang_tidy done; 4.14 sec.
+INFO-FLOW: Done: clang-tidy CDT preprocess 39 time: 8.6 seconds per iteration
+INFO-FLOW: Calling xilinx-label-all-loops ... 
+INFO-FLOW: Calling xilinx-aggregate-on-hls-vector ... 
+Execute         clang_tidy -errorcheck -desc loop-label xilinx-label-all-loops,xilinx-aggregate-on-hls-vector,,xilinx-warn-mayneed-no-ctor-attribute /work/shared/users/ugrad/sl3558/mdlm/dit_numpy_allo/Allo_DDitBlock.prj/_x.hw.xilinx_u280_gen3x16_xdma_1_202211_1/allo_DDitBlock/allo_DDitBlock/allo_DDitBlock/solution/.autopilot/db/kernel.pp.0.cpp std=gnu++14 -target fpga  
+Execute           ap_eval exec -ignorestderr /opt/xilinx/2022.1/Vitis_HLS/2022.1/lnx64/tools/clang-3.9-csynth/bin/clang-tidy -export-fixes=/work/shared/users/ugrad/sl3558/mdlm/dit_numpy_allo/Allo_DDitBlock.prj/_x.hw.xilinx_u280_gen3x16_xdma_1_202211_1/allo_DDitBlock/allo_DDitBlock/allo_DDitBlock/solution/.autopilot/db/kernel.pp.0.cpp.clang-tidy.loop-label.diag.yml -header-filter=.* --checks=-*,xilinx-label-all-loops,xilinx-aggregate-on-hls-vector,,xilinx-warn-mayneed-no-ctor-attribute -fix-errors /work/shared/users/ugrad/sl3558/mdlm/dit_numpy_allo/Allo_DDitBlock.prj/_x.hw.xilinx_u280_gen3x16_xdma_1_202211_1/allo_DDitBlock/allo_DDitBlock/allo_DDitBlock/solution/.autopilot/db/kernel.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0 > /work/shared/users/ugrad/sl3558/mdlm/dit_numpy_allo/Allo_DDitBlock.prj/_x.hw.xilinx_u280_gen3x16_xdma_1_202211_1/allo_DDitBlock/allo_DDitBlock/allo_DDitBlock/solution/.autopilot/db/kernel.pp.0.cpp.clang-tidy.loop-label.out.log 2> /work/shared/users/ugrad/sl3558/mdlm/dit_numpy_allo/Allo_DDitBlock.prj/_x.hw.xilinx_u280_gen3x16_xdma_1_202211_1/allo_DDitBlock/allo_DDitBlock/allo_DDitBlock/solution/.autopilot/db/kernel.pp.0.cpp.clang-tidy.loop-label.err.log 
+Command           ap_eval done; 8.73 sec.
+Execute           source /opt/xilinx/2022.1/Vitis_HLS/2022.1/tps/tcl/tcllib1.11.1/yaml/yaml.tcl 
+Command         clang_tidy done; 9.57 sec.
+Execute         get_config_dataflow -strict_mode 
+Execute         ap_eval exec -ignorestderr /opt/xilinx/2022.1/Vitis_HLS/2022.1/lnx64/tools/clang-3.9-csynth/bin/xilinx-dataflow-lawyer -export-fixes=/work/shared/users/ugrad/sl3558/mdlm/dit_numpy_allo/Allo_DDitBlock.prj/_x.hw.xilinx_u280_gen3x16_xdma_1_202211_1/allo_DDitBlock/allo_DDitBlock/allo_DDitBlock/solution/.autopilot/db/kernel.pp.0.cpp.xilinx-dataflow-lawyer.diag.yml /work/shared/users/ugrad/sl3558/mdlm/dit_numpy_allo/Allo_DDitBlock.prj/_x.hw.xilinx_u280_gen3x16_xdma_1_202211_1/allo_DDitBlock/allo_DDitBlock/allo_DDitBlock/solution/.autopilot/db/kernel.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0 -fstrict-dataflow > /work/shared/users/ugrad/sl3558/mdlm/dit_numpy_allo/Allo_DDitBlock.prj/_x.hw.xilinx_u280_gen3x16_xdma_1_202211_1/allo_DDitBlock/allo_DDitBlock/allo_DDitBlock/solution/.autopilot/db/kernel.pp.0.cpp.xilinx-dataflow-lawyer.out.log 2> /work/shared/users/ugrad/sl3558/mdlm/dit_numpy_allo/Allo_DDitBlock.prj/_x.hw.xilinx_u280_gen3x16_xdma_1_202211_1/allo_DDitBlock/allo_DDitBlock/allo_DDitBlock/solution/.autopilot/db/kernel.pp.0.cpp.xilinx-dataflow-lawyer.err.log 
+Command         ap_eval done; 3.73 sec.
+Execute         get_top
+Execute           get_top 
+Execute         get_files -fullpath
+Execute           get_files -fullpath 
+WARNING: [HLS 214-114] Since the only kind of statements allowed in a canonical dataflow region are variable declarations and function calls, the compiler may not be able to correctly handle the region (/work/shared/users/ugrad/sl3558/mdlm/dit_numpy_allo/Allo_DDitBlock.prj/kernel.cpp:336:9)
+WARNING: [HLS 214-113] Either use an argument of the function or declare the variable inside the dataflow loop body (/work/shared/users/ugrad/sl3558/mdlm/dit_numpy_allo/Allo_DDitBlock.prj/kernel.cpp:442:30)
+WARNING: [HLS 214-113] Either use an argument of the function or declare the variable inside the dataflow loop body (/work/shared/users/ugrad/sl3558/mdlm/dit_numpy_allo/Allo_DDitBlock.prj/kernel.cpp:442:39)
+WARNING: [HLS 214-113] Either use an argument of the function or declare the variable inside the dataflow loop body (/work/shared/users/ugrad/sl3558/mdlm/dit_numpy_allo/Allo_DDitBlock.prj/kernel.cpp:442:48)
+WARNING: [HLS 214-114] Since the only kind of statements allowed in a canonical dataflow region are variable declarations and function calls, the compiler may not be able to correctly handle the region (/work/shared/users/ugrad/sl3558/mdlm/dit_numpy_allo/Allo_DDitBlock.prj/kernel.cpp:423:9)
+WARNING: [HLS 214-114] Since the only kind of statements allowed in a canonical dataflow region are variable declarations and function calls, the compiler may not be able to correctly handle the region (/work/shared/users/ugrad/sl3558/mdlm/dit_numpy_allo/Allo_DDitBlock.prj/kernel.cpp:3143:9)
+WARNING: [HLS 214-113] Either use an argument of the function or declare the variable inside the dataflow loop body (/work/shared/users/ugrad/sl3558/mdlm/dit_numpy_allo/Allo_DDitBlock.prj/kernel.cpp:3535:23)
+WARNING: [HLS 214-113] Either use an argument of the function or declare the variable inside the dataflow loop body (/work/shared/users/ugrad/sl3558/mdlm/dit_numpy_allo/Allo_DDitBlock.prj/kernel.cpp:3535:33)
+WARNING: [HLS 214-113] Either use an argument of the function or declare the variable inside the dataflow loop body (/work/shared/users/ugrad/sl3558/mdlm/dit_numpy_allo/Allo_DDitBlock.prj/kernel.cpp:3535:43)
+WARNING: [HLS 214-114] Since the only kind of statements allowed in a canonical dataflow region are variable declarations and function calls, the compiler may not be able to correctly handle the region (/work/shared/users/ugrad/sl3558/mdlm/dit_numpy_allo/Allo_DDitBlock.prj/kernel.cpp:3516:9)
+WARNING: [HLS 214-114] Since the only kind of statements allowed in a canonical dataflow region are variable declarations and function calls, the compiler may not be able to correctly handle the region (/work/shared/users/ugrad/sl3558/mdlm/dit_numpy_allo/Allo_DDitBlock.prj/kernel.cpp:6112:9)
+WARNING: [HLS 214-113] Either use an argument of the function or declare the variable inside the dataflow loop body (/work/shared/users/ugrad/sl3558/mdlm/dit_numpy_allo/Allo_DDitBlock.prj/kernel.cpp:6504:23)
+WARNING: [HLS 214-113] Either use an argument of the function or declare the variable inside the dataflow loop body (/work/shared/users/ugrad/sl3558/mdlm/dit_numpy_allo/Allo_DDitBlock.prj/kernel.cpp:6504:33)
+WARNING: [HLS 214-113] Either use an argument of the function or declare the variable inside the dataflow loop body (/work/shared/users/ugrad/sl3558/mdlm/dit_numpy_allo/Allo_DDitBlock.prj/kernel.cpp:6504:43)
+WARNING: [HLS 214-114] Since the only kind of statements allowed in a canonical dataflow region are variable declarations and function calls, the compiler may not be able to correctly handle the region (/work/shared/users/ugrad/sl3558/mdlm/dit_numpy_allo/Allo_DDitBlock.prj/kernel.cpp:6485:9)
+WARNING: [HLS 214-114] Since the only kind of statements allowed in a canonical dataflow region are variable declarations and function calls, the compiler may not be able to correctly handle the region (/work/shared/users/ugrad/sl3558/mdlm/dit_numpy_allo/Allo_DDitBlock.prj/kernel.cpp:9081:9)
+WARNING: [HLS 214-113] Either use an argument of the function or declare the variable inside the dataflow loop body (/work/shared/users/ugrad/sl3558/mdlm/dit_numpy_allo/Allo_DDitBlock.prj/kernel.cpp:9473:23)
+WARNING: [HLS 214-113] Either use an argument of the function or declare the variable inside the dataflow loop body (/work/shared/users/ugrad/sl3558/mdlm/dit_numpy_allo/Allo_DDitBlock.prj/kernel.cpp:9473:33)
+WARNING: [HLS 214-113] Either use an argument of the function or declare the variable inside the dataflow loop body (/work/shared/users/ugrad/sl3558/mdlm/dit_numpy_allo/Allo_DDitBlock.prj/kernel.cpp:9473:43)
+WARNING: [HLS 214-114] Since the only kind of statements allowed in a canonical dataflow region are variable declarations and function calls, the compiler may not be able to correctly handle the region (/work/shared/users/ugrad/sl3558/mdlm/dit_numpy_allo/Allo_DDitBlock.prj/kernel.cpp:9454:9)
+WARNING: [HLS 214-114] Since the only kind of statements allowed in a canonical dataflow region are variable declarations and function calls, the compiler may not be able to correctly handle the region (/work/shared/users/ugrad/sl3558/mdlm/dit_numpy_allo/Allo_DDitBlock.prj/kernel.cpp:12122:9)
+WARNING: [HLS 214-113] Either use an argument of the function or declare the variable inside the dataflow loop body (/work/shared/users/ugrad/sl3558/mdlm/dit_numpy_allo/Allo_DDitBlock.prj/kernel.cpp:12514:25)
+WARNING: [HLS 214-113] Either use an argument of the function or declare the variable inside the dataflow loop body (/work/shared/users/ugrad/sl3558/mdlm/dit_numpy_allo/Allo_DDitBlock.prj/kernel.cpp:12514:35)
+WARNING: [HLS 214-113] Either use an argument of the function or declare the variable inside the dataflow loop body (/work/shared/users/ugrad/sl3558/mdlm/dit_numpy_allo/Allo_DDitBlock.prj/kernel.cpp:12514:45)
+WARNING: [HLS 214-114] Since the only kind of statements allowed in a canonical dataflow region are variable declarations and function calls, the compiler may not be able to correctly handle the region (/work/shared/users/ugrad/sl3558/mdlm/dit_numpy_allo/Allo_DDitBlock.prj/kernel.cpp:12495:9)
+WARNING: [HLS 214-114] Since the only kind of statements allowed in a canonical dataflow region are variable declarations and function calls, the compiler may not be able to correctly handle the region (/work/shared/users/ugrad/sl3558/mdlm/dit_numpy_allo/Allo_DDitBlock.prj/kernel.cpp:15138:9)
+WARNING: [HLS 214-113] Either use an argument of the function or declare the variable inside the dataflow loop body (/work/shared/users/ugrad/sl3558/mdlm/dit_numpy_allo/Allo_DDitBlock.prj/kernel.cpp:15530:24)
+WARNING: [HLS 214-113] Either use an argument of the function or declare the variable inside the dataflow loop body (/work/shared/users/ugrad/sl3558/mdlm/dit_numpy_allo/Allo_DDitBlock.prj/kernel.cpp:15530:34)
+WARNING: [HLS 214-113] Either use an argument of the function or declare the variable inside the dataflow loop body (/work/shared/users/ugrad/sl3558/mdlm/dit_numpy_allo/Allo_DDitBlock.prj/kernel.cpp:15530:44)
+WARNING: [HLS 214-114] Since the only kind of statements allowed in a canonical dataflow region are variable declarations and function calls, the compiler may not be able to correctly handle the region (/work/shared/users/ugrad/sl3558/mdlm/dit_numpy_allo/Allo_DDitBlock.prj/kernel.cpp:15511:9)
+WARNING: [HLS 214-114] Since the only kind of statements allowed in a canonical dataflow region are variable declarations and function calls, the compiler may not be able to correctly handle the region (/work/shared/users/ugrad/sl3558/mdlm/dit_numpy_allo/Allo_DDitBlock.prj/kernel.cpp:18165:9)
+WARNING: [HLS 214-113] Either use an argument of the function or declare the variable inside the dataflow loop body (/work/shared/users/ugrad/sl3558/mdlm/dit_numpy_allo/Allo_DDitBlock.prj/kernel.cpp:18557:30)
+WARNING: [HLS 214-113] Either use an argument of the function or declare the variable inside the dataflow loop body (/work/shared/users/ugrad/sl3558/mdlm/dit_numpy_allo/Allo_DDitBlock.prj/kernel.cpp:18557:40)
+WARNING: [HLS 214-113] Either use an argument of the function or declare the variable inside the dataflow loop body (/work/shared/users/ugrad/sl3558/mdlm/dit_numpy_allo/Allo_DDitBlock.prj/kernel.cpp:18557:50)
+WARNING: [HLS 214-114] Since the only kind of statements allowed in a canonical dataflow region are variable declarations and function calls, the compiler may not be able to correctly handle the region (/work/shared/users/ugrad/sl3558/mdlm/dit_numpy_allo/Allo_DDitBlock.prj/kernel.cpp:18538:9)
+WARNING: [HLS 214-114] Since the only kind of statements allowed in a canonical dataflow region are variable declarations and function calls, the compiler may not be able to correctly handle the region (/work/shared/users/ugrad/sl3558/mdlm/dit_numpy_allo/Allo_DDitBlock.prj/kernel.cpp:21159:9)
+WARNING: [HLS 214-113] Either use an argument of the function or declare the variable inside the dataflow loop body (/work/shared/users/ugrad/sl3558/mdlm/dit_numpy_allo/Allo_DDitBlock.prj/kernel.cpp:21551:26)
+WARNING: [HLS 214-113] Either use an argument of the function or declare the variable inside the dataflow loop body (/work/shared/users/ugrad/sl3558/mdlm/dit_numpy_allo/Allo_DDitBlock.prj/kernel.cpp:21551:36)
+WARNING: [HLS 214-113] Either use an argument of the function or declare the variable inside the dataflow loop body (/work/shared/users/ugrad/sl3558/mdlm/dit_numpy_allo/Allo_DDitBlock.prj/kernel.cpp:21551:46)
+WARNING: [HLS 214-114] Since the only kind of statements allowed in a canonical dataflow region are variable declarations and function calls, the compiler may not be able to correctly handle the region (/work/shared/users/ugrad/sl3558/mdlm/dit_numpy_allo/Allo_DDitBlock.prj/kernel.cpp:21532:9)
+WARNING: [HLS 214-114] Since the only kind of statements allowed in a canonical dataflow region are variable declarations and function calls, the compiler may not be able to correctly handle the region (/work/shared/users/ugrad/sl3558/mdlm/dit_numpy_allo/Allo_DDitBlock.prj/kernel.cpp:24163:9)
+WARNING: [HLS 214-113] Either use an argument of the function or declare the variable inside the dataflow loop body (/work/shared/users/ugrad/sl3558/mdlm/dit_numpy_allo/Allo_DDitBlock.prj/kernel.cpp:24555:26)
+WARNING: [HLS 214-113] Either use an argument of the function or declare the variable inside the dataflow loop body (/work/shared/users/ugrad/sl3558/mdlm/dit_numpy_allo/Allo_DDitBlock.prj/kernel.cpp:24555:36)
+WARNING: [HLS 214-113] Either use an argument of the function or declare the variable inside the dataflow loop body (/work/shared/users/ugrad/sl3558/mdlm/dit_numpy_allo/Allo_DDitBlock.prj/kernel.cpp:24555:46)
+WARNING: [HLS 214-114] Since the only kind of statements allowed in a canonical dataflow region are variable declarations and function calls, the compiler may not be able to correctly handle the region (/work/shared/users/ugrad/sl3558/mdlm/dit_numpy_allo/Allo_DDitBlock.prj/kernel.cpp:24536:9)
+Execute         send_msg_by_id WARNING @200-471@%s%s 45 /work/shared/users/ugrad/sl3558/mdlm/dit_numpy_allo/Allo_DDitBlock.prj/kernel.cpp 
+WARNING: [HLS 200-471] Dataflow form checks found 45 issue(s) in file /work/shared/users/ugrad/sl3558/mdlm/dit_numpy_allo/Allo_DDitBlock.prj/kernel.cpp
+Execute         ap_part_info -name xcu280-fsvh2892-2L-e -data info 
+INFO-FLOW: compiling source code to llvm bc
+Execute         ap_eval exec -ignorestderr /opt/xilinx/2022.1/Vitis_HLS/2022.1/lnx64/tools/clang-3.9-csynth/bin/clang -foptimization-record-file=/work/shared/users/ugrad/sl3558/mdlm/dit_numpy_allo/Allo_DDitBlock.prj/_x.hw.xilinx_u280_gen3x16_xdma_1_202211_1/allo_DDitBlock/allo_DDitBlock/allo_DDitBlock/solution/.autopilot/db/kernel.pp.0.cpp.clang.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll -mllvm -pass-remarks=reflow|pasta|unroll|inline -fno-limit-debug-info -fhls -flto -fno-exceptions -Wno-error=c++11-narrowing /work/shared/users/ugrad/sl3558/mdlm/dit_numpy_allo/Allo_DDitBlock.prj/_x.hw.xilinx_u280_gen3x16_xdma_1_202211_1/allo_DDitBlock/allo_DDitBlock/allo_DDitBlock/solution/.autopilot/db/kernel.pp.0.cpp -I/work/shared/users/ugrad/sl3558/mdlm/dit_numpy_allo/Allo_DDitBlock.prj -fno-math-errno -c -emit-llvm -mllvm -disable-llvm-optzns -Werror=implicit-function-declaration -Werror=implicit-hls-streams -Werror=return-type -Wpragmas -Wunused-parameter -Wdump-hls-pragmas -fno-threadsafe-statics -fno-use-cxa-atexit -std=gnu++14 -target fpga64-xilinx-linux-gnu -D__VITIS_HLS__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I /opt/xilinx/2022.1/Vitis_HLS/2022.1/common/technology/autopilot -I /opt/xilinx/2022.1/Vitis_HLS/2022.1/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E2__ -g -o /work/shared/users/ugrad/sl3558/mdlm/dit_numpy_allo/Allo_DDitBlock.prj/_x.hw.xilinx_u280_gen3x16_xdma_1_202211_1/allo_DDitBlock/allo_DDitBlock/allo_DDitBlock/solution/.autopilot/db/kernel.bc -hls-platform-db-name=/opt/xilinx/2022.1/Vitis_HLS/2022.1/common/technology/xilinx/common/platform.db -hls-platform-name=virtexuplus_medium -device-resource-info=BRAM_4032.000000_DSP_9024.000000_FF_2607360.000000_LUT_1303680.000000_SLICE_162960.000000_SLR_3.000000_URAM_960.000000 > /work/shared/users/ugrad/sl3558/mdlm/dit_numpy_allo/Allo_DDitBlock.prj/_x.hw.xilinx_u280_gen3x16_xdma_1_202211_1/allo_DDitBlock/allo_DDitBlock/allo_DDitBlock/solution/.autopilot/db/kernel.pp.0.cpp.clang.out.log 2> /work/shared/users/ugrad/sl3558/mdlm/dit_numpy_allo/Allo_DDitBlock.prj/_x.hw.xilinx_u280_gen3x16_xdma_1_202211_1/allo_DDitBlock/allo_DDitBlock/allo_DDitBlock/solution/.autopilot/db/kernel.pp.0.cpp.clang.err.log 
+Command         ap_eval done; 4.44 sec.
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 36.52 seconds. CPU system time: 2.57 seconds. Elapsed time: 41.41 seconds; current allocated memory: 528.184 MB.
+INFO-FLOW: Linking Debug ...
+INFO-FLOW: Linking dut bc code.
+Execute         run_link_or_opt -out /work/shared/users/ugrad/sl3558/mdlm/dit_numpy_allo/Allo_DDitBlock.prj/_x.hw.xilinx_u280_gen3x16_xdma_1_202211_1/allo_DDitBlock/allo_DDitBlock/allo_DDitBlock/solution/.autopilot/db/a.g.ld.0.bc -args  "/work/shared/users/ugrad/sl3558/mdlm/dit_numpy_allo/Allo_DDitBlock.prj/_x.hw.xilinx_u280_gen3x16_xdma_1_202211_1/allo_DDitBlock/allo_DDitBlock/allo_DDitBlock/solution/.autopilot/db/kernel.g.bc"  
+Execute           ap_eval exec -ignorestderr /opt/xilinx/2022.1/Vitis_HLS/2022.1/lnx64/tools/clang-3.9-csynth/bin/llvm-link /work/shared/users/ugrad/sl3558/mdlm/dit_numpy_allo/Allo_DDitBlock.prj/_x.hw.xilinx_u280_gen3x16_xdma_1_202211_1/allo_DDitBlock/allo_DDitBlock/allo_DDitBlock/solution/.autopilot/db/kernel.g.bc -o /work/shared/users/ugrad/sl3558/mdlm/dit_numpy_allo/Allo_DDitBlock.prj/_x.hw.xilinx_u280_gen3x16_xdma_1_202211_1/allo_DDitBlock/allo_DDitBlock/allo_DDitBlock/solution/.autopilot/db/a.g.ld.0.bc > /work/shared/users/ugrad/sl3558/mdlm/dit_numpy_allo/Allo_DDitBlock.prj/_x.hw.xilinx_u280_gen3x16_xdma_1_202211_1/allo_DDitBlock/allo_DDitBlock/allo_DDitBlock/solution/.autopilot/db/a.g.ld.0.bc.llvm-link.out.log 2> /work/shared/users/ugrad/sl3558/mdlm/dit_numpy_allo/Allo_DDitBlock.prj/_x.hw.xilinx_u280_gen3x16_xdma_1_202211_1/allo_DDitBlock/allo_DDitBlock/allo_DDitBlock/solution/.autopilot/db/a.g.ld.0.bc.llvm-link.err.log 
+Command           ap_eval done; 0.62 sec.
+INFO-FLOW: 
+Command         run_link_or_opt done; 0.62 sec.
+Execute         run_link_or_opt -opt -out /work/shared/users/ugrad/sl3558/mdlm/dit_numpy_allo/Allo_DDitBlock.prj/_x.hw.xilinx_u280_gen3x16_xdma_1_202211_1/allo_DDitBlock/allo_DDitBlock/allo_DDitBlock/solution/.autopilot/db/a.g.ld.1.lower.bc -args /work/shared/users/ugrad/sl3558/mdlm/dit_numpy_allo/Allo_DDitBlock.prj/_x.hw.xilinx_u280_gen3x16_xdma_1_202211_1/allo_DDitBlock/allo_DDitBlock/allo_DDitBlock/solution/.autopilot/db/a.g.ld.0.bc -reflow-lower-math-intrinsics 
+Execute           ap_eval exec -ignorestderr /opt/xilinx/2022.1/Vitis_HLS/2022.1/lnx64/tools/clang-3.9-csynth/bin/opt -pass-remarks-missed=reflow|pasta|unroll -pass-remarks=reflow|pasta|unroll|inline -pass-remarks-output=/work/shared/users/ugrad/sl3558/mdlm/dit_numpy_allo/Allo_DDitBlock.prj/_x.hw.xilinx_u280_gen3x16_xdma_1_202211_1/allo_DDitBlock/allo_DDitBlock/allo_DDitBlock/solution/.autopilot/db/a.g.ld.1.lower.bc.opt.diag.yml /work/shared/users/ugrad/sl3558/mdlm/dit_numpy_allo/Allo_DDitBlock.prj/_x.hw.xilinx_u280_gen3x16_xdma_1_202211_1/allo_DDitBlock/allo_DDitBlock/allo_DDitBlock/solution/.autopilot/db/a.g.ld.0.bc -reflow-lower-math-intrinsics -o /work/shared/users/ugrad/sl3558/mdlm/dit_numpy_allo/Allo_DDitBlock.prj/_x.hw.xilinx_u280_gen3x16_xdma_1_202211_1/allo_DDitBlock/allo_DDitBlock/allo_DDitBlock/solution/.autopilot/db/a.g.ld.1.lower.bc > /work/shared/users/ugrad/sl3558/mdlm/dit_numpy_allo/Allo_DDitBlock.prj/_x.hw.xilinx_u280_gen3x16_xdma_1_202211_1/allo_DDitBlock/allo_DDitBlock/allo_DDitBlock/solution/.autopilot/db/a.g.ld.1.lower.bc.opt.out.log 2> /work/shared/users/ugrad/sl3558/mdlm/dit_numpy_allo/Allo_DDitBlock.prj/_x.hw.xilinx_u280_gen3x16_xdma_1_202211_1/allo_DDitBlock/allo_DDitBlock/allo_DDitBlock/solution/.autopilot/db/a.g.ld.1.lower.bc.opt.err.log 
+Command           ap_eval done; 0.66 sec.
+INFO-FLOW: 
+Command         run_link_or_opt done; 0.66 sec.
+INFO-FLOW: Linking math bc lib
+Execute         run_link_or_opt -out /work/shared/users/ugrad/sl3558/mdlm/dit_numpy_allo/Allo_DDitBlock.prj/_x.hw.xilinx_u280_gen3x16_xdma_1_202211_1/allo_DDitBlock/allo_DDitBlock/allo_DDitBlock/solution/.autopilot/db/a.g.ld.2.m1.bc -args /work/shared/users/ugrad/sl3558/mdlm/dit_numpy_allo/Allo_DDitBlock.prj/_x.hw.xilinx_u280_gen3x16_xdma_1_202211_1/allo_DDitBlock/allo_DDitBlock/allo_DDitBlock/solution/.autopilot/db/a.g.ld.1.lower.bc -only-needed /opt/xilinx/2022.1/Vitis_HLS/2022.1/lnx64/lib/libhlsm_39.bc /opt/xilinx/2022.1/Vitis_HLS/2022.1/lnx64/lib/libhlsmc++_39.bc 
+Execute           ap_eval exec -ignorestderr /opt/xilinx/2022.1/Vitis_HLS/2022.1/lnx64/tools/clang-3.9-csynth/bin/llvm-link /work/shared/users/ugrad/sl3558/mdlm/dit_numpy_allo/Allo_DDitBlock.prj/_x.hw.xilinx_u280_gen3x16_xdma_1_202211_1/allo_DDitBlock/allo_DDitBlock/allo_DDitBlock/solution/.autopilot/db/a.g.ld.1.lower.bc -only-needed /opt/xilinx/2022.1/Vitis_HLS/2022.1/lnx64/lib/libhlsm_39.bc /opt/xilinx/2022.1/Vitis_HLS/2022.1/lnx64/lib/libhlsmc++_39.bc -o /work/shared/users/ugrad/sl3558/mdlm/dit_numpy_allo/Allo_DDitBlock.prj/_x.hw.xilinx_u280_gen3x16_xdma_1_202211_1/allo_DDitBlock/allo_DDitBlock/allo_DDitBlock/solution/.autopilot/db/a.g.ld.2.m1.bc > /work/shared/users/ugrad/sl3558/mdlm/dit_numpy_allo/Allo_DDitBlock.prj/_x.hw.xilinx_u280_gen3x16_xdma_1_202211_1/allo_DDitBlock/allo_DDitBlock/allo_DDitBlock/solution/.autopilot/db/a.g.ld.2.m1.bc.llvm-link.out.log 2> /work/shared/users/ugrad/sl3558/mdlm/dit_numpy_allo/Allo_DDitBlock.prj/_x.hw.xilinx_u280_gen3x16_xdma_1_202211_1/allo_DDitBlock/allo_DDitBlock/allo_DDitBlock/solution/.autopilot/db/a.g.ld.2.m1.bc.llvm-link.err.log 
+Command           ap_eval done; 4.22 sec.
+INFO-FLOW: 
+Command         run_link_or_opt done; 4.24 sec.
+Execute         run_link_or_opt -opt -out /work/shared/users/ugrad/sl3558/mdlm/dit_numpy_allo/Allo_DDitBlock.prj/_x.hw.xilinx_u280_gen3x16_xdma_1_202211_1/allo_DDitBlock/allo_DDitBlock/allo_DDitBlock/solution/.autopilot/db/a.g.ld.3.fpc.bc -args /work/shared/users/ugrad/sl3558/mdlm/dit_numpy_allo/Allo_DDitBlock.prj/_x.hw.xilinx_u280_gen3x16_xdma_1_202211_1/allo_DDitBlock/allo_DDitBlock/allo_DDitBlock/solution/.autopilot/db/a.g.ld.2.m1.bc -reflow-globaldce -hls-top-function-name=allo_DDitBlock -reflow-float-conversion 
+Execute           ap_eval exec -ignorestderr /opt/xilinx/2022.1/Vitis_HLS/2022.1/lnx64/tools/clang-3.9-csynth/bin/opt -pass-remarks-missed=reflow|pasta|unroll -pass-remarks=reflow|pasta|unroll|inline -pass-remarks-output=/work/shared/users/ugrad/sl3558/mdlm/dit_numpy_allo/Allo_DDitBlock.prj/_x.hw.xilinx_u280_gen3x16_xdma_1_202211_1/allo_DDitBlock/allo_DDitBlock/allo_DDitBlock/solution/.autopilot/db/a.g.ld.3.fpc.bc.opt.diag.yml /work/shared/users/ugrad/sl3558/mdlm/dit_numpy_allo/Allo_DDitBlock.prj/_x.hw.xilinx_u280_gen3x16_xdma_1_202211_1/allo_DDitBlock/allo_DDitBlock/allo_DDitBlock/solution/.autopilot/db/a.g.ld.2.m1.bc -reflow-globaldce -hls-top-function-name=allo_DDitBlock -reflow-float-conversion -o /work/shared/users/ugrad/sl3558/mdlm/dit_numpy_allo/Allo_DDitBlock.prj/_x.hw.xilinx_u280_gen3x16_xdma_1_202211_1/allo_DDitBlock/allo_DDitBlock/allo_DDitBlock/solution/.autopilot/db/a.g.ld.3.fpc.bc > /work/shared/users/ugrad/sl3558/mdlm/dit_numpy_allo/Allo_DDitBlock.prj/_x.hw.xilinx_u280_gen3x16_xdma_1_202211_1/allo_DDitBlock/allo_DDitBlock/allo_DDitBlock/solution/.autopilot/db/a.g.ld.3.fpc.bc.opt.out.log 2> /work/shared/users/ugrad/sl3558/mdlm/dit_numpy_allo/Allo_DDitBlock.prj/_x.hw.xilinx_u280_gen3x16_xdma_1_202211_1/allo_DDitBlock/allo_DDitBlock/allo_DDitBlock/solution/.autopilot/db/a.g.ld.3.fpc.bc.opt.err.log 
+Command           ap_eval done; 2.66 sec.
+INFO-FLOW: 
+Command         run_link_or_opt done; 2.67 sec.
+Execute         run_link_or_opt -out /work/shared/users/ugrad/sl3558/mdlm/dit_numpy_allo/Allo_DDitBlock.prj/_x.hw.xilinx_u280_gen3x16_xdma_1_202211_1/allo_DDitBlock/allo_DDitBlock/allo_DDitBlock/solution/.autopilot/db/a.g.ld.4.m2.bc -args /work/shared/users/ugrad/sl3558/mdlm/dit_numpy_allo/Allo_DDitBlock.prj/_x.hw.xilinx_u280_gen3x16_xdma_1_202211_1/allo_DDitBlock/allo_DDitBlock/allo_DDitBlock/solution/.autopilot/db/a.g.ld.3.fpc.bc -only-needed /opt/xilinx/2022.1/Vitis_HLS/2022.1/lnx64/lib/libfloatconversion_39.bc 
+Execute           ap_eval exec -ignorestderr /opt/xilinx/2022.1/Vitis_HLS/2022.1/lnx64/tools/clang-3.9-csynth/bin/llvm-link /work/shared/users/ugrad/sl3558/mdlm/dit_numpy_allo/Allo_DDitBlock.prj/_x.hw.xilinx_u280_gen3x16_xdma_1_202211_1/allo_DDitBlock/allo_DDitBlock/allo_DDitBlock/solution/.autopilot/db/a.g.ld.3.fpc.bc -only-needed /opt/xilinx/2022.1/Vitis_HLS/2022.1/lnx64/lib/libfloatconversion_39.bc -o /work/shared/users/ugrad/sl3558/mdlm/dit_numpy_allo/Allo_DDitBlock.prj/_x.hw.xilinx_u280_gen3x16_xdma_1_202211_1/allo_DDitBlock/allo_DDitBlock/allo_DDitBlock/solution/.autopilot/db/a.g.ld.4.m2.bc > /work/shared/users/ugrad/sl3558/mdlm/dit_numpy_allo/Allo_DDitBlock.prj/_x.hw.xilinx_u280_gen3x16_xdma_1_202211_1/allo_DDitBlock/allo_DDitBlock/allo_DDitBlock/solution/.autopilot/db/a.g.ld.4.m2.bc.llvm-link.out.log 2> /work/shared/users/ugrad/sl3558/mdlm/dit_numpy_allo/Allo_DDitBlock.prj/_x.hw.xilinx_u280_gen3x16_xdma_1_202211_1/allo_DDitBlock/allo_DDitBlock/allo_DDitBlock/solution/.autopilot/db/a.g.ld.4.m2.bc.llvm-link.err.log 
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+Command           ap_eval done; error code: 1; 0.62 sec.
+Command         run_link_or_opt done; error code: 1; 0.63 sec.
+Command       elaborate done; error code: 1; 51.51 sec.
+Command     csynth_design done; error code: 1; 51.61 sec.
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 44.19 seconds. CPU system time: 3.54 seconds. Elapsed time: 51.61 seconds; current allocated memory: 80.008 MB.
+Command   ap_source done; error code: 1; 65.61 sec.
+Command vitis_hls_bin done; error code: 1; 65.62 sec.
+INFO: [Common 17-344] 'source' was cancelled
+Execute cleanup_all 

@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="allo_DDitBlock" LaunchDir="/work/shared/users/ugrad/sl3558/mdlm/dit_numpy_allo/Allo_DDitBlock.prj/_x.hw.xilinx_u280_gen3x16_xdma_1_202211_1/allo_DDitBlock/allo_DDitBlock" FlowId="Build_IP" FromStepId="vitis_hls" ToStepId="vitis_hls"/>
+</Runs>
+

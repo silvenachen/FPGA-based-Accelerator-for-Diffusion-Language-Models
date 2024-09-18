@@ -1,0 +1,118 @@
+<ENTRY>
+{
+ "thisFile": "/work/shared/users/ugrad/sl3558/mdlm/dit_numpy_allo/Allo_DDitBlock.prj/_x.hw.xilinx_u280_gen3x16_xdma_1_202211_1/allo_DDitBlock.xo.compile_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Thu Sep 12 18:37:55 2024",
+ "timestampMillis": "1726180675355",
+ "buildStep": {
+  "cmdId": "bfd6fb1d-d34f-475e-8c98-b0af2445b8ed",
+  "name": "v++",
+  "logFile": "/work/shared/users/ugrad/sl3558/mdlm/dit_numpy_allo/Allo_DDitBlock.prj/_x.hw.xilinx_u280_gen3x16_xdma_1_202211_1/allo_DDitBlock/allo_DDitBlock.steps.log",
+  "commandLine": "/opt/xilinx/2022.1/Vitis/2022.1/bin/unwrapped/lnx64.o/v++  --vivado.prop \"run.__KERNEL__.{STEPS.SYNTH_DESIGN.ARGS.MORE OPTIONS}={-directive sdx_optimization_effort_high}\" --advanced.misc \"report=type report_timing_summary name impl_report_timing_summary_route_design_summary steps {route_design} runs {impl_1} options {-max_paths 10}\" --advanced.misc \"report=type report_timing_summary name impl_report_timing_summary_post_route_phys_opt_design_summary steps {post_route_phys_opt_design} runs {impl_1} options {-max_paths 10}\" -c --save-temps -t hw --platform xilinx_u280_gen3x16_xdma_1_202211_1 -k allo_DDitBlock --temp_dir ./_x.hw.xilinx_u280_gen3x16_xdma_1_202211_1 -I. -o_x.hw.xilinx_u280_gen3x16_xdma_1_202211_1/allo_DDitBlock.xo kernel.cpp ",
+  "args": [
+   "-c",
+   "--save-temps",
+   "-t",
+   "hw",
+   "--platform",
+   "xilinx_u280_gen3x16_xdma_1_202211_1",
+   "-k",
+   "allo_DDitBlock",
+   "--temp_dir",
+   "./_x.hw.xilinx_u280_gen3x16_xdma_1_202211_1",
+   "-I.",
+   "-o_x.hw.xilinx_u280_gen3x16_xdma_1_202211_1/allo_DDitBlock.xo",
+   "kernel.cpp"
+  ],
+  "iniFiles": [],
+  "cwd": "/work/shared/users/ugrad/sl3558/mdlm/dit_numpy_allo/Allo_DDitBlock.prj"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Thu Sep 12 18:37:55 2024",
+ "timestampMillis": "1726180675356",
+ "status": {
+  "cmdId": "bfd6fb1d-d34f-475e-8c98-b0af2445b8ed",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "Thu Sep 12 18:38:04 2024",
+ "timestampMillis": "1726180684580",
+ "buildSummary": {
+  "hardwarePlatform": "xilinx_u280_gen3x16_xdma_1_202211_1.xpfm",
+  "hardwareDsa": "",
+  "platformDirectory": "/opt/xilinx/platforms/xilinx_u280_gen3x16_xdma_1_202211_1",
+  "runtime": "OpenCL",
+  "systemConfig": "Linux",
+  "flow": "BF_COMPILE",
+  "target": "TT_HW",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "allo_DDitBlock",
+     "file": "/work/shared/users/ugrad/sl3558/mdlm/dit_numpy_allo/Allo_DDitBlock.prj/_x.hw.xilinx_u280_gen3x16_xdma_1_202211_1/allo_DDitBlock.xo",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "/work/shared/users/ugrad/sl3558/mdlm/dit_numpy_allo/Allo_DDitBlock.prj/kernel.cpp"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "Vitis V++ Compiler Release 2022.1.2. SW Build 3602371 on 2022-08-02-23:13:43"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Thu Sep 12 18:38:04 2024",
+ "timestampMillis": "1726180684735",
+ "buildStep": {
+  "cmdId": "1df20ff0-7900-46dd-b3eb-c907285cbc3b",
+  "name": "vitis_hls",
+  "logFile": "/work/shared/users/ugrad/sl3558/mdlm/dit_numpy_allo/Allo_DDitBlock.prj/_x.hw.xilinx_u280_gen3x16_xdma_1_202211_1/allo_DDitBlock/allo_DDitBlock/vitis_hls.log",
+  "commandLine": "vitis_hls -f /work/shared/users/ugrad/sl3558/mdlm/dit_numpy_allo/Allo_DDitBlock.prj/_x.hw.xilinx_u280_gen3x16_xdma_1_202211_1/allo_DDitBlock/allo_DDitBlock/allo_DDitBlock.tcl -messageDb vitis_hls.pb",
+  "args": [
+   "vitis_hls",
+   "-f",
+   "/work/shared/users/ugrad/sl3558/mdlm/dit_numpy_allo/Allo_DDitBlock.prj/_x.hw.xilinx_u280_gen3x16_xdma_1_202211_1/allo_DDitBlock/allo_DDitBlock/allo_DDitBlock.tcl",
+   "-messageDb",
+   "vitis_hls.pb"
+  ],
+  "iniFiles": [],
+  "cwd": "/work/shared/users/ugrad/sl3558/mdlm/dit_numpy_allo/Allo_DDitBlock.prj"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Thu Sep 12 18:38:04 2024",
+ "timestampMillis": "1726180684736",
+ "status": {
+  "cmdId": "1df20ff0-7900-46dd-b3eb-c907285cbc3b",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
