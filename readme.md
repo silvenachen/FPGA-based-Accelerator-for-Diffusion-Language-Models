@@ -4,11 +4,21 @@ Welcome to the open-sourced repository for our FPGA-based MDLM (Masked Diffusion
 This ongoing project focuses on developing an efficient end-to-end accelerator for **diffusion language models** on FPGAs using the [**Allo**](https://arxiv.org/abs/2404.04815) framework and **High Level Synthesis (HLS)**. Allo is a accelerator design language (ADL) for efficient spatial accelerator design. The specific diffusion language model is based on [**Simple and Effective Masked Diffusion Language Models**](https://arxiv.org/abs/2406.07524). 
 
 ## Documentation
-For more detailed information about the diffusion mechanism, diffusion language model architecture and implementation, please refer to the following document:
+For more detailed information about the background and preliminary of diffusion mechanism, diffusion language model and our implementation, please refer to the following document:
 
 - [project document](documentation/doc.md)
 
-## Model Implementation
+## MDLM Model
+### Model Architecture
+The following figure shows the overall architecture of the diffusion language model based on Diffusion Transformers (DiTs).
+
+![Model Architecture](./documentation/fig/MDLM.jpg)
+
+Specifically, we are currently developing the core DDitBlock components.
+
+![Model Architecture](./documentation/fig/DDitBlock.jpg)
+
+### Model Implementation
 We have successfully implemented **DDitBlock**, the core Component of the DiT model in Allo, with succssful LLVM and CSim verifications. The C-RTL co-simulation and on-board deployment are to be tested in the future. We also plan to reduce the hardware overhead and develop other components in MDLM. Ultimately, we aim to deploy an end-to-end MDLM model on FPGA.
 
 ## How to Use
