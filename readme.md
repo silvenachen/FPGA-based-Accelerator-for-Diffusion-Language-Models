@@ -4,9 +4,9 @@ Welcome to the open-sourced repository for our FPGA-based MDLM (Masked Diffusion
 This ongoing project focuses on developing an efficient end-to-end accelerator for **diffusion language models** on FPGAs using the [**Allo**](https://arxiv.org/abs/2404.04815) framework and **High Level Synthesis (HLS)**. Allo is a accelerator design language (ADL) for efficient spatial accelerator design. The specific diffusion language model is based on [**Simple and Effective Masked Diffusion Language Models**](https://arxiv.org/abs/2406.07524). 
 
 ## Documentation
-For more detailed information about the background and preliminary of diffusion mechanism, diffusion language model and our implementation, please refer to the following document:
+For more detailed information about the background and preliminary of diffusion mechanism, diffusion language model and our implementation, please refer to the following work summary, which covers a literature review, profiling results for MDLM inference, and our current development status:
 
-- [project document](documentation/doc.md)
+- [MDLM Accelerator Document](documentation/doc.md)
 
 ## MDLM Model
 ### Model Architecture
