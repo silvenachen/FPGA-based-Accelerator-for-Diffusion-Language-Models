@@ -41,9 +41,6 @@ We verified the CSim results of DDitBlock kernel against the numpy version in fl
 | MSE        | 5.073 × 10⁻¹² |
 
 
-### Synthesis Results
-The table below shows the hardware resource and performance estimate at 100MHz.
-
 ## Developers and Contact Information
 This project is currently in progress and developed by **Shuyang Li** (shuyanglee10008@gmail.com)
 
