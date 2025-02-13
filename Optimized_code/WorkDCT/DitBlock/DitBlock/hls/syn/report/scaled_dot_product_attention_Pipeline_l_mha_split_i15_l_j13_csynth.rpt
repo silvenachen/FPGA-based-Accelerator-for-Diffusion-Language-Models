@@ -1,0 +1,176 @@
+
+
+================================================================
+== Vitis HLS Report for 'scaled_dot_product_attention_Pipeline_l_mha_split_i15_l_j13'
+================================================================
+* Date:           Wed Feb  5 22:35:56 2025
+
+* Version:        2023.2 (Build 4023990 on Oct 11 2023)
+* Project:        DitBlock
+* Solution:       hls (Vivado IP Flow Target)
+* Product family: virtexuplusHBM
+* Target device:  xcu280-fsvh2892-2L-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  4.393 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-------+-------+---------+
+    |  Latency (cycles) |  Latency (absolute) |    Interval   | Pipeline|
+    |   min   |   max   |    min   |    max   |  min  |  max  |   Type  |
+    +---------+---------+----------+----------+-------+-------+---------+
+    |    65538|    65538|  0.655 ms|  0.655 ms|  65538|  65538|       no|
+    +---------+---------+----------+----------+-------+-------+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +-------------------------+---------+---------+----------+-----------+-----------+-------+----------+
+        |                         |  Latency (cycles) | Iteration|  Initiation Interval  |  Trip |          |
+        |        Loop Name        |   min   |   max   |  Latency |  achieved |   target  | Count | Pipelined|
+        +-------------------------+---------+---------+----------+-----------+-----------+-------+----------+
+        |- l_mha_split_i15_l_j13  |    65536|    65536|         2|          1|          1|  65536|       yes|
+        +-------------------------+---------+---------+----------+-----------+-----------+-------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++---------------------+---------+------+---------+---------+-----+
+|         Name        | BRAM_18K|  DSP |    FF   |   LUT   | URAM|
++---------------------+---------+------+---------+---------+-----+
+|DSP                  |        -|     -|        -|        -|    -|
+|Expression           |        -|     -|        0|      178|    -|
+|FIFO                 |        -|     -|        -|        -|    -|
+|Instance             |        -|     -|        -|        -|    -|
+|Memory               |        -|     -|        -|        -|    -|
+|Multiplexer          |        -|     -|        -|       54|    -|
+|Register             |        -|     -|       71|        -|    -|
++---------------------+---------+------+---------+---------+-----+
+|Total                |        0|     0|       71|      232|    0|
++---------------------+---------+------+---------+---------+-----+
+|Available SLR        |     1344|  3008|   869120|   434560|  320|
++---------------------+---------+------+---------+---------+-----+
+|Utilization SLR (%)  |        0|     0|       ~0|       ~0|    0|
++---------------------+---------+------+---------+---------+-----+
+|Available            |     4032|  9024|  2607360|  1303680|  960|
++---------------------+---------+------+---------+---------+-----+
+|Utilization (%)      |        0|     0|       ~0|       ~0|    0|
++---------------------+---------+------+---------+---------+-----+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +----------------------------+----------+----+---+----+------------+------------+
+    |        Variable Name       | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +----------------------------+----------+----+---+----+------------+------------+
+    |add_ln15697_1_fu_193_p2     |         +|   0|  0|  24|          17|           1|
+    |add_ln15697_fu_205_p2       |         +|   0|  0|  18|          11|           1|
+    |add_ln15698_fu_301_p2       |         +|   0|  0|  14|           7|           1|
+    |add_ln15699_fu_281_p2       |         +|   0|  0|  16|           9|           9|
+    |add_ln15700_fu_257_p2       |         +|   0|  0|  23|          16|          16|
+    |add_ln15702_fu_271_p2       |         +|   0|  0|  23|          16|          16|
+    |icmp_ln15697_fu_187_p2      |      icmp|   0|  0|  25|          17|          18|
+    |icmp_ln15698_fu_211_p2      |      icmp|   0|  0|  15|           7|           8|
+    |select_ln15697_1_fu_229_p3  |    select|   0|  0|  11|           1|          11|
+    |select_ln15697_fu_217_p3    |    select|   0|  0|   7|           1|           1|
+    |ap_enable_pp0               |       xor|   0|  0|   2|           1|           2|
+    +----------------------------+----------+----+---+----+------------+------------+
+    |Total                       |          |   0|  0| 178|         103|          84|
+    +----------------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +-------------------------+----+-----------+-----+-----------+
+    |           Name          | LUT| Input Size| Bits| Total Bits|
+    +-------------------------+----+-----------+-----+-----------+
+    |ap_done_int              |   9|          2|    1|          2|
+    |ap_enable_reg_pp0_iter1  |   9|          2|    1|          2|
+    |ap_enable_reg_pp0_iter2  |   9|          2|    1|          2|
+    |i15_fu_74                |   9|          2|   11|         22|
+    |indvar_flatten_fu_78     |   9|          2|   17|         34|
+    |j13_fu_70                |   9|          2|    7|         14|
+    +-------------------------+----+-----------+-----+-----------+
+    |Total                    |  54|         12|   38|         76|
+    +-------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +-------------------------+----+----+-----+-----------+
+    |           Name          | FF | LUT| Bits| Const Bits|
+    +-------------------------+----+----+-----+-----------+
+    |add_ln15700_reg_360      |  16|   0|   16|          0|
+    |add_ln15702_reg_365      |  16|   0|   16|          0|
+    |ap_CS_fsm                |   1|   0|    1|          0|
+    |ap_done_reg              |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter1  |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter2  |   1|   0|    1|          0|
+    |i15_fu_74                |  11|   0|   11|          0|
+    |indvar_flatten_fu_78     |  17|   0|   17|          0|
+    |j13_fu_70                |   7|   0|    7|          0|
+    +-------------------------+----+----+-----+-----------+
+    |Total                    |  71|   0|   71|          0|
+    +-------------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++----------------+-----+-----+------------+-------------------------------------------------------------+--------------+
+|    RTL Ports   | Dir | Bits|  Protocol  |                        Source Object                        |    C Type    |
++----------------+-----+-----+------------+-------------------------------------------------------------+--------------+
+|ap_clk          |   in|    1|  ap_ctrl_hs|  scaled_dot_product_attention_Pipeline_l_mha_split_i15_l_j13|  return value|
+|ap_rst          |   in|    1|  ap_ctrl_hs|  scaled_dot_product_attention_Pipeline_l_mha_split_i15_l_j13|  return value|
+|ap_start        |   in|    1|  ap_ctrl_hs|  scaled_dot_product_attention_Pipeline_l_mha_split_i15_l_j13|  return value|
+|ap_done         |  out|    1|  ap_ctrl_hs|  scaled_dot_product_attention_Pipeline_l_mha_split_i15_l_j13|  return value|
+|ap_idle         |  out|    1|  ap_ctrl_hs|  scaled_dot_product_attention_Pipeline_l_mha_split_i15_l_j13|  return value|
+|ap_ready        |  out|    1|  ap_ctrl_hs|  scaled_dot_product_attention_Pipeline_l_mha_split_i15_l_j13|  return value|
+|Q_h_address0    |  out|   16|   ap_memory|                                                          Q_h|         array|
+|Q_h_ce0         |  out|    1|   ap_memory|                                                          Q_h|         array|
+|Q_h_we0         |  out|    1|   ap_memory|                                                          Q_h|         array|
+|Q_h_d0          |  out|   32|   ap_memory|                                                          Q_h|         array|
+|K_h_address0    |  out|   16|   ap_memory|                                                          K_h|         array|
+|K_h_ce0         |  out|    1|   ap_memory|                                                          K_h|         array|
+|K_h_we0         |  out|    1|   ap_memory|                                                          K_h|         array|
+|K_h_d0          |  out|   32|   ap_memory|                                                          K_h|         array|
+|V_h_address0    |  out|   16|   ap_memory|                                                          V_h|         array|
+|V_h_ce0         |  out|    1|   ap_memory|                                                          V_h|         array|
+|V_h_we0         |  out|    1|   ap_memory|                                                          V_h|         array|
+|V_h_d0          |  out|   32|   ap_memory|                                                          V_h|         array|
+|tmp_27          |   in|    9|     ap_none|                                                       tmp_27|        scalar|
+|v8564_address0  |  out|   19|   ap_memory|                                                        v8564|         array|
+|v8564_ce0       |  out|    1|   ap_memory|                                                        v8564|         array|
+|v8564_q0        |   in|   32|   ap_memory|                                                        v8564|         array|
+|v8565_address0  |  out|   19|   ap_memory|                                                        v8565|         array|
+|v8565_ce0       |  out|    1|   ap_memory|                                                        v8565|         array|
+|v8565_q0        |   in|   32|   ap_memory|                                                        v8565|         array|
+|v8566_address0  |  out|   19|   ap_memory|                                                        v8566|         array|
+|v8566_ce0       |  out|    1|   ap_memory|                                                        v8566|         array|
+|v8566_q0        |   in|   32|   ap_memory|                                                        v8566|         array|
++----------------+-----+-----+------------+-------------------------------------------------------------+--------------+
+

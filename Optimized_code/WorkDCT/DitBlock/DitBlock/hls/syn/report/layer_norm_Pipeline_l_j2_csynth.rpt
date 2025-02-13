@@ -1,0 +1,194 @@
+
+
+================================================================
+== Vitis HLS Report for 'layer_norm_Pipeline_l_j2'
+================================================================
+* Date:           Wed Feb  5 22:35:29 2025
+
+* Version:        2023.2 (Build 4023990 on Oct 11 2023)
+* Project:        DitBlock
+* Solution:       hls (Vivado IP Flow Target)
+* Product family: virtexuplusHBM
+* Target device:  xcu280-fsvh2892-2L-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  7.069 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |      527|      527|  5.270 us|  5.270 us|  527|  527|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +----------+---------+---------+----------+-----------+-----------+------+----------+
+        |          |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        | Loop Name|   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +----------+---------+---------+----------+-----------+-----------+------+----------+
+        |- l_j2    |      525|      525|        15|          1|          1|   512|       yes|
+        +----------+---------+---------+----------+-----------+-----------+------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++---------------------+---------+------+---------+---------+-----+
+|         Name        | BRAM_18K|  DSP |    FF   |   LUT   | URAM|
++---------------------+---------+------+---------+---------+-----+
+|DSP                  |        -|     -|        -|        -|    -|
+|Expression           |        -|     -|        0|       63|    -|
+|FIFO                 |        -|     -|        -|        -|    -|
+|Instance             |        -|     2|      177|      226|    -|
+|Memory               |        -|     -|        -|        -|    -|
+|Multiplexer          |        -|     -|        -|       36|    -|
+|Register             |        -|     -|      250|       32|    -|
++---------------------+---------+------+---------+---------+-----+
+|Total                |        0|     2|      427|      357|    0|
++---------------------+---------+------+---------+---------+-----+
+|Available SLR        |     1344|  3008|   869120|   434560|  320|
++---------------------+---------+------+---------+---------+-----+
+|Utilization SLR (%)  |        0|    ~0|       ~0|       ~0|    0|
++---------------------+---------+------+---------+---------+-----+
+|Available            |     4032|  9024|  2607360|  1303680|  960|
++---------------------+---------+------+---------+---------+-----+
+|Utilization (%)      |        0|    ~0|       ~0|       ~0|    0|
++---------------------+---------+------+---------+---------+-----+
+
++ Detail: 
+    * Instance: 
+    +-------------------------------------+--------------------------------+---------+----+-----+-----+-----+
+    |               Instance              |             Module             | BRAM_18K| DSP|  FF | LUT | URAM|
+    +-------------------------------------+--------------------------------+---------+----+-----+-----+-----+
+    |fadd_32ns_32ns_32_3_full_dsp_1_U217  |fadd_32ns_32ns_32_3_full_dsp_1  |        0|   2|  177|  226|    0|
+    |fdiv_32ns_32ns_32_6_no_dsp_1_U218    |fdiv_32ns_32ns_32_6_no_dsp_1    |        0|   0|    0|    0|    0|
+    +-------------------------------------+--------------------------------+---------+----+-----+-----+-----+
+    |Total                                |                                |        0|   2|  177|  226|    0|
+    +-------------------------------------+--------------------------------+---------+----+-----+-----+-----+
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +----------------------+----------+----+---+----+------------+------------+
+    |     Variable Name    | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +----------------------+----------+----+---+----+------------+------------+
+    |add_ln652_fu_129_p2   |         +|   0|  0|  17|          10|           1|
+    |add_ln655_fu_139_p2   |         +|   0|  0|  26|          19|          19|
+    |icmp_ln652_fu_123_p2  |      icmp|   0|  0|  18|          10|          11|
+    |ap_enable_pp0         |       xor|   0|  0|   2|           1|           2|
+    +----------------------+----------+----+---+----+------------+------------+
+    |Total                 |          |   0|  0|  63|          40|          33|
+    +----------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +-------------------------+----+-----------+-----+-----------+
+    |           Name          | LUT| Input Size| Bits| Total Bits|
+    +-------------------------+----+-----------+-----+-----------+
+    |ap_done_int              |   9|          2|    1|          2|
+    |ap_enable_reg_pp0_iter1  |   9|          2|    1|          2|
+    |ap_sig_allocacmp_j2_1    |   9|          2|   10|         20|
+    |j2_fu_50                 |   9|          2|   10|         20|
+    +-------------------------+----+-----------+-----+-----------+
+    |Total                    |  36|          8|   22|         44|
+    +-------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +-----------------------------------+----+----+-----+-----------+
+    |                Name               | FF | LUT| Bits| Const Bits|
+    +-----------------------------------+----+----+-----+-----------+
+    |ap_CS_fsm                          |   1|   0|    1|          0|
+    |ap_done_reg                        |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter1            |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter10           |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter11           |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter12           |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter13           |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter14           |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter2            |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter3            |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter4            |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter5            |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter6            |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter7            |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter8            |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter9            |   1|   0|    1|          0|
+    |ap_loop_exit_ready_pp0_iter10_reg  |   1|   0|    1|          0|
+    |ap_loop_exit_ready_pp0_iter11_reg  |   1|   0|    1|          0|
+    |ap_loop_exit_ready_pp0_iter12_reg  |   1|   0|    1|          0|
+    |ap_loop_exit_ready_pp0_iter13_reg  |   1|   0|    1|          0|
+    |ap_loop_exit_ready_pp0_iter1_reg   |   1|   0|    1|          0|
+    |ap_loop_exit_ready_pp0_iter2_reg   |   1|   0|    1|          0|
+    |ap_loop_exit_ready_pp0_iter3_reg   |   1|   0|    1|          0|
+    |ap_loop_exit_ready_pp0_iter4_reg   |   1|   0|    1|          0|
+    |ap_loop_exit_ready_pp0_iter5_reg   |   1|   0|    1|          0|
+    |ap_loop_exit_ready_pp0_iter6_reg   |   1|   0|    1|          0|
+    |ap_loop_exit_ready_pp0_iter7_reg   |   1|   0|    1|          0|
+    |ap_loop_exit_ready_pp0_iter8_reg   |   1|   0|    1|          0|
+    |ap_loop_exit_ready_pp0_iter9_reg   |   1|   0|    1|          0|
+    |j2_fu_50                           |  10|   0|   10|          0|
+    |v292_reg_186                       |  32|   0|   32|          0|
+    |v294_reg_191                       |  32|   0|   32|          0|
+    |v299_reg_196                       |  32|   0|   32|          0|
+    |v301_reg_201                       |  32|   0|   32|          0|
+    |zext_ln655_2_reg_176               |  19|   0|   64|         45|
+    |zext_ln655_2_reg_176               |  64|  32|   64|         45|
+    +-----------------------------------+----+----+-----+-----------+
+    |Total                              | 250|  32|  295|         90|
+    +-----------------------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++---------------------+-----+-----+------------+--------------------------+--------------+
+|      RTL Ports      | Dir | Bits|  Protocol  |       Source Object      |    C Type    |
++---------------------+-----+-----+------------+--------------------------+--------------+
+|ap_clk               |   in|    1|  ap_ctrl_hs|  layer_norm_Pipeline_l_j2|  return value|
+|ap_rst               |   in|    1|  ap_ctrl_hs|  layer_norm_Pipeline_l_j2|  return value|
+|ap_start             |   in|    1|  ap_ctrl_hs|  layer_norm_Pipeline_l_j2|  return value|
+|ap_done              |  out|    1|  ap_ctrl_hs|  layer_norm_Pipeline_l_j2|  return value|
+|ap_idle              |  out|    1|  ap_ctrl_hs|  layer_norm_Pipeline_l_j2|  return value|
+|ap_ready             |  out|    1|  ap_ctrl_hs|  layer_norm_Pipeline_l_j2|  return value|
+|grp_fu_247_p_din0    |  out|   32|  ap_ctrl_hs|  layer_norm_Pipeline_l_j2|  return value|
+|grp_fu_247_p_din1    |  out|   32|  ap_ctrl_hs|  layer_norm_Pipeline_l_j2|  return value|
+|grp_fu_247_p_opcode  |  out|    1|  ap_ctrl_hs|  layer_norm_Pipeline_l_j2|  return value|
+|grp_fu_247_p_dout0   |   in|   32|  ap_ctrl_hs|  layer_norm_Pipeline_l_j2|  return value|
+|grp_fu_247_p_ce      |  out|    1|  ap_ctrl_hs|  layer_norm_Pipeline_l_j2|  return value|
+|zext_ln655           |   in|   19|     ap_none|                zext_ln655|        scalar|
+|v262_address0        |  out|   19|   ap_memory|                      v262|         array|
+|v262_ce0             |  out|    1|   ap_memory|                      v262|         array|
+|v262_q0              |   in|   32|   ap_memory|                      v262|         array|
+|v265_address1        |  out|   19|   ap_memory|                      v265|         array|
+|v265_ce1             |  out|    1|   ap_memory|                      v265|         array|
+|v265_we1             |  out|    1|   ap_memory|                      v265|         array|
+|v265_d1              |  out|   32|   ap_memory|                      v265|         array|
+|v293                 |   in|   32|     ap_none|                      v293|        scalar|
+|v298                 |   in|   32|     ap_none|                      v298|        scalar|
++---------------------+-----+-----+------------+--------------------------+--------------+
+

@@ -1,0 +1,56 @@
+INFO: [vitis-run 60-1548] Creating build summary session with primary output /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/DitBlock.hlsrun_csim_summary, at Thu Feb 13 21:26:23 2025
+INFO: [vitis-run 82-31] Launching vitis_hls: vitis_hls -nolog -run csim -work_dir /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock -config /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/hls_config.cfg -cmdlineconfig /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/config.cmdline
+
+****** Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2023.2 (64-bit)
+  **** SW Build 4023990 on Oct 11 2023
+  **** IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+  **** SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source /tools/Xilinx/Vitis_HLS/2023.2/scripts/vitis_hls/hls.tcl -notrace
+INFO: [HLS 200-10] Running '/tools/Xilinx/Vitis_HLS/2023.2/bin/unwrapped/lnx64.o/vitis_hls'
+INFO: [HLS 200-10] For user 'silvenchen' on host 'silvenchen-ASUS-TUF-Gaming-F15-FX507ZM-FX507ZM' (Linux_x86_64 version 5.19.0-32-generic) on Thu Feb 13 21:26:24 CST 2025
+INFO: [HLS 200-10] On os Ubuntu 22.04.2 LTS
+INFO: [HLS 200-10] In directory '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock'
+INFO: [HLS 200-1909] Reading HLS ini file /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/hls_config.cfg
+INFO: [HLS 200-1909] Reading HLS ini file /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/config.cmdline
+INFO: [HLS 200-2005] Using work_dir /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock 
+INFO: [HLS 200-1510] Running: open_project /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock -diskless 
+INFO: [HLS 200-1510] Running: open_solution hls 
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2023.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1510] Running: apply_ini /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/hls_config.cfg 
+INFO: [HLS 200-1909] Reading HLS ini file /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/hls_config.cfg
+INFO: [HLS 200-1465] Applying ini 'syn.file=kernel.cpp' at /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/hls_config.cfg(8)
+INFO: [HLS 200-10] Adding design file '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=kernel.h' at /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/hls_config.cfg(9)
+INFO: [HLS 200-10] Adding design file '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.h' to the project
+INFO: [HLS 200-1465] Applying ini 'tb.file=tb_dit.cpp' at /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/hls_config.cfg(10)
+INFO: [HLS 200-10] Adding test bench file '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/tb_dit.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.top=allo_DDitBlock' at /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/hls_config.cfg(11)
+INFO: [HLS 200-1465] Applying ini 'flow_target=vivado' at /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/hls_config.cfg(4)
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2023.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying ini 'part=xcu280-fsvh2892-2L-e' at /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/hls_config.cfg(1)
+INFO: [HLS 200-1611] Setting target device to 'xcu280-fsvh2892-2L-e'
+INFO: [HLS 200-1465] Applying ini 'clock=100MHz' at /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/hls_config.cfg(7)
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1465] Applying ini 'package.output.format=ip_catalog' at /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/hls_config.cfg(5)
+INFO: [HLS 200-1510] Running: apply_ini /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/config.cmdline 
+INFO: [HLS 200-1909] Reading HLS ini file /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/config.cmdline
+INFO: [HLS 200-1510] Running: csim_design 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+   Compiling ../../../../kernel.cpp in debug mode
+   Generating csim.exe
+make: Warning: File '/dev/null' has modification time 13008 s in the future
+make: warning:  Clock skew detected.  Your build may be incomplete.
+start loading files
+finish loading files
+Input Address: 0x7ff2e29ff010
+Gamma_arr Address: 0x2072af0
+Beta Address: 0x2073300
+start computing
+0.535717	0.605831	-2.4616	-1.33401	2.0402	-0.161828	-0.431635	0.202189	1.46933	0.717388	-1.05436	0.129696	0.635984	-1.88248	-0.0585319	-0.259302	-0.726693	-0.416844	1.18174	0.54643	-0.592692	0.878702	0.610367	0.150938	-0.329947	0.258158	-0.462676	0.199782	1.00142	0.891631	-0.348281	0.291904	-0.865407	0.235138	-1.52789	-0.420963	-2.00483	-1.70707	-0.456487	-0.14372	-0.326575	-0.792493	0.310496	0.0090683	1.00588	-0.175728	0.169082	-2.3215	1.32293	-0.341758	-1.37905	-0.830488	1.586	0.792715	-1.0233	-0.358593	-1.628	1.69897	-0.0663961	0.0857137	-0.163696	1.59302	-0.722915	0.981602	1.1464	0.488392	0.385188	-0.57725	0.948632	-0.323274	-0.956598	0.283424	-0.173727	-0.822913	0.531538	0.281045	-2.15242	1.18746	0.866057	1.08127	0.458652	1.75237	1.59982	-0.718836	-0.31705	0.664947	0.211784	0.758492	0.245927	-0.138445	-0.188523	-0.35867	0.50613	0.896218	-0.0333734	-1.09967	0.24779	-1.4895	-1.03537	-1.18072	-1.30091	2.09656	-0.86346	0.23022	1.03513	-0.418215	0.939571	1.11673	0.585055	0.667586	0.14601	-0.185592	1.06493	-1.09732	0.351954	0.638548	0.471203	0.235738	0.757548	-0.132771	2.06341	-0.665114	0.693515	-0.479283	-0.48252	0.159408	-0.833246	1.21113	1.64698	-0.0449982	1.19361	-0.385155	-1.3001	-0.618549	-1.53336	0.998081	-1.76453	0.257779	-0.634047	-0.0666265	1.96224	-0.104306	1.0964	-0.526145	0.844868	-1.53388	0.19954	-0.753798	-0.545772	0.837822	-0.738117	-0.804263	-0.778822	-2.23778	1.04212	-0.61448	0.676173	0.494873	-0.0532425	0.516232	-0.437484	-0.666681	1.02117	0.582919	0.788562	-0.761196	1.46964	0.982451	-0.380224	0.479214	-0.26769	-1.40764	1.4052	0.47913	1.03715	-1.34347	0.287687	-0.057907	-0.848279	-1.52116	0.672945	0.343512	0.210268	0.242235	-1.00983	1.50013	0.970766	0.508641	-0.298004	-0.879288	0.899357	0.856461	-0.54121	0.9171	0.11471	0.633174	-1.56137	-0.65103	-1.20018	-1.46482	1.66142	1.63953	-0.99857	-0.832319	-1.17769	-1.03579	-0.331422	-1.25945	0.679056	-1.03514	-0.248738	1.12217	-1.64188	1.74397	0.542926	0.487733	0.119442	0.378872	1.91207	1.00353	-0.128359	-0.364046	2.04225	0.0651625	-0.608252	0.447688	1.59226	-1.58993	-1.22269	-0.0753658	-1.07508	0.709239	-1.11294	-0.332406	0.834482	-3.49579	-1.16993	-0.683678	1.07072	1.53129	-0.667657	0.357034	0.285433	1.64587	-0.201116	-0.868164	-0.00735997	0.69186	-0.1316	0.859125	-0.113399	-1.16831	1.46156	0.216169	-0.114812	-0.134554	-1.08716	-0.349949	1.13671	-0.0214101	0.548065	0.508717	0.342326	-0.326069	0.899483	0.720131	-1.10425	0.56291	-2.03001	0.76373	-1.87274	-0.119507	0.025525	-0.806982	0.623319	0.375197	-0.249074	-1.34522	-0.955326	-0.737228	-0.236102	0.792565	0.007087	-1.82203	-0.0484563	1.37164	0.0705388	0.22936	0.989378	-0.141085	-0.173138	-0.990003	-1.17543	0.768757	0.091755	-0.337602	0.311542	1.56625	0.605848	0.935677	0.808006	-0.987502	-0.127837	2.01267	-1.33598	0.438748	-0.701276	-0.740621	-0.858987	0.756062	1.5889	1.21262	2.00859	-0.627243	0.451369	-0.849185	0.728436	-0.679314	0.0423552	-0.497772	2.8396	1.5895	-0.104159	0.136091	-2.14254	-0.981661	0.0433109	-0.230028	1.3741	1.36999	0.0879585	0.459774	0.710313	0.445789	-1.75606	-2.0071	-1.37965	-1.3406	-0.197142	0.85409	-0.0147614	0.170647	1.75863	-0.359384	0.166251	0.168718	-0.744866	0.818243	-0.165234	0.69397	0.565829	0.599764	0.376638	0.0626976	-0.484864	1.50774	-2.54199	0.424384	1.33631	1.51249	-0.590648	0.990123	0.165982	0.25342	3.17743	-0.088721	1.50955	0.714125	0.408147	0.75774	-0.0988309	-1.38289	-0.581318	-1.09725	-0.846046	-0.62142	1.13903	-0.130133	-0.0916372	-0.232043	-0.857481	0.450114	2.09238	1.36819	-0.929536	-0.00815796	0.690586	-0.435082	-0.656363	0.15448	-1.14597	-1.07417	0.1132	1.39009	-0.941592	0.329768	-0.340573	-0.592286	1.68423	-0.285853	0.0501274	-1.09949	-1.31222	0.0440518	0.0904477	-0.497062	-1.64343	1.56928	-1.38536	-1.59948	-0.314348	0.0435105	0.31528	0.830346	-0.725724	-1.16646	1.26107	-0.867948	0.233535	0.197482	-0.0291927	-0.511845	0.0469277	-0.0501487	-0.0832599	0.770884	2.17915	-0.284839	-0.931352	-0.415182	-1.27046	-0.867468	0.539464	-0.269372	-0.571632	1.29595	0.270043	-0.64115	-0.410446	0.269235	2.5327	-0.426411	-0.323205	-0.424191	-0.000741765	-1.39716	-0.381685	1.68534	

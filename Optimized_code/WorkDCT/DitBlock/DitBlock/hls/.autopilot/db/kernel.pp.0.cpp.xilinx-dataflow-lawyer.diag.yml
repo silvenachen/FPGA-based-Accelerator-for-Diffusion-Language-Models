@@ -1,0 +1,76 @@
+---
+MainSourceFile:  /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
+Diagnostics:     
+  - DiagnosticName:  clang-diagnostic-warning
+    Message:         '[xlx-df-check-11] Since the only kind of statements allowed in a canonical dataflow region are variable declarations and function calls, the compiler may not be able to correctly handle the region'
+    FileOffset:      '337:9'
+    FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp
+  - DiagnosticName:  clang-diagnostic-warning
+    Message:         '[xlx-df-check-11] Since the only kind of statements allowed in a canonical dataflow region are variable declarations and function calls, the compiler may not be able to correctly handle the region'
+    FileOffset:      '337:9'
+    FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp
+  - DiagnosticName:  clang-diagnostic-warning
+    Message:         '[xlx-df-check-11] Since the only kind of statements allowed in a canonical dataflow region are variable declarations and function calls, the compiler may not be able to correctly handle the region'
+    FileOffset:      '3255:9'
+    FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp
+  - DiagnosticName:  clang-diagnostic-warning
+    Message:         '[xlx-df-check-11] Since the only kind of statements allowed in a canonical dataflow region are variable declarations and function calls, the compiler may not be able to correctly handle the region'
+    FileOffset:      '3255:9'
+    FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp
+  - DiagnosticName:  clang-diagnostic-warning
+    Message:         '[xlx-df-check-11] Since the only kind of statements allowed in a canonical dataflow region are variable declarations and function calls, the compiler may not be able to correctly handle the region'
+    FileOffset:      '6224:9'
+    FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp
+  - DiagnosticName:  clang-diagnostic-warning
+    Message:         '[xlx-df-check-11] Since the only kind of statements allowed in a canonical dataflow region are variable declarations and function calls, the compiler may not be able to correctly handle the region'
+    FileOffset:      '6224:9'
+    FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp
+  - DiagnosticName:  clang-diagnostic-warning
+    Message:         '[xlx-df-check-11] Since the only kind of statements allowed in a canonical dataflow region are variable declarations and function calls, the compiler may not be able to correctly handle the region'
+    FileOffset:      '9193:9'
+    FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp
+  - DiagnosticName:  clang-diagnostic-warning
+    Message:         '[xlx-df-check-11] Since the only kind of statements allowed in a canonical dataflow region are variable declarations and function calls, the compiler may not be able to correctly handle the region'
+    FileOffset:      '9193:9'
+    FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp
+  - DiagnosticName:  clang-diagnostic-warning
+    Message:         '[xlx-df-check-11] Since the only kind of statements allowed in a canonical dataflow region are variable declarations and function calls, the compiler may not be able to correctly handle the region'
+    FileOffset:      '12233:9'
+    FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp
+  - DiagnosticName:  clang-diagnostic-warning
+    Message:         '[xlx-df-check-11] Since the only kind of statements allowed in a canonical dataflow region are variable declarations and function calls, the compiler may not be able to correctly handle the region'
+    FileOffset:      '12233:9'
+    FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp
+  - DiagnosticName:  clang-diagnostic-warning
+    Message:         '[xlx-df-check-11] Since the only kind of statements allowed in a canonical dataflow region are variable declarations and function calls, the compiler may not be able to correctly handle the region'
+    FileOffset:      '15283:9'
+    FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp
+  - DiagnosticName:  clang-diagnostic-warning
+    Message:         '[xlx-df-check-11] Since the only kind of statements allowed in a canonical dataflow region are variable declarations and function calls, the compiler may not be able to correctly handle the region'
+    FileOffset:      '15283:9'
+    FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp
+  - DiagnosticName:  clang-diagnostic-warning
+    Message:         '[xlx-df-check-11] Since the only kind of statements allowed in a canonical dataflow region are variable declarations and function calls, the compiler may not be able to correctly handle the region'
+    FileOffset:      '18312:9'
+    FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp
+  - DiagnosticName:  clang-diagnostic-warning
+    Message:         '[xlx-df-check-11] Since the only kind of statements allowed in a canonical dataflow region are variable declarations and function calls, the compiler may not be able to correctly handle the region'
+    FileOffset:      '18312:9'
+    FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp
+  - DiagnosticName:  clang-diagnostic-warning
+    Message:         '[xlx-df-check-11] Since the only kind of statements allowed in a canonical dataflow region are variable declarations and function calls, the compiler may not be able to correctly handle the region'
+    FileOffset:      '21330:9'
+    FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp
+  - DiagnosticName:  clang-diagnostic-warning
+    Message:         '[xlx-df-check-11] Since the only kind of statements allowed in a canonical dataflow region are variable declarations and function calls, the compiler may not be able to correctly handle the region'
+    FileOffset:      '21330:9'
+    FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp
+  - DiagnosticName:  clang-diagnostic-warning
+    Message:         '[xlx-df-check-11] Since the only kind of statements allowed in a canonical dataflow region are variable declarations and function calls, the compiler may not be able to correctly handle the region'
+    FileOffset:      '24334:9'
+    FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp
+  - DiagnosticName:  clang-diagnostic-warning
+    Message:         '[xlx-df-check-11] Since the only kind of statements allowed in a canonical dataflow region are variable declarations and function calls, the compiler may not be able to correctly handle the region'
+    FileOffset:      '24334:9'
+    FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp
+...

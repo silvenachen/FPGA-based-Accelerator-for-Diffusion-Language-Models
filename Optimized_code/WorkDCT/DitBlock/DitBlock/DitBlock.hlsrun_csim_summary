@@ -1,0 +1,157 @@
+<ENTRY>
+{
+ "thisFile": "/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/DitBlock.hlsrun_csim_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Thu Feb 13 21:45:58 2025",
+ "timestampMillis": "1739454358542",
+ "buildStep": {
+  "cmdId": "2ddc289e-8f18-4e98-9704-ca0c900540c5",
+  "name": "vitis-run",
+  "logFile": "/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/logs/DitBlock.steps.log",
+  "commandLine": "/tools/Xilinx/Vitis/2023.2/bin/unwrapped/lnx64.o/vitis-run  --mode hls --csim --config /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/hls_config.cfg --work_dir DitBlock ",
+  "args": [
+   "--mode",
+   "hls",
+   "--csim",
+   "--config",
+   "/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/hls_config.cfg",
+   "--work_dir",
+   "DitBlock"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Thu Feb 13 21:45:58 2025",
+ "timestampMillis": "1739454358542",
+ "status": {
+  "cmdId": "2ddc289e-8f18-4e98-9704-ca0c900540c5",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "Thu Feb 13 21:46:00 2025",
+ "timestampMillis": "1739454360406",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_RUN",
+  "target": "TT_HLS_C_SIM",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "allo_DDitBlock",
+     "file": "",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp",
+     "/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.h"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "2023.2"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Thu Feb 13 21:46:00 2025",
+ "timestampMillis": "1739454360407",
+ "buildStep": {
+  "cmdId": "7ebb3eac-69ab-474f-bed8-6f13ce18d59d",
+  "name": "csim_design",
+  "logFile": "/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/hls.log",
+  "commandLine": "csim_design",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Thu Feb 13 21:46:00 2025",
+ "timestampMillis": "1739454360408",
+ "status": {
+  "cmdId": "7ebb3eac-69ab-474f-bed8-6f13ce18d59d",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Thu Feb 13 22:16:56 2025",
+ "timestampMillis": "1739456216199",
+ "status": {
+  "cmdId": "7ebb3eac-69ab-474f-bed8-6f13ce18d59d",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Thu Feb 13 22:16:56 2025",
+ "timestampMillis": "1739456216274",
+ "status": {
+  "cmdId": "2ddc289e-8f18-4e98-9704-ca0c900540c5",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Thu Feb 13 22:16:56 2025",
+ "timestampMillis": "1739456216274",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Thu Feb 13 22:16:56 2025",
+ "timestampMillis": "1739456216275",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>

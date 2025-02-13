@@ -1,0 +1,50 @@
+INFO: [v++ 60-1548] Creating build summary session with primary output /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/DitBlock.hlscompile_summary, at Wed Feb  5 22:13:59 2025
+INFO: [v++ 82-31] Launching vitis_hls: vitis_hls -nolog -run csynth -work_dir /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock -config /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/hls_config.cfg -cmdlineconfig /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/config.cmdline
+
+****** Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2023.2 (64-bit)
+  **** SW Build 4023990 on Oct 11 2023
+  **** IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+  **** SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source /tools/Xilinx/Vitis_HLS/2023.2/scripts/vitis_hls/hls.tcl -notrace
+INFO: [HLS 200-10] Running '/tools/Xilinx/Vitis_HLS/2023.2/bin/unwrapped/lnx64.o/vitis_hls'
+INFO: [HLS 200-10] For user 'silvenchen' on host 'silvenchen-ASUS-TUF-Gaming-F15-FX507ZM-FX507ZM' (Linux_x86_64 version 5.19.0-32-generic) on Wed Feb 05 22:14:00 CST 2025
+INFO: [HLS 200-10] On os Ubuntu 22.04.2 LTS
+INFO: [HLS 200-10] In directory '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock'
+INFO: [HLS 200-1909] Reading HLS ini file /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/hls_config.cfg
+INFO: [HLS 200-1909] Reading HLS ini file /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/config.cmdline
+INFO: [HLS 200-2005] Using work_dir /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock 
+INFO: [HLS 200-1510] Running: open_project /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock -diskless 
+INFO: [HLS 200-1510] Running: open_solution hls 
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2023.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1510] Running: apply_ini /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/hls_config.cfg 
+INFO: [HLS 200-1909] Reading HLS ini file /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/hls_config.cfg
+INFO: [HLS 200-1465] Applying ini 'syn.file=kernel.cpp' at /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/hls_config.cfg(8)
+INFO: [HLS 200-10] Adding design file '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=kernel.h' at /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/hls_config.cfg(9)
+INFO: [HLS 200-10] Adding design file '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.h' to the project
+INFO: [HLS 200-1465] Applying ini 'tb.file=tb_dit.cpp' at /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/hls_config.cfg(10)
+INFO: [HLS 200-10] Adding test bench file '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/tb_dit.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.top=allo_DDitBlock' at /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/hls_config.cfg(11)
+INFO: [HLS 200-1465] Applying ini 'flow_target=vivado' at /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/hls_config.cfg(4)
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2023.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying ini 'part=xcu280-fsvh2892-2L-e' at /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/hls_config.cfg(1)
+INFO: [HLS 200-1611] Setting target device to 'xcu280-fsvh2892-2L-e'
+INFO: [HLS 200-1465] Applying ini 'clock=100MHz' at /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/hls_config.cfg(7)
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1465] Applying ini 'package.output.format=ip_catalog' at /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/hls_config.cfg(5)
+INFO: [HLS 200-1510] Running: apply_ini /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/config.cmdline 
+INFO: [HLS 200-1909] Reading HLS ini file /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/config.cmdline
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.04 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 634.254 MB.
+INFO: [HLS 200-10] Analyzing design file '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp' ... 
+ERROR: [HLS 207-1276] expected parameter declarator (/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:9601:1)
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 1.71 seconds. CPU system time: 0.15 seconds. Elapsed time: 1.93 seconds; current allocated memory: 1.496 MB.
+INFO: [HLS 200-1510] Running: close_project 
+ERROR:  
+INFO: [HLS 200-112] Total CPU user time: 2.85 seconds. Total CPU system time: 0.43 seconds. Total elapsed time: 3.26 seconds; peak allocated memory: 635.766 MB.
+INFO: [Common 17-206] Exiting vitis_hls at Wed Feb  5 22:14:03 2025...

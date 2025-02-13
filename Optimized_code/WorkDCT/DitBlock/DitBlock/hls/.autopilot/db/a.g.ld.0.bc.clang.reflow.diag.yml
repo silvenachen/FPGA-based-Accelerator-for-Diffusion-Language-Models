@@ -1,0 +1,4216 @@
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp, 
+                   Line: 427, Column: 8 }
+Function:        systolic_modulate
+Args:            
+  - String:          'Loop '''
+  - LoopName:        l_ai
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp, 
+                   Line: 446, Column: 8 }
+Function:        systolic_modulate
+Args:            
+  - String:          'Loop '''
+  - LoopName:        l_si
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp, 
+                   Line: 414, Column: 0 }
+Function:        systolic_modulate
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        l_ai
+  - String:          ''' ('
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:427:8'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          systolic_modulate
+  - String:          ''' completely with a factor of '
+  - Factor:          '1'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp, 
+                   Line: 414, Column: 0 }
+Function:        systolic_modulate
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        l_si
+  - String:          ''' ('
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:446:8'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          systolic_modulate
+  - String:          ''' completely with a factor of '
+  - Factor:          '1'
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp, 
+                   Line: 513, Column: 0 }
+Function:        adaLN_modulate
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          systolic_modulate
+    DebugLoc:        { File: /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp, 
+                       Line: 414, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          adaLN_modulate
+    DebugLoc:        { File: /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp, 
+                       Line: 513, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp, 
+                   Line: 15692, Column: 0 }
+Function:        scaled_dot_product_attention
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          sft_head
+    DebugLoc:        { File: /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp, 
+                       Line: 12686, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          scaled_dot_product_attention
+    DebugLoc:        { File: /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp, 
+                       Line: 15692, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: /wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_isinf.h, 
+                   Line: 16, Column: 0 }
+Function:        _Z13generic_isinfIdEiT_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'fp_struct<double>::fp_struct(double)'
+    DebugLoc:        { File: /wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/src/hls/utils/x_hls_utils.h, 
+                       Line: 456, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'int generic_isinf<double>(double)'
+    DebugLoc:        { File: /wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_isinf.h, 
+                       Line: 16, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: /wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_isnan.h, 
+                   Line: 16, Column: 0 }
+Function:        _Z13generic_isnanIdEiT_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'fp_struct<double>::fp_struct(double)'
+    DebugLoc:        { File: /wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/src/hls/utils/x_hls_utils.h, 
+                       Line: 456, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'int generic_isnan<double>(double)'
+    DebugLoc:        { File: /wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_isnan.h, 
+                       Line: 16, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: /wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/src/hls/utils/x_hls_utils.h, 
+                   Line: 494, Column: 0 }
+Function:        _ZNK9fp_structIdE9to_doubleEv.932.941.951.982
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'fp_struct<double>::data() const (.935.944.954.985)'
+    DebugLoc:        { File: /wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/src/hls/utils/x_hls_utils.h, 
+                       Line: 475, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'fp_struct<double>::to_double() const (.932.941.951.982)'
+    DebugLoc:        { File: /wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/src/hls/utils/x_hls_utils.h, 
+                       Line: 494, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: /wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/src/hls/utils/x_hls_utils.h, 
+                   Line: 509, Column: 0 }
+Function:        _ZNK9fp_structIdE7to_ieeeEv
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'fp_struct<double>::to_double() const (.932.941.951.982)'
+    DebugLoc:        { File: /wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/src/hls/utils/x_hls_utils.h, 
+                       Line: 494, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'fp_struct<double>::to_ieee() const'
+    DebugLoc:        { File: /wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/src/hls/utils/x_hls_utils.h, 
+                       Line: 509, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: /wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h, 
+                   Line: 186, Column: 0 }
+Function:        _ZN10pow_reduce10pow_traitsIdE19log_range_reductionILi71EEE9ap_ufixedILi72ELin37EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_IXT_ELin4ELS4_5ELS5_3ELi0EER8ap_fixedILi121ELi12ELS4_5ELS5_3ELi0EE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'void pow_reduce::log_range_reduce<ap_fixed<121, 12, (ap_q_mode)5, (ap_o_mode)3, 0>, 4, 4, 71, 73>(ap_ufixed<71, -(4), (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<121, 12, (ap_q_mode)5, (ap_o_mode)3, 0>&, ap_ufixed<73, -(((4) + (4)) - (1)), (ap_q_mode)5, (ap_o_mode)3, 0>&)'
+    DebugLoc:        { File: /wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h, 
+                       Line: 31, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'ap_ufixed<72, -37, (ap_q_mode)5, (ap_o_mode)3, 0> pow_reduce::pow_traits<double>::log_range_reduction<71>(ap_ufixed<71, -4, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<121, 12, (ap_q_mode)5, (ap_o_mode)3, 0>&)'
+    DebugLoc:        { File: /wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h, 
+                       Line: 186, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: /wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h, 
+                   Line: 186, Column: 0 }
+Function:        _ZN10pow_reduce10pow_traitsIdE19log_range_reductionILi71EEE9ap_ufixedILi72ELin37EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_IXT_ELin4ELS4_5ELS5_3ELi0EER8ap_fixedILi121ELi12ELS4_5ELS5_3ELi0EE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'void pow_reduce::log_range_reduce<ap_fixed<121, 12, (ap_q_mode)5, (ap_o_mode)3, 0>, 7, 6, 73, 83>(ap_ufixed<73, -(7), (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<121, 12, (ap_q_mode)5, (ap_o_mode)3, 0>&, ap_ufixed<83, -(((7) + (6)) - (1)), (ap_q_mode)5, (ap_o_mode)3, 0>&)'
+    DebugLoc:        { File: /wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h, 
+                       Line: 31, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'ap_ufixed<72, -37, (ap_q_mode)5, (ap_o_mode)3, 0> pow_reduce::pow_traits<double>::log_range_reduction<71>(ap_ufixed<71, -4, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<121, 12, (ap_q_mode)5, (ap_o_mode)3, 0>&)'
+    DebugLoc:        { File: /wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h, 
+                       Line: 186, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: /wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h, 
+                   Line: 186, Column: 0 }
+Function:        _ZN10pow_reduce10pow_traitsIdE19log_range_reductionILi71EEE9ap_ufixedILi72ELin37EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_IXT_ELin4ELS4_5ELS5_3ELi0EER8ap_fixedILi121ELi12ELS4_5ELS5_3ELi0EE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'void pow_reduce::log_range_reduce<ap_fixed<121, 12, (ap_q_mode)5, (ap_o_mode)3, 0>, 12, 6, 83, 92>(ap_ufixed<83, -(12), (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<121, 12, (ap_q_mode)5, (ap_o_mode)3, 0>&, ap_ufixed<92, -(((12) + (6)) - (1)), (ap_q_mode)5, (ap_o_mode)3, 0>&)'
+    DebugLoc:        { File: /wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h, 
+                       Line: 31, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'ap_ufixed<72, -37, (ap_q_mode)5, (ap_o_mode)3, 0> pow_reduce::pow_traits<double>::log_range_reduction<71>(ap_ufixed<71, -4, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<121, 12, (ap_q_mode)5, (ap_o_mode)3, 0>&)'
+    DebugLoc:        { File: /wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h, 
+                       Line: 186, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: /wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h, 
+                   Line: 186, Column: 0 }
+Function:        _ZN10pow_reduce10pow_traitsIdE19log_range_reductionILi71EEE9ap_ufixedILi72ELin37EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_IXT_ELin4ELS4_5ELS5_3ELi0EER8ap_fixedILi121ELi12ELS4_5ELS5_3ELi0EE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'void pow_reduce::log_range_reduce<ap_fixed<121, 12, (ap_q_mode)5, (ap_o_mode)3, 0>, 17, 6, 92, 87>(ap_ufixed<92, -(17), (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<121, 12, (ap_q_mode)5, (ap_o_mode)3, 0>&, ap_ufixed<87, -(((17) + (6)) - (1)), (ap_q_mode)5, (ap_o_mode)3, 0>&)'
+    DebugLoc:        { File: /wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h, 
+                       Line: 31, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'ap_ufixed<72, -37, (ap_q_mode)5, (ap_o_mode)3, 0> pow_reduce::pow_traits<double>::log_range_reduction<71>(ap_ufixed<71, -4, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<121, 12, (ap_q_mode)5, (ap_o_mode)3, 0>&)'
+    DebugLoc:        { File: /wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h, 
+                       Line: 186, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: /wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h, 
+                   Line: 186, Column: 0 }
+Function:        _ZN10pow_reduce10pow_traitsIdE19log_range_reductionILi71EEE9ap_ufixedILi72ELin37EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_IXT_ELin4ELS4_5ELS5_3ELi0EER8ap_fixedILi121ELi12ELS4_5ELS5_3ELi0EE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'void pow_reduce::log_range_reduce<ap_fixed<121, 12, (ap_q_mode)5, (ap_o_mode)3, 0>, 22, 6, 87, 82>(ap_ufixed<87, -(22), (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<121, 12, (ap_q_mode)5, (ap_o_mode)3, 0>&, ap_ufixed<82, -(((22) + (6)) - (1)), (ap_q_mode)5, (ap_o_mode)3, 0>&)'
+    DebugLoc:        { File: /wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h, 
+                       Line: 31, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'ap_ufixed<72, -37, (ap_q_mode)5, (ap_o_mode)3, 0> pow_reduce::pow_traits<double>::log_range_reduction<71>(ap_ufixed<71, -4, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<121, 12, (ap_q_mode)5, (ap_o_mode)3, 0>&)'
+    DebugLoc:        { File: /wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h, 
+                       Line: 186, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: /wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h, 
+                   Line: 186, Column: 0 }
+Function:        _ZN10pow_reduce10pow_traitsIdE19log_range_reductionILi71EEE9ap_ufixedILi72ELin37EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_IXT_ELin4ELS4_5ELS5_3ELi0EER8ap_fixedILi121ELi12ELS4_5ELS5_3ELi0EE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'void pow_reduce::log_range_reduce<ap_fixed<121, 12, (ap_q_mode)5, (ap_o_mode)3, 0>, 27, 6, 82, 77>(ap_ufixed<82, -(27), (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<121, 12, (ap_q_mode)5, (ap_o_mode)3, 0>&, ap_ufixed<77, -(((27) + (6)) - (1)), (ap_q_mode)5, (ap_o_mode)3, 0>&)'
+    DebugLoc:        { File: /wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h, 
+                       Line: 31, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'ap_ufixed<72, -37, (ap_q_mode)5, (ap_o_mode)3, 0> pow_reduce::pow_traits<double>::log_range_reduction<71>(ap_ufixed<71, -4, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<121, 12, (ap_q_mode)5, (ap_o_mode)3, 0>&)'
+    DebugLoc:        { File: /wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h, 
+                       Line: 186, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: /wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h, 
+                   Line: 186, Column: 0 }
+Function:        _ZN10pow_reduce10pow_traitsIdE19log_range_reductionILi71EEE9ap_ufixedILi72ELin37EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_IXT_ELin4ELS4_5ELS5_3ELi0EER8ap_fixedILi121ELi12ELS4_5ELS5_3ELi0EE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'void pow_reduce::log_range_reduce<ap_fixed<121, 12, (ap_q_mode)5, (ap_o_mode)3, 0>, 32, 6, 77, 72>(ap_ufixed<77, -(32), (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<121, 12, (ap_q_mode)5, (ap_o_mode)3, 0>&, ap_ufixed<72, -(((32) + (6)) - (1)), (ap_q_mode)5, (ap_o_mode)3, 0>&)'
+    DebugLoc:        { File: /wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h, 
+                       Line: 31, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'ap_ufixed<72, -37, (ap_q_mode)5, (ap_o_mode)3, 0> pow_reduce::pow_traits<double>::log_range_reduction<71>(ap_ufixed<71, -4, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<121, 12, (ap_q_mode)5, (ap_o_mode)3, 0>&)'
+    DebugLoc:        { File: /wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h, 
+                       Line: 186, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: /wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h, 
+                   Line: 292, Column: 0 }
+Function:        _ZN10pow_reduce11pow_genericIdEET_S1_S1_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'fp_struct<double>::fp_struct(double)'
+    DebugLoc:        { File: /wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/src/hls/utils/x_hls_utils.h, 
+                       Line: 456, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'double pow_reduce::pow_generic<double>(double, double)'
+    DebugLoc:        { File: /wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h, 
+                       Line: 292, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: /wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h, 
+                   Line: 292, Column: 0 }
+Function:        _ZN10pow_reduce11pow_genericIdEET_S1_S1_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'fp_struct<double>::expv() const'
+    DebugLoc:        { File: /wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/src/hls/utils/x_hls_utils.h, 
+                       Line: 485, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'double pow_reduce::pow_generic<double>(double, double)'
+    DebugLoc:        { File: /wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h, 
+                       Line: 292, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: /wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h, 
+                   Line: 292, Column: 0 }
+Function:        _ZN10pow_reduce11pow_genericIdEET_S1_S1_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'int generic_isinf<double>(double)'
+    DebugLoc:        { File: /wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_isinf.h, 
+                       Line: 16, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'double pow_reduce::pow_generic<double>(double, double)'
+    DebugLoc:        { File: /wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h, 
+                       Line: 292, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: /wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h, 
+                   Line: 292, Column: 0 }
+Function:        _ZN10pow_reduce11pow_genericIdEET_S1_S1_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'int generic_isnan<double>(double)'
+    DebugLoc:        { File: /wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_isnan.h, 
+                       Line: 16, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'double pow_reduce::pow_generic<double>(double, double)'
+    DebugLoc:        { File: /wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h, 
+                       Line: 292, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: /wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h, 
+                   Line: 292, Column: 0 }
+Function:        _ZN10pow_reduce11pow_genericIdEET_S1_S1_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'pow_reduce::pow_traits<double>::exp_Z1P_m_1(ap_ufixed<51, -8, (ap_q_mode)5, (ap_o_mode)3, 0>)'
+    DebugLoc:        { File: /wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h, 
+                       Line: 224, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'double pow_reduce::pow_generic<double>(double, double)'
+    DebugLoc:        { File: /wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h, 
+                       Line: 292, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: '/tools/Xilinx/Vitis_HLS/2023.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/cmath', 
+                   Line: 416, Column: 0 }
+Function:        _ZSt3powIfdEN9__gnu_cxx11__promote_2IT_T0_NS0_9__promoteIS2_Xsr3std12__is_integerIS2_EE7__valueEE6__typeENS4_IS3_Xsr3std12__is_integerIS3_EE7__valueEE6__typeEE6__typeES2_S3_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          pow
+    DebugLoc:        { File: /wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/src/c/powdouble.cpp, 
+                       Line: 6, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          '__gnu_cxx::__promote_2<float, double, __gnu_cxx::__promote<float, std::__is_integer<float>::__value>::__type, __gnu_cxx::__promote<double, std::__is_integer<double>::__value>::__type>::__type std::pow<float, double>(float, double)'
+    DebugLoc:        { File: '/tools/Xilinx/Vitis_HLS/2023.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/cmath', 
+                       Line: 416, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: /wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/src/hls/utils/x_hls_utils.h, 
+                   Line: 322, Column: 0 }
+Function:        _ZNK9fp_structIfE8to_floatEv.1005.1015.1024.1035
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'fp_struct<float>::data() const (.1008.1018.1027.1038)'
+    DebugLoc:        { File: /wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/src/hls/utils/x_hls_utils.h, 
+                       Line: 309, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'fp_struct<float>::to_float() const (.1005.1015.1024.1035)'
+    DebugLoc:        { File: /wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/src/hls/utils/x_hls_utils.h, 
+                       Line: 322, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: /wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/src/hls/utils/x_hls_utils.h, 
+                   Line: 346, Column: 0 }
+Function:        _ZNK9fp_structIfE7to_ieeeEv
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'fp_struct<float>::to_float() const (.1005.1015.1024.1035)'
+    DebugLoc:        { File: /wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/src/hls/utils/x_hls_utils.h, 
+                       Line: 322, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'fp_struct<float>::to_ieee() const'
+    DebugLoc:        { File: /wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/src/hls/utils/x_hls_utils.h, 
+                       Line: 346, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: /wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_copysign.h, 
+                   Line: 10, Column: 0 }
+Function:        _Z16generic_copysignIfET_S0_S0_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'fp_struct<float>::fp_struct(float)'
+    DebugLoc:        { File: /wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/src/hls/utils/x_hls_utils.h, 
+                       Line: 283, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'float generic_copysign<float>(float, float)'
+    DebugLoc:        { File: /wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_copysign.h, 
+                       Line: 10, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: /wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_copysign.h, 
+                   Line: 10, Column: 0 }
+Function:        _Z16generic_copysignIfET_S0_S0_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'fp_struct<float>::to_ieee() const'
+    DebugLoc:        { File: /wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/src/hls/utils/x_hls_utils.h, 
+                       Line: 346, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'float generic_copysign<float>(float, float)'
+    DebugLoc:        { File: /wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_copysign.h, 
+                       Line: 10, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: /wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_fabs.h, 
+                   Line: 12, Column: 0 }
+Function:        _Z12generic_fabsIfET_S0_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'float generic_copysign<float>(float, float)'
+    DebugLoc:        { File: /wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_copysign.h, 
+                       Line: 10, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'float generic_fabs<float>(float)'
+    DebugLoc:        { File: /wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_fabs.h, 
+                       Line: 12, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: /wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_nan.h, 
+                   Line: 10, Column: 0 }
+Function:        _Z11generic_nanIfET_PKc
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'fp_struct<float>::to_ieee() const'
+    DebugLoc:        { File: /wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/src/hls/utils/x_hls_utils.h, 
+                       Line: 346, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'float generic_nan<float>(char const*)'
+    DebugLoc:        { File: /wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_nan.h, 
+                       Line: 10, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: /wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_exp_.h, 
+                   Line: 157, Column: 0 }
+Function:        _ZN11exp_reduce_11exp_genericIdEET_S1_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'fp_struct<double>::fp_struct(double)'
+    DebugLoc:        { File: /wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/src/hls/utils/x_hls_utils.h, 
+                       Line: 456, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'double exp_reduce_::exp_generic<double>(double)'
+    DebugLoc:        { File: /wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_exp_.h, 
+                       Line: 157, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: /wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_exp_.h, 
+                   Line: 157, Column: 0 }
+Function:        _ZN11exp_reduce_11exp_genericIdEET_S1_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'int generic_isnan<double>(double)'
+    DebugLoc:        { File: /wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_isnan.h, 
+                       Line: 16, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'double exp_reduce_::exp_generic<double>(double)'
+    DebugLoc:        { File: /wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_exp_.h, 
+                       Line: 157, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: /wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_exp_.h, 
+                   Line: 157, Column: 0 }
+Function:        _ZN11exp_reduce_11exp_genericIdEET_S1_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'int generic_isinf<double>(double)'
+    DebugLoc:        { File: /wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_isinf.h, 
+                       Line: 16, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'double exp_reduce_::exp_generic<double>(double)'
+    DebugLoc:        { File: /wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_exp_.h, 
+                       Line: 157, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: /wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_exp_.h, 
+                   Line: 157, Column: 0 }
+Function:        _ZN11exp_reduce_11exp_genericIdEET_S1_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'fp_struct<double>::to_ieee() const'
+    DebugLoc:        { File: /wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/src/hls/utils/x_hls_utils.h, 
+                       Line: 509, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'double exp_reduce_::exp_generic<double>(double)'
+    DebugLoc:        { File: /wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_exp_.h, 
+                       Line: 157, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: /wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_exp_.h, 
+                   Line: 157, Column: 0 }
+Function:        _ZN11exp_reduce_11exp_genericIdEET_S1_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'fp_struct<double>::expv() const'
+    DebugLoc:        { File: /wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/src/hls/utils/x_hls_utils.h, 
+                       Line: 485, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'double exp_reduce_::exp_generic<double>(double)'
+    DebugLoc:        { File: /wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_exp_.h, 
+                       Line: 157, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: /wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_exp_.h, 
+                   Line: 157, Column: 0 }
+Function:        _ZN11exp_reduce_11exp_genericIdEET_S1_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'exp_reduce_::exp_traits<double>::exp_Z1P_m_1(ap_ufixed<51, -8, (ap_q_mode)5, (ap_o_mode)3, 0>)'
+    DebugLoc:        { File: /wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_exp_.h, 
+                       Line: 90, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'double exp_reduce_::exp_generic<double>(double)'
+    DebugLoc:        { File: /wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_exp_.h, 
+                       Line: 157, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: /wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/src/common/hls_exp_float.cpp, 
+                   Line: 7, Column: 0 }
+Function:        _ZN11exp_reduce_5expm1Ef
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'fp_struct<float>::fp_struct(float)'
+    DebugLoc:        { File: /wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/src/hls/utils/x_hls_utils.h, 
+                       Line: 283, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'exp_reduce_::expm1(float)'
+    DebugLoc:        { File: /wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/src/common/hls_exp_float.cpp, 
+                       Line: 7, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: /wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h, 
+                   Line: 28, Column: 0 }
+Function:        _ZN12explog_based12generic_tanhIfEET_S1_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'fp_struct<float>::fp_struct(float)'
+    DebugLoc:        { File: /wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/src/hls/utils/x_hls_utils.h, 
+                       Line: 283, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'float explog_based::generic_tanh<float>(float)'
+    DebugLoc:        { File: /wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h, 
+                       Line: 28, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: /wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h, 
+                   Line: 28, Column: 0 }
+Function:        _ZN12explog_based12generic_tanhIfEET_S1_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'float generic_fabs<float>(float)'
+    DebugLoc:        { File: /wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_fabs.h, 
+                       Line: 12, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'float explog_based::generic_tanh<float>(float)'
+    DebugLoc:        { File: /wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h, 
+                       Line: 28, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: /wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h, 
+                   Line: 28, Column: 0 }
+Function:        _ZN12explog_based12generic_tanhIfEET_S1_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'float generic_nan<float>(char const*)'
+    DebugLoc:        { File: /wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_nan.h, 
+                       Line: 10, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'float explog_based::generic_tanh<float>(float)'
+    DebugLoc:        { File: /wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h, 
+                       Line: 28, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: /wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h, 
+                   Line: 28, Column: 0 }
+Function:        _ZN12explog_based12generic_tanhIfEET_S1_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'exp_reduce_::expm1(float)'
+    DebugLoc:        { File: /wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/src/common/hls_exp_float.cpp, 
+                       Line: 7, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'float explog_based::generic_tanh<float>(float)'
+    DebugLoc:        { File: /wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_tanh.h, 
+                       Line: 28, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: '/tools/Xilinx/Vitis_HLS/2023.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/cmath', 
+                   Line: 502, Column: 0 }
+Function:        _ZSt4tanhf
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          tanhf
+    DebugLoc:        { File: /wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/src/c/tanhfloat.cpp, 
+                       Line: 7, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'std::tanh(float)'
+    DebugLoc:        { File: '/tools/Xilinx/Vitis_HLS/2023.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/cmath', 
+                       Line: 502, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp, 
+                   Line: 25265, Column: 0 }
+Function:        allo_DDitBlock
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          modulate_fused
+    DebugLoc:        { File: /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp, 
+                       Line: 676, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          allo_DDitBlock
+    DebugLoc:        { File: /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp, 
+                       Line: 25265, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp, 
+                   Line: 25265, Column: 0 }
+Function:        allo_DDitBlock
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          bias_add_scale
+    DebugLoc:        { File: /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp, 
+                       Line: 18746, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          allo_DDitBlock
+    DebugLoc:        { File: /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp, 
+                       Line: 25265, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp, 
+                   Line: 25265, Column: 0 }
+Function:        allo_DDitBlock
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          bias_add
+    DebugLoc:        { File: /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp, 
+                       Line: 21738, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          allo_DDitBlock
+    DebugLoc:        { File: /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp, 
+                       Line: 25265, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp, 
+                   Line: 25265, Column: 0 }
+Function:        allo_DDitBlock
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          GeLU
+    DebugLoc:        { File: /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp, 
+                       Line: 21752, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          allo_DDitBlock
+    DebugLoc:        { File: /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp, 
+                       Line: 25265, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp, 
+                   Line: 342, Column: 23 }
+Function:        systolic_tile_modulate
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          A_fifo
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '2'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp, 
+                   Line: 344, Column: 23 }
+Function:        systolic_tile_modulate
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          B_fifo
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '2'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp, 
+                   Line: 416, Column: 9 }
+Function:        adaLN_modulate
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          local_B.i
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '2'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp, 
+                   Line: 419, Column: 8 }
+Function:        adaLN_modulate
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          local_C.i
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '2'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp, 
+                   Line: 3263, Column: 23 }
+Function:        systolic_tile_Q
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          A_fifo1
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '2'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp, 
+                   Line: 3265, Column: 23 }
+Function:        systolic_tile_Q
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          B_fifo1
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '2'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp, 
+                   Line: 3616, Column: 9 }
+Function:        systolic_Q
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          local_A1
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp, 
+                   Line: 3619, Column: 8 }
+Function:        systolic_Q
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          local_B1
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '2'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp, 
+                   Line: 3622, Column: 8 }
+Function:        systolic_Q
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          local_C1
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '2'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp, 
+                   Line: 12241, Column: 23 }
+Function:        systolic_tile_QKT
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          A_fifo4
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '2'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp, 
+                   Line: 12243, Column: 23 }
+Function:        systolic_tile_QKT
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          B_fifo4
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '2'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp, 
+                   Line: 12594, Column: 9 }
+Function:        systolic_QKT
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          local_A4
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp, 
+                   Line: 12597, Column: 8 }
+Function:        systolic_QKT
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          local_B4
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '2'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp, 
+                   Line: 12600, Column: 8 }
+Function:        systolic_QKT
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          local_C4
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '2'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp, 
+                   Line: 15291, Column: 23 }
+Function:        systolic_tile_YV
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          A_fifo5
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '2'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp, 
+                   Line: 15293, Column: 23 }
+Function:        systolic_tile_YV
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          B_fifo5
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '2'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp, 
+                   Line: 15644, Column: 9 }
+Function:        systolic_YV
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          local_A5
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp, 
+                   Line: 15647, Column: 8 }
+Function:        systolic_YV
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          local_B5
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '2'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp, 
+                   Line: 15650, Column: 8 }
+Function:        systolic_YV
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          local_C5
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '2'
+  - String:          .
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_S_k_0_k337
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:15256:17'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_S_k_0_k336
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:15216:17'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_S_k_0_k335
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:15176:17'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_S_k_0_k334
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:15136:17'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_S_k_0_k333
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:15096:17'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_S_k_0_k332
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:15056:17'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_S_k_0_k331
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:15016:17'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_S_k_0_k330
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:14976:17'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_S_k_0_k329
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:14936:17'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_S_k_0_k328
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:14896:17'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_S_k_0_k327
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:14856:17'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_S_k_0_k326
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:14816:17'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_S_k_0_k325
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:14776:17'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_S_k_0_k324
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:14736:17'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_S_k_0_k323
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:14696:17'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_S_k_0_k322
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:14656:17'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_S_k_0_k321
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:14616:17'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_S_k_0_k320
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:14576:17'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_S_k_0_k319
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:14536:17'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_S_k_0_k318
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:14496:17'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_S_k_0_k317
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:14456:17'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_S_k_0_k316
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:14416:17'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_S_k_0_k315
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:14376:17'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_S_k_0_k314
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:14336:17'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_S_k_0_k313
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:14296:17'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_S_k_0_k312
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:14256:17'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_S_k_0_k311
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:14216:17'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_S_k_0_k310
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:14176:17'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_S_k_0_k309
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:14136:17'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_S_k_0_k308
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:14096:17'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_S_k_0_k307
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:14056:17'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_S_k_0_k306
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:14016:17'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_S_k_0_k305
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:13976:17'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_S_k_0_k304
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:13936:17'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_S_k_0_k303
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:13896:17'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_S_k_0_k302
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:13856:17'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_S_k_0_k301
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:13816:17'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_S_k_0_k300
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:13776:17'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_S_k_0_k299
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:13736:17'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_S_k_0_k298
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:13696:17'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_S_k_0_k297
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:13656:17'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_S_k_0_k296
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:13616:17'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_S_k_0_k295
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:13576:17'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_S_k_0_k294
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:13536:17'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_S_k_0_k293
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:13496:17'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_S_k_0_k292
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:13456:17'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_S_k_0_k291
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:13416:17'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_S_k_0_k290
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:13376:17'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_S_k_0_k289
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:13336:17'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_S_k_0_k288
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:13296:17'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_S_k_0_k287
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:13256:17'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_S_k_0_k286
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:13216:17'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_S_k_0_k285
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:13176:17'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_S_k_0_k284
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:13136:17'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_S_k_0_k283
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:13096:17'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_S_k_0_k282
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:13056:17'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_S_k_0_k281
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:13016:17'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_S_k_0_k280
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:12976:17'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_S_k_0_k279
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:12936:17'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_S_k_0_k278
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:12896:17'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_S_k_0_k277
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:12856:17'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_S_k_0_k276
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:12816:17'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_S_k_0_k275
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:12776:17'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_S_k_0_k274
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:12736:17'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_data_load_k338
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:15297:21'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_data_drain_k339
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:15627:22'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_S_k_0_k271
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:12206:17'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_S_k_0_k270
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:12166:17'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_S_k_0_k269
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:12126:17'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_S_k_0_k268
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:12086:17'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_S_k_0_k267
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:12046:17'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_S_k_0_k266
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:12006:17'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_S_k_0_k265
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:11966:17'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_S_k_0_k264
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:11926:17'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_S_k_0_k263
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:11886:17'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_S_k_0_k262
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:11846:17'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_S_k_0_k261
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:11806:17'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_S_k_0_k260
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:11766:17'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_S_k_0_k259
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:11726:17'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_S_k_0_k258
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:11686:17'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_S_k_0_k257
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:11646:17'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_S_k_0_k256
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:11606:17'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_S_k_0_k255
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:11566:17'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_S_k_0_k254
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:11526:17'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_S_k_0_k253
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:11486:17'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_S_k_0_k252
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:11446:17'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_S_k_0_k251
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:11406:17'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_S_k_0_k250
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:11366:17'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_S_k_0_k249
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:11326:17'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_S_k_0_k248
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:11286:17'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_S_k_0_k247
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:11246:17'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_S_k_0_k246
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:11206:17'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_S_k_0_k245
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:11166:17'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_S_k_0_k244
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:11126:17'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_S_k_0_k243
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:11086:17'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_S_k_0_k242
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:11046:17'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_S_k_0_k241
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:11006:17'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_S_k_0_k240
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:10966:17'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_S_k_0_k239
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:10926:17'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_S_k_0_k238
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:10886:17'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_S_k_0_k237
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:10846:17'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_S_k_0_k236
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:10806:17'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_S_k_0_k235
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:10766:17'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_S_k_0_k234
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:10726:17'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_S_k_0_k233
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:10686:17'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_S_k_0_k232
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:10646:17'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_S_k_0_k231
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:10606:17'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_S_k_0_k230
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:10566:17'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_S_k_0_k229
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:10526:17'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_S_k_0_k228
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:10486:17'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_S_k_0_k227
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:10446:17'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_S_k_0_k226
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:10406:17'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_S_k_0_k225
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:10366:17'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_S_k_0_k224
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:10326:17'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_S_k_0_k223
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:10286:17'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_S_k_0_k222
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:10246:17'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_S_k_0_k221
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:10206:17'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_S_k_0_k220
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:10166:17'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_S_k_0_k219
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:10126:17'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_S_k_0_k218
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:10086:17'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_S_k_0_k217
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:10046:17'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_S_k_0_k216
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:10006:17'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_S_k_0_k215
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:9966:17'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_S_k_0_k214
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:9926:17'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_S_k_0_k213
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:9886:17'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_S_k_0_k212
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:9846:17'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_S_k_0_k211
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:9806:17'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_S_k_0_k210
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:9766:17'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_S_k_0_k209
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:9726:17'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_S_k_0_k208
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:9686:17'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_data_load_k272
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:12247:21'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_data_drain_k273
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:12577:22'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_j15
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:15739:14'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_j12
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:12711:12'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_j11
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:12704:12'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_j10
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:12696:12'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_12692_2
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:12692:23'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_12688_1
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:12688:23'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_j14
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:15729:14'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_15724_6
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:15724:27'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_15717_4
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:15717:27'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_15709_2
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:15709:27'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_j13
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:15698:14'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_j9
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:9660:13'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_j8
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:9654:13'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_j7
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:9642:13'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_j6
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:9630:13'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_9625_4
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:9625:26'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_9619_2
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:9619:26'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_j5
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:9612:13'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_j4
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:9606:13'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_S_k_0_k73
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:3228:16'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_S_k_0_k72
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:3188:16'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_S_k_0_k71
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:3148:16'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_S_k_0_k70
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:3108:16'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_S_k_0_k69
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:3068:16'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_S_k_0_k68
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:3028:16'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_S_k_0_k67
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:2988:16'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_S_k_0_k66
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:2948:16'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_S_k_0_k65
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:2908:16'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_S_k_0_k64
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:2868:16'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_S_k_0_k63
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:2828:16'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_S_k_0_k62
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:2788:16'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_S_k_0_k61
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:2748:16'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_S_k_0_k60
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:2708:16'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_S_k_0_k59
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:2668:16'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_S_k_0_k58
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:2628:16'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_S_k_0_k57
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:2588:16'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_S_k_0_k56
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:2548:16'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_S_k_0_k55
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:2508:16'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_S_k_0_k54
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:2468:16'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_S_k_0_k53
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:2428:16'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_S_k_0_k52
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:2388:16'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_S_k_0_k51
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:2348:16'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_S_k_0_k50
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:2308:16'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_S_k_0_k49
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:2268:16'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_S_k_0_k48
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:2228:16'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_S_k_0_k47
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:2188:16'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_S_k_0_k46
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:2148:16'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_S_k_0_k45
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:2108:16'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_S_k_0_k44
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:2068:16'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_S_k_0_k43
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:2028:16'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_S_k_0_k42
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:1988:16'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_S_k_0_k41
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:1948:16'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_S_k_0_k40
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:1908:16'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_S_k_0_k39
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:1868:16'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_S_k_0_k38
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:1828:16'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_S_k_0_k37
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:1788:16'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_S_k_0_k36
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:1748:16'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_S_k_0_k35
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:1708:16'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_S_k_0_k34
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:1668:16'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_S_k_0_k33
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:1628:16'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_S_k_0_k32
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:1588:16'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_S_k_0_k31
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:1548:16'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_S_k_0_k30
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:1508:16'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_S_k_0_k29
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:1468:16'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_S_k_0_k28
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:1428:16'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_S_k_0_k27
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:1388:16'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_S_k_0_k26
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:1348:16'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_S_k_0_k25
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:1308:16'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_S_k_0_k24
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:1268:16'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_S_k_0_k23
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:1228:16'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_S_k_0_k22
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:1188:16'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_S_k_0_k21
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:1148:16'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_S_k_0_k20
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:1108:16'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_S_k_0_k19
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:1068:16'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_S_k_0_k18
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:1028:16'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_S_k_0_k17
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:988:16'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_S_k_0_k16
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:948:16'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_S_k_0_k15
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:908:16'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_S_k_0_k14
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:868:16'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_S_k_0_k13
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:828:16'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_S_k_0_k12
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:788:16'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_S_k_0_k11
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:748:16'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_S_k_0_k10
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:708:16'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_data_load_k74
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:3269:20'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_data_drain_k75
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:3599:21'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_617_1
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:617:21'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_621_2
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:621:21'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_j1
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:626:11'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_mean_var_i3
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:638:18'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_j2
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:652:11'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_S_k_0_k7
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:310:15'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_S_k_0_k6
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:271:15'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_S_k_0_k5
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:232:15'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_S_k_0_k4
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:193:15'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_S_k_0_k3
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:154:15'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_S_k_0_k2
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:115:15'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_S_k_0_k1
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:76:15'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_S_k_0_k
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:37:14'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_S_n_1_n
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:353:16'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_S_n_5_n1
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:403:17'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_522_2
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:522:23'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_bias_add
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:534:15'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_25294_2
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25294:27'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_25298_3
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25298:23'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_25302_5
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25302:27'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_25308_6
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25308:23'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_25312_8
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25312:27'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_25318_9
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25318:23'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_25322_11
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25322:28'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_25329_12
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25329:24'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_25333_14
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25333:28'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_25340_15
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25340:24'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_25344_17
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25344:28'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_25351_18
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25351:24'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_25355_20
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25355:28'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_25365_22
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25365:28'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_j3
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:678:11'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_25382_24
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25382:28'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_25388_26
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25388:28'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_25395_28
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25395:28'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_25402_30
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25402:28'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_25407_32
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25407:28'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_25421_34
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25421:28'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_25428_36
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25428:28'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_j16
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:18748:12'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_j17
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:18756:12'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_25436_38
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25436:28'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_j3
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:678:11'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_25447_40
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25447:28'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_25454_41
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25454:24'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_j18
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:21740:12'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_j19
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:21754:12'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_25460_43
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25460:28'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_25467_44
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25467:24'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_j18
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:21740:12'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_j16
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:18748:12'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_j17
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:18756:12'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_25475_46
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25475:28'
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp, 
+                   Line: 15628, Column: 18 }
+Function:        systolic_tile_YV
+Args:            
+  - String:          'Loop '''
+  - LoopName:        l_S_m_4_m11
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp, 
+                   Line: 15632, Column: 18 }
+Function:        systolic_tile_YV
+Args:            
+  - String:          'Loop '''
+  - LoopName:        l_S_n_5_n11
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp, 
+                   Line: 15298, Column: 18 }
+Function:        systolic_tile_YV
+Args:            
+  - String:          'Loop '''
+  - LoopName:        l_S_m_0_m10
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp, 
+                   Line: 15302, Column: 18 }
+Function:        systolic_tile_YV
+Args:            
+  - String:          'Loop '''
+  - LoopName:        l_S_n_1_n10
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp, 
+                   Line: 12578, Column: 17 }
+Function:        systolic_tile_QKT
+Args:            
+  - String:          'Loop '''
+  - LoopName:        l_S_m_4_m9
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp, 
+                   Line: 12582, Column: 17 }
+Function:        systolic_tile_QKT
+Args:            
+  - String:          'Loop '''
+  - LoopName:        l_S_n_5_n9
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp, 
+                   Line: 12248, Column: 17 }
+Function:        systolic_tile_QKT
+Args:            
+  - String:          'Loop '''
+  - LoopName:        l_S_m_0_m8
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp, 
+                   Line: 12252, Column: 17 }
+Function:        systolic_tile_QKT
+Args:            
+  - String:          'Loop '''
+  - LoopName:        l_S_n_1_n8
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp, 
+                   Line: 3600, Column: 17 }
+Function:        systolic_tile_Q
+Args:            
+  - String:          'Loop '''
+  - LoopName:        l_S_m_4_m3
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp, 
+                   Line: 3604, Column: 17 }
+Function:        systolic_tile_Q
+Args:            
+  - String:          'Loop '''
+  - LoopName:        l_S_n_5_n3
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp, 
+                   Line: 3270, Column: 17 }
+Function:        systolic_tile_Q
+Args:            
+  - String:          'Loop '''
+  - LoopName:        l_S_m_0_m2
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp, 
+                   Line: 3274, Column: 17 }
+Function:        systolic_tile_Q
+Args:            
+  - String:          'Loop '''
+  - LoopName:        l_S_n_1_n2
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp, 
+                   Line: 15282, Column: 0 }
+Function:        systolic_tile_YV
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        l_S_m_4_m11
+  - String:          ''' ('
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:15628:18'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          systolic_tile_YV
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp, 
+                   Line: 15282, Column: 0 }
+Function:        systolic_tile_YV
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        l_S_n_5_n11
+  - String:          ''' ('
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:15632:18'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          systolic_tile_YV
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp, 
+                   Line: 15282, Column: 0 }
+Function:        systolic_tile_YV
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        l_S_m_0_m10
+  - String:          ''' ('
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:15298:18'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          systolic_tile_YV
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp, 
+                   Line: 15282, Column: 0 }
+Function:        systolic_tile_YV
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        l_S_n_1_n10
+  - String:          ''' ('
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:15302:18'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          systolic_tile_YV
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp, 
+                   Line: 12232, Column: 0 }
+Function:        systolic_tile_QKT
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        l_S_m_4_m9
+  - String:          ''' ('
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:12578:17'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          systolic_tile_QKT
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp, 
+                   Line: 12232, Column: 0 }
+Function:        systolic_tile_QKT
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        l_S_n_5_n9
+  - String:          ''' ('
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:12582:17'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          systolic_tile_QKT
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp, 
+                   Line: 12232, Column: 0 }
+Function:        systolic_tile_QKT
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        l_S_m_0_m8
+  - String:          ''' ('
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:12248:17'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          systolic_tile_QKT
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp, 
+                   Line: 12232, Column: 0 }
+Function:        systolic_tile_QKT
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        l_S_n_1_n8
+  - String:          ''' ('
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:12252:17'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          systolic_tile_QKT
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp, 
+                   Line: 3254, Column: 0 }
+Function:        systolic_tile_Q
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        l_S_m_4_m3
+  - String:          ''' ('
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:3600:17'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          systolic_tile_Q
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp, 
+                   Line: 3254, Column: 0 }
+Function:        systolic_tile_Q
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        l_S_n_5_n3
+  - String:          ''' ('
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:3604:17'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          systolic_tile_Q
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp, 
+                   Line: 3254, Column: 0 }
+Function:        systolic_tile_Q
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        l_S_m_0_m2
+  - String:          ''' ('
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:3270:17'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          systolic_tile_Q
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp, 
+                   Line: 3254, Column: 0 }
+Function:        systolic_tile_Q
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        l_S_n_1_n2
+  - String:          ''' ('
+  - LoopLoc:         '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:3274:17'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          systolic_tile_Q
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...

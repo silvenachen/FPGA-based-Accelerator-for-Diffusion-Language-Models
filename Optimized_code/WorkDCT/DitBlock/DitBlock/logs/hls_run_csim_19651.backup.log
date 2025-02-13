@@ -1,0 +1,2 @@
+INFO: [vitis-run 60-1548] Creating build summary session with primary output /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/DitBlock.hlsrun_csim_summary, at Mon Feb  3 00:02:16 2025
+INFO: [vitis-run 82-31] Launching vitis_hls: vitis_hls -nolog -run csim -work_dir /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock -config /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/hls_config.cfg -cmdlineconfig /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/config.cmdline

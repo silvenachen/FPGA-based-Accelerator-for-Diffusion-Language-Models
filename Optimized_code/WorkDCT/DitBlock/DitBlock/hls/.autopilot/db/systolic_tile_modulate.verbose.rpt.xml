@@ -1,0 +1,264 @@
+<profile>
+
+<section name = "Vitis HLS Report for 'systolic_tile_modulate'" level="0">
+<item name = "Date">Wed Feb  5 22:35:25 2025
+</item>
+<item name = "Version">2023.2 (Build 4023990 on Oct 11 2023)</item>
+<item name = "Project">DitBlock</item>
+<item name = "Solution">hls (Vivado IP Flow Target)</item>
+<item name = "Product family">virtexuplusHBM</item>
+<item name = "Target device">xcu280-fsvh2892-2L-e</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">10.00 ns, 6.536 ns, 2.70 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">1039, 1039, 10.390 us, 10.390 us, 1028, 1028, dataflow</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+<column name="systolic_tile_modulate_Loop_l_data_load_k8_proc22_U0">systolic_tile_modulate_Loop_l_data_load_k8_proc22, 1027, 1027, 10.270 us, 10.270 us, 1027, 1027, no</column>
+<column name="PE_kernel_modulate_0_0_1_U0">PE_kernel_modulate_0_0_1, 261, 261, 2.610 us, 2.610 us, 261, 261, no</column>
+<column name="PE_kernel_modulate_1_0_1_U0">PE_kernel_modulate_1_0_1, 261, 261, 2.610 us, 2.610 us, 261, 261, no</column>
+<column name="PE_kernel_modulate_2_0_1_U0">PE_kernel_modulate_2_0_1, 261, 261, 2.610 us, 2.610 us, 261, 261, no</column>
+<column name="PE_kernel_modulate_3_0_1_U0">PE_kernel_modulate_3_0_1, 261, 261, 2.610 us, 2.610 us, 261, 261, no</column>
+<column name="PE_kernel_modulate_4_0_1_U0">PE_kernel_modulate_4_0_1, 261, 261, 2.610 us, 2.610 us, 261, 261, no</column>
+<column name="PE_kernel_modulate_5_0_1_U0">PE_kernel_modulate_5_0_1, 261, 261, 2.610 us, 2.610 us, 261, 261, no</column>
+<column name="PE_kernel_modulate_6_0_1_U0">PE_kernel_modulate_6_0_1, 261, 261, 2.610 us, 2.610 us, 261, 261, no</column>
+<column name="PE_kernel_modulate_7_0_1_U0">PE_kernel_modulate_7_0_1, 261, 261, 2.610 us, 2.610 us, 261, 261, no</column>
+<column name="systolic_tile_modulate_Loop_l_data_drain_k9_proc23_U0">systolic_tile_modulate_Loop_l_data_drain_k9_proc23, 1026, 1026, 10.260 us, 10.260 us, 1026, 1026, no</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Utilization Estimates" level="0">
+<item name = "Summary"><table name="" hasTotal="1">
+<keys size="6">Name, BRAM_18K, DSP, FF, LUT, URAM</keys>
+<column name="DSP">-, -, -, -, -</column>
+<column name="Expression">-, -, 0, 8, -</column>
+<column name="FIFO">-, -, 724, 840, -</column>
+<column name="Instance">-, 40, 3741, 4422, -</column>
+<column name="Memory">-, -, -, -, -</column>
+<column name="Multiplexer">-, -, -, -, -</column>
+<column name="Register">-, -, -, -, -</column>
+<specialColumn name="Available SLR">1344, 3008, 869120, 434560, 320</specialColumn>
+<specialColumn name="Utilization SLR (%)">0, 1, ~0, 1, 0</specialColumn>
+<specialColumn name="Available">4032, 9024, 2607360, 1303680, 960</specialColumn>
+<specialColumn name="Utilization (%)">0, ~0, ~0, ~0, 0</specialColumn>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="1">
+<keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
+<column name="PE_kernel_modulate_0_0_1_U0">PE_kernel_modulate_0_0_1, 0, 5, 428, 496, 0</column>
+<column name="PE_kernel_modulate_1_0_1_U0">PE_kernel_modulate_1_0_1, 0, 5, 427, 487, 0</column>
+<column name="PE_kernel_modulate_2_0_1_U0">PE_kernel_modulate_2_0_1, 0, 5, 427, 487, 0</column>
+<column name="PE_kernel_modulate_3_0_1_U0">PE_kernel_modulate_3_0_1, 0, 5, 427, 487, 0</column>
+<column name="PE_kernel_modulate_4_0_1_U0">PE_kernel_modulate_4_0_1, 0, 5, 427, 487, 0</column>
+<column name="PE_kernel_modulate_5_0_1_U0">PE_kernel_modulate_5_0_1, 0, 5, 427, 487, 0</column>
+<column name="PE_kernel_modulate_6_0_1_U0">PE_kernel_modulate_6_0_1, 0, 5, 427, 487, 0</column>
+<column name="PE_kernel_modulate_7_0_1_U0">PE_kernel_modulate_7_0_1, 0, 5, 427, 487, 0</column>
+<column name="systolic_tile_modulate_Loop_l_data_drain_k9_proc23_U0">systolic_tile_modulate_Loop_l_data_drain_k9_proc23, 0, 0, 23, 212, 0</column>
+<column name="systolic_tile_modulate_Loop_l_data_load_k8_proc22_U0">systolic_tile_modulate_Loop_l_data_load_k8_proc22, 0, 0, 301, 305, 0</column>
+</table>
+</item>
+<item name = "DSP"><table name="" hasTotal="0">
+<keys size="3">Instance, Module, Expression</keys>
+</table>
+</item>
+<item name = "Memory"><table name="" hasTotal="1">
+<keys size="10">Memory, Module, BRAM_18K, FF, LUT, URAM, Words, Bits, Banks, W*Bits*Banks</keys>
+</table>
+</item>
+<item name = "FIFO"><table name="" hasTotal="1">
+<keys size="8">Name, BRAM_18K, FF, LUT, URAM, Depth, Bits, Size:D*B</keys>
+<column name="A_fifo_1_U">0, 68, 0, -, 2, 32, 64</column>
+<column name="A_fifo_2_U">0, 68, 0, -, 2, 32, 64</column>
+<column name="A_fifo_3_U">0, 68, 0, -, 2, 32, 64</column>
+<column name="A_fifo_4_U">0, 68, 0, -, 2, 32, 64</column>
+<column name="A_fifo_5_U">0, 68, 0, -, 2, 32, 64</column>
+<column name="A_fifo_6_U">0, 68, 0, -, 2, 32, 64</column>
+<column name="A_fifo_7_U">0, 68, 0, -, 2, 32, 64</column>
+<column name="A_fifo_8_U">0, 68, 0, -, 2, 32, 64</column>
+<column name="A_fifo_U">0, 68, 0, -, 2, 32, 64</column>
+<column name="B_fifo_10_U">0, 7, 0, -, 9, 32, 288</column>
+<column name="B_fifo_11_U">0, 7, 0, -, 9, 32, 288</column>
+<column name="B_fifo_12_U">0, 7, 0, -, 9, 32, 288</column>
+<column name="B_fifo_13_U">0, 7, 0, -, 9, 32, 288</column>
+<column name="B_fifo_14_U">0, 7, 0, -, 9, 32, 288</column>
+<column name="B_fifo_15_U">0, 7, 0, -, 9, 32, 288</column>
+<column name="B_fifo_1_U">0, 7, 0, -, 9, 32, 288</column>
+<column name="B_fifo_2_U">0, 7, 0, -, 9, 32, 288</column>
+<column name="B_fifo_3_U">0, 7, 0, -, 9, 32, 288</column>
+<column name="B_fifo_4_U">0, 7, 0, -, 9, 32, 288</column>
+<column name="B_fifo_5_U">0, 7, 0, -, 9, 32, 288</column>
+<column name="B_fifo_6_U">0, 7, 0, -, 9, 32, 288</column>
+<column name="B_fifo_7_U">0, 7, 0, -, 9, 32, 288</column>
+<column name="B_fifo_8_U">0, 7, 0, -, 9, 32, 288</column>
+<column name="B_fifo_9_U">0, 7, 0, -, 9, 32, 288</column>
+<column name="B_fifo_U">0, 7, 0, -, 9, 32, 288</column>
+</table>
+</item>
+<item name = "Expression"><table name="" hasTotal="1">
+<keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
+<column name="ap_idle">and, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_continue">and, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_done">and, 0, 0, 2, 1, 1</column>
+<column name="systolic_tile_modulate_Loop_l_data_load_k8_proc22_U0_start_full_n">and, 0, 0, 2, 1, 1</column>
+</table>
+</item>
+<item name = "Multiplexer"><table name="" hasTotal="1">
+<keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
+</table>
+</item>
+<item name = "Register"><table name="" hasTotal="1">
+<keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
+</table>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Interface" level="0">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">RTL Ports, Dir, Bits, Protocol, Source Object, C Type</keys>
+<column name="v168_0_address0">out, 7, ap_memory, v168_0, array</column>
+<column name="v168_0_ce0">out, 1, ap_memory, v168_0, array</column>
+<column name="v168_0_d0">out, 32, ap_memory, v168_0, array</column>
+<column name="v168_0_q0">in, 32, ap_memory, v168_0, array</column>
+<column name="v168_0_we0">out, 1, ap_memory, v168_0, array</column>
+<column name="v168_0_address1">out, 7, ap_memory, v168_0, array</column>
+<column name="v168_0_ce1">out, 1, ap_memory, v168_0, array</column>
+<column name="v168_0_d1">out, 32, ap_memory, v168_0, array</column>
+<column name="v168_0_q1">in, 32, ap_memory, v168_0, array</column>
+<column name="v168_0_we1">out, 1, ap_memory, v168_0, array</column>
+<column name="v169_0_address0">out, 7, ap_memory, v169_0, array</column>
+<column name="v169_0_ce0">out, 1, ap_memory, v169_0, array</column>
+<column name="v169_0_d0">out, 32, ap_memory, v169_0, array</column>
+<column name="v169_0_q0">in, 32, ap_memory, v169_0, array</column>
+<column name="v169_0_we0">out, 1, ap_memory, v169_0, array</column>
+<column name="v169_0_address1">out, 7, ap_memory, v169_0, array</column>
+<column name="v169_0_ce1">out, 1, ap_memory, v169_0, array</column>
+<column name="v169_0_d1">out, 32, ap_memory, v169_0, array</column>
+<column name="v169_0_q1">in, 32, ap_memory, v169_0, array</column>
+<column name="v169_0_we1">out, 1, ap_memory, v169_0, array</column>
+<column name="v169_1_address0">out, 7, ap_memory, v169_1, array</column>
+<column name="v169_1_ce0">out, 1, ap_memory, v169_1, array</column>
+<column name="v169_1_d0">out, 32, ap_memory, v169_1, array</column>
+<column name="v169_1_q0">in, 32, ap_memory, v169_1, array</column>
+<column name="v169_1_we0">out, 1, ap_memory, v169_1, array</column>
+<column name="v169_1_address1">out, 7, ap_memory, v169_1, array</column>
+<column name="v169_1_ce1">out, 1, ap_memory, v169_1, array</column>
+<column name="v169_1_d1">out, 32, ap_memory, v169_1, array</column>
+<column name="v169_1_q1">in, 32, ap_memory, v169_1, array</column>
+<column name="v169_1_we1">out, 1, ap_memory, v169_1, array</column>
+<column name="v169_2_address0">out, 7, ap_memory, v169_2, array</column>
+<column name="v169_2_ce0">out, 1, ap_memory, v169_2, array</column>
+<column name="v169_2_d0">out, 32, ap_memory, v169_2, array</column>
+<column name="v169_2_q0">in, 32, ap_memory, v169_2, array</column>
+<column name="v169_2_we0">out, 1, ap_memory, v169_2, array</column>
+<column name="v169_2_address1">out, 7, ap_memory, v169_2, array</column>
+<column name="v169_2_ce1">out, 1, ap_memory, v169_2, array</column>
+<column name="v169_2_d1">out, 32, ap_memory, v169_2, array</column>
+<column name="v169_2_q1">in, 32, ap_memory, v169_2, array</column>
+<column name="v169_2_we1">out, 1, ap_memory, v169_2, array</column>
+<column name="v169_3_address0">out, 7, ap_memory, v169_3, array</column>
+<column name="v169_3_ce0">out, 1, ap_memory, v169_3, array</column>
+<column name="v169_3_d0">out, 32, ap_memory, v169_3, array</column>
+<column name="v169_3_q0">in, 32, ap_memory, v169_3, array</column>
+<column name="v169_3_we0">out, 1, ap_memory, v169_3, array</column>
+<column name="v169_3_address1">out, 7, ap_memory, v169_3, array</column>
+<column name="v169_3_ce1">out, 1, ap_memory, v169_3, array</column>
+<column name="v169_3_d1">out, 32, ap_memory, v169_3, array</column>
+<column name="v169_3_q1">in, 32, ap_memory, v169_3, array</column>
+<column name="v169_3_we1">out, 1, ap_memory, v169_3, array</column>
+<column name="v169_4_address0">out, 7, ap_memory, v169_4, array</column>
+<column name="v169_4_ce0">out, 1, ap_memory, v169_4, array</column>
+<column name="v169_4_d0">out, 32, ap_memory, v169_4, array</column>
+<column name="v169_4_q0">in, 32, ap_memory, v169_4, array</column>
+<column name="v169_4_we0">out, 1, ap_memory, v169_4, array</column>
+<column name="v169_4_address1">out, 7, ap_memory, v169_4, array</column>
+<column name="v169_4_ce1">out, 1, ap_memory, v169_4, array</column>
+<column name="v169_4_d1">out, 32, ap_memory, v169_4, array</column>
+<column name="v169_4_q1">in, 32, ap_memory, v169_4, array</column>
+<column name="v169_4_we1">out, 1, ap_memory, v169_4, array</column>
+<column name="v169_5_address0">out, 7, ap_memory, v169_5, array</column>
+<column name="v169_5_ce0">out, 1, ap_memory, v169_5, array</column>
+<column name="v169_5_d0">out, 32, ap_memory, v169_5, array</column>
+<column name="v169_5_q0">in, 32, ap_memory, v169_5, array</column>
+<column name="v169_5_we0">out, 1, ap_memory, v169_5, array</column>
+<column name="v169_5_address1">out, 7, ap_memory, v169_5, array</column>
+<column name="v169_5_ce1">out, 1, ap_memory, v169_5, array</column>
+<column name="v169_5_d1">out, 32, ap_memory, v169_5, array</column>
+<column name="v169_5_q1">in, 32, ap_memory, v169_5, array</column>
+<column name="v169_5_we1">out, 1, ap_memory, v169_5, array</column>
+<column name="v169_6_address0">out, 7, ap_memory, v169_6, array</column>
+<column name="v169_6_ce0">out, 1, ap_memory, v169_6, array</column>
+<column name="v169_6_d0">out, 32, ap_memory, v169_6, array</column>
+<column name="v169_6_q0">in, 32, ap_memory, v169_6, array</column>
+<column name="v169_6_we0">out, 1, ap_memory, v169_6, array</column>
+<column name="v169_6_address1">out, 7, ap_memory, v169_6, array</column>
+<column name="v169_6_ce1">out, 1, ap_memory, v169_6, array</column>
+<column name="v169_6_d1">out, 32, ap_memory, v169_6, array</column>
+<column name="v169_6_q1">in, 32, ap_memory, v169_6, array</column>
+<column name="v169_6_we1">out, 1, ap_memory, v169_6, array</column>
+<column name="v169_7_address0">out, 7, ap_memory, v169_7, array</column>
+<column name="v169_7_ce0">out, 1, ap_memory, v169_7, array</column>
+<column name="v169_7_d0">out, 32, ap_memory, v169_7, array</column>
+<column name="v169_7_q0">in, 32, ap_memory, v169_7, array</column>
+<column name="v169_7_we0">out, 1, ap_memory, v169_7, array</column>
+<column name="v169_7_address1">out, 7, ap_memory, v169_7, array</column>
+<column name="v169_7_ce1">out, 1, ap_memory, v169_7, array</column>
+<column name="v169_7_d1">out, 32, ap_memory, v169_7, array</column>
+<column name="v169_7_q1">in, 32, ap_memory, v169_7, array</column>
+<column name="v169_7_we1">out, 1, ap_memory, v169_7, array</column>
+<column name="v170_0_0">out, 32, ap_vld, v170_0_0, pointer</column>
+<column name="v170_0_0_ap_vld">out, 1, ap_vld, v170_0_0, pointer</column>
+<column name="v170_1_0">out, 32, ap_vld, v170_1_0, pointer</column>
+<column name="v170_1_0_ap_vld">out, 1, ap_vld, v170_1_0, pointer</column>
+<column name="v170_2_0">out, 32, ap_vld, v170_2_0, pointer</column>
+<column name="v170_2_0_ap_vld">out, 1, ap_vld, v170_2_0, pointer</column>
+<column name="v170_3_0">out, 32, ap_vld, v170_3_0, pointer</column>
+<column name="v170_3_0_ap_vld">out, 1, ap_vld, v170_3_0, pointer</column>
+<column name="v170_4_0">out, 32, ap_vld, v170_4_0, pointer</column>
+<column name="v170_4_0_ap_vld">out, 1, ap_vld, v170_4_0, pointer</column>
+<column name="v170_5_0">out, 32, ap_vld, v170_5_0, pointer</column>
+<column name="v170_5_0_ap_vld">out, 1, ap_vld, v170_5_0, pointer</column>
+<column name="v170_6_0">out, 32, ap_vld, v170_6_0, pointer</column>
+<column name="v170_6_0_ap_vld">out, 1, ap_vld, v170_6_0, pointer</column>
+<column name="v170_7_0">out, 32, ap_vld, v170_7_0, pointer</column>
+<column name="v170_7_0_ap_vld">out, 1, ap_vld, v170_7_0, pointer</column>
+<column name="ap_clk">in, 1, ap_ctrl_hs, systolic_tile_modulate, return value</column>
+<column name="ap_rst">in, 1, ap_ctrl_hs, systolic_tile_modulate, return value</column>
+<column name="ap_start">in, 1, ap_ctrl_hs, systolic_tile_modulate, return value</column>
+<column name="ap_done">out, 1, ap_ctrl_hs, systolic_tile_modulate, return value</column>
+<column name="ap_ready">out, 1, ap_ctrl_hs, systolic_tile_modulate, return value</column>
+<column name="ap_idle">out, 1, ap_ctrl_hs, systolic_tile_modulate, return value</column>
+<column name="ap_continue">in, 1, ap_ctrl_hs, systolic_tile_modulate, return value</column>
+</table>
+</item>
+</section>
+</profile>

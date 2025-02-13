@@ -1,0 +1,198 @@
+
+
+================================================================
+== Vitis HLS Report for 'layer_norm_Pipeline_l_mean_var_i3'
+================================================================
+* Date:           Wed Feb  5 22:35:29 2025
+
+* Version:        2023.2 (Build 4023990 on Oct 11 2023)
+* Project:        DitBlock
+* Solution:       hls (Vivado IP Flow Target)
+* Product family: virtexuplusHBM
+* Target device:  xcu280-fsvh2892-2L-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  6.149 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+-----------+-----------+------+------+---------+
+    |  Latency (cycles) |   Latency (absolute)  |   Interval  | Pipeline|
+    |   min   |   max   |    min    |    max    |  min |  max |   Type  |
+    +---------+---------+-----------+-----------+------+------+---------+
+    |     1033|     1033|  10.330 us|  10.330 us|  1033|  1033|       no|
+    +---------+---------+-----------+-----------+------+------+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +-----------------+---------+---------+----------+-----------+-----------+------+----------+
+        |                 |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |    Loop Name    |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +-----------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- l_mean_var_i3  |     1031|     1031|         9|          1|          1|  1024|       yes|
+        +-----------------+---------+---------+----------+-----------+-----------+------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++---------------------+---------+------+---------+---------+-----+
+|         Name        | BRAM_18K|  DSP |    FF   |   LUT   | URAM|
++---------------------+---------+------+---------+---------+-----+
+|DSP                  |        -|     -|        -|        -|    -|
+|Expression           |        -|     -|        0|       39|    -|
+|FIFO                 |        -|     -|        -|        -|    -|
+|Instance             |        -|     6|      256|      154|    -|
+|Memory               |        -|     -|        -|        -|    -|
+|Multiplexer          |        -|     -|        -|       36|    -|
+|Register             |        -|     -|      335|       64|    -|
++---------------------+---------+------+---------+---------+-----+
+|Total                |        0|     6|      591|      293|    0|
++---------------------+---------+------+---------+---------+-----+
+|Available SLR        |     1344|  3008|   869120|   434560|  320|
++---------------------+---------+------+---------+---------+-----+
+|Utilization SLR (%)  |        0|    ~0|       ~0|       ~0|    0|
++---------------------+---------+------+---------+---------+-----+
+|Available            |     4032|  9024|  2607360|  1303680|  960|
++---------------------+---------+------+---------+---------+-----+
+|Utilization (%)      |        0|    ~0|       ~0|       ~0|    0|
++---------------------+---------+------+---------+---------+-----+
+
++ Detail: 
+    * Instance: 
+    +------------------------------------+-------------------------------+---------+----+-----+----+-----+
+    |              Instance              |             Module            | BRAM_18K| DSP|  FF | LUT| URAM|
+    +------------------------------------+-------------------------------+---------+----+-----+----+-----+
+    |fmul_32ns_32ns_32_2_max_dsp_1_U210  |fmul_32ns_32ns_32_2_max_dsp_1  |        0|   3|  128|  77|    0|
+    |fmul_32ns_32ns_32_2_max_dsp_1_U211  |fmul_32ns_32ns_32_2_max_dsp_1  |        0|   3|  128|  77|    0|
+    +------------------------------------+-------------------------------+---------+----+-----+----+-----+
+    |Total                               |                               |        0|   6|  256| 154|    0|
+    +------------------------------------+-------------------------------+---------+----+-----+----+-----+
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +----------------------+----------+----+---+----+------------+------------+
+    |     Variable Name    | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +----------------------+----------+----+---+----+------------+------------+
+    |add_ln638_fu_121_p2   |         +|   0|  0|  18|          11|           1|
+    |icmp_ln638_fu_115_p2  |      icmp|   0|  0|  19|          11|          12|
+    |ap_enable_pp0         |       xor|   0|  0|   2|           1|           2|
+    +----------------------+----------+----+---+----+------------+------------+
+    |Total                 |          |   0|  0|  39|          23|          15|
+    +----------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +-------------------------+----+-----------+-----+-----------+
+    |           Name          | LUT| Input Size| Bits| Total Bits|
+    +-------------------------+----+-----------+-----+-----------+
+    |ap_done_int              |   9|          2|    1|          2|
+    |ap_enable_reg_pp0_iter1  |   9|          2|    1|          2|
+    |ap_sig_allocacmp_i3_1    |   9|          2|   11|         22|
+    |i3_fu_34                 |   9|          2|   11|         22|
+    +-------------------------+----+-----------+-----+-----------+
+    |Total                    |  36|          8|   24|         48|
+    +-------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +----------------------------------+----+----+-----+-----------+
+    |               Name               | FF | LUT| Bits| Const Bits|
+    +----------------------------------+----+----+-----+-----------+
+    |ap_CS_fsm                         |   1|   0|    1|          0|
+    |ap_done_reg                       |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter1           |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter2           |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter3           |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter4           |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter5           |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter6           |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter7           |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter8           |   1|   0|    1|          0|
+    |ap_loop_exit_ready_pp0_iter1_reg  |   1|   0|    1|          0|
+    |ap_loop_exit_ready_pp0_iter2_reg  |   1|   0|    1|          0|
+    |ap_loop_exit_ready_pp0_iter3_reg  |   1|   0|    1|          0|
+    |ap_loop_exit_ready_pp0_iter4_reg  |   1|   0|    1|          0|
+    |ap_loop_exit_ready_pp0_iter5_reg  |   1|   0|    1|          0|
+    |ap_loop_exit_ready_pp0_iter6_reg  |   1|   0|    1|          0|
+    |ap_loop_exit_ready_pp0_iter7_reg  |   1|   0|    1|          0|
+    |i3_fu_34                          |  11|   0|   11|          0|
+    |mean2_addr_reg_160                |  10|   0|   10|          0|
+    |mean2_addr_reg_160_pp0_iter1_reg  |  10|   0|   10|          0|
+    |mean_addr_reg_154                 |  10|   0|   10|          0|
+    |mean_addr_reg_154_pp0_iter1_reg   |  10|   0|   10|          0|
+    |v282_reg_176                      |  32|   0|   32|          0|
+    |v284_reg_182                      |  32|   0|   32|          0|
+    |v287_reg_187                      |  32|   0|   32|          0|
+    |v288_reg_192                      |  32|   0|   32|          0|
+    |zext_ln638_reg_149                |  11|   0|   64|         53|
+    |v284_reg_182                      |  64|  32|   32|          0|
+    |zext_ln638_reg_149                |  64|  32|   64|         53|
+    +----------------------------------+----+----+-----+-----------+
+    |Total                             | 335|  64|  356|        106|
+    +----------------------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++---------------------+-----+-----+------------+-----------------------------------+--------------+
+|      RTL Ports      | Dir | Bits|  Protocol  |           Source Object           |    C Type    |
++---------------------+-----+-----+------------+-----------------------------------+--------------+
+|ap_clk               |   in|    1|  ap_ctrl_hs|  layer_norm_Pipeline_l_mean_var_i3|  return value|
+|ap_rst               |   in|    1|  ap_ctrl_hs|  layer_norm_Pipeline_l_mean_var_i3|  return value|
+|ap_start             |   in|    1|  ap_ctrl_hs|  layer_norm_Pipeline_l_mean_var_i3|  return value|
+|ap_done              |  out|    1|  ap_ctrl_hs|  layer_norm_Pipeline_l_mean_var_i3|  return value|
+|ap_idle              |  out|    1|  ap_ctrl_hs|  layer_norm_Pipeline_l_mean_var_i3|  return value|
+|ap_ready             |  out|    1|  ap_ctrl_hs|  layer_norm_Pipeline_l_mean_var_i3|  return value|
+|grp_fu_251_p_din0    |  out|   32|  ap_ctrl_hs|  layer_norm_Pipeline_l_mean_var_i3|  return value|
+|grp_fu_251_p_din1    |  out|   32|  ap_ctrl_hs|  layer_norm_Pipeline_l_mean_var_i3|  return value|
+|grp_fu_251_p_dout0   |   in|   32|  ap_ctrl_hs|  layer_norm_Pipeline_l_mean_var_i3|  return value|
+|grp_fu_251_p_ce      |  out|    1|  ap_ctrl_hs|  layer_norm_Pipeline_l_mean_var_i3|  return value|
+|grp_fu_247_p_din0    |  out|   32|  ap_ctrl_hs|  layer_norm_Pipeline_l_mean_var_i3|  return value|
+|grp_fu_247_p_din1    |  out|   32|  ap_ctrl_hs|  layer_norm_Pipeline_l_mean_var_i3|  return value|
+|grp_fu_247_p_opcode  |  out|    1|  ap_ctrl_hs|  layer_norm_Pipeline_l_mean_var_i3|  return value|
+|grp_fu_247_p_dout0   |   in|   32|  ap_ctrl_hs|  layer_norm_Pipeline_l_mean_var_i3|  return value|
+|grp_fu_247_p_ce      |  out|    1|  ap_ctrl_hs|  layer_norm_Pipeline_l_mean_var_i3|  return value|
+|mean_address0        |  out|   10|   ap_memory|                               mean|         array|
+|mean_ce0             |  out|    1|   ap_memory|                               mean|         array|
+|mean_we0             |  out|    1|   ap_memory|                               mean|         array|
+|mean_d0              |  out|   32|   ap_memory|                               mean|         array|
+|mean_address1        |  out|   10|   ap_memory|                               mean|         array|
+|mean_ce1             |  out|    1|   ap_memory|                               mean|         array|
+|mean_q1              |   in|   32|   ap_memory|                               mean|         array|
+|mean2_address0       |  out|   10|   ap_memory|                              mean2|         array|
+|mean2_ce0            |  out|    1|   ap_memory|                              mean2|         array|
+|mean2_we0            |  out|    1|   ap_memory|                              mean2|         array|
+|mean2_d0             |  out|   32|   ap_memory|                              mean2|         array|
+|mean2_address1       |  out|   10|   ap_memory|                              mean2|         array|
+|mean2_ce1            |  out|    1|   ap_memory|                              mean2|         array|
+|mean2_q1             |   in|   32|   ap_memory|                              mean2|         array|
+|var_r_address0       |  out|   10|   ap_memory|                              var_r|         array|
+|var_r_ce0            |  out|    1|   ap_memory|                              var_r|         array|
+|var_r_we0            |  out|    1|   ap_memory|                              var_r|         array|
+|var_r_d0             |  out|   32|   ap_memory|                              var_r|         array|
++---------------------+-----+-----+------------+-----------------------------------+--------------+
+

@@ -1,0 +1,204 @@
+<profile>
+
+<section name = "Vitis HLS Report for 'adaLN_modulate'" level="0">
+<item name = "Date">Wed Feb  5 22:35:25 2025
+</item>
+<item name = "Version">2023.2 (Build 4023990 on Oct 11 2023)</item>
+<item name = "Project">DitBlock</item>
+<item name = "Solution">hls (Vivado IP Flow Target)</item>
+<item name = "Product family">virtexuplusHBM</item>
+<item name = "Target device">xcu280-fsvh2892-2L-e</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">10.00 ns, 6.536 ns, 2.70 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">134219, 134219, 1.342 ms, 1.342 ms, 134219, 134219, no</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+<column name="grp_adaLN_modulate_Pipeline_VITIS_LOOP_522_2_fu_118">adaLN_modulate_Pipeline_VITIS_LOOP_522_2, 514, 514, 5.140 us, 5.140 us, 514, 514, no</column>
+<column name="grp_adaLN_modulate_Pipeline_l_load_A_tile_ak_fu_124">adaLN_modulate_Pipeline_l_load_A_tile_ak, 130, 130, 1.300 us, 1.300 us, 130, 130, no</column>
+<column name="grp_adaLN_modulate_Pipeline_l_load_B_tile_bk_l_bj_fu_132">adaLN_modulate_Pipeline_l_load_B_tile_bk_l_bj, 1026, 1026, 10.260 us, 10.260 us, 1026, 1026, no</column>
+<column name="grp_adaLN_modulate_Pipeline_l_bias_add_fu_147">adaLN_modulate_Pipeline_l_bias_add, 518, 518, 5.180 us, 5.180 us, 518, 518, no</column>
+<column name="grp_systolic_tile_modulate_fu_156">systolic_tile_modulate, 1039, 1039, 10.390 us, 10.390 us, 1028, 1028, dataflow</column>
+<column name="grp_adaLN_modulate_Pipeline_l_store_C_tile_sj_fu_177">adaLN_modulate_Pipeline_l_store_C_tile_sj, 10, 10, 0.100 us, 0.100 us, 10, 10, no</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+<column name="- l_ni">133184, 133184, 2081, -, -, 64, no</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Utilization Estimates" level="0">
+<item name = "Summary"><table name="" hasTotal="1">
+<keys size="6">Name, BRAM_18K, DSP, FF, LUT, URAM</keys>
+<column name="DSP">-, -, -, -, -</column>
+<column name="Expression">-, -, 0, 49, -</column>
+<column name="FIFO">-, -, -, -, -</column>
+<column name="Instance">-, 42, 4980, 6052, -</column>
+<column name="Memory">1, -, 288, 585, 0</column>
+<column name="Multiplexer">-, -, -, 485, -</column>
+<column name="Register">-, -, 287, -, -</column>
+<specialColumn name="Available SLR">1344, 3008, 869120, 434560, 320</specialColumn>
+<specialColumn name="Utilization SLR (%)">~0, 1, ~0, 1, 0</specialColumn>
+<specialColumn name="Available">4032, 9024, 2607360, 1303680, 960</specialColumn>
+<specialColumn name="Utilization (%)">~0, ~0, ~0, ~0, 0</specialColumn>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="1">
+<keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
+<column name="grp_adaLN_modulate_Pipeline_VITIS_LOOP_522_2_fu_118">adaLN_modulate_Pipeline_VITIS_LOOP_522_2, 0, 0, 12, 62, 0</column>
+<column name="grp_adaLN_modulate_Pipeline_l_bias_add_fu_147">adaLN_modulate_Pipeline_l_bias_add, 0, 2, 441, 363, 0</column>
+<column name="grp_adaLN_modulate_Pipeline_l_load_A_tile_ak_fu_124">adaLN_modulate_Pipeline_l_load_A_tile_ak, 0, 0, 19, 69, 0</column>
+<column name="grp_adaLN_modulate_Pipeline_l_load_B_tile_bk_l_bj_fu_132">adaLN_modulate_Pipeline_l_load_B_tile_bk_l_bj, 0, 0, 37, 178, 0</column>
+<column name="grp_adaLN_modulate_Pipeline_l_store_C_tile_sj_fu_177">adaLN_modulate_Pipeline_l_store_C_tile_sj, 0, 0, 6, 110, 0</column>
+<column name="grp_systolic_tile_modulate_fu_156">systolic_tile_modulate, 0, 40, 4465, 5270, 0</column>
+</table>
+</item>
+<item name = "DSP"><table name="" hasTotal="0">
+<keys size="3">Instance, Module, Expression</keys>
+</table>
+</item>
+<item name = "Memory"><table name="" hasTotal="1">
+<keys size="10">Memory, Module, BRAM_18K, FF, LUT, URAM, Words, Bits, Banks, W*Bits*Banks</keys>
+<column name="Y_0_U">adaLN_modulate_Y_0_RAM_AUTO_1R1W, 1, 0, 0, 0, 512, 32, 1, 16384</column>
+<column name="local_A_0_U">adaLN_modulate_local_A_0_RAM_AUTO_1R1W, 0, 32, 65, 0, 128, 32, 1, 4096</column>
+<column name="local_B_U">adaLN_modulate_local_A_0_RAM_AUTO_1R1W, 0, 32, 65, 0, 128, 32, 1, 4096</column>
+<column name="local_B_1_U">adaLN_modulate_local_A_0_RAM_AUTO_1R1W, 0, 32, 65, 0, 128, 32, 1, 4096</column>
+<column name="local_B_2_U">adaLN_modulate_local_A_0_RAM_AUTO_1R1W, 0, 32, 65, 0, 128, 32, 1, 4096</column>
+<column name="local_B_3_U">adaLN_modulate_local_A_0_RAM_AUTO_1R1W, 0, 32, 65, 0, 128, 32, 1, 4096</column>
+<column name="local_B_4_U">adaLN_modulate_local_A_0_RAM_AUTO_1R1W, 0, 32, 65, 0, 128, 32, 1, 4096</column>
+<column name="local_B_5_U">adaLN_modulate_local_A_0_RAM_AUTO_1R1W, 0, 32, 65, 0, 128, 32, 1, 4096</column>
+<column name="local_B_6_U">adaLN_modulate_local_A_0_RAM_AUTO_1R1W, 0, 32, 65, 0, 128, 32, 1, 4096</column>
+<column name="local_B_7_U">adaLN_modulate_local_A_0_RAM_AUTO_1R1W, 0, 32, 65, 0, 128, 32, 1, 4096</column>
+</table>
+</item>
+<item name = "FIFO"><table name="" hasTotal="1">
+<keys size="8">Name, BRAM_18K, FF, LUT, URAM, Depth, Bits, Size:D*B</keys>
+</table>
+</item>
+<item name = "Expression"><table name="" hasTotal="1">
+<keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
+<column name="add_ln423_fu_205_p2">+, 0, 0, 14, 7, 1</column>
+<column name="icmp_ln423_fu_199_p2">icmp, 0, 0, 15, 7, 8</column>
+<column name="v228_fu_211_p2">icmp, 0, 0, 14, 7, 1</column>
+<column name="ap_block_state4_on_subcall_done">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_grp_systolic_tile_modulate_fu_156_ap_done">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_grp_systolic_tile_modulate_fu_156_ap_ready">or, 0, 0, 2, 1, 1</column>
+</table>
+</item>
+<item name = "Multiplexer"><table name="" hasTotal="1">
+<keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
+<column name="Y_0_address0">20, 4, 9, 36</column>
+<column name="Y_0_ce0">20, 4, 1, 4</column>
+<column name="Y_0_ce1">9, 2, 1, 2</column>
+<column name="Y_0_d0">20, 4, 32, 128</column>
+<column name="Y_0_we0">20, 4, 1, 4</column>
+<column name="ap_NS_fsm">54, 10, 1, 10</column>
+<column name="local_A_0_address0">14, 3, 7, 21</column>
+<column name="local_A_0_ce0">14, 3, 1, 3</column>
+<column name="local_A_0_we0">9, 2, 1, 2</column>
+<column name="local_B_1_address0">14, 3, 7, 21</column>
+<column name="local_B_1_ce0">14, 3, 1, 3</column>
+<column name="local_B_1_we0">9, 2, 1, 2</column>
+<column name="local_B_2_address0">14, 3, 7, 21</column>
+<column name="local_B_2_ce0">14, 3, 1, 3</column>
+<column name="local_B_2_we0">9, 2, 1, 2</column>
+<column name="local_B_3_address0">14, 3, 7, 21</column>
+<column name="local_B_3_ce0">14, 3, 1, 3</column>
+<column name="local_B_3_we0">9, 2, 1, 2</column>
+<column name="local_B_4_address0">14, 3, 7, 21</column>
+<column name="local_B_4_ce0">14, 3, 1, 3</column>
+<column name="local_B_4_we0">9, 2, 1, 2</column>
+<column name="local_B_5_address0">14, 3, 7, 21</column>
+<column name="local_B_5_ce0">14, 3, 1, 3</column>
+<column name="local_B_5_we0">9, 2, 1, 2</column>
+<column name="local_B_6_address0">14, 3, 7, 21</column>
+<column name="local_B_6_ce0">14, 3, 1, 3</column>
+<column name="local_B_6_we0">9, 2, 1, 2</column>
+<column name="local_B_7_address0">14, 3, 7, 21</column>
+<column name="local_B_7_ce0">14, 3, 1, 3</column>
+<column name="local_B_7_we0">9, 2, 1, 2</column>
+<column name="local_B_address0">14, 3, 7, 21</column>
+<column name="local_B_ce0">14, 3, 1, 3</column>
+<column name="local_B_we0">9, 2, 1, 2</column>
+<column name="ni_fu_42">9, 2, 7, 14</column>
+</table>
+</item>
+<item name = "Register"><table name="" hasTotal="1">
+<keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
+<column name="ap_CS_fsm">9, 0, 9, 0</column>
+<column name="ap_sync_reg_grp_systolic_tile_modulate_fu_156_ap_done">1, 0, 1, 0</column>
+<column name="ap_sync_reg_grp_systolic_tile_modulate_fu_156_ap_ready">1, 0, 1, 0</column>
+<column name="grp_adaLN_modulate_Pipeline_VITIS_LOOP_522_2_fu_118_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_adaLN_modulate_Pipeline_l_bias_add_fu_147_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_adaLN_modulate_Pipeline_l_load_A_tile_ak_fu_124_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_adaLN_modulate_Pipeline_l_load_B_tile_bk_l_bj_fu_132_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_adaLN_modulate_Pipeline_l_store_C_tile_sj_fu_177_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_systolic_tile_modulate_fu_156_ap_start_reg">1, 0, 1, 0</column>
+<column name="local_C_0_1_fu_86">32, 0, 32, 0</column>
+<column name="local_C_0_2_fu_90">32, 0, 32, 0</column>
+<column name="local_C_0_3_fu_94">32, 0, 32, 0</column>
+<column name="local_C_0_4_fu_98">32, 0, 32, 0</column>
+<column name="local_C_0_5_fu_102">32, 0, 32, 0</column>
+<column name="local_C_0_6_fu_106">32, 0, 32, 0</column>
+<column name="local_C_0_7_fu_110">32, 0, 32, 0</column>
+<column name="local_C_0_fu_82">32, 0, 32, 0</column>
+<column name="ni_fu_42">7, 0, 7, 0</column>
+<column name="tmp_s_reg_331">6, 0, 9, 3</column>
+<column name="v228_reg_326">1, 0, 1, 0</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Interface" level="0">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">RTL Ports, Dir, Bits, Protocol, Source Object, C Type</keys>
+<column name="ap_clk">in, 1, ap_ctrl_hs, adaLN_modulate, return value</column>
+<column name="ap_rst">in, 1, ap_ctrl_hs, adaLN_modulate, return value</column>
+<column name="ap_start">in, 1, ap_ctrl_hs, adaLN_modulate, return value</column>
+<column name="ap_done">out, 1, ap_ctrl_hs, adaLN_modulate, return value</column>
+<column name="ap_idle">out, 1, ap_ctrl_hs, adaLN_modulate, return value</column>
+<column name="ap_ready">out, 1, ap_ctrl_hs, adaLN_modulate, return value</column>
+<column name="v236_0_address0">out, 7, ap_memory, v236_0, array</column>
+<column name="v236_0_ce0">out, 1, ap_memory, v236_0, array</column>
+<column name="v236_0_q0">in, 32, ap_memory, v236_0, array</column>
+<column name="v237_address0">out, 16, ap_memory, v237, array</column>
+<column name="v237_ce0">out, 1, ap_memory, v237, array</column>
+<column name="v237_q0">in, 32, ap_memory, v237, array</column>
+<column name="v238_address0">out, 9, ap_memory, v238, array</column>
+<column name="v238_ce0">out, 1, ap_memory, v238, array</column>
+<column name="v238_q0">in, 32, ap_memory, v238, array</column>
+<column name="v239_address0">out, 9, ap_memory, v239, array</column>
+<column name="v239_ce0">out, 1, ap_memory, v239, array</column>
+<column name="v239_we0">out, 1, ap_memory, v239, array</column>
+<column name="v239_d0">out, 32, ap_memory, v239, array</column>
+</table>
+</item>
+</section>
+</profile>

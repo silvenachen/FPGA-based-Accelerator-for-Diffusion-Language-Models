@@ -1,0 +1,216 @@
+
+
+================================================================
+== Vitis HLS Report for 'layer_norm_Pipeline_l_mean_var_i3'
+================================================================
+* Date:           Wed Feb  5 22:34:02 2025
+
+* Version:        2023.2 (Build 4023990 on Oct 11 2023)
+* Project:        DitBlock
+* Solution:       hls (Vivado IP Flow Target)
+* Product family: virtexuplusHBM
+* Target device:  xcu280-fsvh2892-2L-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  6.149 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+-----------+-----------+------+------+---------+
+    |  Latency (cycles) |   Latency (absolute)  |   Interval  | Pipeline|
+    |   min   |   max   |    min    |    max    |  min |  max |   Type  |
+    +---------+---------+-----------+-----------+------+------+---------+
+    |     1033|     1033|  10.330 us|  10.330 us|  1033|  1033|       no|
+    +---------+---------+-----------+-----------+------+------+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +-----------------+---------+---------+----------+-----------+-----------+------+----------+
+        |                 |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |    Loop Name    |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +-----------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- l_mean_var_i3  |     1031|     1031|         9|          1|          1|  1024|       yes|
+        +-----------------+---------+---------+----------+-----------+-----------+------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 2
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 1, depth = 9
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 9
+* Pipeline : 1
+  Pipeline-0 : II = 1, D = 9, States = { 1 2 3 4 5 6 7 8 9 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 5 
+5 --> 6 
+6 --> 7 
+7 --> 8 
+8 --> 9 
+9 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 1.58>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%i3 = alloca i32 1" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:638]   --->   Operation 12 'alloca' 'i3' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 13 [1/1] (0.38ns)   --->   "%store_ln638 = store i11 0, i11 %i3" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:638]   --->   Operation 13 'store' 'store_ln638' <Predicate = true> <Delay = 0.38>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%br_ln0 = br void %for.inc64"   --->   Operation 14 'br' 'br_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%i3_1 = load i11 %i3" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:638]   --->   Operation 15 'load' 'i3_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 16 [1/1] (0.73ns)   --->   "%icmp_ln638 = icmp_eq  i11 %i3_1, i11 1024" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:638]   --->   Operation 16 'icmp' 'icmp_ln638' <Predicate = true> <Delay = 0.73> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.73> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 17 [1/1] (0.73ns)   --->   "%add_ln638 = add i11 %i3_1, i11 1" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:638]   --->   Operation 17 'add' 'add_ln638' <Predicate = true> <Delay = 0.73> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.73> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%br_ln638 = br i1 %icmp_ln638, void %for.inc64.split, void %l_j2.preheader.exitStub" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:638]   --->   Operation 18 'br' 'br_ln638' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 19 [1/1] (0.00ns)   --->   "%zext_ln638 = zext i11 %i3_1" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:638]   --->   Operation 19 'zext' 'zext_ln638' <Predicate = (!icmp_ln638)> <Delay = 0.00>
+ST_1 : Operation 20 [1/1] (0.00ns)   --->   "%mean_addr = getelementptr i32 %mean, i64 0, i64 %zext_ln638" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:639]   --->   Operation 20 'getelementptr' 'mean_addr' <Predicate = (!icmp_ln638)> <Delay = 0.00>
+ST_1 : Operation 21 [2/2] (1.20ns)   --->   "%v281 = load i10 %mean_addr" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:640]   --->   Operation 21 'load' 'v281' <Predicate = (!icmp_ln638)> <Delay = 1.20> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 1.20> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 1024> <RAM>
+ST_1 : Operation 22 [1/1] (0.00ns)   --->   "%mean2_addr = getelementptr i32 %mean2, i64 0, i64 %zext_ln638" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:642]   --->   Operation 22 'getelementptr' 'mean2_addr' <Predicate = (!icmp_ln638)> <Delay = 0.00>
+ST_1 : Operation 23 [2/2] (1.20ns)   --->   "%v283 = load i10 %mean2_addr" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:643]   --->   Operation 23 'load' 'v283' <Predicate = (!icmp_ln638)> <Delay = 1.20> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 1.20> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 1024> <RAM>
+ST_1 : Operation 24 [1/1] (0.38ns)   --->   "%store_ln638 = store i11 %add_ln638, i11 %i3" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:638]   --->   Operation 24 'store' 'store_ln638' <Predicate = (!icmp_ln638)> <Delay = 0.38>
+
+State 2 <SV = 1> <Delay = 6.10>
+ST_2 : Operation 25 [1/2] (1.20ns)   --->   "%v281 = load i10 %mean_addr" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:640]   --->   Operation 25 'load' 'v281' <Predicate = true> <Delay = 1.20> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 1.20> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 1024> <RAM>
+ST_2 : Operation 26 [2/2] (4.90ns)   --->   "%v282 = fmul i32 %v281, i32 0.00195312" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:640]   --->   Operation 26 'fmul' 'v282' <Predicate = true> <Delay = 4.90> <CoreInst = "FMul_maxdsp">   --->   Core 30 'FMul_maxdsp' <Latency = 1> <II = 1> <Delay = 4.90> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 27 [1/2] (1.20ns)   --->   "%v283 = load i10 %mean2_addr" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:643]   --->   Operation 27 'load' 'v283' <Predicate = true> <Delay = 1.20> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 1.20> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 1024> <RAM>
+ST_2 : Operation 28 [2/2] (4.90ns)   --->   "%v284 = fmul i32 %v283, i32 0.00195312" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:643]   --->   Operation 28 'fmul' 'v284' <Predicate = true> <Delay = 4.90> <CoreInst = "FMul_maxdsp">   --->   Core 30 'FMul_maxdsp' <Latency = 1> <II = 1> <Delay = 4.90> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+
+State 3 <SV = 2> <Delay = 6.10>
+ST_3 : Operation 29 [1/2] (4.90ns)   --->   "%v282 = fmul i32 %v281, i32 0.00195312" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:640]   --->   Operation 29 'fmul' 'v282' <Predicate = true> <Delay = 4.90> <CoreInst = "FMul_maxdsp">   --->   Core 30 'FMul_maxdsp' <Latency = 1> <II = 1> <Delay = 4.90> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 30 [1/1] (1.20ns)   --->   "%store_ln641 = store i32 %v282, i10 %mean_addr" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:641]   --->   Operation 30 'store' 'store_ln641' <Predicate = true> <Delay = 1.20> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 1.20> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 1024> <RAM>
+ST_3 : Operation 31 [1/2] (4.90ns)   --->   "%v284 = fmul i32 %v283, i32 0.00195312" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:643]   --->   Operation 31 'fmul' 'v284' <Predicate = true> <Delay = 4.90> <CoreInst = "FMul_maxdsp">   --->   Core 30 'FMul_maxdsp' <Latency = 1> <II = 1> <Delay = 4.90> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 32 [1/1] (1.20ns)   --->   "%store_ln644 = store i32 %v284, i10 %mean2_addr" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:644]   --->   Operation 32 'store' 'store_ln644' <Predicate = true> <Delay = 1.20> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 1.20> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 1024> <RAM>
+
+State 4 <SV = 3> <Delay = 4.90>
+ST_4 : Operation 33 [2/2] (4.90ns)   --->   "%v287 = fmul i32 %v282, i32 %v282" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:647]   --->   Operation 33 'fmul' 'v287' <Predicate = true> <Delay = 4.90> <CoreInst = "FMul_maxdsp">   --->   Core 30 'FMul_maxdsp' <Latency = 1> <II = 1> <Delay = 4.90> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+
+State 5 <SV = 4> <Delay = 4.90>
+ST_5 : Operation 34 [1/2] (4.90ns)   --->   "%v287 = fmul i32 %v282, i32 %v282" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:647]   --->   Operation 34 'fmul' 'v287' <Predicate = true> <Delay = 4.90> <CoreInst = "FMul_maxdsp">   --->   Core 30 'FMul_maxdsp' <Latency = 1> <II = 1> <Delay = 4.90> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+
+State 6 <SV = 5> <Delay = 6.14>
+ST_6 : Operation 35 [3/3] (6.14ns)   --->   "%v288 = fsub i32 %v284, i32 %v287" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:648]   --->   Operation 35 'fsub' 'v288' <Predicate = true> <Delay = 6.14> <CoreInst = "FAddSub_fulldsp">   --->   Core 18 'FAddSub_fulldsp' <Latency = 2> <II = 1> <Delay = 6.14> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+State 7 <SV = 6> <Delay = 6.14>
+ST_7 : Operation 36 [2/3] (6.14ns)   --->   "%v288 = fsub i32 %v284, i32 %v287" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:648]   --->   Operation 36 'fsub' 'v288' <Predicate = true> <Delay = 6.14> <CoreInst = "FAddSub_fulldsp">   --->   Core 18 'FAddSub_fulldsp' <Latency = 2> <II = 1> <Delay = 6.14> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+State 8 <SV = 7> <Delay = 6.14>
+ST_8 : Operation 37 [1/3] (6.14ns)   --->   "%v288 = fsub i32 %v284, i32 %v287" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:648]   --->   Operation 37 'fsub' 'v288' <Predicate = true> <Delay = 6.14> <CoreInst = "FAddSub_fulldsp">   --->   Core 18 'FAddSub_fulldsp' <Latency = 2> <II = 1> <Delay = 6.14> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_8 : Operation 44 [1/1] (0.00ns)   --->   "%ret_ln0 = ret"   --->   Operation 44 'ret' 'ret_ln0' <Predicate = (icmp_ln638)> <Delay = 0.00>
+
+State 9 <SV = 8> <Delay = 1.20>
+ST_9 : Operation 38 [1/1] (0.00ns)   --->   "%specpipeline_ln638 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_219" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:638]   --->   Operation 38 'specpipeline' 'specpipeline_ln638' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 39 [1/1] (0.00ns)   --->   "%speclooptripcount_ln638 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 1024, i64 1024, i64 1024" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:638]   --->   Operation 39 'speclooptripcount' 'speclooptripcount_ln638' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 40 [1/1] (0.00ns)   --->   "%specloopname_ln638 = specloopname void @_ssdm_op_SpecLoopName, void @empty_187" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:638]   --->   Operation 40 'specloopname' 'specloopname_ln638' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 41 [1/1] (0.00ns)   --->   "%var_addr = getelementptr i32 %var_r, i64 0, i64 %zext_ln638" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:649]   --->   Operation 41 'getelementptr' 'var_addr' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 42 [1/1] (1.20ns)   --->   "%store_ln649 = store i32 %v288, i10 %var_addr" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:649]   --->   Operation 42 'store' 'store_ln649' <Predicate = true> <Delay = 1.20> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 1.20> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 1024> <RAM>
+ST_9 : Operation 43 [1/1] (0.00ns)   --->   "%br_ln638 = br void %for.inc64" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:638]   --->   Operation 43 'br' 'br_ln638' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10.000ns, clock uncertainty: 2.700ns.
+
+ <State 1>: 1.587ns
+The critical path consists of the following:
+	'store' operation 0 bit ('store_ln638', /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:638) of constant 0 on local variable 'i3', /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:638 [5]  (0.387 ns)
+	'load' operation 11 bit ('i3', /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:638) on local variable 'i3', /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:638 [8]  (0.000 ns)
+	'getelementptr' operation 10 bit ('mean_addr', /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:639) [17]  (0.000 ns)
+	'load' operation 32 bit ('v281', /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:640) on array 'mean' [18]  (1.200 ns)
+
+ <State 2>: 6.101ns
+The critical path consists of the following:
+	'load' operation 32 bit ('v281', /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:640) on array 'mean' [18]  (1.200 ns)
+	'fmul' operation 32 bit ('v282', /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:640) [19]  (4.901 ns)
+
+ <State 3>: 6.101ns
+The critical path consists of the following:
+	'fmul' operation 32 bit ('v282', /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:640) [19]  (4.901 ns)
+	'store' operation 0 bit ('store_ln641', /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:641) of variable 'v282', /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:640 on array 'mean' [20]  (1.200 ns)
+
+ <State 4>: 4.901ns
+The critical path consists of the following:
+	'fmul' operation 32 bit ('v287', /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:647) [25]  (4.901 ns)
+
+ <State 5>: 4.901ns
+The critical path consists of the following:
+	'fmul' operation 32 bit ('v287', /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:647) [25]  (4.901 ns)
+
+ <State 6>: 6.149ns
+The critical path consists of the following:
+	'fsub' operation 32 bit ('v288', /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:648) [26]  (6.149 ns)
+
+ <State 7>: 6.149ns
+The critical path consists of the following:
+	'fsub' operation 32 bit ('v288', /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:648) [26]  (6.149 ns)
+
+ <State 8>: 6.149ns
+The critical path consists of the following:
+	'fsub' operation 32 bit ('v288', /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:648) [26]  (6.149 ns)
+
+ <State 9>: 1.200ns
+The critical path consists of the following:
+	'getelementptr' operation 10 bit ('var_addr', /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:649) [27]  (0.000 ns)
+	'store' operation 0 bit ('store_ln649', /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:649) of variable 'v288', /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:648 on array 'var_r' [28]  (1.200 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+	State 9
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

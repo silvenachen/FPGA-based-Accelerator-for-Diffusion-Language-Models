@@ -1,0 +1,75 @@
+INFO: [v++ 60-1548] Creating build summary session with primary output /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/DitBlock.hlscompile_summary, at Wed Feb  5 22:14:36 2025
+INFO: [v++ 82-31] Launching vitis_hls: vitis_hls -nolog -run csynth -work_dir /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock -config /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/hls_config.cfg -cmdlineconfig /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/config.cmdline
+
+****** Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2023.2 (64-bit)
+  **** SW Build 4023990 on Oct 11 2023
+  **** IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+  **** SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source /tools/Xilinx/Vitis_HLS/2023.2/scripts/vitis_hls/hls.tcl -notrace
+INFO: [HLS 200-10] Running '/tools/Xilinx/Vitis_HLS/2023.2/bin/unwrapped/lnx64.o/vitis_hls'
+INFO: [HLS 200-10] For user 'silvenchen' on host 'silvenchen-ASUS-TUF-Gaming-F15-FX507ZM-FX507ZM' (Linux_x86_64 version 5.19.0-32-generic) on Wed Feb 05 22:14:37 CST 2025
+INFO: [HLS 200-10] On os Ubuntu 22.04.2 LTS
+INFO: [HLS 200-10] In directory '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock'
+INFO: [HLS 200-1909] Reading HLS ini file /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/hls_config.cfg
+INFO: [HLS 200-1909] Reading HLS ini file /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/config.cmdline
+INFO: [HLS 200-2005] Using work_dir /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock 
+INFO: [HLS 200-1510] Running: open_project /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock -diskless 
+INFO: [HLS 200-1510] Running: open_solution hls 
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2023.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1510] Running: apply_ini /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/hls_config.cfg 
+INFO: [HLS 200-1909] Reading HLS ini file /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/hls_config.cfg
+INFO: [HLS 200-1465] Applying ini 'syn.file=kernel.cpp' at /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/hls_config.cfg(8)
+INFO: [HLS 200-10] Adding design file '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=kernel.h' at /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/hls_config.cfg(9)
+INFO: [HLS 200-10] Adding design file '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.h' to the project
+INFO: [HLS 200-1465] Applying ini 'tb.file=tb_dit.cpp' at /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/hls_config.cfg(10)
+INFO: [HLS 200-10] Adding test bench file '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/tb_dit.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.top=allo_DDitBlock' at /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/hls_config.cfg(11)
+INFO: [HLS 200-1465] Applying ini 'flow_target=vivado' at /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/hls_config.cfg(4)
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2023.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying ini 'part=xcu280-fsvh2892-2L-e' at /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/hls_config.cfg(1)
+INFO: [HLS 200-1611] Setting target device to 'xcu280-fsvh2892-2L-e'
+INFO: [HLS 200-1465] Applying ini 'clock=100MHz' at /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/hls_config.cfg(7)
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1465] Applying ini 'package.output.format=ip_catalog' at /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/hls_config.cfg(5)
+INFO: [HLS 200-1510] Running: apply_ini /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/config.cmdline 
+INFO: [HLS 200-1909] Reading HLS ini file /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/config.cmdline
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.03 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.04 seconds; current allocated memory: 634.379 MB.
+INFO: [HLS 200-10] Analyzing design file '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp' ... 
+WARNING: [HLS 214-114] Since the only kind of statements allowed in a canonical dataflow region are variable declarations and function calls, the compiler may not be able to correctly handle the region (/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:337:9)
+Resolution: For help on HLS 214-114 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2023.2%20English&url=ug1448-hls-guidance&resourceid=214-114.html
+WARNING: [HLS 214-114] Since the only kind of statements allowed in a canonical dataflow region are variable declarations and function calls, the compiler may not be able to correctly handle the region (/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:3255:9)
+Resolution: For help on HLS 214-114 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2023.2%20English&url=ug1448-hls-guidance&resourceid=214-114.html
+WARNING: [HLS 214-114] Since the only kind of statements allowed in a canonical dataflow region are variable declarations and function calls, the compiler may not be able to correctly handle the region (/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:6224:9)
+Resolution: For help on HLS 214-114 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2023.2%20English&url=ug1448-hls-guidance&resourceid=214-114.html
+WARNING: [HLS 214-114] Since the only kind of statements allowed in a canonical dataflow region are variable declarations and function calls, the compiler may not be able to correctly handle the region (/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:9193:9)
+Resolution: For help on HLS 214-114 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2023.2%20English&url=ug1448-hls-guidance&resourceid=214-114.html
+WARNING: [HLS 214-114] Since the only kind of statements allowed in a canonical dataflow region are variable declarations and function calls, the compiler may not be able to correctly handle the region (/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:12233:9)
+Resolution: For help on HLS 214-114 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2023.2%20English&url=ug1448-hls-guidance&resourceid=214-114.html
+WARNING: [HLS 214-114] Since the only kind of statements allowed in a canonical dataflow region are variable declarations and function calls, the compiler may not be able to correctly handle the region (/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:15283:9)
+Resolution: For help on HLS 214-114 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2023.2%20English&url=ug1448-hls-guidance&resourceid=214-114.html
+WARNING: [HLS 214-114] Since the only kind of statements allowed in a canonical dataflow region are variable declarations and function calls, the compiler may not be able to correctly handle the region (/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:18310:9)
+Resolution: For help on HLS 214-114 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2023.2%20English&url=ug1448-hls-guidance&resourceid=214-114.html
+WARNING: [HLS 214-114] Since the only kind of statements allowed in a canonical dataflow region are variable declarations and function calls, the compiler may not be able to correctly handle the region (/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:21328:9)
+Resolution: For help on HLS 214-114 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2023.2%20English&url=ug1448-hls-guidance&resourceid=214-114.html
+WARNING: [HLS 214-114] Since the only kind of statements allowed in a canonical dataflow region are variable declarations and function calls, the compiler may not be able to correctly handle the region (/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:24332:9)
+Resolution: For help on HLS 214-114 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2023.2%20English&url=ug1448-hls-guidance&resourceid=214-114.html
+WARNING: [HLS 200-471] Dataflow form checks found 9 issue(s) in file /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp
+Resolution: For help on HLS 200-471 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2023.2%20English&url=ug1448-hls-guidance&resourceid=200-471.html
+WARNING: [HLS 207-5292] unused parameter 'v10233' (/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:18743:9)
+WARNING: [HLS 207-5292] unused parameter 'v13539' (/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25228:11)
+WARNING: [HLS 207-5292] unused parameter 'v13540' (/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25229:11)
+WARNING: [HLS 207-5292] unused parameter 'v13549' (/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25250:11)
+WARNING: [HLS 207-5292] unused parameter 'v13550' (/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25251:11)
+WARNING: [HLS 207-5292] unused parameter 'v13551' (/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25252:11)
+WARNING: [HLS 207-5292] unused parameter 'v13552' (/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25253:11)
+WARNING: [HLS 207-5292] unused parameter 'v13553' (/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25254:11)
+WARNING: [HLS 207-5292] unused parameter 'v13554' (/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25255:11)
+WARNING: [HLS 207-5292] unused parameter 'v13556' (/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25257:11)
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 13.72 seconds. CPU system time: 0.6 seconds. Elapsed time: 14.58 seconds; current allocated memory: 701.391 MB.

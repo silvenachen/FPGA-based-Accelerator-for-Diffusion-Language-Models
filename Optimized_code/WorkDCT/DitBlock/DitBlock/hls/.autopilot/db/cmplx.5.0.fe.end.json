@@ -1,0 +1,5308 @@
+{
+    "1": {
+        "name": "allo_DDitBlock_Pipeline_VITIS_LOOP_25427_35_VITIS_LOOP_25428_36",
+        "file": "\/home\/silvenchen\/Desktop\/DitBlock\/WorkDCT\/DitBlock\/kernel.cpp",
+        "fileloc": "25427",
+        "instructions": "38",
+        "total_instructions": "38",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3",
+            "T": "1"
+        },
+        "stores": {
+            "L": "7"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "2": {
+        "name": "systolic_Q_Pipeline_l_load_B_tile_bk1_l_bj1",
+        "file": "\/home\/silvenchen\/Desktop\/DitBlock\/WorkDCT\/DitBlock\/kernel.cpp",
+        "fileloc": "3640",
+        "instructions": "62",
+        "total_instructions": "62",
+        "calls": "",
+        "basicblocks": "13",
+        "loads": {
+            "L": "4"
+        },
+        "stores": {
+            "L": "14"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "3": {
+        "name": "PE_kernel_Q_0_7",
+        "file": "kernel.cpp",
+        "fileloc": "2930",
+        "instructions": "31",
+        "total_instructions": "31",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "4": {
+        "name": "PE_kernel_YV_5_7",
+        "file": "kernel.cpp",
+        "fileloc": "15158",
+        "instructions": "31",
+        "total_instructions": "31",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "5": {
+        "name": "PE_kernel_Q_0_4",
+        "file": "kernel.cpp",
+        "fileloc": "1970",
+        "instructions": "31",
+        "total_instructions": "31",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "6": {
+        "name": "PE_kernel_QKT_0_1",
+        "file": "kernel.cpp",
+        "fileloc": "9988",
+        "instructions": "31",
+        "total_instructions": "31",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "7": {
+        "name": "PE_kernel_Q_5_7",
+        "file": "kernel.cpp",
+        "fileloc": "3130",
+        "instructions": "31",
+        "total_instructions": "31",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "8": {
+        "name": "allo_DDitBlock_Pipeline_VITIS_LOOP_25387_25_VITIS_LOOP_25388_26",
+        "file": "\/home\/silvenchen\/Desktop\/DitBlock\/WorkDCT\/DitBlock\/kernel.cpp",
+        "fileloc": "25387",
+        "instructions": "38",
+        "total_instructions": "38",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3",
+            "T": "1"
+        },
+        "stores": {
+            "L": "7"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "9": {
+        "name": "allo_DDitBlock_Pipeline_VITIS_LOOP_25340_15",
+        "file": "\/home\/silvenchen\/Desktop\/DitBlock\/WorkDCT\/DitBlock\/kernel.cpp",
+        "fileloc": "25340",
+        "instructions": "20",
+        "total_instructions": "20",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "1",
+            "T": "1"
+        },
+        "stores": {
+            "L": "3"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "10": {
+        "name": "PE_kernel_Q_5_6",
+        "file": "kernel.cpp",
+        "fileloc": "2810",
+        "instructions": "31",
+        "total_instructions": "31",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "11": {
+        "name": "exp_generic<double>",
+        "file": "hls_exp_.h",
+        "fileloc": "156",
+        "instructions": "146",
+        "total_instructions": "146",
+        "calls": "",
+        "basicblocks": "1",
+        "loads": {
+            "G": "4"
+        }
+    },
+    "12": {
+        "name": "PE_kernel_Q_6_0",
+        "file": "kernel.cpp",
+        "fileloc": "930",
+        "instructions": "31",
+        "total_instructions": "31",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "13": {
+        "name": "allo_DDitBlock_Pipeline_VITIS_LOOP_25332_13_VITIS_LOOP_25333_14",
+        "file": "\/home\/silvenchen\/Desktop\/DitBlock\/WorkDCT\/DitBlock\/kernel.cpp",
+        "fileloc": "25332",
+        "instructions": "37",
+        "total_instructions": "37",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3",
+            "T": "1"
+        },
+        "stores": {
+            "L": "7"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "14": {
+        "name": "PE_kernel_YV_5_6",
+        "file": "kernel.cpp",
+        "fileloc": "14838",
+        "instructions": "31",
+        "total_instructions": "31",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "15": {
+        "name": "PE_kernel_QKT_5_2",
+        "file": "kernel.cpp",
+        "fileloc": "10508",
+        "instructions": "31",
+        "total_instructions": "31",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "16": {
+        "name": "allo_DDitBlock_Pipeline_VITIS_LOOP_25311_7_VITIS_LOOP_25312_8",
+        "file": "\/home\/silvenchen\/Desktop\/DitBlock\/WorkDCT\/DitBlock\/kernel.cpp",
+        "fileloc": "25311",
+        "instructions": "37",
+        "total_instructions": "37",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3",
+            "T": "1"
+        },
+        "stores": {
+            "L": "7"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "17": {
+        "name": "PE_kernel_QKT_5_1",
+        "file": "kernel.cpp",
+        "fileloc": "10188",
+        "instructions": "31",
+        "total_instructions": "31",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "18": {
+        "name": "scaled_dot_product_attention_Pipeline_VITIS_LOOP_15708_1_VITIS_LOOP_15709_2",
+        "file": "\/home\/silvenchen\/Desktop\/DitBlock\/WorkDCT\/DitBlock\/kernel.cpp",
+        "fileloc": "15708",
+        "instructions": "33",
+        "total_instructions": "33",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "7"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "19": {
+        "name": "PE_kernel_QKT_6_2",
+        "file": "kernel.cpp",
+        "fileloc": "10548",
+        "instructions": "31",
+        "total_instructions": "31",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "20": {
+        "name": "PE_kernel_QKT_6_6",
+        "file": "kernel.cpp",
+        "fileloc": "11828",
+        "instructions": "31",
+        "total_instructions": "31",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "21": {
+        "name": "allo_DDitBlock_Pipeline_VITIS_LOOP_25459_42_VITIS_LOOP_25460_43",
+        "file": "\/home\/silvenchen\/Desktop\/DitBlock\/WorkDCT\/DitBlock\/kernel.cpp",
+        "fileloc": "25459",
+        "instructions": "38",
+        "total_instructions": "38",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3",
+            "T": "1"
+        },
+        "stores": {
+            "L": "7"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "22": {
+        "name": "layer_norm_Pipeline_l_mean_var_i3",
+        "file": "\/home\/silvenchen\/Desktop\/DitBlock\/WorkDCT\/DitBlock\/kernel.cpp",
+        "fileloc": "638",
+        "instructions": "26",
+        "total_instructions": "26",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "5"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "23": {
+        "name": "allo_DDitBlock_Pipeline_VITIS_LOOP_25364_21_VITIS_LOOP_25365_22",
+        "file": "\/home\/silvenchen\/Desktop\/DitBlock\/WorkDCT\/DitBlock\/kernel.cpp",
+        "fileloc": "25364",
+        "instructions": "38",
+        "total_instructions": "38",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3",
+            "T": "1"
+        },
+        "stores": {
+            "L": "7"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "24": {
+        "name": "adaLN_modulate_Pipeline_l_store_C_tile_sj",
+        "file": "\/home\/silvenchen\/Desktop\/DitBlock\/WorkDCT\/DitBlock\/kernel.cpp",
+        "fileloc": "527",
+        "instructions": "29",
+        "total_instructions": "29",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "L": "3"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "25": {
+        "name": "systolic_YV_Pipeline_l_load_B_tile_bk5_l_bj5",
+        "file": "\/home\/silvenchen\/Desktop\/DitBlock\/WorkDCT\/DitBlock\/kernel.cpp",
+        "fileloc": "15668",
+        "instructions": "61",
+        "total_instructions": "61",
+        "calls": "",
+        "basicblocks": "13",
+        "loads": {
+            "L": "4"
+        },
+        "stores": {
+            "L": "14"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "26": {
+        "name": "PE_kernel_Q_5_3",
+        "file": "kernel.cpp",
+        "fileloc": "1850",
+        "instructions": "31",
+        "total_instructions": "31",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "27": {
+        "name": "PE_kernel_QKT_6_5",
+        "file": "kernel.cpp",
+        "fileloc": "11508",
+        "instructions": "31",
+        "total_instructions": "31",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "28": {
+        "name": "PE_kernel_QKT_0_4",
+        "file": "kernel.cpp",
+        "fileloc": "10948",
+        "instructions": "31",
+        "total_instructions": "31",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "29": {
+        "name": "systolic_tile_YV_Loop_l_data_load_k338_proc28",
+        "file": "\/home\/silvenchen\/Desktop\/DitBlock\/WorkDCT\/DitBlock\/kernel.cpp",
+        "fileloc": "15297",
+        "instructions": "94",
+        "total_instructions": "94",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "17"
+        },
+        "stores": {
+            "L": "2"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "30": {
+        "name": "RoPE_Pipeline_VITIS_LOOP_9624_3_VITIS_LOOP_9625_4",
+        "file": "\/home\/silvenchen\/Desktop\/DitBlock\/WorkDCT\/DitBlock\/kernel.cpp",
+        "fileloc": "9624",
+        "instructions": "33",
+        "total_instructions": "33",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "7"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "31": {
+        "name": "PE_kernel_Q_5_4",
+        "file": "kernel.cpp",
+        "fileloc": "2170",
+        "instructions": "31",
+        "total_instructions": "31",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "32": {
+        "name": "scaled_dot_product_attention_Pipeline_l_mha_split_i15_l_j13",
+        "file": "\/home\/silvenchen\/Desktop\/DitBlock\/WorkDCT\/DitBlock\/kernel.cpp",
+        "fileloc": "15697",
+        "instructions": "56",
+        "total_instructions": "56",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "6"
+        },
+        "stores": {
+            "L": "9"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "33": {
+        "name": "PE_kernel_Q_0_5",
+        "file": "kernel.cpp",
+        "fileloc": "2290",
+        "instructions": "31",
+        "total_instructions": "31",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "34": {
+        "name": "PE_kernel_Q_0_6",
+        "file": "kernel.cpp",
+        "fileloc": "2610",
+        "instructions": "31",
+        "total_instructions": "31",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "35": {
+        "name": "PE_kernel_QKT_6_7",
+        "file": "kernel.cpp",
+        "fileloc": "12148",
+        "instructions": "31",
+        "total_instructions": "31",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "36": {
+        "name": "RoPE",
+        "file": "\/home\/silvenchen\/Desktop\/DitBlock\/WorkDCT\/DitBlock\/kernel.cpp",
+        "fileloc": "9602",
+        "instructions": "27",
+        "total_instructions": "349",
+        "calls": "66 126 231 30 43 276 127 207",
+        "basicblocks": "4",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "L": "2"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "37": {
+        "name": "PE_kernel_YV_3_0",
+        "file": "kernel.cpp",
+        "fileloc": "12838",
+        "instructions": "31",
+        "total_instructions": "31",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "38": {
+        "name": "PE_kernel_QKT_0_2",
+        "file": "kernel.cpp",
+        "fileloc": "10308",
+        "instructions": "31",
+        "total_instructions": "31",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "39": {
+        "name": "PE_kernel_QKT_0_3",
+        "file": "kernel.cpp",
+        "fileloc": "10628",
+        "instructions": "31",
+        "total_instructions": "31",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "40": {
+        "name": "PE_kernel_Q_5_5",
+        "file": "kernel.cpp",
+        "fileloc": "2490",
+        "instructions": "31",
+        "total_instructions": "31",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "41": {
+        "name": "PE_kernel_QKT_2_2",
+        "file": "kernel.cpp",
+        "fileloc": "10388",
+        "instructions": "31",
+        "total_instructions": "31",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "42": {
+        "name": "pow_generic<double>",
+        "file": "hls_pow.h",
+        "fileloc": "291",
+        "instructions": "320",
+        "total_instructions": "320",
+        "calls": "",
+        "basicblocks": "1",
+        "loads": {
+            "G": "13"
+        }
+    },
+    "43": {
+        "name": "RoPE_Pipeline_l_rotary_1_i8_l_j6",
+        "file": "\/home\/silvenchen\/Desktop\/DitBlock\/WorkDCT\/DitBlock\/kernel.cpp",
+        "fileloc": "9629",
+        "instructions": "44",
+        "total_instructions": "44",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "7"
+        },
+        "stores": {
+            "L": "7"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "44": {
+        "name": "PE_kernel_QKT_7_2",
+        "file": "kernel.cpp",
+        "fileloc": "10588",
+        "instructions": "31",
+        "total_instructions": "31",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "45": {
+        "name": "PE_kernel_Q_2_5",
+        "file": "kernel.cpp",
+        "fileloc": "2370",
+        "instructions": "31",
+        "total_instructions": "31",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "46": {
+        "name": "allo_DDitBlock_Pipeline_VITIS_LOOP_25454_41",
+        "file": "\/home\/silvenchen\/Desktop\/DitBlock\/WorkDCT\/DitBlock\/kernel.cpp",
+        "fileloc": "25454",
+        "instructions": "20",
+        "total_instructions": "20",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "1",
+            "T": "1"
+        },
+        "stores": {
+            "L": "3"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "47": {
+        "name": "PE_kernel_Q_2_4",
+        "file": "kernel.cpp",
+        "fileloc": "2050",
+        "instructions": "31",
+        "total_instructions": "31",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "48": {
+        "name": "systolic_QKT_Pipeline_l_load_B_tile_bk4_l_bj4",
+        "file": "\/home\/silvenchen\/Desktop\/DitBlock\/WorkDCT\/DitBlock\/kernel.cpp",
+        "fileloc": "12618",
+        "instructions": "61",
+        "total_instructions": "61",
+        "calls": "",
+        "basicblocks": "13",
+        "loads": {
+            "L": "4"
+        },
+        "stores": {
+            "L": "14"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "49": {
+        "name": "PE_kernel_QKT_2_3",
+        "file": "kernel.cpp",
+        "fileloc": "10708",
+        "instructions": "31",
+        "total_instructions": "31",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "50": {
+        "name": "PE_kernel_Q_0_3",
+        "file": "kernel.cpp",
+        "fileloc": "1650",
+        "instructions": "31",
+        "total_instructions": "31",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "51": {
+        "name": "PE_kernel_YV_1_2",
+        "file": "kernel.cpp",
+        "fileloc": "13398",
+        "instructions": "31",
+        "total_instructions": "31",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "52": {
+        "name": "PE_kernel_QKT_7_3",
+        "file": "kernel.cpp",
+        "fileloc": "10908",
+        "instructions": "31",
+        "total_instructions": "31",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "53": {
+        "name": "PE_kernel_QKT_7_1",
+        "file": "kernel.cpp",
+        "fileloc": "10268",
+        "instructions": "31",
+        "total_instructions": "31",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "54": {
+        "name": "PE_kernel_YV_1_1",
+        "file": "kernel.cpp",
+        "fileloc": "13078",
+        "instructions": "31",
+        "total_instructions": "31",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "55": {
+        "name": "PE_kernel_QKT_4_3",
+        "file": "kernel.cpp",
+        "fileloc": "10788",
+        "instructions": "31",
+        "total_instructions": "31",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "56": {
+        "name": "PE_kernel_Q_0_2",
+        "file": "kernel.cpp",
+        "fileloc": "1330",
+        "instructions": "31",
+        "total_instructions": "31",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "57": {
+        "name": "PE_kernel_QKT_7_5",
+        "file": "kernel.cpp",
+        "fileloc": "11548",
+        "instructions": "31",
+        "total_instructions": "31",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "58": {
+        "name": "systolic_YV_Pipeline_l_load_A_tile_ak5_l_ai5",
+        "file": "\/home\/silvenchen\/Desktop\/DitBlock\/WorkDCT\/DitBlock\/kernel.cpp",
+        "fileloc": "15657",
+        "instructions": "65",
+        "total_instructions": "65",
+        "calls": "",
+        "basicblocks": "15",
+        "loads": {
+            "L": "4"
+        },
+        "stores": {
+            "L": "14"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "59": {
+        "name": "PE_kernel_QKT_7_4",
+        "file": "kernel.cpp",
+        "fileloc": "11228",
+        "instructions": "31",
+        "total_instructions": "31",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "60": {
+        "name": "scaled_dot_product_attention_Pipeline_l_mha_scale_i16_l_j14",
+        "file": "\/home\/silvenchen\/Desktop\/DitBlock\/WorkDCT\/DitBlock\/kernel.cpp",
+        "fileloc": "15728",
+        "instructions": "37",
+        "total_instructions": "37",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "4"
+        },
+        "stores": {
+            "L": "7"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "61": {
+        "name": "PE_kernel_Q_0_1",
+        "file": "kernel.cpp",
+        "fileloc": "1010",
+        "instructions": "31",
+        "total_instructions": "31",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "62": {
+        "name": "PE_kernel_QKT_6_3",
+        "file": "kernel.cpp",
+        "fileloc": "10868",
+        "instructions": "31",
+        "total_instructions": "31",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "63": {
+        "name": "allo_DDitBlock_Pipeline_l_res_add_i19_l_j1711",
+        "file": "\/home\/silvenchen\/Desktop\/DitBlock\/WorkDCT\/DitBlock\/kernel.cpp",
+        "fileloc": "25471",
+        "instructions": "39",
+        "total_instructions": "39",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "5"
+        },
+        "stores": {
+            "L": "7"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "64": {
+        "name": "systolic_tile_Q_Loop_l_data_drain_k75_proc25",
+        "file": "\/home\/silvenchen\/Desktop\/DitBlock\/WorkDCT\/DitBlock\/kernel.cpp",
+        "fileloc": "3599",
+        "instructions": "45",
+        "total_instructions": "45",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "L": "2"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "65": {
+        "name": "systolic_Q_Pipeline_l_load_A_tile_ak1_l_ai1",
+        "file": "\/home\/silvenchen\/Desktop\/DitBlock\/WorkDCT\/DitBlock\/kernel.cpp",
+        "fileloc": "3629",
+        "instructions": "66",
+        "total_instructions": "66",
+        "calls": "",
+        "basicblocks": "15",
+        "loads": {
+            "L": "4"
+        },
+        "stores": {
+            "L": "14"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "66": {
+        "name": "RoPE_Pipeline_l_rope_split_1_i6_l_j4",
+        "file": "\/home\/silvenchen\/Desktop\/DitBlock\/WorkDCT\/DitBlock\/kernel.cpp",
+        "fileloc": "9605",
+        "instructions": "39",
+        "total_instructions": "39",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "4"
+        },
+        "stores": {
+            "L": "7"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "67": {
+        "name": "systolic_tile_YV_Loop_l_data_drain_k339_proc29",
+        "file": "\/home\/silvenchen\/Desktop\/DitBlock\/WorkDCT\/DitBlock\/kernel.cpp",
+        "fileloc": "15627",
+        "instructions": "45",
+        "total_instructions": "45",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "L": "2"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "68": {
+        "name": "PE_kernel_YV_5_5",
+        "file": "kernel.cpp",
+        "fileloc": "14518",
+        "instructions": "31",
+        "total_instructions": "31",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "69": {
+        "name": "PE_kernel_QKT_4_5",
+        "file": "kernel.cpp",
+        "fileloc": "11428",
+        "instructions": "31",
+        "total_instructions": "31",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "70": {
+        "name": "PE_kernel_QKT_7_0",
+        "file": "kernel.cpp",
+        "fileloc": "9948",
+        "instructions": "31",
+        "total_instructions": "31",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "71": {
+        "name": "systolic_tile_Q_Loop_l_data_load_k74_proc24",
+        "file": "\/home\/silvenchen\/Desktop\/DitBlock\/WorkDCT\/DitBlock\/kernel.cpp",
+        "fileloc": "3269",
+        "instructions": "94",
+        "total_instructions": "94",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "17"
+        },
+        "stores": {
+            "L": "2"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "72": {
+        "name": "PE_kernel_QKT_6_4",
+        "file": "kernel.cpp",
+        "fileloc": "11188",
+        "instructions": "31",
+        "total_instructions": "31",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "73": {
+        "name": "PE_kernel_QKT_4_4",
+        "file": "kernel.cpp",
+        "fileloc": "11108",
+        "instructions": "31",
+        "total_instructions": "31",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "74": {
+        "name": "PE_kernel_Q_2_3",
+        "file": "kernel.cpp",
+        "fileloc": "1730",
+        "instructions": "31",
+        "total_instructions": "31",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "75": {
+        "name": "allo_DDitBlock_Pipeline_VITIS_LOOP_25329_12",
+        "file": "\/home\/silvenchen\/Desktop\/DitBlock\/WorkDCT\/DitBlock\/kernel.cpp",
+        "fileloc": "25329",
+        "instructions": "20",
+        "total_instructions": "20",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "1",
+            "T": "1"
+        },
+        "stores": {
+            "L": "3"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "76": {
+        "name": "PE_kernel_QKT_3_7",
+        "file": "kernel.cpp",
+        "fileloc": "12028",
+        "instructions": "31",
+        "total_instructions": "31",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "77": {
+        "name": "PE_kernel_QKT_3_4",
+        "file": "kernel.cpp",
+        "fileloc": "11068",
+        "instructions": "31",
+        "total_instructions": "31",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "78": {
+        "name": "allo_DDitBlock_Pipeline_VITIS_LOOP_25343_16_VITIS_LOOP_25344_17",
+        "file": "\/home\/silvenchen\/Desktop\/DitBlock\/WorkDCT\/DitBlock\/kernel.cpp",
+        "fileloc": "25343",
+        "instructions": "37",
+        "total_instructions": "37",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3",
+            "T": "1"
+        },
+        "stores": {
+            "L": "7"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "79": {
+        "name": "scaled_dot_product_attention_Pipeline_l_exp_sum_i13_l_j11",
+        "file": "\/home\/silvenchen\/Desktop\/DitBlock\/WorkDCT\/DitBlock\/kernel.cpp",
+        "fileloc": "15736",
+        "instructions": "57",
+        "total_instructions": "57",
+        "calls": "",
+        "basicblocks": "8",
+        "loads": {
+            "L": "8"
+        },
+        "stores": {
+            "L": "11"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "80": {
+        "name": "PE_kernel_Q_2_7",
+        "file": "kernel.cpp",
+        "fileloc": "3010",
+        "instructions": "31",
+        "total_instructions": "31",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "81": {
+        "name": "systolic_Q",
+        "file": "\/home\/silvenchen\/Desktop\/DitBlock\/WorkDCT\/DitBlock\/kernel.cpp",
+        "fileloc": "3616",
+        "instructions": "181",
+        "total_instructions": "3044",
+        "calls": "65 2 188 264",
+        "basicblocks": "4",
+        "loads": {
+            "L": "67"
+        },
+        "stores": {
+            "L": "6"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "82": {
+        "name": "PE_kernel_Q_4_1",
+        "file": "kernel.cpp",
+        "fileloc": "1170",
+        "instructions": "31",
+        "total_instructions": "31",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "83": {
+        "name": "allo_DDitBlock_Pipeline_l_scale_i18_l_j1610",
+        "file": "\/home\/silvenchen\/Desktop\/DitBlock\/WorkDCT\/DitBlock\/kernel.cpp",
+        "fileloc": "25471",
+        "instructions": "39",
+        "total_instructions": "39",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "5"
+        },
+        "stores": {
+            "L": "7"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "84": {
+        "name": "PE_kernel_YV_2_4",
+        "file": "kernel.cpp",
+        "fileloc": "14078",
+        "instructions": "31",
+        "total_instructions": "31",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "85": {
+        "name": "PE_kernel_YV_0_2",
+        "file": "kernel.cpp",
+        "fileloc": "13358",
+        "instructions": "31",
+        "total_instructions": "31",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "86": {
+        "name": "PE_kernel_QKT_3_3",
+        "file": "kernel.cpp",
+        "fileloc": "10748",
+        "instructions": "31",
+        "total_instructions": "31",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "87": {
+        "name": "PE_kernel_Q_3_0",
+        "file": "kernel.cpp",
+        "fileloc": "810",
+        "instructions": "31",
+        "total_instructions": "31",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "88": {
+        "name": "PE_kernel_YV_2_0",
+        "file": "kernel.cpp",
+        "fileloc": "12798",
+        "instructions": "31",
+        "total_instructions": "31",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "89": {
+        "name": "PE_kernel_YV_2_3",
+        "file": "kernel.cpp",
+        "fileloc": "13758",
+        "instructions": "31",
+        "total_instructions": "31",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "90": {
+        "name": "layer_norm",
+        "file": "\/home\/silvenchen\/Desktop\/DitBlock\/WorkDCT\/DitBlock\/kernel.cpp",
+        "fileloc": "616",
+        "instructions": "33",
+        "total_instructions": "178",
+        "calls": "230 293 171 22 216",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "2"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "91": {
+        "name": "PE_kernel_YV_1_7",
+        "file": "kernel.cpp",
+        "fileloc": "14998",
+        "instructions": "31",
+        "total_instructions": "31",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "92": {
+        "name": "PE_kernel_QKT_3_6",
+        "file": "kernel.cpp",
+        "fileloc": "11708",
+        "instructions": "31",
+        "total_instructions": "31",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "93": {
+        "name": "allo_DDitBlock_Pipeline_VITIS_LOOP_25435_37_VITIS_LOOP_25436_38",
+        "file": "\/home\/silvenchen\/Desktop\/DitBlock\/WorkDCT\/DitBlock\/kernel.cpp",
+        "fileloc": "25435",
+        "instructions": "37",
+        "total_instructions": "37",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "4"
+        },
+        "stores": {
+            "L": "7"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "94": {
+        "name": "PE_kernel_YV_2_2",
+        "file": "kernel.cpp",
+        "fileloc": "13438",
+        "instructions": "31",
+        "total_instructions": "31",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "95": {
+        "name": "adaLN_modulate_Pipeline_l_load_B_tile_bk_l_bj",
+        "file": "\/home\/silvenchen\/Desktop\/DitBlock\/WorkDCT\/DitBlock\/kernel.cpp",
+        "fileloc": "527",
+        "instructions": "61",
+        "total_instructions": "61",
+        "calls": "",
+        "basicblocks": "13",
+        "loads": {
+            "L": "4"
+        },
+        "stores": {
+            "L": "14"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "96": {
+        "name": "PE_kernel_YV_1_0",
+        "file": "kernel.cpp",
+        "fileloc": "12758",
+        "instructions": "31",
+        "total_instructions": "31",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "97": {
+        "name": "PE_kernel_YV_0_0",
+        "file": "kernel.cpp",
+        "fileloc": "12718",
+        "instructions": "31",
+        "total_instructions": "31",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "98": {
+        "name": "PE_kernel_Q_3_7",
+        "file": "kernel.cpp",
+        "fileloc": "3050",
+        "instructions": "31",
+        "total_instructions": "31",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "99": {
+        "name": "systolic_tile_QKT_Loop_l_data_drain_k273_proc27",
+        "file": "\/home\/silvenchen\/Desktop\/DitBlock\/WorkDCT\/DitBlock\/kernel.cpp",
+        "fileloc": "12577",
+        "instructions": "45",
+        "total_instructions": "45",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "L": "2"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "100": {
+        "name": "allo_DDitBlock_Pipeline_l_m_fused_i5_l_j3",
+        "file": "\/home\/silvenchen\/Desktop\/DitBlock\/WorkDCT\/DitBlock\/kernel.cpp",
+        "fileloc": "25379",
+        "instructions": "45",
+        "total_instructions": "45",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "6"
+        },
+        "stores": {
+            "L": "7"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "101": {
+        "name": "allo_DDitBlock_Pipeline_VITIS_LOOP_25308_6",
+        "file": "\/home\/silvenchen\/Desktop\/DitBlock\/WorkDCT\/DitBlock\/kernel.cpp",
+        "fileloc": "25308",
+        "instructions": "20",
+        "total_instructions": "20",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "1",
+            "T": "1"
+        },
+        "stores": {
+            "L": "3"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "102": {
+        "name": "PE_kernel_QKT_1_3",
+        "file": "kernel.cpp",
+        "fileloc": "10668",
+        "instructions": "31",
+        "total_instructions": "31",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "103": {
+        "name": "systolic_tile_modulate_Loop_l_data_load_k8_proc22",
+        "file": "\/home\/silvenchen\/Desktop\/DitBlock\/WorkDCT\/DitBlock\/kernel.cpp",
+        "fileloc": "348",
+        "instructions": "104",
+        "total_instructions": "104",
+        "calls": "",
+        "basicblocks": "15",
+        "loads": {
+            "L": "20"
+        },
+        "stores": {
+            "L": "14"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "104": {
+        "name": "allo_DDitBlock_Pipeline_VITIS_LOOP_25406_31_VITIS_LOOP_25407_32",
+        "file": "\/home\/silvenchen\/Desktop\/DitBlock\/WorkDCT\/DitBlock\/kernel.cpp",
+        "fileloc": "25406",
+        "instructions": "37",
+        "total_instructions": "37",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3",
+            "T": "1"
+        },
+        "stores": {
+            "L": "7"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "105": {
+        "name": "PE_kernel_YV_3_3",
+        "file": "kernel.cpp",
+        "fileloc": "13798",
+        "instructions": "31",
+        "total_instructions": "31",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "106": {
+        "name": "systolic_tile_QKT_Loop_l_data_load_k272_proc26",
+        "file": "\/home\/silvenchen\/Desktop\/DitBlock\/WorkDCT\/DitBlock\/kernel.cpp",
+        "fileloc": "12247",
+        "instructions": "94",
+        "total_instructions": "94",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "17"
+        },
+        "stores": {
+            "L": "2"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "107": {
+        "name": "PE_kernel_QKT_2_6",
+        "file": "kernel.cpp",
+        "fileloc": "11668",
+        "instructions": "31",
+        "total_instructions": "31",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "108": {
+        "name": "PE_kernel_YV_2_1",
+        "file": "kernel.cpp",
+        "fileloc": "13118",
+        "instructions": "31",
+        "total_instructions": "31",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "109": {
+        "name": "PE_kernel_YV_2_7",
+        "file": "kernel.cpp",
+        "fileloc": "15038",
+        "instructions": "31",
+        "total_instructions": "31",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "110": {
+        "name": "PE_kernel_YV_0_7",
+        "file": "kernel.cpp",
+        "fileloc": "14958",
+        "instructions": "31",
+        "total_instructions": "31",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "111": {
+        "name": "PE_kernel_YV_3_5",
+        "file": "kernel.cpp",
+        "fileloc": "14438",
+        "instructions": "31",
+        "total_instructions": "31",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "112": {
+        "name": "adaLN_modulate_Pipeline_l_load_A_tile_ak",
+        "file": "\/home\/silvenchen\/Desktop\/DitBlock\/WorkDCT\/DitBlock\/kernel.cpp",
+        "fileloc": "527",
+        "instructions": "21",
+        "total_instructions": "21",
+        "calls": "",
+        "basicblocks": "6",
+        "loads": {
+            "L": "2"
+        },
+        "stores": {
+            "L": "3"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "113": {
+        "name": "PE_kernel_YV_0_1",
+        "file": "kernel.cpp",
+        "fileloc": "13038",
+        "instructions": "31",
+        "total_instructions": "31",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "114": {
+        "name": "PE_kernel_Q_4_0",
+        "file": "kernel.cpp",
+        "fileloc": "850",
+        "instructions": "31",
+        "total_instructions": "31",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "115": {
+        "name": "PE_kernel_YV_0_6",
+        "file": "kernel.cpp",
+        "fileloc": "14638",
+        "instructions": "31",
+        "total_instructions": "31",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "116": {
+        "name": "scaled_dot_product_attention",
+        "file": "\/home\/silvenchen\/Desktop\/DitBlock\/WorkDCT\/DitBlock\/kernel.cpp",
+        "fileloc": "15688",
+        "instructions": "40",
+        "total_instructions": "6543",
+        "calls": "32 18 211 215 260 60 245 294 217 79 240 178 223",
+        "basicblocks": "4",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "L": "2"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "117": {
+        "name": "allo_DDitBlock_Pipeline_VITIS_LOOP_25420_33_VITIS_LOOP_25421_34",
+        "file": "\/home\/silvenchen\/Desktop\/DitBlock\/WorkDCT\/DitBlock\/kernel.cpp",
+        "fileloc": "25420",
+        "instructions": "38",
+        "total_instructions": "38",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3",
+            "T": "1"
+        },
+        "stores": {
+            "L": "7"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "118": {
+        "name": "PE_kernel_QKT_2_5",
+        "file": "kernel.cpp",
+        "fileloc": "11348",
+        "instructions": "31",
+        "total_instructions": "31",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "119": {
+        "name": "PE_kernel_YV_2_6",
+        "file": "kernel.cpp",
+        "fileloc": "14718",
+        "instructions": "31",
+        "total_instructions": "31",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "120": {
+        "name": "PE_kernel_YV_1_3",
+        "file": "kernel.cpp",
+        "fileloc": "13718",
+        "instructions": "31",
+        "total_instructions": "31",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "121": {
+        "name": "PE_kernel_YV_3_4",
+        "file": "kernel.cpp",
+        "fileloc": "14118",
+        "instructions": "31",
+        "total_instructions": "31",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "122": {
+        "name": "PE_kernel_QKT_2_4",
+        "file": "kernel.cpp",
+        "fileloc": "11028",
+        "instructions": "31",
+        "total_instructions": "31",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "123": {
+        "name": "PE_kernel_Q_2_6",
+        "file": "kernel.cpp",
+        "fileloc": "2690",
+        "instructions": "31",
+        "total_instructions": "31",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "124": {
+        "name": "PE_kernel_modulate_0_0.1",
+        "file": "\/home\/silvenchen\/Desktop\/DitBlock\/WorkDCT\/DitBlock\/kernel.cpp",
+        "fileloc": "35",
+        "instructions": "31",
+        "total_instructions": "31",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "125": {
+        "name": "PE_kernel_QKT_1_7",
+        "file": "kernel.cpp",
+        "fileloc": "11948",
+        "instructions": "31",
+        "total_instructions": "31",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "126": {
+        "name": "RoPE_Pipeline_l_rope_split_2_i7_l_j5",
+        "file": "\/home\/silvenchen\/Desktop\/DitBlock\/WorkDCT\/DitBlock\/kernel.cpp",
+        "fileloc": "9611",
+        "instructions": "45",
+        "total_instructions": "45",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "4"
+        },
+        "stores": {
+            "L": "7"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "127": {
+        "name": "RoPE_Pipeline_l_rotary_merge_1_i10_l_j8",
+        "file": "\/home\/silvenchen\/Desktop\/DitBlock\/WorkDCT\/DitBlock\/kernel.cpp",
+        "fileloc": "9653",
+        "instructions": "39",
+        "total_instructions": "39",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "4"
+        },
+        "stores": {
+            "L": "7"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "128": {
+        "name": "PE_kernel_YV_2_5",
+        "file": "kernel.cpp",
+        "fileloc": "14398",
+        "instructions": "31",
+        "total_instructions": "31",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "129": {
+        "name": "PE_kernel_YV_3_1",
+        "file": "kernel.cpp",
+        "fileloc": "13158",
+        "instructions": "31",
+        "total_instructions": "31",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "130": {
+        "name": "PE_kernel_QKT_1_6",
+        "file": "kernel.cpp",
+        "fileloc": "11628",
+        "instructions": "31",
+        "total_instructions": "31",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "131": {
+        "name": "PE_kernel_QKT_3_2",
+        "file": "kernel.cpp",
+        "fileloc": "10428",
+        "instructions": "31",
+        "total_instructions": "31",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "132": {
+        "name": "PE_kernel_YV_7_7",
+        "file": "kernel.cpp",
+        "fileloc": "15238",
+        "instructions": "31",
+        "total_instructions": "31",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "133": {
+        "name": "systolic_tile_QKT",
+        "file": "kernel.cpp",
+        "fileloc": "12228",
+        "instructions": "500",
+        "total_instructions": "2623",
+        "calls": "106 288 218 137 210 246 222 177 70 6 214 263 199 250 17 219 53 38 167 41 131 269 15 19 44 39 102 49 86 55 290 62 52 28 213 122 77 73 266 72 59 190 220 118 149 69 272 27 57 181 130 107 92 224 261 20 289 179 125 202 76 201 186 35 295 99",
+        "basicblocks": "1"
+    },
+    "134": {
+        "name": "PE_kernel_YV_1_6",
+        "file": "kernel.cpp",
+        "fileloc": "14678",
+        "instructions": "31",
+        "total_instructions": "31",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "135": {
+        "name": "PE_kernel_Q_4_2",
+        "file": "kernel.cpp",
+        "fileloc": "1490",
+        "instructions": "31",
+        "total_instructions": "31",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "136": {
+        "name": "PE_kernel_Q_7_2",
+        "file": "kernel.cpp",
+        "fileloc": "1610",
+        "instructions": "31",
+        "total_instructions": "31",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "137": {
+        "name": "PE_kernel_QKT_2_0",
+        "file": "kernel.cpp",
+        "fileloc": "9748",
+        "instructions": "31",
+        "total_instructions": "31",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "138": {
+        "name": "PE_kernel_YV_3_2",
+        "file": "kernel.cpp",
+        "fileloc": "13478",
+        "instructions": "31",
+        "total_instructions": "31",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "139": {
+        "name": "allo_DDitBlock_Pipeline_VITIS_LOOP_25446_39_VITIS_LOOP_25447_40",
+        "file": "\/home\/silvenchen\/Desktop\/DitBlock\/WorkDCT\/DitBlock\/kernel.cpp",
+        "fileloc": "25446",
+        "instructions": "38",
+        "total_instructions": "38",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3",
+            "T": "1"
+        },
+        "stores": {
+            "L": "7"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "140": {
+        "name": "allo_DDitBlock_Pipeline_VITIS_LOOP_25381_23_VITIS_LOOP_25382_24",
+        "file": "\/home\/silvenchen\/Desktop\/DitBlock\/WorkDCT\/DitBlock\/kernel.cpp",
+        "fileloc": "25381",
+        "instructions": "38",
+        "total_instructions": "38",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3",
+            "T": "1"
+        },
+        "stores": {
+            "L": "7"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "141": {
+        "name": "PE_kernel_Q_3_5",
+        "file": "kernel.cpp",
+        "fileloc": "2410",
+        "instructions": "31",
+        "total_instructions": "31",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "142": {
+        "name": "PE_kernel_YV_1_5",
+        "file": "kernel.cpp",
+        "fileloc": "14358",
+        "instructions": "31",
+        "total_instructions": "31",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "143": {
+        "name": "PE_kernel_YV_0_4",
+        "file": "kernel.cpp",
+        "fileloc": "13998",
+        "instructions": "31",
+        "total_instructions": "31",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "144": {
+        "name": "PE_kernel_Q_3_2",
+        "file": "kernel.cpp",
+        "fileloc": "1450",
+        "instructions": "31",
+        "total_instructions": "31",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "145": {
+        "name": "PE_kernel_YV_1_4",
+        "file": "kernel.cpp",
+        "fileloc": "14038",
+        "instructions": "31",
+        "total_instructions": "31",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "146": {
+        "name": "PE_kernel_YV_0_3",
+        "file": "kernel.cpp",
+        "fileloc": "13678",
+        "instructions": "31",
+        "total_instructions": "31",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "147": {
+        "name": "PE_kernel_Q_3_4",
+        "file": "kernel.cpp",
+        "fileloc": "2090",
+        "instructions": "31",
+        "total_instructions": "31",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "148": {
+        "name": "PE_kernel_Q_3_3",
+        "file": "kernel.cpp",
+        "fileloc": "1770",
+        "instructions": "31",
+        "total_instructions": "31",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "149": {
+        "name": "PE_kernel_QKT_3_5",
+        "file": "kernel.cpp",
+        "fileloc": "11388",
+        "instructions": "31",
+        "total_instructions": "31",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "150": {
+        "name": "PE_kernel_Q_3_1",
+        "file": "kernel.cpp",
+        "fileloc": "1130",
+        "instructions": "31",
+        "total_instructions": "31",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "151": {
+        "name": "PE_kernel_modulate_1_0.1",
+        "file": "\/home\/silvenchen\/Desktop\/DitBlock\/WorkDCT\/DitBlock\/kernel.cpp",
+        "fileloc": "74",
+        "instructions": "31",
+        "total_instructions": "31",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "152": {
+        "name": "PE_kernel_YV_0_5",
+        "file": "kernel.cpp",
+        "fileloc": "14318",
+        "instructions": "31",
+        "total_instructions": "31",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "153": {
+        "name": "PE_kernel_Q_3_6",
+        "file": "kernel.cpp",
+        "fileloc": "2730",
+        "instructions": "31",
+        "total_instructions": "31",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "154": {
+        "name": "PE_kernel_modulate_7_0.1",
+        "file": "\/home\/silvenchen\/Desktop\/DitBlock\/WorkDCT\/DitBlock\/kernel.cpp",
+        "fileloc": "308",
+        "instructions": "31",
+        "total_instructions": "31",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "155": {
+        "name": "allo_DDitBlock_Pipeline_l_res_add_i19_l_j17",
+        "file": "\/home\/silvenchen\/Desktop\/DitBlock\/WorkDCT\/DitBlock\/kernel.cpp",
+        "fileloc": "25432",
+        "instructions": "39",
+        "total_instructions": "39",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "5"
+        },
+        "stores": {
+            "L": "7"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "156": {
+        "name": "PE_kernel_Q_7_6",
+        "file": "kernel.cpp",
+        "fileloc": "2890",
+        "instructions": "31",
+        "total_instructions": "31",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "157": {
+        "name": "PE_kernel_modulate_4_0.1",
+        "file": "\/home\/silvenchen\/Desktop\/DitBlock\/WorkDCT\/DitBlock\/kernel.cpp",
+        "fileloc": "191",
+        "instructions": "31",
+        "total_instructions": "31",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "158": {
+        "name": "allo_DDitBlock_Pipeline_VITIS_LOOP_25351_18",
+        "file": "\/home\/silvenchen\/Desktop\/DitBlock\/WorkDCT\/DitBlock\/kernel.cpp",
+        "fileloc": "25351",
+        "instructions": "20",
+        "total_instructions": "20",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "1",
+            "T": "1"
+        },
+        "stores": {
+            "L": "3"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "159": {
+        "name": "PE_kernel_Q_6_2",
+        "file": "kernel.cpp",
+        "fileloc": "1570",
+        "instructions": "31",
+        "total_instructions": "31",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "160": {
+        "name": "allo_DDitBlock_Pipeline_l_S_i_j_0_i20_l_j189",
+        "file": "\/home\/silvenchen\/Desktop\/DitBlock\/WorkDCT\/DitBlock\/kernel.cpp",
+        "fileloc": "25470",
+        "instructions": "41",
+        "total_instructions": "41",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "5"
+        },
+        "stores": {
+            "L": "7"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "161": {
+        "name": "allo_DDitBlock_Pipeline_VITIS_LOOP_25401_29_VITIS_LOOP_25402_30",
+        "file": "\/home\/silvenchen\/Desktop\/DitBlock\/WorkDCT\/DitBlock\/kernel.cpp",
+        "fileloc": "25401",
+        "instructions": "37",
+        "total_instructions": "37",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3",
+            "T": "1"
+        },
+        "stores": {
+            "L": "7"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "162": {
+        "name": "PE_kernel_modulate_3_0.1",
+        "file": "\/home\/silvenchen\/Desktop\/DitBlock\/WorkDCT\/DitBlock\/kernel.cpp",
+        "fileloc": "152",
+        "instructions": "31",
+        "total_instructions": "31",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "163": {
+        "name": "PE_kernel_Q_7_7",
+        "file": "kernel.cpp",
+        "fileloc": "3210",
+        "instructions": "31",
+        "total_instructions": "31",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "164": {
+        "name": "PE_kernel_modulate_2_0.1",
+        "file": "\/home\/silvenchen\/Desktop\/DitBlock\/WorkDCT\/DitBlock\/kernel.cpp",
+        "fileloc": "113",
+        "instructions": "31",
+        "total_instructions": "31",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "165": {
+        "name": "PE_kernel_modulate_6_0.1",
+        "file": "\/home\/silvenchen\/Desktop\/DitBlock\/WorkDCT\/DitBlock\/kernel.cpp",
+        "fileloc": "269",
+        "instructions": "31",
+        "total_instructions": "31",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "166": {
+        "name": "PE_kernel_Q_7_5",
+        "file": "kernel.cpp",
+        "fileloc": "2570",
+        "instructions": "31",
+        "total_instructions": "31",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "167": {
+        "name": "PE_kernel_QKT_1_2",
+        "file": "kernel.cpp",
+        "fileloc": "10348",
+        "instructions": "31",
+        "total_instructions": "31",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "168": {
+        "name": "systolic_tile_modulate_Loop_l_data_drain_k9_proc23",
+        "file": "\/home\/silvenchen\/Desktop\/DitBlock\/WorkDCT\/DitBlock\/kernel.cpp",
+        "fileloc": "398",
+        "instructions": "52",
+        "total_instructions": "52",
+        "calls": "",
+        "basicblocks": "15",
+        "loads": {
+            "L": "2"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "169": {
+        "name": "allo_DDitBlock_Pipeline_VITIS_LOOP_25294_2",
+        "file": "\/home\/silvenchen\/Desktop\/DitBlock\/WorkDCT\/DitBlock\/kernel.cpp",
+        "fileloc": "25294",
+        "instructions": "20",
+        "total_instructions": "20",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "1",
+            "T": "1"
+        },
+        "stores": {
+            "L": "3"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "170": {
+        "name": "adaLN_modulate_Pipeline_VITIS_LOOP_522_2",
+        "file": "\/home\/silvenchen\/Desktop\/DitBlock\/WorkDCT\/DitBlock\/kernel.cpp",
+        "fileloc": "522",
+        "instructions": "16",
+        "total_instructions": "16",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "L": "3"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "171": {
+        "name": "layer_norm_Pipeline_l_sum_i2_l_j1",
+        "file": "\/home\/silvenchen\/Desktop\/DitBlock\/WorkDCT\/DitBlock\/kernel.cpp",
+        "fileloc": "625",
+        "instructions": "59",
+        "total_instructions": "59",
+        "calls": "",
+        "basicblocks": "8",
+        "loads": {
+            "L": "8"
+        },
+        "stores": {
+            "L": "12"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "172": {
+        "name": "adaLN_modulate_Pipeline_l_bias_add",
+        "file": "\/home\/silvenchen\/Desktop\/DitBlock\/WorkDCT\/DitBlock\/kernel.cpp",
+        "fileloc": "534",
+        "instructions": "22",
+        "total_instructions": "22",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "173": {
+        "name": "allo_DDitBlock_Pipeline_VITIS_LOOP_25321_10_VITIS_LOOP_25322_11",
+        "file": "\/home\/silvenchen\/Desktop\/DitBlock\/WorkDCT\/DitBlock\/kernel.cpp",
+        "fileloc": "25321",
+        "instructions": "37",
+        "total_instructions": "37",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3",
+            "T": "1"
+        },
+        "stores": {
+            "L": "7"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "174": {
+        "name": "PE_kernel_modulate_5_0.1",
+        "file": "\/home\/silvenchen\/Desktop\/DitBlock\/WorkDCT\/DitBlock\/kernel.cpp",
+        "fileloc": "230",
+        "instructions": "31",
+        "total_instructions": "31",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "175": {
+        "name": "PE_kernel_Q_6_1",
+        "file": "kernel.cpp",
+        "fileloc": "1250",
+        "instructions": "31",
+        "total_instructions": "31",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "176": {
+        "name": "systolic_YV_Pipeline_l_store_C_tile_sj5_l_si5",
+        "file": "\/home\/silvenchen\/Desktop\/DitBlock\/WorkDCT\/DitBlock\/kernel.cpp",
+        "fileloc": "15676",
+        "instructions": "111",
+        "total_instructions": "111",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "7"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "177": {
+        "name": "PE_kernel_QKT_6_0",
+        "file": "kernel.cpp",
+        "fileloc": "9908",
+        "instructions": "31",
+        "total_instructions": "31",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "178": {
+        "name": "systolic_YV",
+        "file": "\/home\/silvenchen\/Desktop\/DitBlock\/WorkDCT\/DitBlock\/kernel.cpp",
+        "fileloc": "15640",
+        "instructions": "178",
+        "total_instructions": "3038",
+        "calls": "58 25 238 176",
+        "basicblocks": "4",
+        "loads": {
+            "L": "67"
+        },
+        "stores": {
+            "L": "6"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "179": {
+        "name": "PE_kernel_QKT_0_7",
+        "file": "kernel.cpp",
+        "fileloc": "11908",
+        "instructions": "31",
+        "total_instructions": "31",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "180": {
+        "name": "PE_kernel_YV_6_6",
+        "file": "kernel.cpp",
+        "fileloc": "14878",
+        "instructions": "31",
+        "total_instructions": "31",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "181": {
+        "name": "PE_kernel_QKT_0_6",
+        "file": "kernel.cpp",
+        "fileloc": "11588",
+        "instructions": "31",
+        "total_instructions": "31",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "182": {
+        "name": "PE_kernel_YV_4_7",
+        "file": "kernel.cpp",
+        "fileloc": "15118",
+        "instructions": "31",
+        "total_instructions": "31",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "183": {
+        "name": "PE_kernel_Q_1_3",
+        "file": "kernel.cpp",
+        "fileloc": "1690",
+        "instructions": "31",
+        "total_instructions": "31",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "184": {
+        "name": "PE_kernel_Q_7_3",
+        "file": "kernel.cpp",
+        "fileloc": "1930",
+        "instructions": "31",
+        "total_instructions": "31",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "185": {
+        "name": "PE_kernel_Q_4_3",
+        "file": "kernel.cpp",
+        "fileloc": "1810",
+        "instructions": "31",
+        "total_instructions": "31",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "186": {
+        "name": "PE_kernel_QKT_5_7",
+        "file": "kernel.cpp",
+        "fileloc": "12108",
+        "instructions": "31",
+        "total_instructions": "31",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "187": {
+        "name": "PE_kernel_YV_7_0",
+        "file": "kernel.cpp",
+        "fileloc": "12998",
+        "instructions": "31",
+        "total_instructions": "31",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "188": {
+        "name": "systolic_tile_Q",
+        "file": "kernel.cpp",
+        "fileloc": "3250",
+        "instructions": "500",
+        "total_instructions": "2623",
+        "calls": "71 285 279 243 87 114 284 12 237 61 271 278 150 82 242 175 239 56 192 281 144 135 228 159 136 50 183 74 148 185 26 221 184 5 262 47 147 196 31 291 194 33 233 45 141 200 40 274 166 34 287 123 153 203 10 270 156 3 280 80 98 209 7 247 163 64",
+        "basicblocks": "1"
+    },
+    "189": {
+        "name": "PE_kernel_YV_6_7",
+        "file": "kernel.cpp",
+        "fileloc": "15198",
+        "instructions": "31",
+        "total_instructions": "31",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "190": {
+        "name": "PE_kernel_QKT_0_5",
+        "file": "kernel.cpp",
+        "fileloc": "11268",
+        "instructions": "31",
+        "total_instructions": "31",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "191": {
+        "name": "allo_DDitBlock_Pipeline_l_m_fused_i5_l_j38",
+        "file": "\/home\/silvenchen\/Desktop\/DitBlock\/WorkDCT\/DitBlock\/kernel.cpp",
+        "fileloc": "25444",
+        "instructions": "45",
+        "total_instructions": "45",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "6"
+        },
+        "stores": {
+            "L": "7"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "192": {
+        "name": "PE_kernel_Q_1_2",
+        "file": "kernel.cpp",
+        "fileloc": "1370",
+        "instructions": "31",
+        "total_instructions": "31",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "193": {
+        "name": "PE_kernel_YV_5_0",
+        "file": "kernel.cpp",
+        "fileloc": "12918",
+        "instructions": "31",
+        "total_instructions": "31",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "194": {
+        "name": "PE_kernel_Q_7_4",
+        "file": "kernel.cpp",
+        "fileloc": "2250",
+        "instructions": "31",
+        "total_instructions": "31",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "195": {
+        "name": "systolic_QKT_Pipeline_l_store_C_tile_sj4_l_si4",
+        "file": "\/home\/silvenchen\/Desktop\/DitBlock\/WorkDCT\/DitBlock\/kernel.cpp",
+        "fileloc": "12626",
+        "instructions": "112",
+        "total_instructions": "112",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "7"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "196": {
+        "name": "PE_kernel_Q_4_4",
+        "file": "kernel.cpp",
+        "fileloc": "2130",
+        "instructions": "31",
+        "total_instructions": "31",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "197": {
+        "name": "PE_kernel_YV_7_2",
+        "file": "kernel.cpp",
+        "fileloc": "13638",
+        "instructions": "31",
+        "total_instructions": "31",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "198": {
+        "name": "allo_DDitBlock_Pipeline_l_gelu_i21_l_j19",
+        "file": "\/home\/silvenchen\/Desktop\/DitBlock\/WorkDCT\/DitBlock\/kernel.cpp",
+        "fileloc": "25458",
+        "instructions": "51",
+        "total_instructions": "575",
+        "calls": "42 252",
+        "basicblocks": "4",
+        "loads": {
+            "L": "4"
+        },
+        "stores": {
+            "L": "7"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "199": {
+        "name": "PE_kernel_QKT_3_1",
+        "file": "kernel.cpp",
+        "fileloc": "10108",
+        "instructions": "31",
+        "total_instructions": "31",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "200": {
+        "name": "PE_kernel_Q_4_5",
+        "file": "kernel.cpp",
+        "fileloc": "2450",
+        "instructions": "31",
+        "total_instructions": "31",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "201": {
+        "name": "PE_kernel_QKT_4_7",
+        "file": "kernel.cpp",
+        "fileloc": "12068",
+        "instructions": "31",
+        "total_instructions": "31",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "202": {
+        "name": "PE_kernel_QKT_2_7",
+        "file": "kernel.cpp",
+        "fileloc": "11988",
+        "instructions": "31",
+        "total_instructions": "31",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "203": {
+        "name": "PE_kernel_Q_4_6",
+        "file": "kernel.cpp",
+        "fileloc": "2770",
+        "instructions": "31",
+        "total_instructions": "31",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "204": {
+        "name": "PE_kernel_YV_7_4",
+        "file": "kernel.cpp",
+        "fileloc": "14278",
+        "instructions": "31",
+        "total_instructions": "31",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "205": {
+        "name": "PE_kernel_YV_7_1",
+        "file": "kernel.cpp",
+        "fileloc": "13318",
+        "instructions": "31",
+        "total_instructions": "31",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "206": {
+        "name": "allo_DDitBlock_Pipeline_VITIS_LOOP_25301_4_VITIS_LOOP_25302_5",
+        "file": "\/home\/silvenchen\/Desktop\/DitBlock\/WorkDCT\/DitBlock\/kernel.cpp",
+        "fileloc": "25301",
+        "instructions": "37",
+        "total_instructions": "37",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3",
+            "T": "1"
+        },
+        "stores": {
+            "L": "7"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "207": {
+        "name": "RoPE_Pipeline_l_rotary_merge_2_i11_l_j9",
+        "file": "\/home\/silvenchen\/Desktop\/DitBlock\/WorkDCT\/DitBlock\/kernel.cpp",
+        "fileloc": "9659",
+        "instructions": "45",
+        "total_instructions": "45",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "4"
+        },
+        "stores": {
+            "L": "7"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "208": {
+        "name": "allo_DDitBlock_Pipeline_VITIS_LOOP_25298_3",
+        "file": "\/home\/silvenchen\/Desktop\/DitBlock\/WorkDCT\/DitBlock\/kernel.cpp",
+        "fileloc": "25298",
+        "instructions": "20",
+        "total_instructions": "20",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "1",
+            "T": "1"
+        },
+        "stores": {
+            "L": "3"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "209": {
+        "name": "PE_kernel_Q_4_7",
+        "file": "kernel.cpp",
+        "fileloc": "3090",
+        "instructions": "31",
+        "total_instructions": "31",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "210": {
+        "name": "PE_kernel_QKT_3_0",
+        "file": "kernel.cpp",
+        "fileloc": "9788",
+        "instructions": "31",
+        "total_instructions": "31",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "211": {
+        "name": "scaled_dot_product_attention_Pipeline_VITIS_LOOP_15716_3_VITIS_LOOP_15717_4",
+        "file": "\/home\/silvenchen\/Desktop\/DitBlock\/WorkDCT\/DitBlock\/kernel.cpp",
+        "fileloc": "15716",
+        "instructions": "34",
+        "total_instructions": "34",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "7"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "212": {
+        "name": "PE_kernel_YV_7_5",
+        "file": "kernel.cpp",
+        "fileloc": "14598",
+        "instructions": "31",
+        "total_instructions": "31",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "213": {
+        "name": "PE_kernel_QKT_1_4",
+        "file": "kernel.cpp",
+        "fileloc": "10988",
+        "instructions": "31",
+        "total_instructions": "31",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "214": {
+        "name": "PE_kernel_QKT_1_1",
+        "file": "kernel.cpp",
+        "fileloc": "10028",
+        "instructions": "31",
+        "total_instructions": "31",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "215": {
+        "name": "systolic_QKT",
+        "file": "\/home\/silvenchen\/Desktop\/DitBlock\/WorkDCT\/DitBlock\/kernel.cpp",
+        "fileloc": "12590",
+        "instructions": "179",
+        "total_instructions": "3040",
+        "calls": "296 48 133 195",
+        "basicblocks": "4",
+        "loads": {
+            "L": "67"
+        },
+        "stores": {
+            "L": "6"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "216": {
+        "name": "layer_norm_Pipeline_l_j2",
+        "file": "\/home\/silvenchen\/Desktop\/DitBlock\/WorkDCT\/DitBlock\/kernel.cpp",
+        "fileloc": "652",
+        "instructions": "28",
+        "total_instructions": "28",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "2"
+        },
+        "stores": {
+            "L": "3"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "217": {
+        "name": "scaled_dot_product_attention_Pipeline_l_row_max_i12_l_j10",
+        "file": "\/home\/silvenchen\/Desktop\/DitBlock\/WorkDCT\/DitBlock\/kernel.cpp",
+        "fileloc": "15736",
+        "instructions": "64",
+        "total_instructions": "64",
+        "calls": "",
+        "basicblocks": "8",
+        "loads": {
+            "L": "6"
+        },
+        "stores": {
+            "L": "9"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "218": {
+        "name": "PE_kernel_QKT_1_0",
+        "file": "kernel.cpp",
+        "fileloc": "9708",
+        "instructions": "31",
+        "total_instructions": "31",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "219": {
+        "name": "PE_kernel_QKT_6_1",
+        "file": "kernel.cpp",
+        "fileloc": "10228",
+        "instructions": "31",
+        "total_instructions": "31",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "220": {
+        "name": "PE_kernel_QKT_1_5",
+        "file": "kernel.cpp",
+        "fileloc": "11308",
+        "instructions": "31",
+        "total_instructions": "31",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "221": {
+        "name": "PE_kernel_Q_6_3",
+        "file": "kernel.cpp",
+        "fileloc": "1890",
+        "instructions": "31",
+        "total_instructions": "31",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "222": {
+        "name": "PE_kernel_QKT_5_0",
+        "file": "kernel.cpp",
+        "fileloc": "9868",
+        "instructions": "31",
+        "total_instructions": "31",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "223": {
+        "name": "scaled_dot_product_attention_Pipeline_l_mha_merge_i17_l_j15",
+        "file": "\/home\/silvenchen\/Desktop\/DitBlock\/WorkDCT\/DitBlock\/kernel.cpp",
+        "fileloc": "15738",
+        "instructions": "41",
+        "total_instructions": "41",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "4"
+        },
+        "stores": {
+            "L": "7"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "224": {
+        "name": "PE_kernel_QKT_4_6",
+        "file": "kernel.cpp",
+        "fileloc": "11748",
+        "instructions": "31",
+        "total_instructions": "31",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "225": {
+        "name": "PE_kernel_YV_7_6",
+        "file": "kernel.cpp",
+        "fileloc": "14918",
+        "instructions": "31",
+        "total_instructions": "31",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "0": {
+        "name": "allo_DDitBlock",
+        "file": "\/home\/silvenchen\/Desktop\/DitBlock\/WorkDCT\/DitBlock\/kernel.cpp",
+        "fileloc": "25228",
+        "instructions": "145",
+        "total_instructions": "32064",
+        "calls": "169 208 206 277 101 16 277 234 173 277 75 13 277 9 78 277 158 257 277 23 90 100 140 81 8 81 227 81 161 104 36 36 116 117 81 1 255 155 93 90 90 191 139 81 46 267 198 21 81 292 160 83 63 253",
+        "basicblocks": "1"
+    },
+    "226": {
+        "name": "PE_kernel_YV_7_3",
+        "file": "kernel.cpp",
+        "fileloc": "13958",
+        "instructions": "31",
+        "total_instructions": "31",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "227": {
+        "name": "allo_DDitBlock_Pipeline_VITIS_LOOP_25394_27_VITIS_LOOP_25395_28",
+        "file": "\/home\/silvenchen\/Desktop\/DitBlock\/WorkDCT\/DitBlock\/kernel.cpp",
+        "fileloc": "25394",
+        "instructions": "38",
+        "total_instructions": "38",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3",
+            "T": "1"
+        },
+        "stores": {
+            "L": "7"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "228": {
+        "name": "PE_kernel_Q_5_2",
+        "file": "kernel.cpp",
+        "fileloc": "1530",
+        "instructions": "31",
+        "total_instructions": "31",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "229": {
+        "name": "PE_kernel_YV_4_0",
+        "file": "kernel.cpp",
+        "fileloc": "12878",
+        "instructions": "31",
+        "total_instructions": "31",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "230": {
+        "name": "layer_norm_Pipeline_VITIS_LOOP_617_1",
+        "file": "\/home\/silvenchen\/Desktop\/DitBlock\/WorkDCT\/DitBlock\/kernel.cpp",
+        "fileloc": "617",
+        "instructions": "16",
+        "total_instructions": "16",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "L": "3"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "231": {
+        "name": "RoPE_Pipeline_VITIS_LOOP_9618_1_VITIS_LOOP_9619_2",
+        "file": "\/home\/silvenchen\/Desktop\/DitBlock\/WorkDCT\/DitBlock\/kernel.cpp",
+        "fileloc": "9618",
+        "instructions": "33",
+        "total_instructions": "33",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "7"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "232": {
+        "name": "PE_kernel_YV_6_3",
+        "file": "kernel.cpp",
+        "fileloc": "13918",
+        "instructions": "31",
+        "total_instructions": "31",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "233": {
+        "name": "PE_kernel_Q_1_5",
+        "file": "kernel.cpp",
+        "fileloc": "2330",
+        "instructions": "31",
+        "total_instructions": "31",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "234": {
+        "name": "allo_DDitBlock_Pipeline_VITIS_LOOP_25318_9",
+        "file": "\/home\/silvenchen\/Desktop\/DitBlock\/WorkDCT\/DitBlock\/kernel.cpp",
+        "fileloc": "25318",
+        "instructions": "20",
+        "total_instructions": "20",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "1",
+            "T": "1"
+        },
+        "stores": {
+            "L": "3"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "235": {
+        "name": "PE_kernel_YV_6_4",
+        "file": "kernel.cpp",
+        "fileloc": "14238",
+        "instructions": "31",
+        "total_instructions": "31",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "236": {
+        "name": "PE_kernel_YV_3_7",
+        "file": "kernel.cpp",
+        "fileloc": "15078",
+        "instructions": "31",
+        "total_instructions": "31",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "237": {
+        "name": "PE_kernel_Q_7_0",
+        "file": "kernel.cpp",
+        "fileloc": "970",
+        "instructions": "31",
+        "total_instructions": "31",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "238": {
+        "name": "systolic_tile_YV",
+        "file": "kernel.cpp",
+        "fileloc": "15278",
+        "instructions": "500",
+        "total_instructions": "2623",
+        "calls": "29 97 96 88 37 229 193 258 187 113 54 108 129 268 265 254 205 85 51 94 138 273 244 248 197 146 120 89 105 283 251 232 226 143 145 84 121 241 259 235 204 152 142 128 111 275 68 249 212 115 134 119 286 282 14 180 225 110 91 109 236 182 4 189 132 67",
+        "basicblocks": "1"
+    },
+    "239": {
+        "name": "PE_kernel_Q_7_1",
+        "file": "kernel.cpp",
+        "fileloc": "1290",
+        "instructions": "31",
+        "total_instructions": "31",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "240": {
+        "name": "scaled_dot_product_attention_Pipeline_l_update_i14_l_j12",
+        "file": "\/home\/silvenchen\/Desktop\/DitBlock\/WorkDCT\/DitBlock\/kernel.cpp",
+        "fileloc": "15736",
+        "instructions": "38",
+        "total_instructions": "38",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "5"
+        },
+        "stores": {
+            "L": "7"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "241": {
+        "name": "PE_kernel_YV_4_4",
+        "file": "kernel.cpp",
+        "fileloc": "14158",
+        "instructions": "31",
+        "total_instructions": "31",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "242": {
+        "name": "PE_kernel_Q_5_1",
+        "file": "kernel.cpp",
+        "fileloc": "1210",
+        "instructions": "31",
+        "total_instructions": "31",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "243": {
+        "name": "PE_kernel_Q_2_0",
+        "file": "kernel.cpp",
+        "fileloc": "770",
+        "instructions": "31",
+        "total_instructions": "31",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "244": {
+        "name": "PE_kernel_YV_5_2",
+        "file": "kernel.cpp",
+        "fileloc": "13558",
+        "instructions": "31",
+        "total_instructions": "31",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "245": {
+        "name": "scaled_dot_product_attention_Pipeline_VITIS_LOOP_12688_1",
+        "file": "\/home\/silvenchen\/Desktop\/DitBlock\/WorkDCT\/DitBlock\/kernel.cpp",
+        "fileloc": "15736",
+        "instructions": "16",
+        "total_instructions": "16",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "L": "3"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "246": {
+        "name": "PE_kernel_QKT_4_0",
+        "file": "kernel.cpp",
+        "fileloc": "9828",
+        "instructions": "31",
+        "total_instructions": "31",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "247": {
+        "name": "PE_kernel_Q_6_7",
+        "file": "kernel.cpp",
+        "fileloc": "3170",
+        "instructions": "31",
+        "total_instructions": "31",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "248": {
+        "name": "PE_kernel_YV_6_2",
+        "file": "kernel.cpp",
+        "fileloc": "13598",
+        "instructions": "31",
+        "total_instructions": "31",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "249": {
+        "name": "PE_kernel_YV_6_5",
+        "file": "kernel.cpp",
+        "fileloc": "14558",
+        "instructions": "31",
+        "total_instructions": "31",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "250": {
+        "name": "PE_kernel_QKT_4_1",
+        "file": "kernel.cpp",
+        "fileloc": "10148",
+        "instructions": "31",
+        "total_instructions": "31",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "251": {
+        "name": "PE_kernel_YV_5_3",
+        "file": "kernel.cpp",
+        "fileloc": "13878",
+        "instructions": "31",
+        "total_instructions": "31",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "252": {
+        "name": "generic_tanh<float>",
+        "file": "hls_tanh.h",
+        "fileloc": "28",
+        "instructions": "58",
+        "total_instructions": "204",
+        "calls": "11",
+        "basicblocks": "13"
+    },
+    "253": {
+        "name": "allo_DDitBlock_Pipeline_VITIS_LOOP_25474_45_VITIS_LOOP_25475_46",
+        "file": "\/home\/silvenchen\/Desktop\/DitBlock\/WorkDCT\/DitBlock\/kernel.cpp",
+        "fileloc": "25474",
+        "instructions": "38",
+        "total_instructions": "38",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "4"
+        },
+        "stores": {
+            "L": "6",
+            "T": "1"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "254": {
+        "name": "PE_kernel_YV_6_1",
+        "file": "kernel.cpp",
+        "fileloc": "13278",
+        "instructions": "31",
+        "total_instructions": "31",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "255": {
+        "name": "allo_DDitBlock_Pipeline_l_scale_i18_l_j16",
+        "file": "\/home\/silvenchen\/Desktop\/DitBlock\/WorkDCT\/DitBlock\/kernel.cpp",
+        "fileloc": "25432",
+        "instructions": "39",
+        "total_instructions": "39",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "5"
+        },
+        "stores": {
+            "L": "7"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "256": {
+        "name": "systolic_tile_modulate",
+        "file": "\/home\/silvenchen\/Desktop\/DitBlock\/WorkDCT\/DitBlock\/kernel.cpp",
+        "fileloc": "333",
+        "instructions": "87",
+        "total_instructions": "491",
+        "calls": "103 124 151 164 162 157 174 165 154 168",
+        "basicblocks": "1"
+    },
+    "257": {
+        "name": "allo_DDitBlock_Pipeline_VITIS_LOOP_25354_19_VITIS_LOOP_25355_20",
+        "file": "\/home\/silvenchen\/Desktop\/DitBlock\/WorkDCT\/DitBlock\/kernel.cpp",
+        "fileloc": "25354",
+        "instructions": "37",
+        "total_instructions": "37",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3",
+            "T": "1"
+        },
+        "stores": {
+            "L": "7"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "258": {
+        "name": "PE_kernel_YV_6_0",
+        "file": "kernel.cpp",
+        "fileloc": "12958",
+        "instructions": "31",
+        "total_instructions": "31",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "259": {
+        "name": "PE_kernel_YV_5_4",
+        "file": "kernel.cpp",
+        "fileloc": "14198",
+        "instructions": "31",
+        "total_instructions": "31",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "260": {
+        "name": "scaled_dot_product_attention_Pipeline_VITIS_LOOP_15723_5_VITIS_LOOP_15724_6",
+        "file": "\/home\/silvenchen\/Desktop\/DitBlock\/WorkDCT\/DitBlock\/kernel.cpp",
+        "fileloc": "15723",
+        "instructions": "33",
+        "total_instructions": "33",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "7"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "261": {
+        "name": "PE_kernel_QKT_5_6",
+        "file": "kernel.cpp",
+        "fileloc": "11788",
+        "instructions": "31",
+        "total_instructions": "31",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "262": {
+        "name": "PE_kernel_Q_1_4",
+        "file": "kernel.cpp",
+        "fileloc": "2010",
+        "instructions": "31",
+        "total_instructions": "31",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "263": {
+        "name": "PE_kernel_QKT_2_1",
+        "file": "kernel.cpp",
+        "fileloc": "10068",
+        "instructions": "31",
+        "total_instructions": "31",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "264": {
+        "name": "systolic_Q_Pipeline_l_store_C_tile_sj1_l_si1",
+        "file": "\/home\/silvenchen\/Desktop\/DitBlock\/WorkDCT\/DitBlock\/kernel.cpp",
+        "fileloc": "3648",
+        "instructions": "112",
+        "total_instructions": "112",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "7"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "265": {
+        "name": "PE_kernel_YV_5_1",
+        "file": "kernel.cpp",
+        "fileloc": "13238",
+        "instructions": "31",
+        "total_instructions": "31",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "266": {
+        "name": "PE_kernel_QKT_5_4",
+        "file": "kernel.cpp",
+        "fileloc": "11148",
+        "instructions": "31",
+        "total_instructions": "31",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "267": {
+        "name": "allo_DDitBlock_Pipeline_l_S_i_j_0_i20_l_j18",
+        "file": "\/home\/silvenchen\/Desktop\/DitBlock\/WorkDCT\/DitBlock\/kernel.cpp",
+        "fileloc": "25457",
+        "instructions": "41",
+        "total_instructions": "41",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "5"
+        },
+        "stores": {
+            "L": "7"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "268": {
+        "name": "PE_kernel_YV_4_1",
+        "file": "kernel.cpp",
+        "fileloc": "13198",
+        "instructions": "31",
+        "total_instructions": "31",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "269": {
+        "name": "PE_kernel_QKT_4_2",
+        "file": "kernel.cpp",
+        "fileloc": "10468",
+        "instructions": "31",
+        "total_instructions": "31",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "270": {
+        "name": "PE_kernel_Q_6_6",
+        "file": "kernel.cpp",
+        "fileloc": "2850",
+        "instructions": "31",
+        "total_instructions": "31",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "271": {
+        "name": "PE_kernel_Q_1_1",
+        "file": "kernel.cpp",
+        "fileloc": "1050",
+        "instructions": "31",
+        "total_instructions": "31",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "272": {
+        "name": "PE_kernel_QKT_5_5",
+        "file": "kernel.cpp",
+        "fileloc": "11468",
+        "instructions": "31",
+        "total_instructions": "31",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "273": {
+        "name": "PE_kernel_YV_4_2",
+        "file": "kernel.cpp",
+        "fileloc": "13518",
+        "instructions": "31",
+        "total_instructions": "31",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "274": {
+        "name": "PE_kernel_Q_6_5",
+        "file": "kernel.cpp",
+        "fileloc": "2530",
+        "instructions": "31",
+        "total_instructions": "31",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "275": {
+        "name": "PE_kernel_YV_4_5",
+        "file": "kernel.cpp",
+        "fileloc": "14478",
+        "instructions": "31",
+        "total_instructions": "31",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "276": {
+        "name": "RoPE_Pipeline_l_rotary_2_i9_l_j7",
+        "file": "\/home\/silvenchen\/Desktop\/DitBlock\/WorkDCT\/DitBlock\/kernel.cpp",
+        "fileloc": "9641",
+        "instructions": "44",
+        "total_instructions": "44",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "7"
+        },
+        "stores": {
+            "L": "7"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "277": {
+        "name": "adaLN_modulate",
+        "file": "\/home\/silvenchen\/Desktop\/DitBlock\/WorkDCT\/DitBlock\/kernel.cpp",
+        "fileloc": "520",
+        "instructions": "47",
+        "total_instructions": "687",
+        "calls": "170 172 112 95 256 24",
+        "basicblocks": "4",
+        "loads": {
+            "L": "9"
+        },
+        "stores": {
+            "L": "2"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "278": {
+        "name": "PE_kernel_Q_2_1",
+        "file": "kernel.cpp",
+        "fileloc": "1090",
+        "instructions": "31",
+        "total_instructions": "31",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "279": {
+        "name": "PE_kernel_Q_1_0",
+        "file": "kernel.cpp",
+        "fileloc": "730",
+        "instructions": "31",
+        "total_instructions": "31",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "280": {
+        "name": "PE_kernel_Q_1_7",
+        "file": "kernel.cpp",
+        "fileloc": "2970",
+        "instructions": "31",
+        "total_instructions": "31",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "281": {
+        "name": "PE_kernel_Q_2_2",
+        "file": "kernel.cpp",
+        "fileloc": "1410",
+        "instructions": "31",
+        "total_instructions": "31",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "282": {
+        "name": "PE_kernel_YV_4_6",
+        "file": "kernel.cpp",
+        "fileloc": "14798",
+        "instructions": "31",
+        "total_instructions": "31",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "283": {
+        "name": "PE_kernel_YV_4_3",
+        "file": "kernel.cpp",
+        "fileloc": "13838",
+        "instructions": "31",
+        "total_instructions": "31",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "284": {
+        "name": "PE_kernel_Q_5_0",
+        "file": "kernel.cpp",
+        "fileloc": "890",
+        "instructions": "31",
+        "total_instructions": "31",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "285": {
+        "name": "PE_kernel_Q_0_0",
+        "file": "kernel.cpp",
+        "fileloc": "690",
+        "instructions": "31",
+        "total_instructions": "31",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "286": {
+        "name": "PE_kernel_YV_3_6",
+        "file": "kernel.cpp",
+        "fileloc": "14758",
+        "instructions": "31",
+        "total_instructions": "31",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "287": {
+        "name": "PE_kernel_Q_1_6",
+        "file": "kernel.cpp",
+        "fileloc": "2650",
+        "instructions": "31",
+        "total_instructions": "31",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "288": {
+        "name": "PE_kernel_QKT_0_0",
+        "file": "kernel.cpp",
+        "fileloc": "9668",
+        "instructions": "31",
+        "total_instructions": "31",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "289": {
+        "name": "PE_kernel_QKT_7_6",
+        "file": "kernel.cpp",
+        "fileloc": "11868",
+        "instructions": "31",
+        "total_instructions": "31",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "290": {
+        "name": "PE_kernel_QKT_5_3",
+        "file": "kernel.cpp",
+        "fileloc": "10828",
+        "instructions": "31",
+        "total_instructions": "31",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "291": {
+        "name": "PE_kernel_Q_6_4",
+        "file": "kernel.cpp",
+        "fileloc": "2210",
+        "instructions": "31",
+        "total_instructions": "31",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "292": {
+        "name": "allo_DDitBlock_Pipeline_VITIS_LOOP_25467_44",
+        "file": "\/home\/silvenchen\/Desktop\/DitBlock\/WorkDCT\/DitBlock\/kernel.cpp",
+        "fileloc": "25467",
+        "instructions": "20",
+        "total_instructions": "20",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "1",
+            "T": "1"
+        },
+        "stores": {
+            "L": "3"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "293": {
+        "name": "layer_norm_Pipeline_VITIS_LOOP_621_2",
+        "file": "\/home\/silvenchen\/Desktop\/DitBlock\/WorkDCT\/DitBlock\/kernel.cpp",
+        "fileloc": "621",
+        "instructions": "16",
+        "total_instructions": "16",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "L": "3"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "294": {
+        "name": "scaled_dot_product_attention_Pipeline_VITIS_LOOP_12692_2",
+        "file": "\/home\/silvenchen\/Desktop\/DitBlock\/WorkDCT\/DitBlock\/kernel.cpp",
+        "fileloc": "15736",
+        "instructions": "16",
+        "total_instructions": "16",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "L": "3"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "295": {
+        "name": "PE_kernel_QKT_7_7",
+        "file": "kernel.cpp",
+        "fileloc": "12188",
+        "instructions": "31",
+        "total_instructions": "31",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "296": {
+        "name": "systolic_QKT_Pipeline_l_load_A_tile_ak4_l_ai4",
+        "file": "\/home\/silvenchen\/Desktop\/DitBlock\/WorkDCT\/DitBlock\/kernel.cpp",
+        "fileloc": "12607",
+        "instructions": "65",
+        "total_instructions": "65",
+        "calls": "",
+        "basicblocks": "15",
+        "loads": {
+            "L": "4"
+        },
+        "stores": {
+            "L": "14"
+        },
+        "loops": {
+            "L": "1"
+        }
+    }
+}

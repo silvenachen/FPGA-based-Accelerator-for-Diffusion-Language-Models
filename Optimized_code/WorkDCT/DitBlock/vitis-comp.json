@@ -1,0 +1,12 @@
+{
+  "name": "DitBlock",
+  "type": "HLS",
+  "configuration": {
+    "componentType": "HLS",
+    "configFiles": [
+      "hls_config.cfg"
+    ],
+    "work_dir": "DitBlock"
+  },
+  "previousBuildStatusMap": {}
+}

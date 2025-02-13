@@ -1,0 +1,280 @@
+================================================================
+== Design Size Report
+================================================================
+
+* C-Synthesis has not completed!
+
+* Total Instructions per Compilation Phase
++---------------+-----------------------------+--------------+----------------------------------------------------------------------------------------+
+| Phase         | Step                        | Instructions | Description                                                                            |
++---------------+-----------------------------+--------------+----------------------------------------------------------------------------------------+
+| Compile/Link  |                             | 99,755       | After all functions are compiled and linked into a single design                       |
+|               |                             |              |                                                                                        |
+| Unroll/Inline |                             |              | After user unroll and inline pragmas are applied                                       |
+|               | (1) unroll                  | 31,263       | user unroll pragmas are applied                                                        |
+|               | (2) simplification          | 24,303       | simplification of applied user unroll pragmas                                          |
+|               | (3) inline                  | 24,040       | user inline pragmas are applied                                                        |
+|               | (4) simplification          | 23,374       | simplification of applied user inline pragmas                                          |
+|               |                             |              |                                                                                        |
+| Array/Struct  |                             |              | After user array partition and struct aggregate/disaggregate pragmas are applied       |
+|               | (1) array partition         | 25,051       | user array partition pragmas are applied                                               |
+|               | (2) simplification          | 24,501       | simplification of applied user array partition & struct aggregate/disaggregate pragmas |
+|               | (3) aggregate/disaggregate  | 24,501       | user struct aggregate/disaggregate pragmas are applied                                 |
+|               | (4) array reshape           | 24,435       | apply array reshape pragmas                                                            |
+|               | (5) access patterns         | 25,003       | array access pattern optmizations                                                      |
+|               |                             |              |                                                                                        |
+| Performance   |                             |              | After transformations are applied to meet performance pragma targets                   |
+|               | (1) loop simplification     | 24,388       | loop and instruction simplification                                                    |
+|               | (2) parallelization         | 23,892       | loops are unrolled or pipelined to meet performance targets                            |
+|               | (3) array partition         | 23,892       | arrays are partitioned to meet performance targets                                     |
+|               | (4) simplification          | 23,892       | simplification of design after performance transformations                             |
+|               |                             |              |                                                                                        |
+| HW Transforms |                             | pending      | After hardware transfomations                                                          |
++---------------+-----------------------------+--------------+----------------------------------------------------------------------------------------+
+
+* Instructions per Function for each Compilation Phase
++------------------------------------+-------------------+------------------+------------------+------------------+------------------+
+| Function                           | Location          | Compile/Link     | Unroll/Inline    | Array/Struct     | Performance      |
++------------------------------------+-------------------+------------------+------------------+------------------+------------------+
+| + allo_DDitBlock                   | kernel.cpp:25228  | 99,755           | 23,374           | 25,003           | 23,892           |
+|  + adaLN_modulate                  | kernel.cpp:500    | 6,912 (6 calls)  | 2,472 (6 calls)  | 3,558 (6 calls)  | 3,510 (6 calls)  |
+|   + systolic_modulate              | kernel.cpp:410    | 6,576 (6 calls)  |                  |                  |                  |
+|    + systolic_tile_modulate        | kernel.cpp:332    | 5,478 (6 calls)  |                  |                  |                  |
+|       PE_kernel_modulate_0_0       | kernel.cpp:20     |   426 (6 calls)  |                  |                  |                  |
+|       PE_kernel_modulate_1_0       | kernel.cpp:59     |   426 (6 calls)  |                  |                  |                  |
+|       PE_kernel_modulate_2_0       | kernel.cpp:98     |   426 (6 calls)  |                  |                  |                  |
+|       PE_kernel_modulate_3_0       | kernel.cpp:137    |   426 (6 calls)  |                  |                  |                  |
+|       PE_kernel_modulate_4_0       | kernel.cpp:176    |   426 (6 calls)  |                  |                  |                  |
+|       PE_kernel_modulate_5_0       | kernel.cpp:215    |   426 (6 calls)  |                  |                  |                  |
+|       PE_kernel_modulate_6_0       | kernel.cpp:254    |   426 (6 calls)  |                  |                  |                  |
+|       PE_kernel_modulate_7_0       | kernel.cpp:293    |   426 (6 calls)  |                  |                  |                  |
+|   + systolic_tile_modulate         | kernel.cpp:332    |                  | 1,914 (6 calls)  | 2,226 (6 calls)  | 2,178 (6 calls)  |
+|      PE_kernel_modulate_0_0        | kernel.cpp:20     |                  |    90 (6 calls)  |    96 (6 calls)  |    90 (6 calls)  |
+|      PE_kernel_modulate_1_0        | kernel.cpp:59     |                  |    90 (6 calls)  |    96 (6 calls)  |    90 (6 calls)  |
+|      PE_kernel_modulate_2_0        | kernel.cpp:98     |                  |    90 (6 calls)  |    96 (6 calls)  |    90 (6 calls)  |
+|      PE_kernel_modulate_3_0        | kernel.cpp:137    |                  |    90 (6 calls)  |    96 (6 calls)  |    90 (6 calls)  |
+|      PE_kernel_modulate_4_0        | kernel.cpp:176    |                  |    90 (6 calls)  |    96 (6 calls)  |    90 (6 calls)  |
+|      PE_kernel_modulate_5_0        | kernel.cpp:215    |                  |    90 (6 calls)  |    96 (6 calls)  |    90 (6 calls)  |
+|      PE_kernel_modulate_6_0        | kernel.cpp:254    |                  |    90 (6 calls)  |    96 (6 calls)  |    90 (6 calls)  |
+|      PE_kernel_modulate_7_0        | kernel.cpp:293    |                  |    90 (6 calls)  |    96 (6 calls)  |    90 (6 calls)  |
+|    layer_norm                      | kernel.cpp:610    |   495 (3 calls)  |   279 (3 calls)  |   285 (3 calls)  |   279 (3 calls)  |
+|    modulate_fused                  | kernel.cpp:671    |    80 (2 calls)  |                  |                  |                  |
+|  + systolic_Q                      | kernel.cpp:3611   | 37,284 (6 calls) | 14,010 (6 calls) | 14,418 (6 calls) | 13,662 (6 calls) |
+|   + systolic_tile_Q                | kernel.cpp:3250   | 36,162 (6 calls) | 12,780 (6 calls) | 12,402 (6 calls) | 11,646 (6 calls) |
+|      PE_kernel_Q_0_0               | kernel.cpp:690    |   432 (6 calls)  |    90 (6 calls)  |    90 (6 calls)  |    84 (6 calls)  |
+|      PE_kernel_Q_1_0               | kernel.cpp:730    |   432 (6 calls)  |    90 (6 calls)  |    90 (6 calls)  |    84 (6 calls)  |
+|      PE_kernel_Q_2_0               | kernel.cpp:770    |   432 (6 calls)  |    90 (6 calls)  |    90 (6 calls)  |    84 (6 calls)  |
+|      PE_kernel_Q_3_0               | kernel.cpp:810    |   432 (6 calls)  |    90 (6 calls)  |    90 (6 calls)  |    84 (6 calls)  |
+|      PE_kernel_Q_4_0               | kernel.cpp:850    |   432 (6 calls)  |    90 (6 calls)  |    90 (6 calls)  |    84 (6 calls)  |
+|      PE_kernel_Q_5_0               | kernel.cpp:890    |   432 (6 calls)  |    90 (6 calls)  |    90 (6 calls)  |    84 (6 calls)  |
+|      PE_kernel_Q_6_0               | kernel.cpp:930    |   432 (6 calls)  |    90 (6 calls)  |    90 (6 calls)  |    84 (6 calls)  |
+|      PE_kernel_Q_7_0               | kernel.cpp:970    |   432 (6 calls)  |    90 (6 calls)  |    90 (6 calls)  |    84 (6 calls)  |
+|      PE_kernel_Q_0_1               | kernel.cpp:1010   |   432 (6 calls)  |    90 (6 calls)  |    90 (6 calls)  |    84 (6 calls)  |
+|      PE_kernel_Q_1_1               | kernel.cpp:1050   |   432 (6 calls)  |    90 (6 calls)  |    90 (6 calls)  |    84 (6 calls)  |
+|      PE_kernel_Q_2_1               | kernel.cpp:1090   |   432 (6 calls)  |    90 (6 calls)  |    90 (6 calls)  |    84 (6 calls)  |
+|      PE_kernel_Q_3_1               | kernel.cpp:1130   |   432 (6 calls)  |    90 (6 calls)  |    90 (6 calls)  |    84 (6 calls)  |
+|      PE_kernel_Q_4_1               | kernel.cpp:1170   |   432 (6 calls)  |    90 (6 calls)  |    90 (6 calls)  |    84 (6 calls)  |
+|      PE_kernel_Q_5_1               | kernel.cpp:1210   |   432 (6 calls)  |    90 (6 calls)  |    90 (6 calls)  |    84 (6 calls)  |
+|      PE_kernel_Q_6_1               | kernel.cpp:1250   |   432 (6 calls)  |    90 (6 calls)  |    90 (6 calls)  |    84 (6 calls)  |
+|      PE_kernel_Q_7_1               | kernel.cpp:1290   |   432 (6 calls)  |    90 (6 calls)  |    90 (6 calls)  |    84 (6 calls)  |
+|      PE_kernel_Q_0_2               | kernel.cpp:1330   |   432 (6 calls)  |    90 (6 calls)  |    90 (6 calls)  |    84 (6 calls)  |
+|      PE_kernel_Q_1_2               | kernel.cpp:1370   |   432 (6 calls)  |    90 (6 calls)  |    90 (6 calls)  |    84 (6 calls)  |
+|      PE_kernel_Q_2_2               | kernel.cpp:1410   |   432 (6 calls)  |    90 (6 calls)  |    90 (6 calls)  |    84 (6 calls)  |
+|      PE_kernel_Q_3_2               | kernel.cpp:1450   |   432 (6 calls)  |    90 (6 calls)  |    90 (6 calls)  |    84 (6 calls)  |
+|      PE_kernel_Q_4_2               | kernel.cpp:1490   |   432 (6 calls)  |    90 (6 calls)  |    90 (6 calls)  |    84 (6 calls)  |
+|      PE_kernel_Q_5_2               | kernel.cpp:1530   |   432 (6 calls)  |    90 (6 calls)  |    90 (6 calls)  |    84 (6 calls)  |
+|      PE_kernel_Q_6_2               | kernel.cpp:1570   |   432 (6 calls)  |    90 (6 calls)  |    90 (6 calls)  |    84 (6 calls)  |
+|      PE_kernel_Q_7_2               | kernel.cpp:1610   |   432 (6 calls)  |    90 (6 calls)  |    90 (6 calls)  |    84 (6 calls)  |
+|      PE_kernel_Q_0_3               | kernel.cpp:1650   |   432 (6 calls)  |    90 (6 calls)  |    90 (6 calls)  |    84 (6 calls)  |
+|      PE_kernel_Q_1_3               | kernel.cpp:1690   |   432 (6 calls)  |    90 (6 calls)  |    90 (6 calls)  |    84 (6 calls)  |
+|      PE_kernel_Q_2_3               | kernel.cpp:1730   |   432 (6 calls)  |    90 (6 calls)  |    90 (6 calls)  |    84 (6 calls)  |
+|      PE_kernel_Q_3_3               | kernel.cpp:1770   |   432 (6 calls)  |    90 (6 calls)  |    90 (6 calls)  |    84 (6 calls)  |
+|      PE_kernel_Q_4_3               | kernel.cpp:1810   |   432 (6 calls)  |    90 (6 calls)  |    90 (6 calls)  |    84 (6 calls)  |
+|      PE_kernel_Q_5_3               | kernel.cpp:1850   |   432 (6 calls)  |    90 (6 calls)  |    90 (6 calls)  |    84 (6 calls)  |
+|      PE_kernel_Q_6_3               | kernel.cpp:1890   |   432 (6 calls)  |    90 (6 calls)  |    90 (6 calls)  |    84 (6 calls)  |
+|      PE_kernel_Q_7_3               | kernel.cpp:1930   |   432 (6 calls)  |    90 (6 calls)  |    90 (6 calls)  |    84 (6 calls)  |
+|      PE_kernel_Q_0_4               | kernel.cpp:1970   |   432 (6 calls)  |    90 (6 calls)  |    90 (6 calls)  |    84 (6 calls)  |
+|      PE_kernel_Q_1_4               | kernel.cpp:2010   |   432 (6 calls)  |    90 (6 calls)  |    90 (6 calls)  |    84 (6 calls)  |
+|      PE_kernel_Q_2_4               | kernel.cpp:2050   |   432 (6 calls)  |    90 (6 calls)  |    90 (6 calls)  |    84 (6 calls)  |
+|      PE_kernel_Q_3_4               | kernel.cpp:2090   |   432 (6 calls)  |    90 (6 calls)  |    90 (6 calls)  |    84 (6 calls)  |
+|      PE_kernel_Q_4_4               | kernel.cpp:2130   |   432 (6 calls)  |    90 (6 calls)  |    90 (6 calls)  |    84 (6 calls)  |
+|      PE_kernel_Q_5_4               | kernel.cpp:2170   |   432 (6 calls)  |    90 (6 calls)  |    90 (6 calls)  |    84 (6 calls)  |
+|      PE_kernel_Q_6_4               | kernel.cpp:2210   |   432 (6 calls)  |    90 (6 calls)  |    90 (6 calls)  |    84 (6 calls)  |
+|      PE_kernel_Q_7_4               | kernel.cpp:2250   |   432 (6 calls)  |    90 (6 calls)  |    90 (6 calls)  |    84 (6 calls)  |
+|      PE_kernel_Q_0_5               | kernel.cpp:2290   |   432 (6 calls)  |    90 (6 calls)  |    90 (6 calls)  |    84 (6 calls)  |
+|      PE_kernel_Q_1_5               | kernel.cpp:2330   |   432 (6 calls)  |    90 (6 calls)  |    90 (6 calls)  |    84 (6 calls)  |
+|      PE_kernel_Q_2_5               | kernel.cpp:2370   |   432 (6 calls)  |    90 (6 calls)  |    90 (6 calls)  |    84 (6 calls)  |
+|      PE_kernel_Q_3_5               | kernel.cpp:2410   |   432 (6 calls)  |    90 (6 calls)  |    90 (6 calls)  |    84 (6 calls)  |
+|      PE_kernel_Q_4_5               | kernel.cpp:2450   |   432 (6 calls)  |    90 (6 calls)  |    90 (6 calls)  |    84 (6 calls)  |
+|      PE_kernel_Q_5_5               | kernel.cpp:2490   |   432 (6 calls)  |    90 (6 calls)  |    90 (6 calls)  |    84 (6 calls)  |
+|      PE_kernel_Q_6_5               | kernel.cpp:2530   |   432 (6 calls)  |    90 (6 calls)  |    90 (6 calls)  |    84 (6 calls)  |
+|      PE_kernel_Q_7_5               | kernel.cpp:2570   |   432 (6 calls)  |    90 (6 calls)  |    90 (6 calls)  |    84 (6 calls)  |
+|      PE_kernel_Q_0_6               | kernel.cpp:2610   |   432 (6 calls)  |    90 (6 calls)  |    90 (6 calls)  |    84 (6 calls)  |
+|      PE_kernel_Q_1_6               | kernel.cpp:2650   |   432 (6 calls)  |    90 (6 calls)  |    90 (6 calls)  |    84 (6 calls)  |
+|      PE_kernel_Q_2_6               | kernel.cpp:2690   |   432 (6 calls)  |    90 (6 calls)  |    90 (6 calls)  |    84 (6 calls)  |
+|      PE_kernel_Q_3_6               | kernel.cpp:2730   |   432 (6 calls)  |    90 (6 calls)  |    90 (6 calls)  |    84 (6 calls)  |
+|      PE_kernel_Q_4_6               | kernel.cpp:2770   |   432 (6 calls)  |    90 (6 calls)  |    90 (6 calls)  |    84 (6 calls)  |
+|      PE_kernel_Q_5_6               | kernel.cpp:2810   |   432 (6 calls)  |    90 (6 calls)  |    90 (6 calls)  |    84 (6 calls)  |
+|      PE_kernel_Q_6_6               | kernel.cpp:2850   |   432 (6 calls)  |    90 (6 calls)  |    90 (6 calls)  |    84 (6 calls)  |
+|      PE_kernel_Q_7_6               | kernel.cpp:2890   |   432 (6 calls)  |    90 (6 calls)  |    90 (6 calls)  |    84 (6 calls)  |
+|      PE_kernel_Q_0_7               | kernel.cpp:2930   |   432 (6 calls)  |    90 (6 calls)  |    90 (6 calls)  |    84 (6 calls)  |
+|      PE_kernel_Q_1_7               | kernel.cpp:2970   |   432 (6 calls)  |    90 (6 calls)  |    90 (6 calls)  |    84 (6 calls)  |
+|      PE_kernel_Q_2_7               | kernel.cpp:3010   |   432 (6 calls)  |    90 (6 calls)  |    90 (6 calls)  |    84 (6 calls)  |
+|      PE_kernel_Q_3_7               | kernel.cpp:3050   |   432 (6 calls)  |    90 (6 calls)  |    90 (6 calls)  |    84 (6 calls)  |
+|      PE_kernel_Q_4_7               | kernel.cpp:3090   |   432 (6 calls)  |    90 (6 calls)  |    90 (6 calls)  |    84 (6 calls)  |
+|      PE_kernel_Q_5_7               | kernel.cpp:3130   |   432 (6 calls)  |    90 (6 calls)  |    90 (6 calls)  |    84 (6 calls)  |
+|      PE_kernel_Q_6_7               | kernel.cpp:3170   |   432 (6 calls)  |    90 (6 calls)  |    90 (6 calls)  |    84 (6 calls)  |
+|      PE_kernel_Q_7_7               | kernel.cpp:3210   |   432 (6 calls)  |    90 (6 calls)  |    90 (6 calls)  |    84 (6 calls)  |
+|    RoPE                            | kernel.cpp:9597   |   580 (2 calls)  |   310 (2 calls)  |   318 (2 calls)  |   318 (2 calls)  |
+|  + scaled_dot_product_attention... | kernel.cpp:15687  | 12,812           | 4,879            | 5,019            | 4,765            |
+|   + systolic_QKT                   | kernel.cpp:12589  | 6,214            | 2,335            | 2,403            | 2,277            |
+|    + systolic_tile_QKT             | kernel.cpp:12228  | 6,027            | 2,130            | 2,067            | 1,941            |
+|       PE_kernel_QKT_0_0            | kernel.cpp:9668   |    72            |    15            |    15            |    14            |
+|       PE_kernel_QKT_1_0            | kernel.cpp:9708   |    72            |    15            |    15            |    14            |
+|       PE_kernel_QKT_2_0            | kernel.cpp:9748   |    72            |    15            |    15            |    14            |
+|       PE_kernel_QKT_3_0            | kernel.cpp:9788   |    72            |    15            |    15            |    14            |
+|       PE_kernel_QKT_4_0            | kernel.cpp:9828   |    72            |    15            |    15            |    14            |
+|       PE_kernel_QKT_5_0            | kernel.cpp:9868   |    72            |    15            |    15            |    14            |
+|       PE_kernel_QKT_6_0            | kernel.cpp:9908   |    72            |    15            |    15            |    14            |
+|       PE_kernel_QKT_7_0            | kernel.cpp:9948   |    72            |    15            |    15            |    14            |
+|       PE_kernel_QKT_0_1            | kernel.cpp:9988   |    72            |    15            |    15            |    14            |
+|       PE_kernel_QKT_1_1            | kernel.cpp:10028  |    72            |    15            |    15            |    14            |
+|       PE_kernel_QKT_2_1            | kernel.cpp:10068  |    72            |    15            |    15            |    14            |
+|       PE_kernel_QKT_3_1            | kernel.cpp:10108  |    72            |    15            |    15            |    14            |
+|       PE_kernel_QKT_4_1            | kernel.cpp:10148  |    72            |    15            |    15            |    14            |
+|       PE_kernel_QKT_5_1            | kernel.cpp:10188  |    72            |    15            |    15            |    14            |
+|       PE_kernel_QKT_6_1            | kernel.cpp:10228  |    72            |    15            |    15            |    14            |
+|       PE_kernel_QKT_7_1            | kernel.cpp:10268  |    72            |    15            |    15            |    14            |
+|       PE_kernel_QKT_0_2            | kernel.cpp:10308  |    72            |    15            |    15            |    14            |
+|       PE_kernel_QKT_1_2            | kernel.cpp:10348  |    72            |    15            |    15            |    14            |
+|       PE_kernel_QKT_2_2            | kernel.cpp:10388  |    72            |    15            |    15            |    14            |
+|       PE_kernel_QKT_3_2            | kernel.cpp:10428  |    72            |    15            |    15            |    14            |
+|       PE_kernel_QKT_4_2            | kernel.cpp:10468  |    72            |    15            |    15            |    14            |
+|       PE_kernel_QKT_5_2            | kernel.cpp:10508  |    72            |    15            |    15            |    14            |
+|       PE_kernel_QKT_6_2            | kernel.cpp:10548  |    72            |    15            |    15            |    14            |
+|       PE_kernel_QKT_7_2            | kernel.cpp:10588  |    72            |    15            |    15            |    14            |
+|       PE_kernel_QKT_0_3            | kernel.cpp:10628  |    72            |    15            |    15            |    14            |
+|       PE_kernel_QKT_1_3            | kernel.cpp:10668  |    72            |    15            |    15            |    14            |
+|       PE_kernel_QKT_2_3            | kernel.cpp:10708  |    72            |    15            |    15            |    14            |
+|       PE_kernel_QKT_3_3            | kernel.cpp:10748  |    72            |    15            |    15            |    14            |
+|       PE_kernel_QKT_4_3            | kernel.cpp:10788  |    72            |    15            |    15            |    14            |
+|       PE_kernel_QKT_5_3            | kernel.cpp:10828  |    72            |    15            |    15            |    14            |
+|       PE_kernel_QKT_6_3            | kernel.cpp:10868  |    72            |    15            |    15            |    14            |
+|       PE_kernel_QKT_7_3            | kernel.cpp:10908  |    72            |    15            |    15            |    14            |
+|       PE_kernel_QKT_0_4            | kernel.cpp:10948  |    72            |    15            |    15            |    14            |
+|       PE_kernel_QKT_1_4            | kernel.cpp:10988  |    72            |    15            |    15            |    14            |
+|       PE_kernel_QKT_2_4            | kernel.cpp:11028  |    72            |    15            |    15            |    14            |
+|       PE_kernel_QKT_3_4            | kernel.cpp:11068  |    72            |    15            |    15            |    14            |
+|       PE_kernel_QKT_4_4            | kernel.cpp:11108  |    72            |    15            |    15            |    14            |
+|       PE_kernel_QKT_5_4            | kernel.cpp:11148  |    72            |    15            |    15            |    14            |
+|       PE_kernel_QKT_6_4            | kernel.cpp:11188  |    72            |    15            |    15            |    14            |
+|       PE_kernel_QKT_7_4            | kernel.cpp:11228  |    72            |    15            |    15            |    14            |
+|       PE_kernel_QKT_0_5            | kernel.cpp:11268  |    72            |    15            |    15            |    14            |
+|       PE_kernel_QKT_1_5            | kernel.cpp:11308  |    72            |    15            |    15            |    14            |
+|       PE_kernel_QKT_2_5            | kernel.cpp:11348  |    72            |    15            |    15            |    14            |
+|       PE_kernel_QKT_3_5            | kernel.cpp:11388  |    72            |    15            |    15            |    14            |
+|       PE_kernel_QKT_4_5            | kernel.cpp:11428  |    72            |    15            |    15            |    14            |
+|       PE_kernel_QKT_5_5            | kernel.cpp:11468  |    72            |    15            |    15            |    14            |
+|       PE_kernel_QKT_6_5            | kernel.cpp:11508  |    72            |    15            |    15            |    14            |
+|       PE_kernel_QKT_7_5            | kernel.cpp:11548  |    72            |    15            |    15            |    14            |
+|       PE_kernel_QKT_0_6            | kernel.cpp:11588  |    72            |    15            |    15            |    14            |
+|       PE_kernel_QKT_1_6            | kernel.cpp:11628  |    72            |    15            |    15            |    14            |
+|       PE_kernel_QKT_2_6            | kernel.cpp:11668  |    72            |    15            |    15            |    14            |
+|       PE_kernel_QKT_3_6            | kernel.cpp:11708  |    72            |    15            |    15            |    14            |
+|       PE_kernel_QKT_4_6            | kernel.cpp:11748  |    72            |    15            |    15            |    14            |
+|       PE_kernel_QKT_5_6            | kernel.cpp:11788  |    72            |    15            |    15            |    14            |
+|       PE_kernel_QKT_6_6            | kernel.cpp:11828  |    72            |    15            |    15            |    14            |
+|       PE_kernel_QKT_7_6            | kernel.cpp:11868  |    72            |    15            |    15            |    14            |
+|       PE_kernel_QKT_0_7            | kernel.cpp:11908  |    72            |    15            |    15            |    14            |
+|       PE_kernel_QKT_1_7            | kernel.cpp:11948  |    72            |    15            |    15            |    14            |
+|       PE_kernel_QKT_2_7            | kernel.cpp:11988  |    72            |    15            |    15            |    14            |
+|       PE_kernel_QKT_3_7            | kernel.cpp:12028  |    72            |    15            |    15            |    14            |
+|       PE_kernel_QKT_4_7            | kernel.cpp:12068  |    72            |    15            |    15            |    14            |
+|       PE_kernel_QKT_5_7            | kernel.cpp:12108  |    72            |    15            |    15            |    14            |
+|       PE_kernel_QKT_6_7            | kernel.cpp:12148  |    72            |    15            |    15            |    14            |
+|       PE_kernel_QKT_7_7            | kernel.cpp:12188  |    72            |    15            |    15            |    14            |
+|     sft_head                       | kernel.cpp:12684  |   149            |                  |                  |                  |
+|   + systolic_YV                    | kernel.cpp:15639  | 6,214            | 2,335            | 2,403            | 2,277            |
+|    + systolic_tile_YV              | kernel.cpp:15278  | 6,027            | 2,130            | 2,067            | 1,941            |
+|       PE_kernel_YV_0_0             | kernel.cpp:12718  |    72            |    15            |    15            |    14            |
+|       PE_kernel_YV_1_0             | kernel.cpp:12758  |    72            |    15            |    15            |    14            |
+|       PE_kernel_YV_2_0             | kernel.cpp:12798  |    72            |    15            |    15            |    14            |
+|       PE_kernel_YV_3_0             | kernel.cpp:12838  |    72            |    15            |    15            |    14            |
+|       PE_kernel_YV_4_0             | kernel.cpp:12878  |    72            |    15            |    15            |    14            |
+|       PE_kernel_YV_5_0             | kernel.cpp:12918  |    72            |    15            |    15            |    14            |
+|       PE_kernel_YV_6_0             | kernel.cpp:12958  |    72            |    15            |    15            |    14            |
+|       PE_kernel_YV_7_0             | kernel.cpp:12998  |    72            |    15            |    15            |    14            |
+|       PE_kernel_YV_0_1             | kernel.cpp:13038  |    72            |    15            |    15            |    14            |
+|       PE_kernel_YV_1_1             | kernel.cpp:13078  |    72            |    15            |    15            |    14            |
+|       PE_kernel_YV_2_1             | kernel.cpp:13118  |    72            |    15            |    15            |    14            |
+|       PE_kernel_YV_3_1             | kernel.cpp:13158  |    72            |    15            |    15            |    14            |
+|       PE_kernel_YV_4_1             | kernel.cpp:13198  |    72            |    15            |    15            |    14            |
+|       PE_kernel_YV_5_1             | kernel.cpp:13238  |    72            |    15            |    15            |    14            |
+|       PE_kernel_YV_6_1             | kernel.cpp:13278  |    72            |    15            |    15            |    14            |
+|       PE_kernel_YV_7_1             | kernel.cpp:13318  |    72            |    15            |    15            |    14            |
+|       PE_kernel_YV_0_2             | kernel.cpp:13358  |    72            |    15            |    15            |    14            |
+|       PE_kernel_YV_1_2             | kernel.cpp:13398  |    72            |    15            |    15            |    14            |
+|       PE_kernel_YV_2_2             | kernel.cpp:13438  |    72            |    15            |    15            |    14            |
+|       PE_kernel_YV_3_2             | kernel.cpp:13478  |    72            |    15            |    15            |    14            |
+|       PE_kernel_YV_4_2             | kernel.cpp:13518  |    72            |    15            |    15            |    14            |
+|       PE_kernel_YV_5_2             | kernel.cpp:13558  |    72            |    15            |    15            |    14            |
+|       PE_kernel_YV_6_2             | kernel.cpp:13598  |    72            |    15            |    15            |    14            |
+|       PE_kernel_YV_7_2             | kernel.cpp:13638  |    72            |    15            |    15            |    14            |
+|       PE_kernel_YV_0_3             | kernel.cpp:13678  |    72            |    15            |    15            |    14            |
+|       PE_kernel_YV_1_3             | kernel.cpp:13718  |    72            |    15            |    15            |    14            |
+|       PE_kernel_YV_2_3             | kernel.cpp:13758  |    72            |    15            |    15            |    14            |
+|       PE_kernel_YV_3_3             | kernel.cpp:13798  |    72            |    15            |    15            |    14            |
+|       PE_kernel_YV_4_3             | kernel.cpp:13838  |    72            |    15            |    15            |    14            |
+|       PE_kernel_YV_5_3             | kernel.cpp:13878  |    72            |    15            |    15            |    14            |
+|       PE_kernel_YV_6_3             | kernel.cpp:13918  |    72            |    15            |    15            |    14            |
+|       PE_kernel_YV_7_3             | kernel.cpp:13958  |    72            |    15            |    15            |    14            |
+|       PE_kernel_YV_0_4             | kernel.cpp:13998  |    72            |    15            |    15            |    14            |
+|       PE_kernel_YV_1_4             | kernel.cpp:14038  |    72            |    15            |    15            |    14            |
+|       PE_kernel_YV_2_4             | kernel.cpp:14078  |    72            |    15            |    15            |    14            |
+|       PE_kernel_YV_3_4             | kernel.cpp:14118  |    72            |    15            |    15            |    14            |
+|       PE_kernel_YV_4_4             | kernel.cpp:14158  |    72            |    15            |    15            |    14            |
+|       PE_kernel_YV_5_4             | kernel.cpp:14198  |    72            |    15            |    15            |    14            |
+|       PE_kernel_YV_6_4             | kernel.cpp:14238  |    72            |    15            |    15            |    14            |
+|       PE_kernel_YV_7_4             | kernel.cpp:14278  |    72            |    15            |    15            |    14            |
+|       PE_kernel_YV_0_5             | kernel.cpp:14318  |    72            |    15            |    15            |    14            |
+|       PE_kernel_YV_1_5             | kernel.cpp:14358  |    72            |    15            |    15            |    14            |
+|       PE_kernel_YV_2_5             | kernel.cpp:14398  |    72            |    15            |    15            |    14            |
+|       PE_kernel_YV_3_5             | kernel.cpp:14438  |    72            |    15            |    15            |    14            |
+|       PE_kernel_YV_4_5             | kernel.cpp:14478  |    72            |    15            |    15            |    14            |
+|       PE_kernel_YV_5_5             | kernel.cpp:14518  |    72            |    15            |    15            |    14            |
+|       PE_kernel_YV_6_5             | kernel.cpp:14558  |    72            |    15            |    15            |    14            |
+|       PE_kernel_YV_7_5             | kernel.cpp:14598  |    72            |    15            |    15            |    14            |
+|       PE_kernel_YV_0_6             | kernel.cpp:14638  |    72            |    15            |    15            |    14            |
+|       PE_kernel_YV_1_6             | kernel.cpp:14678  |    72            |    15            |    15            |    14            |
+|       PE_kernel_YV_2_6             | kernel.cpp:14718  |    72            |    15            |    15            |    14            |
+|       PE_kernel_YV_3_6             | kernel.cpp:14758  |    72            |    15            |    15            |    14            |
+|       PE_kernel_YV_4_6             | kernel.cpp:14798  |    72            |    15            |    15            |    14            |
+|       PE_kernel_YV_5_6             | kernel.cpp:14838  |    72            |    15            |    15            |    14            |
+|       PE_kernel_YV_6_6             | kernel.cpp:14878  |    72            |    15            |    15            |    14            |
+|       PE_kernel_YV_7_6             | kernel.cpp:14918  |    72            |    15            |    15            |    14            |
+|       PE_kernel_YV_0_7             | kernel.cpp:14958  |    72            |    15            |    15            |    14            |
+|       PE_kernel_YV_1_7             | kernel.cpp:14998  |    72            |    15            |    15            |    14            |
+|       PE_kernel_YV_2_7             | kernel.cpp:15038  |    72            |    15            |    15            |    14            |
+|       PE_kernel_YV_3_7             | kernel.cpp:15078  |    72            |    15            |    15            |    14            |
+|       PE_kernel_YV_4_7             | kernel.cpp:15118  |    72            |    15            |    15            |    14            |
+|       PE_kernel_YV_5_7             | kernel.cpp:15158  |    72            |    15            |    15            |    14            |
+|       PE_kernel_YV_6_7             | kernel.cpp:15198  |    72            |    15            |    15            |    14            |
+|       PE_kernel_YV_7_7             | kernel.cpp:15238  |    72            |    15            |    15            |    14            |
+|    bias_add_scale                  | kernel.cpp:18741  |   134 (2 calls)  |                  |                  |                  |
+|    bias_add                        | kernel.cpp:21734  |    66 (2 calls)  |                  |                  |                  |
+|    GeLU                            | kernel.cpp:21749  | 40,547           |                  |                  |                  |
+|  + pow_generic<double>             | hls_pow.h:291     |                  |   603            |   603            |   556            |
+|     to_ieee                        | x_hls_utils.h:509 |                  |    72 (9 calls)  |    72 (9 calls)  |    45 (9 calls)  |
+|     log_range_reduction<71>        | hls_pow.h:186     |                  |   251            |   251            |   250            |
+|  + generic_tanh<float>             | hls_tanh.h:28     |                  |   257            |   254            |   254            |
+|     exp_generic<double>            | hls_exp_.h:156    |                  |   201            |   198            |   198            |
++------------------------------------+-------------------+------------------+------------------+------------------+------------------+
+
+* Design Size Message Settings
++---------------------------------------------+--------+------------------------------------------------------------------+
+| Message Setting                             | Value  | Description                                                      |
++---------------------------------------------+--------+------------------------------------------------------------------+
+| config_compile -design_size_maximum_warning | 100000 | Show a warning when total design instructions exceeds this value |
++---------------------------------------------+--------+------------------------------------------------------------------+
+
+

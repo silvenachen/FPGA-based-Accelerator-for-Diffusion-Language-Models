@@ -1,0 +1,189 @@
+
+
+================================================================
+== Vitis HLS Report for 'adaLN_modulate_Pipeline_l_load_B_tile_bk_l_bj'
+================================================================
+* Date:           Wed Feb  5 22:35:22 2025
+
+* Version:        2023.2 (Build 4023990 on Oct 11 2023)
+* Project:        DitBlock
+* Solution:       hls (Vivado IP Flow Target)
+* Product family: virtexuplusHBM
+* Target device:  xcu280-fsvh2892-2L-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  3.409 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+-----------+-----------+------+------+---------+
+    |  Latency (cycles) |   Latency (absolute)  |   Interval  | Pipeline|
+    |   min   |   max   |    min    |    max    |  min |  max |   Type  |
+    +---------+---------+-----------+-----------+------+------+---------+
+    |     1026|     1026|  10.260 us|  10.260 us|  1026|  1026|       no|
+    +---------+---------+-----------+-----------+------+------+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +-------------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |                         |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |        Loop Name        |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +-------------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- l_load_B_tile_bk_l_bj  |     1024|     1024|         2|          1|          1|  1024|       yes|
+        +-------------------------+---------+---------+----------+-----------+-----------+------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++---------------------+---------+------+---------+---------+-----+
+|         Name        | BRAM_18K|  DSP |    FF   |   LUT   | URAM|
++---------------------+---------+------+---------+---------+-----+
+|DSP                  |        -|     -|        -|        -|    -|
+|Expression           |        -|     -|        0|      106|    -|
+|FIFO                 |        -|     -|        -|        -|    -|
+|Instance             |        -|     -|        -|        -|    -|
+|Memory               |        -|     -|        -|        -|    -|
+|Multiplexer          |        -|     -|        -|       72|    -|
+|Register             |        -|     -|       37|        -|    -|
++---------------------+---------+------+---------+---------+-----+
+|Total                |        0|     0|       37|      178|    0|
++---------------------+---------+------+---------+---------+-----+
+|Available SLR        |     1344|  3008|   869120|   434560|  320|
++---------------------+---------+------+---------+---------+-----+
+|Utilization SLR (%)  |        0|     0|       ~0|       ~0|    0|
++---------------------+---------+------+---------+---------+-----+
+|Available            |     4032|  9024|  2607360|  1303680|  960|
++---------------------+---------+------+---------+---------+-----+
+|Utilization (%)      |        0|     0|       ~0|       ~0|    0|
++---------------------+---------+------+---------+---------+-----+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +--------------------------+----------+----+---+----+------------+------------+
+    |       Variable Name      | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +--------------------------+----------+----+---+----+------------+------------+
+    |add_ln436_1_fu_239_p2     |         +|   0|  0|  18|          11|           1|
+    |add_ln436_fu_251_p2       |         +|   0|  0|  15|           8|           1|
+    |add_ln437_fu_310_p2       |         +|   0|  0|  12|           4|           1|
+    |add_ln439_fu_291_p2       |         +|   0|  0|  16|           9|           9|
+    |icmp_ln436_fu_233_p2      |      icmp|   0|  0|  19|          11|          12|
+    |icmp_ln437_fu_257_p2      |      icmp|   0|  0|  12|           4|           5|
+    |select_ln436_1_fu_271_p3  |    select|   0|  0|   8|           1|           8|
+    |select_ln436_fu_263_p3    |    select|   0|  0|   4|           1|           1|
+    |ap_enable_pp0             |       xor|   0|  0|   2|           1|           2|
+    +--------------------------+----------+----+---+----+------------+------------+
+    |Total                     |          |   0|  0| 106|          50|          40|
+    +--------------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +--------------------------------------+----+-----------+-----+-----------+
+    |                 Name                 | LUT| Input Size| Bits| Total Bits|
+    +--------------------------------------+----+-----------+-----+-----------+
+    |ap_done_int                           |   9|          2|    1|          2|
+    |ap_enable_reg_pp0_iter1               |   9|          2|    1|          2|
+    |ap_sig_allocacmp_bj_load              |   9|          2|    4|          8|
+    |ap_sig_allocacmp_bk_load              |   9|          2|    8|         16|
+    |ap_sig_allocacmp_indvar_flatten_load  |   9|          2|   11|         22|
+    |bj_fu_72                              |   9|          2|    4|          8|
+    |bk_fu_76                              |   9|          2|    8|         16|
+    |indvar_flatten_fu_80                  |   9|          2|   11|         22|
+    +--------------------------------------+----+-----------+-----+-----------+
+    |Total                                 |  72|         16|   48|         96|
+    +--------------------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +-------------------------+----+----+-----+-----------+
+    |           Name          | FF | LUT| Bits| Const Bits|
+    +-------------------------+----+----+-----+-----------+
+    |ap_CS_fsm                |   1|   0|    1|          0|
+    |ap_done_reg              |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter1  |   1|   0|    1|          0|
+    |bj_fu_72                 |   4|   0|    4|          0|
+    |bk_fu_76                 |   8|   0|    8|          0|
+    |indvar_flatten_fu_80     |  11|   0|   11|          0|
+    |select_ln436_1_reg_366   |   8|   0|    8|          0|
+    |trunc_ln437_reg_371      |   3|   0|    3|          0|
+    +-------------------------+----+----+-----+-----------+
+    |Total                    |  37|   0|   37|          0|
+    +-------------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++--------------------+-----+-----+------------+-----------------------------------------------+--------------+
+|      RTL Ports     | Dir | Bits|  Protocol  |                 Source Object                 |    C Type    |
++--------------------+-----+-----+------------+-----------------------------------------------+--------------+
+|ap_clk              |   in|    1|  ap_ctrl_hs|  adaLN_modulate_Pipeline_l_load_B_tile_bk_l_bj|  return value|
+|ap_rst              |   in|    1|  ap_ctrl_hs|  adaLN_modulate_Pipeline_l_load_B_tile_bk_l_bj|  return value|
+|ap_start            |   in|    1|  ap_ctrl_hs|  adaLN_modulate_Pipeline_l_load_B_tile_bk_l_bj|  return value|
+|ap_done             |  out|    1|  ap_ctrl_hs|  adaLN_modulate_Pipeline_l_load_B_tile_bk_l_bj|  return value|
+|ap_idle             |  out|    1|  ap_ctrl_hs|  adaLN_modulate_Pipeline_l_load_B_tile_bk_l_bj|  return value|
+|ap_ready            |  out|    1|  ap_ctrl_hs|  adaLN_modulate_Pipeline_l_load_B_tile_bk_l_bj|  return value|
+|local_B_address0    |  out|    7|   ap_memory|                                        local_B|         array|
+|local_B_ce0         |  out|    1|   ap_memory|                                        local_B|         array|
+|local_B_we0         |  out|    1|   ap_memory|                                        local_B|         array|
+|local_B_d0          |  out|   32|   ap_memory|                                        local_B|         array|
+|local_B_1_address0  |  out|    7|   ap_memory|                                      local_B_1|         array|
+|local_B_1_ce0       |  out|    1|   ap_memory|                                      local_B_1|         array|
+|local_B_1_we0       |  out|    1|   ap_memory|                                      local_B_1|         array|
+|local_B_1_d0        |  out|   32|   ap_memory|                                      local_B_1|         array|
+|local_B_2_address0  |  out|    7|   ap_memory|                                      local_B_2|         array|
+|local_B_2_ce0       |  out|    1|   ap_memory|                                      local_B_2|         array|
+|local_B_2_we0       |  out|    1|   ap_memory|                                      local_B_2|         array|
+|local_B_2_d0        |  out|   32|   ap_memory|                                      local_B_2|         array|
+|local_B_3_address0  |  out|    7|   ap_memory|                                      local_B_3|         array|
+|local_B_3_ce0       |  out|    1|   ap_memory|                                      local_B_3|         array|
+|local_B_3_we0       |  out|    1|   ap_memory|                                      local_B_3|         array|
+|local_B_3_d0        |  out|   32|   ap_memory|                                      local_B_3|         array|
+|local_B_4_address0  |  out|    7|   ap_memory|                                      local_B_4|         array|
+|local_B_4_ce0       |  out|    1|   ap_memory|                                      local_B_4|         array|
+|local_B_4_we0       |  out|    1|   ap_memory|                                      local_B_4|         array|
+|local_B_4_d0        |  out|   32|   ap_memory|                                      local_B_4|         array|
+|local_B_5_address0  |  out|    7|   ap_memory|                                      local_B_5|         array|
+|local_B_5_ce0       |  out|    1|   ap_memory|                                      local_B_5|         array|
+|local_B_5_we0       |  out|    1|   ap_memory|                                      local_B_5|         array|
+|local_B_5_d0        |  out|   32|   ap_memory|                                      local_B_5|         array|
+|local_B_6_address0  |  out|    7|   ap_memory|                                      local_B_6|         array|
+|local_B_6_ce0       |  out|    1|   ap_memory|                                      local_B_6|         array|
+|local_B_6_we0       |  out|    1|   ap_memory|                                      local_B_6|         array|
+|local_B_6_d0        |  out|   32|   ap_memory|                                      local_B_6|         array|
+|local_B_7_address0  |  out|    7|   ap_memory|                                      local_B_7|         array|
+|local_B_7_ce0       |  out|    1|   ap_memory|                                      local_B_7|         array|
+|local_B_7_we0       |  out|    1|   ap_memory|                                      local_B_7|         array|
+|local_B_7_d0        |  out|   32|   ap_memory|                                      local_B_7|         array|
+|tmp_104             |   in|    9|     ap_none|                                        tmp_104|        scalar|
+|v237_address0       |  out|   16|   ap_memory|                                           v237|         array|
+|v237_ce0            |  out|    1|   ap_memory|                                           v237|         array|
+|v237_q0             |   in|   32|   ap_memory|                                           v237|         array|
++--------------------+-----+-----+------------+-----------------------------------------------+--------------+
+

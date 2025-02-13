@@ -1,0 +1,2650 @@
+{
+  "0": {
+    "basicblocks": 127,
+    "calls": "106 106 106 106 106 106 105 188 188 188 29 29 173 188 105 105 188 206 72 188",
+    "file": "kernel.cpp",
+    "fileloc": 25228,
+    "instructions": 565,
+    "loads": {
+      "L": 21,
+      "T": 25
+    },
+    "name": "allo_DDitBlock",
+    "stores": {
+      "L": 35,
+      "T": 1
+    },
+    "total_instructions": 24040
+  },
+  "1": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "kernel.cpp",
+    "fileloc": 12758,
+    "instructions": 15,
+    "name": "PE_kernel_YV_1_0",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 15
+  },
+  "10": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "kernel.cpp",
+    "fileloc": 13638,
+    "instructions": 15,
+    "name": "PE_kernel_YV_7_2",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 15
+  },
+  "100": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "kernel.cpp",
+    "fileloc": 1170,
+    "instructions": 15,
+    "name": "PE_kernel_Q_4_1",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 15
+  },
+  "101": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "kernel.cpp",
+    "fileloc": 11668,
+    "instructions": 15,
+    "name": "PE_kernel_QKT_2_6",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 15
+  },
+  "102": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "kernel.cpp",
+    "fileloc": 2290,
+    "instructions": 15,
+    "name": "PE_kernel_Q_0_5",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 15
+  },
+  "103": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "kernel.cpp",
+    "fileloc": 2730,
+    "instructions": 15,
+    "name": "PE_kernel_Q_3_6",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 15
+  },
+  "104": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "kernel.cpp",
+    "fileloc": 11588,
+    "instructions": 15,
+    "name": "PE_kernel_QKT_0_6",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 15
+  },
+  "105": {
+    "basicblocks": 15,
+    "calls": "",
+    "file": "kernel.cpp",
+    "fileloc": 610,
+    "instructions": 93,
+    "loads": {
+      "L": 8
+    },
+    "name": "layer_norm",
+    "stores": {
+      "L": 8
+    },
+    "total_instructions": 93
+  },
+  "106": {
+    "basicblocks": 17,
+    "calls": "39",
+    "file": "kernel.cpp",
+    "fileloc": 500,
+    "instructions": 97,
+    "loads": {
+      "L": 5
+    },
+    "name": "adaLN_modulate",
+    "stores": {
+      "L": 6
+    },
+    "total_instructions": 416
+  },
+  "107": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "kernel.cpp",
+    "fileloc": 14958,
+    "instructions": 15,
+    "name": "PE_kernel_YV_0_7",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 15
+  },
+  "108": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "kernel.cpp",
+    "fileloc": 11188,
+    "instructions": 15,
+    "name": "PE_kernel_QKT_6_4",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 15
+  },
+  "109": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "kernel.cpp",
+    "fileloc": 9988,
+    "instructions": 15,
+    "name": "PE_kernel_QKT_0_1",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 15
+  },
+  "11": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "kernel.cpp",
+    "fileloc": 2850,
+    "instructions": 15,
+    "name": "PE_kernel_Q_6_6",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 15
+  },
+  "110": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "kernel.cpp",
+    "fileloc": 1530,
+    "instructions": 15,
+    "name": "PE_kernel_Q_5_2",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 15
+  },
+  "111": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "kernel.cpp",
+    "fileloc": 2610,
+    "instructions": 15,
+    "name": "PE_kernel_Q_0_6",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 15
+  },
+  "112": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "kernel.cpp",
+    "fileloc": 10268,
+    "instructions": 15,
+    "name": "PE_kernel_QKT_7_1",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 15
+  },
+  "113": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "kernel.cpp",
+    "fileloc": 11148,
+    "instructions": 15,
+    "name": "PE_kernel_QKT_5_4",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 15
+  },
+  "114": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "kernel.cpp",
+    "fileloc": 13438,
+    "instructions": 15,
+    "name": "PE_kernel_YV_2_2",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 15
+  },
+  "115": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "kernel.cpp",
+    "fileloc": 15198,
+    "instructions": 15,
+    "name": "PE_kernel_YV_6_7",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 15
+  },
+  "116": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "kernel.cpp",
+    "fileloc": 13478,
+    "instructions": 15,
+    "name": "PE_kernel_YV_3_2",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 15
+  },
+  "117": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "kernel.cpp",
+    "fileloc": 1330,
+    "instructions": 15,
+    "name": "PE_kernel_Q_0_2",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 15
+  },
+  "118": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "kernel.cpp",
+    "fileloc": 2210,
+    "instructions": 15,
+    "name": "PE_kernel_Q_6_4",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 15
+  },
+  "119": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "kernel.cpp",
+    "fileloc": 12958,
+    "instructions": 15,
+    "name": "PE_kernel_YV_6_0",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 15
+  },
+  "12": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "kernel.cpp",
+    "fileloc": 14798,
+    "instructions": 15,
+    "name": "PE_kernel_YV_4_6",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 15
+  },
+  "120": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "kernel.cpp",
+    "fileloc": 10828,
+    "instructions": 15,
+    "name": "PE_kernel_QKT_5_3",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 15
+  },
+  "121": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "kernel.cpp",
+    "fileloc": 14278,
+    "instructions": 15,
+    "name": "PE_kernel_YV_7_4",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 15
+  },
+  "122": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "kernel.cpp",
+    "fileloc": 10308,
+    "instructions": 15,
+    "name": "PE_kernel_QKT_0_2",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 15
+  },
+  "123": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "kernel.cpp",
+    "fileloc": 14718,
+    "instructions": 15,
+    "name": "PE_kernel_YV_2_6",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 15
+  },
+  "124": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "kernel.cpp",
+    "fileloc": 12878,
+    "instructions": 15,
+    "name": "PE_kernel_YV_4_0",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 15
+  },
+  "125": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "kernel.cpp",
+    "fileloc": 11628,
+    "instructions": 15,
+    "name": "PE_kernel_QKT_1_6",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 15
+  },
+  "126": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "kernel.cpp",
+    "fileloc": 12068,
+    "instructions": 15,
+    "name": "PE_kernel_QKT_4_7",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 15
+  },
+  "127": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "kernel.cpp",
+    "fileloc": 1810,
+    "instructions": 15,
+    "name": "PE_kernel_Q_4_3",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 15
+  },
+  "128": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "kernel.cpp",
+    "fileloc": 137,
+    "instructions": 15,
+    "name": "PE_kernel_modulate_3_0",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 15
+  },
+  "129": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "kernel.cpp",
+    "fileloc": 13878,
+    "instructions": 15,
+    "name": "PE_kernel_YV_5_3",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 15
+  },
+  "13": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "kernel.cpp",
+    "fileloc": 10108,
+    "instructions": 15,
+    "name": "PE_kernel_QKT_3_1",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 15
+  },
+  "130": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "kernel.cpp",
+    "fileloc": 10708,
+    "instructions": 15,
+    "name": "PE_kernel_QKT_2_3",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 15
+  },
+  "131": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "kernel.cpp",
+    "fileloc": 14078,
+    "instructions": 15,
+    "name": "PE_kernel_YV_2_4",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 15
+  },
+  "132": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "kernel.cpp",
+    "fileloc": 11308,
+    "instructions": 15,
+    "name": "PE_kernel_QKT_1_5",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 15
+  },
+  "133": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "kernel.cpp",
+    "fileloc": 14678,
+    "instructions": 15,
+    "name": "PE_kernel_YV_1_6",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 15
+  },
+  "134": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "kernel.cpp",
+    "fileloc": 890,
+    "instructions": 15,
+    "name": "PE_kernel_Q_5_0",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 15
+  },
+  "135": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "kernel.cpp",
+    "fileloc": 2490,
+    "instructions": 15,
+    "name": "PE_kernel_Q_5_5",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 15
+  },
+  "136": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "kernel.cpp",
+    "fileloc": 2650,
+    "instructions": 15,
+    "name": "PE_kernel_Q_1_6",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 15
+  },
+  "137": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "kernel.cpp",
+    "fileloc": 9788,
+    "instructions": 15,
+    "name": "PE_kernel_QKT_3_0",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 15
+  },
+  "138": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "kernel.cpp",
+    "fileloc": 10668,
+    "instructions": 15,
+    "name": "PE_kernel_QKT_1_3",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 15
+  },
+  "139": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "kernel.cpp",
+    "fileloc": 11108,
+    "instructions": 15,
+    "name": "PE_kernel_QKT_4_4",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 15
+  },
+  "14": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "kernel.cpp",
+    "fileloc": 1090,
+    "instructions": 15,
+    "name": "PE_kernel_Q_2_1",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 15
+  },
+  "140": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "kernel.cpp",
+    "fileloc": 13038,
+    "instructions": 15,
+    "name": "PE_kernel_YV_0_1",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 15
+  },
+  "141": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "kernel.cpp",
+    "fileloc": 15238,
+    "instructions": 15,
+    "name": "PE_kernel_YV_7_7",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 15
+  },
+  "142": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "kernel.cpp",
+    "fileloc": 1890,
+    "instructions": 15,
+    "name": "PE_kernel_Q_6_3",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 15
+  },
+  "143": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "kernel.cpp",
+    "fileloc": 1730,
+    "instructions": 15,
+    "name": "PE_kernel_Q_2_3",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 15
+  },
+  "144": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "kernel.cpp",
+    "fileloc": 2170,
+    "instructions": 15,
+    "name": "PE_kernel_Q_5_4",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 15
+  },
+  "145": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "kernel.cpp",
+    "fileloc": 9868,
+    "instructions": 15,
+    "name": "PE_kernel_QKT_5_0",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 15
+  },
+  "146": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "kernel.cpp",
+    "fileloc": 3050,
+    "instructions": 15,
+    "name": "PE_kernel_Q_3_7",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 15
+  },
+  "147": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "kernel.cpp",
+    "fileloc": 13798,
+    "instructions": 15,
+    "name": "PE_kernel_YV_3_3",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 15
+  },
+  "148": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "kernel.cpp",
+    "fileloc": 14558,
+    "instructions": 15,
+    "name": "PE_kernel_YV_6_5",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 15
+  },
+  "149": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "kernel.cpp",
+    "fileloc": 970,
+    "instructions": 15,
+    "name": "PE_kernel_Q_7_0",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 15
+  },
+  "15": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "kernel.cpp",
+    "fileloc": 11908,
+    "instructions": 15,
+    "name": "PE_kernel_QKT_0_7",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 15
+  },
+  "150": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "kernel.cpp",
+    "fileloc": 13398,
+    "instructions": 15,
+    "name": "PE_kernel_YV_1_2",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 15
+  },
+  "151": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "kernel.cpp",
+    "fileloc": 98,
+    "instructions": 15,
+    "name": "PE_kernel_modulate_2_0",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 15
+  },
+  "152": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "kernel.cpp",
+    "fileloc": 1370,
+    "instructions": 15,
+    "name": "PE_kernel_Q_1_2",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 15
+  },
+  "153": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "kernel.cpp",
+    "fileloc": 11068,
+    "instructions": 15,
+    "name": "PE_kernel_QKT_3_4",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 15
+  },
+  "154": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "kernel.cpp",
+    "fileloc": 14238,
+    "instructions": 15,
+    "name": "PE_kernel_YV_6_4",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 15
+  },
+  "155": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "kernel.cpp",
+    "fileloc": 9828,
+    "instructions": 15,
+    "name": "PE_kernel_QKT_4_0",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 15
+  },
+  "156": {
+    "basicblocks": 22,
+    "calls": "",
+    "file": "hls_exp_.h",
+    "fileloc": 156,
+    "instructions": 386,
+    "loads": {
+      "G": 4,
+      "L": 31
+    },
+    "name": "exp_generic<double>",
+    "stores": {
+      "L": 29
+    },
+    "total_instructions": 386
+  },
+  "157": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "kernel.cpp",
+    "fileloc": 13598,
+    "instructions": 15,
+    "name": "PE_kernel_YV_6_2",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 15
+  },
+  "158": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "kernel.cpp",
+    "fileloc": 3010,
+    "instructions": 15,
+    "name": "PE_kernel_Q_2_7",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 15
+  },
+  "159": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "kernel.cpp",
+    "fileloc": 12108,
+    "instructions": 15,
+    "name": "PE_kernel_QKT_5_7",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 15
+  },
+  "16": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "kernel.cpp",
+    "fileloc": 930,
+    "instructions": 15,
+    "name": "PE_kernel_Q_6_0",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 15
+  },
+  "160": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "kernel.cpp",
+    "fileloc": 15078,
+    "instructions": 15,
+    "name": "PE_kernel_YV_3_7",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 15
+  },
+  "161": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "kernel.cpp",
+    "fileloc": 12148,
+    "instructions": 15,
+    "name": "PE_kernel_QKT_6_7",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 15
+  },
+  "162": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "kernel.cpp",
+    "fileloc": 20,
+    "instructions": 15,
+    "name": "PE_kernel_modulate_0_0",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 15
+  },
+  "163": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "kernel.cpp",
+    "fileloc": 11708,
+    "instructions": 15,
+    "name": "PE_kernel_QKT_3_6",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 15
+  },
+  "164": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "kernel.cpp",
+    "fileloc": 14438,
+    "instructions": 15,
+    "name": "PE_kernel_YV_3_5",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 15
+  },
+  "165": {
+    "basicblocks": 19,
+    "calls": "216",
+    "file": "kernel.cpp",
+    "fileloc": 15639,
+    "instructions": 205,
+    "loads": {
+      "L": 3
+    },
+    "name": "systolic_YV",
+    "stores": {
+      "L": 3
+    },
+    "total_instructions": 2335
+  },
+  "166": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "kernel.cpp",
+    "fileloc": 13718,
+    "instructions": 15,
+    "name": "PE_kernel_YV_1_3",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 15
+  },
+  "167": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "kernel.cpp",
+    "fileloc": 13078,
+    "instructions": 15,
+    "name": "PE_kernel_YV_1_1",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 15
+  },
+  "168": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "kernel.cpp",
+    "fileloc": 10628,
+    "instructions": 15,
+    "name": "PE_kernel_QKT_0_3",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 15
+  },
+  "169": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "kernel.cpp",
+    "fileloc": 14838,
+    "instructions": 15,
+    "name": "PE_kernel_YV_5_6",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 15
+  },
+  "17": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "kernel.cpp",
+    "fileloc": 10908,
+    "instructions": 15,
+    "name": "PE_kernel_QKT_7_3",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 15
+  },
+  "170": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "kernel.cpp",
+    "fileloc": 3090,
+    "instructions": 15,
+    "name": "PE_kernel_Q_4_7",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 15
+  },
+  "171": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "kernel.cpp",
+    "fileloc": 1690,
+    "instructions": 15,
+    "name": "PE_kernel_Q_1_3",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 15
+  },
+  "172": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "kernel.cpp",
+    "fileloc": 2570,
+    "instructions": 15,
+    "name": "PE_kernel_Q_7_5",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 15
+  },
+  "173": {
+    "basicblocks": 43,
+    "calls": "94 165",
+    "file": "kernel.cpp",
+    "fileloc": 15687,
+    "instructions": 210,
+    "loads": {
+      "L": 12
+    },
+    "name": "scaled_dot_product_attention",
+    "stores": {
+      "L": 14
+    },
+    "total_instructions": 4880
+  },
+  "174": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "kernel.cpp",
+    "fileloc": 1650,
+    "instructions": 15,
+    "name": "PE_kernel_Q_0_3",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 15
+  },
+  "175": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "kernel.cpp",
+    "fileloc": 11028,
+    "instructions": 15,
+    "name": "PE_kernel_QKT_2_4",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 15
+  },
+  "176": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "kernel.cpp",
+    "fileloc": 13558,
+    "instructions": 15,
+    "name": "PE_kernel_YV_5_2",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 15
+  },
+  "177": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "kernel.cpp",
+    "fileloc": 770,
+    "instructions": 15,
+    "name": "PE_kernel_Q_2_0",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 15
+  },
+  "178": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "kernel.cpp",
+    "fileloc": 2130,
+    "instructions": 15,
+    "name": "PE_kernel_Q_4_4",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 15
+  },
+  "179": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "kernel.cpp",
+    "fileloc": 2530,
+    "instructions": 15,
+    "name": "PE_kernel_Q_6_5",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 15
+  },
+  "18": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "kernel.cpp",
+    "fileloc": 11348,
+    "instructions": 15,
+    "name": "PE_kernel_QKT_2_5",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 15
+  },
+  "180": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "kernel.cpp",
+    "fileloc": 1210,
+    "instructions": 15,
+    "name": "PE_kernel_Q_5_1",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 15
+  },
+  "181": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "kernel.cpp",
+    "fileloc": 13998,
+    "instructions": 15,
+    "name": "PE_kernel_YV_0_4",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 15
+  },
+  "182": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "kernel.cpp",
+    "fileloc": 15118,
+    "instructions": 15,
+    "name": "PE_kernel_YV_4_7",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 15
+  },
+  "183": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "kernel.cpp",
+    "fileloc": 14398,
+    "instructions": 15,
+    "name": "PE_kernel_YV_2_5",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 15
+  },
+  "184": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "kernel.cpp",
+    "fileloc": 10188,
+    "instructions": 15,
+    "name": "PE_kernel_QKT_5_1",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 15
+  },
+  "185": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "kernel.cpp",
+    "fileloc": 11748,
+    "instructions": 15,
+    "name": "PE_kernel_QKT_4_6",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 15
+  },
+  "186": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "kernel.cpp",
+    "fileloc": 13918,
+    "instructions": 15,
+    "name": "PE_kernel_YV_6_3",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 15
+  },
+  "187": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "kernel.cpp",
+    "fileloc": 14358,
+    "instructions": 15,
+    "name": "PE_kernel_YV_1_5",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 15
+  },
+  "188": {
+    "basicblocks": 19,
+    "calls": "193",
+    "file": "kernel.cpp",
+    "fileloc": 3611,
+    "instructions": 205,
+    "loads": {
+      "L": 3
+    },
+    "name": "systolic_Q",
+    "stores": {
+      "L": 3
+    },
+    "total_instructions": 2335
+  },
+  "189": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "kernel.cpp",
+    "fileloc": 1050,
+    "instructions": 15,
+    "name": "PE_kernel_Q_1_1",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 15
+  },
+  "19": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "kernel.cpp",
+    "fileloc": 13678,
+    "instructions": 15,
+    "name": "PE_kernel_YV_0_3",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 15
+  },
+  "190": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "kernel.cpp",
+    "fileloc": 850,
+    "instructions": 15,
+    "name": "PE_kernel_Q_4_0",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 15
+  },
+  "191": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "kernel.cpp",
+    "fileloc": 10228,
+    "instructions": 15,
+    "name": "PE_kernel_QKT_6_1",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 15
+  },
+  "192": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "kernel.cpp",
+    "fileloc": 2970,
+    "instructions": 15,
+    "name": "PE_kernel_Q_1_7",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 15
+  },
+  "193": {
+    "basicblocks": 15,
+    "calls": "26 27 177 46 190 134 16 149 52 189 14 6 100 180 214 97 117 152 209 53 81 110 48 28 174 171 143 202 127 80 142 71 41 51 196 205 178 144 118 207 102 54 85 42 23 135 179 172 111 136 90 103 55 47 11 7 197 192 158 146 170 91 70 4",
+    "file": "kernel.cpp",
+    "fileloc": 3250,
+    "instructions": 1170,
+    "loads": {
+      "L": 2
+    },
+    "name": "systolic_tile_Q",
+    "total_instructions": 2130
+  },
+  "194": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "kernel.cpp",
+    "fileloc": 10988,
+    "instructions": 15,
+    "name": "PE_kernel_QKT_1_4",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 15
+  },
+  "195": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "kernel.cpp",
+    "fileloc": 11788,
+    "instructions": 15,
+    "name": "PE_kernel_QKT_5_6",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 15
+  },
+  "196": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "kernel.cpp",
+    "fileloc": 2050,
+    "instructions": 15,
+    "name": "PE_kernel_Q_2_4",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 15
+  },
+  "197": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "kernel.cpp",
+    "fileloc": 2930,
+    "instructions": 15,
+    "name": "PE_kernel_Q_0_7",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 15
+  },
+  "198": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "kernel.cpp",
+    "fileloc": 12718,
+    "instructions": 15,
+    "name": "PE_kernel_YV_0_0",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 15
+  },
+  "199": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "kernel.cpp",
+    "fileloc": 12028,
+    "instructions": 15,
+    "name": "PE_kernel_QKT_3_7",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 15
+  },
+  "2": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "kernel.cpp",
+    "fileloc": 11388,
+    "instructions": 15,
+    "name": "PE_kernel_QKT_3_5",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 15
+  },
+  "20": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "kernel.cpp",
+    "fileloc": 14998,
+    "instructions": 15,
+    "name": "PE_kernel_YV_1_7",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 15
+  },
+  "200": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "kernel.cpp",
+    "fileloc": 12188,
+    "instructions": 15,
+    "name": "PE_kernel_QKT_7_7",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 15
+  },
+  "201": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "kernel.cpp",
+    "fileloc": 13238,
+    "instructions": 15,
+    "name": "PE_kernel_YV_5_1",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 15
+  },
+  "202": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "kernel.cpp",
+    "fileloc": 1770,
+    "instructions": 15,
+    "name": "PE_kernel_Q_3_3",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 15
+  },
+  "203": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "kernel.cpp",
+    "fileloc": 10148,
+    "instructions": 15,
+    "name": "PE_kernel_QKT_4_1",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 15
+  },
+  "204": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "kernel.cpp",
+    "fileloc": 9708,
+    "instructions": 15,
+    "name": "PE_kernel_QKT_1_0",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 15
+  },
+  "205": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "kernel.cpp",
+    "fileloc": 2090,
+    "instructions": 15,
+    "name": "PE_kernel_Q_3_4",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 15
+  },
+  "206": {
+    "basicblocks": 36,
+    "calls": "73 73 73 73 73 22 73 73 73 73",
+    "file": "hls_pow.h",
+    "fileloc": 291,
+    "instructions": 498,
+    "loads": {
+      "G": 6,
+      "L": 17
+    },
+    "name": "pow_generic<double>",
+    "stores": {
+      "L": 34
+    },
+    "total_instructions": 987
+  },
+  "207": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "kernel.cpp",
+    "fileloc": 2250,
+    "instructions": 15,
+    "name": "PE_kernel_Q_7_4",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 15
+  },
+  "208": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "kernel.cpp",
+    "fileloc": 10348,
+    "instructions": 15,
+    "name": "PE_kernel_QKT_1_2",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 15
+  },
+  "209": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "kernel.cpp",
+    "fileloc": 1410,
+    "instructions": 15,
+    "name": "PE_kernel_Q_2_2",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 15
+  },
+  "21": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "kernel.cpp",
+    "fileloc": 13358,
+    "instructions": 15,
+    "name": "PE_kernel_YV_0_2",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 15
+  },
+  "210": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "kernel.cpp",
+    "fileloc": 10548,
+    "instructions": 15,
+    "name": "PE_kernel_QKT_6_2",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 15
+  },
+  "211": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "kernel.cpp",
+    "fileloc": 13518,
+    "instructions": 15,
+    "name": "PE_kernel_YV_4_2",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 15
+  },
+  "212": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "kernel.cpp",
+    "fileloc": 14758,
+    "instructions": 15,
+    "name": "PE_kernel_YV_3_6",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 15
+  },
+  "213": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "kernel.cpp",
+    "fileloc": 13838,
+    "instructions": 15,
+    "name": "PE_kernel_YV_4_3",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 15
+  },
+  "214": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "kernel.cpp",
+    "fileloc": 1250,
+    "instructions": 15,
+    "name": "PE_kernel_Q_6_1",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 15
+  },
+  "215": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "kernel.cpp",
+    "fileloc": 14918,
+    "instructions": 15,
+    "name": "PE_kernel_YV_7_6",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 15
+  },
+  "216": {
+    "basicblocks": 15,
+    "calls": "198 1 45 74 124 89 119 84 140 167 56 34 50 201 86 62 21 150 114 116 211 176 157 10 19 166 63 147 213 129 186 93 181 31 131 98 96 35 154 121 40 187 183 164 33 9 148 76 61 133 123 212 12 169 64 215 107 20 82 160 182 95 115 141",
+    "file": "kernel.cpp",
+    "fileloc": 15278,
+    "instructions": 1170,
+    "loads": {
+      "L": 2
+    },
+    "name": "systolic_tile_YV",
+    "total_instructions": 2130
+  },
+  "22": {
+    "basicblocks": 15,
+    "calls": "",
+    "file": "hls_pow.h",
+    "fileloc": 186,
+    "instructions": 354,
+    "loads": {
+      "G": 7,
+      "L": 29
+    },
+    "name": "log_range_reduction<71>",
+    "stores": {
+      "L": 42
+    },
+    "total_instructions": 354
+  },
+  "23": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "kernel.cpp",
+    "fileloc": 2450,
+    "instructions": 15,
+    "name": "PE_kernel_Q_4_5",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 15
+  },
+  "24": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "kernel.cpp",
+    "fileloc": 293,
+    "instructions": 15,
+    "name": "PE_kernel_modulate_7_0",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 15
+  },
+  "25": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "kernel.cpp",
+    "fileloc": 10508,
+    "instructions": 15,
+    "name": "PE_kernel_QKT_5_2",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 15
+  },
+  "26": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "kernel.cpp",
+    "fileloc": 690,
+    "instructions": 15,
+    "name": "PE_kernel_Q_0_0",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 15
+  },
+  "27": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "kernel.cpp",
+    "fileloc": 730,
+    "instructions": 15,
+    "name": "PE_kernel_Q_1_0",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 15
+  },
+  "28": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "kernel.cpp",
+    "fileloc": 1610,
+    "instructions": 15,
+    "name": "PE_kernel_Q_7_2",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 15
+  },
+  "29": {
+    "basicblocks": 35,
+    "calls": "",
+    "file": "kernel.cpp",
+    "fileloc": 9597,
+    "instructions": 155,
+    "loads": {
+      "L": 12
+    },
+    "name": "RoPE",
+    "stores": {
+      "L": 8
+    },
+    "total_instructions": 155
+  },
+  "3": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "kernel.cpp",
+    "fileloc": 11828,
+    "instructions": 15,
+    "name": "PE_kernel_QKT_6_6",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 15
+  },
+  "30": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "kernel.cpp",
+    "fileloc": 10948,
+    "instructions": 15,
+    "name": "PE_kernel_QKT_0_4",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 15
+  },
+  "31": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "kernel.cpp",
+    "fileloc": 14038,
+    "instructions": 15,
+    "name": "PE_kernel_YV_1_4",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 15
+  },
+  "32": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "kernel.cpp",
+    "fileloc": 9668,
+    "instructions": 15,
+    "name": "PE_kernel_QKT_0_0",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 15
+  },
+  "33": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "kernel.cpp",
+    "fileloc": 14478,
+    "instructions": 15,
+    "name": "PE_kernel_YV_4_5",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 15
+  },
+  "34": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "kernel.cpp",
+    "fileloc": 13158,
+    "instructions": 15,
+    "name": "PE_kernel_YV_3_1",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 15
+  },
+  "35": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "kernel.cpp",
+    "fileloc": 14198,
+    "instructions": 15,
+    "name": "PE_kernel_YV_5_4",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 15
+  },
+  "36": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "kernel.cpp",
+    "fileloc": 11428,
+    "instructions": 15,
+    "name": "PE_kernel_QKT_4_5",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 15
+  },
+  "37": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "kernel.cpp",
+    "fileloc": 11868,
+    "instructions": 15,
+    "name": "PE_kernel_QKT_7_6",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 15
+  },
+  "38": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "kernel.cpp",
+    "fileloc": 10428,
+    "instructions": 15,
+    "name": "PE_kernel_QKT_3_2",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 15
+  },
+  "39": {
+    "basicblocks": 11,
+    "calls": "162 65 151 128 78 66 68 24",
+    "file": "kernel.cpp",
+    "fileloc": 332,
+    "instructions": 199,
+    "loads": {
+      "L": 2
+    },
+    "name": "systolic_tile_modulate",
+    "total_instructions": 319
+  },
+  "4": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "kernel.cpp",
+    "fileloc": 3210,
+    "instructions": 15,
+    "name": "PE_kernel_Q_7_7",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 15
+  },
+  "40": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "kernel.cpp",
+    "fileloc": 14318,
+    "instructions": 15,
+    "name": "PE_kernel_YV_0_5",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 15
+  },
+  "41": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "kernel.cpp",
+    "fileloc": 1970,
+    "instructions": 15,
+    "name": "PE_kernel_Q_0_4",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 15
+  },
+  "42": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "kernel.cpp",
+    "fileloc": 2410,
+    "instructions": 15,
+    "name": "PE_kernel_Q_3_5",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 15
+  },
+  "43": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "kernel.cpp",
+    "fileloc": 11468,
+    "instructions": 15,
+    "name": "PE_kernel_QKT_5_5",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 15
+  },
+  "44": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "kernel.cpp",
+    "fileloc": 10028,
+    "instructions": 15,
+    "name": "PE_kernel_QKT_1_1",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 15
+  },
+  "45": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "kernel.cpp",
+    "fileloc": 12798,
+    "instructions": 15,
+    "name": "PE_kernel_YV_2_0",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 15
+  },
+  "46": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "kernel.cpp",
+    "fileloc": 810,
+    "instructions": 15,
+    "name": "PE_kernel_Q_3_0",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 15
+  },
+  "47": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "kernel.cpp",
+    "fileloc": 2810,
+    "instructions": 15,
+    "name": "PE_kernel_Q_5_6",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 15
+  },
+  "48": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "kernel.cpp",
+    "fileloc": 1570,
+    "instructions": 15,
+    "name": "PE_kernel_Q_6_2",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 15
+  },
+  "49": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "kernel.cpp",
+    "fileloc": 10868,
+    "instructions": 15,
+    "name": "PE_kernel_QKT_6_3",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 15
+  },
+  "5": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "kernel.cpp",
+    "fileloc": 11548,
+    "instructions": 15,
+    "name": "PE_kernel_QKT_7_5",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 15
+  },
+  "50": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "kernel.cpp",
+    "fileloc": 13198,
+    "instructions": 15,
+    "name": "PE_kernel_YV_4_1",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 15
+  },
+  "51": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "kernel.cpp",
+    "fileloc": 2010,
+    "instructions": 15,
+    "name": "PE_kernel_Q_1_4",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 15
+  },
+  "52": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "kernel.cpp",
+    "fileloc": 1010,
+    "instructions": 15,
+    "name": "PE_kernel_Q_0_1",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 15
+  },
+  "53": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "kernel.cpp",
+    "fileloc": 1450,
+    "instructions": 15,
+    "name": "PE_kernel_Q_3_2",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 15
+  },
+  "54": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "kernel.cpp",
+    "fileloc": 2330,
+    "instructions": 15,
+    "name": "PE_kernel_Q_1_5",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 15
+  },
+  "55": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "kernel.cpp",
+    "fileloc": 2770,
+    "instructions": 15,
+    "name": "PE_kernel_Q_4_6",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 15
+  },
+  "56": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "kernel.cpp",
+    "fileloc": 13118,
+    "instructions": 15,
+    "name": "PE_kernel_YV_2_1",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 15
+  },
+  "57": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "kernel.cpp",
+    "fileloc": 9948,
+    "instructions": 15,
+    "name": "PE_kernel_QKT_7_0",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 15
+  },
+  "58": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "kernel.cpp",
+    "fileloc": 10388,
+    "instructions": 15,
+    "name": "PE_kernel_QKT_2_2",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 15
+  },
+  "59": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "kernel.cpp",
+    "fileloc": 11268,
+    "instructions": 15,
+    "name": "PE_kernel_QKT_0_5",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 15
+  },
+  "6": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "kernel.cpp",
+    "fileloc": 1130,
+    "instructions": 15,
+    "name": "PE_kernel_Q_3_1",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 15
+  },
+  "60": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "kernel.cpp",
+    "fileloc": 11508,
+    "instructions": 15,
+    "name": "PE_kernel_QKT_6_5",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 15
+  },
+  "61": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "kernel.cpp",
+    "fileloc": 14638,
+    "instructions": 15,
+    "name": "PE_kernel_YV_0_6",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 15
+  },
+  "62": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "kernel.cpp",
+    "fileloc": 13318,
+    "instructions": 15,
+    "name": "PE_kernel_YV_7_1",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 15
+  },
+  "63": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "kernel.cpp",
+    "fileloc": 13758,
+    "instructions": 15,
+    "name": "PE_kernel_YV_2_3",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 15
+  },
+  "64": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "kernel.cpp",
+    "fileloc": 14878,
+    "instructions": 15,
+    "name": "PE_kernel_YV_6_6",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 15
+  },
+  "65": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "kernel.cpp",
+    "fileloc": 59,
+    "instructions": 15,
+    "name": "PE_kernel_modulate_1_0",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 15
+  },
+  "66": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "kernel.cpp",
+    "fileloc": 215,
+    "instructions": 15,
+    "name": "PE_kernel_modulate_5_0",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 15
+  },
+  "67": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "kernel.cpp",
+    "fileloc": 9748,
+    "instructions": 15,
+    "name": "PE_kernel_QKT_2_0",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 15
+  },
+  "68": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "kernel.cpp",
+    "fileloc": 254,
+    "instructions": 15,
+    "name": "PE_kernel_modulate_6_0",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 15
+  },
+  "69": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "kernel.cpp",
+    "fileloc": 11948,
+    "instructions": 15,
+    "name": "PE_kernel_QKT_1_7",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 15
+  },
+  "7": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "kernel.cpp",
+    "fileloc": 2890,
+    "instructions": 15,
+    "name": "PE_kernel_Q_7_6",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 15
+  },
+  "70": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "kernel.cpp",
+    "fileloc": 3170,
+    "instructions": 15,
+    "name": "PE_kernel_Q_6_7",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 15
+  },
+  "71": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "kernel.cpp",
+    "fileloc": 1930,
+    "instructions": 15,
+    "name": "PE_kernel_Q_7_3",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 15
+  },
+  "72": {
+    "basicblocks": 14,
+    "calls": "156",
+    "file": "hls_tanh.h",
+    "fileloc": 28,
+    "instructions": 127,
+    "loads": {
+      "L": 10
+    },
+    "name": "generic_tanh<float>",
+    "stores": {
+      "L": 12
+    },
+    "total_instructions": 513
+  },
+  "73": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "x_hls_utils.h",
+    "fileloc": 509,
+    "instructions": 15,
+    "loads": {
+      "L": 4
+    },
+    "name": "to_ieee",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 15
+  },
+  "74": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "kernel.cpp",
+    "fileloc": 12838,
+    "instructions": 15,
+    "name": "PE_kernel_YV_3_0",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 15
+  },
+  "75": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "kernel.cpp",
+    "fileloc": 11228,
+    "instructions": 15,
+    "name": "PE_kernel_QKT_7_4",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 15
+  },
+  "76": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "kernel.cpp",
+    "fileloc": 14598,
+    "instructions": 15,
+    "name": "PE_kernel_YV_7_5",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 15
+  },
+  "77": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "kernel.cpp",
+    "fileloc": 11988,
+    "instructions": 15,
+    "name": "PE_kernel_QKT_2_7",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 15
+  },
+  "78": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "kernel.cpp",
+    "fileloc": 176,
+    "instructions": 15,
+    "name": "PE_kernel_modulate_4_0",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 15
+  },
+  "79": {
+    "basicblocks": 15,
+    "calls": "32 204 67 137 155 145 87 57 109 44 8 13 203 184 191 112 122 208 58 38 83 25 210 92 168 138 130 99 88 120 49 17 30 194 175 153 139 113 108 75 59 132 18 2 36 43 60 5 104 125 101 163 185 195 3 37 15 69 77 199 126 159 161 200",
+    "file": "kernel.cpp",
+    "fileloc": 12228,
+    "instructions": 1170,
+    "loads": {
+      "L": 2
+    },
+    "name": "systolic_tile_QKT",
+    "total_instructions": 2130
+  },
+  "8": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "kernel.cpp",
+    "fileloc": 10068,
+    "instructions": 15,
+    "name": "PE_kernel_QKT_2_1",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 15
+  },
+  "80": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "kernel.cpp",
+    "fileloc": 1850,
+    "instructions": 15,
+    "name": "PE_kernel_Q_5_3",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 15
+  },
+  "81": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "kernel.cpp",
+    "fileloc": 1490,
+    "instructions": 15,
+    "name": "PE_kernel_Q_4_2",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 15
+  },
+  "82": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "kernel.cpp",
+    "fileloc": 15038,
+    "instructions": 15,
+    "name": "PE_kernel_YV_2_7",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 15
+  },
+  "83": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "kernel.cpp",
+    "fileloc": 10468,
+    "instructions": 15,
+    "name": "PE_kernel_QKT_4_2",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 15
+  },
+  "84": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "kernel.cpp",
+    "fileloc": 12998,
+    "instructions": 15,
+    "name": "PE_kernel_YV_7_0",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 15
+  },
+  "85": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "kernel.cpp",
+    "fileloc": 2370,
+    "instructions": 15,
+    "name": "PE_kernel_Q_2_5",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 15
+  },
+  "86": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "kernel.cpp",
+    "fileloc": 13278,
+    "instructions": 15,
+    "name": "PE_kernel_YV_6_1",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 15
+  },
+  "87": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "kernel.cpp",
+    "fileloc": 9908,
+    "instructions": 15,
+    "name": "PE_kernel_QKT_6_0",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 15
+  },
+  "88": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "kernel.cpp",
+    "fileloc": 10788,
+    "instructions": 15,
+    "name": "PE_kernel_QKT_4_3",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 15
+  },
+  "89": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "kernel.cpp",
+    "fileloc": 12918,
+    "instructions": 15,
+    "name": "PE_kernel_YV_5_0",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 15
+  },
+  "9": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "kernel.cpp",
+    "fileloc": 14518,
+    "instructions": 15,
+    "name": "PE_kernel_YV_5_5",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 15
+  },
+  "90": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "kernel.cpp",
+    "fileloc": 2690,
+    "instructions": 15,
+    "name": "PE_kernel_Q_2_6",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 15
+  },
+  "91": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "kernel.cpp",
+    "fileloc": 3130,
+    "instructions": 15,
+    "name": "PE_kernel_Q_5_7",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 15
+  },
+  "92": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "kernel.cpp",
+    "fileloc": 10588,
+    "instructions": 15,
+    "name": "PE_kernel_QKT_7_2",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 15
+  },
+  "93": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "kernel.cpp",
+    "fileloc": 13958,
+    "instructions": 15,
+    "name": "PE_kernel_YV_7_3",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 15
+  },
+  "94": {
+    "basicblocks": 19,
+    "calls": "79",
+    "file": "kernel.cpp",
+    "fileloc": 12589,
+    "instructions": 205,
+    "loads": {
+      "L": 3
+    },
+    "name": "systolic_QKT",
+    "stores": {
+      "L": 3
+    },
+    "total_instructions": 2335
+  },
+  "95": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "kernel.cpp",
+    "fileloc": 15158,
+    "instructions": 15,
+    "name": "PE_kernel_YV_5_7",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 15
+  },
+  "96": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "kernel.cpp",
+    "fileloc": 14158,
+    "instructions": 15,
+    "name": "PE_kernel_YV_4_4",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 15
+  },
+  "97": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "kernel.cpp",
+    "fileloc": 1290,
+    "instructions": 15,
+    "name": "PE_kernel_Q_7_1",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 15
+  },
+  "98": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "kernel.cpp",
+    "fileloc": 14118,
+    "instructions": 15,
+    "name": "PE_kernel_YV_3_4",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 15
+  },
+  "99": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "kernel.cpp",
+    "fileloc": 10748,
+    "instructions": 15,
+    "name": "PE_kernel_QKT_3_3",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 15
+  }
+}
