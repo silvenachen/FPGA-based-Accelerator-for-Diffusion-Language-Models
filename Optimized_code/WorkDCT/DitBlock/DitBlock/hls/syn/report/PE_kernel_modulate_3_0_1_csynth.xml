@@ -46,14 +46,14 @@
 <SummaryOfViolations>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:164</SourceLocation>
+<SourceLocation>/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:162</SourceLocation>
 <SummaryOfLoopViolations>
 <l_S_k_0_k3>
 <Name>l_S_k_0_k3</Name>
 <IssueType>II Violation</IssueType>
 <ViolationType>Memory Dependency</ViolationType>
 <IterationDistance>1</IterationDistance>
-<SourceLocation>/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:154</SourceLocation>
+<SourceLocation>/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:152</SourceLocation>
 </l_S_k_0_k3>
 </SummaryOfLoopViolations>
 </SummaryOfViolations>

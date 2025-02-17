@@ -1,0 +1,185 @@
+
+
+================================================================
+== Vitis HLS Report for 'dataflow_in_loop_l_ni5_Loop_l_store_C_tile_sj5_proc55'
+================================================================
+* Date:           Mon Feb 17 20:37:20 2025
+
+* Version:        2023.2 (Build 4023990 on Oct 11 2023)
+* Project:        DitBlock
+* Solution:       hls (Vivado IP Flow Target)
+* Product family: virtexuplusHBM
+* Target device:  xcu280-fsvh2892-2L-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  4.204 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |       67|       67|  0.670 us|  0.670 us|   67|   67|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 2
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 2
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 4.18>
+ST_1 : Operation 3 [1/1] (1.36ns)   --->   "%mi5_read = read i7 @_ssdm_op_Read.ap_fifo.i7P0A, i7 %mi5"   --->   Operation 3 'read' 'mi5_read' <Predicate = true> <Delay = 1.36> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.36> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 7> <Depth = 3> <FIFO>
+ST_1 : Operation 4 [1/1] (1.39ns)   --->   "%ni5_read = read i3 @_ssdm_op_Read.ap_fifo.i3P0A, i3 %ni5" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:15534]   --->   Operation 4 'read' 'ni5_read' <Predicate = true> <Delay = 1.39> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.39> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 3> <Depth = 3> <FIFO>
+ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%tmp = bitconcatenate i10 @_ssdm_op_BitConcatenate.i10.i7.i3, i7 %mi5_read, i3 0"   --->   Operation 5 'bitconcatenate' 'tmp' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%tmp_s = bitconcatenate i6 @_ssdm_op_BitConcatenate.i6.i3.i3, i3 %ni5_read, i3 0" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:15534]   --->   Operation 6 'bitconcatenate' 'tmp_s' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (1.42ns)   --->   "%local_C5_63_i_read = read i32 @_ssdm_op_Read.ap_auto.floatP0A, i32 %local_C5_63_i"   --->   Operation 7 'read' 'local_C5_63_i_read' <Predicate = true> <Delay = 1.42> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.42> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
+ST_1 : Operation 8 [1/1] (1.42ns)   --->   "%local_C5_62_i_read = read i32 @_ssdm_op_Read.ap_auto.floatP0A, i32 %local_C5_62_i"   --->   Operation 8 'read' 'local_C5_62_i_read' <Predicate = true> <Delay = 1.42> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.42> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
+ST_1 : Operation 9 [1/1] (1.42ns)   --->   "%local_C5_61_i_read = read i32 @_ssdm_op_Read.ap_auto.floatP0A, i32 %local_C5_61_i"   --->   Operation 9 'read' 'local_C5_61_i_read' <Predicate = true> <Delay = 1.42> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.42> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
+ST_1 : Operation 10 [1/1] (1.42ns)   --->   "%local_C5_60_i_read = read i32 @_ssdm_op_Read.ap_auto.floatP0A, i32 %local_C5_60_i"   --->   Operation 10 'read' 'local_C5_60_i_read' <Predicate = true> <Delay = 1.42> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.42> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
+ST_1 : Operation 11 [1/1] (1.42ns)   --->   "%local_C5_59_i_read = read i32 @_ssdm_op_Read.ap_auto.floatP0A, i32 %local_C5_59_i"   --->   Operation 11 'read' 'local_C5_59_i_read' <Predicate = true> <Delay = 1.42> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.42> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
+ST_1 : Operation 12 [1/1] (1.42ns)   --->   "%local_C5_58_i_read = read i32 @_ssdm_op_Read.ap_auto.floatP0A, i32 %local_C5_58_i"   --->   Operation 12 'read' 'local_C5_58_i_read' <Predicate = true> <Delay = 1.42> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.42> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
+ST_1 : Operation 13 [1/1] (1.42ns)   --->   "%local_C5_57_i_read = read i32 @_ssdm_op_Read.ap_auto.floatP0A, i32 %local_C5_57_i"   --->   Operation 13 'read' 'local_C5_57_i_read' <Predicate = true> <Delay = 1.42> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.42> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
+ST_1 : Operation 14 [1/1] (1.42ns)   --->   "%local_C5_56_i_read = read i32 @_ssdm_op_Read.ap_auto.floatP0A, i32 %local_C5_56_i"   --->   Operation 14 'read' 'local_C5_56_i_read' <Predicate = true> <Delay = 1.42> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.42> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
+ST_1 : Operation 15 [1/1] (1.42ns)   --->   "%local_C5_55_i_read = read i32 @_ssdm_op_Read.ap_auto.floatP0A, i32 %local_C5_55_i"   --->   Operation 15 'read' 'local_C5_55_i_read' <Predicate = true> <Delay = 1.42> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.42> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
+ST_1 : Operation 16 [1/1] (1.42ns)   --->   "%local_C5_54_i_read = read i32 @_ssdm_op_Read.ap_auto.floatP0A, i32 %local_C5_54_i"   --->   Operation 16 'read' 'local_C5_54_i_read' <Predicate = true> <Delay = 1.42> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.42> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
+ST_1 : Operation 17 [1/1] (1.42ns)   --->   "%local_C5_53_i_read = read i32 @_ssdm_op_Read.ap_auto.floatP0A, i32 %local_C5_53_i"   --->   Operation 17 'read' 'local_C5_53_i_read' <Predicate = true> <Delay = 1.42> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.42> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
+ST_1 : Operation 18 [1/1] (1.42ns)   --->   "%local_C5_52_i_read = read i32 @_ssdm_op_Read.ap_auto.floatP0A, i32 %local_C5_52_i"   --->   Operation 18 'read' 'local_C5_52_i_read' <Predicate = true> <Delay = 1.42> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.42> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
+ST_1 : Operation 19 [1/1] (1.42ns)   --->   "%local_C5_51_i_read = read i32 @_ssdm_op_Read.ap_auto.floatP0A, i32 %local_C5_51_i"   --->   Operation 19 'read' 'local_C5_51_i_read' <Predicate = true> <Delay = 1.42> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.42> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
+ST_1 : Operation 20 [1/1] (1.42ns)   --->   "%local_C5_50_i_read = read i32 @_ssdm_op_Read.ap_auto.floatP0A, i32 %local_C5_50_i"   --->   Operation 20 'read' 'local_C5_50_i_read' <Predicate = true> <Delay = 1.42> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.42> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
+ST_1 : Operation 21 [1/1] (1.42ns)   --->   "%local_C5_49_i_read = read i32 @_ssdm_op_Read.ap_auto.floatP0A, i32 %local_C5_49_i"   --->   Operation 21 'read' 'local_C5_49_i_read' <Predicate = true> <Delay = 1.42> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.42> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
+ST_1 : Operation 22 [1/1] (1.42ns)   --->   "%local_C5_48_i_read = read i32 @_ssdm_op_Read.ap_auto.floatP0A, i32 %local_C5_48_i"   --->   Operation 22 'read' 'local_C5_48_i_read' <Predicate = true> <Delay = 1.42> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.42> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
+ST_1 : Operation 23 [1/1] (1.42ns)   --->   "%local_C5_47_i_read = read i32 @_ssdm_op_Read.ap_auto.floatP0A, i32 %local_C5_47_i"   --->   Operation 23 'read' 'local_C5_47_i_read' <Predicate = true> <Delay = 1.42> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.42> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
+ST_1 : Operation 24 [1/1] (1.42ns)   --->   "%local_C5_46_i_read = read i32 @_ssdm_op_Read.ap_auto.floatP0A, i32 %local_C5_46_i"   --->   Operation 24 'read' 'local_C5_46_i_read' <Predicate = true> <Delay = 1.42> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.42> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
+ST_1 : Operation 25 [1/1] (1.42ns)   --->   "%local_C5_45_i_read = read i32 @_ssdm_op_Read.ap_auto.floatP0A, i32 %local_C5_45_i"   --->   Operation 25 'read' 'local_C5_45_i_read' <Predicate = true> <Delay = 1.42> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.42> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
+ST_1 : Operation 26 [1/1] (1.42ns)   --->   "%local_C5_44_i_read = read i32 @_ssdm_op_Read.ap_auto.floatP0A, i32 %local_C5_44_i"   --->   Operation 26 'read' 'local_C5_44_i_read' <Predicate = true> <Delay = 1.42> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.42> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
+ST_1 : Operation 27 [1/1] (1.42ns)   --->   "%local_C5_43_i_read = read i32 @_ssdm_op_Read.ap_auto.floatP0A, i32 %local_C5_43_i"   --->   Operation 27 'read' 'local_C5_43_i_read' <Predicate = true> <Delay = 1.42> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.42> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
+ST_1 : Operation 28 [1/1] (1.42ns)   --->   "%local_C5_42_i_read = read i32 @_ssdm_op_Read.ap_auto.floatP0A, i32 %local_C5_42_i"   --->   Operation 28 'read' 'local_C5_42_i_read' <Predicate = true> <Delay = 1.42> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.42> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
+ST_1 : Operation 29 [1/1] (1.42ns)   --->   "%local_C5_41_i_read = read i32 @_ssdm_op_Read.ap_auto.floatP0A, i32 %local_C5_41_i"   --->   Operation 29 'read' 'local_C5_41_i_read' <Predicate = true> <Delay = 1.42> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.42> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
+ST_1 : Operation 30 [1/1] (1.42ns)   --->   "%local_C5_40_i_read = read i32 @_ssdm_op_Read.ap_auto.floatP0A, i32 %local_C5_40_i"   --->   Operation 30 'read' 'local_C5_40_i_read' <Predicate = true> <Delay = 1.42> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.42> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
+ST_1 : Operation 31 [1/1] (1.42ns)   --->   "%local_C5_39_i_read = read i32 @_ssdm_op_Read.ap_auto.floatP0A, i32 %local_C5_39_i"   --->   Operation 31 'read' 'local_C5_39_i_read' <Predicate = true> <Delay = 1.42> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.42> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
+ST_1 : Operation 32 [1/1] (1.42ns)   --->   "%local_C5_38_i_read = read i32 @_ssdm_op_Read.ap_auto.floatP0A, i32 %local_C5_38_i"   --->   Operation 32 'read' 'local_C5_38_i_read' <Predicate = true> <Delay = 1.42> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.42> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
+ST_1 : Operation 33 [1/1] (1.42ns)   --->   "%local_C5_37_i_read = read i32 @_ssdm_op_Read.ap_auto.floatP0A, i32 %local_C5_37_i"   --->   Operation 33 'read' 'local_C5_37_i_read' <Predicate = true> <Delay = 1.42> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.42> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
+ST_1 : Operation 34 [1/1] (1.42ns)   --->   "%local_C5_36_i_read = read i32 @_ssdm_op_Read.ap_auto.floatP0A, i32 %local_C5_36_i"   --->   Operation 34 'read' 'local_C5_36_i_read' <Predicate = true> <Delay = 1.42> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.42> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
+ST_1 : Operation 35 [1/1] (1.42ns)   --->   "%local_C5_35_i_read = read i32 @_ssdm_op_Read.ap_auto.floatP0A, i32 %local_C5_35_i"   --->   Operation 35 'read' 'local_C5_35_i_read' <Predicate = true> <Delay = 1.42> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.42> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
+ST_1 : Operation 36 [1/1] (1.42ns)   --->   "%local_C5_34_i_read = read i32 @_ssdm_op_Read.ap_auto.floatP0A, i32 %local_C5_34_i"   --->   Operation 36 'read' 'local_C5_34_i_read' <Predicate = true> <Delay = 1.42> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.42> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
+ST_1 : Operation 37 [1/1] (1.42ns)   --->   "%local_C5_33_i_read = read i32 @_ssdm_op_Read.ap_auto.floatP0A, i32 %local_C5_33_i"   --->   Operation 37 'read' 'local_C5_33_i_read' <Predicate = true> <Delay = 1.42> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.42> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
+ST_1 : Operation 38 [1/1] (1.42ns)   --->   "%local_C5_32_i_read = read i32 @_ssdm_op_Read.ap_auto.floatP0A, i32 %local_C5_32_i"   --->   Operation 38 'read' 'local_C5_32_i_read' <Predicate = true> <Delay = 1.42> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.42> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
+ST_1 : Operation 39 [1/1] (1.42ns)   --->   "%local_C5_31_i_read = read i32 @_ssdm_op_Read.ap_auto.floatP0A, i32 %local_C5_31_i"   --->   Operation 39 'read' 'local_C5_31_i_read' <Predicate = true> <Delay = 1.42> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.42> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
+ST_1 : Operation 40 [1/1] (1.42ns)   --->   "%local_C5_30_i_read = read i32 @_ssdm_op_Read.ap_auto.floatP0A, i32 %local_C5_30_i"   --->   Operation 40 'read' 'local_C5_30_i_read' <Predicate = true> <Delay = 1.42> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.42> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
+ST_1 : Operation 41 [1/1] (1.42ns)   --->   "%local_C5_29_i_read = read i32 @_ssdm_op_Read.ap_auto.floatP0A, i32 %local_C5_29_i"   --->   Operation 41 'read' 'local_C5_29_i_read' <Predicate = true> <Delay = 1.42> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.42> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
+ST_1 : Operation 42 [1/1] (1.42ns)   --->   "%local_C5_28_i_read = read i32 @_ssdm_op_Read.ap_auto.floatP0A, i32 %local_C5_28_i"   --->   Operation 42 'read' 'local_C5_28_i_read' <Predicate = true> <Delay = 1.42> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.42> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
+ST_1 : Operation 43 [1/1] (1.42ns)   --->   "%local_C5_27_i_read = read i32 @_ssdm_op_Read.ap_auto.floatP0A, i32 %local_C5_27_i"   --->   Operation 43 'read' 'local_C5_27_i_read' <Predicate = true> <Delay = 1.42> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.42> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
+ST_1 : Operation 44 [1/1] (1.42ns)   --->   "%local_C5_26_i_read = read i32 @_ssdm_op_Read.ap_auto.floatP0A, i32 %local_C5_26_i"   --->   Operation 44 'read' 'local_C5_26_i_read' <Predicate = true> <Delay = 1.42> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.42> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
+ST_1 : Operation 45 [1/1] (1.42ns)   --->   "%local_C5_25_i_read = read i32 @_ssdm_op_Read.ap_auto.floatP0A, i32 %local_C5_25_i"   --->   Operation 45 'read' 'local_C5_25_i_read' <Predicate = true> <Delay = 1.42> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.42> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
+ST_1 : Operation 46 [1/1] (1.42ns)   --->   "%local_C5_24_i_read = read i32 @_ssdm_op_Read.ap_auto.floatP0A, i32 %local_C5_24_i"   --->   Operation 46 'read' 'local_C5_24_i_read' <Predicate = true> <Delay = 1.42> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.42> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
+ST_1 : Operation 47 [1/1] (1.42ns)   --->   "%local_C5_23_i_read = read i32 @_ssdm_op_Read.ap_auto.floatP0A, i32 %local_C5_23_i"   --->   Operation 47 'read' 'local_C5_23_i_read' <Predicate = true> <Delay = 1.42> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.42> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
+ST_1 : Operation 48 [1/1] (1.42ns)   --->   "%local_C5_22_i_read = read i32 @_ssdm_op_Read.ap_auto.floatP0A, i32 %local_C5_22_i"   --->   Operation 48 'read' 'local_C5_22_i_read' <Predicate = true> <Delay = 1.42> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.42> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
+ST_1 : Operation 49 [1/1] (1.42ns)   --->   "%local_C5_21_i_read = read i32 @_ssdm_op_Read.ap_auto.floatP0A, i32 %local_C5_21_i"   --->   Operation 49 'read' 'local_C5_21_i_read' <Predicate = true> <Delay = 1.42> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.42> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
+ST_1 : Operation 50 [1/1] (1.42ns)   --->   "%local_C5_20_i_read = read i32 @_ssdm_op_Read.ap_auto.floatP0A, i32 %local_C5_20_i"   --->   Operation 50 'read' 'local_C5_20_i_read' <Predicate = true> <Delay = 1.42> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.42> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
+ST_1 : Operation 51 [1/1] (1.42ns)   --->   "%local_C5_19_i_read = read i32 @_ssdm_op_Read.ap_auto.floatP0A, i32 %local_C5_19_i"   --->   Operation 51 'read' 'local_C5_19_i_read' <Predicate = true> <Delay = 1.42> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.42> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
+ST_1 : Operation 52 [1/1] (1.42ns)   --->   "%local_C5_18_i_read = read i32 @_ssdm_op_Read.ap_auto.floatP0A, i32 %local_C5_18_i"   --->   Operation 52 'read' 'local_C5_18_i_read' <Predicate = true> <Delay = 1.42> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.42> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
+ST_1 : Operation 53 [1/1] (1.42ns)   --->   "%local_C5_17_i_read = read i32 @_ssdm_op_Read.ap_auto.floatP0A, i32 %local_C5_17_i"   --->   Operation 53 'read' 'local_C5_17_i_read' <Predicate = true> <Delay = 1.42> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.42> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
+ST_1 : Operation 54 [1/1] (1.42ns)   --->   "%local_C5_16_i_read = read i32 @_ssdm_op_Read.ap_auto.floatP0A, i32 %local_C5_16_i"   --->   Operation 54 'read' 'local_C5_16_i_read' <Predicate = true> <Delay = 1.42> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.42> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
+ST_1 : Operation 55 [1/1] (1.42ns)   --->   "%local_C5_15_i_read = read i32 @_ssdm_op_Read.ap_auto.floatP0A, i32 %local_C5_15_i"   --->   Operation 55 'read' 'local_C5_15_i_read' <Predicate = true> <Delay = 1.42> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.42> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
+ST_1 : Operation 56 [1/1] (1.42ns)   --->   "%local_C5_14_i_read = read i32 @_ssdm_op_Read.ap_auto.floatP0A, i32 %local_C5_14_i"   --->   Operation 56 'read' 'local_C5_14_i_read' <Predicate = true> <Delay = 1.42> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.42> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
+ST_1 : Operation 57 [1/1] (1.42ns)   --->   "%local_C5_13_i_read = read i32 @_ssdm_op_Read.ap_auto.floatP0A, i32 %local_C5_13_i"   --->   Operation 57 'read' 'local_C5_13_i_read' <Predicate = true> <Delay = 1.42> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.42> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
+ST_1 : Operation 58 [1/1] (1.42ns)   --->   "%local_C5_12_i_read = read i32 @_ssdm_op_Read.ap_auto.floatP0A, i32 %local_C5_12_i"   --->   Operation 58 'read' 'local_C5_12_i_read' <Predicate = true> <Delay = 1.42> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.42> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
+ST_1 : Operation 59 [1/1] (1.42ns)   --->   "%local_C5_11_i_read = read i32 @_ssdm_op_Read.ap_auto.floatP0A, i32 %local_C5_11_i"   --->   Operation 59 'read' 'local_C5_11_i_read' <Predicate = true> <Delay = 1.42> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.42> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
+ST_1 : Operation 60 [1/1] (1.42ns)   --->   "%local_C5_10_i_read = read i32 @_ssdm_op_Read.ap_auto.floatP0A, i32 %local_C5_10_i"   --->   Operation 60 'read' 'local_C5_10_i_read' <Predicate = true> <Delay = 1.42> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.42> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
+ST_1 : Operation 61 [1/1] (1.42ns)   --->   "%local_C5_9_i_read = read i32 @_ssdm_op_Read.ap_auto.floatP0A, i32 %local_C5_9_i"   --->   Operation 61 'read' 'local_C5_9_i_read' <Predicate = true> <Delay = 1.42> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.42> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
+ST_1 : Operation 62 [1/1] (1.42ns)   --->   "%local_C5_8_i_read = read i32 @_ssdm_op_Read.ap_auto.floatP0A, i32 %local_C5_8_i"   --->   Operation 62 'read' 'local_C5_8_i_read' <Predicate = true> <Delay = 1.42> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.42> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
+ST_1 : Operation 63 [1/1] (1.42ns)   --->   "%local_C5_7_i_read = read i32 @_ssdm_op_Read.ap_auto.floatP0A, i32 %local_C5_7_i"   --->   Operation 63 'read' 'local_C5_7_i_read' <Predicate = true> <Delay = 1.42> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.42> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
+ST_1 : Operation 64 [1/1] (1.42ns)   --->   "%local_C5_6_i_read = read i32 @_ssdm_op_Read.ap_auto.floatP0A, i32 %local_C5_6_i"   --->   Operation 64 'read' 'local_C5_6_i_read' <Predicate = true> <Delay = 1.42> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.42> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
+ST_1 : Operation 65 [1/1] (1.42ns)   --->   "%local_C5_5_i_read = read i32 @_ssdm_op_Read.ap_auto.floatP0A, i32 %local_C5_5_i"   --->   Operation 65 'read' 'local_C5_5_i_read' <Predicate = true> <Delay = 1.42> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.42> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
+ST_1 : Operation 66 [1/1] (1.42ns)   --->   "%local_C5_4_i_read = read i32 @_ssdm_op_Read.ap_auto.floatP0A, i32 %local_C5_4_i"   --->   Operation 66 'read' 'local_C5_4_i_read' <Predicate = true> <Delay = 1.42> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.42> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
+ST_1 : Operation 67 [1/1] (1.42ns)   --->   "%local_C5_3_i_read = read i32 @_ssdm_op_Read.ap_auto.floatP0A, i32 %local_C5_3_i"   --->   Operation 67 'read' 'local_C5_3_i_read' <Predicate = true> <Delay = 1.42> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.42> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
+ST_1 : Operation 68 [1/1] (1.42ns)   --->   "%local_C5_2_i_read = read i32 @_ssdm_op_Read.ap_auto.floatP0A, i32 %local_C5_2_i"   --->   Operation 68 'read' 'local_C5_2_i_read' <Predicate = true> <Delay = 1.42> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.42> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
+ST_1 : Operation 69 [1/1] (1.42ns)   --->   "%local_C5_1_i_read = read i32 @_ssdm_op_Read.ap_auto.floatP0A, i32 %local_C5_1_i"   --->   Operation 69 'read' 'local_C5_1_i_read' <Predicate = true> <Delay = 1.42> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.42> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
+ST_1 : Operation 70 [1/1] (1.42ns)   --->   "%local_C5_i_read = read i32 @_ssdm_op_Read.ap_auto.floatP0A, i32 %local_C5_i"   --->   Operation 70 'read' 'local_C5_i_read' <Predicate = true> <Delay = 1.42> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.42> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
+ST_1 : Operation 71 [2/2] (2.75ns)   --->   "%call_ln15534 = call void @dataflow_in_loop_l_ni5_Loop_l_store_C_tile_sj5_proc55_Pipeline_l_store_C_tile_sj, i6 %tmp_s, i32 %local_C5_63_i_read, i32 %local_C5_62_i_read, i32 %local_C5_61_i_read, i32 %local_C5_60_i_read, i32 %local_C5_59_i_read, i32 %local_C5_58_i_read, i32 %local_C5_57_i_read, i32 %local_C5_56_i_read, i32 %local_C5_55_i_read, i32 %local_C5_54_i_read, i32 %local_C5_53_i_read, i32 %local_C5_52_i_read, i32 %local_C5_51_i_read, i32 %local_C5_50_i_read, i32 %local_C5_49_i_read, i32 %local_C5_48_i_read, i32 %local_C5_47_i_read, i32 %local_C5_46_i_read, i32 %local_C5_45_i_read, i32 %local_C5_44_i_read, i32 %local_C5_43_i_read, i32 %local_C5_42_i_read, i32 %local_C5_41_i_read, i32 %local_C5_40_i_read, i32 %local_C5_39_i_read, i32 %local_C5_38_i_read, i32 %local_C5_37_i_read, i32 %local_C5_36_i_read, i32 %local_C5_35_i_read, i32 %local_C5_34_i_read, i32 %local_C5_33_i_read, i32 %local_C5_32_i_read, i32 %local_C5_31_i_read, i32 %local_C5_30_i_read, i32 %local_C5_29_i_read, i32 %local_C5_28_i_read, i32 %local_C5_27_i_read, i32 %local_C5_26_i_read, i32 %local_C5_25_i_read, i32 %local_C5_24_i_read, i32 %local_C5_23_i_read, i32 %local_C5_22_i_read, i32 %local_C5_21_i_read, i32 %local_C5_20_i_read, i32 %local_C5_19_i_read, i32 %local_C5_18_i_read, i32 %local_C5_17_i_read, i32 %local_C5_16_i_read, i32 %local_C5_15_i_read, i32 %local_C5_14_i_read, i32 %local_C5_13_i_read, i32 %local_C5_12_i_read, i32 %local_C5_11_i_read, i32 %local_C5_10_i_read, i32 %local_C5_9_i_read, i32 %local_C5_8_i_read, i32 %local_C5_7_i_read, i32 %local_C5_6_i_read, i32 %local_C5_5_i_read, i32 %local_C5_4_i_read, i32 %local_C5_3_i_read, i32 %local_C5_2_i_read, i32 %local_C5_1_i_read, i32 %local_C5_i_read, i10 %tmp, i32 %v8547" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:15534]   --->   Operation 71 'call' 'call_ln15534' <Predicate = true> <Delay = 2.75> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 2 <SV = 1> <Delay = 0.00>
+ST_2 : Operation 72 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i7 %mi5, void @ap_fifo_str, i32 0, i32 0, void @p_str, i32 0, i32 0, void @p_str, void @p_str, void @p_str, i32 2, i32 2, i32 16, i32 16, void @p_str, void @ScalarProp_str, i32 4294967295, i32 0"   --->   Operation 72 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 73 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i3 %ni5, void @ap_fifo_str, i32 0, i32 0, void @p_str, i32 0, i32 0, void @p_str, void @p_str, void @p_str, i32 2, i32 2, i32 16, i32 16, void @p_str, void @ScalarProp_str, i32 4294967295, i32 0"   --->   Operation 73 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 74 [1/2] (0.00ns)   --->   "%call_ln15534 = call void @dataflow_in_loop_l_ni5_Loop_l_store_C_tile_sj5_proc55_Pipeline_l_store_C_tile_sj, i6 %tmp_s, i32 %local_C5_63_i_read, i32 %local_C5_62_i_read, i32 %local_C5_61_i_read, i32 %local_C5_60_i_read, i32 %local_C5_59_i_read, i32 %local_C5_58_i_read, i32 %local_C5_57_i_read, i32 %local_C5_56_i_read, i32 %local_C5_55_i_read, i32 %local_C5_54_i_read, i32 %local_C5_53_i_read, i32 %local_C5_52_i_read, i32 %local_C5_51_i_read, i32 %local_C5_50_i_read, i32 %local_C5_49_i_read, i32 %local_C5_48_i_read, i32 %local_C5_47_i_read, i32 %local_C5_46_i_read, i32 %local_C5_45_i_read, i32 %local_C5_44_i_read, i32 %local_C5_43_i_read, i32 %local_C5_42_i_read, i32 %local_C5_41_i_read, i32 %local_C5_40_i_read, i32 %local_C5_39_i_read, i32 %local_C5_38_i_read, i32 %local_C5_37_i_read, i32 %local_C5_36_i_read, i32 %local_C5_35_i_read, i32 %local_C5_34_i_read, i32 %local_C5_33_i_read, i32 %local_C5_32_i_read, i32 %local_C5_31_i_read, i32 %local_C5_30_i_read, i32 %local_C5_29_i_read, i32 %local_C5_28_i_read, i32 %local_C5_27_i_read, i32 %local_C5_26_i_read, i32 %local_C5_25_i_read, i32 %local_C5_24_i_read, i32 %local_C5_23_i_read, i32 %local_C5_22_i_read, i32 %local_C5_21_i_read, i32 %local_C5_20_i_read, i32 %local_C5_19_i_read, i32 %local_C5_18_i_read, i32 %local_C5_17_i_read, i32 %local_C5_16_i_read, i32 %local_C5_15_i_read, i32 %local_C5_14_i_read, i32 %local_C5_13_i_read, i32 %local_C5_12_i_read, i32 %local_C5_11_i_read, i32 %local_C5_10_i_read, i32 %local_C5_9_i_read, i32 %local_C5_8_i_read, i32 %local_C5_7_i_read, i32 %local_C5_6_i_read, i32 %local_C5_5_i_read, i32 %local_C5_4_i_read, i32 %local_C5_3_i_read, i32 %local_C5_2_i_read, i32 %local_C5_1_i_read, i32 %local_C5_i_read, i10 %tmp, i32 %v8547" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:15534]   --->   Operation 74 'call' 'call_ln15534' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_2 : Operation 75 [1/1] (0.00ns)   --->   "%ret_ln0 = ret"   --->   Operation 75 'ret' 'ret_ln0' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10.000ns, clock uncertainty: 2.700ns.
+
+ <State 1>: 4.187ns
+The critical path consists of the following:
+	wire read operation ('local_C5_63_i_read') on port 'local_C5_63_i' [74]  (1.429 ns)
+	'call' operation 0 bit ('call_ln15534', /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:15534) to 'dataflow_in_loop_l_ni5_Loop_l_store_C_tile_sj5_proc55_Pipeline_l_store_C_tile_sj' [138]  (2.758 ns)
+
+ <State 2>: 0.000ns
+The critical path consists of the following:
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'PE_kernel_modulate_6_0_1'
 ================================================================
-* Date:           Wed Feb  5 22:35:23 2025
+* Date:           Mon Feb 17 20:37:35 2025
 
 * Version:        2023.2 (Build 4023990 on Oct 11 2023)
 * Project:        DitBlock
@@ -100,7 +100,7 @@
     |ap_block_pp0_stage1_01001         |       and|   0|  0|   2|           1|           1|
     |ap_condition_257                  |       and|   0|  0|   2|           1|           1|
     |ap_condition_260                  |       and|   0|  0|   2|           1|           1|
-    |icmp_ln271_fu_110_p2              |      icmp|   0|  0|  16|           8|           9|
+    |icmp_ln269_fu_110_p2              |      icmp|   0|  0|  16|           8|           9|
     |ap_block_pp0_stage0_11001         |        or|   0|  0|   2|           1|           1|
     |ap_block_state2_pp0_stage1_iter0  |        or|   0|  0|   2|           1|           1|
     |ap_enable_pp0                     |       xor|   0|  0|   2|           1|           2|
@@ -141,8 +141,8 @@
     |ap_enable_reg_pp0_iter2           |   1|   0|    1|          0|
     |ap_loop_exit_ready_pp0_iter1_reg  |   1|   0|    1|          0|
     |ap_loop_init_pp0_iter1_reg        |   1|   0|    1|          0|
-    |icmp_ln271_reg_164                |   1|   0|    1|          0|
-    |icmp_ln271_reg_164_pp0_iter1_reg  |   1|   0|    1|          0|
+    |icmp_ln269_reg_164                |   1|   0|    1|          0|
+    |icmp_ln269_reg_164_pp0_iter1_reg  |   1|   0|    1|          0|
     |k6_2_reg_168                      |   8|   0|    8|          0|
     |k6_fu_50                          |   8|   0|    8|          0|
     |v130_6_0_preg                     |  32|   0|   32|          0|

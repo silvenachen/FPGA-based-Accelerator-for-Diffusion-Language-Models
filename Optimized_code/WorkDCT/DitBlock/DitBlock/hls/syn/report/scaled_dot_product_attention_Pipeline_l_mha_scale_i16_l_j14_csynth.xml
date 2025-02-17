@@ -18,27 +18,27 @@
 <PipelineType>no</PipelineType>
 <SummaryOfTimingAnalysis>
 <unit>ns</unit>
-<EstimatedClockPeriod>6.149</EstimatedClockPeriod>
+<EstimatedClockPeriod>4.901</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
 <unit>clock cycles</unit>
-<Best-caseLatency>1048580</Best-caseLatency>
-<Average-caseLatency>1048580</Average-caseLatency>
-<Worst-caseLatency>1048580</Worst-caseLatency>
+<Best-caseLatency>1048581</Best-caseLatency>
+<Average-caseLatency>1048581</Average-caseLatency>
+<Worst-caseLatency>1048581</Worst-caseLatency>
 <Best-caseRealTimeLatency>10.486 ms</Best-caseRealTimeLatency>
 <Average-caseRealTimeLatency>10.486 ms</Average-caseRealTimeLatency>
 <Worst-caseRealTimeLatency>10.486 ms</Worst-caseRealTimeLatency>
-<Interval-min>1048580</Interval-min>
-<Interval-max>1048580</Interval-max>
+<Interval-min>1048581</Interval-min>
+<Interval-max>1048581</Interval-max>
 </SummaryOfOverallLatency>
 <SummaryOfLoopLatency>
 <l_mha_scale_i16_l_j14>
 <Slack>7.30</Slack>
 <TripCount>1048576</TripCount>
-<Latency>1048578</Latency>
-<AbsoluteTimeLatency>10485780</AbsoluteTimeLatency>
+<Latency>1048579</Latency>
+<AbsoluteTimeLatency>10485790</AbsoluteTimeLatency>
 <PipelineII>1</PipelineII>
-<PipelineDepth>4</PipelineDepth>
+<PipelineDepth>5</PipelineDepth>
 <InstanceList>
 </InstanceList>
 </l_mha_scale_i16_l_j14>
@@ -46,13 +46,13 @@
 <SummaryOfViolations>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:15729</SourceLocation>
+<SourceLocation>/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:15615</SourceLocation>
 <SummaryOfLoopViolations>
 <l_mha_scale_i16_l_j14>
 <Name>l_mha_scale_i16_l_j14</Name>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:15728</SourceLocation>
+<SourceLocation>/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:15614</SourceLocation>
 </l_mha_scale_i16_l_j14>
 </SummaryOfLoopViolations>
 </SummaryOfViolations>
@@ -60,7 +60,7 @@
 
 <AreaEstimates>
 <Resources>
-<FF>167</FF>
+<FF>201</FF>
 <LUT>249</LUT>
 <BRAM_18K>0</BRAM_18K>
 <DSP>0</DSP>
@@ -143,7 +143,7 @@
 <Attribute>control</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_240_p_din0</name>
+<name>grp_fu_217_p_din0</name>
 <Object>scaled_dot_product_attention_Pipeline_l_mha_scale_i16_l_j14</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -154,7 +154,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_240_p_din1</name>
+<name>grp_fu_217_p_din1</name>
 <Object>scaled_dot_product_attention_Pipeline_l_mha_scale_i16_l_j14</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -165,7 +165,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_240_p_dout0</name>
+<name>grp_fu_217_p_dout0</name>
 <Object>scaled_dot_product_attention_Pipeline_l_mha_scale_i16_l_j14</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -176,7 +176,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_240_p_ce</name>
+<name>grp_fu_217_p_ce</name>
 <Object>scaled_dot_product_attention_Pipeline_l_mha_scale_i16_l_j14</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -220,8 +220,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>Y_t_address0</name>
-<Object>Y_t</Object>
+<name>Y1_address1</name>
+<Object>Y1</Object>
 <Type>array</Type>
 <Scope></Scope>
 <IOProtocol>ap_memory</IOProtocol>
@@ -231,8 +231,8 @@
 <Attribute>address</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>Y_t_ce0</name>
-<Object>Y_t</Object>
+<name>Y1_ce1</name>
+<Object>Y1</Object>
 <Type>array</Type>
 <Scope></Scope>
 <IOProtocol>ap_memory</IOProtocol>
@@ -242,8 +242,8 @@
 <Attribute>control</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>Y_t_we0</name>
-<Object>Y_t</Object>
+<name>Y1_we1</name>
+<Object>Y1</Object>
 <Type>array</Type>
 <Scope></Scope>
 <IOProtocol>ap_memory</IOProtocol>
@@ -253,8 +253,8 @@
 <Attribute>control</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>Y_t_d0</name>
-<Object>Y_t</Object>
+<name>Y1_d1</name>
+<Object>Y1</Object>
 <Type>array</Type>
 <Scope></Scope>
 <IOProtocol>ap_memory</IOProtocol>

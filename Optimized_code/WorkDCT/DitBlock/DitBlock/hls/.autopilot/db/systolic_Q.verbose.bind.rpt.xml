@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'systolic_Q'" level="0">
-<item name = "Date">Wed Feb  5 22:34:15 2025
+<item name = "Date">Mon Feb 17 20:36:24 2025
 </item>
 <item name = "Version">2023.2 (Build 4023990 on Oct 11 2023)</item>
 <item name = "Project">DitBlock</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">10.00 ns, 6.536 ns, 2.70 ns</column>
+<column name="ap_clk">10.00 ns, 7.523 ns, 2.70 ns</column>
 </table>
 </item>
 </section>
@@ -24,22 +24,19 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">42713089, 42713089, 0.427 sec, 0.427 sec, 42713089, 42713089, no</column>
+<column name="">33729921, 33729921, 0.337 sec, 0.337 sec, 33729921, 33729921, no</column>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="grp_systolic_Q_Pipeline_l_load_A_tile_ak1_l_ai1_fu_388">systolic_Q_Pipeline_l_load_A_tile_ak1_l_ai1, 4098, 4098, 40.980 us, 40.980 us, 4098, 4098, no</column>
-<column name="grp_systolic_Q_Pipeline_l_load_B_tile_bk1_l_bj1_fu_404">systolic_Q_Pipeline_l_load_B_tile_bk1_l_bj1, 4098, 4098, 40.980 us, 40.980 us, 4098, 4098, no</column>
-<column name="grp_systolic_tile_Q_fu_419">systolic_tile_Q, 1044, 1044, 10.440 us, 10.440 us, 1030, 1030, dataflow</column>
-<column name="grp_systolic_Q_Pipeline_l_store_C_tile_sj1_l_si1_fu_503">systolic_Q_Pipeline_l_store_C_tile_sj1_l_si1, 66, 66, 0.660 us, 0.660 us, 66, 66, no</column>
+<column name="grp_dataflow_parent_loop_proc43_fu_50">dataflow_parent_loop_proc43, 263514, 263514, 2.635 ms, 2.635 ms, 263514, 263514, no</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
-<column name="- l_outer_tile_mi1_l_ni1">42713088, 42713088, 5214, -, -, 8192, no</column>
+<column name="- l_outer_tile_mi1">33729920, 33729920, 263516, -, -, 128, no</column>
 </table>
 </item>
 </section>

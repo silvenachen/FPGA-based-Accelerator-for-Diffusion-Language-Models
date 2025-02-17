@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'scaled_dot_product_attention_Pipeline_l_update_i14_l_j12'
 ================================================================
-* Date:           Wed Feb  5 22:36:24 2025
+* Date:           Mon Feb 17 20:38:35 2025
 
 * Version:        2023.2 (Build 4023990 on Oct 11 2023)
 * Project:        DitBlock
@@ -77,7 +77,7 @@
     +------------------------------------+------------------------------+---------+----+---+----+-----+
     |              Instance              |            Module            | BRAM_18K| DSP| FF| LUT| URAM|
     +------------------------------------+------------------------------+---------+----+---+----+-----+
-    |fdiv_32ns_32ns_32_6_no_dsp_1_U2092  |fdiv_32ns_32ns_32_6_no_dsp_1  |        0|   0|  0|   0|    0|
+    |fdiv_32ns_32ns_32_6_no_dsp_1_U2393  |fdiv_32ns_32ns_32_6_no_dsp_1  |        0|   0|  0|   0|    0|
     +------------------------------------+------------------------------+---------+----+---+----+-----+
     |Total                               |                              |        0|   0|  0|   0|    0|
     +------------------------------------+------------------------------+---------+----+---+----+-----+
@@ -95,14 +95,14 @@
     +----------------------------+----------+----+---+----+------------+------------+
     |        Variable Name       | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
     +----------------------------+----------+----+---+----+------------+------------+
-    |add_ln12710_1_fu_110_p2     |         +|   0|  0|  28|          21|           1|
-    |add_ln12710_fu_122_p2       |         +|   0|  0|  18|          11|           1|
-    |add_ln12711_fu_182_p2       |         +|   0|  0|  18|          11|           1|
-    |add_ln12712_fu_171_p2       |         +|   0|  0|  27|          20|          20|
-    |icmp_ln12710_fu_104_p2      |      icmp|   0|  0|  29|          21|          22|
-    |icmp_ln12711_fu_128_p2      |      icmp|   0|  0|  19|          11|          12|
-    |select_ln12710_1_fu_142_p3  |    select|   0|  0|  11|           1|          11|
-    |select_ln12710_fu_134_p3    |    select|   0|  0|  11|           1|           1|
+    |add_ln12588_1_fu_118_p2     |         +|   0|  0|  28|          21|           1|
+    |add_ln12588_fu_130_p2       |         +|   0|  0|  18|          11|           1|
+    |add_ln12589_fu_190_p2       |         +|   0|  0|  18|          11|           1|
+    |add_ln12590_fu_179_p2       |         +|   0|  0|  27|          20|          20|
+    |icmp_ln12588_fu_112_p2      |      icmp|   0|  0|  29|          21|          22|
+    |icmp_ln12589_fu_136_p2      |      icmp|   0|  0|  19|          11|          12|
+    |select_ln12588_1_fu_150_p3  |    select|   0|  0|  11|           1|          11|
+    |select_ln12588_fu_142_p3    |    select|   0|  0|  11|           1|           1|
     |ap_enable_pp0               |       xor|   0|  0|   2|           1|           2|
     +----------------------------+----------+----+---+----+------------+------------+
     |Total                       |          |   0|  0| 163|          98|          71|
@@ -115,9 +115,9 @@
     |ap_done_int              |   9|          2|    1|          2|
     |ap_enable_reg_pp0_iter1  |   9|          2|    1|          2|
     |ap_enable_reg_pp0_iter2  |   9|          2|    1|          2|
-    |i14_fu_44                |   9|          2|   11|         22|
-    |indvar_flatten52_fu_48   |   9|          2|   21|         42|
-    |j12_fu_40                |   9|          2|   11|         22|
+    |i14_fu_52                |   9|          2|   11|         22|
+    |indvar_flatten38_fu_56   |   9|          2|   21|         42|
+    |j12_fu_48                |   9|          2|   11|         22|
     +-------------------------+----+-----------+-----+-----------+
     |Total                    |  54|         12|   46|         92|
     +-------------------------+----+-----------+-----+-----------+
@@ -126,9 +126,7 @@
     +----------------------------------+----+----+-----+-----------+
     |               Name               | FF | LUT| Bits| Const Bits|
     +----------------------------------+----+----+-----+-----------+
-    |S_load_reg_239                    |  32|   0|   32|          0|
-    |Y_t_addr_reg_233                  |  20|   0|   20|          0|
-    |Y_t_load_reg_244                  |  32|   0|   32|          0|
+    |Y1_addr_reg_241                   |  20|   0|   20|          0|
     |ap_CS_fsm                         |   1|   0|    1|          0|
     |ap_done_reg                       |   1|   0|    1|          0|
     |ap_enable_reg_pp0_iter1           |   1|   0|    1|          0|
@@ -147,11 +145,13 @@
     |ap_loop_exit_ready_pp0_iter6_reg  |   1|   0|    1|          0|
     |ap_loop_exit_ready_pp0_iter7_reg  |   1|   0|    1|          0|
     |ap_loop_exit_ready_pp0_iter8_reg  |   1|   0|    1|          0|
-    |i14_fu_44                         |  11|   0|   11|          0|
-    |indvar_flatten52_fu_48            |  21|   0|   21|          0|
-    |j12_fu_40                         |  11|   0|   11|          0|
-    |v6927_reg_249                     |  32|   0|   32|          0|
-    |Y_t_addr_reg_233                  |  64|  32|   20|          0|
+    |i14_fu_52                         |  11|   0|   11|          0|
+    |indvar_flatten38_fu_56            |  21|   0|   21|          0|
+    |j12_fu_48                         |  11|   0|   11|          0|
+    |v6925_reg_252                     |  32|   0|   32|          0|
+    |v6926_reg_247                     |  32|   0|   32|          0|
+    |v6927_reg_257                     |  32|   0|   32|          0|
+    |Y1_addr_reg_241                   |  64|  32|   20|          0|
     +----------------------------------+----+----+-----+-----------+
     |Total                             | 241|  32|  197|          0|
     +----------------------------------+----+----+-----+-----------+
@@ -162,24 +162,24 @@
 == Interface
 ================================================================
 * Summary: 
-+--------------+-----+-----+------------+----------------------------------------------------------+--------------+
-|   RTL Ports  | Dir | Bits|  Protocol  |                       Source Object                      |    C Type    |
-+--------------+-----+-----+------------+----------------------------------------------------------+--------------+
-|ap_clk        |   in|    1|  ap_ctrl_hs|  scaled_dot_product_attention_Pipeline_l_update_i14_l_j12|  return value|
-|ap_rst        |   in|    1|  ap_ctrl_hs|  scaled_dot_product_attention_Pipeline_l_update_i14_l_j12|  return value|
-|ap_start      |   in|    1|  ap_ctrl_hs|  scaled_dot_product_attention_Pipeline_l_update_i14_l_j12|  return value|
-|ap_done       |  out|    1|  ap_ctrl_hs|  scaled_dot_product_attention_Pipeline_l_update_i14_l_j12|  return value|
-|ap_idle       |  out|    1|  ap_ctrl_hs|  scaled_dot_product_attention_Pipeline_l_update_i14_l_j12|  return value|
-|ap_ready      |  out|    1|  ap_ctrl_hs|  scaled_dot_product_attention_Pipeline_l_update_i14_l_j12|  return value|
-|S_address0    |  out|   10|   ap_memory|                                                         S|         array|
-|S_ce0         |  out|    1|   ap_memory|                                                         S|         array|
-|S_q0          |   in|   32|   ap_memory|                                                         S|         array|
-|Y_t_address0  |  out|   20|   ap_memory|                                                       Y_t|         array|
-|Y_t_ce0       |  out|    1|   ap_memory|                                                       Y_t|         array|
-|Y_t_we0       |  out|    1|   ap_memory|                                                       Y_t|         array|
-|Y_t_d0        |  out|   32|   ap_memory|                                                       Y_t|         array|
-|Y_t_address1  |  out|   20|   ap_memory|                                                       Y_t|         array|
-|Y_t_ce1       |  out|    1|   ap_memory|                                                       Y_t|         array|
-|Y_t_q1        |   in|   32|   ap_memory|                                                       Y_t|         array|
-+--------------+-----+-----+------------+----------------------------------------------------------+--------------+
++-------------+-----+-----+------------+----------------------------------------------------------+--------------+
+|  RTL Ports  | Dir | Bits|  Protocol  |                       Source Object                      |    C Type    |
++-------------+-----+-----+------------+----------------------------------------------------------+--------------+
+|ap_clk       |   in|    1|  ap_ctrl_hs|  scaled_dot_product_attention_Pipeline_l_update_i14_l_j12|  return value|
+|ap_rst       |   in|    1|  ap_ctrl_hs|  scaled_dot_product_attention_Pipeline_l_update_i14_l_j12|  return value|
+|ap_start     |   in|    1|  ap_ctrl_hs|  scaled_dot_product_attention_Pipeline_l_update_i14_l_j12|  return value|
+|ap_done      |  out|    1|  ap_ctrl_hs|  scaled_dot_product_attention_Pipeline_l_update_i14_l_j12|  return value|
+|ap_idle      |  out|    1|  ap_ctrl_hs|  scaled_dot_product_attention_Pipeline_l_update_i14_l_j12|  return value|
+|ap_ready     |  out|    1|  ap_ctrl_hs|  scaled_dot_product_attention_Pipeline_l_update_i14_l_j12|  return value|
+|S_address0   |  out|   10|   ap_memory|                                                         S|         array|
+|S_ce0        |  out|    1|   ap_memory|                                                         S|         array|
+|S_q0         |   in|   32|   ap_memory|                                                         S|         array|
+|Y1_address0  |  out|   20|   ap_memory|                                                        Y1|         array|
+|Y1_ce0       |  out|    1|   ap_memory|                                                        Y1|         array|
+|Y1_q0        |   in|   32|   ap_memory|                                                        Y1|         array|
+|Y1_address1  |  out|   20|   ap_memory|                                                        Y1|         array|
+|Y1_ce1       |  out|    1|   ap_memory|                                                        Y1|         array|
+|Y1_we1       |  out|    1|   ap_memory|                                                        Y1|         array|
+|Y1_d1        |  out|   32|   ap_memory|                                                        Y1|         array|
++-------------+-----+-----+------------+----------------------------------------------------------+--------------+
 

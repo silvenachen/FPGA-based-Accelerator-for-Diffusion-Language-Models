@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'allo_DDitBlock_Pipeline_l_gelu_i21_l_j19'
 ================================================================
-* Date:           Wed Feb  5 22:37:00 2025
+* Date:           Mon Feb 17 20:39:12 2025
 
 * Version:        2023.2 (Build 4023990 on Oct 11 2023)
 * Project:        DitBlock
@@ -83,15 +83,15 @@
     +-------------------------------------+-------------------------------+---------+----+------+------+-----+
     |               Instance              |             Module            | BRAM_18K| DSP|  FF  |  LUT | URAM|
     +-------------------------------------+-------------------------------+---------+----+------+------+-----+
-    |dmul_64ns_64ns_64_4_max_dsp_1_U3100  |dmul_64ns_64ns_64_4_max_dsp_1  |        0|   8|   275|   108|    0|
-    |dmul_64ns_64ns_64_4_max_dsp_1_U3101  |dmul_64ns_64ns_64_4_max_dsp_1  |        0|   8|   275|   108|    0|
-    |fmul_32ns_32ns_32_2_max_dsp_1_U3093  |fmul_32ns_32ns_32_2_max_dsp_1  |        0|   3|   128|    77|    0|
-    |fpext_32ns_64_1_no_dsp_1_U3097       |fpext_32ns_64_1_no_dsp_1       |        0|   0|     0|     0|    0|
-    |fpext_32ns_64_1_no_dsp_1_U3098       |fpext_32ns_64_1_no_dsp_1       |        0|   0|     0|     0|    0|
-    |fpext_32ns_64_1_no_dsp_1_U3099       |fpext_32ns_64_1_no_dsp_1       |        0|   0|     0|     0|    0|
-    |fptrunc_64ns_32_2_no_dsp_1_U3094     |fptrunc_64ns_32_2_no_dsp_1     |        0|   0|     0|     0|    0|
-    |fptrunc_64ns_32_2_no_dsp_1_U3095     |fptrunc_64ns_32_2_no_dsp_1     |        0|   0|     0|     0|    0|
-    |fptrunc_64ns_32_2_no_dsp_1_U3096     |fptrunc_64ns_32_2_no_dsp_1     |        0|   0|     0|     0|    0|
+    |dmul_64ns_64ns_64_4_max_dsp_1_U3556  |dmul_64ns_64ns_64_4_max_dsp_1  |        0|   8|   275|   108|    0|
+    |dmul_64ns_64ns_64_4_max_dsp_1_U3557  |dmul_64ns_64ns_64_4_max_dsp_1  |        0|   8|   275|   108|    0|
+    |fmul_32ns_32ns_32_2_max_dsp_1_U3549  |fmul_32ns_32ns_32_2_max_dsp_1  |        0|   3|   128|    77|    0|
+    |fpext_32ns_64_1_no_dsp_1_U3553       |fpext_32ns_64_1_no_dsp_1       |        0|   0|     0|     0|    0|
+    |fpext_32ns_64_1_no_dsp_1_U3554       |fpext_32ns_64_1_no_dsp_1       |        0|   0|     0|     0|    0|
+    |fpext_32ns_64_1_no_dsp_1_U3555       |fpext_32ns_64_1_no_dsp_1       |        0|   0|     0|     0|    0|
+    |fptrunc_64ns_32_2_no_dsp_1_U3550     |fptrunc_64ns_32_2_no_dsp_1     |        0|   0|     0|     0|    0|
+    |fptrunc_64ns_32_2_no_dsp_1_U3551     |fptrunc_64ns_32_2_no_dsp_1     |        0|   0|     0|     0|    0|
+    |fptrunc_64ns_32_2_no_dsp_1_U3552     |fptrunc_64ns_32_2_no_dsp_1     |        0|   0|     0|     0|    0|
     |grp_generic_tanh_float_s_fu_165      |generic_tanh_float_s           |        5|  38|  4673|  5279|    0|
     |grp_pow_generic_double_s_fu_136      |pow_generic_double_s           |        5|  91|  3931|  6991|    0|
     +-------------------------------------+-------------------------------+---------+----+------+------+-----+
@@ -111,14 +111,14 @@
     +----------------------------+----------+----+---+----+------------+------------+
     |        Variable Name       | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
     +----------------------------+----------+----+---+----+------------+------------+
-    |add_ln21753_1_fu_250_p2     |         +|   0|  0|  27|          20|           1|
-    |add_ln21753_fu_262_p2       |         +|   0|  0|  18|          11|           1|
-    |add_ln21754_fu_317_p2       |         +|   0|  0|  17|          10|           1|
-    |add_ln21764_fu_306_p2       |         +|   0|  0|  26|          19|          19|
-    |icmp_ln21753_fu_244_p2      |      icmp|   0|  0|  28|          20|          21|
-    |icmp_ln21754_fu_268_p2      |      icmp|   0|  0|  18|          10|          11|
-    |select_ln21753_1_fu_282_p3  |    select|   0|  0|  11|           1|          11|
-    |select_ln21753_fu_274_p3    |    select|   0|  0|  10|           1|           1|
+    |add_ln21619_1_fu_250_p2     |         +|   0|  0|  27|          20|           1|
+    |add_ln21619_fu_262_p2       |         +|   0|  0|  18|          11|           1|
+    |add_ln21620_fu_317_p2       |         +|   0|  0|  17|          10|           1|
+    |add_ln21621_fu_306_p2       |         +|   0|  0|  26|          19|          19|
+    |icmp_ln21619_fu_244_p2      |      icmp|   0|  0|  28|          20|          21|
+    |icmp_ln21620_fu_268_p2      |      icmp|   0|  0|  18|          10|          11|
+    |select_ln21619_1_fu_282_p3  |    select|   0|  0|  11|           1|          11|
+    |select_ln21619_fu_274_p3    |    select|   0|  0|  10|           1|           1|
     |ap_enable_pp0               |       xor|   0|  0|   2|           1|           2|
     +----------------------------+----------+----+---+----+------------+------------+
     |Total                       |          |   0|  0| 157|          93|          68|
@@ -291,7 +291,7 @@
     |grp_generic_tanh_float_s_fu_165_ap_start_reg  |   1|   0|    1|          0|
     |grp_pow_generic_double_s_fu_136_ap_start_reg  |   1|   0|    1|          0|
     |i21_fu_98                                     |  11|   0|   11|          0|
-    |icmp_ln21753_reg_359                          |   1|   0|    1|          0|
+    |icmp_ln21619_reg_359                          |   1|   0|    1|          0|
     |indvar_flatten146_fu_102                      |  20|   0|   20|          0|
     |j19_fu_94                                     |  10|   0|   10|          0|
     |v11893_reg_373                                |  32|   0|   32|          0|
@@ -303,10 +303,10 @@
     |v11899_reg_425                                |  32|   0|   32|          0|
     |v11900_reg_435                                |  32|   0|   32|          0|
     |v11901_reg_440                                |  32|   0|   32|          0|
-    |zext_ln21764_1_reg_363                        |  19|   0|   64|         45|
-    |icmp_ln21753_reg_359                          |  64|  32|    1|          0|
+    |zext_ln21621_1_reg_363                        |  19|   0|   64|         45|
+    |icmp_ln21619_reg_359                          |  64|  32|    1|          0|
     |v11893_reg_373                                |  64|  32|   32|          0|
-    |zext_ln21764_1_reg_363                        |  64|  32|   64|         45|
+    |zext_ln21621_1_reg_363                        |  64|  32|   64|         45|
     +----------------------------------------------+----+----+-----+-----------+
     |Total                                         | 815|  96|  765|         90|
     +----------------------------------------------+----+----+-----+-----------+
@@ -326,27 +326,27 @@
 |ap_done              |  out|    1|  ap_ctrl_hs|  allo_DDitBlock_Pipeline_l_gelu_i21_l_j19|  return value|
 |ap_idle              |  out|    1|  ap_ctrl_hs|  allo_DDitBlock_Pipeline_l_gelu_i21_l_j19|  return value|
 |ap_ready             |  out|    1|  ap_ctrl_hs|  allo_DDitBlock_Pipeline_l_gelu_i21_l_j19|  return value|
-|grp_fu_591_p_din0    |  out|   32|  ap_ctrl_hs|  allo_DDitBlock_Pipeline_l_gelu_i21_l_j19|  return value|
-|grp_fu_591_p_din1    |  out|   32|  ap_ctrl_hs|  allo_DDitBlock_Pipeline_l_gelu_i21_l_j19|  return value|
-|grp_fu_591_p_opcode  |  out|    1|  ap_ctrl_hs|  allo_DDitBlock_Pipeline_l_gelu_i21_l_j19|  return value|
-|grp_fu_591_p_dout0   |   in|   32|  ap_ctrl_hs|  allo_DDitBlock_Pipeline_l_gelu_i21_l_j19|  return value|
-|grp_fu_591_p_ce      |  out|    1|  ap_ctrl_hs|  allo_DDitBlock_Pipeline_l_gelu_i21_l_j19|  return value|
-|grp_fu_595_p_din0    |  out|   32|  ap_ctrl_hs|  allo_DDitBlock_Pipeline_l_gelu_i21_l_j19|  return value|
-|grp_fu_595_p_din1    |  out|   32|  ap_ctrl_hs|  allo_DDitBlock_Pipeline_l_gelu_i21_l_j19|  return value|
-|grp_fu_595_p_opcode  |  out|    2|  ap_ctrl_hs|  allo_DDitBlock_Pipeline_l_gelu_i21_l_j19|  return value|
-|grp_fu_595_p_dout0   |   in|   32|  ap_ctrl_hs|  allo_DDitBlock_Pipeline_l_gelu_i21_l_j19|  return value|
-|grp_fu_595_p_ce      |  out|    1|  ap_ctrl_hs|  allo_DDitBlock_Pipeline_l_gelu_i21_l_j19|  return value|
-|grp_fu_599_p_din0    |  out|   32|  ap_ctrl_hs|  allo_DDitBlock_Pipeline_l_gelu_i21_l_j19|  return value|
-|grp_fu_599_p_din1    |  out|   32|  ap_ctrl_hs|  allo_DDitBlock_Pipeline_l_gelu_i21_l_j19|  return value|
-|grp_fu_599_p_dout0   |   in|   32|  ap_ctrl_hs|  allo_DDitBlock_Pipeline_l_gelu_i21_l_j19|  return value|
-|grp_fu_599_p_ce      |  out|    1|  ap_ctrl_hs|  allo_DDitBlock_Pipeline_l_gelu_i21_l_j19|  return value|
-|buffer_Q_address1    |  out|   19|   ap_memory|                                  buffer_Q|         array|
-|buffer_Q_ce1         |  out|    1|   ap_memory|                                  buffer_Q|         array|
-|buffer_Q_we1         |  out|    1|   ap_memory|                                  buffer_Q|         array|
-|buffer_Q_d1          |  out|   32|   ap_memory|                                  buffer_Q|         array|
-|buffer_K_address0    |  out|   19|   ap_memory|                                  buffer_K|         array|
-|buffer_K_ce0         |  out|    1|   ap_memory|                                  buffer_K|         array|
-|buffer_K_q0          |   in|   32|   ap_memory|                                  buffer_K|         array|
+|grp_fu_590_p_din0    |  out|   32|  ap_ctrl_hs|  allo_DDitBlock_Pipeline_l_gelu_i21_l_j19|  return value|
+|grp_fu_590_p_din1    |  out|   32|  ap_ctrl_hs|  allo_DDitBlock_Pipeline_l_gelu_i21_l_j19|  return value|
+|grp_fu_590_p_opcode  |  out|    1|  ap_ctrl_hs|  allo_DDitBlock_Pipeline_l_gelu_i21_l_j19|  return value|
+|grp_fu_590_p_dout0   |   in|   32|  ap_ctrl_hs|  allo_DDitBlock_Pipeline_l_gelu_i21_l_j19|  return value|
+|grp_fu_590_p_ce      |  out|    1|  ap_ctrl_hs|  allo_DDitBlock_Pipeline_l_gelu_i21_l_j19|  return value|
+|grp_fu_594_p_din0    |  out|   32|  ap_ctrl_hs|  allo_DDitBlock_Pipeline_l_gelu_i21_l_j19|  return value|
+|grp_fu_594_p_din1    |  out|   32|  ap_ctrl_hs|  allo_DDitBlock_Pipeline_l_gelu_i21_l_j19|  return value|
+|grp_fu_594_p_opcode  |  out|    2|  ap_ctrl_hs|  allo_DDitBlock_Pipeline_l_gelu_i21_l_j19|  return value|
+|grp_fu_594_p_dout0   |   in|   32|  ap_ctrl_hs|  allo_DDitBlock_Pipeline_l_gelu_i21_l_j19|  return value|
+|grp_fu_594_p_ce      |  out|    1|  ap_ctrl_hs|  allo_DDitBlock_Pipeline_l_gelu_i21_l_j19|  return value|
+|grp_fu_598_p_din0    |  out|   32|  ap_ctrl_hs|  allo_DDitBlock_Pipeline_l_gelu_i21_l_j19|  return value|
+|grp_fu_598_p_din1    |  out|   32|  ap_ctrl_hs|  allo_DDitBlock_Pipeline_l_gelu_i21_l_j19|  return value|
+|grp_fu_598_p_dout0   |   in|   32|  ap_ctrl_hs|  allo_DDitBlock_Pipeline_l_gelu_i21_l_j19|  return value|
+|grp_fu_598_p_ce      |  out|    1|  ap_ctrl_hs|  allo_DDitBlock_Pipeline_l_gelu_i21_l_j19|  return value|
+|buffer_Q_address0    |  out|   19|   ap_memory|                                  buffer_Q|         array|
+|buffer_Q_ce0         |  out|    1|   ap_memory|                                  buffer_Q|         array|
+|buffer_Q_q0          |   in|   32|   ap_memory|                                  buffer_Q|         array|
+|buffer_K_address1    |  out|   19|   ap_memory|                                  buffer_K|         array|
+|buffer_K_ce1         |  out|    1|   ap_memory|                                  buffer_K|         array|
+|buffer_K_we1         |  out|    1|   ap_memory|                                  buffer_K|         array|
+|buffer_K_d1          |  out|   32|   ap_memory|                                  buffer_K|         array|
 +---------------------+-----+-----+------------+------------------------------------------+--------------+
 
 ============================================================
@@ -461,263 +461,263 @@ IsGatedGlobalClock: 0
 * FSM state operations: 
 
 State 1 <SV = 0> <Delay = 0.38>
-ST_1 : Operation 75 [1/1] (0.00ns)   --->   "%j19 = alloca i32 1" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:21754->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25458]   --->   Operation 75 'alloca' 'j19' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 76 [1/1] (0.00ns)   --->   "%i21 = alloca i32 1" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:21753->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25458]   --->   Operation 76 'alloca' 'i21' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 75 [1/1] (0.00ns)   --->   "%j19 = alloca i32 1" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:21620->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25327]   --->   Operation 75 'alloca' 'j19' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 76 [1/1] (0.00ns)   --->   "%i21 = alloca i32 1" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:21619->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25327]   --->   Operation 76 'alloca' 'i21' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 77 [1/1] (0.00ns)   --->   "%indvar_flatten146 = alloca i32 1"   --->   Operation 77 'alloca' 'indvar_flatten146' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 78 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i32 %buffer_K, i64 666, i64 24, i64 18446744073709551615"   --->   Operation 78 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 79 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i32 %buffer_Q, i64 666, i64 24, i64 18446744073709551615"   --->   Operation 79 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 80 [1/1] (0.38ns)   --->   "%store_ln0 = store i20 0, i20 %indvar_flatten146"   --->   Operation 80 'store' 'store_ln0' <Predicate = true> <Delay = 0.38>
-ST_1 : Operation 81 [1/1] (0.38ns)   --->   "%store_ln21753 = store i11 0, i11 %i21" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:21753->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25458]   --->   Operation 81 'store' 'store_ln21753' <Predicate = true> <Delay = 0.38>
-ST_1 : Operation 82 [1/1] (0.38ns)   --->   "%store_ln21754 = store i10 0, i10 %j19" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:21754->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25458]   --->   Operation 82 'store' 'store_ln21754' <Predicate = true> <Delay = 0.38>
-ST_1 : Operation 83 [1/1] (0.00ns)   --->   "%br_ln0 = br void %for.inc.i263"   --->   Operation 83 'br' 'br_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 81 [1/1] (0.38ns)   --->   "%store_ln21619 = store i11 0, i11 %i21" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:21619->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25327]   --->   Operation 81 'store' 'store_ln21619' <Predicate = true> <Delay = 0.38>
+ST_1 : Operation 82 [1/1] (0.38ns)   --->   "%store_ln21620 = store i10 0, i10 %j19" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:21620->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25327]   --->   Operation 82 'store' 'store_ln21620' <Predicate = true> <Delay = 0.38>
+ST_1 : Operation 83 [1/1] (0.00ns)   --->   "%br_ln0 = br void %for.inc.i262"   --->   Operation 83 'br' 'br_ln0' <Predicate = true> <Delay = 0.00>
 
 State 2 <SV = 1> <Delay = 4.50>
-ST_2 : Operation 84 [1/1] (0.00ns)   --->   "%indvar_flatten146_load = load i20 %indvar_flatten146" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:21753->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25458]   --->   Operation 84 'load' 'indvar_flatten146_load' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 85 [1/1] (0.80ns)   --->   "%icmp_ln21753 = icmp_eq  i20 %indvar_flatten146_load, i20 524288" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:21753->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25458]   --->   Operation 85 'icmp' 'icmp_ln21753' <Predicate = true> <Delay = 0.80> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.81> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
-ST_2 : Operation 86 [1/1] (0.80ns)   --->   "%add_ln21753_1 = add i20 %indvar_flatten146_load, i20 1" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:21753->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25458]   --->   Operation 86 'add' 'add_ln21753_1' <Predicate = true> <Delay = 0.80> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.80> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_2 : Operation 87 [1/1] (0.00ns)   --->   "%br_ln21753 = br i1 %icmp_ln21753, void %for.inc24.i, void %for.inc571.preheader.exitStub" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:21753->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25458]   --->   Operation 87 'br' 'br_ln21753' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 88 [1/1] (0.00ns)   --->   "%j19_load = load i10 %j19" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:21754->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25458]   --->   Operation 88 'load' 'j19_load' <Predicate = (!icmp_ln21753)> <Delay = 0.00>
-ST_2 : Operation 89 [1/1] (0.00ns)   --->   "%i21_load = load i11 %i21" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:21753->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25458]   --->   Operation 89 'load' 'i21_load' <Predicate = (!icmp_ln21753)> <Delay = 0.00>
-ST_2 : Operation 90 [1/1] (0.73ns)   --->   "%add_ln21753 = add i11 %i21_load, i11 1" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:21753->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25458]   --->   Operation 90 'add' 'add_ln21753' <Predicate = (!icmp_ln21753)> <Delay = 0.73> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.73> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_2 : Operation 91 [1/1] (0.72ns)   --->   "%icmp_ln21754 = icmp_eq  i10 %j19_load, i10 512" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:21754->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25458]   --->   Operation 91 'icmp' 'icmp_ln21754' <Predicate = (!icmp_ln21753)> <Delay = 0.72> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.73> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
-ST_2 : Operation 92 [1/1] (0.30ns)   --->   "%select_ln21753 = select i1 %icmp_ln21754, i10 0, i10 %j19_load" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:21753->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25458]   --->   Operation 92 'select' 'select_ln21753' <Predicate = (!icmp_ln21753)> <Delay = 0.30> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.30> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
-ST_2 : Operation 93 [1/1] (0.30ns)   --->   "%select_ln21753_1 = select i1 %icmp_ln21754, i11 %add_ln21753, i11 %i21_load" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:21753->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25458]   --->   Operation 93 'select' 'select_ln21753_1' <Predicate = (!icmp_ln21753)> <Delay = 0.30> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.30> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
-ST_2 : Operation 94 [1/1] (0.00ns)   --->   "%trunc_ln21764 = trunc i11 %select_ln21753_1" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:21764->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25458]   --->   Operation 94 'trunc' 'trunc_ln21764' <Predicate = (!icmp_ln21753)> <Delay = 0.00>
-ST_2 : Operation 95 [1/1] (0.00ns)   --->   "%tmp_s = bitconcatenate i19 @_ssdm_op_BitConcatenate.i19.i10.i9, i10 %trunc_ln21764, i9 0" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:21764->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25458]   --->   Operation 95 'bitconcatenate' 'tmp_s' <Predicate = (!icmp_ln21753)> <Delay = 0.00>
-ST_2 : Operation 96 [1/1] (0.00ns)   --->   "%zext_ln21764 = zext i10 %select_ln21753" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:21764->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25458]   --->   Operation 96 'zext' 'zext_ln21764' <Predicate = (!icmp_ln21753)> <Delay = 0.00>
-ST_2 : Operation 97 [1/1] (0.80ns)   --->   "%add_ln21764 = add i19 %tmp_s, i19 %zext_ln21764" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:21764->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25458]   --->   Operation 97 'add' 'add_ln21764' <Predicate = (!icmp_ln21753)> <Delay = 0.80> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.80> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_2 : Operation 98 [1/1] (0.00ns)   --->   "%zext_ln21764_1 = zext i19 %add_ln21764" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:21764->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25458]   --->   Operation 98 'zext' 'zext_ln21764_1' <Predicate = (!icmp_ln21753)> <Delay = 0.00>
-ST_2 : Operation 99 [1/1] (0.00ns)   --->   "%buffer_K_addr = getelementptr i32 %buffer_K, i64 0, i64 %zext_ln21764_1" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:21755->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25458]   --->   Operation 99 'getelementptr' 'buffer_K_addr' <Predicate = (!icmp_ln21753)> <Delay = 0.00>
-ST_2 : Operation 100 [2/2] (2.66ns)   --->   "%v11893 = load i19 %buffer_K_addr" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:21756->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25458]   --->   Operation 100 'load' 'v11893' <Predicate = (!icmp_ln21753)> <Delay = 2.66> <CoreInst = "RAM_2P_URAM">   --->   Core 95 'RAM_2P_URAM' <Latency = 1> <II = 1> <Delay = 2.66> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 524288> <RAM>
-ST_2 : Operation 101 [1/1] (0.72ns)   --->   "%add_ln21754 = add i10 %select_ln21753, i10 1" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:21754->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25458]   --->   Operation 101 'add' 'add_ln21754' <Predicate = (!icmp_ln21753)> <Delay = 0.72> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.72> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_2 : Operation 102 [1/1] (0.38ns)   --->   "%store_ln21753 = store i20 %add_ln21753_1, i20 %indvar_flatten146" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:21753->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25458]   --->   Operation 102 'store' 'store_ln21753' <Predicate = (!icmp_ln21753)> <Delay = 0.38>
-ST_2 : Operation 103 [1/1] (0.38ns)   --->   "%store_ln21753 = store i11 %select_ln21753_1, i11 %i21" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:21753->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25458]   --->   Operation 103 'store' 'store_ln21753' <Predicate = (!icmp_ln21753)> <Delay = 0.38>
-ST_2 : Operation 104 [1/1] (0.38ns)   --->   "%store_ln21754 = store i10 %add_ln21754, i10 %j19" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:21754->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25458]   --->   Operation 104 'store' 'store_ln21754' <Predicate = (!icmp_ln21753)> <Delay = 0.38>
+ST_2 : Operation 84 [1/1] (0.00ns)   --->   "%indvar_flatten146_load = load i20 %indvar_flatten146" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:21619->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25327]   --->   Operation 84 'load' 'indvar_flatten146_load' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 85 [1/1] (0.80ns)   --->   "%icmp_ln21619 = icmp_eq  i20 %indvar_flatten146_load, i20 524288" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:21619->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25327]   --->   Operation 85 'icmp' 'icmp_ln21619' <Predicate = true> <Delay = 0.80> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.81> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 86 [1/1] (0.80ns)   --->   "%add_ln21619_1 = add i20 %indvar_flatten146_load, i20 1" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:21619->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25327]   --->   Operation 86 'add' 'add_ln21619_1' <Predicate = true> <Delay = 0.80> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.80> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 87 [1/1] (0.00ns)   --->   "%br_ln21619 = br i1 %icmp_ln21619, void %for.inc24.i, void %for.inc566.preheader.exitStub" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:21619->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25327]   --->   Operation 87 'br' 'br_ln21619' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 88 [1/1] (0.00ns)   --->   "%j19_load = load i10 %j19" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:21620->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25327]   --->   Operation 88 'load' 'j19_load' <Predicate = (!icmp_ln21619)> <Delay = 0.00>
+ST_2 : Operation 89 [1/1] (0.00ns)   --->   "%i21_load = load i11 %i21" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:21619->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25327]   --->   Operation 89 'load' 'i21_load' <Predicate = (!icmp_ln21619)> <Delay = 0.00>
+ST_2 : Operation 90 [1/1] (0.73ns)   --->   "%add_ln21619 = add i11 %i21_load, i11 1" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:21619->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25327]   --->   Operation 90 'add' 'add_ln21619' <Predicate = (!icmp_ln21619)> <Delay = 0.73> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.73> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 91 [1/1] (0.72ns)   --->   "%icmp_ln21620 = icmp_eq  i10 %j19_load, i10 512" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:21620->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25327]   --->   Operation 91 'icmp' 'icmp_ln21620' <Predicate = (!icmp_ln21619)> <Delay = 0.72> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.73> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 92 [1/1] (0.30ns)   --->   "%select_ln21619 = select i1 %icmp_ln21620, i10 0, i10 %j19_load" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:21619->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25327]   --->   Operation 92 'select' 'select_ln21619' <Predicate = (!icmp_ln21619)> <Delay = 0.30> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.30> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_2 : Operation 93 [1/1] (0.30ns)   --->   "%select_ln21619_1 = select i1 %icmp_ln21620, i11 %add_ln21619, i11 %i21_load" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:21619->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25327]   --->   Operation 93 'select' 'select_ln21619_1' <Predicate = (!icmp_ln21619)> <Delay = 0.30> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.30> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_2 : Operation 94 [1/1] (0.00ns)   --->   "%trunc_ln21621 = trunc i11 %select_ln21619_1" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:21621->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25327]   --->   Operation 94 'trunc' 'trunc_ln21621' <Predicate = (!icmp_ln21619)> <Delay = 0.00>
+ST_2 : Operation 95 [1/1] (0.00ns)   --->   "%tmp_s = bitconcatenate i19 @_ssdm_op_BitConcatenate.i19.i10.i9, i10 %trunc_ln21621, i9 0" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:21621->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25327]   --->   Operation 95 'bitconcatenate' 'tmp_s' <Predicate = (!icmp_ln21619)> <Delay = 0.00>
+ST_2 : Operation 96 [1/1] (0.00ns)   --->   "%zext_ln21621 = zext i10 %select_ln21619" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:21621->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25327]   --->   Operation 96 'zext' 'zext_ln21621' <Predicate = (!icmp_ln21619)> <Delay = 0.00>
+ST_2 : Operation 97 [1/1] (0.80ns)   --->   "%add_ln21621 = add i19 %tmp_s, i19 %zext_ln21621" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:21621->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25327]   --->   Operation 97 'add' 'add_ln21621' <Predicate = (!icmp_ln21619)> <Delay = 0.80> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.80> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 98 [1/1] (0.00ns)   --->   "%zext_ln21621_1 = zext i19 %add_ln21621" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:21621->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25327]   --->   Operation 98 'zext' 'zext_ln21621_1' <Predicate = (!icmp_ln21619)> <Delay = 0.00>
+ST_2 : Operation 99 [1/1] (0.00ns)   --->   "%buffer_Q_addr = getelementptr i32 %buffer_Q, i64 0, i64 %zext_ln21621_1" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:21621->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25327]   --->   Operation 99 'getelementptr' 'buffer_Q_addr' <Predicate = (!icmp_ln21619)> <Delay = 0.00>
+ST_2 : Operation 100 [2/2] (2.66ns)   --->   "%v11893 = load i19 %buffer_Q_addr" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:21622->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25327]   --->   Operation 100 'load' 'v11893' <Predicate = (!icmp_ln21619)> <Delay = 2.66> <CoreInst = "RAM_2P_URAM">   --->   Core 95 'RAM_2P_URAM' <Latency = 1> <II = 1> <Delay = 2.66> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 524288> <RAM>
+ST_2 : Operation 101 [1/1] (0.72ns)   --->   "%add_ln21620 = add i10 %select_ln21619, i10 1" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:21620->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25327]   --->   Operation 101 'add' 'add_ln21620' <Predicate = (!icmp_ln21619)> <Delay = 0.72> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.72> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 102 [1/1] (0.38ns)   --->   "%store_ln21619 = store i20 %add_ln21619_1, i20 %indvar_flatten146" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:21619->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25327]   --->   Operation 102 'store' 'store_ln21619' <Predicate = (!icmp_ln21619)> <Delay = 0.38>
+ST_2 : Operation 103 [1/1] (0.38ns)   --->   "%store_ln21619 = store i11 %select_ln21619_1, i11 %i21" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:21619->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25327]   --->   Operation 103 'store' 'store_ln21619' <Predicate = (!icmp_ln21619)> <Delay = 0.38>
+ST_2 : Operation 104 [1/1] (0.38ns)   --->   "%store_ln21620 = store i10 %add_ln21620, i10 %j19" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:21620->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25327]   --->   Operation 104 'store' 'store_ln21620' <Predicate = (!icmp_ln21619)> <Delay = 0.38>
 
 State 3 <SV = 2> <Delay = 2.66>
-ST_3 : Operation 105 [1/2] (2.66ns)   --->   "%v11893 = load i19 %buffer_K_addr" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:21756->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25458]   --->   Operation 105 'load' 'v11893' <Predicate = true> <Delay = 2.66> <CoreInst = "RAM_2P_URAM">   --->   Core 95 'RAM_2P_URAM' <Latency = 1> <II = 1> <Delay = 2.66> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 524288> <RAM>
+ST_3 : Operation 105 [1/2] (2.66ns)   --->   "%v11893 = load i19 %buffer_Q_addr" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:21622->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25327]   --->   Operation 105 'load' 'v11893' <Predicate = true> <Delay = 2.66> <CoreInst = "RAM_2P_URAM">   --->   Core 95 'RAM_2P_URAM' <Latency = 1> <II = 1> <Delay = 2.66> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 524288> <RAM>
 
 State 4 <SV = 3> <Delay = 7.08>
-ST_4 : Operation 106 [1/1] (6.41ns)   --->   "%x_assign = fpext i32 %v11893" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:21756->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25458]   --->   Operation 106 'fpext' 'x_assign' <Predicate = true> <Delay = 6.41> <CoreInst = "Float2Double">   --->   Core 64 'Float2Double' <Latency = 0> <II = 1> <Delay = 6.41> <FuncUnit> <Opcode : 'fpext'> <InPorts = 1> <OutPorts = 1>
-ST_4 : Operation 107 [19/19] (0.66ns)   --->   "%tmp = call i64 @pow_generic<double>, i64 %x_assign, i6 %pow_reduce_anonymous_namespace_log_inverse_lut_table_pow_0_5_64_array, i109 %pow_reduce_anonymous_namespace_log0_lut_table_array, i105 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_4_4_16_array, i102 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_7_6_64_array, i97 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_12_6_64_array, i92 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_17_6_64_array, i87 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_22_6_64_array, i82 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_27_6_64_array, i77 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_32_6_64_array, i58 %pow_reduce_anonymous_namespace_table_exp_Z1_ap_ufixed_array, i26 %pow_reduce_anonymous_namespace_table_f_Z3_ap_ufixed_array, i42 %pow_reduce_anonymous_namespace_table_f_Z2_ap_ufixed_array" [/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/src/c/powdouble.cpp:7->/tools/Xilinx/Vitis_HLS/2023.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/cmath:418->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:21757->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25458]   --->   Operation 107 'call' 'tmp' <Predicate = (!icmp_ln21753)> <Delay = 0.66> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_4 : Operation 106 [1/1] (6.41ns)   --->   "%x_assign = fpext i32 %v11893" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:21622->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25327]   --->   Operation 106 'fpext' 'x_assign' <Predicate = true> <Delay = 6.41> <CoreInst = "Float2Double">   --->   Core 64 'Float2Double' <Latency = 0> <II = 1> <Delay = 6.41> <FuncUnit> <Opcode : 'fpext'> <InPorts = 1> <OutPorts = 1>
+ST_4 : Operation 107 [19/19] (0.66ns)   --->   "%tmp = call i64 @pow_generic<double>, i64 %x_assign, i6 %pow_reduce_anonymous_namespace_log_inverse_lut_table_pow_0_5_64_array, i109 %pow_reduce_anonymous_namespace_log0_lut_table_array, i105 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_4_4_16_array, i102 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_7_6_64_array, i97 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_12_6_64_array, i92 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_17_6_64_array, i87 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_22_6_64_array, i82 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_27_6_64_array, i77 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_32_6_64_array, i58 %pow_reduce_anonymous_namespace_table_exp_Z1_ap_ufixed_array, i26 %pow_reduce_anonymous_namespace_table_f_Z3_ap_ufixed_array, i42 %pow_reduce_anonymous_namespace_table_f_Z2_ap_ufixed_array" [/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/src/c/powdouble.cpp:7->/tools/Xilinx/Vitis_HLS/2023.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/cmath:418->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:21623->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25327]   --->   Operation 107 'call' 'tmp' <Predicate = (!icmp_ln21619)> <Delay = 0.66> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
 State 5 <SV = 4> <Delay = 7.26>
-ST_5 : Operation 108 [18/19] (7.26ns)   --->   "%tmp = call i64 @pow_generic<double>, i64 %x_assign, i6 %pow_reduce_anonymous_namespace_log_inverse_lut_table_pow_0_5_64_array, i109 %pow_reduce_anonymous_namespace_log0_lut_table_array, i105 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_4_4_16_array, i102 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_7_6_64_array, i97 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_12_6_64_array, i92 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_17_6_64_array, i87 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_22_6_64_array, i82 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_27_6_64_array, i77 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_32_6_64_array, i58 %pow_reduce_anonymous_namespace_table_exp_Z1_ap_ufixed_array, i26 %pow_reduce_anonymous_namespace_table_f_Z3_ap_ufixed_array, i42 %pow_reduce_anonymous_namespace_table_f_Z2_ap_ufixed_array" [/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/src/c/powdouble.cpp:7->/tools/Xilinx/Vitis_HLS/2023.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/cmath:418->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:21757->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25458]   --->   Operation 108 'call' 'tmp' <Predicate = (!icmp_ln21753)> <Delay = 7.26> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_5 : Operation 108 [18/19] (7.26ns)   --->   "%tmp = call i64 @pow_generic<double>, i64 %x_assign, i6 %pow_reduce_anonymous_namespace_log_inverse_lut_table_pow_0_5_64_array, i109 %pow_reduce_anonymous_namespace_log0_lut_table_array, i105 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_4_4_16_array, i102 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_7_6_64_array, i97 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_12_6_64_array, i92 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_17_6_64_array, i87 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_22_6_64_array, i82 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_27_6_64_array, i77 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_32_6_64_array, i58 %pow_reduce_anonymous_namespace_table_exp_Z1_ap_ufixed_array, i26 %pow_reduce_anonymous_namespace_table_f_Z3_ap_ufixed_array, i42 %pow_reduce_anonymous_namespace_table_f_Z2_ap_ufixed_array" [/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/src/c/powdouble.cpp:7->/tools/Xilinx/Vitis_HLS/2023.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/cmath:418->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:21623->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25327]   --->   Operation 108 'call' 'tmp' <Predicate = (!icmp_ln21619)> <Delay = 7.26> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
 State 6 <SV = 5> <Delay = 7.26>
-ST_6 : Operation 109 [17/19] (7.26ns)   --->   "%tmp = call i64 @pow_generic<double>, i64 %x_assign, i6 %pow_reduce_anonymous_namespace_log_inverse_lut_table_pow_0_5_64_array, i109 %pow_reduce_anonymous_namespace_log0_lut_table_array, i105 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_4_4_16_array, i102 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_7_6_64_array, i97 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_12_6_64_array, i92 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_17_6_64_array, i87 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_22_6_64_array, i82 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_27_6_64_array, i77 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_32_6_64_array, i58 %pow_reduce_anonymous_namespace_table_exp_Z1_ap_ufixed_array, i26 %pow_reduce_anonymous_namespace_table_f_Z3_ap_ufixed_array, i42 %pow_reduce_anonymous_namespace_table_f_Z2_ap_ufixed_array" [/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/src/c/powdouble.cpp:7->/tools/Xilinx/Vitis_HLS/2023.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/cmath:418->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:21757->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25458]   --->   Operation 109 'call' 'tmp' <Predicate = (!icmp_ln21753)> <Delay = 7.26> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_6 : Operation 109 [17/19] (7.26ns)   --->   "%tmp = call i64 @pow_generic<double>, i64 %x_assign, i6 %pow_reduce_anonymous_namespace_log_inverse_lut_table_pow_0_5_64_array, i109 %pow_reduce_anonymous_namespace_log0_lut_table_array, i105 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_4_4_16_array, i102 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_7_6_64_array, i97 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_12_6_64_array, i92 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_17_6_64_array, i87 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_22_6_64_array, i82 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_27_6_64_array, i77 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_32_6_64_array, i58 %pow_reduce_anonymous_namespace_table_exp_Z1_ap_ufixed_array, i26 %pow_reduce_anonymous_namespace_table_f_Z3_ap_ufixed_array, i42 %pow_reduce_anonymous_namespace_table_f_Z2_ap_ufixed_array" [/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/src/c/powdouble.cpp:7->/tools/Xilinx/Vitis_HLS/2023.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/cmath:418->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:21623->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25327]   --->   Operation 109 'call' 'tmp' <Predicate = (!icmp_ln21619)> <Delay = 7.26> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
 State 7 <SV = 6> <Delay = 7.26>
-ST_7 : Operation 110 [16/19] (7.26ns)   --->   "%tmp = call i64 @pow_generic<double>, i64 %x_assign, i6 %pow_reduce_anonymous_namespace_log_inverse_lut_table_pow_0_5_64_array, i109 %pow_reduce_anonymous_namespace_log0_lut_table_array, i105 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_4_4_16_array, i102 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_7_6_64_array, i97 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_12_6_64_array, i92 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_17_6_64_array, i87 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_22_6_64_array, i82 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_27_6_64_array, i77 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_32_6_64_array, i58 %pow_reduce_anonymous_namespace_table_exp_Z1_ap_ufixed_array, i26 %pow_reduce_anonymous_namespace_table_f_Z3_ap_ufixed_array, i42 %pow_reduce_anonymous_namespace_table_f_Z2_ap_ufixed_array" [/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/src/c/powdouble.cpp:7->/tools/Xilinx/Vitis_HLS/2023.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/cmath:418->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:21757->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25458]   --->   Operation 110 'call' 'tmp' <Predicate = (!icmp_ln21753)> <Delay = 7.26> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_7 : Operation 110 [16/19] (7.26ns)   --->   "%tmp = call i64 @pow_generic<double>, i64 %x_assign, i6 %pow_reduce_anonymous_namespace_log_inverse_lut_table_pow_0_5_64_array, i109 %pow_reduce_anonymous_namespace_log0_lut_table_array, i105 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_4_4_16_array, i102 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_7_6_64_array, i97 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_12_6_64_array, i92 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_17_6_64_array, i87 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_22_6_64_array, i82 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_27_6_64_array, i77 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_32_6_64_array, i58 %pow_reduce_anonymous_namespace_table_exp_Z1_ap_ufixed_array, i26 %pow_reduce_anonymous_namespace_table_f_Z3_ap_ufixed_array, i42 %pow_reduce_anonymous_namespace_table_f_Z2_ap_ufixed_array" [/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/src/c/powdouble.cpp:7->/tools/Xilinx/Vitis_HLS/2023.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/cmath:418->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:21623->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25327]   --->   Operation 110 'call' 'tmp' <Predicate = (!icmp_ln21619)> <Delay = 7.26> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
 State 8 <SV = 7> <Delay = 7.26>
-ST_8 : Operation 111 [15/19] (7.26ns)   --->   "%tmp = call i64 @pow_generic<double>, i64 %x_assign, i6 %pow_reduce_anonymous_namespace_log_inverse_lut_table_pow_0_5_64_array, i109 %pow_reduce_anonymous_namespace_log0_lut_table_array, i105 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_4_4_16_array, i102 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_7_6_64_array, i97 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_12_6_64_array, i92 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_17_6_64_array, i87 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_22_6_64_array, i82 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_27_6_64_array, i77 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_32_6_64_array, i58 %pow_reduce_anonymous_namespace_table_exp_Z1_ap_ufixed_array, i26 %pow_reduce_anonymous_namespace_table_f_Z3_ap_ufixed_array, i42 %pow_reduce_anonymous_namespace_table_f_Z2_ap_ufixed_array" [/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/src/c/powdouble.cpp:7->/tools/Xilinx/Vitis_HLS/2023.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/cmath:418->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:21757->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25458]   --->   Operation 111 'call' 'tmp' <Predicate = (!icmp_ln21753)> <Delay = 7.26> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_8 : Operation 111 [15/19] (7.26ns)   --->   "%tmp = call i64 @pow_generic<double>, i64 %x_assign, i6 %pow_reduce_anonymous_namespace_log_inverse_lut_table_pow_0_5_64_array, i109 %pow_reduce_anonymous_namespace_log0_lut_table_array, i105 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_4_4_16_array, i102 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_7_6_64_array, i97 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_12_6_64_array, i92 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_17_6_64_array, i87 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_22_6_64_array, i82 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_27_6_64_array, i77 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_32_6_64_array, i58 %pow_reduce_anonymous_namespace_table_exp_Z1_ap_ufixed_array, i26 %pow_reduce_anonymous_namespace_table_f_Z3_ap_ufixed_array, i42 %pow_reduce_anonymous_namespace_table_f_Z2_ap_ufixed_array" [/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/src/c/powdouble.cpp:7->/tools/Xilinx/Vitis_HLS/2023.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/cmath:418->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:21623->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25327]   --->   Operation 111 'call' 'tmp' <Predicate = (!icmp_ln21619)> <Delay = 7.26> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
 State 9 <SV = 8> <Delay = 7.26>
-ST_9 : Operation 112 [14/19] (7.26ns)   --->   "%tmp = call i64 @pow_generic<double>, i64 %x_assign, i6 %pow_reduce_anonymous_namespace_log_inverse_lut_table_pow_0_5_64_array, i109 %pow_reduce_anonymous_namespace_log0_lut_table_array, i105 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_4_4_16_array, i102 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_7_6_64_array, i97 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_12_6_64_array, i92 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_17_6_64_array, i87 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_22_6_64_array, i82 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_27_6_64_array, i77 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_32_6_64_array, i58 %pow_reduce_anonymous_namespace_table_exp_Z1_ap_ufixed_array, i26 %pow_reduce_anonymous_namespace_table_f_Z3_ap_ufixed_array, i42 %pow_reduce_anonymous_namespace_table_f_Z2_ap_ufixed_array" [/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/src/c/powdouble.cpp:7->/tools/Xilinx/Vitis_HLS/2023.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/cmath:418->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:21757->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25458]   --->   Operation 112 'call' 'tmp' <Predicate = (!icmp_ln21753)> <Delay = 7.26> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_9 : Operation 112 [14/19] (7.26ns)   --->   "%tmp = call i64 @pow_generic<double>, i64 %x_assign, i6 %pow_reduce_anonymous_namespace_log_inverse_lut_table_pow_0_5_64_array, i109 %pow_reduce_anonymous_namespace_log0_lut_table_array, i105 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_4_4_16_array, i102 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_7_6_64_array, i97 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_12_6_64_array, i92 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_17_6_64_array, i87 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_22_6_64_array, i82 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_27_6_64_array, i77 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_32_6_64_array, i58 %pow_reduce_anonymous_namespace_table_exp_Z1_ap_ufixed_array, i26 %pow_reduce_anonymous_namespace_table_f_Z3_ap_ufixed_array, i42 %pow_reduce_anonymous_namespace_table_f_Z2_ap_ufixed_array" [/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/src/c/powdouble.cpp:7->/tools/Xilinx/Vitis_HLS/2023.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/cmath:418->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:21623->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25327]   --->   Operation 112 'call' 'tmp' <Predicate = (!icmp_ln21619)> <Delay = 7.26> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
 State 10 <SV = 9> <Delay = 7.26>
-ST_10 : Operation 113 [13/19] (7.26ns)   --->   "%tmp = call i64 @pow_generic<double>, i64 %x_assign, i6 %pow_reduce_anonymous_namespace_log_inverse_lut_table_pow_0_5_64_array, i109 %pow_reduce_anonymous_namespace_log0_lut_table_array, i105 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_4_4_16_array, i102 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_7_6_64_array, i97 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_12_6_64_array, i92 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_17_6_64_array, i87 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_22_6_64_array, i82 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_27_6_64_array, i77 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_32_6_64_array, i58 %pow_reduce_anonymous_namespace_table_exp_Z1_ap_ufixed_array, i26 %pow_reduce_anonymous_namespace_table_f_Z3_ap_ufixed_array, i42 %pow_reduce_anonymous_namespace_table_f_Z2_ap_ufixed_array" [/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/src/c/powdouble.cpp:7->/tools/Xilinx/Vitis_HLS/2023.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/cmath:418->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:21757->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25458]   --->   Operation 113 'call' 'tmp' <Predicate = (!icmp_ln21753)> <Delay = 7.26> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_10 : Operation 113 [13/19] (7.26ns)   --->   "%tmp = call i64 @pow_generic<double>, i64 %x_assign, i6 %pow_reduce_anonymous_namespace_log_inverse_lut_table_pow_0_5_64_array, i109 %pow_reduce_anonymous_namespace_log0_lut_table_array, i105 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_4_4_16_array, i102 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_7_6_64_array, i97 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_12_6_64_array, i92 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_17_6_64_array, i87 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_22_6_64_array, i82 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_27_6_64_array, i77 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_32_6_64_array, i58 %pow_reduce_anonymous_namespace_table_exp_Z1_ap_ufixed_array, i26 %pow_reduce_anonymous_namespace_table_f_Z3_ap_ufixed_array, i42 %pow_reduce_anonymous_namespace_table_f_Z2_ap_ufixed_array" [/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/src/c/powdouble.cpp:7->/tools/Xilinx/Vitis_HLS/2023.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/cmath:418->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:21623->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25327]   --->   Operation 113 'call' 'tmp' <Predicate = (!icmp_ln21619)> <Delay = 7.26> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
 State 11 <SV = 10> <Delay = 7.26>
-ST_11 : Operation 114 [12/19] (7.26ns)   --->   "%tmp = call i64 @pow_generic<double>, i64 %x_assign, i6 %pow_reduce_anonymous_namespace_log_inverse_lut_table_pow_0_5_64_array, i109 %pow_reduce_anonymous_namespace_log0_lut_table_array, i105 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_4_4_16_array, i102 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_7_6_64_array, i97 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_12_6_64_array, i92 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_17_6_64_array, i87 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_22_6_64_array, i82 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_27_6_64_array, i77 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_32_6_64_array, i58 %pow_reduce_anonymous_namespace_table_exp_Z1_ap_ufixed_array, i26 %pow_reduce_anonymous_namespace_table_f_Z3_ap_ufixed_array, i42 %pow_reduce_anonymous_namespace_table_f_Z2_ap_ufixed_array" [/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/src/c/powdouble.cpp:7->/tools/Xilinx/Vitis_HLS/2023.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/cmath:418->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:21757->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25458]   --->   Operation 114 'call' 'tmp' <Predicate = (!icmp_ln21753)> <Delay = 7.26> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_11 : Operation 114 [12/19] (7.26ns)   --->   "%tmp = call i64 @pow_generic<double>, i64 %x_assign, i6 %pow_reduce_anonymous_namespace_log_inverse_lut_table_pow_0_5_64_array, i109 %pow_reduce_anonymous_namespace_log0_lut_table_array, i105 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_4_4_16_array, i102 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_7_6_64_array, i97 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_12_6_64_array, i92 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_17_6_64_array, i87 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_22_6_64_array, i82 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_27_6_64_array, i77 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_32_6_64_array, i58 %pow_reduce_anonymous_namespace_table_exp_Z1_ap_ufixed_array, i26 %pow_reduce_anonymous_namespace_table_f_Z3_ap_ufixed_array, i42 %pow_reduce_anonymous_namespace_table_f_Z2_ap_ufixed_array" [/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/src/c/powdouble.cpp:7->/tools/Xilinx/Vitis_HLS/2023.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/cmath:418->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:21623->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25327]   --->   Operation 114 'call' 'tmp' <Predicate = (!icmp_ln21619)> <Delay = 7.26> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
 State 12 <SV = 11> <Delay = 7.26>
-ST_12 : Operation 115 [11/19] (7.26ns)   --->   "%tmp = call i64 @pow_generic<double>, i64 %x_assign, i6 %pow_reduce_anonymous_namespace_log_inverse_lut_table_pow_0_5_64_array, i109 %pow_reduce_anonymous_namespace_log0_lut_table_array, i105 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_4_4_16_array, i102 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_7_6_64_array, i97 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_12_6_64_array, i92 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_17_6_64_array, i87 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_22_6_64_array, i82 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_27_6_64_array, i77 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_32_6_64_array, i58 %pow_reduce_anonymous_namespace_table_exp_Z1_ap_ufixed_array, i26 %pow_reduce_anonymous_namespace_table_f_Z3_ap_ufixed_array, i42 %pow_reduce_anonymous_namespace_table_f_Z2_ap_ufixed_array" [/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/src/c/powdouble.cpp:7->/tools/Xilinx/Vitis_HLS/2023.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/cmath:418->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:21757->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25458]   --->   Operation 115 'call' 'tmp' <Predicate = (!icmp_ln21753)> <Delay = 7.26> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_12 : Operation 115 [11/19] (7.26ns)   --->   "%tmp = call i64 @pow_generic<double>, i64 %x_assign, i6 %pow_reduce_anonymous_namespace_log_inverse_lut_table_pow_0_5_64_array, i109 %pow_reduce_anonymous_namespace_log0_lut_table_array, i105 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_4_4_16_array, i102 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_7_6_64_array, i97 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_12_6_64_array, i92 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_17_6_64_array, i87 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_22_6_64_array, i82 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_27_6_64_array, i77 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_32_6_64_array, i58 %pow_reduce_anonymous_namespace_table_exp_Z1_ap_ufixed_array, i26 %pow_reduce_anonymous_namespace_table_f_Z3_ap_ufixed_array, i42 %pow_reduce_anonymous_namespace_table_f_Z2_ap_ufixed_array" [/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/src/c/powdouble.cpp:7->/tools/Xilinx/Vitis_HLS/2023.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/cmath:418->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:21623->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25327]   --->   Operation 115 'call' 'tmp' <Predicate = (!icmp_ln21619)> <Delay = 7.26> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
 State 13 <SV = 12> <Delay = 7.26>
-ST_13 : Operation 116 [10/19] (7.26ns)   --->   "%tmp = call i64 @pow_generic<double>, i64 %x_assign, i6 %pow_reduce_anonymous_namespace_log_inverse_lut_table_pow_0_5_64_array, i109 %pow_reduce_anonymous_namespace_log0_lut_table_array, i105 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_4_4_16_array, i102 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_7_6_64_array, i97 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_12_6_64_array, i92 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_17_6_64_array, i87 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_22_6_64_array, i82 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_27_6_64_array, i77 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_32_6_64_array, i58 %pow_reduce_anonymous_namespace_table_exp_Z1_ap_ufixed_array, i26 %pow_reduce_anonymous_namespace_table_f_Z3_ap_ufixed_array, i42 %pow_reduce_anonymous_namespace_table_f_Z2_ap_ufixed_array" [/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/src/c/powdouble.cpp:7->/tools/Xilinx/Vitis_HLS/2023.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/cmath:418->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:21757->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25458]   --->   Operation 116 'call' 'tmp' <Predicate = (!icmp_ln21753)> <Delay = 7.26> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_13 : Operation 116 [10/19] (7.26ns)   --->   "%tmp = call i64 @pow_generic<double>, i64 %x_assign, i6 %pow_reduce_anonymous_namespace_log_inverse_lut_table_pow_0_5_64_array, i109 %pow_reduce_anonymous_namespace_log0_lut_table_array, i105 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_4_4_16_array, i102 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_7_6_64_array, i97 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_12_6_64_array, i92 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_17_6_64_array, i87 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_22_6_64_array, i82 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_27_6_64_array, i77 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_32_6_64_array, i58 %pow_reduce_anonymous_namespace_table_exp_Z1_ap_ufixed_array, i26 %pow_reduce_anonymous_namespace_table_f_Z3_ap_ufixed_array, i42 %pow_reduce_anonymous_namespace_table_f_Z2_ap_ufixed_array" [/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/src/c/powdouble.cpp:7->/tools/Xilinx/Vitis_HLS/2023.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/cmath:418->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:21623->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25327]   --->   Operation 116 'call' 'tmp' <Predicate = (!icmp_ln21619)> <Delay = 7.26> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
 State 14 <SV = 13> <Delay = 7.26>
-ST_14 : Operation 117 [9/19] (7.26ns)   --->   "%tmp = call i64 @pow_generic<double>, i64 %x_assign, i6 %pow_reduce_anonymous_namespace_log_inverse_lut_table_pow_0_5_64_array, i109 %pow_reduce_anonymous_namespace_log0_lut_table_array, i105 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_4_4_16_array, i102 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_7_6_64_array, i97 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_12_6_64_array, i92 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_17_6_64_array, i87 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_22_6_64_array, i82 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_27_6_64_array, i77 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_32_6_64_array, i58 %pow_reduce_anonymous_namespace_table_exp_Z1_ap_ufixed_array, i26 %pow_reduce_anonymous_namespace_table_f_Z3_ap_ufixed_array, i42 %pow_reduce_anonymous_namespace_table_f_Z2_ap_ufixed_array" [/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/src/c/powdouble.cpp:7->/tools/Xilinx/Vitis_HLS/2023.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/cmath:418->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:21757->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25458]   --->   Operation 117 'call' 'tmp' <Predicate = (!icmp_ln21753)> <Delay = 7.26> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_14 : Operation 117 [9/19] (7.26ns)   --->   "%tmp = call i64 @pow_generic<double>, i64 %x_assign, i6 %pow_reduce_anonymous_namespace_log_inverse_lut_table_pow_0_5_64_array, i109 %pow_reduce_anonymous_namespace_log0_lut_table_array, i105 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_4_4_16_array, i102 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_7_6_64_array, i97 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_12_6_64_array, i92 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_17_6_64_array, i87 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_22_6_64_array, i82 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_27_6_64_array, i77 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_32_6_64_array, i58 %pow_reduce_anonymous_namespace_table_exp_Z1_ap_ufixed_array, i26 %pow_reduce_anonymous_namespace_table_f_Z3_ap_ufixed_array, i42 %pow_reduce_anonymous_namespace_table_f_Z2_ap_ufixed_array" [/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/src/c/powdouble.cpp:7->/tools/Xilinx/Vitis_HLS/2023.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/cmath:418->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:21623->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25327]   --->   Operation 117 'call' 'tmp' <Predicate = (!icmp_ln21619)> <Delay = 7.26> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
 State 15 <SV = 14> <Delay = 7.26>
-ST_15 : Operation 118 [8/19] (7.26ns)   --->   "%tmp = call i64 @pow_generic<double>, i64 %x_assign, i6 %pow_reduce_anonymous_namespace_log_inverse_lut_table_pow_0_5_64_array, i109 %pow_reduce_anonymous_namespace_log0_lut_table_array, i105 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_4_4_16_array, i102 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_7_6_64_array, i97 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_12_6_64_array, i92 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_17_6_64_array, i87 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_22_6_64_array, i82 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_27_6_64_array, i77 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_32_6_64_array, i58 %pow_reduce_anonymous_namespace_table_exp_Z1_ap_ufixed_array, i26 %pow_reduce_anonymous_namespace_table_f_Z3_ap_ufixed_array, i42 %pow_reduce_anonymous_namespace_table_f_Z2_ap_ufixed_array" [/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/src/c/powdouble.cpp:7->/tools/Xilinx/Vitis_HLS/2023.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/cmath:418->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:21757->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25458]   --->   Operation 118 'call' 'tmp' <Predicate = (!icmp_ln21753)> <Delay = 7.26> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_15 : Operation 118 [8/19] (7.26ns)   --->   "%tmp = call i64 @pow_generic<double>, i64 %x_assign, i6 %pow_reduce_anonymous_namespace_log_inverse_lut_table_pow_0_5_64_array, i109 %pow_reduce_anonymous_namespace_log0_lut_table_array, i105 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_4_4_16_array, i102 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_7_6_64_array, i97 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_12_6_64_array, i92 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_17_6_64_array, i87 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_22_6_64_array, i82 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_27_6_64_array, i77 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_32_6_64_array, i58 %pow_reduce_anonymous_namespace_table_exp_Z1_ap_ufixed_array, i26 %pow_reduce_anonymous_namespace_table_f_Z3_ap_ufixed_array, i42 %pow_reduce_anonymous_namespace_table_f_Z2_ap_ufixed_array" [/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/src/c/powdouble.cpp:7->/tools/Xilinx/Vitis_HLS/2023.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/cmath:418->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:21623->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25327]   --->   Operation 118 'call' 'tmp' <Predicate = (!icmp_ln21619)> <Delay = 7.26> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
 State 16 <SV = 15> <Delay = 7.26>
-ST_16 : Operation 119 [7/19] (7.26ns)   --->   "%tmp = call i64 @pow_generic<double>, i64 %x_assign, i6 %pow_reduce_anonymous_namespace_log_inverse_lut_table_pow_0_5_64_array, i109 %pow_reduce_anonymous_namespace_log0_lut_table_array, i105 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_4_4_16_array, i102 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_7_6_64_array, i97 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_12_6_64_array, i92 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_17_6_64_array, i87 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_22_6_64_array, i82 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_27_6_64_array, i77 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_32_6_64_array, i58 %pow_reduce_anonymous_namespace_table_exp_Z1_ap_ufixed_array, i26 %pow_reduce_anonymous_namespace_table_f_Z3_ap_ufixed_array, i42 %pow_reduce_anonymous_namespace_table_f_Z2_ap_ufixed_array" [/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/src/c/powdouble.cpp:7->/tools/Xilinx/Vitis_HLS/2023.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/cmath:418->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:21757->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25458]   --->   Operation 119 'call' 'tmp' <Predicate = (!icmp_ln21753)> <Delay = 7.26> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_16 : Operation 119 [7/19] (7.26ns)   --->   "%tmp = call i64 @pow_generic<double>, i64 %x_assign, i6 %pow_reduce_anonymous_namespace_log_inverse_lut_table_pow_0_5_64_array, i109 %pow_reduce_anonymous_namespace_log0_lut_table_array, i105 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_4_4_16_array, i102 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_7_6_64_array, i97 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_12_6_64_array, i92 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_17_6_64_array, i87 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_22_6_64_array, i82 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_27_6_64_array, i77 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_32_6_64_array, i58 %pow_reduce_anonymous_namespace_table_exp_Z1_ap_ufixed_array, i26 %pow_reduce_anonymous_namespace_table_f_Z3_ap_ufixed_array, i42 %pow_reduce_anonymous_namespace_table_f_Z2_ap_ufixed_array" [/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/src/c/powdouble.cpp:7->/tools/Xilinx/Vitis_HLS/2023.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/cmath:418->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:21623->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25327]   --->   Operation 119 'call' 'tmp' <Predicate = (!icmp_ln21619)> <Delay = 7.26> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
 State 17 <SV = 16> <Delay = 7.26>
-ST_17 : Operation 120 [6/19] (7.26ns)   --->   "%tmp = call i64 @pow_generic<double>, i64 %x_assign, i6 %pow_reduce_anonymous_namespace_log_inverse_lut_table_pow_0_5_64_array, i109 %pow_reduce_anonymous_namespace_log0_lut_table_array, i105 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_4_4_16_array, i102 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_7_6_64_array, i97 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_12_6_64_array, i92 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_17_6_64_array, i87 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_22_6_64_array, i82 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_27_6_64_array, i77 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_32_6_64_array, i58 %pow_reduce_anonymous_namespace_table_exp_Z1_ap_ufixed_array, i26 %pow_reduce_anonymous_namespace_table_f_Z3_ap_ufixed_array, i42 %pow_reduce_anonymous_namespace_table_f_Z2_ap_ufixed_array" [/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/src/c/powdouble.cpp:7->/tools/Xilinx/Vitis_HLS/2023.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/cmath:418->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:21757->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25458]   --->   Operation 120 'call' 'tmp' <Predicate = (!icmp_ln21753)> <Delay = 7.26> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_17 : Operation 120 [6/19] (7.26ns)   --->   "%tmp = call i64 @pow_generic<double>, i64 %x_assign, i6 %pow_reduce_anonymous_namespace_log_inverse_lut_table_pow_0_5_64_array, i109 %pow_reduce_anonymous_namespace_log0_lut_table_array, i105 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_4_4_16_array, i102 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_7_6_64_array, i97 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_12_6_64_array, i92 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_17_6_64_array, i87 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_22_6_64_array, i82 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_27_6_64_array, i77 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_32_6_64_array, i58 %pow_reduce_anonymous_namespace_table_exp_Z1_ap_ufixed_array, i26 %pow_reduce_anonymous_namespace_table_f_Z3_ap_ufixed_array, i42 %pow_reduce_anonymous_namespace_table_f_Z2_ap_ufixed_array" [/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/src/c/powdouble.cpp:7->/tools/Xilinx/Vitis_HLS/2023.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/cmath:418->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:21623->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25327]   --->   Operation 120 'call' 'tmp' <Predicate = (!icmp_ln21619)> <Delay = 7.26> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
 State 18 <SV = 17> <Delay = 7.26>
-ST_18 : Operation 121 [5/19] (7.26ns)   --->   "%tmp = call i64 @pow_generic<double>, i64 %x_assign, i6 %pow_reduce_anonymous_namespace_log_inverse_lut_table_pow_0_5_64_array, i109 %pow_reduce_anonymous_namespace_log0_lut_table_array, i105 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_4_4_16_array, i102 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_7_6_64_array, i97 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_12_6_64_array, i92 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_17_6_64_array, i87 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_22_6_64_array, i82 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_27_6_64_array, i77 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_32_6_64_array, i58 %pow_reduce_anonymous_namespace_table_exp_Z1_ap_ufixed_array, i26 %pow_reduce_anonymous_namespace_table_f_Z3_ap_ufixed_array, i42 %pow_reduce_anonymous_namespace_table_f_Z2_ap_ufixed_array" [/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/src/c/powdouble.cpp:7->/tools/Xilinx/Vitis_HLS/2023.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/cmath:418->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:21757->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25458]   --->   Operation 121 'call' 'tmp' <Predicate = (!icmp_ln21753)> <Delay = 7.26> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_18 : Operation 121 [5/19] (7.26ns)   --->   "%tmp = call i64 @pow_generic<double>, i64 %x_assign, i6 %pow_reduce_anonymous_namespace_log_inverse_lut_table_pow_0_5_64_array, i109 %pow_reduce_anonymous_namespace_log0_lut_table_array, i105 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_4_4_16_array, i102 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_7_6_64_array, i97 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_12_6_64_array, i92 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_17_6_64_array, i87 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_22_6_64_array, i82 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_27_6_64_array, i77 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_32_6_64_array, i58 %pow_reduce_anonymous_namespace_table_exp_Z1_ap_ufixed_array, i26 %pow_reduce_anonymous_namespace_table_f_Z3_ap_ufixed_array, i42 %pow_reduce_anonymous_namespace_table_f_Z2_ap_ufixed_array" [/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/src/c/powdouble.cpp:7->/tools/Xilinx/Vitis_HLS/2023.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/cmath:418->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:21623->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25327]   --->   Operation 121 'call' 'tmp' <Predicate = (!icmp_ln21619)> <Delay = 7.26> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
 State 19 <SV = 18> <Delay = 7.26>
-ST_19 : Operation 122 [4/19] (7.26ns)   --->   "%tmp = call i64 @pow_generic<double>, i64 %x_assign, i6 %pow_reduce_anonymous_namespace_log_inverse_lut_table_pow_0_5_64_array, i109 %pow_reduce_anonymous_namespace_log0_lut_table_array, i105 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_4_4_16_array, i102 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_7_6_64_array, i97 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_12_6_64_array, i92 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_17_6_64_array, i87 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_22_6_64_array, i82 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_27_6_64_array, i77 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_32_6_64_array, i58 %pow_reduce_anonymous_namespace_table_exp_Z1_ap_ufixed_array, i26 %pow_reduce_anonymous_namespace_table_f_Z3_ap_ufixed_array, i42 %pow_reduce_anonymous_namespace_table_f_Z2_ap_ufixed_array" [/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/src/c/powdouble.cpp:7->/tools/Xilinx/Vitis_HLS/2023.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/cmath:418->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:21757->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25458]   --->   Operation 122 'call' 'tmp' <Predicate = (!icmp_ln21753)> <Delay = 7.26> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_19 : Operation 122 [4/19] (7.26ns)   --->   "%tmp = call i64 @pow_generic<double>, i64 %x_assign, i6 %pow_reduce_anonymous_namespace_log_inverse_lut_table_pow_0_5_64_array, i109 %pow_reduce_anonymous_namespace_log0_lut_table_array, i105 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_4_4_16_array, i102 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_7_6_64_array, i97 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_12_6_64_array, i92 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_17_6_64_array, i87 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_22_6_64_array, i82 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_27_6_64_array, i77 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_32_6_64_array, i58 %pow_reduce_anonymous_namespace_table_exp_Z1_ap_ufixed_array, i26 %pow_reduce_anonymous_namespace_table_f_Z3_ap_ufixed_array, i42 %pow_reduce_anonymous_namespace_table_f_Z2_ap_ufixed_array" [/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/src/c/powdouble.cpp:7->/tools/Xilinx/Vitis_HLS/2023.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/cmath:418->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:21623->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25327]   --->   Operation 122 'call' 'tmp' <Predicate = (!icmp_ln21619)> <Delay = 7.26> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
 State 20 <SV = 19> <Delay = 7.26>
-ST_20 : Operation 123 [3/19] (7.26ns)   --->   "%tmp = call i64 @pow_generic<double>, i64 %x_assign, i6 %pow_reduce_anonymous_namespace_log_inverse_lut_table_pow_0_5_64_array, i109 %pow_reduce_anonymous_namespace_log0_lut_table_array, i105 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_4_4_16_array, i102 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_7_6_64_array, i97 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_12_6_64_array, i92 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_17_6_64_array, i87 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_22_6_64_array, i82 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_27_6_64_array, i77 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_32_6_64_array, i58 %pow_reduce_anonymous_namespace_table_exp_Z1_ap_ufixed_array, i26 %pow_reduce_anonymous_namespace_table_f_Z3_ap_ufixed_array, i42 %pow_reduce_anonymous_namespace_table_f_Z2_ap_ufixed_array" [/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/src/c/powdouble.cpp:7->/tools/Xilinx/Vitis_HLS/2023.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/cmath:418->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:21757->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25458]   --->   Operation 123 'call' 'tmp' <Predicate = (!icmp_ln21753)> <Delay = 7.26> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_20 : Operation 123 [3/19] (7.26ns)   --->   "%tmp = call i64 @pow_generic<double>, i64 %x_assign, i6 %pow_reduce_anonymous_namespace_log_inverse_lut_table_pow_0_5_64_array, i109 %pow_reduce_anonymous_namespace_log0_lut_table_array, i105 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_4_4_16_array, i102 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_7_6_64_array, i97 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_12_6_64_array, i92 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_17_6_64_array, i87 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_22_6_64_array, i82 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_27_6_64_array, i77 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_32_6_64_array, i58 %pow_reduce_anonymous_namespace_table_exp_Z1_ap_ufixed_array, i26 %pow_reduce_anonymous_namespace_table_f_Z3_ap_ufixed_array, i42 %pow_reduce_anonymous_namespace_table_f_Z2_ap_ufixed_array" [/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/src/c/powdouble.cpp:7->/tools/Xilinx/Vitis_HLS/2023.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/cmath:418->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:21623->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25327]   --->   Operation 123 'call' 'tmp' <Predicate = (!icmp_ln21619)> <Delay = 7.26> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
 State 21 <SV = 20> <Delay = 7.26>
-ST_21 : Operation 124 [2/19] (7.26ns)   --->   "%tmp = call i64 @pow_generic<double>, i64 %x_assign, i6 %pow_reduce_anonymous_namespace_log_inverse_lut_table_pow_0_5_64_array, i109 %pow_reduce_anonymous_namespace_log0_lut_table_array, i105 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_4_4_16_array, i102 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_7_6_64_array, i97 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_12_6_64_array, i92 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_17_6_64_array, i87 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_22_6_64_array, i82 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_27_6_64_array, i77 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_32_6_64_array, i58 %pow_reduce_anonymous_namespace_table_exp_Z1_ap_ufixed_array, i26 %pow_reduce_anonymous_namespace_table_f_Z3_ap_ufixed_array, i42 %pow_reduce_anonymous_namespace_table_f_Z2_ap_ufixed_array" [/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/src/c/powdouble.cpp:7->/tools/Xilinx/Vitis_HLS/2023.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/cmath:418->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:21757->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25458]   --->   Operation 124 'call' 'tmp' <Predicate = (!icmp_ln21753)> <Delay = 7.26> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_21 : Operation 124 [2/19] (7.26ns)   --->   "%tmp = call i64 @pow_generic<double>, i64 %x_assign, i6 %pow_reduce_anonymous_namespace_log_inverse_lut_table_pow_0_5_64_array, i109 %pow_reduce_anonymous_namespace_log0_lut_table_array, i105 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_4_4_16_array, i102 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_7_6_64_array, i97 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_12_6_64_array, i92 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_17_6_64_array, i87 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_22_6_64_array, i82 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_27_6_64_array, i77 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_32_6_64_array, i58 %pow_reduce_anonymous_namespace_table_exp_Z1_ap_ufixed_array, i26 %pow_reduce_anonymous_namespace_table_f_Z3_ap_ufixed_array, i42 %pow_reduce_anonymous_namespace_table_f_Z2_ap_ufixed_array" [/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/src/c/powdouble.cpp:7->/tools/Xilinx/Vitis_HLS/2023.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/cmath:418->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:21623->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25327]   --->   Operation 124 'call' 'tmp' <Predicate = (!icmp_ln21619)> <Delay = 7.26> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
 State 22 <SV = 21> <Delay = 3.88>
-ST_22 : Operation 125 [1/19] (2.05ns)   --->   "%tmp = call i64 @pow_generic<double>, i64 %x_assign, i6 %pow_reduce_anonymous_namespace_log_inverse_lut_table_pow_0_5_64_array, i109 %pow_reduce_anonymous_namespace_log0_lut_table_array, i105 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_4_4_16_array, i102 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_7_6_64_array, i97 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_12_6_64_array, i92 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_17_6_64_array, i87 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_22_6_64_array, i82 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_27_6_64_array, i77 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_32_6_64_array, i58 %pow_reduce_anonymous_namespace_table_exp_Z1_ap_ufixed_array, i26 %pow_reduce_anonymous_namespace_table_f_Z3_ap_ufixed_array, i42 %pow_reduce_anonymous_namespace_table_f_Z2_ap_ufixed_array" [/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/src/c/powdouble.cpp:7->/tools/Xilinx/Vitis_HLS/2023.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/cmath:418->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:21757->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25458]   --->   Operation 125 'call' 'tmp' <Predicate = (!icmp_ln21753)> <Delay = 2.05> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
-ST_22 : Operation 126 [2/2] (1.82ns)   --->   "%v11895 = fptrunc i64 %tmp" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:21757->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25458]   --->   Operation 126 'fptrunc' 'v11895' <Predicate = true> <Delay = 1.82> <CoreInst = "Double2Float">   --->   Core 67 'Double2Float' <Latency = 1> <II = 1> <Delay = 1.82> <FuncUnit> <Opcode : 'fptrunc'> <InPorts = 1> <OutPorts = 1>
+ST_22 : Operation 125 [1/19] (2.05ns)   --->   "%tmp = call i64 @pow_generic<double>, i64 %x_assign, i6 %pow_reduce_anonymous_namespace_log_inverse_lut_table_pow_0_5_64_array, i109 %pow_reduce_anonymous_namespace_log0_lut_table_array, i105 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_4_4_16_array, i102 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_7_6_64_array, i97 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_12_6_64_array, i92 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_17_6_64_array, i87 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_22_6_64_array, i82 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_27_6_64_array, i77 %pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_32_6_64_array, i58 %pow_reduce_anonymous_namespace_table_exp_Z1_ap_ufixed_array, i26 %pow_reduce_anonymous_namespace_table_f_Z3_ap_ufixed_array, i42 %pow_reduce_anonymous_namespace_table_f_Z2_ap_ufixed_array" [/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/src/c/powdouble.cpp:7->/tools/Xilinx/Vitis_HLS/2023.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/cmath:418->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:21623->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25327]   --->   Operation 125 'call' 'tmp' <Predicate = (!icmp_ln21619)> <Delay = 2.05> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_22 : Operation 126 [2/2] (1.82ns)   --->   "%v11895 = fptrunc i64 %tmp" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:21623->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25327]   --->   Operation 126 'fptrunc' 'v11895' <Predicate = true> <Delay = 1.82> <CoreInst = "Double2Float">   --->   Core 67 'Double2Float' <Latency = 1> <II = 1> <Delay = 1.82> <FuncUnit> <Opcode : 'fptrunc'> <InPorts = 1> <OutPorts = 1>
 
 State 23 <SV = 22> <Delay = 1.82>
-ST_23 : Operation 127 [1/2] (1.82ns)   --->   "%v11895 = fptrunc i64 %tmp" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:21757->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25458]   --->   Operation 127 'fptrunc' 'v11895' <Predicate = true> <Delay = 1.82> <CoreInst = "Double2Float">   --->   Core 67 'Double2Float' <Latency = 1> <II = 1> <Delay = 1.82> <FuncUnit> <Opcode : 'fptrunc'> <InPorts = 1> <OutPorts = 1>
+ST_23 : Operation 127 [1/2] (1.82ns)   --->   "%v11895 = fptrunc i64 %tmp" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:21623->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25327]   --->   Operation 127 'fptrunc' 'v11895' <Predicate = true> <Delay = 1.82> <CoreInst = "Double2Float">   --->   Core 67 'Double2Float' <Latency = 1> <II = 1> <Delay = 1.82> <FuncUnit> <Opcode : 'fptrunc'> <InPorts = 1> <OutPorts = 1>
 
 State 24 <SV = 23> <Delay = 6.41>
-ST_24 : Operation 128 [1/1] (6.41ns)   --->   "%conv9_i = fpext i32 %v11895" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:21758->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25458]   --->   Operation 128 'fpext' 'conv9_i' <Predicate = true> <Delay = 6.41> <CoreInst = "Float2Double">   --->   Core 64 'Float2Double' <Latency = 0> <II = 1> <Delay = 6.41> <FuncUnit> <Opcode : 'fpext'> <InPorts = 1> <OutPorts = 1>
+ST_24 : Operation 128 [1/1] (6.41ns)   --->   "%conv9_i = fpext i32 %v11895" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:21624->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25327]   --->   Operation 128 'fpext' 'conv9_i' <Predicate = true> <Delay = 6.41> <CoreInst = "Float2Double">   --->   Core 64 'Float2Double' <Latency = 0> <II = 1> <Delay = 6.41> <FuncUnit> <Opcode : 'fpext'> <InPorts = 1> <OutPorts = 1>
 
 State 25 <SV = 24> <Delay = 4.50>
-ST_25 : Operation 129 [4/4] (4.50ns)   --->   "%mul10_i = dmul i64 %conv9_i, i64 0.044715" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:21758->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25458]   --->   Operation 129 'dmul' 'mul10_i' <Predicate = true> <Delay = 4.50> <CoreInst = "DMul_maxdsp">   --->   Core 49 'DMul_maxdsp' <Latency = 3> <II = 1> <Delay = 4.50> <FuncUnit> <Opcode : 'dmul'> <InPorts = 2> <OutPorts = 1>
+ST_25 : Operation 129 [4/4] (4.50ns)   --->   "%mul10_i = dmul i64 %conv9_i, i64 0.044715" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:21624->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25327]   --->   Operation 129 'dmul' 'mul10_i' <Predicate = true> <Delay = 4.50> <CoreInst = "DMul_maxdsp">   --->   Core 49 'DMul_maxdsp' <Latency = 3> <II = 1> <Delay = 4.50> <FuncUnit> <Opcode : 'dmul'> <InPorts = 2> <OutPorts = 1>
 
 State 26 <SV = 25> <Delay = 4.50>
-ST_26 : Operation 130 [3/4] (4.50ns)   --->   "%mul10_i = dmul i64 %conv9_i, i64 0.044715" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:21758->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25458]   --->   Operation 130 'dmul' 'mul10_i' <Predicate = true> <Delay = 4.50> <CoreInst = "DMul_maxdsp">   --->   Core 49 'DMul_maxdsp' <Latency = 3> <II = 1> <Delay = 4.50> <FuncUnit> <Opcode : 'dmul'> <InPorts = 2> <OutPorts = 1>
+ST_26 : Operation 130 [3/4] (4.50ns)   --->   "%mul10_i = dmul i64 %conv9_i, i64 0.044715" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:21624->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25327]   --->   Operation 130 'dmul' 'mul10_i' <Predicate = true> <Delay = 4.50> <CoreInst = "DMul_maxdsp">   --->   Core 49 'DMul_maxdsp' <Latency = 3> <II = 1> <Delay = 4.50> <FuncUnit> <Opcode : 'dmul'> <InPorts = 2> <OutPorts = 1>
 
 State 27 <SV = 26> <Delay = 4.50>
-ST_27 : Operation 131 [2/4] (4.50ns)   --->   "%mul10_i = dmul i64 %conv9_i, i64 0.044715" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:21758->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25458]   --->   Operation 131 'dmul' 'mul10_i' <Predicate = true> <Delay = 4.50> <CoreInst = "DMul_maxdsp">   --->   Core 49 'DMul_maxdsp' <Latency = 3> <II = 1> <Delay = 4.50> <FuncUnit> <Opcode : 'dmul'> <InPorts = 2> <OutPorts = 1>
+ST_27 : Operation 131 [2/4] (4.50ns)   --->   "%mul10_i = dmul i64 %conv9_i, i64 0.044715" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:21624->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25327]   --->   Operation 131 'dmul' 'mul10_i' <Predicate = true> <Delay = 4.50> <CoreInst = "DMul_maxdsp">   --->   Core 49 'DMul_maxdsp' <Latency = 3> <II = 1> <Delay = 4.50> <FuncUnit> <Opcode : 'dmul'> <InPorts = 2> <OutPorts = 1>
 
 State 28 <SV = 27> <Delay = 6.32>
-ST_28 : Operation 132 [1/4] (4.50ns)   --->   "%mul10_i = dmul i64 %conv9_i, i64 0.044715" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:21758->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25458]   --->   Operation 132 'dmul' 'mul10_i' <Predicate = true> <Delay = 4.50> <CoreInst = "DMul_maxdsp">   --->   Core 49 'DMul_maxdsp' <Latency = 3> <II = 1> <Delay = 4.50> <FuncUnit> <Opcode : 'dmul'> <InPorts = 2> <OutPorts = 1>
-ST_28 : Operation 133 [2/2] (1.82ns)   --->   "%v11896 = fptrunc i64 %mul10_i" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:21758->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25458]   --->   Operation 133 'fptrunc' 'v11896' <Predicate = true> <Delay = 1.82> <CoreInst = "Double2Float">   --->   Core 67 'Double2Float' <Latency = 1> <II = 1> <Delay = 1.82> <FuncUnit> <Opcode : 'fptrunc'> <InPorts = 1> <OutPorts = 1>
+ST_28 : Operation 132 [1/4] (4.50ns)   --->   "%mul10_i = dmul i64 %conv9_i, i64 0.044715" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:21624->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25327]   --->   Operation 132 'dmul' 'mul10_i' <Predicate = true> <Delay = 4.50> <CoreInst = "DMul_maxdsp">   --->   Core 49 'DMul_maxdsp' <Latency = 3> <II = 1> <Delay = 4.50> <FuncUnit> <Opcode : 'dmul'> <InPorts = 2> <OutPorts = 1>
+ST_28 : Operation 133 [2/2] (1.82ns)   --->   "%v11896 = fptrunc i64 %mul10_i" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:21624->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25327]   --->   Operation 133 'fptrunc' 'v11896' <Predicate = true> <Delay = 1.82> <CoreInst = "Double2Float">   --->   Core 67 'Double2Float' <Latency = 1> <II = 1> <Delay = 1.82> <FuncUnit> <Opcode : 'fptrunc'> <InPorts = 1> <OutPorts = 1>
 
 State 29 <SV = 28> <Delay = 1.82>
-ST_29 : Operation 134 [1/2] (1.82ns)   --->   "%v11896 = fptrunc i64 %mul10_i" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:21758->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25458]   --->   Operation 134 'fptrunc' 'v11896' <Predicate = true> <Delay = 1.82> <CoreInst = "Double2Float">   --->   Core 67 'Double2Float' <Latency = 1> <II = 1> <Delay = 1.82> <FuncUnit> <Opcode : 'fptrunc'> <InPorts = 1> <OutPorts = 1>
+ST_29 : Operation 134 [1/2] (1.82ns)   --->   "%v11896 = fptrunc i64 %mul10_i" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:21624->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25327]   --->   Operation 134 'fptrunc' 'v11896' <Predicate = true> <Delay = 1.82> <CoreInst = "Double2Float">   --->   Core 67 'Double2Float' <Latency = 1> <II = 1> <Delay = 1.82> <FuncUnit> <Opcode : 'fptrunc'> <InPorts = 1> <OutPorts = 1>
 
 State 30 <SV = 29> <Delay = 6.14>
-ST_30 : Operation 135 [3/3] (6.14ns)   --->   "%v11897 = fadd i32 %v11893, i32 %v11896" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:21759->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25458]   --->   Operation 135 'fadd' 'v11897' <Predicate = true> <Delay = 6.14> <CoreInst = "FAddSub_fulldsp">   --->   Core 18 'FAddSub_fulldsp' <Latency = 2> <II = 1> <Delay = 6.14> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_30 : Operation 135 [3/3] (6.14ns)   --->   "%v11897 = fadd i32 %v11893, i32 %v11896" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:21625->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25327]   --->   Operation 135 'fadd' 'v11897' <Predicate = true> <Delay = 6.14> <CoreInst = "FAddSub_fulldsp">   --->   Core 18 'FAddSub_fulldsp' <Latency = 2> <II = 1> <Delay = 6.14> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
 
 State 31 <SV = 30> <Delay = 6.14>
-ST_31 : Operation 136 [2/3] (6.14ns)   --->   "%v11897 = fadd i32 %v11893, i32 %v11896" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:21759->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25458]   --->   Operation 136 'fadd' 'v11897' <Predicate = true> <Delay = 6.14> <CoreInst = "FAddSub_fulldsp">   --->   Core 18 'FAddSub_fulldsp' <Latency = 2> <II = 1> <Delay = 6.14> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_31 : Operation 136 [2/3] (6.14ns)   --->   "%v11897 = fadd i32 %v11893, i32 %v11896" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:21625->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25327]   --->   Operation 136 'fadd' 'v11897' <Predicate = true> <Delay = 6.14> <CoreInst = "FAddSub_fulldsp">   --->   Core 18 'FAddSub_fulldsp' <Latency = 2> <II = 1> <Delay = 6.14> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
 
 State 32 <SV = 31> <Delay = 6.14>
-ST_32 : Operation 137 [1/3] (6.14ns)   --->   "%v11897 = fadd i32 %v11893, i32 %v11896" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:21759->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25458]   --->   Operation 137 'fadd' 'v11897' <Predicate = true> <Delay = 6.14> <CoreInst = "FAddSub_fulldsp">   --->   Core 18 'FAddSub_fulldsp' <Latency = 2> <II = 1> <Delay = 6.14> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_32 : Operation 137 [1/3] (6.14ns)   --->   "%v11897 = fadd i32 %v11893, i32 %v11896" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:21625->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25327]   --->   Operation 137 'fadd' 'v11897' <Predicate = true> <Delay = 6.14> <CoreInst = "FAddSub_fulldsp">   --->   Core 18 'FAddSub_fulldsp' <Latency = 2> <II = 1> <Delay = 6.14> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
 
 State 33 <SV = 32> <Delay = 6.41>
-ST_33 : Operation 138 [1/1] (6.41ns)   --->   "%conv12_i = fpext i32 %v11897" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:21760->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25458]   --->   Operation 138 'fpext' 'conv12_i' <Predicate = true> <Delay = 6.41> <CoreInst = "Float2Double">   --->   Core 64 'Float2Double' <Latency = 0> <II = 1> <Delay = 6.41> <FuncUnit> <Opcode : 'fpext'> <InPorts = 1> <OutPorts = 1>
+ST_33 : Operation 138 [1/1] (6.41ns)   --->   "%conv12_i = fpext i32 %v11897" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:21626->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25327]   --->   Operation 138 'fpext' 'conv12_i' <Predicate = true> <Delay = 6.41> <CoreInst = "Float2Double">   --->   Core 64 'Float2Double' <Latency = 0> <II = 1> <Delay = 6.41> <FuncUnit> <Opcode : 'fpext'> <InPorts = 1> <OutPorts = 1>
 
 State 34 <SV = 33> <Delay = 4.50>
-ST_34 : Operation 139 [4/4] (4.50ns)   --->   "%mul13_i = dmul i64 %conv12_i, i64 0.797885" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:21760->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25458]   --->   Operation 139 'dmul' 'mul13_i' <Predicate = true> <Delay = 4.50> <CoreInst = "DMul_maxdsp">   --->   Core 49 'DMul_maxdsp' <Latency = 3> <II = 1> <Delay = 4.50> <FuncUnit> <Opcode : 'dmul'> <InPorts = 2> <OutPorts = 1>
+ST_34 : Operation 139 [4/4] (4.50ns)   --->   "%mul13_i = dmul i64 %conv12_i, i64 0.797885" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:21626->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25327]   --->   Operation 139 'dmul' 'mul13_i' <Predicate = true> <Delay = 4.50> <CoreInst = "DMul_maxdsp">   --->   Core 49 'DMul_maxdsp' <Latency = 3> <II = 1> <Delay = 4.50> <FuncUnit> <Opcode : 'dmul'> <InPorts = 2> <OutPorts = 1>
 
 State 35 <SV = 34> <Delay = 4.50>
-ST_35 : Operation 140 [3/4] (4.50ns)   --->   "%mul13_i = dmul i64 %conv12_i, i64 0.797885" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:21760->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25458]   --->   Operation 140 'dmul' 'mul13_i' <Predicate = true> <Delay = 4.50> <CoreInst = "DMul_maxdsp">   --->   Core 49 'DMul_maxdsp' <Latency = 3> <II = 1> <Delay = 4.50> <FuncUnit> <Opcode : 'dmul'> <InPorts = 2> <OutPorts = 1>
+ST_35 : Operation 140 [3/4] (4.50ns)   --->   "%mul13_i = dmul i64 %conv12_i, i64 0.797885" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:21626->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25327]   --->   Operation 140 'dmul' 'mul13_i' <Predicate = true> <Delay = 4.50> <CoreInst = "DMul_maxdsp">   --->   Core 49 'DMul_maxdsp' <Latency = 3> <II = 1> <Delay = 4.50> <FuncUnit> <Opcode : 'dmul'> <InPorts = 2> <OutPorts = 1>
 
 State 36 <SV = 35> <Delay = 4.50>
-ST_36 : Operation 141 [2/4] (4.50ns)   --->   "%mul13_i = dmul i64 %conv12_i, i64 0.797885" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:21760->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25458]   --->   Operation 141 'dmul' 'mul13_i' <Predicate = true> <Delay = 4.50> <CoreInst = "DMul_maxdsp">   --->   Core 49 'DMul_maxdsp' <Latency = 3> <II = 1> <Delay = 4.50> <FuncUnit> <Opcode : 'dmul'> <InPorts = 2> <OutPorts = 1>
+ST_36 : Operation 141 [2/4] (4.50ns)   --->   "%mul13_i = dmul i64 %conv12_i, i64 0.797885" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:21626->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25327]   --->   Operation 141 'dmul' 'mul13_i' <Predicate = true> <Delay = 4.50> <CoreInst = "DMul_maxdsp">   --->   Core 49 'DMul_maxdsp' <Latency = 3> <II = 1> <Delay = 4.50> <FuncUnit> <Opcode : 'dmul'> <InPorts = 2> <OutPorts = 1>
 
 State 37 <SV = 36> <Delay = 6.32>
-ST_37 : Operation 142 [1/4] (4.50ns)   --->   "%mul13_i = dmul i64 %conv12_i, i64 0.797885" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:21760->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25458]   --->   Operation 142 'dmul' 'mul13_i' <Predicate = true> <Delay = 4.50> <CoreInst = "DMul_maxdsp">   --->   Core 49 'DMul_maxdsp' <Latency = 3> <II = 1> <Delay = 4.50> <FuncUnit> <Opcode : 'dmul'> <InPorts = 2> <OutPorts = 1>
-ST_37 : Operation 143 [2/2] (1.82ns)   --->   "%v11898 = fptrunc i64 %mul13_i" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:21760->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25458]   --->   Operation 143 'fptrunc' 'v11898' <Predicate = true> <Delay = 1.82> <CoreInst = "Double2Float">   --->   Core 67 'Double2Float' <Latency = 1> <II = 1> <Delay = 1.82> <FuncUnit> <Opcode : 'fptrunc'> <InPorts = 1> <OutPorts = 1>
+ST_37 : Operation 142 [1/4] (4.50ns)   --->   "%mul13_i = dmul i64 %conv12_i, i64 0.797885" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:21626->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25327]   --->   Operation 142 'dmul' 'mul13_i' <Predicate = true> <Delay = 4.50> <CoreInst = "DMul_maxdsp">   --->   Core 49 'DMul_maxdsp' <Latency = 3> <II = 1> <Delay = 4.50> <FuncUnit> <Opcode : 'dmul'> <InPorts = 2> <OutPorts = 1>
+ST_37 : Operation 143 [2/2] (1.82ns)   --->   "%v11898 = fptrunc i64 %mul13_i" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:21626->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25327]   --->   Operation 143 'fptrunc' 'v11898' <Predicate = true> <Delay = 1.82> <CoreInst = "Double2Float">   --->   Core 67 'Double2Float' <Latency = 1> <II = 1> <Delay = 1.82> <FuncUnit> <Opcode : 'fptrunc'> <InPorts = 1> <OutPorts = 1>
 
 State 38 <SV = 37> <Delay = 1.82>
-ST_38 : Operation 144 [1/2] (1.82ns)   --->   "%v11898 = fptrunc i64 %mul13_i" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:21760->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25458]   --->   Operation 144 'fptrunc' 'v11898' <Predicate = true> <Delay = 1.82> <CoreInst = "Double2Float">   --->   Core 67 'Double2Float' <Latency = 1> <II = 1> <Delay = 1.82> <FuncUnit> <Opcode : 'fptrunc'> <InPorts = 1> <OutPorts = 1>
+ST_38 : Operation 144 [1/2] (1.82ns)   --->   "%v11898 = fptrunc i64 %mul13_i" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:21626->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25327]   --->   Operation 144 'fptrunc' 'v11898' <Predicate = true> <Delay = 1.82> <CoreInst = "Double2Float">   --->   Core 67 'Double2Float' <Latency = 1> <II = 1> <Delay = 1.82> <FuncUnit> <Opcode : 'fptrunc'> <InPorts = 1> <OutPorts = 1>
 
 State 39 <SV = 38> <Delay = 6.87>
-ST_39 : Operation 145 [29/29] (6.87ns)   --->   "%v11899 = call i32 @generic_tanh<float>, i32 %v11898, i58 %table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array, i26 %table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array, i42 %table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:21762->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25458]   --->   Operation 145 'call' 'v11899' <Predicate = (!icmp_ln21753)> <Delay = 6.87> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_39 : Operation 145 [29/29] (6.87ns)   --->   "%v11899 = call i32 @generic_tanh<float>, i32 %v11898, i58 %table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array, i26 %table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array, i42 %table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:21628->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25327]   --->   Operation 145 'call' 'v11899' <Predicate = (!icmp_ln21619)> <Delay = 6.87> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
 State 40 <SV = 39> <Delay = 7.27>
-ST_40 : Operation 146 [28/29] (7.27ns)   --->   "%v11899 = call i32 @generic_tanh<float>, i32 %v11898, i58 %table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array, i26 %table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array, i42 %table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:21762->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25458]   --->   Operation 146 'call' 'v11899' <Predicate = (!icmp_ln21753)> <Delay = 7.27> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_40 : Operation 146 [28/29] (7.27ns)   --->   "%v11899 = call i32 @generic_tanh<float>, i32 %v11898, i58 %table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array, i26 %table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array, i42 %table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:21628->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25327]   --->   Operation 146 'call' 'v11899' <Predicate = (!icmp_ln21619)> <Delay = 7.27> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
 State 41 <SV = 40> <Delay = 7.27>
-ST_41 : Operation 147 [27/29] (7.27ns)   --->   "%v11899 = call i32 @generic_tanh<float>, i32 %v11898, i58 %table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array, i26 %table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array, i42 %table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:21762->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25458]   --->   Operation 147 'call' 'v11899' <Predicate = (!icmp_ln21753)> <Delay = 7.27> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_41 : Operation 147 [27/29] (7.27ns)   --->   "%v11899 = call i32 @generic_tanh<float>, i32 %v11898, i58 %table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array, i26 %table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array, i42 %table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:21628->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25327]   --->   Operation 147 'call' 'v11899' <Predicate = (!icmp_ln21619)> <Delay = 7.27> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
 State 42 <SV = 41> <Delay = 7.27>
-ST_42 : Operation 148 [26/29] (7.27ns)   --->   "%v11899 = call i32 @generic_tanh<float>, i32 %v11898, i58 %table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array, i26 %table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array, i42 %table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:21762->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25458]   --->   Operation 148 'call' 'v11899' <Predicate = (!icmp_ln21753)> <Delay = 7.27> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_42 : Operation 148 [26/29] (7.27ns)   --->   "%v11899 = call i32 @generic_tanh<float>, i32 %v11898, i58 %table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array, i26 %table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array, i42 %table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:21628->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25327]   --->   Operation 148 'call' 'v11899' <Predicate = (!icmp_ln21619)> <Delay = 7.27> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
 State 43 <SV = 42> <Delay = 7.27>
-ST_43 : Operation 149 [25/29] (7.27ns)   --->   "%v11899 = call i32 @generic_tanh<float>, i32 %v11898, i58 %table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array, i26 %table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array, i42 %table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:21762->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25458]   --->   Operation 149 'call' 'v11899' <Predicate = (!icmp_ln21753)> <Delay = 7.27> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_43 : Operation 149 [25/29] (7.27ns)   --->   "%v11899 = call i32 @generic_tanh<float>, i32 %v11898, i58 %table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array, i26 %table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array, i42 %table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:21628->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25327]   --->   Operation 149 'call' 'v11899' <Predicate = (!icmp_ln21619)> <Delay = 7.27> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
 State 44 <SV = 43> <Delay = 7.27>
-ST_44 : Operation 150 [24/29] (7.27ns)   --->   "%v11899 = call i32 @generic_tanh<float>, i32 %v11898, i58 %table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array, i26 %table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array, i42 %table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:21762->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25458]   --->   Operation 150 'call' 'v11899' <Predicate = (!icmp_ln21753)> <Delay = 7.27> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_44 : Operation 150 [24/29] (7.27ns)   --->   "%v11899 = call i32 @generic_tanh<float>, i32 %v11898, i58 %table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array, i26 %table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array, i42 %table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:21628->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25327]   --->   Operation 150 'call' 'v11899' <Predicate = (!icmp_ln21619)> <Delay = 7.27> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
 State 45 <SV = 44> <Delay = 7.27>
-ST_45 : Operation 151 [23/29] (7.27ns)   --->   "%v11899 = call i32 @generic_tanh<float>, i32 %v11898, i58 %table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array, i26 %table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array, i42 %table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:21762->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25458]   --->   Operation 151 'call' 'v11899' <Predicate = (!icmp_ln21753)> <Delay = 7.27> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_45 : Operation 151 [23/29] (7.27ns)   --->   "%v11899 = call i32 @generic_tanh<float>, i32 %v11898, i58 %table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array, i26 %table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array, i42 %table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:21628->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25327]   --->   Operation 151 'call' 'v11899' <Predicate = (!icmp_ln21619)> <Delay = 7.27> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
 State 46 <SV = 45> <Delay = 7.27>
-ST_46 : Operation 152 [22/29] (7.27ns)   --->   "%v11899 = call i32 @generic_tanh<float>, i32 %v11898, i58 %table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array, i26 %table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array, i42 %table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:21762->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25458]   --->   Operation 152 'call' 'v11899' <Predicate = (!icmp_ln21753)> <Delay = 7.27> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_46 : Operation 152 [22/29] (7.27ns)   --->   "%v11899 = call i32 @generic_tanh<float>, i32 %v11898, i58 %table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array, i26 %table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array, i42 %table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:21628->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25327]   --->   Operation 152 'call' 'v11899' <Predicate = (!icmp_ln21619)> <Delay = 7.27> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
 State 47 <SV = 46> <Delay = 7.27>
-ST_47 : Operation 153 [21/29] (7.27ns)   --->   "%v11899 = call i32 @generic_tanh<float>, i32 %v11898, i58 %table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array, i26 %table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array, i42 %table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:21762->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25458]   --->   Operation 153 'call' 'v11899' <Predicate = (!icmp_ln21753)> <Delay = 7.27> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_47 : Operation 153 [21/29] (7.27ns)   --->   "%v11899 = call i32 @generic_tanh<float>, i32 %v11898, i58 %table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array, i26 %table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array, i42 %table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:21628->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25327]   --->   Operation 153 'call' 'v11899' <Predicate = (!icmp_ln21619)> <Delay = 7.27> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
 State 48 <SV = 47> <Delay = 7.27>
-ST_48 : Operation 154 [20/29] (7.27ns)   --->   "%v11899 = call i32 @generic_tanh<float>, i32 %v11898, i58 %table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array, i26 %table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array, i42 %table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:21762->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25458]   --->   Operation 154 'call' 'v11899' <Predicate = (!icmp_ln21753)> <Delay = 7.27> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_48 : Operation 154 [20/29] (7.27ns)   --->   "%v11899 = call i32 @generic_tanh<float>, i32 %v11898, i58 %table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array, i26 %table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array, i42 %table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:21628->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25327]   --->   Operation 154 'call' 'v11899' <Predicate = (!icmp_ln21619)> <Delay = 7.27> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
 State 49 <SV = 48> <Delay = 7.27>
-ST_49 : Operation 155 [19/29] (7.27ns)   --->   "%v11899 = call i32 @generic_tanh<float>, i32 %v11898, i58 %table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array, i26 %table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array, i42 %table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:21762->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25458]   --->   Operation 155 'call' 'v11899' <Predicate = (!icmp_ln21753)> <Delay = 7.27> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_49 : Operation 155 [19/29] (7.27ns)   --->   "%v11899 = call i32 @generic_tanh<float>, i32 %v11898, i58 %table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array, i26 %table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array, i42 %table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:21628->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25327]   --->   Operation 155 'call' 'v11899' <Predicate = (!icmp_ln21619)> <Delay = 7.27> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
 State 50 <SV = 49> <Delay = 7.27>
-ST_50 : Operation 156 [18/29] (7.27ns)   --->   "%v11899 = call i32 @generic_tanh<float>, i32 %v11898, i58 %table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array, i26 %table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array, i42 %table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:21762->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25458]   --->   Operation 156 'call' 'v11899' <Predicate = (!icmp_ln21753)> <Delay = 7.27> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_50 : Operation 156 [18/29] (7.27ns)   --->   "%v11899 = call i32 @generic_tanh<float>, i32 %v11898, i58 %table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array, i26 %table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array, i42 %table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:21628->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25327]   --->   Operation 156 'call' 'v11899' <Predicate = (!icmp_ln21619)> <Delay = 7.27> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
 State 51 <SV = 50> <Delay = 7.27>
-ST_51 : Operation 157 [17/29] (7.27ns)   --->   "%v11899 = call i32 @generic_tanh<float>, i32 %v11898, i58 %table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array, i26 %table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array, i42 %table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:21762->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25458]   --->   Operation 157 'call' 'v11899' <Predicate = (!icmp_ln21753)> <Delay = 7.27> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_51 : Operation 157 [17/29] (7.27ns)   --->   "%v11899 = call i32 @generic_tanh<float>, i32 %v11898, i58 %table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array, i26 %table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array, i42 %table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:21628->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25327]   --->   Operation 157 'call' 'v11899' <Predicate = (!icmp_ln21619)> <Delay = 7.27> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
 State 52 <SV = 51> <Delay = 7.27>
-ST_52 : Operation 158 [16/29] (7.27ns)   --->   "%v11899 = call i32 @generic_tanh<float>, i32 %v11898, i58 %table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array, i26 %table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array, i42 %table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:21762->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25458]   --->   Operation 158 'call' 'v11899' <Predicate = (!icmp_ln21753)> <Delay = 7.27> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_52 : Operation 158 [16/29] (7.27ns)   --->   "%v11899 = call i32 @generic_tanh<float>, i32 %v11898, i58 %table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array, i26 %table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array, i42 %table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:21628->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25327]   --->   Operation 158 'call' 'v11899' <Predicate = (!icmp_ln21619)> <Delay = 7.27> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
 State 53 <SV = 52> <Delay = 7.27>
-ST_53 : Operation 159 [15/29] (7.27ns)   --->   "%v11899 = call i32 @generic_tanh<float>, i32 %v11898, i58 %table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array, i26 %table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array, i42 %table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:21762->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25458]   --->   Operation 159 'call' 'v11899' <Predicate = (!icmp_ln21753)> <Delay = 7.27> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_53 : Operation 159 [15/29] (7.27ns)   --->   "%v11899 = call i32 @generic_tanh<float>, i32 %v11898, i58 %table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array, i26 %table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array, i42 %table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:21628->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25327]   --->   Operation 159 'call' 'v11899' <Predicate = (!icmp_ln21619)> <Delay = 7.27> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
 State 54 <SV = 53> <Delay = 7.27>
-ST_54 : Operation 160 [14/29] (7.27ns)   --->   "%v11899 = call i32 @generic_tanh<float>, i32 %v11898, i58 %table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array, i26 %table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array, i42 %table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:21762->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25458]   --->   Operation 160 'call' 'v11899' <Predicate = (!icmp_ln21753)> <Delay = 7.27> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_54 : Operation 160 [14/29] (7.27ns)   --->   "%v11899 = call i32 @generic_tanh<float>, i32 %v11898, i58 %table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array, i26 %table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array, i42 %table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:21628->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25327]   --->   Operation 160 'call' 'v11899' <Predicate = (!icmp_ln21619)> <Delay = 7.27> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
 State 55 <SV = 54> <Delay = 7.27>
-ST_55 : Operation 161 [13/29] (7.27ns)   --->   "%v11899 = call i32 @generic_tanh<float>, i32 %v11898, i58 %table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array, i26 %table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array, i42 %table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:21762->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25458]   --->   Operation 161 'call' 'v11899' <Predicate = (!icmp_ln21753)> <Delay = 7.27> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_55 : Operation 161 [13/29] (7.27ns)   --->   "%v11899 = call i32 @generic_tanh<float>, i32 %v11898, i58 %table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array, i26 %table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array, i42 %table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:21628->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25327]   --->   Operation 161 'call' 'v11899' <Predicate = (!icmp_ln21619)> <Delay = 7.27> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
 State 56 <SV = 55> <Delay = 7.27>
-ST_56 : Operation 162 [12/29] (7.27ns)   --->   "%v11899 = call i32 @generic_tanh<float>, i32 %v11898, i58 %table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array, i26 %table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array, i42 %table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:21762->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25458]   --->   Operation 162 'call' 'v11899' <Predicate = (!icmp_ln21753)> <Delay = 7.27> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_56 : Operation 162 [12/29] (7.27ns)   --->   "%v11899 = call i32 @generic_tanh<float>, i32 %v11898, i58 %table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array, i26 %table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array, i42 %table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:21628->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25327]   --->   Operation 162 'call' 'v11899' <Predicate = (!icmp_ln21619)> <Delay = 7.27> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
 State 57 <SV = 56> <Delay = 7.27>
-ST_57 : Operation 163 [11/29] (7.27ns)   --->   "%v11899 = call i32 @generic_tanh<float>, i32 %v11898, i58 %table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array, i26 %table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array, i42 %table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:21762->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25458]   --->   Operation 163 'call' 'v11899' <Predicate = (!icmp_ln21753)> <Delay = 7.27> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_57 : Operation 163 [11/29] (7.27ns)   --->   "%v11899 = call i32 @generic_tanh<float>, i32 %v11898, i58 %table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array, i26 %table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array, i42 %table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:21628->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25327]   --->   Operation 163 'call' 'v11899' <Predicate = (!icmp_ln21619)> <Delay = 7.27> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
 State 58 <SV = 57> <Delay = 7.27>
-ST_58 : Operation 164 [10/29] (7.27ns)   --->   "%v11899 = call i32 @generic_tanh<float>, i32 %v11898, i58 %table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array, i26 %table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array, i42 %table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:21762->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25458]   --->   Operation 164 'call' 'v11899' <Predicate = (!icmp_ln21753)> <Delay = 7.27> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_58 : Operation 164 [10/29] (7.27ns)   --->   "%v11899 = call i32 @generic_tanh<float>, i32 %v11898, i58 %table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array, i26 %table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array, i42 %table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:21628->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25327]   --->   Operation 164 'call' 'v11899' <Predicate = (!icmp_ln21619)> <Delay = 7.27> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
 State 59 <SV = 58> <Delay = 7.27>
-ST_59 : Operation 165 [9/29] (7.27ns)   --->   "%v11899 = call i32 @generic_tanh<float>, i32 %v11898, i58 %table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array, i26 %table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array, i42 %table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:21762->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25458]   --->   Operation 165 'call' 'v11899' <Predicate = (!icmp_ln21753)> <Delay = 7.27> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_59 : Operation 165 [9/29] (7.27ns)   --->   "%v11899 = call i32 @generic_tanh<float>, i32 %v11898, i58 %table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array, i26 %table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array, i42 %table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:21628->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25327]   --->   Operation 165 'call' 'v11899' <Predicate = (!icmp_ln21619)> <Delay = 7.27> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
 State 60 <SV = 59> <Delay = 7.27>
-ST_60 : Operation 166 [8/29] (7.27ns)   --->   "%v11899 = call i32 @generic_tanh<float>, i32 %v11898, i58 %table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array, i26 %table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array, i42 %table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:21762->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25458]   --->   Operation 166 'call' 'v11899' <Predicate = (!icmp_ln21753)> <Delay = 7.27> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_60 : Operation 166 [8/29] (7.27ns)   --->   "%v11899 = call i32 @generic_tanh<float>, i32 %v11898, i58 %table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array, i26 %table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array, i42 %table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:21628->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25327]   --->   Operation 166 'call' 'v11899' <Predicate = (!icmp_ln21619)> <Delay = 7.27> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
 State 61 <SV = 60> <Delay = 7.27>
-ST_61 : Operation 167 [7/29] (7.27ns)   --->   "%v11899 = call i32 @generic_tanh<float>, i32 %v11898, i58 %table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array, i26 %table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array, i42 %table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:21762->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25458]   --->   Operation 167 'call' 'v11899' <Predicate = (!icmp_ln21753)> <Delay = 7.27> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_61 : Operation 167 [7/29] (7.27ns)   --->   "%v11899 = call i32 @generic_tanh<float>, i32 %v11898, i58 %table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array, i26 %table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array, i42 %table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:21628->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25327]   --->   Operation 167 'call' 'v11899' <Predicate = (!icmp_ln21619)> <Delay = 7.27> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
 State 62 <SV = 61> <Delay = 7.27>
-ST_62 : Operation 168 [6/29] (7.27ns)   --->   "%v11899 = call i32 @generic_tanh<float>, i32 %v11898, i58 %table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array, i26 %table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array, i42 %table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:21762->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25458]   --->   Operation 168 'call' 'v11899' <Predicate = (!icmp_ln21753)> <Delay = 7.27> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_62 : Operation 168 [6/29] (7.27ns)   --->   "%v11899 = call i32 @generic_tanh<float>, i32 %v11898, i58 %table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array, i26 %table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array, i42 %table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:21628->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25327]   --->   Operation 168 'call' 'v11899' <Predicate = (!icmp_ln21619)> <Delay = 7.27> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
 State 63 <SV = 62> <Delay = 7.27>
-ST_63 : Operation 169 [5/29] (7.27ns)   --->   "%v11899 = call i32 @generic_tanh<float>, i32 %v11898, i58 %table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array, i26 %table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array, i42 %table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:21762->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25458]   --->   Operation 169 'call' 'v11899' <Predicate = (!icmp_ln21753)> <Delay = 7.27> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_63 : Operation 169 [5/29] (7.27ns)   --->   "%v11899 = call i32 @generic_tanh<float>, i32 %v11898, i58 %table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array, i26 %table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array, i42 %table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:21628->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25327]   --->   Operation 169 'call' 'v11899' <Predicate = (!icmp_ln21619)> <Delay = 7.27> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
 State 64 <SV = 63> <Delay = 7.27>
-ST_64 : Operation 170 [4/29] (7.27ns)   --->   "%v11899 = call i32 @generic_tanh<float>, i32 %v11898, i58 %table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array, i26 %table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array, i42 %table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:21762->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25458]   --->   Operation 170 'call' 'v11899' <Predicate = (!icmp_ln21753)> <Delay = 7.27> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_64 : Operation 170 [4/29] (7.27ns)   --->   "%v11899 = call i32 @generic_tanh<float>, i32 %v11898, i58 %table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array, i26 %table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array, i42 %table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:21628->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25327]   --->   Operation 170 'call' 'v11899' <Predicate = (!icmp_ln21619)> <Delay = 7.27> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
 State 65 <SV = 64> <Delay = 7.27>
-ST_65 : Operation 171 [3/29] (7.27ns)   --->   "%v11899 = call i32 @generic_tanh<float>, i32 %v11898, i58 %table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array, i26 %table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array, i42 %table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:21762->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25458]   --->   Operation 171 'call' 'v11899' <Predicate = (!icmp_ln21753)> <Delay = 7.27> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_65 : Operation 171 [3/29] (7.27ns)   --->   "%v11899 = call i32 @generic_tanh<float>, i32 %v11898, i58 %table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array, i26 %table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array, i42 %table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:21628->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25327]   --->   Operation 171 'call' 'v11899' <Predicate = (!icmp_ln21619)> <Delay = 7.27> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
 State 66 <SV = 65> <Delay = 7.27>
-ST_66 : Operation 172 [2/29] (7.27ns)   --->   "%v11899 = call i32 @generic_tanh<float>, i32 %v11898, i58 %table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array, i26 %table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array, i42 %table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:21762->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25458]   --->   Operation 172 'call' 'v11899' <Predicate = (!icmp_ln21753)> <Delay = 7.27> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_66 : Operation 172 [2/29] (7.27ns)   --->   "%v11899 = call i32 @generic_tanh<float>, i32 %v11898, i58 %table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array, i26 %table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array, i42 %table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:21628->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25327]   --->   Operation 172 'call' 'v11899' <Predicate = (!icmp_ln21619)> <Delay = 7.27> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
 State 67 <SV = 66> <Delay = 6.86>
-ST_67 : Operation 173 [1/29] (6.86ns)   --->   "%v11899 = call i32 @generic_tanh<float>, i32 %v11898, i58 %table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array, i26 %table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array, i42 %table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:21762->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25458]   --->   Operation 173 'call' 'v11899' <Predicate = (!icmp_ln21753)> <Delay = 6.86> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_67 : Operation 173 [1/29] (6.86ns)   --->   "%v11899 = call i32 @generic_tanh<float>, i32 %v11898, i58 %table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array, i26 %table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array, i42 %table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:21628->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25327]   --->   Operation 173 'call' 'v11899' <Predicate = (!icmp_ln21619)> <Delay = 6.86> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
 State 68 <SV = 67> <Delay = 6.14>
-ST_68 : Operation 174 [3/3] (6.14ns)   --->   "%v11900 = fadd i32 %v11899, i32 1" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:21762->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25458]   --->   Operation 174 'fadd' 'v11900' <Predicate = true> <Delay = 6.14> <CoreInst = "FAddSub_fulldsp">   --->   Core 18 'FAddSub_fulldsp' <Latency = 2> <II = 1> <Delay = 6.14> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_68 : Operation 174 [3/3] (6.14ns)   --->   "%v11900 = fadd i32 %v11899, i32 1" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:21628->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25327]   --->   Operation 174 'fadd' 'v11900' <Predicate = true> <Delay = 6.14> <CoreInst = "FAddSub_fulldsp">   --->   Core 18 'FAddSub_fulldsp' <Latency = 2> <II = 1> <Delay = 6.14> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
 
 State 69 <SV = 68> <Delay = 6.14>
-ST_69 : Operation 175 [2/2] (4.90ns)   --->   "%v11894 = fmul i32 %v11893, i32 0.5" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:21756->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25458]   --->   Operation 175 'fmul' 'v11894' <Predicate = true> <Delay = 4.90> <CoreInst = "FMul_maxdsp">   --->   Core 30 'FMul_maxdsp' <Latency = 1> <II = 1> <Delay = 4.90> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
-ST_69 : Operation 176 [2/3] (6.14ns)   --->   "%v11900 = fadd i32 %v11899, i32 1" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:21762->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25458]   --->   Operation 176 'fadd' 'v11900' <Predicate = true> <Delay = 6.14> <CoreInst = "FAddSub_fulldsp">   --->   Core 18 'FAddSub_fulldsp' <Latency = 2> <II = 1> <Delay = 6.14> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_69 : Operation 175 [2/2] (4.90ns)   --->   "%v11894 = fmul i32 %v11893, i32 0.5" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:21622->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25327]   --->   Operation 175 'fmul' 'v11894' <Predicate = true> <Delay = 4.90> <CoreInst = "FMul_maxdsp">   --->   Core 30 'FMul_maxdsp' <Latency = 1> <II = 1> <Delay = 4.90> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+ST_69 : Operation 176 [2/3] (6.14ns)   --->   "%v11900 = fadd i32 %v11899, i32 1" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:21628->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25327]   --->   Operation 176 'fadd' 'v11900' <Predicate = true> <Delay = 6.14> <CoreInst = "FAddSub_fulldsp">   --->   Core 18 'FAddSub_fulldsp' <Latency = 2> <II = 1> <Delay = 6.14> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
 
 State 70 <SV = 69> <Delay = 6.14>
-ST_70 : Operation 177 [1/2] (4.90ns)   --->   "%v11894 = fmul i32 %v11893, i32 0.5" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:21756->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25458]   --->   Operation 177 'fmul' 'v11894' <Predicate = true> <Delay = 4.90> <CoreInst = "FMul_maxdsp">   --->   Core 30 'FMul_maxdsp' <Latency = 1> <II = 1> <Delay = 4.90> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
-ST_70 : Operation 178 [1/3] (6.14ns)   --->   "%v11900 = fadd i32 %v11899, i32 1" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:21762->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25458]   --->   Operation 178 'fadd' 'v11900' <Predicate = true> <Delay = 6.14> <CoreInst = "FAddSub_fulldsp">   --->   Core 18 'FAddSub_fulldsp' <Latency = 2> <II = 1> <Delay = 6.14> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_70 : Operation 177 [1/2] (4.90ns)   --->   "%v11894 = fmul i32 %v11893, i32 0.5" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:21622->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25327]   --->   Operation 177 'fmul' 'v11894' <Predicate = true> <Delay = 4.90> <CoreInst = "FMul_maxdsp">   --->   Core 30 'FMul_maxdsp' <Latency = 1> <II = 1> <Delay = 4.90> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+ST_70 : Operation 178 [1/3] (6.14ns)   --->   "%v11900 = fadd i32 %v11899, i32 1" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:21628->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25327]   --->   Operation 178 'fadd' 'v11900' <Predicate = true> <Delay = 6.14> <CoreInst = "FAddSub_fulldsp">   --->   Core 18 'FAddSub_fulldsp' <Latency = 2> <II = 1> <Delay = 6.14> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
 
 State 71 <SV = 70> <Delay = 4.90>
-ST_71 : Operation 179 [2/2] (4.90ns)   --->   "%v11901 = fmul i32 %v11894, i32 %v11900" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:21763->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25458]   --->   Operation 179 'fmul' 'v11901' <Predicate = true> <Delay = 4.90> <CoreInst = "FMul_maxdsp">   --->   Core 30 'FMul_maxdsp' <Latency = 1> <II = 1> <Delay = 4.90> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+ST_71 : Operation 179 [2/2] (4.90ns)   --->   "%v11901 = fmul i32 %v11894, i32 %v11900" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:21629->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25327]   --->   Operation 179 'fmul' 'v11901' <Predicate = true> <Delay = 4.90> <CoreInst = "FMul_maxdsp">   --->   Core 30 'FMul_maxdsp' <Latency = 1> <II = 1> <Delay = 4.90> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
 
 State 72 <SV = 71> <Delay = 4.90>
-ST_72 : Operation 180 [1/2] (4.90ns)   --->   "%v11901 = fmul i32 %v11894, i32 %v11900" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:21763->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25458]   --->   Operation 180 'fmul' 'v11901' <Predicate = true> <Delay = 4.90> <CoreInst = "FMul_maxdsp">   --->   Core 30 'FMul_maxdsp' <Latency = 1> <II = 1> <Delay = 4.90> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
-ST_72 : Operation 187 [1/1] (0.00ns)   --->   "%ret_ln0 = ret"   --->   Operation 187 'ret' 'ret_ln0' <Predicate = (icmp_ln21753)> <Delay = 0.00>
+ST_72 : Operation 180 [1/2] (4.90ns)   --->   "%v11901 = fmul i32 %v11894, i32 %v11900" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:21629->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25327]   --->   Operation 180 'fmul' 'v11901' <Predicate = true> <Delay = 4.90> <CoreInst = "FMul_maxdsp">   --->   Core 30 'FMul_maxdsp' <Latency = 1> <II = 1> <Delay = 4.90> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+ST_72 : Operation 187 [1/1] (0.00ns)   --->   "%ret_ln0 = ret"   --->   Operation 187 'ret' 'ret_ln0' <Predicate = (icmp_ln21619)> <Delay = 0.00>
 
 State 73 <SV = 72> <Delay = 2.66>
 ST_73 : Operation 181 [1/1] (0.00ns)   --->   "%specloopname_ln0 = specloopname void @_ssdm_op_SpecLoopName, void @l_gelu_i21_l_j19_str"   --->   Operation 181 'specloopname' 'specloopname_ln0' <Predicate = true> <Delay = 0.00>
 ST_73 : Operation 182 [1/1] (0.00ns)   --->   "%speclooptripcount_ln0 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 524288, i64 524288, i64 524288"   --->   Operation 182 'speclooptripcount' 'speclooptripcount_ln0' <Predicate = true> <Delay = 0.00>
-ST_73 : Operation 183 [1/1] (0.00ns)   --->   "%buffer_Q_addr = getelementptr i32 %buffer_Q, i64 0, i64 %zext_ln21764_1" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:21764->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25458]   --->   Operation 183 'getelementptr' 'buffer_Q_addr' <Predicate = true> <Delay = 0.00>
-ST_73 : Operation 184 [1/1] (0.00ns)   --->   "%specpipeline_ln21754 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_219" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:21754->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25458]   --->   Operation 184 'specpipeline' 'specpipeline_ln21754' <Predicate = true> <Delay = 0.00>
-ST_73 : Operation 185 [1/1] (2.66ns)   --->   "%store_ln21764 = store i32 %v11901, i19 %buffer_Q_addr" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:21764->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25458]   --->   Operation 185 'store' 'store_ln21764' <Predicate = true> <Delay = 2.66> <CoreInst = "RAM_2P_URAM">   --->   Core 95 'RAM_2P_URAM' <Latency = 1> <II = 1> <Delay = 2.66> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 524288> <RAM>
-ST_73 : Operation 186 [1/1] (0.00ns)   --->   "%br_ln21754 = br void %for.inc.i263" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:21754->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25458]   --->   Operation 186 'br' 'br_ln21754' <Predicate = true> <Delay = 0.00>
+ST_73 : Operation 183 [1/1] (0.00ns)   --->   "%buffer_K_addr = getelementptr i32 %buffer_K, i64 0, i64 %zext_ln21621_1" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:21630->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25327]   --->   Operation 183 'getelementptr' 'buffer_K_addr' <Predicate = true> <Delay = 0.00>
+ST_73 : Operation 184 [1/1] (0.00ns)   --->   "%specpipeline_ln21620 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_191" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:21620->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25327]   --->   Operation 184 'specpipeline' 'specpipeline_ln21620' <Predicate = true> <Delay = 0.00>
+ST_73 : Operation 185 [1/1] (2.66ns)   --->   "%store_ln21630 = store i32 %v11901, i19 %buffer_K_addr" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:21630->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25327]   --->   Operation 185 'store' 'store_ln21630' <Predicate = true> <Delay = 2.66> <CoreInst = "RAM_2P_URAM">   --->   Core 95 'RAM_2P_URAM' <Latency = 1> <II = 1> <Delay = 2.66> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 524288> <RAM>
+ST_73 : Operation 186 [1/1] (0.00ns)   --->   "%br_ln21620 = br void %for.inc.i262" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:21620->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25327]   --->   Operation 186 'br' 'br_ln21620' <Predicate = true> <Delay = 0.00>
 
 
 ============================================================
@@ -731,8 +731,8 @@ STG Binding:
 - Is pipelined: 0
 - Is top level: 0
 Port [ Return ] is wired: 1; IO mode=ap_ctrl_hs:ce=0
-Port [ buffer_Q]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=1; type=1; pingpong=0; private_global=0; MemPort=[30]; IO mode=ap_memory:ce=0
-Port [ buffer_K]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=1; pingpong=0; private_global=0; MemPort=[13]; IO mode=ap_memory:ce=0
+Port [ buffer_Q]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=1; pingpong=0; private_global=0; MemPort=[13]; IO mode=ap_memory:ce=0
+Port [ buffer_K]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=1; type=1; pingpong=0; private_global=0; MemPort=[30]; IO mode=ap_memory:ce=0
 Port [ pow_reduce_anonymous_namespace_log_inverse_lut_table_pow_0_5_64_array]:  wired=0; compound=1; hidden=1; nouse=1; global=1; static=1; extern=0; dir=0; type=1; pingpong=0; private_global=0; MemPort=[1]; IO mode=ap_memory:ce=0
 Port [ pow_reduce_anonymous_namespace_log0_lut_table_array]:  wired=0; compound=1; hidden=1; nouse=1; global=1; static=1; extern=0; dir=0; type=1; pingpong=0; private_global=0; MemPort=[1]; IO mode=ap_memory:ce=0
 Port [ pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_4_4_16_array]:  wired=0; compound=1; hidden=1; nouse=1; global=1; static=1; extern=0; dir=0; type=1; pingpong=0; private_global=0; MemPort=[1]; IO mode=ap_memory:ce=0
@@ -760,29 +760,29 @@ indvar_flatten146      (alloca           ) [ 01100000000000000000000000000000000
 specmemcore_ln0        (specmemcore      ) [ 00000000000000000000000000000000000000000000000000000000000000000000000000]
 specmemcore_ln0        (specmemcore      ) [ 00000000000000000000000000000000000000000000000000000000000000000000000000]
 store_ln0              (store            ) [ 00000000000000000000000000000000000000000000000000000000000000000000000000]
-store_ln21753          (store            ) [ 00000000000000000000000000000000000000000000000000000000000000000000000000]
-store_ln21754          (store            ) [ 00000000000000000000000000000000000000000000000000000000000000000000000000]
+store_ln21619          (store            ) [ 00000000000000000000000000000000000000000000000000000000000000000000000000]
+store_ln21620          (store            ) [ 00000000000000000000000000000000000000000000000000000000000000000000000000]
 br_ln0                 (br               ) [ 00000000000000000000000000000000000000000000000000000000000000000000000000]
 indvar_flatten146_load (load             ) [ 00000000000000000000000000000000000000000000000000000000000000000000000000]
-icmp_ln21753           (icmp             ) [ 01111111111111111111111111111111111111111111111111111111111111111111111110]
-add_ln21753_1          (add              ) [ 00000000000000000000000000000000000000000000000000000000000000000000000000]
-br_ln21753             (br               ) [ 00000000000000000000000000000000000000000000000000000000000000000000000000]
+icmp_ln21619           (icmp             ) [ 01111111111111111111111111111111111111111111111111111111111111111111111110]
+add_ln21619_1          (add              ) [ 00000000000000000000000000000000000000000000000000000000000000000000000000]
+br_ln21619             (br               ) [ 00000000000000000000000000000000000000000000000000000000000000000000000000]
 j19_load               (load             ) [ 00000000000000000000000000000000000000000000000000000000000000000000000000]
 i21_load               (load             ) [ 00000000000000000000000000000000000000000000000000000000000000000000000000]
-add_ln21753            (add              ) [ 00000000000000000000000000000000000000000000000000000000000000000000000000]
-icmp_ln21754           (icmp             ) [ 00000000000000000000000000000000000000000000000000000000000000000000000000]
-select_ln21753         (select           ) [ 00000000000000000000000000000000000000000000000000000000000000000000000000]
-select_ln21753_1       (select           ) [ 00000000000000000000000000000000000000000000000000000000000000000000000000]
-trunc_ln21764          (trunc            ) [ 00000000000000000000000000000000000000000000000000000000000000000000000000]
+add_ln21619            (add              ) [ 00000000000000000000000000000000000000000000000000000000000000000000000000]
+icmp_ln21620           (icmp             ) [ 00000000000000000000000000000000000000000000000000000000000000000000000000]
+select_ln21619         (select           ) [ 00000000000000000000000000000000000000000000000000000000000000000000000000]
+select_ln21619_1       (select           ) [ 00000000000000000000000000000000000000000000000000000000000000000000000000]
+trunc_ln21621          (trunc            ) [ 00000000000000000000000000000000000000000000000000000000000000000000000000]
 tmp_s                  (bitconcatenate   ) [ 00000000000000000000000000000000000000000000000000000000000000000000000000]
-zext_ln21764           (zext             ) [ 00000000000000000000000000000000000000000000000000000000000000000000000000]
-add_ln21764            (add              ) [ 00000000000000000000000000000000000000000000000000000000000000000000000000]
-zext_ln21764_1         (zext             ) [ 01011111111111111111111111111111111111111111111111111111111111111111111111]
-buffer_K_addr          (getelementptr    ) [ 01010000000000000000000000000000000000000000000000000000000000000000000000]
-add_ln21754            (add              ) [ 00000000000000000000000000000000000000000000000000000000000000000000000000]
-store_ln21753          (store            ) [ 00000000000000000000000000000000000000000000000000000000000000000000000000]
-store_ln21753          (store            ) [ 00000000000000000000000000000000000000000000000000000000000000000000000000]
-store_ln21754          (store            ) [ 00000000000000000000000000000000000000000000000000000000000000000000000000]
+zext_ln21621           (zext             ) [ 00000000000000000000000000000000000000000000000000000000000000000000000000]
+add_ln21621            (add              ) [ 00000000000000000000000000000000000000000000000000000000000000000000000000]
+zext_ln21621_1         (zext             ) [ 01011111111111111111111111111111111111111111111111111111111111111111111111]
+buffer_Q_addr          (getelementptr    ) [ 01010000000000000000000000000000000000000000000000000000000000000000000000]
+add_ln21620            (add              ) [ 00000000000000000000000000000000000000000000000000000000000000000000000000]
+store_ln21619          (store            ) [ 00000000000000000000000000000000000000000000000000000000000000000000000000]
+store_ln21619          (store            ) [ 00000000000000000000000000000000000000000000000000000000000000000000000000]
+store_ln21620          (store            ) [ 00000000000000000000000000000000000000000000000000000000000000000000000000]
 v11893                 (load             ) [ 01001111111111111111111111111111111111111111111111111111111111111111111000]
 x_assign               (fpext            ) [ 00000000000000000000000000000000000000000000000000000000000000000000000000]
 tmp                    (call             ) [ 01000000000000000000000100000000000000000000000000000000000000000000000000]
@@ -800,10 +800,10 @@ v11900                 (fadd             ) [ 01000000000000000000000000000000000
 v11901                 (fmul             ) [ 01000000000000000000000000000000000000000000000000000000000000000000000001]
 specloopname_ln0       (specloopname     ) [ 00000000000000000000000000000000000000000000000000000000000000000000000000]
 speclooptripcount_ln0  (speclooptripcount) [ 00000000000000000000000000000000000000000000000000000000000000000000000000]
-buffer_Q_addr          (getelementptr    ) [ 00000000000000000000000000000000000000000000000000000000000000000000000000]
-specpipeline_ln21754   (specpipeline     ) [ 00000000000000000000000000000000000000000000000000000000000000000000000000]
-store_ln21764          (store            ) [ 00000000000000000000000000000000000000000000000000000000000000000000000000]
-br_ln21754             (br               ) [ 00000000000000000000000000000000000000000000000000000000000000000000000000]
+buffer_K_addr          (getelementptr    ) [ 00000000000000000000000000000000000000000000000000000000000000000000000000]
+specpipeline_ln21620   (specpipeline     ) [ 00000000000000000000000000000000000000000000000000000000000000000000000000]
+store_ln21630          (store            ) [ 00000000000000000000000000000000000000000000000000000000000000000000000000]
+br_ln21620             (br               ) [ 00000000000000000000000000000000000000000000000000000000000000000000000000]
 ret_ln0                (ret              ) [ 00000000000000000000000000000000000000000000000000000000000000000000000000]
 </LifeTime>
 
@@ -815,7 +815,7 @@ ret_ln0                (ret              ) [ 00000000000000000000000000000000000
 <pin id="1" dir="1" index="0" bw="1" slack="0"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="buffer_Q"/><MemPortTyVec>3 0 </MemPortTyVec>
+<StgValue><ssdm name="buffer_Q"/><MemPortTyVec>1 3 </MemPortTyVec>
 </StgValue>
 </bind>
 </comp>
@@ -825,7 +825,7 @@ ret_ln0                (ret              ) [ 00000000000000000000000000000000000
 <pin id="3" dir="1" index="0" bw="1" slack="0"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="buffer_K"/><MemPortTyVec>1 3 </MemPortTyVec>
+<StgValue><ssdm name="buffer_K"/><MemPortTyVec>3 0 </MemPortTyVec>
 </StgValue>
 </bind>
 </comp>
@@ -1246,7 +1246,7 @@ ret_ln0                (ret              ) [ 00000000000000000000000000000000000
 <pin id="93" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_219"/></StgValue>
+<StgValue><ssdm name="empty_191"/></StgValue>
 </bind>
 </comp>
 
@@ -1283,7 +1283,7 @@ ret_ln0                (ret              ) [ 00000000000000000000000000000000000
 </bind>
 </comp>
 
-<comp id="106" class="1004" name="buffer_K_addr_gep_fu_106">
+<comp id="106" class="1004" name="buffer_Q_addr_gep_fu_106">
 <pin_list>
 <pin id="107" dir="0" index="0" bw="32" slack="0"/>
 <pin id="108" dir="0" index="1" bw="1" slack="0"/>
@@ -1292,7 +1292,7 @@ ret_ln0                (ret              ) [ 00000000000000000000000000000000000
 </pin_list>
 <bind>
 <opcode="getelementptr(29) " fcode="getelementptr"/>
-<opset="buffer_K_addr/2 "/>
+<opset="buffer_Q_addr/2 "/>
 </bind>
 </comp>
 
@@ -1309,7 +1309,7 @@ ret_ln0                (ret              ) [ 00000000000000000000000000000000000
 </bind>
 </comp>
 
-<comp id="119" class="1004" name="buffer_Q_addr_gep_fu_119">
+<comp id="119" class="1004" name="buffer_K_addr_gep_fu_119">
 <pin_list>
 <pin id="120" dir="0" index="0" bw="32" slack="0"/>
 <pin id="121" dir="0" index="1" bw="1" slack="0"/>
@@ -1318,11 +1318,11 @@ ret_ln0                (ret              ) [ 00000000000000000000000000000000000
 </pin_list>
 <bind>
 <opcode="getelementptr(29) " fcode="getelementptr"/>
-<opset="buffer_Q_addr/73 "/>
+<opset="buffer_K_addr/73 "/>
 </bind>
 </comp>
 
-<comp id="126" class="1004" name="store_ln21764_access_fu_126">
+<comp id="126" class="1004" name="store_ln21630_access_fu_126">
 <pin_list>
 <pin id="127" dir="0" index="0" bw="19" slack="2147483647"/>
 <pin id="128" dir="0" index="1" bw="32" slack="2147483647"/>
@@ -1335,7 +1335,7 @@ ret_ln0                (ret              ) [ 00000000000000000000000000000000000
 </pin_list>
 <bind>
 <opcode="store(28) " fcode="store"/>
-<opset="store_ln21764/73 "/>
+<opset="store_ln21630/73 "/>
 </bind>
 </comp>
 
@@ -1528,7 +1528,7 @@ ret_ln0                (ret              ) [ 00000000000000000000000000000000000
 </bind>
 </comp>
 
-<comp id="231" class="1004" name="store_ln21753_store_fu_231">
+<comp id="231" class="1004" name="store_ln21619_store_fu_231">
 <pin_list>
 <pin id="232" dir="0" index="0" bw="1" slack="0"/>
 <pin id="233" dir="0" index="1" bw="11" slack="0"/>
@@ -1536,11 +1536,11 @@ ret_ln0                (ret              ) [ 00000000000000000000000000000000000
 </pin_list>
 <bind>
 <opcode="store(28) " fcode="store"/>
-<opset="store_ln21753/1 "/>
+<opset="store_ln21619/1 "/>
 </bind>
 </comp>
 
-<comp id="236" class="1004" name="store_ln21754_store_fu_236">
+<comp id="236" class="1004" name="store_ln21620_store_fu_236">
 <pin_list>
 <pin id="237" dir="0" index="0" bw="1" slack="0"/>
 <pin id="238" dir="0" index="1" bw="10" slack="0"/>
@@ -1548,7 +1548,7 @@ ret_ln0                (ret              ) [ 00000000000000000000000000000000000
 </pin_list>
 <bind>
 <opcode="store(28) " fcode="store"/>
-<opset="store_ln21754/1 "/>
+<opset="store_ln21620/1 "/>
 </bind>
 </comp>
 
@@ -1563,7 +1563,7 @@ ret_ln0                (ret              ) [ 00000000000000000000000000000000000
 </bind>
 </comp>
 
-<comp id="244" class="1004" name="icmp_ln21753_fu_244">
+<comp id="244" class="1004" name="icmp_ln21619_fu_244">
 <pin_list>
 <pin id="245" dir="0" index="0" bw="20" slack="0"/>
 <pin id="246" dir="0" index="1" bw="20" slack="0"/>
@@ -1571,11 +1571,11 @@ ret_ln0                (ret              ) [ 00000000000000000000000000000000000
 </pin_list>
 <bind>
 <opcode="icmp(45) " fcode="icmp"/>
-<opset="icmp_ln21753/2 "/>
+<opset="icmp_ln21619/2 "/>
 </bind>
 </comp>
 
-<comp id="250" class="1004" name="add_ln21753_1_fu_250">
+<comp id="250" class="1004" name="add_ln21619_1_fu_250">
 <pin_list>
 <pin id="251" dir="0" index="0" bw="20" slack="0"/>
 <pin id="252" dir="0" index="1" bw="1" slack="0"/>
@@ -1583,7 +1583,7 @@ ret_ln0                (ret              ) [ 00000000000000000000000000000000000
 </pin_list>
 <bind>
 <opcode="add(8) " fcode="add"/>
-<opset="add_ln21753_1/2 "/>
+<opset="add_ln21619_1/2 "/>
 </bind>
 </comp>
 
@@ -1609,7 +1609,7 @@ ret_ln0                (ret              ) [ 00000000000000000000000000000000000
 </bind>
 </comp>
 
-<comp id="262" class="1004" name="add_ln21753_fu_262">
+<comp id="262" class="1004" name="add_ln21619_fu_262">
 <pin_list>
 <pin id="263" dir="0" index="0" bw="11" slack="0"/>
 <pin id="264" dir="0" index="1" bw="1" slack="0"/>
@@ -1617,11 +1617,11 @@ ret_ln0                (ret              ) [ 00000000000000000000000000000000000
 </pin_list>
 <bind>
 <opcode="add(8) " fcode="add"/>
-<opset="add_ln21753/2 "/>
+<opset="add_ln21619/2 "/>
 </bind>
 </comp>
 
-<comp id="268" class="1004" name="icmp_ln21754_fu_268">
+<comp id="268" class="1004" name="icmp_ln21620_fu_268">
 <pin_list>
 <pin id="269" dir="0" index="0" bw="10" slack="0"/>
 <pin id="270" dir="0" index="1" bw="10" slack="0"/>
@@ -1629,11 +1629,11 @@ ret_ln0                (ret              ) [ 00000000000000000000000000000000000
 </pin_list>
 <bind>
 <opcode="icmp(45) " fcode="icmp"/>
-<opset="icmp_ln21754/2 "/>
+<opset="icmp_ln21620/2 "/>
 </bind>
 </comp>
 
-<comp id="274" class="1004" name="select_ln21753_fu_274">
+<comp id="274" class="1004" name="select_ln21619_fu_274">
 <pin_list>
 <pin id="275" dir="0" index="0" bw="1" slack="0"/>
 <pin id="276" dir="0" index="1" bw="10" slack="0"/>
@@ -1642,11 +1642,11 @@ ret_ln0                (ret              ) [ 00000000000000000000000000000000000
 </pin_list>
 <bind>
 <opcode="select(49) " fcode="select"/>
-<opset="select_ln21753/2 "/>
+<opset="select_ln21619/2 "/>
 </bind>
 </comp>
 
-<comp id="282" class="1004" name="select_ln21753_1_fu_282">
+<comp id="282" class="1004" name="select_ln21619_1_fu_282">
 <pin_list>
 <pin id="283" dir="0" index="0" bw="1" slack="0"/>
 <pin id="284" dir="0" index="1" bw="11" slack="0"/>
@@ -1655,18 +1655,18 @@ ret_ln0                (ret              ) [ 00000000000000000000000000000000000
 </pin_list>
 <bind>
 <opcode="select(49) " fcode="select"/>
-<opset="select_ln21753_1/2 "/>
+<opset="select_ln21619_1/2 "/>
 </bind>
 </comp>
 
-<comp id="290" class="1004" name="trunc_ln21764_fu_290">
+<comp id="290" class="1004" name="trunc_ln21621_fu_290">
 <pin_list>
 <pin id="291" dir="0" index="0" bw="11" slack="0"/>
 <pin id="292" dir="1" index="1" bw="10" slack="0"/>
 </pin_list>
 <bind>
 <opcode="trunc(33) " fcode="trunc"/>
-<opset="trunc_ln21764/2 "/>
+<opset="trunc_ln21621/2 "/>
 </bind>
 </comp>
 
@@ -1683,18 +1683,18 @@ ret_ln0                (ret              ) [ 00000000000000000000000000000000000
 </bind>
 </comp>
 
-<comp id="302" class="1004" name="zext_ln21764_fu_302">
+<comp id="302" class="1004" name="zext_ln21621_fu_302">
 <pin_list>
 <pin id="303" dir="0" index="0" bw="10" slack="0"/>
 <pin id="304" dir="1" index="1" bw="19" slack="0"/>
 </pin_list>
 <bind>
 <opcode="zext(34) " fcode="zext"/>
-<opset="zext_ln21764/2 "/>
+<opset="zext_ln21621/2 "/>
 </bind>
 </comp>
 
-<comp id="306" class="1004" name="add_ln21764_fu_306">
+<comp id="306" class="1004" name="add_ln21621_fu_306">
 <pin_list>
 <pin id="307" dir="0" index="0" bw="19" slack="0"/>
 <pin id="308" dir="0" index="1" bw="10" slack="0"/>
@@ -1702,22 +1702,22 @@ ret_ln0                (ret              ) [ 00000000000000000000000000000000000
 </pin_list>
 <bind>
 <opcode="add(8) " fcode="add"/>
-<opset="add_ln21764/2 "/>
+<opset="add_ln21621/2 "/>
 </bind>
 </comp>
 
-<comp id="312" class="1004" name="zext_ln21764_1_fu_312">
+<comp id="312" class="1004" name="zext_ln21621_1_fu_312">
 <pin_list>
 <pin id="313" dir="0" index="0" bw="19" slack="0"/>
 <pin id="314" dir="1" index="1" bw="64" slack="0"/>
 </pin_list>
 <bind>
 <opcode="zext(34) " fcode="zext"/>
-<opset="zext_ln21764_1/2 "/>
+<opset="zext_ln21621_1/2 "/>
 </bind>
 </comp>
 
-<comp id="317" class="1004" name="add_ln21754_fu_317">
+<comp id="317" class="1004" name="add_ln21620_fu_317">
 <pin_list>
 <pin id="318" dir="0" index="0" bw="10" slack="0"/>
 <pin id="319" dir="0" index="1" bw="1" slack="0"/>
@@ -1725,11 +1725,11 @@ ret_ln0                (ret              ) [ 00000000000000000000000000000000000
 </pin_list>
 <bind>
 <opcode="add(8) " fcode="add"/>
-<opset="add_ln21754/2 "/>
+<opset="add_ln21620/2 "/>
 </bind>
 </comp>
 
-<comp id="323" class="1004" name="store_ln21753_store_fu_323">
+<comp id="323" class="1004" name="store_ln21619_store_fu_323">
 <pin_list>
 <pin id="324" dir="0" index="0" bw="20" slack="0"/>
 <pin id="325" dir="0" index="1" bw="20" slack="1"/>
@@ -1737,11 +1737,11 @@ ret_ln0                (ret              ) [ 00000000000000000000000000000000000
 </pin_list>
 <bind>
 <opcode="store(28) " fcode="store"/>
-<opset="store_ln21753/2 "/>
+<opset="store_ln21619/2 "/>
 </bind>
 </comp>
 
-<comp id="328" class="1004" name="store_ln21753_store_fu_328">
+<comp id="328" class="1004" name="store_ln21619_store_fu_328">
 <pin_list>
 <pin id="329" dir="0" index="0" bw="11" slack="0"/>
 <pin id="330" dir="0" index="1" bw="11" slack="1"/>
@@ -1749,11 +1749,11 @@ ret_ln0                (ret              ) [ 00000000000000000000000000000000000
 </pin_list>
 <bind>
 <opcode="store(28) " fcode="store"/>
-<opset="store_ln21753/2 "/>
+<opset="store_ln21619/2 "/>
 </bind>
 </comp>
 
-<comp id="333" class="1004" name="store_ln21754_store_fu_333">
+<comp id="333" class="1004" name="store_ln21620_store_fu_333">
 <pin_list>
 <pin id="334" dir="0" index="0" bw="10" slack="0"/>
 <pin id="335" dir="0" index="1" bw="10" slack="1"/>
@@ -1761,7 +1761,7 @@ ret_ln0                (ret              ) [ 00000000000000000000000000000000000
 </pin_list>
 <bind>
 <opcode="store(28) " fcode="store"/>
-<opset="store_ln21754/2 "/>
+<opset="store_ln21620/2 "/>
 </bind>
 </comp>
 
@@ -1795,33 +1795,33 @@ ret_ln0                (ret              ) [ 00000000000000000000000000000000000
 </bind>
 </comp>
 
-<comp id="359" class="1005" name="icmp_ln21753_reg_359">
+<comp id="359" class="1005" name="icmp_ln21619_reg_359">
 <pin_list>
 <pin id="360" dir="0" index="0" bw="1" slack="2"/>
 <pin id="361" dir="1" index="1" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<opset="icmp_ln21753 "/>
+<opset="icmp_ln21619 "/>
 </bind>
 </comp>
 
-<comp id="363" class="1005" name="zext_ln21764_1_reg_363">
+<comp id="363" class="1005" name="zext_ln21621_1_reg_363">
 <pin_list>
 <pin id="364" dir="0" index="0" bw="64" slack="71"/>
 <pin id="365" dir="1" index="1" bw="64" slack="71"/>
 </pin_list>
 <bind>
-<opset="zext_ln21764_1 "/>
+<opset="zext_ln21621_1 "/>
 </bind>
 </comp>
 
-<comp id="368" class="1005" name="buffer_K_addr_reg_368">
+<comp id="368" class="1005" name="buffer_Q_addr_reg_368">
 <pin_list>
 <pin id="369" dir="0" index="0" bw="19" slack="1"/>
 <pin id="370" dir="1" index="1" bw="19" slack="1"/>
 </pin_list>
 <bind>
-<opset="buffer_K_addr "/>
+<opset="buffer_Q_addr "/>
 </bind>
 </comp>
 
@@ -1974,13 +1974,13 @@ ret_ln0                (ret              ) [ 00000000000000000000000000000000000
 
 <net id="105"><net_src comp="34" pin="0"/><net_sink comp="102" pin=0"/></net>
 
-<net id="111"><net_src comp="2" pin="0"/><net_sink comp="106" pin=0"/></net>
+<net id="111"><net_src comp="0" pin="0"/><net_sink comp="106" pin=0"/></net>
 
 <net id="112"><net_src comp="62" pin="0"/><net_sink comp="106" pin=1"/></net>
 
 <net id="118"><net_src comp="106" pin="3"/><net_sink comp="113" pin=0"/></net>
 
-<net id="124"><net_src comp="0" pin="0"/><net_sink comp="119" pin=0"/></net>
+<net id="124"><net_src comp="2" pin="0"/><net_sink comp="119" pin=0"/></net>
 
 <net id="125"><net_src comp="62" pin="0"/><net_sink comp="119" pin=1"/></net>
 
@@ -2199,7 +2199,7 @@ ret_ln0                (ret              ) [ 00000000000000000000000000000000000
 
 * FSMD analyzer results:
   - Output states:
-	Port: buffer_Q | {73 }
+	Port: buffer_K | {73 }
 	Port: pow_reduce_anonymous_namespace_log_inverse_lut_table_pow_0_5_64_array | {}
 	Port: pow_reduce_anonymous_namespace_log0_lut_table_array | {}
 	Port: pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_4_4_16_array | {}
@@ -2216,7 +2216,7 @@ ret_ln0                (ret              ) [ 00000000000000000000000000000000000
 	Port: table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array | {}
 	Port: table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array | {}
  - Input state : 
-	Port: allo_DDitBlock_Pipeline_l_gelu_i21_l_j19 : buffer_K | {2 3 }
+	Port: allo_DDitBlock_Pipeline_l_gelu_i21_l_j19 : buffer_Q | {2 3 }
 	Port: allo_DDitBlock_Pipeline_l_gelu_i21_l_j19 : pow_reduce_anonymous_namespace_log_inverse_lut_table_pow_0_5_64_array | {4 5 }
 	Port: allo_DDitBlock_Pipeline_l_gelu_i21_l_j19 : pow_reduce_anonymous_namespace_log0_lut_table_array | {12 13 }
 	Port: allo_DDitBlock_Pipeline_l_gelu_i21_l_j19 : pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_4_4_16_array | {12 13 }
@@ -2235,27 +2235,27 @@ ret_ln0                (ret              ) [ 00000000000000000000000000000000000
   - Chain level:
 	State 1
 		store_ln0 : 1
-		store_ln21753 : 1
-		store_ln21754 : 1
+		store_ln21619 : 1
+		store_ln21620 : 1
 	State 2
-		icmp_ln21753 : 1
-		add_ln21753_1 : 1
-		br_ln21753 : 2
-		add_ln21753 : 1
-		icmp_ln21754 : 1
-		select_ln21753 : 2
-		select_ln21753_1 : 2
-		trunc_ln21764 : 3
+		icmp_ln21619 : 1
+		add_ln21619_1 : 1
+		br_ln21619 : 2
+		add_ln21619 : 1
+		icmp_ln21620 : 1
+		select_ln21619 : 2
+		select_ln21619_1 : 2
+		trunc_ln21621 : 3
 		tmp_s : 4
-		zext_ln21764 : 3
-		add_ln21764 : 5
-		zext_ln21764_1 : 6
-		buffer_K_addr : 7
+		zext_ln21621 : 3
+		add_ln21621 : 5
+		zext_ln21621_1 : 6
+		buffer_Q_addr : 7
 		v11893 : 8
-		add_ln21754 : 3
-		store_ln21753 : 2
-		store_ln21753 : 3
-		store_ln21754 : 4
+		add_ln21620 : 3
+		store_ln21619 : 2
+		store_ln21619 : 3
+		store_ln21620 : 4
 	State 3
 	State 4
 		tmp : 1
@@ -2331,7 +2331,7 @@ ret_ln0                (ret              ) [ 00000000000000000000000000000000000
 	State 71
 	State 72
 	State 73
-		store_ln21764 : 1
+		store_ln21630 : 1
 
 
 ============================================================
@@ -2354,16 +2354,16 @@ ret_ln0                (ret              ) [ 00000000000000000000000000000000000
 |   fmul   |            grp_fu_185           |    3    |    0    |   128   |    77   |
 |          |            grp_fu_190           |    3    |    0    |   128   |    77   |
 |----------|---------------------------------|---------|---------|---------|---------|
-|          |       add_ln21753_1_fu_250      |    0    |    0    |    0    |    27   |
-|    add   |        add_ln21753_fu_262       |    0    |    0    |    0    |    18   |
-|          |        add_ln21764_fu_306       |    0    |    0    |    0    |    26   |
-|          |        add_ln21754_fu_317       |    0    |    0    |    0    |    17   |
+|          |       add_ln21619_1_fu_250      |    0    |    0    |    0    |    27   |
+|    add   |        add_ln21619_fu_262       |    0    |    0    |    0    |    18   |
+|          |        add_ln21621_fu_306       |    0    |    0    |    0    |    26   |
+|          |        add_ln21620_fu_317       |    0    |    0    |    0    |    17   |
 |----------|---------------------------------|---------|---------|---------|---------|
-|   icmp   |       icmp_ln21753_fu_244       |    0    |    0    |    0    |    27   |
-|          |       icmp_ln21754_fu_268       |    0    |    0    |    0    |    17   |
+|   icmp   |       icmp_ln21619_fu_244       |    0    |    0    |    0    |    27   |
+|          |       icmp_ln21620_fu_268       |    0    |    0    |    0    |    17   |
 |----------|---------------------------------|---------|---------|---------|---------|
-|  select  |      select_ln21753_fu_274      |    0    |    0    |    0    |    10   |
-|          |     select_ln21753_1_fu_282     |    0    |    0    |    0    |    11   |
+|  select  |      select_ln21619_fu_274      |    0    |    0    |    0    |    10   |
+|          |     select_ln21619_1_fu_282     |    0    |    0    |    0    |    11   |
 |----------|---------------------------------|---------|---------|---------|---------|
 |          |            grp_fu_194           |    0    |    0    |    0    |    0    |
 |  fptrunc |            grp_fu_198           |    0    |    0    |    0    |    0    |
@@ -2373,12 +2373,12 @@ ret_ln0                (ret              ) [ 00000000000000000000000000000000000
 |   fpext  |          conv9_i_fu_208         |    0    |    0    |    0    |    0    |
 |          |         conv12_i_fu_211         |    0    |    0    |    0    |    0    |
 |----------|---------------------------------|---------|---------|---------|---------|
-|   trunc  |       trunc_ln21764_fu_290      |    0    |    0    |    0    |    0    |
+|   trunc  |       trunc_ln21621_fu_290      |    0    |    0    |    0    |    0    |
 |----------|---------------------------------|---------|---------|---------|---------|
 |bitconcatenate|           tmp_s_fu_294          |    0    |    0    |    0    |    0    |
 |----------|---------------------------------|---------|---------|---------|---------|
-|   zext   |       zext_ln21764_fu_302       |    0    |    0    |    0    |    0    |
-|          |      zext_ln21764_1_fu_312      |    0    |    0    |    0    |    0    |
+|   zext   |       zext_ln21621_fu_302       |    0    |    0    |    0    |    0    |
+|          |      zext_ln21621_1_fu_312      |    0    |    0    |    0    |    0    |
 |----------|---------------------------------|---------|---------|---------|---------|
 |   Total  |                                 |   155   | 10.5804 |   5392  |  11034  |
 |----------|---------------------------------|---------|---------|---------|---------|
@@ -2390,11 +2390,11 @@ N/A
 +-------------------------+--------+
 |                         |   FF   |
 +-------------------------+--------+
-|  buffer_K_addr_reg_368  |   19   |
+|  buffer_Q_addr_reg_368  |   19   |
 |     conv12_i_reg_410    |   64   |
 |     conv9_i_reg_390     |   64   |
 |       i21_reg_345       |   11   |
-|   icmp_ln21753_reg_359  |    1   |
+|   icmp_ln21619_reg_359  |    1   |
 |indvar_flatten146_reg_352|   20   |
 |       j19_reg_338       |   10   |
 |     mul10_i_reg_395     |   64   |
@@ -2409,7 +2409,7 @@ N/A
 |      v11899_reg_425     |   32   |
 |      v11900_reg_435     |   32   |
 |      v11901_reg_440     |   32   |
-|  zext_ln21764_1_reg_363 |   64   |
+|  zext_ln21621_1_reg_363 |   64   |
 +-------------------------+--------+
 |          Total          |   733  |
 +-------------------------+--------+

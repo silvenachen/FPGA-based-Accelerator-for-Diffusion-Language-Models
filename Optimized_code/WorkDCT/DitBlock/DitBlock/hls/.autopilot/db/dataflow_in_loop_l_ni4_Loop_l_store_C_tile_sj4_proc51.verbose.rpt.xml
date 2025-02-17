@@ -1,0 +1,199 @@
+<profile>
+
+<section name = "Vitis HLS Report for 'dataflow_in_loop_l_ni4_Loop_l_store_C_tile_sj4_proc51'" level="0">
+<item name = "Date">Mon Feb 17 20:38:30 2025
+</item>
+<item name = "Version">2023.2 (Build 4023990 on Oct 11 2023)</item>
+<item name = "Project">DitBlock</item>
+<item name = "Solution">hls (Vivado IP Flow Target)</item>
+<item name = "Product family">virtexuplusHBM</item>
+<item name = "Target device">xcu280-fsvh2892-2L-e</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">10.00 ns, 5.644 ns, 2.70 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">67, 67, 0.670 us, 0.670 us, 67, 67, no</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+<column name="grp_dataflow_in_loop_l_ni4_Loop_l_store_C_tile_sj4_proc51_Pipeline_l_store_C_tile_sj_fu_564">dataflow_in_loop_l_ni4_Loop_l_store_C_tile_sj4_proc51_Pipeline_l_store_C_tile_sj, 66, 66, 0.660 us, 0.660 us, 66, 66, no</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Utilization Estimates" level="0">
+<item name = "Summary"><table name="" hasTotal="1">
+<keys size="6">Name, BRAM_18K, DSP, FF, LUT, URAM</keys>
+<column name="DSP">-, -, -, -, -</column>
+<column name="Expression">-, -, 0, 2, -</column>
+<column name="FIFO">-, -, -, -, -</column>
+<column name="Instance">-, -, 17, 585, -</column>
+<column name="Memory">-, -, -, -, -</column>
+<column name="Multiplexer">-, -, -, 41, -</column>
+<column name="Register">-, -, 18, -, -</column>
+<specialColumn name="Available SLR">1344, 3008, 869120, 434560, 320</specialColumn>
+<specialColumn name="Utilization SLR (%)">0, 0, ~0, ~0, 0</specialColumn>
+<specialColumn name="Available">4032, 9024, 2607360, 1303680, 960</specialColumn>
+<specialColumn name="Utilization (%)">0, 0, ~0, ~0, 0</specialColumn>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="1">
+<keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
+<column name="grp_dataflow_in_loop_l_ni4_Loop_l_store_C_tile_sj4_proc51_Pipeline_l_store_C_tile_sj_fu_564">dataflow_in_loop_l_ni4_Loop_l_store_C_tile_sj4_proc51_Pipeline_l_store_C_tile_sj, 0, 0, 17, 585, 0</column>
+</table>
+</item>
+<item name = "DSP"><table name="" hasTotal="0">
+<keys size="3">Instance, Module, Expression</keys>
+</table>
+</item>
+<item name = "Memory"><table name="" hasTotal="1">
+<keys size="10">Memory, Module, BRAM_18K, FF, LUT, URAM, Words, Bits, Banks, W*Bits*Banks</keys>
+</table>
+</item>
+<item name = "FIFO"><table name="" hasTotal="1">
+<keys size="8">Name, BRAM_18K, FF, LUT, URAM, Depth, Bits, Size:D*B</keys>
+</table>
+</item>
+<item name = "Expression"><table name="" hasTotal="1">
+<keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
+<column name="ap_block_state1">or, 0, 0, 2, 1, 1</column>
+</table>
+</item>
+<item name = "Multiplexer"><table name="" hasTotal="1">
+<keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
+<column name="ap_NS_fsm">14, 3, 1, 3</column>
+<column name="ap_done">9, 2, 1, 2</column>
+<column name="mi4_blk_n">9, 2, 1, 2</column>
+<column name="ni4_blk_n">9, 2, 1, 2</column>
+</table>
+</item>
+<item name = "Register"><table name="" hasTotal="1">
+<keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
+<column name="ap_CS_fsm">2, 0, 2, 0</column>
+<column name="ap_done_reg">1, 0, 1, 0</column>
+<column name="grp_dataflow_in_loop_l_ni4_Loop_l_store_C_tile_sj4_proc51_Pipeline_l_store_C_tile_sj_fu_564_ap_start_reg">1, 0, 1, 0</column>
+<column name="tmp_reg_718">7, 0, 10, 3</column>
+<column name="tmp_s_reg_723">7, 0, 10, 3</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Interface" level="0">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">RTL Ports, Dir, Bits, Protocol, Source Object, C Type</keys>
+<column name="ap_clk">in, 1, ap_ctrl_hs, dataflow_in_loop_l_ni4_Loop_l_store_C_tile_sj4_proc51, return value</column>
+<column name="ap_rst">in, 1, ap_ctrl_hs, dataflow_in_loop_l_ni4_Loop_l_store_C_tile_sj4_proc51, return value</column>
+<column name="ap_start">in, 1, ap_ctrl_hs, dataflow_in_loop_l_ni4_Loop_l_store_C_tile_sj4_proc51, return value</column>
+<column name="ap_done">out, 1, ap_ctrl_hs, dataflow_in_loop_l_ni4_Loop_l_store_C_tile_sj4_proc51, return value</column>
+<column name="ap_continue">in, 1, ap_ctrl_hs, dataflow_in_loop_l_ni4_Loop_l_store_C_tile_sj4_proc51, return value</column>
+<column name="ap_idle">out, 1, ap_ctrl_hs, dataflow_in_loop_l_ni4_Loop_l_store_C_tile_sj4_proc51, return value</column>
+<column name="ap_ready">out, 1, ap_ctrl_hs, dataflow_in_loop_l_ni4_Loop_l_store_C_tile_sj4_proc51, return value</column>
+<column name="ni4_dout">in, 7, ap_fifo, ni4, pointer</column>
+<column name="ni4_num_data_valid">in, 3, ap_fifo, ni4, pointer</column>
+<column name="ni4_fifo_cap">in, 3, ap_fifo, ni4, pointer</column>
+<column name="ni4_empty_n">in, 1, ap_fifo, ni4, pointer</column>
+<column name="ni4_read">out, 1, ap_fifo, ni4, pointer</column>
+<column name="local_C4_63_i">in, 32, ap_none, local_C4_63_i, pointer</column>
+<column name="local_C4_62_i">in, 32, ap_none, local_C4_62_i, pointer</column>
+<column name="local_C4_61_i">in, 32, ap_none, local_C4_61_i, pointer</column>
+<column name="local_C4_60_i">in, 32, ap_none, local_C4_60_i, pointer</column>
+<column name="local_C4_59_i">in, 32, ap_none, local_C4_59_i, pointer</column>
+<column name="local_C4_58_i">in, 32, ap_none, local_C4_58_i, pointer</column>
+<column name="local_C4_57_i">in, 32, ap_none, local_C4_57_i, pointer</column>
+<column name="local_C4_56_i">in, 32, ap_none, local_C4_56_i, pointer</column>
+<column name="local_C4_55_i">in, 32, ap_none, local_C4_55_i, pointer</column>
+<column name="local_C4_54_i">in, 32, ap_none, local_C4_54_i, pointer</column>
+<column name="local_C4_53_i">in, 32, ap_none, local_C4_53_i, pointer</column>
+<column name="local_C4_52_i">in, 32, ap_none, local_C4_52_i, pointer</column>
+<column name="local_C4_51_i">in, 32, ap_none, local_C4_51_i, pointer</column>
+<column name="local_C4_50_i">in, 32, ap_none, local_C4_50_i, pointer</column>
+<column name="local_C4_49_i">in, 32, ap_none, local_C4_49_i, pointer</column>
+<column name="local_C4_48_i">in, 32, ap_none, local_C4_48_i, pointer</column>
+<column name="local_C4_47_i">in, 32, ap_none, local_C4_47_i, pointer</column>
+<column name="local_C4_46_i">in, 32, ap_none, local_C4_46_i, pointer</column>
+<column name="local_C4_45_i">in, 32, ap_none, local_C4_45_i, pointer</column>
+<column name="local_C4_44_i">in, 32, ap_none, local_C4_44_i, pointer</column>
+<column name="local_C4_43_i">in, 32, ap_none, local_C4_43_i, pointer</column>
+<column name="local_C4_42_i">in, 32, ap_none, local_C4_42_i, pointer</column>
+<column name="local_C4_41_i">in, 32, ap_none, local_C4_41_i, pointer</column>
+<column name="local_C4_40_i">in, 32, ap_none, local_C4_40_i, pointer</column>
+<column name="local_C4_39_i">in, 32, ap_none, local_C4_39_i, pointer</column>
+<column name="local_C4_38_i">in, 32, ap_none, local_C4_38_i, pointer</column>
+<column name="local_C4_37_i">in, 32, ap_none, local_C4_37_i, pointer</column>
+<column name="local_C4_36_i">in, 32, ap_none, local_C4_36_i, pointer</column>
+<column name="local_C4_35_i">in, 32, ap_none, local_C4_35_i, pointer</column>
+<column name="local_C4_34_i">in, 32, ap_none, local_C4_34_i, pointer</column>
+<column name="local_C4_33_i">in, 32, ap_none, local_C4_33_i, pointer</column>
+<column name="local_C4_32_i">in, 32, ap_none, local_C4_32_i, pointer</column>
+<column name="local_C4_31_i">in, 32, ap_none, local_C4_31_i, pointer</column>
+<column name="local_C4_30_i">in, 32, ap_none, local_C4_30_i, pointer</column>
+<column name="local_C4_29_i">in, 32, ap_none, local_C4_29_i, pointer</column>
+<column name="local_C4_28_i">in, 32, ap_none, local_C4_28_i, pointer</column>
+<column name="local_C4_27_i">in, 32, ap_none, local_C4_27_i, pointer</column>
+<column name="local_C4_26_i">in, 32, ap_none, local_C4_26_i, pointer</column>
+<column name="local_C4_25_i">in, 32, ap_none, local_C4_25_i, pointer</column>
+<column name="local_C4_24_i">in, 32, ap_none, local_C4_24_i, pointer</column>
+<column name="local_C4_23_i">in, 32, ap_none, local_C4_23_i, pointer</column>
+<column name="local_C4_22_i">in, 32, ap_none, local_C4_22_i, pointer</column>
+<column name="local_C4_21_i">in, 32, ap_none, local_C4_21_i, pointer</column>
+<column name="local_C4_20_i">in, 32, ap_none, local_C4_20_i, pointer</column>
+<column name="local_C4_19_i">in, 32, ap_none, local_C4_19_i, pointer</column>
+<column name="local_C4_18_i">in, 32, ap_none, local_C4_18_i, pointer</column>
+<column name="local_C4_17_i">in, 32, ap_none, local_C4_17_i, pointer</column>
+<column name="local_C4_16_i">in, 32, ap_none, local_C4_16_i, pointer</column>
+<column name="local_C4_15_i">in, 32, ap_none, local_C4_15_i, pointer</column>
+<column name="local_C4_14_i">in, 32, ap_none, local_C4_14_i, pointer</column>
+<column name="local_C4_13_i">in, 32, ap_none, local_C4_13_i, pointer</column>
+<column name="local_C4_12_i">in, 32, ap_none, local_C4_12_i, pointer</column>
+<column name="local_C4_11_i">in, 32, ap_none, local_C4_11_i, pointer</column>
+<column name="local_C4_10_i">in, 32, ap_none, local_C4_10_i, pointer</column>
+<column name="local_C4_9_i">in, 32, ap_none, local_C4_9_i, pointer</column>
+<column name="local_C4_8_i">in, 32, ap_none, local_C4_8_i, pointer</column>
+<column name="local_C4_7_i">in, 32, ap_none, local_C4_7_i, pointer</column>
+<column name="local_C4_6_i">in, 32, ap_none, local_C4_6_i, pointer</column>
+<column name="local_C4_5_i">in, 32, ap_none, local_C4_5_i, pointer</column>
+<column name="local_C4_4_i">in, 32, ap_none, local_C4_4_i, pointer</column>
+<column name="local_C4_3_i">in, 32, ap_none, local_C4_3_i, pointer</column>
+<column name="local_C4_2_i">in, 32, ap_none, local_C4_2_i, pointer</column>
+<column name="local_C4_1_i">in, 32, ap_none, local_C4_1_i, pointer</column>
+<column name="local_C4_i">in, 32, ap_none, local_C4_i, pointer</column>
+<column name="mi4_dout">in, 7, ap_fifo, mi4, pointer</column>
+<column name="mi4_num_data_valid">in, 3, ap_fifo, mi4, pointer</column>
+<column name="mi4_fifo_cap">in, 3, ap_fifo, mi4, pointer</column>
+<column name="mi4_empty_n">in, 1, ap_fifo, mi4, pointer</column>
+<column name="mi4_read">out, 1, ap_fifo, mi4, pointer</column>
+<column name="v6884_address1">out, 20, ap_memory, v6884, array</column>
+<column name="v6884_ce1">out, 1, ap_memory, v6884, array</column>
+<column name="v6884_we1">out, 1, ap_memory, v6884, array</column>
+<column name="v6884_d1">out, 32, ap_memory, v6884, array</column>
+</table>
+</item>
+</section>
+</profile>

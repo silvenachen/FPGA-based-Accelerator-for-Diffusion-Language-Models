@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'adaLN_modulate'" level="0">
-<item name = "Date">Wed Feb  5 22:34:01 2025
+<item name = "Date">Mon Feb 17 20:36:08 2025
 </item>
 <item name = "Version">2023.2 (Build 4023990 on Oct 11 2023)</item>
 <item name = "Project">DitBlock</item>
@@ -31,7 +31,7 @@
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="grp_adaLN_modulate_Pipeline_VITIS_LOOP_522_2_fu_118">adaLN_modulate_Pipeline_VITIS_LOOP_522_2, 514, 514, 5.140 us, 5.140 us, 514, 514, no</column>
+<column name="grp_adaLN_modulate_Pipeline_VITIS_LOOP_466_2_fu_118">adaLN_modulate_Pipeline_VITIS_LOOP_466_2, 514, 514, 5.140 us, 5.140 us, 514, 514, no</column>
 <column name="grp_adaLN_modulate_Pipeline_l_load_A_tile_ak_fu_124">adaLN_modulate_Pipeline_l_load_A_tile_ak, 130, 130, 1.300 us, 1.300 us, 130, 130, no</column>
 <column name="grp_adaLN_modulate_Pipeline_l_load_B_tile_bk_l_bj_fu_132">adaLN_modulate_Pipeline_l_load_B_tile_bk_l_bj, 1026, 1026, 10.260 us, 10.260 us, 1026, 1026, no</column>
 <column name="grp_adaLN_modulate_Pipeline_l_bias_add_fu_147">adaLN_modulate_Pipeline_l_bias_add, 518, 518, 5.180 us, 5.180 us, 518, 518, no</column>

@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'scaled_dot_product_attention_Pipeline_l_mha_merge_i17_l_j15'
 ================================================================
-* Date:           Wed Feb  5 22:36:54 2025
+* Date:           Mon Feb 17 20:39:05 2025
 
 * Version:        2023.2 (Build 4023990 on Oct 11 2023)
 * Project:        DitBlock
@@ -89,15 +89,15 @@
     +----------------------------+----------+----+---+----+------------+------------+
     |        Variable Name       | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
     +----------------------------+----------+----+---+----+------------+------------+
-    |add_ln15738_1_fu_131_p2     |         +|   0|  0|  24|          17|           1|
-    |add_ln15738_fu_143_p2       |         +|   0|  0|  18|          11|           1|
-    |add_ln15739_fu_207_p2       |         +|   0|  0|  14|           7|           1|
-    |add_ln15740_fu_187_p2       |         +|   0|  0|  23|          16|          16|
-    |add_ln15741_fu_202_p2       |         +|   0|  0|  16|           9|           9|
-    |icmp_ln15738_fu_125_p2      |      icmp|   0|  0|  25|          17|          18|
-    |icmp_ln15739_fu_149_p2      |      icmp|   0|  0|  15|           7|           8|
-    |select_ln15738_1_fu_163_p3  |    select|   0|  0|  11|           1|          11|
-    |select_ln15738_fu_155_p3    |    select|   0|  0|   7|           1|           1|
+    |add_ln15627_1_fu_131_p2     |         +|   0|  0|  24|          17|           1|
+    |add_ln15627_fu_143_p2       |         +|   0|  0|  18|          11|           1|
+    |add_ln15628_fu_207_p2       |         +|   0|  0|  14|           7|           1|
+    |add_ln15629_fu_187_p2       |         +|   0|  0|  23|          16|          16|
+    |add_ln15630_fu_202_p2       |         +|   0|  0|  16|           9|           9|
+    |icmp_ln15627_fu_125_p2      |      icmp|   0|  0|  25|          17|          18|
+    |icmp_ln15628_fu_149_p2      |      icmp|   0|  0|  15|           7|           8|
+    |select_ln15627_1_fu_163_p3  |    select|   0|  0|  11|           1|          11|
+    |select_ln15627_fu_155_p3    |    select|   0|  0|   7|           1|           1|
     |ap_enable_pp0               |       xor|   0|  0|   2|           1|           2|
     +----------------------------+----------+----+---+----+------------+------------+
     |Total                       |          |   0|  0| 155|          87|          68|
@@ -111,7 +111,7 @@
     |ap_enable_reg_pp0_iter1  |   9|          2|    1|          2|
     |ap_enable_reg_pp0_iter2  |   9|          2|    1|          2|
     |i17_fu_62                |   9|          2|   11|         22|
-    |indvar_flatten59_fu_66   |   9|          2|   17|         34|
+    |indvar_flatten45_fu_66   |   9|          2|   17|         34|
     |j15_fu_58                |   9|          2|    7|         14|
     +-------------------------+----+-----------+-----+-----------+
     |Total                    |  54|         12|   38|         76|
@@ -121,15 +121,15 @@
     +-------------------------+----+----+-----+-----------+
     |           Name          | FF | LUT| Bits| Const Bits|
     +-------------------------+----+----+-----+-----------+
-    |add_ln15741_reg_278      |   9|   0|    9|          0|
+    |add_ln15630_reg_278      |   9|   0|    9|          0|
     |ap_CS_fsm                |   1|   0|    1|          0|
     |ap_done_reg              |   1|   0|    1|          0|
     |ap_enable_reg_pp0_iter1  |   1|   0|    1|          0|
     |ap_enable_reg_pp0_iter2  |   1|   0|    1|          0|
     |i17_fu_62                |  11|   0|   11|          0|
-    |indvar_flatten59_fu_66   |  17|   0|   17|          0|
+    |indvar_flatten45_fu_66   |  17|   0|   17|          0|
     |j15_fu_58                |   7|   0|    7|          0|
-    |trunc_ln15740_reg_268    |  10|   0|   10|          0|
+    |trunc_ln15629_reg_268    |  10|   0|   10|          0|
     +-------------------------+----+----+-----+-----------+
     |Total                    |  58|   0|   58|          0|
     +-------------------------+----+----+-----+-----------+
@@ -149,10 +149,10 @@
 |ap_done         |  out|    1|  ap_ctrl_hs|  scaled_dot_product_attention_Pipeline_l_mha_merge_i17_l_j15|  return value|
 |ap_idle         |  out|    1|  ap_ctrl_hs|  scaled_dot_product_attention_Pipeline_l_mha_merge_i17_l_j15|  return value|
 |ap_ready        |  out|    1|  ap_ctrl_hs|  scaled_dot_product_attention_Pipeline_l_mha_merge_i17_l_j15|  return value|
-|C_h_address0    |  out|   16|   ap_memory|                                                          C_h|         array|
-|C_h_ce0         |  out|    1|   ap_memory|                                                          C_h|         array|
-|C_h_q0          |   in|   32|   ap_memory|                                                          C_h|         array|
-|tmp_27          |   in|    9|     ap_none|                                                       tmp_27|        scalar|
+|Q_h_address0    |  out|   16|   ap_memory|                                                          Q_h|         array|
+|Q_h_ce0         |  out|    1|   ap_memory|                                                          Q_h|         array|
+|Q_h_q0          |   in|   32|   ap_memory|                                                          Q_h|         array|
+|tmp_4           |   in|    9|     ap_none|                                                        tmp_4|        scalar|
 |v8567_address1  |  out|   19|   ap_memory|                                                        v8567|         array|
 |v8567_ce1       |  out|    1|   ap_memory|                                                        v8567|         array|
 |v8567_we1       |  out|    1|   ap_memory|                                                        v8567|         array|

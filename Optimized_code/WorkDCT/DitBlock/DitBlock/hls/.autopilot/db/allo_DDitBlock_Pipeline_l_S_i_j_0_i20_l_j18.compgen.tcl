@@ -11,14 +11,14 @@ if {${::AESL::PGuard_autoexp_gen}} {
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 3016 \
+    id 3472 \
     name buffer_Q \
     reset_level 1 \
     sync_rst true \
-    dir I \
+    dir O \
     corename buffer_Q \
     op interface \
-    ports { buffer_Q_address0 { O 19 vector } buffer_Q_ce0 { O 1 bit } buffer_Q_q0 { I 32 vector } } \
+    ports { buffer_Q_address1 { O 19 vector } buffer_Q_ce1 { O 1 bit } buffer_Q_we1 { O 1 bit } buffer_Q_d1 { O 32 vector } } \
 } "
 } else {
 puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'buffer_Q'"
@@ -30,14 +30,14 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 3017 \
+    id 3473 \
     name buffer_K \
     reset_level 1 \
     sync_rst true \
-    dir O \
+    dir I \
     corename buffer_K \
     op interface \
-    ports { buffer_K_address1 { O 19 vector } buffer_K_ce1 { O 1 bit } buffer_K_we1 { O 1 bit } buffer_K_d1 { O 32 vector } } \
+    ports { buffer_K_address0 { O 19 vector } buffer_K_ce0 { O 1 bit } buffer_K_q0 { I 32 vector } } \
 } "
 } else {
 puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'buffer_K'"
@@ -49,7 +49,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 3018 \
+    id 3474 \
     name buffer0 \
     reset_level 1 \
     sync_rst true \

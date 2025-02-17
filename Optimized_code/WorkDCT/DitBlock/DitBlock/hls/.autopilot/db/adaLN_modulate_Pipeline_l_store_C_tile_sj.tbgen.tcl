@@ -15,7 +15,7 @@ set DLRegItemOffset 0
 set C_modelName {adaLN_modulate_Pipeline_l_store_C_tile_sj}
 set C_modelType { void 0 }
 set C_modelArgList {
-	{ tmp_104 int 9 regular  }
+	{ tmp_91 int 9 regular  }
 	{ local_C_0_load float 32 regular  }
 	{ local_C_0_1_load float 32 regular  }
 	{ local_C_0_2_load float 32 regular  }
@@ -29,7 +29,7 @@ set C_modelArgList {
 set hasAXIMCache 0
 set AXIMCacheInstList { }
 set C_modelArgMapList {[ 
-	{ "Name" : "tmp_104", "interface" : "wire", "bitwidth" : 9, "direction" : "READONLY"} , 
+	{ "Name" : "tmp_91", "interface" : "wire", "bitwidth" : 9, "direction" : "READONLY"} , 
  	{ "Name" : "local_C_0_load", "interface" : "wire", "bitwidth" : 32, "direction" : "READONLY"} , 
  	{ "Name" : "local_C_0_1_load", "interface" : "wire", "bitwidth" : 32, "direction" : "READONLY"} , 
  	{ "Name" : "local_C_0_2_load", "interface" : "wire", "bitwidth" : 32, "direction" : "READONLY"} , 
@@ -48,7 +48,7 @@ set portList {
 	{ ap_done sc_out sc_logic 1 predone -1 } 
 	{ ap_idle sc_out sc_logic 1 done -1 } 
 	{ ap_ready sc_out sc_logic 1 ready -1 } 
-	{ tmp_104 sc_in sc_lv 9 signal 0 } 
+	{ tmp_91 sc_in sc_lv 9 signal 0 } 
 	{ local_C_0_load sc_in sc_lv 32 signal 1 } 
 	{ local_C_0_1_load sc_in sc_lv 32 signal 2 } 
 	{ local_C_0_2_load sc_in sc_lv 32 signal 3 } 
@@ -69,7 +69,7 @@ set NewPortList {[
  	{ "name": "ap_done", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "predone", "bundle":{"name": "ap_done", "role": "default" }} , 
  	{ "name": "ap_idle", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "done", "bundle":{"name": "ap_idle", "role": "default" }} , 
  	{ "name": "ap_ready", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "ready", "bundle":{"name": "ap_ready", "role": "default" }} , 
- 	{ "name": "tmp_104", "direction": "in", "datatype": "sc_lv", "bitwidth":9, "type": "signal", "bundle":{"name": "tmp_104", "role": "default" }} , 
+ 	{ "name": "tmp_91", "direction": "in", "datatype": "sc_lv", "bitwidth":9, "type": "signal", "bundle":{"name": "tmp_91", "role": "default" }} , 
  	{ "name": "local_C_0_load", "direction": "in", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "local_C_0_load", "role": "default" }} , 
  	{ "name": "local_C_0_1_load", "direction": "in", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "local_C_0_1_load", "role": "default" }} , 
  	{ "name": "local_C_0_2_load", "direction": "in", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "local_C_0_2_load", "role": "default" }} , 
@@ -99,7 +99,7 @@ set RtlHierarchyInfo {[
 		"HasNonBlockingOperation" : "0",
 		"IsBlackBox" : "0",
 		"Port" : [
-			{"Name" : "tmp_104", "Type" : "None", "Direction" : "I"},
+			{"Name" : "tmp_91", "Type" : "None", "Direction" : "I"},
 			{"Name" : "local_C_0_load", "Type" : "None", "Direction" : "I"},
 			{"Name" : "local_C_0_1_load", "Type" : "None", "Direction" : "I"},
 			{"Name" : "local_C_0_2_load", "Type" : "None", "Direction" : "I"},
@@ -118,7 +118,7 @@ set RtlHierarchyInfo {[
 
 set ArgLastReadFirstWriteLatency {
 	adaLN_modulate_Pipeline_l_store_C_tile_sj {
-		tmp_104 {Type I LastRead 0 FirstWrite -1}
+		tmp_91 {Type I LastRead 0 FirstWrite -1}
 		local_C_0_load {Type I LastRead 0 FirstWrite -1}
 		local_C_0_1_load {Type I LastRead 0 FirstWrite -1}
 		local_C_0_2_load {Type I LastRead 0 FirstWrite -1}
@@ -140,7 +140,7 @@ set PipelineEnableSignalInfo {[
 ]}
 
 set Spec2ImplPortList { 
-	tmp_104 { ap_none {  { tmp_104 in_data 0 9 } } }
+	tmp_91 { ap_none {  { tmp_91 in_data 0 9 } } }
 	local_C_0_load { ap_none {  { local_C_0_load in_data 0 32 } } }
 	local_C_0_1_load { ap_none {  { local_C_0_1_load in_data 0 32 } } }
 	local_C_0_2_load { ap_none {  { local_C_0_2_load in_data 0 32 } } }

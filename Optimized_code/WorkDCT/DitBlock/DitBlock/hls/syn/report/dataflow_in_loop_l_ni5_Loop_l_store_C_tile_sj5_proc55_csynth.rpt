@@ -1,0 +1,223 @@
+
+
+================================================================
+== Vitis HLS Report for 'dataflow_in_loop_l_ni5_Loop_l_store_C_tile_sj5_proc55'
+================================================================
+* Date:           Mon Feb 17 20:39:02 2025
+
+* Version:        2023.2 (Build 4023990 on Oct 11 2023)
+* Project:        DitBlock
+* Solution:       hls (Vivado IP Flow Target)
+* Product family: virtexuplusHBM
+* Target device:  xcu280-fsvh2892-2L-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  4.204 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |       67|       67|  0.670 us|  0.670 us|   67|   67|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        +---------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------+---------+---------+----------+----------+-----+-----+---------+
+        |                                                                                             |                                                                                  |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+        |                                           Instance                                          |                                      Module                                      |   min   |   max   |    min   |    max   | min | max |   Type  |
+        +---------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------+---------+---------+----------+----------+-----+-----+---------+
+        |grp_dataflow_in_loop_l_ni5_Loop_l_store_C_tile_sj5_proc55_Pipeline_l_store_C_tile_sj_fu_560  |dataflow_in_loop_l_ni5_Loop_l_store_C_tile_sj5_proc55_Pipeline_l_store_C_tile_sj  |       66|       66|  0.660 us|  0.660 us|   66|   66|       no|
+        +---------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------+---------+---------+----------+----------+-----+-----+---------+
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++---------------------+---------+------+---------+---------+-----+
+|         Name        | BRAM_18K|  DSP |    FF   |   LUT   | URAM|
++---------------------+---------+------+---------+---------+-----+
+|DSP                  |        -|     -|        -|        -|    -|
+|Expression           |        -|     -|        0|        2|    -|
+|FIFO                 |        -|     -|        -|        -|    -|
+|Instance             |        -|     -|       17|      577|    -|
+|Memory               |        -|     -|        -|        -|    -|
+|Multiplexer          |        -|     -|        -|       41|    -|
+|Register             |        -|     -|       14|        -|    -|
++---------------------+---------+------+---------+---------+-----+
+|Total                |        0|     0|       31|      620|    0|
++---------------------+---------+------+---------+---------+-----+
+|Available SLR        |     1344|  3008|   869120|   434560|  320|
++---------------------+---------+------+---------+---------+-----+
+|Utilization SLR (%)  |        0|     0|       ~0|       ~0|    0|
++---------------------+---------+------+---------+---------+-----+
+|Available            |     4032|  9024|  2607360|  1303680|  960|
++---------------------+---------+------+---------+---------+-----+
+|Utilization (%)      |        0|     0|       ~0|       ~0|    0|
++---------------------+---------+------+---------+---------+-----+
+
++ Detail: 
+    * Instance: 
+    +---------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------+---------+----+----+-----+-----+
+    |                                           Instance                                          |                                      Module                                      | BRAM_18K| DSP| FF | LUT | URAM|
+    +---------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------+---------+----+----+-----+-----+
+    |grp_dataflow_in_loop_l_ni5_Loop_l_store_C_tile_sj5_proc55_Pipeline_l_store_C_tile_sj_fu_560  |dataflow_in_loop_l_ni5_Loop_l_store_C_tile_sj5_proc55_Pipeline_l_store_C_tile_sj  |        0|   0|  17|  577|    0|
+    +---------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------+---------+----+----+-----+-----+
+    |Total                                                                                        |                                                                                  |        0|   0|  17|  577|    0|
+    +---------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------+---------+----+----+-----+-----+
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +-----------------+----------+----+---+----+------------+------------+
+    |  Variable Name  | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +-----------------+----------+----+---+----+------------+------------+
+    |ap_block_state1  |        or|   0|  0|   2|           1|           1|
+    +-----------------+----------+----+---+----+------------+------------+
+    |Total            |          |   0|  0|   2|           1|           1|
+    +-----------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +-----------+----+-----------+-----+-----------+
+    |    Name   | LUT| Input Size| Bits| Total Bits|
+    +-----------+----+-----------+-----+-----------+
+    |ap_NS_fsm  |  14|          3|    1|          3|
+    |ap_done    |   9|          2|    1|          2|
+    |mi5_blk_n  |   9|          2|    1|          2|
+    |ni5_blk_n  |   9|          2|    1|          2|
+    +-----------+----+-----------+-----+-----------+
+    |Total      |  41|          9|    4|          9|
+    +-----------+----+-----------+-----+-----------+
+
+    * Register: 
+    +----------------------------------------------------------------------------------------------------------+---+----+-----+-----------+
+    |                                                   Name                                                   | FF| LUT| Bits| Const Bits|
+    +----------------------------------------------------------------------------------------------------------+---+----+-----+-----------+
+    |ap_CS_fsm                                                                                                 |  2|   0|    2|          0|
+    |ap_done_reg                                                                                               |  1|   0|    1|          0|
+    |grp_dataflow_in_loop_l_ni5_Loop_l_store_C_tile_sj5_proc55_Pipeline_l_store_C_tile_sj_fu_560_ap_start_reg  |  1|   0|    1|          0|
+    |tmp_reg_714                                                                                               |  7|   0|   10|          3|
+    |tmp_s_reg_719                                                                                             |  3|   0|    6|          3|
+    +----------------------------------------------------------------------------------------------------------+---+----+-----+-----------+
+    |Total                                                                                                     | 14|   0|   20|          6|
+    +----------------------------------------------------------------------------------------------------------+---+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++--------------------+-----+-----+------------+-------------------------------------------------------+--------------+
+|      RTL Ports     | Dir | Bits|  Protocol  |                     Source Object                     |    C Type    |
++--------------------+-----+-----+------------+-------------------------------------------------------+--------------+
+|ap_clk              |   in|    1|  ap_ctrl_hs|  dataflow_in_loop_l_ni5_Loop_l_store_C_tile_sj5_proc55|  return value|
+|ap_rst              |   in|    1|  ap_ctrl_hs|  dataflow_in_loop_l_ni5_Loop_l_store_C_tile_sj5_proc55|  return value|
+|ap_start            |   in|    1|  ap_ctrl_hs|  dataflow_in_loop_l_ni5_Loop_l_store_C_tile_sj5_proc55|  return value|
+|ap_done             |  out|    1|  ap_ctrl_hs|  dataflow_in_loop_l_ni5_Loop_l_store_C_tile_sj5_proc55|  return value|
+|ap_continue         |   in|    1|  ap_ctrl_hs|  dataflow_in_loop_l_ni5_Loop_l_store_C_tile_sj5_proc55|  return value|
+|ap_idle             |  out|    1|  ap_ctrl_hs|  dataflow_in_loop_l_ni5_Loop_l_store_C_tile_sj5_proc55|  return value|
+|ap_ready            |  out|    1|  ap_ctrl_hs|  dataflow_in_loop_l_ni5_Loop_l_store_C_tile_sj5_proc55|  return value|
+|ni5_dout            |   in|    3|     ap_fifo|                                                    ni5|       pointer|
+|ni5_num_data_valid  |   in|    3|     ap_fifo|                                                    ni5|       pointer|
+|ni5_fifo_cap        |   in|    3|     ap_fifo|                                                    ni5|       pointer|
+|ni5_empty_n         |   in|    1|     ap_fifo|                                                    ni5|       pointer|
+|ni5_read            |  out|    1|     ap_fifo|                                                    ni5|       pointer|
+|local_C5_63_i       |   in|   32|     ap_none|                                          local_C5_63_i|       pointer|
+|local_C5_62_i       |   in|   32|     ap_none|                                          local_C5_62_i|       pointer|
+|local_C5_61_i       |   in|   32|     ap_none|                                          local_C5_61_i|       pointer|
+|local_C5_60_i       |   in|   32|     ap_none|                                          local_C5_60_i|       pointer|
+|local_C5_59_i       |   in|   32|     ap_none|                                          local_C5_59_i|       pointer|
+|local_C5_58_i       |   in|   32|     ap_none|                                          local_C5_58_i|       pointer|
+|local_C5_57_i       |   in|   32|     ap_none|                                          local_C5_57_i|       pointer|
+|local_C5_56_i       |   in|   32|     ap_none|                                          local_C5_56_i|       pointer|
+|local_C5_55_i       |   in|   32|     ap_none|                                          local_C5_55_i|       pointer|
+|local_C5_54_i       |   in|   32|     ap_none|                                          local_C5_54_i|       pointer|
+|local_C5_53_i       |   in|   32|     ap_none|                                          local_C5_53_i|       pointer|
+|local_C5_52_i       |   in|   32|     ap_none|                                          local_C5_52_i|       pointer|
+|local_C5_51_i       |   in|   32|     ap_none|                                          local_C5_51_i|       pointer|
+|local_C5_50_i       |   in|   32|     ap_none|                                          local_C5_50_i|       pointer|
+|local_C5_49_i       |   in|   32|     ap_none|                                          local_C5_49_i|       pointer|
+|local_C5_48_i       |   in|   32|     ap_none|                                          local_C5_48_i|       pointer|
+|local_C5_47_i       |   in|   32|     ap_none|                                          local_C5_47_i|       pointer|
+|local_C5_46_i       |   in|   32|     ap_none|                                          local_C5_46_i|       pointer|
+|local_C5_45_i       |   in|   32|     ap_none|                                          local_C5_45_i|       pointer|
+|local_C5_44_i       |   in|   32|     ap_none|                                          local_C5_44_i|       pointer|
+|local_C5_43_i       |   in|   32|     ap_none|                                          local_C5_43_i|       pointer|
+|local_C5_42_i       |   in|   32|     ap_none|                                          local_C5_42_i|       pointer|
+|local_C5_41_i       |   in|   32|     ap_none|                                          local_C5_41_i|       pointer|
+|local_C5_40_i       |   in|   32|     ap_none|                                          local_C5_40_i|       pointer|
+|local_C5_39_i       |   in|   32|     ap_none|                                          local_C5_39_i|       pointer|
+|local_C5_38_i       |   in|   32|     ap_none|                                          local_C5_38_i|       pointer|
+|local_C5_37_i       |   in|   32|     ap_none|                                          local_C5_37_i|       pointer|
+|local_C5_36_i       |   in|   32|     ap_none|                                          local_C5_36_i|       pointer|
+|local_C5_35_i       |   in|   32|     ap_none|                                          local_C5_35_i|       pointer|
+|local_C5_34_i       |   in|   32|     ap_none|                                          local_C5_34_i|       pointer|
+|local_C5_33_i       |   in|   32|     ap_none|                                          local_C5_33_i|       pointer|
+|local_C5_32_i       |   in|   32|     ap_none|                                          local_C5_32_i|       pointer|
+|local_C5_31_i       |   in|   32|     ap_none|                                          local_C5_31_i|       pointer|
+|local_C5_30_i       |   in|   32|     ap_none|                                          local_C5_30_i|       pointer|
+|local_C5_29_i       |   in|   32|     ap_none|                                          local_C5_29_i|       pointer|
+|local_C5_28_i       |   in|   32|     ap_none|                                          local_C5_28_i|       pointer|
+|local_C5_27_i       |   in|   32|     ap_none|                                          local_C5_27_i|       pointer|
+|local_C5_26_i       |   in|   32|     ap_none|                                          local_C5_26_i|       pointer|
+|local_C5_25_i       |   in|   32|     ap_none|                                          local_C5_25_i|       pointer|
+|local_C5_24_i       |   in|   32|     ap_none|                                          local_C5_24_i|       pointer|
+|local_C5_23_i       |   in|   32|     ap_none|                                          local_C5_23_i|       pointer|
+|local_C5_22_i       |   in|   32|     ap_none|                                          local_C5_22_i|       pointer|
+|local_C5_21_i       |   in|   32|     ap_none|                                          local_C5_21_i|       pointer|
+|local_C5_20_i       |   in|   32|     ap_none|                                          local_C5_20_i|       pointer|
+|local_C5_19_i       |   in|   32|     ap_none|                                          local_C5_19_i|       pointer|
+|local_C5_18_i       |   in|   32|     ap_none|                                          local_C5_18_i|       pointer|
+|local_C5_17_i       |   in|   32|     ap_none|                                          local_C5_17_i|       pointer|
+|local_C5_16_i       |   in|   32|     ap_none|                                          local_C5_16_i|       pointer|
+|local_C5_15_i       |   in|   32|     ap_none|                                          local_C5_15_i|       pointer|
+|local_C5_14_i       |   in|   32|     ap_none|                                          local_C5_14_i|       pointer|
+|local_C5_13_i       |   in|   32|     ap_none|                                          local_C5_13_i|       pointer|
+|local_C5_12_i       |   in|   32|     ap_none|                                          local_C5_12_i|       pointer|
+|local_C5_11_i       |   in|   32|     ap_none|                                          local_C5_11_i|       pointer|
+|local_C5_10_i       |   in|   32|     ap_none|                                          local_C5_10_i|       pointer|
+|local_C5_9_i        |   in|   32|     ap_none|                                           local_C5_9_i|       pointer|
+|local_C5_8_i        |   in|   32|     ap_none|                                           local_C5_8_i|       pointer|
+|local_C5_7_i        |   in|   32|     ap_none|                                           local_C5_7_i|       pointer|
+|local_C5_6_i        |   in|   32|     ap_none|                                           local_C5_6_i|       pointer|
+|local_C5_5_i        |   in|   32|     ap_none|                                           local_C5_5_i|       pointer|
+|local_C5_4_i        |   in|   32|     ap_none|                                           local_C5_4_i|       pointer|
+|local_C5_3_i        |   in|   32|     ap_none|                                           local_C5_3_i|       pointer|
+|local_C5_2_i        |   in|   32|     ap_none|                                           local_C5_2_i|       pointer|
+|local_C5_1_i        |   in|   32|     ap_none|                                           local_C5_1_i|       pointer|
+|local_C5_i          |   in|   32|     ap_none|                                             local_C5_i|       pointer|
+|mi5_dout            |   in|    7|     ap_fifo|                                                    mi5|       pointer|
+|mi5_num_data_valid  |   in|    3|     ap_fifo|                                                    mi5|       pointer|
+|mi5_fifo_cap        |   in|    3|     ap_fifo|                                                    mi5|       pointer|
+|mi5_empty_n         |   in|    1|     ap_fifo|                                                    mi5|       pointer|
+|mi5_read            |  out|    1|     ap_fifo|                                                    mi5|       pointer|
+|v8547_address0      |  out|   16|   ap_memory|                                                  v8547|         array|
+|v8547_ce0           |  out|    1|   ap_memory|                                                  v8547|         array|
+|v8547_we0           |  out|    1|   ap_memory|                                                  v8547|         array|
+|v8547_d0            |  out|   32|   ap_memory|                                                  v8547|         array|
++--------------------+-----+-----+------------+-------------------------------------------------------+--------------+
+

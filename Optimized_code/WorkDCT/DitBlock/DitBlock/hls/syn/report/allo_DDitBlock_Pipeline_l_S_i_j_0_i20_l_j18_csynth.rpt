@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'allo_DDitBlock_Pipeline_l_S_i_j_0_i20_l_j18'
 ================================================================
-* Date:           Wed Feb  5 22:36:57 2025
+* Date:           Mon Feb 17 20:39:09 2025
 
 * Version:        2023.2 (Build 4023990 on Oct 11 2023)
 * Project:        DitBlock
@@ -89,14 +89,14 @@
     +----------------------------+----------+----+---+----+------------+------------+
     |        Variable Name       | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
     +----------------------------+----------+----+---+----+------------+------------+
-    |add_ln21739_2_fu_137_p2     |         +|   0|  0|  27|          20|           1|
-    |add_ln21739_fu_149_p2       |         +|   0|  0|  18|          11|           1|
-    |add_ln21740_fu_209_p2       |         +|   0|  0|  17|          10|           1|
-    |add_ln21741_fu_198_p2       |         +|   0|  0|  26|          19|          19|
-    |icmp_ln21739_fu_131_p2      |      icmp|   0|  0|  28|          20|          21|
-    |icmp_ln21740_fu_155_p2      |      icmp|   0|  0|  18|          10|          11|
-    |select_ln21739_1_fu_169_p3  |    select|   0|  0|  11|           1|          11|
-    |select_ln21739_fu_161_p3    |    select|   0|  0|  10|           1|           1|
+    |add_ln21605_2_fu_137_p2     |         +|   0|  0|  27|          20|           1|
+    |add_ln21605_fu_149_p2       |         +|   0|  0|  18|          11|           1|
+    |add_ln21606_fu_209_p2       |         +|   0|  0|  17|          10|           1|
+    |add_ln21610_fu_198_p2       |         +|   0|  0|  26|          19|          19|
+    |icmp_ln21605_fu_131_p2      |      icmp|   0|  0|  28|          20|          21|
+    |icmp_ln21606_fu_155_p2      |      icmp|   0|  0|  18|          10|          11|
+    |select_ln21605_1_fu_169_p3  |    select|   0|  0|  11|           1|          11|
+    |select_ln21605_fu_161_p3    |    select|   0|  0|  10|           1|           1|
     |ap_enable_pp0               |       xor|   0|  0|   2|           1|           2|
     +----------------------------+----------+----+---+----+------------+------------+
     |Total                       |          |   0|  0| 157|          93|          68|
@@ -138,8 +138,8 @@
     |v11886_reg_270                    |  32|   0|   32|          0|
     |v11887_reg_275                    |  32|   0|   32|          0|
     |v11888_reg_280                    |  32|   0|   32|          0|
-    |zext_ln21741_1_reg_255            |  19|   0|   64|         45|
-    |zext_ln21741_1_reg_255            |  64|  32|   64|         45|
+    |zext_ln21610_1_reg_255            |  19|   0|   64|         45|
+    |zext_ln21610_1_reg_255            |  64|  32|   64|         45|
     +----------------------------------+----+----+-----+-----------+
     |Total                             | 232|  32|  277|         90|
     +----------------------------------+----+----+-----+-----------+
@@ -159,18 +159,18 @@
 |ap_done              |  out|    1|  ap_ctrl_hs|  allo_DDitBlock_Pipeline_l_S_i_j_0_i20_l_j18|  return value|
 |ap_idle              |  out|    1|  ap_ctrl_hs|  allo_DDitBlock_Pipeline_l_S_i_j_0_i20_l_j18|  return value|
 |ap_ready             |  out|    1|  ap_ctrl_hs|  allo_DDitBlock_Pipeline_l_S_i_j_0_i20_l_j18|  return value|
-|grp_fu_591_p_din0    |  out|   32|  ap_ctrl_hs|  allo_DDitBlock_Pipeline_l_S_i_j_0_i20_l_j18|  return value|
-|grp_fu_591_p_din1    |  out|   32|  ap_ctrl_hs|  allo_DDitBlock_Pipeline_l_S_i_j_0_i20_l_j18|  return value|
-|grp_fu_591_p_opcode  |  out|    1|  ap_ctrl_hs|  allo_DDitBlock_Pipeline_l_S_i_j_0_i20_l_j18|  return value|
-|grp_fu_591_p_dout0   |   in|   32|  ap_ctrl_hs|  allo_DDitBlock_Pipeline_l_S_i_j_0_i20_l_j18|  return value|
-|grp_fu_591_p_ce      |  out|    1|  ap_ctrl_hs|  allo_DDitBlock_Pipeline_l_S_i_j_0_i20_l_j18|  return value|
-|buffer_Q_address0    |  out|   19|   ap_memory|                                     buffer_Q|         array|
-|buffer_Q_ce0         |  out|    1|   ap_memory|                                     buffer_Q|         array|
-|buffer_Q_q0          |   in|   32|   ap_memory|                                     buffer_Q|         array|
-|buffer_K_address1    |  out|   19|   ap_memory|                                     buffer_K|         array|
-|buffer_K_ce1         |  out|    1|   ap_memory|                                     buffer_K|         array|
-|buffer_K_we1         |  out|    1|   ap_memory|                                     buffer_K|         array|
-|buffer_K_d1          |  out|   32|   ap_memory|                                     buffer_K|         array|
+|grp_fu_590_p_din0    |  out|   32|  ap_ctrl_hs|  allo_DDitBlock_Pipeline_l_S_i_j_0_i20_l_j18|  return value|
+|grp_fu_590_p_din1    |  out|   32|  ap_ctrl_hs|  allo_DDitBlock_Pipeline_l_S_i_j_0_i20_l_j18|  return value|
+|grp_fu_590_p_opcode  |  out|    1|  ap_ctrl_hs|  allo_DDitBlock_Pipeline_l_S_i_j_0_i20_l_j18|  return value|
+|grp_fu_590_p_dout0   |   in|   32|  ap_ctrl_hs|  allo_DDitBlock_Pipeline_l_S_i_j_0_i20_l_j18|  return value|
+|grp_fu_590_p_ce      |  out|    1|  ap_ctrl_hs|  allo_DDitBlock_Pipeline_l_S_i_j_0_i20_l_j18|  return value|
+|buffer_Q_address1    |  out|   19|   ap_memory|                                     buffer_Q|         array|
+|buffer_Q_ce1         |  out|    1|   ap_memory|                                     buffer_Q|         array|
+|buffer_Q_we1         |  out|    1|   ap_memory|                                     buffer_Q|         array|
+|buffer_Q_d1          |  out|   32|   ap_memory|                                     buffer_Q|         array|
+|buffer_K_address0    |  out|   19|   ap_memory|                                     buffer_K|         array|
+|buffer_K_ce0         |  out|    1|   ap_memory|                                     buffer_K|         array|
+|buffer_K_q0          |   in|   32|   ap_memory|                                     buffer_K|         array|
 |buffer0_address0     |  out|    9|   ap_memory|                                      buffer0|         array|
 |buffer0_ce0          |  out|    1|   ap_memory|                                      buffer0|         array|
 |buffer0_q0           |   in|   32|   ap_memory|                                      buffer0|         array|

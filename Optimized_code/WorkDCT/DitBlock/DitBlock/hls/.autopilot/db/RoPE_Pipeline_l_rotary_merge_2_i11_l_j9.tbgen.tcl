@@ -16,14 +16,14 @@ set C_modelName {RoPE_Pipeline_l_rotary_merge_2_i11_l_j9}
 set C_modelType { void 0 }
 set C_modelArgList {
 	{ X_2_rotary float 32 regular {array 32768 { 1 3 } 1 1 }  }
-	{ tmp_107 int 9 regular  }
+	{ tmp_94 int 9 regular  }
 	{ v5222 float 32 regular {array 524288 { 3 0 } 0 1 }  }
 }
 set hasAXIMCache 0
 set AXIMCacheInstList { }
 set C_modelArgMapList {[ 
 	{ "Name" : "X_2_rotary", "interface" : "memory", "bitwidth" : 32, "direction" : "READONLY"} , 
- 	{ "Name" : "tmp_107", "interface" : "wire", "bitwidth" : 9, "direction" : "READONLY"} , 
+ 	{ "Name" : "tmp_94", "interface" : "wire", "bitwidth" : 9, "direction" : "READONLY"} , 
  	{ "Name" : "v5222", "interface" : "memory", "bitwidth" : 32, "direction" : "WRITEONLY"} ]}
 # RTL Port declarations: 
 set portNum 14
@@ -37,7 +37,7 @@ set portList {
 	{ X_2_rotary_address0 sc_out sc_lv 15 signal 0 } 
 	{ X_2_rotary_ce0 sc_out sc_logic 1 signal 0 } 
 	{ X_2_rotary_q0 sc_in sc_lv 32 signal 0 } 
-	{ tmp_107 sc_in sc_lv 9 signal 1 } 
+	{ tmp_94 sc_in sc_lv 9 signal 1 } 
 	{ v5222_address1 sc_out sc_lv 19 signal 2 } 
 	{ v5222_ce1 sc_out sc_logic 1 signal 2 } 
 	{ v5222_we1 sc_out sc_logic 1 signal 2 } 
@@ -53,7 +53,7 @@ set NewPortList {[
  	{ "name": "X_2_rotary_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":15, "type": "signal", "bundle":{"name": "X_2_rotary", "role": "address0" }} , 
  	{ "name": "X_2_rotary_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "X_2_rotary", "role": "ce0" }} , 
  	{ "name": "X_2_rotary_q0", "direction": "in", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "X_2_rotary", "role": "q0" }} , 
- 	{ "name": "tmp_107", "direction": "in", "datatype": "sc_lv", "bitwidth":9, "type": "signal", "bundle":{"name": "tmp_107", "role": "default" }} , 
+ 	{ "name": "tmp_94", "direction": "in", "datatype": "sc_lv", "bitwidth":9, "type": "signal", "bundle":{"name": "tmp_94", "role": "default" }} , 
  	{ "name": "v5222_address1", "direction": "out", "datatype": "sc_lv", "bitwidth":19, "type": "signal", "bundle":{"name": "v5222", "role": "address1" }} , 
  	{ "name": "v5222_ce1", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "v5222", "role": "ce1" }} , 
  	{ "name": "v5222_we1", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "v5222", "role": "we1" }} , 
@@ -76,7 +76,7 @@ set RtlHierarchyInfo {[
 		"IsBlackBox" : "0",
 		"Port" : [
 			{"Name" : "X_2_rotary", "Type" : "Memory", "Direction" : "I"},
-			{"Name" : "tmp_107", "Type" : "None", "Direction" : "I"},
+			{"Name" : "tmp_94", "Type" : "None", "Direction" : "I"},
 			{"Name" : "v5222", "Type" : "Memory", "Direction" : "O"}],
 		"Loop" : [
 			{"Name" : "l_rotary_merge_2_i11_l_j9", "PipelineType" : "UPC",
@@ -87,7 +87,7 @@ set RtlHierarchyInfo {[
 set ArgLastReadFirstWriteLatency {
 	RoPE_Pipeline_l_rotary_merge_2_i11_l_j9 {
 		X_2_rotary {Type I LastRead 1 FirstWrite -1}
-		tmp_107 {Type I LastRead 0 FirstWrite -1}
+		tmp_94 {Type I LastRead 0 FirstWrite -1}
 		v5222 {Type O LastRead -1 FirstWrite 2}}}
 
 set hasDtUnsupportedChannel 0
@@ -103,6 +103,6 @@ set PipelineEnableSignalInfo {[
 
 set Spec2ImplPortList { 
 	X_2_rotary { ap_memory {  { X_2_rotary_address0 mem_address 1 15 }  { X_2_rotary_ce0 mem_ce 1 1 }  { X_2_rotary_q0 in_data 0 32 } } }
-	tmp_107 { ap_none {  { tmp_107 in_data 0 9 } } }
+	tmp_94 { ap_none {  { tmp_94 in_data 0 9 } } }
 	v5222 { ap_memory {  { v5222_address1 MemPortADDR2 1 19 }  { v5222_ce1 MemPortCE2 1 1 }  { v5222_we1 MemPortWE2 1 1 }  { v5222_d1 MemPortDIN2 1 32 } } }
 }

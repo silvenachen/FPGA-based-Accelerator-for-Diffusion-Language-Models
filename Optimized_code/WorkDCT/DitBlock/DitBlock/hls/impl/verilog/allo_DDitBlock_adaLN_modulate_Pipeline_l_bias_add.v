@@ -70,17 +70,17 @@ reg    ap_enable_reg_pp0_iter4;
 reg    ap_enable_reg_pp0_iter5;
 reg    ap_idle_pp0;
 wire    ap_block_pp0_stage0_subdone;
-wire   [0:0] icmp_ln534_fu_91_p2;
+wire   [0:0] icmp_ln474_fu_91_p2;
 reg    ap_condition_exit_pp0_iter0_stage0;
 wire    ap_loop_exit_ready;
 reg    ap_ready_int;
 wire    ap_block_pp0_stage0_11001;
-wire   [63:0] zext_ln534_fu_103_p1;
-reg   [63:0] zext_ln534_reg_125;
-reg   [63:0] zext_ln534_reg_125_pp0_iter1_reg;
-reg   [63:0] zext_ln534_reg_125_pp0_iter2_reg;
-reg   [63:0] zext_ln534_reg_125_pp0_iter3_reg;
-reg   [63:0] zext_ln534_reg_125_pp0_iter4_reg;
+wire   [63:0] zext_ln474_fu_103_p1;
+reg   [63:0] zext_ln474_reg_125;
+reg   [63:0] zext_ln474_reg_125_pp0_iter1_reg;
+reg   [63:0] zext_ln474_reg_125_pp0_iter2_reg;
+reg   [63:0] zext_ln474_reg_125_pp0_iter3_reg;
+reg   [63:0] zext_ln474_reg_125_pp0_iter4_reg;
 reg   [8:0] Y_0_addr_reg_135;
 reg   [8:0] Y_0_addr_reg_135_pp0_iter1_reg;
 reg   [8:0] Y_0_addr_reg_135_pp0_iter2_reg;
@@ -92,9 +92,9 @@ wire   [31:0] grp_fu_79_p2;
 reg   [31:0] add_reg_151;
 wire    ap_block_pp0_stage0;
 reg   [9:0] i_fu_32;
-wire   [9:0] add_ln534_fu_97_p2;
+wire   [9:0] add_ln474_fu_97_p2;
 wire    ap_loop_init;
-reg   [9:0] ap_sig_allocacmp_i_8;
+reg   [9:0] ap_sig_allocacmp_i_7;
 reg    ap_done_reg;
 wire    ap_continue_int;
 reg    ap_done_int;
@@ -223,8 +223,8 @@ end
 
 always @ (posedge ap_clk) begin
     if (((1'b0 == ap_block_pp0_stage0_11001) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
-        if (((icmp_ln534_fu_91_p2 == 1'd0) & (ap_enable_reg_pp0_iter0 == 1'b1))) begin
-            i_fu_32 <= add_ln534_fu_97_p2;
+        if (((icmp_ln474_fu_91_p2 == 1'd0) & (ap_enable_reg_pp0_iter0 == 1'b1))) begin
+            i_fu_32 <= add_ln474_fu_97_p2;
         end else if ((ap_loop_init == 1'b1)) begin
             i_fu_32 <= 10'd0;
         end
@@ -233,13 +233,13 @@ end
 
 always @ (posedge ap_clk) begin
     if (((1'b0 == ap_block_pp0_stage0_11001) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
-        Y_0_addr_reg_135 <= zext_ln534_fu_103_p1;
+        Y_0_addr_reg_135 <= zext_ln474_fu_103_p1;
         Y_0_addr_reg_135_pp0_iter1_reg <= Y_0_addr_reg_135;
         ap_loop_exit_ready_pp0_iter1_reg <= ap_loop_exit_ready;
         ap_loop_exit_ready_pp0_iter2_reg <= ap_loop_exit_ready_pp0_iter1_reg;
         v238_load_reg_141 <= v238_q0;
-        zext_ln534_reg_125[9 : 0] <= zext_ln534_fu_103_p1[9 : 0];
-        zext_ln534_reg_125_pp0_iter1_reg[9 : 0] <= zext_ln534_reg_125[9 : 0];
+        zext_ln474_reg_125[9 : 0] <= zext_ln474_fu_103_p1[9 : 0];
+        zext_ln474_reg_125_pp0_iter1_reg[9 : 0] <= zext_ln474_reg_125[9 : 0];
     end
 end
 
@@ -251,9 +251,9 @@ always @ (posedge ap_clk) begin
         add_reg_151 <= grp_fu_79_p2;
         ap_loop_exit_ready_pp0_iter3_reg <= ap_loop_exit_ready_pp0_iter2_reg;
         ap_loop_exit_ready_pp0_iter4_reg <= ap_loop_exit_ready_pp0_iter3_reg;
-        zext_ln534_reg_125_pp0_iter2_reg[9 : 0] <= zext_ln534_reg_125_pp0_iter1_reg[9 : 0];
-        zext_ln534_reg_125_pp0_iter3_reg[9 : 0] <= zext_ln534_reg_125_pp0_iter2_reg[9 : 0];
-        zext_ln534_reg_125_pp0_iter4_reg[9 : 0] <= zext_ln534_reg_125_pp0_iter3_reg[9 : 0];
+        zext_ln474_reg_125_pp0_iter2_reg[9 : 0] <= zext_ln474_reg_125_pp0_iter1_reg[9 : 0];
+        zext_ln474_reg_125_pp0_iter3_reg[9 : 0] <= zext_ln474_reg_125_pp0_iter2_reg[9 : 0];
+        zext_ln474_reg_125_pp0_iter4_reg[9 : 0] <= zext_ln474_reg_125_pp0_iter3_reg[9 : 0];
     end
 end
 
@@ -288,7 +288,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((icmp_ln534_fu_91_p2 == 1'd1) & (1'b0 == ap_block_pp0_stage0_subdone) & (ap_enable_reg_pp0_iter0 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
+    if (((icmp_ln474_fu_91_p2 == 1'd1) & (1'b0 == ap_block_pp0_stage0_subdone) & (ap_enable_reg_pp0_iter0 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
         ap_condition_exit_pp0_iter0_stage0 = 1'b1;
     end else begin
         ap_condition_exit_pp0_iter0_stage0 = 1'b0;
@@ -329,9 +329,9 @@ end
 
 always @ (*) begin
     if (((1'b0 == ap_block_pp0_stage0) & (1'b1 == ap_CS_fsm_pp0_stage0) & (ap_loop_init == 1'b1))) begin
-        ap_sig_allocacmp_i_8 = 10'd0;
+        ap_sig_allocacmp_i_7 = 10'd0;
     end else begin
-        ap_sig_allocacmp_i_8 = i_fu_32;
+        ap_sig_allocacmp_i_7 = i_fu_32;
     end
 end
 
@@ -372,11 +372,11 @@ end
 
 assign Y_0_address0 = Y_0_addr_reg_135_pp0_iter4_reg;
 
-assign Y_0_address1 = zext_ln534_fu_103_p1;
+assign Y_0_address1 = zext_ln474_fu_103_p1;
 
 assign Y_0_d0 = add_reg_151;
 
-assign add_ln534_fu_97_p2 = (ap_sig_allocacmp_i_8 + 10'd1);
+assign add_ln474_fu_97_p2 = (ap_sig_allocacmp_i_7 + 10'd1);
 
 assign ap_CS_fsm_pp0_stage0 = ap_CS_fsm[32'd0];
 
@@ -392,22 +392,22 @@ assign ap_enable_reg_pp0_iter0 = ap_start_int;
 
 assign ap_loop_exit_ready = ap_condition_exit_pp0_iter0_stage0;
 
-assign icmp_ln534_fu_91_p2 = ((ap_sig_allocacmp_i_8 == 10'd512) ? 1'b1 : 1'b0);
+assign icmp_ln474_fu_91_p2 = ((ap_sig_allocacmp_i_7 == 10'd512) ? 1'b1 : 1'b0);
 
-assign v238_address0 = zext_ln534_fu_103_p1;
+assign v238_address0 = zext_ln474_fu_103_p1;
 
-assign v239_address0 = zext_ln534_reg_125_pp0_iter4_reg;
+assign v239_address0 = zext_ln474_reg_125_pp0_iter4_reg;
 
 assign v239_d0 = add_reg_151;
 
-assign zext_ln534_fu_103_p1 = ap_sig_allocacmp_i_8;
+assign zext_ln474_fu_103_p1 = ap_sig_allocacmp_i_7;
 
 always @ (posedge ap_clk) begin
-    zext_ln534_reg_125[63:10] <= 54'b000000000000000000000000000000000000000000000000000000;
-    zext_ln534_reg_125_pp0_iter1_reg[63:10] <= 54'b000000000000000000000000000000000000000000000000000000;
-    zext_ln534_reg_125_pp0_iter2_reg[63:10] <= 54'b000000000000000000000000000000000000000000000000000000;
-    zext_ln534_reg_125_pp0_iter3_reg[63:10] <= 54'b000000000000000000000000000000000000000000000000000000;
-    zext_ln534_reg_125_pp0_iter4_reg[63:10] <= 54'b000000000000000000000000000000000000000000000000000000;
+    zext_ln474_reg_125[63:10] <= 54'b000000000000000000000000000000000000000000000000000000;
+    zext_ln474_reg_125_pp0_iter1_reg[63:10] <= 54'b000000000000000000000000000000000000000000000000000000;
+    zext_ln474_reg_125_pp0_iter2_reg[63:10] <= 54'b000000000000000000000000000000000000000000000000000000;
+    zext_ln474_reg_125_pp0_iter3_reg[63:10] <= 54'b000000000000000000000000000000000000000000000000000000;
+    zext_ln474_reg_125_pp0_iter4_reg[63:10] <= 54'b000000000000000000000000000000000000000000000000000000;
 end
 
 endmodule //allo_DDitBlock_adaLN_modulate_Pipeline_l_bias_add

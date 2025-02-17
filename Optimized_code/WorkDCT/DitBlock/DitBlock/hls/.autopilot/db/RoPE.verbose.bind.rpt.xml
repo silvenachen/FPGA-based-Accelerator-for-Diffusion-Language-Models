@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'RoPE'" level="0">
-<item name = "Date">Wed Feb  5 22:34:18 2025
+<item name = "Date">Mon Feb 17 20:36:26 2025
 </item>
 <item name = "Version">2023.2 (Build 4023990 on Oct 11 2023)</item>
 <item name = "Project">DitBlock</item>
@@ -31,14 +31,12 @@
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="grp_RoPE_Pipeline_l_rope_split_1_i6_l_j4_fu_72">RoPE_Pipeline_l_rope_split_1_i6_l_j4, 32770, 32770, 0.328 ms, 0.328 ms, 32770, 32770, no</column>
-<column name="grp_RoPE_Pipeline_VITIS_LOOP_9618_1_VITIS_LOOP_9619_2_fu_80">RoPE_Pipeline_VITIS_LOOP_9618_1_VITIS_LOOP_9619_2, 32770, 32770, 0.328 ms, 0.328 ms, 32770, 32770, no</column>
-<column name="grp_RoPE_Pipeline_VITIS_LOOP_9624_3_VITIS_LOOP_9625_4_fu_85">RoPE_Pipeline_VITIS_LOOP_9624_3_VITIS_LOOP_9625_4, 32770, 32770, 0.328 ms, 0.328 ms, 32770, 32770, no</column>
-<column name="grp_RoPE_Pipeline_l_rope_split_2_i7_l_j5_fu_90">RoPE_Pipeline_l_rope_split_2_i7_l_j5, 32770, 32770, 0.328 ms, 0.328 ms, 32770, 32770, no</column>
-<column name="grp_RoPE_Pipeline_l_rotary_1_i8_l_j6_fu_98">RoPE_Pipeline_l_rotary_1_i8_l_j6, 32775, 32775, 0.328 ms, 0.328 ms, 32775, 32775, no</column>
-<column name="grp_RoPE_Pipeline_l_rotary_2_i9_l_j7_fu_109">RoPE_Pipeline_l_rotary_2_i9_l_j7, 32775, 32775, 0.328 ms, 0.328 ms, 32775, 32775, no</column>
-<column name="grp_RoPE_Pipeline_l_rotary_merge_1_i10_l_j8_fu_120">RoPE_Pipeline_l_rotary_merge_1_i10_l_j8, 32770, 32770, 0.328 ms, 0.328 ms, 32770, 32770, no</column>
-<column name="grp_RoPE_Pipeline_l_rotary_merge_2_i11_l_j9_fu_128">RoPE_Pipeline_l_rotary_merge_2_i11_l_j9, 32770, 32770, 0.328 ms, 0.328 ms, 32770, 32770, no</column>
+<column name="grp_RoPE_Pipeline_l_rope_split_1_i6_l_j4_fu_68">RoPE_Pipeline_l_rope_split_1_i6_l_j4, 32770, 32770, 0.328 ms, 0.328 ms, 32770, 32770, no</column>
+<column name="grp_RoPE_Pipeline_l_rope_split_2_i7_l_j5_fu_76">RoPE_Pipeline_l_rope_split_2_i7_l_j5, 32770, 32770, 0.328 ms, 0.328 ms, 32770, 32770, no</column>
+<column name="grp_RoPE_Pipeline_l_rotary_1_i8_l_j6_fu_84">RoPE_Pipeline_l_rotary_1_i8_l_j6, 32775, 32775, 0.328 ms, 0.328 ms, 32775, 32775, no</column>
+<column name="grp_RoPE_Pipeline_l_rotary_2_i9_l_j7_fu_95">RoPE_Pipeline_l_rotary_2_i9_l_j7, 32775, 32775, 0.328 ms, 0.328 ms, 32775, 32775, no</column>
+<column name="grp_RoPE_Pipeline_l_rotary_merge_1_i10_l_j8_fu_106">RoPE_Pipeline_l_rotary_merge_1_i10_l_j8, 32770, 32770, 0.328 ms, 0.328 ms, 32770, 32770, no</column>
+<column name="grp_RoPE_Pipeline_l_rotary_merge_2_i11_l_j9_fu_114">RoPE_Pipeline_l_rotary_merge_2_i11_l_j9, 32770, 32770, 0.328 ms, 0.328 ms, 32770, 32770, no</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">

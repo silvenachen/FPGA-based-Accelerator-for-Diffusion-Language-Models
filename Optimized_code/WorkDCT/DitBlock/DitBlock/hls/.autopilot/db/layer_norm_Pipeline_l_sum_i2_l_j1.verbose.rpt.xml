@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'layer_norm_Pipeline_l_sum_i2_l_j1'" level="0">
-<item name = "Date">Wed Feb  5 22:35:28 2025
+<item name = "Date">Mon Feb 17 20:37:40 2025
 </item>
 <item name = "Version">2023.2 (Build 4023990 on Oct 11 2023)</item>
 <item name = "Project">DitBlock</item>
@@ -80,16 +80,16 @@
 </item>
 <item name = "Expression"><table name="" hasTotal="1">
 <keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
-<column name="add_ln625_1_fu_170_p2">+, 0, 0, 27, 20, 1</column>
-<column name="add_ln625_fu_182_p2">+, 0, 0, 18, 11, 1</column>
-<column name="add_ln626_fu_249_p2">+, 0, 0, 17, 10, 1</column>
-<column name="add_ln627_fu_238_p2">+, 0, 0, 26, 19, 19</column>
-<column name="icmp_ln625_fu_164_p2">icmp, 0, 0, 28, 20, 21</column>
-<column name="icmp_ln626_1_fu_255_p2">icmp, 0, 0, 18, 10, 11</column>
-<column name="icmp_ln626_fu_188_p2">icmp, 0, 0, 18, 10, 11</column>
-<column name="or_ln625_fu_194_p2">or, 0, 0, 2, 1, 1</column>
-<column name="select_ln625_1_fu_208_p3">select, 0, 0, 11, 1, 11</column>
-<column name="select_ln625_fu_200_p3">select, 0, 0, 10, 1, 1</column>
+<column name="add_ln494_1_fu_170_p2">+, 0, 0, 27, 20, 1</column>
+<column name="add_ln494_fu_182_p2">+, 0, 0, 18, 11, 1</column>
+<column name="add_ln495_fu_249_p2">+, 0, 0, 17, 10, 1</column>
+<column name="add_ln496_fu_238_p2">+, 0, 0, 26, 19, 19</column>
+<column name="icmp_ln494_fu_164_p2">icmp, 0, 0, 28, 20, 21</column>
+<column name="icmp_ln495_1_fu_255_p2">icmp, 0, 0, 18, 10, 11</column>
+<column name="icmp_ln495_fu_188_p2">icmp, 0, 0, 18, 10, 11</column>
+<column name="or_ln494_fu_194_p2">or, 0, 0, 2, 1, 1</column>
+<column name="select_ln494_1_fu_208_p3">select, 0, 0, 11, 1, 11</column>
+<column name="select_ln494_fu_200_p3">select, 0, 0, 10, 1, 1</column>
 <column name="ap_enable_pp0">xor, 0, 0, 2, 1, 2</column>
 </table>
 </item>
@@ -126,25 +126,25 @@
 <column name="ap_loop_exit_ready_pp0_iter3_reg">1, 0, 1, 0</column>
 <column name="first_iter_0_reg_120">1, 0, 1, 0</column>
 <column name="i2_fu_62">11, 0, 11, 0</column>
-<column name="icmp_ln625_reg_337">1, 0, 1, 0</column>
-<column name="icmp_ln626_1_reg_361">1, 0, 1, 0</column>
+<column name="icmp_ln494_reg_337">1, 0, 1, 0</column>
+<column name="icmp_ln495_1_reg_361">1, 0, 1, 0</column>
 <column name="indvar_flatten_fu_66">20, 0, 20, 0</column>
 <column name="j1_fu_58">10, 0, 10, 0</column>
 <column name="mean2_addr_reg_350">10, 0, 10, 0</column>
 <column name="mean2_load_reg_382">32, 0, 32, 0</column>
 <column name="mean_addr_reg_345">10, 0, 10, 0</column>
 <column name="mean_load_reg_365">32, 0, 32, 0</column>
-<column name="or_ln625_reg_341">1, 0, 1, 0</column>
+<column name="or_ln494_reg_341">1, 0, 1, 0</column>
 <column name="reg_140">32, 0, 32, 0</column>
 <column name="v273_reg_370">32, 0, 32, 0</column>
 <column name="v274_fu_70">32, 0, 32, 0</column>
 <column name="v277_reg_387">32, 0, 32, 0</column>
 <column name="v278_fu_74">32, 0, 32, 0</column>
-<column name="icmp_ln625_reg_337">64, 32, 1, 0</column>
-<column name="icmp_ln626_1_reg_361">64, 32, 1, 0</column>
+<column name="icmp_ln494_reg_337">64, 32, 1, 0</column>
+<column name="icmp_ln495_1_reg_361">64, 32, 1, 0</column>
 <column name="mean2_addr_reg_350">64, 32, 10, 0</column>
 <column name="mean_addr_reg_345">64, 32, 10, 0</column>
-<column name="or_ln625_reg_341">64, 32, 1, 0</column>
+<column name="or_ln494_reg_341">64, 32, 1, 0</column>
 </table>
 </item>
 </section>
@@ -160,15 +160,15 @@
 <column name="ap_done">out, 1, ap_ctrl_hs, layer_norm_Pipeline_l_sum_i2_l_j1, return value</column>
 <column name="ap_idle">out, 1, ap_ctrl_hs, layer_norm_Pipeline_l_sum_i2_l_j1, return value</column>
 <column name="ap_ready">out, 1, ap_ctrl_hs, layer_norm_Pipeline_l_sum_i2_l_j1, return value</column>
+<column name="grp_fu_243_p_din0">out, 32, ap_ctrl_hs, layer_norm_Pipeline_l_sum_i2_l_j1, return value</column>
+<column name="grp_fu_243_p_din1">out, 32, ap_ctrl_hs, layer_norm_Pipeline_l_sum_i2_l_j1, return value</column>
+<column name="grp_fu_243_p_opcode">out, 1, ap_ctrl_hs, layer_norm_Pipeline_l_sum_i2_l_j1, return value</column>
+<column name="grp_fu_243_p_dout0">in, 32, ap_ctrl_hs, layer_norm_Pipeline_l_sum_i2_l_j1, return value</column>
+<column name="grp_fu_243_p_ce">out, 1, ap_ctrl_hs, layer_norm_Pipeline_l_sum_i2_l_j1, return value</column>
 <column name="grp_fu_247_p_din0">out, 32, ap_ctrl_hs, layer_norm_Pipeline_l_sum_i2_l_j1, return value</column>
 <column name="grp_fu_247_p_din1">out, 32, ap_ctrl_hs, layer_norm_Pipeline_l_sum_i2_l_j1, return value</column>
-<column name="grp_fu_247_p_opcode">out, 1, ap_ctrl_hs, layer_norm_Pipeline_l_sum_i2_l_j1, return value</column>
 <column name="grp_fu_247_p_dout0">in, 32, ap_ctrl_hs, layer_norm_Pipeline_l_sum_i2_l_j1, return value</column>
 <column name="grp_fu_247_p_ce">out, 1, ap_ctrl_hs, layer_norm_Pipeline_l_sum_i2_l_j1, return value</column>
-<column name="grp_fu_251_p_din0">out, 32, ap_ctrl_hs, layer_norm_Pipeline_l_sum_i2_l_j1, return value</column>
-<column name="grp_fu_251_p_din1">out, 32, ap_ctrl_hs, layer_norm_Pipeline_l_sum_i2_l_j1, return value</column>
-<column name="grp_fu_251_p_dout0">in, 32, ap_ctrl_hs, layer_norm_Pipeline_l_sum_i2_l_j1, return value</column>
-<column name="grp_fu_251_p_ce">out, 1, ap_ctrl_hs, layer_norm_Pipeline_l_sum_i2_l_j1, return value</column>
 <column name="v262_address0">out, 19, ap_memory, v262, array</column>
 <column name="v262_ce0">out, 1, ap_memory, v262, array</column>
 <column name="v262_q0">in, 32, ap_memory, v262, array</column>

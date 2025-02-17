@@ -18,26 +18,26 @@
 <PipelineType>no</PipelineType>
 <SummaryOfTimingAnalysis>
 <unit>ns</unit>
-<EstimatedClockPeriod>7.069</EstimatedClockPeriod>
+<EstimatedClockPeriod>7.399</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
 <unit>clock cycles</unit>
-<Best-caseLatency>240107921</Best-caseLatency>
-<Average-caseLatency>240107921</Average-caseLatency>
-<Worst-caseLatency>240107921</Worst-caseLatency>
-<Best-caseRealTimeLatency>2.401 sec</Best-caseRealTimeLatency>
-<Average-caseRealTimeLatency>2.401 sec</Average-caseRealTimeLatency>
-<Worst-caseRealTimeLatency>2.401 sec</Worst-caseRealTimeLatency>
-<Interval-min>240107921</Interval-min>
-<Interval-max>240107921</Interval-max>
+<Best-caseLatency>196434329</Best-caseLatency>
+<Average-caseLatency>196434329</Average-caseLatency>
+<Worst-caseLatency>196434329</Worst-caseLatency>
+<Best-caseRealTimeLatency>1.964 sec</Best-caseRealTimeLatency>
+<Average-caseRealTimeLatency>1.964 sec</Average-caseRealTimeLatency>
+<Worst-caseRealTimeLatency>1.964 sec</Worst-caseRealTimeLatency>
+<Interval-min>196434329</Interval-min>
+<Interval-max>196434329</Interval-max>
 </SummaryOfOverallLatency>
 <SummaryOfLoopLatency>
 <l_S_h_0_h1>
 <Slack>7.30</Slack>
 <TripCount>8</TripCount>
-<Latency>240107920</Latency>
-<AbsoluteTimeLatency>2401079200</AbsoluteTimeLatency>
-<IterationLatency>30013490</IterationLatency>
+<Latency>196434328</Latency>
+<AbsoluteTimeLatency>1964343280</AbsoluteTimeLatency>
+<IterationLatency>24554291</IterationLatency>
 <InstanceList>
 </InstanceList>
 </l_S_h_0_h1>
@@ -45,13 +45,13 @@
 <SummaryOfViolations>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:15693</SourceLocation>
+<SourceLocation>/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:15573</SourceLocation>
 <SummaryOfLoopViolations>
 <l_S_h_0_h1>
 <Name>l_S_h_0_h1</Name>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:15693</SourceLocation>
+<SourceLocation>/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:15573</SourceLocation>
 </l_S_h_0_h1>
 </SummaryOfLoopViolations>
 </SummaryOfViolations>
@@ -59,10 +59,10 @@
 
 <AreaEstimates>
 <Resources>
-<BRAM_18K>2596</BRAM_18K>
+<BRAM_18K>452</BRAM_18K>
 <DSP>647</DSP>
-<FF>63791</FF>
-<LUT>85488</LUT>
+<FF>68855</FF>
+<LUT>88085</LUT>
 <URAM>256</URAM>
 </Resources>
 <AvailableResources>
@@ -142,7 +142,7 @@
 <Attribute>control</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_599_p_din0</name>
+<name>grp_fu_598_p_din0</name>
 <Object>scaled_dot_product_attention</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -153,7 +153,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_599_p_din1</name>
+<name>grp_fu_598_p_din1</name>
 <Object>scaled_dot_product_attention</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -164,7 +164,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_599_p_dout0</name>
+<name>grp_fu_598_p_dout0</name>
 <Object>scaled_dot_product_attention</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -175,7 +175,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_599_p_ce</name>
+<name>grp_fu_598_p_ce</name>
 <Object>scaled_dot_product_attention</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -186,7 +186,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_591_p_din0</name>
+<name>grp_fu_590_p_din0</name>
 <Object>scaled_dot_product_attention</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -197,7 +197,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_591_p_din1</name>
+<name>grp_fu_590_p_din1</name>
 <Object>scaled_dot_product_attention</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -208,7 +208,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_591_p_opcode</name>
+<name>grp_fu_590_p_opcode</name>
 <Object>scaled_dot_product_attention</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -219,7 +219,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_591_p_dout0</name>
+<name>grp_fu_590_p_dout0</name>
 <Object>scaled_dot_product_attention</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -230,7 +230,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_591_p_ce</name>
+<name>grp_fu_590_p_ce</name>
 <Object>scaled_dot_product_attention</Object>
 <Type>return value</Type>
 <Scope></Scope>

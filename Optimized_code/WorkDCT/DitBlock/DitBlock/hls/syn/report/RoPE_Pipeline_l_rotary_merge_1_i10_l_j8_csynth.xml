@@ -46,13 +46,13 @@
 <SummaryOfViolations>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:9654</SourceLocation>
+<SourceLocation>/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:9523</SourceLocation>
 <SummaryOfLoopViolations>
 <l_rotary_merge_1_i10_l_j8>
 <Name>l_rotary_merge_1_i10_l_j8</Name>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:9653</SourceLocation>
+<SourceLocation>/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:9522</SourceLocation>
 </l_rotary_merge_1_i10_l_j8>
 </SummaryOfLoopViolations>
 </SummaryOfViolations>

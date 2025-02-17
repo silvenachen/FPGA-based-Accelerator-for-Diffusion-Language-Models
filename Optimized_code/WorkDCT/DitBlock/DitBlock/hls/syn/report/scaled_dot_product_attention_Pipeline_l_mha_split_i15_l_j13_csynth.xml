@@ -46,13 +46,13 @@
 <SummaryOfViolations>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:15698</SourceLocation>
+<SourceLocation>/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:15578</SourceLocation>
 <SummaryOfLoopViolations>
 <l_mha_split_i15_l_j13>
 <Name>l_mha_split_i15_l_j13</Name>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:15697</SourceLocation>
+<SourceLocation>/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:15577</SourceLocation>
 </l_mha_split_i15_l_j13>
 </SummaryOfLoopViolations>
 </SummaryOfViolations>
@@ -275,8 +275,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>tmp_27</name>
-<Object>tmp_27</Object>
+<name>tmp_4</name>
+<Object>tmp_4</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>

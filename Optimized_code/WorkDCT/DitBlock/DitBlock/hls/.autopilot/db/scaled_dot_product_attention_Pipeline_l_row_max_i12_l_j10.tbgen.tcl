@@ -15,13 +15,13 @@ set DLRegItemOffset 0
 set C_modelName {scaled_dot_product_attention_Pipeline_l_row_max_i12_l_j10}
 set C_modelType { void 0 }
 set C_modelArgList {
-	{ Y_t float 32 regular {array 1048576 { 1 3 } 1 1 }  }
+	{ Y1 float 32 regular {array 1048576 { 1 3 } 1 1 }  }
 	{ M float 32 regular {array 1024 { 2 3 } 1 1 }  }
 }
 set hasAXIMCache 0
 set AXIMCacheInstList { }
 set C_modelArgMapList {[ 
-	{ "Name" : "Y_t", "interface" : "memory", "bitwidth" : 32, "direction" : "READONLY"} , 
+	{ "Name" : "Y1", "interface" : "memory", "bitwidth" : 32, "direction" : "READONLY"} , 
  	{ "Name" : "M", "interface" : "memory", "bitwidth" : 32, "direction" : "READWRITE"} ]}
 # RTL Port declarations: 
 set portNum 14
@@ -32,9 +32,9 @@ set portList {
 	{ ap_done sc_out sc_logic 1 predone -1 } 
 	{ ap_idle sc_out sc_logic 1 done -1 } 
 	{ ap_ready sc_out sc_logic 1 ready -1 } 
-	{ Y_t_address0 sc_out sc_lv 20 signal 0 } 
-	{ Y_t_ce0 sc_out sc_logic 1 signal 0 } 
-	{ Y_t_q0 sc_in sc_lv 32 signal 0 } 
+	{ Y1_address0 sc_out sc_lv 20 signal 0 } 
+	{ Y1_ce0 sc_out sc_logic 1 signal 0 } 
+	{ Y1_q0 sc_in sc_lv 32 signal 0 } 
 	{ M_address0 sc_out sc_lv 10 signal 1 } 
 	{ M_ce0 sc_out sc_logic 1 signal 1 } 
 	{ M_we0 sc_out sc_logic 1 signal 1 } 
@@ -48,9 +48,9 @@ set NewPortList {[
  	{ "name": "ap_done", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "predone", "bundle":{"name": "ap_done", "role": "default" }} , 
  	{ "name": "ap_idle", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "done", "bundle":{"name": "ap_idle", "role": "default" }} , 
  	{ "name": "ap_ready", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "ready", "bundle":{"name": "ap_ready", "role": "default" }} , 
- 	{ "name": "Y_t_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":20, "type": "signal", "bundle":{"name": "Y_t", "role": "address0" }} , 
- 	{ "name": "Y_t_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "Y_t", "role": "ce0" }} , 
- 	{ "name": "Y_t_q0", "direction": "in", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "Y_t", "role": "q0" }} , 
+ 	{ "name": "Y1_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":20, "type": "signal", "bundle":{"name": "Y1", "role": "address0" }} , 
+ 	{ "name": "Y1_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "Y1", "role": "ce0" }} , 
+ 	{ "name": "Y1_q0", "direction": "in", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "Y1", "role": "q0" }} , 
  	{ "name": "M_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":10, "type": "signal", "bundle":{"name": "M", "role": "address0" }} , 
  	{ "name": "M_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "M", "role": "ce0" }} , 
  	{ "name": "M_we0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "M", "role": "we0" }} , 
@@ -73,18 +73,18 @@ set RtlHierarchyInfo {[
 		"HasNonBlockingOperation" : "0",
 		"IsBlackBox" : "0",
 		"Port" : [
-			{"Name" : "Y_t", "Type" : "Memory", "Direction" : "I"},
+			{"Name" : "Y1", "Type" : "Memory", "Direction" : "I"},
 			{"Name" : "M", "Type" : "Memory", "Direction" : "IO"}],
 		"Loop" : [
 			{"Name" : "l_row_max_i12_l_j10", "PipelineType" : "UPC",
 				"LoopDec" : {"FSMBitwidth" : "2", "FirstState" : "ap_ST_fsm_pp0_stage0", "FirstStateIter" : "ap_enable_reg_pp0_iter0", "FirstStateBlock" : "ap_block_pp0_stage0_subdone", "LastState" : "ap_ST_fsm_pp0_stage0", "LastStateIter" : "ap_enable_reg_pp0_iter2", "LastStateBlock" : "ap_block_pp0_stage0_subdone", "QuitState" : "ap_ST_fsm_pp0_stage0", "QuitStateIter" : "ap_enable_reg_pp0_iter2", "QuitStateBlock" : "ap_block_pp0_stage0_subdone", "OneDepthLoop" : "0", "has_ap_ctrl" : "1", "has_continue" : "0"}}]},
-	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.fcmp_32ns_32ns_1_1_no_dsp_1_U2082", "Parent" : "0"},
+	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.fcmp_32ns_32ns_1_1_no_dsp_1_U2383", "Parent" : "0"},
 	{"ID" : "2", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.flow_control_loop_pipe_sequential_init_U", "Parent" : "0"}]}
 
 
 set ArgLastReadFirstWriteLatency {
 	scaled_dot_product_attention_Pipeline_l_row_max_i12_l_j10 {
-		Y_t {Type I LastRead 1 FirstWrite -1}
+		Y1 {Type I LastRead 1 FirstWrite -1}
 		M {Type IO LastRead 1 FirstWrite 4}}}
 
 set hasDtUnsupportedChannel 0
@@ -99,6 +99,6 @@ set PipelineEnableSignalInfo {[
 ]}
 
 set Spec2ImplPortList { 
-	Y_t { ap_memory {  { Y_t_address0 mem_address 1 20 }  { Y_t_ce0 mem_ce 1 1 }  { Y_t_q0 mem_dout 0 32 } } }
+	Y1 { ap_memory {  { Y1_address0 mem_address 1 20 }  { Y1_ce0 mem_ce 1 1 }  { Y1_q0 mem_dout 0 32 } } }
 	M { ap_memory {  { M_address0 mem_address 1 10 }  { M_ce0 mem_ce 1 1 }  { M_we0 mem_we 1 1 }  { M_d0 mem_din 1 32 }  { M_q0 in_data 0 32 } } }
 }

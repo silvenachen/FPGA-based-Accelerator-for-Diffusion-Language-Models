@@ -18,7 +18,7 @@ set C_modelArgList {
 	{ Q_h float 32 regular {array 65536 { 0 3 } 0 1 }  }
 	{ K_h float 32 regular {array 65536 { 0 3 } 0 1 }  }
 	{ V_h float 32 regular {array 65536 { 0 3 } 0 1 }  }
-	{ tmp_27 int 9 regular  }
+	{ tmp_4 int 9 regular  }
 	{ v8564 float 32 regular {array 524288 { 1 3 } 1 1 }  }
 	{ v8565 float 32 regular {array 524288 { 1 3 } 1 1 }  }
 	{ v8566 float 32 regular {array 524288 { 1 3 } 1 1 }  }
@@ -29,7 +29,7 @@ set C_modelArgMapList {[
 	{ "Name" : "Q_h", "interface" : "memory", "bitwidth" : 32, "direction" : "WRITEONLY"} , 
  	{ "Name" : "K_h", "interface" : "memory", "bitwidth" : 32, "direction" : "WRITEONLY"} , 
  	{ "Name" : "V_h", "interface" : "memory", "bitwidth" : 32, "direction" : "WRITEONLY"} , 
- 	{ "Name" : "tmp_27", "interface" : "wire", "bitwidth" : 9, "direction" : "READONLY"} , 
+ 	{ "Name" : "tmp_4", "interface" : "wire", "bitwidth" : 9, "direction" : "READONLY"} , 
  	{ "Name" : "v8564", "interface" : "memory", "bitwidth" : 32, "direction" : "READONLY"} , 
  	{ "Name" : "v8565", "interface" : "memory", "bitwidth" : 32, "direction" : "READONLY"} , 
  	{ "Name" : "v8566", "interface" : "memory", "bitwidth" : 32, "direction" : "READONLY"} ]}
@@ -54,7 +54,7 @@ set portList {
 	{ V_h_ce0 sc_out sc_logic 1 signal 2 } 
 	{ V_h_we0 sc_out sc_logic 1 signal 2 } 
 	{ V_h_d0 sc_out sc_lv 32 signal 2 } 
-	{ tmp_27 sc_in sc_lv 9 signal 3 } 
+	{ tmp_4 sc_in sc_lv 9 signal 3 } 
 	{ v8564_address0 sc_out sc_lv 19 signal 4 } 
 	{ v8564_ce0 sc_out sc_logic 1 signal 4 } 
 	{ v8564_q0 sc_in sc_lv 32 signal 4 } 
@@ -84,7 +84,7 @@ set NewPortList {[
  	{ "name": "V_h_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "V_h", "role": "ce0" }} , 
  	{ "name": "V_h_we0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "V_h", "role": "we0" }} , 
  	{ "name": "V_h_d0", "direction": "out", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "V_h", "role": "d0" }} , 
- 	{ "name": "tmp_27", "direction": "in", "datatype": "sc_lv", "bitwidth":9, "type": "signal", "bundle":{"name": "tmp_27", "role": "default" }} , 
+ 	{ "name": "tmp_4", "direction": "in", "datatype": "sc_lv", "bitwidth":9, "type": "signal", "bundle":{"name": "tmp_4", "role": "default" }} , 
  	{ "name": "v8564_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":19, "type": "signal", "bundle":{"name": "v8564", "role": "address0" }} , 
  	{ "name": "v8564_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "v8564", "role": "ce0" }} , 
  	{ "name": "v8564_q0", "direction": "in", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "v8564", "role": "q0" }} , 
@@ -114,7 +114,7 @@ set RtlHierarchyInfo {[
 			{"Name" : "Q_h", "Type" : "Memory", "Direction" : "O"},
 			{"Name" : "K_h", "Type" : "Memory", "Direction" : "O"},
 			{"Name" : "V_h", "Type" : "Memory", "Direction" : "O"},
-			{"Name" : "tmp_27", "Type" : "None", "Direction" : "I"},
+			{"Name" : "tmp_4", "Type" : "None", "Direction" : "I"},
 			{"Name" : "v8564", "Type" : "Memory", "Direction" : "I"},
 			{"Name" : "v8565", "Type" : "Memory", "Direction" : "I"},
 			{"Name" : "v8566", "Type" : "Memory", "Direction" : "I"}],
@@ -129,7 +129,7 @@ set ArgLastReadFirstWriteLatency {
 		Q_h {Type O LastRead -1 FirstWrite 2}
 		K_h {Type O LastRead -1 FirstWrite 2}
 		V_h {Type O LastRead -1 FirstWrite 2}
-		tmp_27 {Type I LastRead 0 FirstWrite -1}
+		tmp_4 {Type I LastRead 0 FirstWrite -1}
 		v8564 {Type I LastRead 1 FirstWrite -1}
 		v8565 {Type I LastRead 1 FirstWrite -1}
 		v8566 {Type I LastRead 1 FirstWrite -1}}}
@@ -149,7 +149,7 @@ set Spec2ImplPortList {
 	Q_h { ap_memory {  { Q_h_address0 mem_address 1 16 }  { Q_h_ce0 mem_ce 1 1 }  { Q_h_we0 mem_we 1 1 }  { Q_h_d0 mem_din 1 32 } } }
 	K_h { ap_memory {  { K_h_address0 mem_address 1 16 }  { K_h_ce0 mem_ce 1 1 }  { K_h_we0 mem_we 1 1 }  { K_h_d0 mem_din 1 32 } } }
 	V_h { ap_memory {  { V_h_address0 mem_address 1 16 }  { V_h_ce0 mem_ce 1 1 }  { V_h_we0 mem_we 1 1 }  { V_h_d0 mem_din 1 32 } } }
-	tmp_27 { ap_none {  { tmp_27 in_data 0 9 } } }
+	tmp_4 { ap_none {  { tmp_4 in_data 0 9 } } }
 	v8564 { ap_memory {  { v8564_address0 mem_address 1 19 }  { v8564_ce0 mem_ce 1 1 }  { v8564_q0 in_data 0 32 } } }
 	v8565 { ap_memory {  { v8565_address0 mem_address 1 19 }  { v8565_ce0 mem_ce 1 1 }  { v8565_q0 in_data 0 32 } } }
 	v8566 { ap_memory {  { v8566_address0 mem_address 1 19 }  { v8566_ce0 mem_ce 1 1 }  { v8566_q0 in_data 0 32 } } }

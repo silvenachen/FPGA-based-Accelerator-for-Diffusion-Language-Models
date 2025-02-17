@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'allo_DDitBlock_Pipeline_l_m_fused_i5_l_j3'" level="0">
-<item name = "Date">Wed Feb  5 22:35:29 2025
+<item name = "Date">Mon Feb 17 20:37:41 2025
 </item>
 <item name = "Version">2023.2 (Build 4023990 on Oct 11 2023)</item>
 <item name = "Project">DitBlock</item>
@@ -80,14 +80,14 @@
 </item>
 <item name = "Expression"><table name="" hasTotal="1">
 <keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
-<column name="add_ln677_2_fu_163_p2">+, 0, 0, 27, 20, 1</column>
-<column name="add_ln677_fu_210_p2">+, 0, 0, 18, 11, 1</column>
-<column name="add_ln678_fu_191_p2">+, 0, 0, 17, 10, 1</column>
-<column name="add_ln685_fu_238_p2">+, 0, 0, 26, 19, 19</column>
-<column name="icmp_ln677_fu_157_p2">icmp, 0, 0, 28, 20, 21</column>
-<column name="icmp_ln678_fu_172_p2">icmp, 0, 0, 18, 10, 11</column>
-<column name="select_ln677_1_fu_216_p3">select, 0, 0, 11, 1, 11</column>
-<column name="select_ln677_fu_178_p3">select, 0, 0, 10, 1, 1</column>
+<column name="add_ln545_2_fu_148_p2">+, 0, 0, 27, 20, 1</column>
+<column name="add_ln545_fu_195_p2">+, 0, 0, 18, 11, 1</column>
+<column name="add_ln546_fu_176_p2">+, 0, 0, 17, 10, 1</column>
+<column name="add_ln547_fu_223_p2">+, 0, 0, 26, 19, 19</column>
+<column name="icmp_ln545_fu_142_p2">icmp, 0, 0, 28, 20, 21</column>
+<column name="icmp_ln546_fu_157_p2">icmp, 0, 0, 18, 10, 11</column>
+<column name="select_ln545_1_fu_201_p3">select, 0, 0, 11, 1, 11</column>
+<column name="select_ln545_fu_163_p3">select, 0, 0, 10, 1, 1</column>
 <column name="ap_enable_pp0">xor, 0, 0, 2, 1, 2</column>
 </table>
 </item>
@@ -97,9 +97,9 @@
 <column name="ap_enable_reg_pp0_iter1">9, 2, 1, 2</column>
 <column name="ap_sig_allocacmp_indvar_flatten48_load">9, 2, 20, 40</column>
 <column name="ap_sig_allocacmp_j3_load">9, 2, 10, 20</column>
-<column name="i5_fu_62">9, 2, 11, 22</column>
-<column name="indvar_flatten48_fu_66">9, 2, 20, 40</column>
-<column name="j3_fu_58">9, 2, 10, 20</column>
+<column name="i5_fu_60">9, 2, 11, 22</column>
+<column name="indvar_flatten48_fu_64">9, 2, 20, 40</column>
+<column name="j3_fu_56">9, 2, 10, 20</column>
 </table>
 </item>
 <item name = "Register"><table name="" hasTotal="1">
@@ -125,23 +125,23 @@
 <column name="ap_loop_exit_ready_pp0_iter7_reg">1, 0, 1, 0</column>
 <column name="ap_loop_exit_ready_pp0_iter8_reg">1, 0, 1, 0</column>
 <column name="ap_loop_exit_ready_pp0_iter9_reg">1, 0, 1, 0</column>
-<column name="i5_fu_62">11, 0, 11, 0</column>
-<column name="icmp_ln678_reg_279">1, 0, 1, 0</column>
-<column name="indvar_flatten48_fu_66">20, 0, 20, 0</column>
-<column name="j3_fu_58">10, 0, 10, 0</column>
-<column name="select_ln677_reg_284">10, 0, 10, 0</column>
-<column name="v308_reg_314">32, 0, 32, 0</column>
-<column name="v309_reg_299">32, 0, 32, 0</column>
-<column name="v310_reg_319">32, 0, 32, 0</column>
-<column name="v311_reg_329">32, 0, 32, 0</column>
-<column name="v312_reg_334">32, 0, 32, 0</column>
-<column name="v313_reg_339">32, 0, 32, 0</column>
-<column name="zext_ln678_reg_289">10, 0, 64, 54</column>
-<column name="zext_ln685_1_reg_304">19, 0, 64, 45</column>
-<column name="icmp_ln678_reg_279">64, 32, 1, 0</column>
-<column name="select_ln677_reg_284">64, 32, 10, 0</column>
-<column name="zext_ln678_reg_289">64, 32, 64, 54</column>
-<column name="zext_ln685_1_reg_304">64, 32, 64, 45</column>
+<column name="buffer_x_addr_reg_289">19, 0, 19, 0</column>
+<column name="i5_fu_60">11, 0, 11, 0</column>
+<column name="icmp_ln546_reg_264">1, 0, 1, 0</column>
+<column name="indvar_flatten48_fu_64">20, 0, 20, 0</column>
+<column name="j3_fu_56">10, 0, 10, 0</column>
+<column name="select_ln545_reg_269">10, 0, 10, 0</column>
+<column name="v308_reg_295">32, 0, 32, 0</column>
+<column name="v309_reg_284">32, 0, 32, 0</column>
+<column name="v310_reg_300">32, 0, 32, 0</column>
+<column name="v311_reg_310">32, 0, 32, 0</column>
+<column name="v312_reg_315">32, 0, 32, 0</column>
+<column name="v313_reg_320">32, 0, 32, 0</column>
+<column name="zext_ln546_reg_274">10, 0, 64, 54</column>
+<column name="buffer_x_addr_reg_289">64, 32, 19, 0</column>
+<column name="icmp_ln546_reg_264">64, 32, 1, 0</column>
+<column name="select_ln545_reg_269">64, 32, 10, 0</column>
+<column name="zext_ln546_reg_274">64, 32, 64, 54</column>
 </table>
 </item>
 </section>
@@ -157,27 +157,27 @@
 <column name="ap_done">out, 1, ap_ctrl_hs, allo_DDitBlock_Pipeline_l_m_fused_i5_l_j3, return value</column>
 <column name="ap_idle">out, 1, ap_ctrl_hs, allo_DDitBlock_Pipeline_l_m_fused_i5_l_j3, return value</column>
 <column name="ap_ready">out, 1, ap_ctrl_hs, allo_DDitBlock_Pipeline_l_m_fused_i5_l_j3, return value</column>
-<column name="grp_fu_591_p_din0">out, 32, ap_ctrl_hs, allo_DDitBlock_Pipeline_l_m_fused_i5_l_j3, return value</column>
-<column name="grp_fu_591_p_din1">out, 32, ap_ctrl_hs, allo_DDitBlock_Pipeline_l_m_fused_i5_l_j3, return value</column>
-<column name="grp_fu_591_p_opcode">out, 1, ap_ctrl_hs, allo_DDitBlock_Pipeline_l_m_fused_i5_l_j3, return value</column>
-<column name="grp_fu_591_p_dout0">in, 32, ap_ctrl_hs, allo_DDitBlock_Pipeline_l_m_fused_i5_l_j3, return value</column>
-<column name="grp_fu_591_p_ce">out, 1, ap_ctrl_hs, allo_DDitBlock_Pipeline_l_m_fused_i5_l_j3, return value</column>
-<column name="grp_fu_595_p_din0">out, 32, ap_ctrl_hs, allo_DDitBlock_Pipeline_l_m_fused_i5_l_j3, return value</column>
-<column name="grp_fu_595_p_din1">out, 32, ap_ctrl_hs, allo_DDitBlock_Pipeline_l_m_fused_i5_l_j3, return value</column>
-<column name="grp_fu_595_p_opcode">out, 2, ap_ctrl_hs, allo_DDitBlock_Pipeline_l_m_fused_i5_l_j3, return value</column>
-<column name="grp_fu_595_p_dout0">in, 32, ap_ctrl_hs, allo_DDitBlock_Pipeline_l_m_fused_i5_l_j3, return value</column>
-<column name="grp_fu_595_p_ce">out, 1, ap_ctrl_hs, allo_DDitBlock_Pipeline_l_m_fused_i5_l_j3, return value</column>
-<column name="grp_fu_599_p_din0">out, 32, ap_ctrl_hs, allo_DDitBlock_Pipeline_l_m_fused_i5_l_j3, return value</column>
-<column name="grp_fu_599_p_din1">out, 32, ap_ctrl_hs, allo_DDitBlock_Pipeline_l_m_fused_i5_l_j3, return value</column>
-<column name="grp_fu_599_p_dout0">in, 32, ap_ctrl_hs, allo_DDitBlock_Pipeline_l_m_fused_i5_l_j3, return value</column>
-<column name="grp_fu_599_p_ce">out, 1, ap_ctrl_hs, allo_DDitBlock_Pipeline_l_m_fused_i5_l_j3, return value</column>
+<column name="grp_fu_590_p_din0">out, 32, ap_ctrl_hs, allo_DDitBlock_Pipeline_l_m_fused_i5_l_j3, return value</column>
+<column name="grp_fu_590_p_din1">out, 32, ap_ctrl_hs, allo_DDitBlock_Pipeline_l_m_fused_i5_l_j3, return value</column>
+<column name="grp_fu_590_p_opcode">out, 1, ap_ctrl_hs, allo_DDitBlock_Pipeline_l_m_fused_i5_l_j3, return value</column>
+<column name="grp_fu_590_p_dout0">in, 32, ap_ctrl_hs, allo_DDitBlock_Pipeline_l_m_fused_i5_l_j3, return value</column>
+<column name="grp_fu_590_p_ce">out, 1, ap_ctrl_hs, allo_DDitBlock_Pipeline_l_m_fused_i5_l_j3, return value</column>
+<column name="grp_fu_594_p_din0">out, 32, ap_ctrl_hs, allo_DDitBlock_Pipeline_l_m_fused_i5_l_j3, return value</column>
+<column name="grp_fu_594_p_din1">out, 32, ap_ctrl_hs, allo_DDitBlock_Pipeline_l_m_fused_i5_l_j3, return value</column>
+<column name="grp_fu_594_p_opcode">out, 2, ap_ctrl_hs, allo_DDitBlock_Pipeline_l_m_fused_i5_l_j3, return value</column>
+<column name="grp_fu_594_p_dout0">in, 32, ap_ctrl_hs, allo_DDitBlock_Pipeline_l_m_fused_i5_l_j3, return value</column>
+<column name="grp_fu_594_p_ce">out, 1, ap_ctrl_hs, allo_DDitBlock_Pipeline_l_m_fused_i5_l_j3, return value</column>
+<column name="grp_fu_598_p_din0">out, 32, ap_ctrl_hs, allo_DDitBlock_Pipeline_l_m_fused_i5_l_j3, return value</column>
+<column name="grp_fu_598_p_din1">out, 32, ap_ctrl_hs, allo_DDitBlock_Pipeline_l_m_fused_i5_l_j3, return value</column>
+<column name="grp_fu_598_p_dout0">in, 32, ap_ctrl_hs, allo_DDitBlock_Pipeline_l_m_fused_i5_l_j3, return value</column>
+<column name="grp_fu_598_p_ce">out, 1, ap_ctrl_hs, allo_DDitBlock_Pipeline_l_m_fused_i5_l_j3, return value</column>
+<column name="buffer_x_address0">out, 19, ap_memory, buffer_x, array</column>
+<column name="buffer_x_ce0">out, 1, ap_memory, buffer_x, array</column>
+<column name="buffer_x_q0">in, 32, ap_memory, buffer_x, array</column>
 <column name="buffer_x_address1">out, 19, ap_memory, buffer_x, array</column>
 <column name="buffer_x_ce1">out, 1, ap_memory, buffer_x, array</column>
 <column name="buffer_x_we1">out, 1, ap_memory, buffer_x, array</column>
 <column name="buffer_x_d1">out, 32, ap_memory, buffer_x, array</column>
-<column name="buffer_K_address0">out, 19, ap_memory, buffer_K, array</column>
-<column name="buffer_K_ce0">out, 1, ap_memory, buffer_K, array</column>
-<column name="buffer_K_q0">in, 32, ap_memory, buffer_K, array</column>
 <column name="buffer1_address0">out, 9, ap_memory, buffer1, array</column>
 <column name="buffer1_ce0">out, 1, ap_memory, buffer1, array</column>
 <column name="buffer1_q0">in, 32, ap_memory, buffer1, array</column>

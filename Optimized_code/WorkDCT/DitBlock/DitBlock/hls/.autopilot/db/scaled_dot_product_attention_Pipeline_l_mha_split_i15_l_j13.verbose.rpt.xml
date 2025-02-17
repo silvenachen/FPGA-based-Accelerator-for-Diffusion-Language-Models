@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'scaled_dot_product_attention_Pipeline_l_mha_split_i15_l_j13'" level="0">
-<item name = "Date">Wed Feb  5 22:35:56 2025
+<item name = "Date">Mon Feb 17 20:38:07 2025
 </item>
 <item name = "Version">2023.2 (Build 4023990 on Oct 11 2023)</item>
 <item name = "Project">DitBlock</item>
@@ -80,16 +80,16 @@
 </item>
 <item name = "Expression"><table name="" hasTotal="1">
 <keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
-<column name="add_ln15697_1_fu_193_p2">+, 0, 0, 24, 17, 1</column>
-<column name="add_ln15697_fu_205_p2">+, 0, 0, 18, 11, 1</column>
-<column name="add_ln15698_fu_301_p2">+, 0, 0, 14, 7, 1</column>
-<column name="add_ln15699_fu_281_p2">+, 0, 0, 16, 9, 9</column>
-<column name="add_ln15700_fu_257_p2">+, 0, 0, 23, 16, 16</column>
-<column name="add_ln15702_fu_271_p2">+, 0, 0, 23, 16, 16</column>
-<column name="icmp_ln15697_fu_187_p2">icmp, 0, 0, 25, 17, 18</column>
-<column name="icmp_ln15698_fu_211_p2">icmp, 0, 0, 15, 7, 8</column>
-<column name="select_ln15697_1_fu_229_p3">select, 0, 0, 11, 1, 11</column>
-<column name="select_ln15697_fu_217_p3">select, 0, 0, 7, 1, 1</column>
+<column name="add_ln15577_1_fu_193_p2">+, 0, 0, 24, 17, 1</column>
+<column name="add_ln15577_fu_205_p2">+, 0, 0, 18, 11, 1</column>
+<column name="add_ln15578_fu_301_p2">+, 0, 0, 14, 7, 1</column>
+<column name="add_ln15579_fu_281_p2">+, 0, 0, 16, 9, 9</column>
+<column name="add_ln15580_fu_257_p2">+, 0, 0, 23, 16, 16</column>
+<column name="add_ln15582_fu_271_p2">+, 0, 0, 23, 16, 16</column>
+<column name="icmp_ln15577_fu_187_p2">icmp, 0, 0, 25, 17, 18</column>
+<column name="icmp_ln15578_fu_211_p2">icmp, 0, 0, 15, 7, 8</column>
+<column name="select_ln15577_1_fu_229_p3">select, 0, 0, 11, 1, 11</column>
+<column name="select_ln15577_fu_217_p3">select, 0, 0, 7, 1, 1</column>
 <column name="ap_enable_pp0">xor, 0, 0, 2, 1, 2</column>
 </table>
 </item>
@@ -105,8 +105,8 @@
 </item>
 <item name = "Register"><table name="" hasTotal="1">
 <keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
-<column name="add_ln15700_reg_360">16, 0, 16, 0</column>
-<column name="add_ln15702_reg_365">16, 0, 16, 0</column>
+<column name="add_ln15580_reg_360">16, 0, 16, 0</column>
+<column name="add_ln15582_reg_365">16, 0, 16, 0</column>
 <column name="ap_CS_fsm">1, 0, 1, 0</column>
 <column name="ap_done_reg">1, 0, 1, 0</column>
 <column name="ap_enable_reg_pp0_iter1">1, 0, 1, 0</column>
@@ -141,7 +141,7 @@
 <column name="V_h_ce0">out, 1, ap_memory, V_h, array</column>
 <column name="V_h_we0">out, 1, ap_memory, V_h, array</column>
 <column name="V_h_d0">out, 32, ap_memory, V_h, array</column>
-<column name="tmp_27">in, 9, ap_none, tmp_27, scalar</column>
+<column name="tmp_4">in, 9, ap_none, tmp_4, scalar</column>
 <column name="v8564_address0">out, 19, ap_memory, v8564, array</column>
 <column name="v8564_ce0">out, 1, ap_memory, v8564, array</column>
 <column name="v8564_q0">in, 32, ap_memory, v8564, array</column>

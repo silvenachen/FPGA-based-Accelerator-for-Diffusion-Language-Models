@@ -161,7 +161,6 @@ extern "C" {
 
 
 
-
 # 1 "/tools/Xilinx/Vitis_HLS/2023.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/algorithm" 1 3
 # 59 "/tools/Xilinx/Vitis_HLS/2023.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/algorithm" 3
 
@@ -17008,7 +17007,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
 # 5841 "/tools/Xilinx/Vitis_HLS/2023.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/stl_algo.h" 3
 }
 # 63 "/tools/Xilinx/Vitis_HLS/2023.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/algorithm" 2 3
-# 8 "/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp" 2
+# 7 "/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp" 2
 
 # 1 "/tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/ap_fixed.h" 1
 
@@ -22568,9 +22567,9 @@ inline __attribute__((nodebug)) bool operator!=(
 
 }
 # 366 "/tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/ap_fixed.h" 2
-# 10 "/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp" 2
+# 9 "/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp" 2
 # 1 "/tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/ap_int.h" 1
-# 11 "/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp" 2
+# 10 "/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp" 2
 # 1 "/tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/hls_math.h" 1
 # 14 "/tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/hls_math.h"
 # 1 "/tools/Xilinx/Vitis_HLS/2023.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/cmath" 1 3
@@ -42679,7 +42678,7 @@ namespace hls {
     uint32_t logb(uint32_t);
 
 };
-# 12 "/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp" 2
+# 11 "/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp" 2
 # 1 "/tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/hls_stream.h" 1
 # 12 "/tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/hls_stream.h"
 # 1 "/tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/hls_stream_39.h" 1
@@ -42809,7 +42808,7 @@ class stream : public stream<__STREAM_T__, 0> {
 };
 }
 # 13 "/tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/hls_stream.h" 2
-# 13 "/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp" 2
+# 12 "/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp" 2
 # 1 "/tools/Xilinx/Vitis_HLS/2023.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/math.h" 1 3
 # 36 "/tools/Xilinx/Vitis_HLS/2023.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/math.h" 3
 # 1 "/tools/Xilinx/Vitis_HLS/2023.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/cmath" 1 3
@@ -42890,61 +42889,8 @@ using std::scalbln;
 using std::scalbn;
 using std::tgamma;
 using std::trunc;
-# 14 "/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp" 2
+# 13 "/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp" 2
 
-# 1 "/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.h" 1
-
-
-
-
-
-
-
-extern "C" {
-# 36 "/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.h"
-__attribute__((sdx_kernel("allo_DDitBlock", 0))) void allo_DDitBlock(
-float v13538[1024][512],
-    float v13539[512],
-    float v13540[512],
-    float v13541[1024][32],
-    float v13542[1024][32],
-    float v13543[512][512],
-    float v13544[512][512],
-    float v13545[512][512],
-    float v13546[1][128],
-
-
-    float adaLN_weight0[128][512],
-    float adaLN_weight1[128][512],
-    float adaLN_weight2[128][512],
-    float adaLN_weight3[128][512],
-    float adaLN_weight4[128][512],
-    float adaLN_weight5[128][512],
-
-
-    float adaLN_bias0[512],
-    float adaLN_bias1[512],
-    float adaLN_bias2[512],
-    float adaLN_bias3[512],
-    float adaLN_bias4[512],
-    float adaLN_bias5[512],
-    float v13549[512],
-    float v13550[512],
-    float v13551[512],
-    float v13552[512],
-    float v13553[512],
-    float v13554[512],
-    float v13555[512][512],
-    float v13556[1024][512],
-    float v13557[512][512],
-    float v13558[512],
-    float v13559[512][512],
-    float v13560[512],
-    float v13561[1024][512]
-);
-
-}
-# 16 "/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp" 2
 using namespace std;
 
 extern "C" {
@@ -43383,7 +43329,8 @@ void systolic_modulate(
     }
   }
 }
-# 500 "/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp"
+
+
 void adaLN_modulate(
   float v236[1][128],
 
@@ -43392,21 +43339,11 @@ void adaLN_modulate(
   float v238[512],
 
   float v239[512]
-
-
-
-
-
 ) {
 
-
-
-
-
-
   float Y[1][512];
-  VITIS_LOOP_521_1: for (int v246 = 0; v246 < 1; v246++) {
-    VITIS_LOOP_522_2: for (int v247 = 0; v247 < 512; v247++) {
+  VITIS_LOOP_465_1: for (int v246 = 0; v246 < 1; v246++) {
+    VITIS_LOOP_466_2: for (int v247 = 0; v247 < 512; v247++) {
       Y[v246][v247] = 0.000000;
     }
   }
@@ -43414,29 +43351,23 @@ void adaLN_modulate(
   systolic_modulate(v236, v237, Y);
 
 
-
-
-
-
   l_bias_add: for(int i = 0; i < 512; i++) {
       Y[0][i] += v238[i];
       v239[i] = Y[0][i];
   }
-# 561 "/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp"
 }
-# 610 "/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp"
+
+
 void layer_norm(
-  float v262[1024][512],
+  float v262[1024][512]
 
-
-  float v265[1024][512]
 ) {
   float mean[1024];
-  VITIS_LOOP_617_1: for (int v267 = 0; v267 < 1024; v267++) {
+  VITIS_LOOP_486_1: for (int v267 = 0; v267 < 1024; v267++) {
     mean[v267] = 0.000000;
   }
   float mean2[1024];
-  VITIS_LOOP_621_2: for (int v269 = 0; v269 < 1024; v269++) {
+  VITIS_LOOP_490_2: for (int v269 = 0; v269 < 1024; v269++) {
     mean2[v269] = 0.000000;
   }
   float var[1024];
@@ -43469,19 +43400,18 @@ void layer_norm(
   l_norm_i4: for (int i4 = 0; i4 < 1024; i4++) {
     l_j2: for (int j2 = 0; j2 < 512; j2++) {
 
-      float v291 = 1.0;
+
       float v292 = v262[i4][j2];
       float v293 = mean[i4];
       float v294 = v292 - v293;
-      float v295 = v291 * v294;
+      float v295 = v294;
       float v296 = var[i4];
       float v297 = v296 + 0.000010;
       float v298 = sqrt(v297);
       float v299 = v295 / v298;
-      float v300 = 0.0;
+      float v301 = v299;
 
-      float v301 = v299 + v300;
-      v265[i4][j2] = v301;
+      v262[i4][j2] = v301;
     }
   }
 }
@@ -43489,8 +43419,8 @@ void layer_norm(
 void modulate_fused(
   float v302[1024][512],
   float v303[512],
-  float v304[512],
-  float v305[1024][512]
+  float v304[512]
+
 ) {
   l_m_fused_i5: for (int i5 = 0; i5 < 1024; i5++) {
     l_j3: for (int j3 = 0; j3 < 512; j3++) {
@@ -43500,7 +43430,7 @@ void modulate_fused(
       float v311 = v308 * v310;
       float v312 = v304[j3];
       float v313 = v311 + v312;
-      v305[i5][j3] = v313;
+      v302[i5][j3] = v313;
     }
   }
 }
@@ -46443,8 +46373,8 @@ void systolic_Q(
 
  l_outer_tile_mi1: for (int mi1 = 0; mi1 < 128; mi1++) {
     l_ni1: for (int ni1 = 0; ni1 < 64; ni1++) {
-
-      l_load_A_tile_ak1: for (int ak1 = 0; ak1 < 512; ak1++) {
+#pragma HLS dataflow
+ l_load_A_tile_ak1: for (int ak1 = 0; ak1 < 512; ak1++) {
         l_ai1: for (int ai1 = 0; ai1 < 8; ai1++) {
 #pragma HLS pipeline II=1
  ap_int<33> v1941 = ni1;
@@ -49412,8 +49342,8 @@ void systolic_K(
 
  l_outer_tile_mi2: for (int mi2 = 0; mi2 < 128; mi2++) {
     l_ni2: for (int ni2 = 0; ni2 < 64; ni2++) {
-
-      l_load_A_tile_ak2: for (int ak2 = 0; ak2 < 512; ak2++) {
+#pragma HLS dataflow
+ l_load_A_tile_ak2: for (int ak2 = 0; ak2 < 512; ak2++) {
         l_ai2: for (int ai2 = 0; ai2 < 8; ai2++) {
 #pragma HLS pipeline II=1
  ap_int<33> v3577 = ni2;
@@ -52381,8 +52311,8 @@ void systolic_V(
 
  l_outer_tile_mi3: for (int mi3 = 0; mi3 < 128; mi3++) {
     l_ni3: for (int ni3 = 0; ni3 < 64; ni3++) {
-
-      l_load_A_tile_ak3: for (int ak3 = 0; ak3 < 512; ak3++) {
+#pragma HLS dataflow
+ l_load_A_tile_ak3: for (int ak3 = 0; ak3 < 512; ak3++) {
         l_ai3: for (int ai3 = 0; ai3 < 8; ai3++) {
 #pragma HLS pipeline II=1
  ap_int<33> v5213 = ni3;
@@ -52416,6 +52346,7 @@ void RoPE(
   float v5222[1024][512],
   float v5223[1024][32],
   float v5224[1024][32]
+
 ) {
   l_S_h_0_h: for (int h = 0; h < 8; h++) {
     float X_1_h[1024][32];
@@ -52433,17 +52364,17 @@ void RoPE(
       }
     }
     float X_1_rotary[1024][32];
-    VITIS_LOOP_9618_1: for (int v5236 = 0; v5236 < 1024; v5236++) {
-      VITIS_LOOP_9619_2: for (int v5237 = 0; v5237 < 32; v5237++) {
-        X_1_rotary[v5236][v5237] = 0.000000;
-      }
-    }
+
+
+
+
+
     float X_2_rotary[1024][32];
-    VITIS_LOOP_9624_3: for (int v5239 = 0; v5239 < 1024; v5239++) {
-      VITIS_LOOP_9625_4: for (int v5240 = 0; v5240 < 32; v5240++) {
-        X_2_rotary[v5239][v5240] = 0.000000;
-      }
-    }
+
+
+
+
+
     l_rotary_1_i8: for (int i8 = 0; i8 < 1024; i8++) {
       l_j6: for (int j6 = 0; j6 < 32; j6++) {
         float v5243 = v5223[i8][j6];
@@ -55421,8 +55352,8 @@ void systolic_QKT(
 
  l_outer_tile_mi4: for (int mi4 = 0; mi4 < 128; mi4++) {
     l_ni4: for (int ni4 = 0; ni4 < 128; ni4++) {
-
-      l_load_A_tile_ak4: for (int ak4 = 0; ak4 < 64; ak4++) {
+#pragma HLS dataflow
+ l_load_A_tile_ak4: for (int ak4 = 0; ak4 < 64; ak4++) {
         l_ai4: for (int ai4 = 0; ai4 < 8; ai4++) {
 #pragma HLS pipeline II=1
  ap_int<33> v6892 = ni4;
@@ -55451,37 +55382,48 @@ void systolic_QKT(
     }
   }
 }
-# 12684 "/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp"
+# 12553 "/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp"
 void sft_head(
-  float Y[1024][1024]
+  float v6901[1024][1024]
 ) {
   float M[1024];
-  VITIS_LOOP_12688_1: for (int i = 0; i < 1024; i++) {
-    M[i] = -10000.000000;
+  VITIS_LOOP_12557_1: for (int v6905 = 0; v6905 < 1024; v6905++) {
+    M[v6905] = -10000.000000;
   }
   float S[1024];
-  VITIS_LOOP_12692_2: for (int v6907 = 0; v6907 < 1024; v6907++) {
+  VITIS_LOOP_12561_2: for (int v6907 = 0; v6907 < 1024; v6907++) {
     S[v6907] = 0.000000;
   }
   l_row_max_i12: for (int i12 = 0; i12 < 1024; i12++) {
     l_j10: for (int j10 = 0; j10 < 1024; j10++) {
-      bool flag = Y[i12][j10] > M[i12];
-      if (flag) {
-        M[i12] = Y[i12][j10];
+      float v6910 = v6901[i12][j10];
+      float v6911 = M[i12];
+      bool v6912 = v6910 > v6911;
+      if (v6912) {
+        float v6913 = v6901[i12][j10];
+        M[i12] = v6913;
       }
     }
   }
   l_exp_sum_i13: for (int i13 = 0; i13 < 1024; i13++) {
     l_j11: for (int j11 = 0; j11 < 1024; j11++) {
-      float v6918= Y[i13][j11] - M[i13];
-      Y[i13][j11] = exp(v6918);
-      S[i13] += Y[i13][j11];
+      float v6916 = v6901[i13][j11];
+      float v6917 = M[i13];
+      float v6918 = v6916 - v6917;
+      float v6919 = exp(v6918);
+      v6901[i13][j11] = v6919;
+      float v6920 = v6919;
+      float v6921 = S[i13];
+      float v6922 = v6921 + v6920;
+      S[i13] = v6922;
     }
   }
   l_update_i14: for (int i14 = 0; i14 < 1024; i14++) {
     l_j12: for (int j12 = 0; j12 < 1024; j12++) {
-      float v6927 = Y[i14][j12] / S[i14];
-      Y[i14][j12] = v6927;
+      float v6925 = v6901[i14][j12];
+      float v6926 = S[i14];
+      float v6927 = v6925 / v6926;
+      v6901[i14][j12] = v6927;
     }
   }
 }
@@ -58424,8 +58366,8 @@ void systolic_YV(
 
  l_outer_tile_mi5: for (int mi5 = 0; mi5 < 128; mi5++) {
     l_ni5: for (int ni5 = 0; ni5 < 8; ni5++) {
-
-      l_load_A_tile_ak5: for (int ak5 = 0; ak5 < 1024; ak5++) {
+#pragma HLS dataflow
+ l_load_A_tile_ak5: for (int ak5 = 0; ak5 < 1024; ak5++) {
         l_ai5: for (int ai5 = 0; ai5 < 8; ai5++) {
 #pragma HLS pipeline II=1
  ap_int<33> v8555 = ni5;
@@ -58475,40 +58417,37 @@ void scaled_dot_product_attention(
         V_h[i15][j13] = v8576;
       }
     }
-    float C_h[1024][64];
-    VITIS_LOOP_15708_1: for (int v8578 = 0; v8578 < 1024; v8578++) {
-      VITIS_LOOP_15709_2: for (int v8579 = 0; v8579 < 64; v8579++) {
-        C_h[v8578][v8579] = 0.000000;
-      }
-    }
+
+
+
+
+
+
     float Y1[1024][1024];
 #pragma HLS bind_storage variable=Y1 type=ram_2p impl=uram
-
- VITIS_LOOP_15716_3: for (int v8581 = 0; v8581 < 1024; v8581++) {
-      VITIS_LOOP_15717_4: for (int v8582 = 0; v8582 < 1024; v8582++) {
+ VITIS_LOOP_15595_1: for (int v8581 = 0; v8581 < 1024; v8581++) {
+      VITIS_LOOP_15596_2: for (int v8582 = 0; v8582 < 1024; v8582++) {
         Y1[v8581][v8582] = 0.000000;
       }
     }
     systolic_QKT(Q_h, K_h, Y1);
-    float Y_t[1024][1024];
-    VITIS_LOOP_15723_5: for (int v8584 = 0; v8584 < 1024; v8584++) {
-      VITIS_LOOP_15724_6: for (int v8585 = 0; v8585 < 1024; v8585++) {
-        Y_t[v8584][v8585] = 0.000000;
-      }
-    }
+# 15614 "/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp"
     l_mha_scale_i16: for (int i16 = 0; i16 < 1024; i16++) {
       l_j14: for (int j14 = 0; j14 < 1024; j14++) {
         float v8588 = Y1[i16][j14];
         float v8589 = v8588 / 8.000000;
-        Y_t[i16][j14] = v8589;
+        Y1[i16][j14] = v8589;
       }
     }
 
-    sft_head(Y_t);
-    systolic_YV(Y_t, V_h, C_h);
+
+
+    sft_head(Y1);
+
+    systolic_YV(Y1, V_h, Q_h);
     l_mha_merge_i17: for (int i17 = 0; i17 < 1024; i17++) {
       l_j15: for (int j15 = 0; j15 < 64; j15++) {
-        float v8593 = C_h[i17][j15];
+        float v8593 = Q_h[i17][j15];
         v8567[i17][((h1 * 64) + j15)] = v8593;
       }
     }
@@ -61453,8 +61392,8 @@ void systolic_attn_out(
 
  l_outer_tile_mi6: for (int mi6 = 0; mi6 < 128; mi6++) {
     l_ni6: for (int ni6 = 0; ni6 < 64; ni6++) {
-
-      l_load_A_tile_ak6: for (int ak6 = 0; ak6 < 512; ak6++) {
+#pragma HLS dataflow
+ l_load_A_tile_ak6: for (int ak6 = 0; ak6 < 512; ak6++) {
         l_ai6: for (int ai6 = 0; ai6 < 8; ai6++) {
 #pragma HLS pipeline II=1
  ap_int<33> v10221 = ni6;
@@ -61483,18 +61422,20 @@ void systolic_attn_out(
     }
   }
 }
-# 18741 "/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp"
+
 void bias_add_scale(
   float v10230[1024][512],
   float v10231[512],
   float v10232[1024][512],
   float v10233[1024][512]
 ) {
+
   l_scale_i18: for (int i18 = 0; i18 < 1024; i18++) {
     l_j16: for (int j16 = 0; j16 < 512; j16++) {
       float v10237 = v10230[i18][j16];
       float v10238 = v10231[j16];
       float v10239 = v10237 * v10238;
+
       v10230[i18][j16] = v10239;
     }
   }
@@ -61503,7 +61444,7 @@ void bias_add_scale(
       float v10242 = v10230[i19][j17];
       float v10243 = v10232[i19][j17];
       float v10244 = v10242 + v10243;
-      v10230[i19][j17] = v10244;
+      v10233[i19][j17] = v10244;
     }
   }
 }
@@ -64446,8 +64387,8 @@ void systolic_mlp1(
 
  l_outer_tile_mi7: for (int mi7 = 0; mi7 < 128; mi7++) {
     l_ni7: for (int ni7 = 0; ni7 < 64; ni7++) {
-
-      l_load_A_tile_ak7: for (int ak7 = 0; ak7 < 512; ak7++) {
+#pragma HLS dataflow
+ l_load_A_tile_ak7: for (int ak7 = 0; ak7 < 512; ak7++) {
         l_ai7: for (int ai7 = 0; ai7 < 8; ai7++) {
 #pragma HLS pipeline II=1
  ap_int<33> v11872 = ni7;
@@ -67450,8 +67391,8 @@ void systolic_mlp2(
 
  l_outer_tile_mi8: for (int mi8 = 0; mi8 < 128; mi8++) {
     l_ni8: for (int ni8 = 0; ni8 < 64; ni8++) {
-
-      l_load_A_tile_ak8: for (int ak8 = 0; ak8 < 512; ak8++) {
+#pragma HLS dataflow
+ l_load_A_tile_ak8: for (int ak8 = 0; ak8 < 512; ak8++) {
         l_ai8: for (int ai8 = 0; ai8 < 8; ai8++) {
 #pragma HLS pipeline II=1
  ap_int<33> v13529 = ni8;
@@ -67480,7 +67421,7 @@ void systolic_mlp2(
     }
   }
 }
-# 25228 "/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp"
+# 25094 "/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp"
 __attribute__((sdx_kernel("allo_DDitBlock", 0))) void allo_DDitBlock(
     float v13538[1024][512],
     float v13539[512],
@@ -67521,7 +67462,7 @@ __attribute__((sdx_kernel("allo_DDitBlock", 0))) void allo_DDitBlock(
 ) {
 #line 1 "directive"
 #pragma HLSDIRECTIVE TOP name=allo_DDitBlock
-# 25265 "/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp"
+# 25131 "/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp"
 
   float buffer_x[1024][512];
   float buffer_w[512][512];
@@ -67529,8 +67470,11 @@ __attribute__((sdx_kernel("allo_DDitBlock", 0))) void allo_DDitBlock(
   float buffer_Q[1024][512];
   float buffer_K[1024][512];
   float buffer_V[1024][512];
+#pragma HLS bind_storage variable=buffer_Q type=ram_2p impl=uram
+#pragma HLS bind_storage variable=buffer_K type=ram_2p impl=uram
+#pragma HLS bind_storage variable=buffer_V type=ram_2p impl=uram
 
-  float buffer0[512];
+ float buffer0[512];
   float buffer1[512];
   float buffer2[512];
   float buffer3[512];
@@ -67543,76 +67487,70 @@ __attribute__((sdx_kernel("allo_DDitBlock", 0))) void allo_DDitBlock(
   float buffer_sin[1024][32];
   float buffer_cos[1024][32];
 
-#pragma HLS bind_storage variable=buffer_x type=ram_2p impl=uram
-#pragma HLS bind_storage variable=buffer_Q type=ram_2p impl=uram
-#pragma HLS bind_storage variable=buffer_K type=ram_2p impl=uram
-#pragma HLS bind_storage variable=buffer_V type=ram_2p impl=uram
-#pragma HLS bind_storage variable=buffer_w type=ram_2p impl=uram
 
 
- VITIS_LOOP_25293_1: for(int i = 0; i < 1; i++){
-      VITIS_LOOP_25294_2: for (int j = 0; j < 128; j++){
+  VITIS_LOOP_25157_1: for(int i = 0; i < 1; i++){
+      VITIS_LOOP_25158_2: for (int j = 0; j < 128; j++){
           buffer_c[i][j] = v13546[i][j];
       }
   }
-  VITIS_LOOP_25298_3: for (int i = 0; i < 512; i++){
+  VITIS_LOOP_25162_3: for (int i = 0; i < 512; i++){
       adaLN_bias[i] = adaLN_bias0[i];
   }
-  VITIS_LOOP_25301_4: for (int i = 0; i < 128; i++){
-      VITIS_LOOP_25302_5: for (int j = 0; j < 512; j++){
+  VITIS_LOOP_25165_4: for (int i = 0; i < 128; i++){
+      VITIS_LOOP_25166_5: for (int j = 0; j < 512; j++){
           adaLN_weight[i][j] = adaLN_weight0[i][j];
       }
   }
   adaLN_modulate(buffer_c, adaLN_weight, adaLN_bias, buffer0);
 
-  VITIS_LOOP_25308_6: for (int i = 0; i < 512; i++){
+  VITIS_LOOP_25172_6: for (int i = 0; i < 512; i++){
       adaLN_bias[i] = adaLN_bias1[i];
   }
-  VITIS_LOOP_25311_7: for (int i = 0; i < 128; i++){
-      VITIS_LOOP_25312_8: for (int j = 0; j < 512; j++){
+  VITIS_LOOP_25175_7: for (int i = 0; i < 128; i++){
+      VITIS_LOOP_25176_8: for (int j = 0; j < 512; j++){
           adaLN_weight[i][j] = adaLN_weight1[i][j];
       }
   }
   adaLN_modulate(buffer_c, adaLN_weight, adaLN_bias, buffer1);
 
-  VITIS_LOOP_25318_9: for (int i = 0; i < 512; i++){
+  VITIS_LOOP_25182_9: for (int i = 0; i < 512; i++){
       adaLN_bias[i] = adaLN_bias2[i];
   }
-  VITIS_LOOP_25321_10: for (int i = 0; i < 128; i++){
-      VITIS_LOOP_25322_11: for (int j = 0; j < 512; j++){
+  VITIS_LOOP_25185_10: for (int i = 0; i < 128; i++){
+      VITIS_LOOP_25186_11: for (int j = 0; j < 512; j++){
           adaLN_weight[i][j] = adaLN_weight2[i][j];
       }
   }
   adaLN_modulate(buffer_c, adaLN_weight, adaLN_bias, buffer2);
 
-
-  VITIS_LOOP_25329_12: for (int i = 0; i < 512; i++){
+  VITIS_LOOP_25192_12: for (int i = 0; i < 512; i++){
       adaLN_bias[i] = adaLN_bias3[i];
   }
-  VITIS_LOOP_25332_13: for (int i = 0; i < 128; i++){
-      VITIS_LOOP_25333_14: for (int j = 0; j < 512; j++){
+  VITIS_LOOP_25195_13: for (int i = 0; i < 128; i++){
+      VITIS_LOOP_25196_14: for (int j = 0; j < 512; j++){
           adaLN_weight[i][j] = adaLN_weight3[i][j];
       }
   }
   adaLN_modulate(buffer_c, adaLN_weight, adaLN_bias, buffer3);
 
-
-  VITIS_LOOP_25340_15: for (int i = 0; i < 512; i++){
+  VITIS_LOOP_25202_15: for (int i = 0; i < 512; i++){
       adaLN_bias[i] = adaLN_bias4[i];
   }
-  VITIS_LOOP_25343_16: for (int i = 0; i < 128; i++){
-      VITIS_LOOP_25344_17: for (int j = 0; j < 512; j++){
+  VITIS_LOOP_25205_16: for (int i = 0; i < 128; i++){
+      VITIS_LOOP_25206_17: for (int j = 0; j < 512; j++){
           adaLN_weight[i][j] = adaLN_weight4[i][j];
       }
   }
   adaLN_modulate(buffer_c, adaLN_weight, adaLN_bias, buffer4);
 
 
-  VITIS_LOOP_25351_18: for (int i = 0; i < 512; i++){
+
+  VITIS_LOOP_25214_18: for (int i = 0; i < 512; i++){
       adaLN_bias[i] = adaLN_bias5[i];
   }
-  VITIS_LOOP_25354_19: for (int i = 0; i < 128; i++){
-      VITIS_LOOP_25355_20: for (int j = 0; j < 512; j++){
+  VITIS_LOOP_25217_19: for (int i = 0; i < 128; i++){
+      VITIS_LOOP_25218_20: for (int j = 0; j < 512; j++){
           adaLN_weight[i][j] = adaLN_weight5[i][j];
       }
   }
@@ -67620,48 +67558,62 @@ __attribute__((sdx_kernel("allo_DDitBlock", 0))) void allo_DDitBlock(
 
 
 
-
-  VITIS_LOOP_25364_21: for(int i = 0; i < 1024; i++){
-      VITIS_LOOP_25365_22: for(int j = 0; j < 512; j++){
+  VITIS_LOOP_25226_21: for(int i = 0; i < 1024; i++){
+      VITIS_LOOP_25227_22: for(int j = 0; j < 512; j++){
           buffer_x[i][j] = v13538[i][j];
       }
   }
-# 25378 "/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp"
-  layer_norm(buffer_x, buffer_K);
-  modulate_fused(buffer_K, buffer1, buffer0, buffer_x);
 
-  VITIS_LOOP_25381_23: for(int i = 0; i < 512; i++){
-      VITIS_LOOP_25382_24: for(int j = 0; j < 512; j++){
+
+
+
+  layer_norm(buffer_x);
+
+
+
+
+  modulate_fused(buffer_x, buffer1, buffer0);
+
+
+
+
+  VITIS_LOOP_25245_23: for(int i = 0; i < 512; i++){
+      VITIS_LOOP_25246_24: for(int j = 0; j < 512; j++){
           buffer_w[i][j] = v13543[i][j];
       }
   }
   systolic_Q(buffer_x, buffer_w, buffer_Q);
-  VITIS_LOOP_25387_25: for(int i = 0; i < 512; i++){
-      VITIS_LOOP_25388_26: for(int j = 0; j < 512; j++){
+  VITIS_LOOP_25251_25: for(int i = 0; i < 512; i++){
+      VITIS_LOOP_25252_26: for(int j = 0; j < 512; j++){
           buffer_w[i][j] = v13544[i][j];
       }
   }
+
   systolic_Q(buffer_x, buffer_w, buffer_K);
 
-  VITIS_LOOP_25394_27: for(int i = 0; i < 512; i++){
-      VITIS_LOOP_25395_28: for(int j = 0; j < 512; j++){
+  VITIS_LOOP_25259_27: for(int i = 0; i < 512; i++){
+      VITIS_LOOP_25260_28: for(int j = 0; j < 512; j++){
           buffer_w[i][j] = v13545[i][j];
       }
   }
+
   systolic_Q(buffer_x, buffer_w, buffer_V);
 
-  VITIS_LOOP_25401_29: for(int i = 0; i < 1024; i++){
-      VITIS_LOOP_25402_30: for(int j = 0; j < 32; j++){
+  VITIS_LOOP_25267_29: for(int i = 0; i < 1024; i++){
+      VITIS_LOOP_25268_30: for(int j = 0; j < 32; j++){
           buffer_sin[i][j] = v13541[i][j];
       }
   }
-  VITIS_LOOP_25406_31: for(int i = 0; i < 1024; i++){
-      VITIS_LOOP_25407_32: for(int j = 0; j < 32; j++){
+  VITIS_LOOP_25272_31: for(int i = 0; i < 1024; i++){
+      VITIS_LOOP_25273_32: for(int j = 0; j < 32; j++){
           buffer_cos[i][j] = v13542[i][j];
       }
   }
 
+
   RoPE(buffer_Q, buffer_cos, buffer_sin);
+
+
 
   RoPE(buffer_K, buffer_cos, buffer_sin);
 
@@ -67669,66 +67621,67 @@ __attribute__((sdx_kernel("allo_DDitBlock", 0))) void allo_DDitBlock(
 
   scaled_dot_product_attention(buffer_Q, buffer_K, buffer_V, buffer_x);
 
-  VITIS_LOOP_25420_33: for(int i = 0; i < 512; i++){
-      VITIS_LOOP_25421_34: for(int j = 0; j < 512; j++){
+  VITIS_LOOP_25289_33: for(int i = 0; i < 512; i++){
+      VITIS_LOOP_25290_34: for(int j = 0; j < 512; j++){
           buffer_w[i][j] = v13555[i][j];
       }
   }
 
-  systolic_Q(buffer_Q, buffer_w, buffer_K);
-  VITIS_LOOP_25427_35: for (int i = 0; i < 1024; i++){
-      VITIS_LOOP_25428_36: for (int j = 0; j < 512; j++){
-          buffer_V[i][j] = v13538[i][j];
+  systolic_Q(buffer_x, buffer_w, buffer_K);
+  VITIS_LOOP_25296_35: for(int i = 0; i < 1024; i++){
+      VITIS_LOOP_25297_36: for(int j = 0; j < 512; j++){
+          buffer_x[i][j] = v13538[i][j];
       }
   }
-  bias_add_scale(buffer_x, buffer2, buffer_V, buffer_Q);
+  bias_add_scale(buffer_K, buffer2, buffer_x, buffer_Q);
 
 
-  VITIS_LOOP_25435_37: for(int i = 0; i < 1024; i++){
-      VITIS_LOOP_25436_38: for(int j = 0; j < 512; j++){
+  VITIS_LOOP_25304_37: for(int i = 0; i < 1024; i++){
+      VITIS_LOOP_25305_38: for(int j = 0; j < 512; j++){
           buffer_x[i][j] = buffer_Q[i][j];
       }
   }
-  layer_norm(buffer_Q, buffer_K);
+  layer_norm(buffer_Q);
 
-  layer_norm(buffer_K, buffer_Q);
+  layer_norm(buffer_Q);
 
-  modulate_fused(buffer_Q, buffer4, buffer3, buffer_K);
+  modulate_fused(buffer_Q, buffer4, buffer3);
 
-  VITIS_LOOP_25446_39: for(int i = 0; i < 512; i++){
-      VITIS_LOOP_25447_40: for(int j = 0; j < 512; j++){
+  VITIS_LOOP_25315_39: for(int i = 0; i < 512; i++){
+      VITIS_LOOP_25316_40: for(int j = 0; j < 512; j++){
           buffer_w[i][j] = v13557[i][j];
+      }
+  }
+
+  systolic_Q(buffer_Q, buffer_w, buffer_K);
+
+  VITIS_LOOP_25323_41: for(int i = 0; i < 512; i++){
+      buffer0[i] = v13558[i];
+  }
+  bias_add(buffer_K, buffer0, buffer_Q);
+  GeLU(buffer_Q, buffer_K);
+  VITIS_LOOP_25328_42: for(int i = 0; i < 512; i++){
+      VITIS_LOOP_25329_43: for(int j = 0; j < 512; j++){
+          buffer_w[i][j] = v13559[i][j];
       }
   }
 
   systolic_Q(buffer_K, buffer_w, buffer_Q);
 
-  VITIS_LOOP_25454_41: for(int i = 0; i < 512; i++){
-      buffer0[i] = v13558[i];
-  }
-  bias_add(buffer_Q, buffer0, buffer_K);
-  GeLU(buffer_K, buffer_Q);
-  VITIS_LOOP_25459_42: for(int i = 0; i < 512; i++){
-      VITIS_LOOP_25460_43: for(int j = 0; j < 512; j++){
-          buffer_w[i][j] = v13559[i][j];
-      }
-  }
-
-  systolic_Q(buffer_Q, buffer_w, buffer_K);
-
-  VITIS_LOOP_25467_44: for(int i = 0; i < 512; i++){
+  VITIS_LOOP_25336_44: for(int i = 0; i < 512; i++){
       buffer0[i] = v13560[i];
   }
-  bias_add(buffer_K, buffer0, buffer_Q);
-  bias_add_scale(buffer_Q, buffer5, buffer_x, buffer_K);
+  bias_add(buffer_Q, buffer0, buffer_K);
+  bias_add_scale(buffer_K, buffer5, buffer_x, buffer_Q);
 
 
-  VITIS_LOOP_25474_45: for(int i = 0; i < 1024; i++){
-      VITIS_LOOP_25475_46: for(int j = 0; j < 512; j++){
-          v13561[i][j] = buffer_K[i][j];
+  VITIS_LOOP_25343_45: for(int i = 0; i < 1024; i++){
+      VITIS_LOOP_25344_46: for(int j = 0; j < 512; j++){
+          v13561[i][j] = buffer_Q[i][j];
 
       }
   }
+# 25468 "/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp"
 }
 
 

@@ -45,13 +45,13 @@
 <SummaryOfViolations>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:9602</SourceLocation>
+<SourceLocation>/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:9471</SourceLocation>
 <SummaryOfLoopViolations>
 <l_S_h_0_h>
 <Name>l_S_h_0_h</Name>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:9602</SourceLocation>
+<SourceLocation>/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:9471</SourceLocation>
 </l_S_h_0_h>
 </SummaryOfLoopViolations>
 </SummaryOfViolations>
@@ -61,8 +61,8 @@
 <Resources>
 <BRAM_18K>256</BRAM_18K>
 <DSP>8</DSP>
-<FF>1188</FF>
-<LUT>2642</LUT>
+<FF>1114</FF>
+<LUT>2222</LUT>
 <URAM>0</URAM>
 </Resources>
 <AvailableResources>

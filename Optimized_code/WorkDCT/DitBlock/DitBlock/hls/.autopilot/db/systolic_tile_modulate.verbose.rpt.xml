@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'systolic_tile_modulate'" level="0">
-<item name = "Date">Wed Feb  5 22:35:25 2025
+<item name = "Date">Mon Feb 17 20:37:37 2025
 </item>
 <item name = "Version">2023.2 (Build 4023990 on Oct 11 2023)</item>
 <item name = "Project">DitBlock</item>
@@ -31,7 +31,7 @@
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="systolic_tile_modulate_Loop_l_data_load_k8_proc22_U0">systolic_tile_modulate_Loop_l_data_load_k8_proc22, 1027, 1027, 10.270 us, 10.270 us, 1027, 1027, no</column>
+<column name="systolic_tile_modulate_Loop_l_data_load_k8_proc31_U0">systolic_tile_modulate_Loop_l_data_load_k8_proc31, 1027, 1027, 10.270 us, 10.270 us, 1027, 1027, no</column>
 <column name="PE_kernel_modulate_0_0_1_U0">PE_kernel_modulate_0_0_1, 261, 261, 2.610 us, 2.610 us, 261, 261, no</column>
 <column name="PE_kernel_modulate_1_0_1_U0">PE_kernel_modulate_1_0_1, 261, 261, 2.610 us, 2.610 us, 261, 261, no</column>
 <column name="PE_kernel_modulate_2_0_1_U0">PE_kernel_modulate_2_0_1, 261, 261, 2.610 us, 2.610 us, 261, 261, no</column>
@@ -40,7 +40,7 @@
 <column name="PE_kernel_modulate_5_0_1_U0">PE_kernel_modulate_5_0_1, 261, 261, 2.610 us, 2.610 us, 261, 261, no</column>
 <column name="PE_kernel_modulate_6_0_1_U0">PE_kernel_modulate_6_0_1, 261, 261, 2.610 us, 2.610 us, 261, 261, no</column>
 <column name="PE_kernel_modulate_7_0_1_U0">PE_kernel_modulate_7_0_1, 261, 261, 2.610 us, 2.610 us, 261, 261, no</column>
-<column name="systolic_tile_modulate_Loop_l_data_drain_k9_proc23_U0">systolic_tile_modulate_Loop_l_data_drain_k9_proc23, 1026, 1026, 10.260 us, 10.260 us, 1026, 1026, no</column>
+<column name="systolic_tile_modulate_Loop_l_data_drain_k9_proc32_U0">systolic_tile_modulate_Loop_l_data_drain_k9_proc32, 1026, 1026, 10.260 us, 10.260 us, 1026, 1026, no</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
@@ -81,8 +81,8 @@
 <column name="PE_kernel_modulate_5_0_1_U0">PE_kernel_modulate_5_0_1, 0, 5, 427, 487, 0</column>
 <column name="PE_kernel_modulate_6_0_1_U0">PE_kernel_modulate_6_0_1, 0, 5, 427, 487, 0</column>
 <column name="PE_kernel_modulate_7_0_1_U0">PE_kernel_modulate_7_0_1, 0, 5, 427, 487, 0</column>
-<column name="systolic_tile_modulate_Loop_l_data_drain_k9_proc23_U0">systolic_tile_modulate_Loop_l_data_drain_k9_proc23, 0, 0, 23, 212, 0</column>
-<column name="systolic_tile_modulate_Loop_l_data_load_k8_proc22_U0">systolic_tile_modulate_Loop_l_data_load_k8_proc22, 0, 0, 301, 305, 0</column>
+<column name="systolic_tile_modulate_Loop_l_data_drain_k9_proc32_U0">systolic_tile_modulate_Loop_l_data_drain_k9_proc32, 0, 0, 23, 212, 0</column>
+<column name="systolic_tile_modulate_Loop_l_data_load_k8_proc31_U0">systolic_tile_modulate_Loop_l_data_load_k8_proc31, 0, 0, 301, 305, 0</column>
 </table>
 </item>
 <item name = "DSP"><table name="" hasTotal="0">
@@ -127,7 +127,7 @@
 <column name="ap_idle">and, 0, 0, 2, 1, 1</column>
 <column name="ap_sync_continue">and, 0, 0, 2, 1, 1</column>
 <column name="ap_sync_done">and, 0, 0, 2, 1, 1</column>
-<column name="systolic_tile_modulate_Loop_l_data_load_k8_proc22_U0_start_full_n">and, 0, 0, 2, 1, 1</column>
+<column name="systolic_tile_modulate_Loop_l_data_load_k8_proc31_U0_start_full_n">and, 0, 0, 2, 1, 1</column>
 </table>
 </item>
 <item name = "Multiplexer"><table name="" hasTotal="1">

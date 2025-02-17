@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'scaled_dot_product_attention'" level="0">
-<item name = "Date">Wed Feb  5 22:35:11 2025
+<item name = "Date">Mon Feb 17 20:37:22 2025
 </item>
 <item name = "Version">2023.2 (Build 4023990 on Oct 11 2023)</item>
 <item name = "Project">DitBlock</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">10.00 ns, 7.069 ns, 2.70 ns</column>
+<column name="ap_clk">10.00 ns, 7.399 ns, 2.70 ns</column>
 </table>
 </item>
 </section>
@@ -24,31 +24,29 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">240107921, 240107921, 2.401 sec, 2.401 sec, 240107921, 240107921, no</column>
+<column name="">196434329, 196434329, 1.964 sec, 1.964 sec, 196434329, 196434329, no</column>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="grp_scaled_dot_product_attention_Pipeline_l_mha_split_i15_l_j13_fu_100">scaled_dot_product_attention_Pipeline_l_mha_split_i15_l_j13, 65538, 65538, 0.655 ms, 0.655 ms, 65538, 65538, no</column>
-<column name="grp_scaled_dot_product_attention_Pipeline_VITIS_LOOP_15708_1_VITIS_LOOP_15709_2_fu_114">scaled_dot_product_attention_Pipeline_VITIS_LOOP_15708_1_VITIS_LOOP_15709_2, 65538, 65538, 0.655 ms, 0.655 ms, 65538, 65538, no</column>
-<column name="grp_scaled_dot_product_attention_Pipeline_VITIS_LOOP_15716_3_VITIS_LOOP_15717_4_fu_119">scaled_dot_product_attention_Pipeline_VITIS_LOOP_15716_3_VITIS_LOOP_15717_4, 1048578, 1048578, 10.486 ms, 10.486 ms, 1048578, 1048578, no</column>
-<column name="grp_scaled_dot_product_attention_Pipeline_VITIS_LOOP_15723_5_VITIS_LOOP_15724_6_fu_124">scaled_dot_product_attention_Pipeline_VITIS_LOOP_15723_5_VITIS_LOOP_15724_6, 1048578, 1048578, 10.486 ms, 10.486 ms, 1048578, 1048578, no</column>
-<column name="grp_scaled_dot_product_attention_Pipeline_VITIS_LOOP_12688_1_fu_129">scaled_dot_product_attention_Pipeline_VITIS_LOOP_12688_1, 1026, 1026, 10.260 us, 10.260 us, 1026, 1026, no</column>
-<column name="grp_scaled_dot_product_attention_Pipeline_VITIS_LOOP_12692_2_fu_134">scaled_dot_product_attention_Pipeline_VITIS_LOOP_12692_2, 1026, 1026, 10.260 us, 10.260 us, 1026, 1026, no</column>
-<column name="grp_systolic_QKT_fu_139">systolic_QKT, 12025857, 12025857, 0.120 sec, 0.120 sec, 12025857, 12025857, no</column>
-<column name="grp_scaled_dot_product_attention_Pipeline_l_mha_scale_i16_l_j14_fu_146">scaled_dot_product_attention_Pipeline_l_mha_scale_i16_l_j14, 1048580, 1048580, 10.486 ms, 10.486 ms, 1048580, 1048580, no</column>
-<column name="grp_scaled_dot_product_attention_Pipeline_l_row_max_i12_l_j10_fu_152">scaled_dot_product_attention_Pipeline_l_row_max_i12_l_j10, 2097155, 2097155, 20.972 ms, 20.972 ms, 2097155, 2097155, no</column>
-<column name="grp_scaled_dot_product_attention_Pipeline_l_exp_sum_i13_l_j11_fu_158">scaled_dot_product_attention_Pipeline_l_exp_sum_i13_l_j11, 2097164, 2097164, 20.972 ms, 20.972 ms, 2097164, 2097164, no</column>
-<column name="grp_scaled_dot_product_attention_Pipeline_l_update_i14_l_j12_fu_165">scaled_dot_product_attention_Pipeline_l_update_i14_l_j12, 1048585, 1048585, 10.486 ms, 10.486 ms, 1048585, 1048585, no</column>
-<column name="grp_systolic_YV_fu_171">systolic_YV, 10582017, 10582017, 0.106 sec, 0.106 sec, 10582017, 10582017, no</column>
-<column name="grp_scaled_dot_product_attention_Pipeline_l_mha_merge_i17_l_j15_fu_178">scaled_dot_product_attention_Pipeline_l_mha_merge_i17_l_j15, 65538, 65538, 0.655 ms, 0.655 ms, 65538, 65538, no</column>
+<column name="grp_scaled_dot_product_attention_Pipeline_l_mha_split_i15_l_j13_fu_88">scaled_dot_product_attention_Pipeline_l_mha_split_i15_l_j13, 65538, 65538, 0.655 ms, 0.655 ms, 65538, 65538, no</column>
+<column name="grp_scaled_dot_product_attention_Pipeline_VITIS_LOOP_15595_1_VITIS_LOOP_15596_2_fu_102">scaled_dot_product_attention_Pipeline_VITIS_LOOP_15595_1_VITIS_LOOP_15596_2, 1048578, 1048578, 10.486 ms, 10.486 ms, 1048578, 1048578, no</column>
+<column name="grp_scaled_dot_product_attention_Pipeline_VITIS_LOOP_12557_1_fu_107">scaled_dot_product_attention_Pipeline_VITIS_LOOP_12557_1, 1026, 1026, 10.260 us, 10.260 us, 1026, 1026, no</column>
+<column name="grp_scaled_dot_product_attention_Pipeline_VITIS_LOOP_12561_2_fu_112">scaled_dot_product_attention_Pipeline_VITIS_LOOP_12561_2, 1026, 1026, 10.260 us, 10.260 us, 1026, 1026, no</column>
+<column name="grp_systolic_QKT_fu_117">systolic_QKT, 8482177, 8482177, 84.822 ms, 84.822 ms, 8482177, 8482177, no</column>
+<column name="grp_scaled_dot_product_attention_Pipeline_l_mha_scale_i16_l_j14_fu_124">scaled_dot_product_attention_Pipeline_l_mha_scale_i16_l_j14, 1048581, 1048581, 10.486 ms, 10.486 ms, 1048581, 1048581, no</column>
+<column name="grp_scaled_dot_product_attention_Pipeline_l_row_max_i12_l_j10_fu_129">scaled_dot_product_attention_Pipeline_l_row_max_i12_l_j10, 2097155, 2097155, 20.972 ms, 20.972 ms, 2097155, 2097155, no</column>
+<column name="grp_scaled_dot_product_attention_Pipeline_l_exp_sum_i13_l_j11_fu_135">scaled_dot_product_attention_Pipeline_l_exp_sum_i13_l_j11, 2097164, 2097164, 20.972 ms, 20.972 ms, 2097164, 2097164, no</column>
+<column name="grp_scaled_dot_product_attention_Pipeline_l_update_i14_l_j12_fu_142">scaled_dot_product_attention_Pipeline_l_update_i14_l_j12, 1048585, 1048585, 10.486 ms, 10.486 ms, 1048585, 1048585, no</column>
+<column name="grp_systolic_YV_fu_148">systolic_YV, 8666497, 8666497, 86.665 ms, 86.665 ms, 8666497, 8666497, no</column>
+<column name="grp_scaled_dot_product_attention_Pipeline_l_mha_merge_i17_l_j15_fu_155">scaled_dot_product_attention_Pipeline_l_mha_merge_i17_l_j15, 65538, 65538, 0.655 ms, 0.655 ms, 65538, 65538, no</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
-<column name="- l_S_h_0_h1">240107920, 240107920, 30013490, -, -, 8, no</column>
+<column name="- l_S_h_0_h1">196434328, 196434328, 24554291, -, -, 8, no</column>
 </table>
 </item>
 </section>

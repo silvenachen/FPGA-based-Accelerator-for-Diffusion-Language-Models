@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'PE_kernel_modulate_7_0_1'
 ================================================================
-* Date:           Wed Feb  5 22:34:00 2025
+* Date:           Mon Feb 17 20:36:07 2025
 
 * Version:        2023.2 (Build 4023990 on Oct 11 2023)
 * Project:        DitBlock
@@ -89,50 +89,50 @@ IsGatedGlobalClock: 0
 * FSM state operations: 
 
 State 1 <SV = 0> <Delay = 1.09>
-ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%v163 = alloca i32 1" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:320]   --->   Operation 9 'alloca' 'v163' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%k7 = alloca i32 1" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:310]   --->   Operation 10 'alloca' 'k7' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %B_fifo_7_1, void @empty_215, i32 0, i32 0, void @empty_219, i32 0, i32 0, void @empty_219, void @empty_219, void @empty_219, i32 0, i32 0, i32 0, i32 0, void @empty_219, void @empty_219, i32 4294967295, i32 0"   --->   Operation 11 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %B_fifo_7_0, void @empty_215, i32 0, i32 0, void @empty_219, i32 0, i32 0, void @empty_219, void @empty_219, void @empty_219, i32 0, i32 0, i32 0, i32 0, void @empty_219, void @empty_219, i32 4294967295, i32 0"   --->   Operation 12 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %A_fifo_8, void @empty_215, i32 0, i32 0, void @empty_219, i32 0, i32 0, void @empty_219, void @empty_219, void @empty_219, i32 0, i32 0, i32 0, i32 0, void @empty_219, void @empty_219, i32 4294967295, i32 0"   --->   Operation 13 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %A_fifo_7, void @empty_215, i32 0, i32 0, void @empty_219, i32 0, i32 0, void @empty_219, void @empty_219, void @empty_219, i32 0, i32 0, i32 0, i32 0, void @empty_219, void @empty_219, i32 4294967295, i32 0"   --->   Operation 14 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 15 [1/1] (0.38ns)   --->   "%store_ln310 = store i8 0, i8 %k7" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:310]   --->   Operation 15 'store' 'store_ln310' <Predicate = true> <Delay = 0.38>
-ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%br_ln310 = br void %for.inc" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:310]   --->   Operation 17 'br' 'br_ln310' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%k7_1 = load i8 %k7" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:310]   --->   Operation 18 'load' 'k7_1' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 19 [1/1] (0.70ns)   --->   "%icmp_ln310 = icmp_eq  i8 %k7_1, i8 128" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:310]   --->   Operation 19 'icmp' 'icmp_ln310' <Predicate = true> <Delay = 0.70> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.70> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
-ST_1 : Operation 20 [1/1] (0.70ns)   --->   "%k7_2 = add i8 %k7_1, i8 1" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:310]   --->   Operation 20 'add' 'k7_2' <Predicate = true> <Delay = 0.70> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.70> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_1 : Operation 21 [1/1] (0.00ns)   --->   "%br_ln310 = br i1 %icmp_ln310, void %for.inc.split, void %for.end" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:310]   --->   Operation 21 'br' 'br_ln310' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%v163 = alloca i32 1" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:318]   --->   Operation 9 'alloca' 'v163' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%k7 = alloca i32 1" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:308]   --->   Operation 10 'alloca' 'k7' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %B_fifo_7_1, void @empty_234, i32 0, i32 0, void @empty_191, i32 0, i32 0, void @empty_191, void @empty_191, void @empty_191, i32 0, i32 0, i32 0, i32 0, void @empty_191, void @empty_191, i32 4294967295, i32 0"   --->   Operation 11 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %B_fifo_7_0, void @empty_234, i32 0, i32 0, void @empty_191, i32 0, i32 0, void @empty_191, void @empty_191, void @empty_191, i32 0, i32 0, i32 0, i32 0, void @empty_191, void @empty_191, i32 4294967295, i32 0"   --->   Operation 12 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %A_fifo_8, void @empty_234, i32 0, i32 0, void @empty_191, i32 0, i32 0, void @empty_191, void @empty_191, void @empty_191, i32 0, i32 0, i32 0, i32 0, void @empty_191, void @empty_191, i32 4294967295, i32 0"   --->   Operation 13 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %A_fifo_7, void @empty_234, i32 0, i32 0, void @empty_191, i32 0, i32 0, void @empty_191, void @empty_191, void @empty_191, i32 0, i32 0, i32 0, i32 0, void @empty_191, void @empty_191, i32 4294967295, i32 0"   --->   Operation 14 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 15 [1/1] (0.38ns)   --->   "%store_ln308 = store i8 0, i8 %k7" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:308]   --->   Operation 15 'store' 'store_ln308' <Predicate = true> <Delay = 0.38>
+ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%br_ln308 = br void %for.inc" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:308]   --->   Operation 17 'br' 'br_ln308' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%k7_1 = load i8 %k7" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:308]   --->   Operation 18 'load' 'k7_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 19 [1/1] (0.70ns)   --->   "%icmp_ln308 = icmp_eq  i8 %k7_1, i8 128" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:308]   --->   Operation 19 'icmp' 'icmp_ln308' <Predicate = true> <Delay = 0.70> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.70> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 20 [1/1] (0.70ns)   --->   "%k7_2 = add i8 %k7_1, i8 1" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:308]   --->   Operation 20 'add' 'k7_2' <Predicate = true> <Delay = 0.70> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.70> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 21 [1/1] (0.00ns)   --->   "%br_ln308 = br i1 %icmp_ln308, void %for.inc.split, void %for.end" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:308]   --->   Operation 21 'br' 'br_ln308' <Predicate = true> <Delay = 0.00>
 
 State 2 <SV = 1> <Delay = 6.33>
-ST_2 : Operation 22 [1/1] (1.39ns)   --->   "%A_fifo_7_read = read i32 @_ssdm_op_Read.ap_fifo.volatile.i32P0A, i32 %A_fifo_7" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:311]   --->   Operation 22 'read' 'A_fifo_7_read' <Predicate = (!icmp_ln310)> <Delay = 1.39> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.39> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 2> <FIFO>
-ST_2 : Operation 23 [1/1] (0.00ns)   --->   "%v156 = bitcast i32 %A_fifo_7_read" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:311]   --->   Operation 23 'bitcast' 'v156' <Predicate = (!icmp_ln310)> <Delay = 0.00>
-ST_2 : Operation 24 [1/1] (1.43ns)   --->   "%B_fifo_7_0_read = read i32 @_ssdm_op_Read.ap_fifo.volatile.i32P0A, i32 %B_fifo_7_0" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:314]   --->   Operation 24 'read' 'B_fifo_7_0_read' <Predicate = (!icmp_ln310)> <Delay = 1.43> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.43> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 9> <FIFO>
-ST_2 : Operation 25 [1/1] (0.00ns)   --->   "%v158 = bitcast i32 %B_fifo_7_0_read" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:314]   --->   Operation 25 'bitcast' 'v158' <Predicate = (!icmp_ln310)> <Delay = 0.00>
-ST_2 : Operation 26 [2/2] (4.90ns)   --->   "%v162 = fmul i32 %v156, i32 %v158" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:319]   --->   Operation 26 'fmul' 'v162' <Predicate = (!icmp_ln310)> <Delay = 4.90> <CoreInst = "FMul_maxdsp">   --->   Core 30 'FMul_maxdsp' <Latency = 1> <II = 1> <Delay = 4.90> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
-ST_2 : Operation 27 [1/1] (1.39ns)   --->   "%write_ln324 = write void @_ssdm_op_Write.ap_fifo.volatile.i32P0A, i32 %A_fifo_8, i32 %A_fifo_7_read" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:324]   --->   Operation 27 'write' 'write_ln324' <Predicate = (!icmp_ln310)> <Delay = 1.39> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.39> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 2> <FIFO>
-ST_2 : Operation 28 [1/1] (1.43ns)   --->   "%write_ln326 = write void @_ssdm_op_Write.ap_fifo.volatile.i32P0A, i32 %B_fifo_7_1, i32 %B_fifo_7_0_read" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:326]   --->   Operation 28 'write' 'write_ln326' <Predicate = (!icmp_ln310)> <Delay = 1.43> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.43> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 9> <FIFO>
-ST_2 : Operation 29 [1/1] (0.38ns)   --->   "%store_ln310 = store i8 %k7_2, i8 %k7" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:310]   --->   Operation 29 'store' 'store_ln310' <Predicate = (!icmp_ln310)> <Delay = 0.38>
+ST_2 : Operation 22 [1/1] (1.39ns)   --->   "%A_fifo_7_read = read i32 @_ssdm_op_Read.ap_fifo.volatile.i32P0A, i32 %A_fifo_7" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:309]   --->   Operation 22 'read' 'A_fifo_7_read' <Predicate = (!icmp_ln308)> <Delay = 1.39> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.39> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 2> <FIFO>
+ST_2 : Operation 23 [1/1] (0.00ns)   --->   "%v156 = bitcast i32 %A_fifo_7_read" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:309]   --->   Operation 23 'bitcast' 'v156' <Predicate = (!icmp_ln308)> <Delay = 0.00>
+ST_2 : Operation 24 [1/1] (1.43ns)   --->   "%B_fifo_7_0_read = read i32 @_ssdm_op_Read.ap_fifo.volatile.i32P0A, i32 %B_fifo_7_0" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:312]   --->   Operation 24 'read' 'B_fifo_7_0_read' <Predicate = (!icmp_ln308)> <Delay = 1.43> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.43> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 9> <FIFO>
+ST_2 : Operation 25 [1/1] (0.00ns)   --->   "%v158 = bitcast i32 %B_fifo_7_0_read" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:312]   --->   Operation 25 'bitcast' 'v158' <Predicate = (!icmp_ln308)> <Delay = 0.00>
+ST_2 : Operation 26 [2/2] (4.90ns)   --->   "%v162 = fmul i32 %v156, i32 %v158" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:317]   --->   Operation 26 'fmul' 'v162' <Predicate = (!icmp_ln308)> <Delay = 4.90> <CoreInst = "FMul_maxdsp">   --->   Core 30 'FMul_maxdsp' <Latency = 1> <II = 1> <Delay = 4.90> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 27 [1/1] (1.39ns)   --->   "%write_ln322 = write void @_ssdm_op_Write.ap_fifo.volatile.i32P0A, i32 %A_fifo_8, i32 %A_fifo_7_read" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:322]   --->   Operation 27 'write' 'write_ln322' <Predicate = (!icmp_ln308)> <Delay = 1.39> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.39> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 2> <FIFO>
+ST_2 : Operation 28 [1/1] (1.43ns)   --->   "%write_ln324 = write void @_ssdm_op_Write.ap_fifo.volatile.i32P0A, i32 %B_fifo_7_1, i32 %B_fifo_7_0_read" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:324]   --->   Operation 28 'write' 'write_ln324' <Predicate = (!icmp_ln308)> <Delay = 1.43> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.43> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 9> <FIFO>
+ST_2 : Operation 29 [1/1] (0.38ns)   --->   "%store_ln308 = store i8 %k7_2, i8 %k7" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:308]   --->   Operation 29 'store' 'store_ln308' <Predicate = (!icmp_ln308)> <Delay = 0.38>
 
 State 3 <SV = 2> <Delay = 4.90>
-ST_3 : Operation 30 [1/2] (4.90ns)   --->   "%v162 = fmul i32 %v156, i32 %v158" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:319]   --->   Operation 30 'fmul' 'v162' <Predicate = true> <Delay = 4.90> <CoreInst = "FMul_maxdsp">   --->   Core 30 'FMul_maxdsp' <Latency = 1> <II = 1> <Delay = 4.90> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 30 [1/2] (4.90ns)   --->   "%v162 = fmul i32 %v156, i32 %v158" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:317]   --->   Operation 30 'fmul' 'v162' <Predicate = true> <Delay = 4.90> <CoreInst = "FMul_maxdsp">   --->   Core 30 'FMul_maxdsp' <Latency = 1> <II = 1> <Delay = 4.90> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
 
 State 4 <SV = 3> <Delay = 6.53>
-ST_4 : Operation 16 [1/1] (0.38ns)   --->   "%store_ln320 = store i32 0, i32 %v163" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:320]   --->   Operation 16 'store' 'store_ln320' <Predicate = true> <Delay = 0.38>
-ST_4 : Operation 31 [1/1] (0.00ns)   --->   "%v163_load_1 = load i32 %v163" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:321]   --->   Operation 31 'load' 'v163_load_1' <Predicate = true> <Delay = 0.00>
-ST_4 : Operation 32 [3/3] (6.14ns)   --->   "%v164 = fadd i32 %v163_load_1, i32 %v162" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:321]   --->   Operation 32 'fadd' 'v164' <Predicate = true> <Delay = 6.14> <CoreInst = "FAddSub_fulldsp">   --->   Core 18 'FAddSub_fulldsp' <Latency = 2> <II = 1> <Delay = 6.14> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
-ST_4 : Operation 40 [1/1] (0.00ns)   --->   "%v163_load = load i32 %v163" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:329]   --->   Operation 40 'load' 'v163_load' <Predicate = (icmp_ln310)> <Delay = 0.00>
-ST_4 : Operation 41 [1/1] (0.00ns)   --->   "%write_ln329 = write void @_ssdm_op_Write.ap_auto.floatP0A, i32 %v151_7_0, i32 %v163_load" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:329]   --->   Operation 41 'write' 'write_ln329' <Predicate = (icmp_ln310)> <Delay = 0.00>
-ST_4 : Operation 42 [1/1] (0.00ns)   --->   "%ret_ln330 = ret" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:330]   --->   Operation 42 'ret' 'ret_ln330' <Predicate = (icmp_ln310)> <Delay = 0.00>
+ST_4 : Operation 16 [1/1] (0.38ns)   --->   "%store_ln318 = store i32 0, i32 %v163" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:318]   --->   Operation 16 'store' 'store_ln318' <Predicate = true> <Delay = 0.38>
+ST_4 : Operation 31 [1/1] (0.00ns)   --->   "%v163_load_1 = load i32 %v163" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:319]   --->   Operation 31 'load' 'v163_load_1' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 32 [3/3] (6.14ns)   --->   "%v164 = fadd i32 %v163_load_1, i32 %v162" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:319]   --->   Operation 32 'fadd' 'v164' <Predicate = true> <Delay = 6.14> <CoreInst = "FAddSub_fulldsp">   --->   Core 18 'FAddSub_fulldsp' <Latency = 2> <II = 1> <Delay = 6.14> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 40 [1/1] (0.00ns)   --->   "%v163_load = load i32 %v163" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:327]   --->   Operation 40 'load' 'v163_load' <Predicate = (icmp_ln308)> <Delay = 0.00>
+ST_4 : Operation 41 [1/1] (0.00ns)   --->   "%write_ln327 = write void @_ssdm_op_Write.ap_auto.floatP0A, i32 %v151_7_0, i32 %v163_load" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:327]   --->   Operation 41 'write' 'write_ln327' <Predicate = (icmp_ln308)> <Delay = 0.00>
+ST_4 : Operation 42 [1/1] (0.00ns)   --->   "%ret_ln328 = ret" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:328]   --->   Operation 42 'ret' 'ret_ln328' <Predicate = (icmp_ln308)> <Delay = 0.00>
 
 State 5 <SV = 4> <Delay = 6.14>
-ST_5 : Operation 33 [2/3] (6.14ns)   --->   "%v164 = fadd i32 %v163_load_1, i32 %v162" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:321]   --->   Operation 33 'fadd' 'v164' <Predicate = true> <Delay = 6.14> <CoreInst = "FAddSub_fulldsp">   --->   Core 18 'FAddSub_fulldsp' <Latency = 2> <II = 1> <Delay = 6.14> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 33 [2/3] (6.14ns)   --->   "%v164 = fadd i32 %v163_load_1, i32 %v162" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:319]   --->   Operation 33 'fadd' 'v164' <Predicate = true> <Delay = 6.14> <CoreInst = "FAddSub_fulldsp">   --->   Core 18 'FAddSub_fulldsp' <Latency = 2> <II = 1> <Delay = 6.14> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
 
 State 6 <SV = 5> <Delay = 6.53>
-ST_6 : Operation 34 [1/1] (0.00ns)   --->   "%specpipeline_ln308 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_219" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:308]   --->   Operation 34 'specpipeline' 'specpipeline_ln308' <Predicate = true> <Delay = 0.00>
-ST_6 : Operation 35 [1/1] (0.00ns)   --->   "%speclooptripcount_ln308 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 128, i64 128, i64 128" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:308]   --->   Operation 35 'speclooptripcount' 'speclooptripcount_ln308' <Predicate = true> <Delay = 0.00>
-ST_6 : Operation 36 [1/1] (0.00ns)   --->   "%specloopname_ln310 = specloopname void @_ssdm_op_SpecLoopName, void @empty_168" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:310]   --->   Operation 36 'specloopname' 'specloopname_ln310' <Predicate = true> <Delay = 0.00>
-ST_6 : Operation 37 [1/3] (6.14ns)   --->   "%v164 = fadd i32 %v163_load_1, i32 %v162" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:321]   --->   Operation 37 'fadd' 'v164' <Predicate = true> <Delay = 6.14> <CoreInst = "FAddSub_fulldsp">   --->   Core 18 'FAddSub_fulldsp' <Latency = 2> <II = 1> <Delay = 6.14> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
-ST_6 : Operation 38 [1/1] (0.38ns)   --->   "%store_ln320 = store i32 %v164, i32 %v163" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:320]   --->   Operation 38 'store' 'store_ln320' <Predicate = true> <Delay = 0.38>
-ST_6 : Operation 39 [1/1] (0.00ns)   --->   "%br_ln310 = br void %for.inc" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:310]   --->   Operation 39 'br' 'br_ln310' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 34 [1/1] (0.00ns)   --->   "%specpipeline_ln306 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_191" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:306]   --->   Operation 34 'specpipeline' 'specpipeline_ln306' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 35 [1/1] (0.00ns)   --->   "%speclooptripcount_ln306 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 128, i64 128, i64 128" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:306]   --->   Operation 35 'speclooptripcount' 'speclooptripcount_ln306' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 36 [1/1] (0.00ns)   --->   "%specloopname_ln308 = specloopname void @_ssdm_op_SpecLoopName, void @empty_168" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:308]   --->   Operation 36 'specloopname' 'specloopname_ln308' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 37 [1/3] (6.14ns)   --->   "%v164 = fadd i32 %v163_load_1, i32 %v162" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:319]   --->   Operation 37 'fadd' 'v164' <Predicate = true> <Delay = 6.14> <CoreInst = "FAddSub_fulldsp">   --->   Core 18 'FAddSub_fulldsp' <Latency = 2> <II = 1> <Delay = 6.14> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 38 [1/1] (0.38ns)   --->   "%store_ln318 = store i32 %v164, i32 %v163" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:318]   --->   Operation 38 'store' 'store_ln318' <Predicate = true> <Delay = 0.38>
+ST_6 : Operation 39 [1/1] (0.00ns)   --->   "%br_ln308 = br void %for.inc" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:308]   --->   Operation 39 'br' 'br_ln308' <Predicate = true> <Delay = 0.00>
 
 
 ============================================================
@@ -163,31 +163,31 @@ specinterface_ln0       (specinterface    ) [ 0000000]
 specinterface_ln0       (specinterface    ) [ 0000000]
 specinterface_ln0       (specinterface    ) [ 0000000]
 specinterface_ln0       (specinterface    ) [ 0000000]
-store_ln310             (store            ) [ 0000000]
-store_ln320             (store            ) [ 0000000]
-br_ln310                (br               ) [ 0000000]
+store_ln308             (store            ) [ 0000000]
+store_ln318             (store            ) [ 0000000]
+br_ln308                (br               ) [ 0000000]
 k7_1                    (load             ) [ 0000000]
-icmp_ln310              (icmp             ) [ 0111100]
+icmp_ln308              (icmp             ) [ 0111100]
 k7_2                    (add              ) [ 0010000]
-br_ln310                (br               ) [ 0000000]
+br_ln308                (br               ) [ 0000000]
 A_fifo_7_read           (read             ) [ 0000000]
 v156                    (bitcast          ) [ 0101000]
 B_fifo_7_0_read         (read             ) [ 0000000]
 v158                    (bitcast          ) [ 0101000]
+write_ln322             (write            ) [ 0000000]
 write_ln324             (write            ) [ 0000000]
-write_ln326             (write            ) [ 0000000]
-store_ln310             (store            ) [ 0000000]
+store_ln308             (store            ) [ 0000000]
 v162                    (fmul             ) [ 0110111]
 v163_load_1             (load             ) [ 0110011]
-specpipeline_ln308      (specpipeline     ) [ 0000000]
-speclooptripcount_ln308 (speclooptripcount) [ 0000000]
-specloopname_ln310      (specloopname     ) [ 0000000]
+specpipeline_ln306      (specpipeline     ) [ 0000000]
+speclooptripcount_ln306 (speclooptripcount) [ 0000000]
+specloopname_ln308      (specloopname     ) [ 0000000]
 v164                    (fadd             ) [ 0000000]
-store_ln320             (store            ) [ 0000000]
-br_ln310                (br               ) [ 0000000]
+store_ln318             (store            ) [ 0000000]
+br_ln308                (br               ) [ 0000000]
 v163_load               (load             ) [ 0000000]
-write_ln329             (write            ) [ 0000000]
-ret_ln330               (ret              ) [ 0000000]
+write_ln327             (write            ) [ 0000000]
+ret_ln328               (ret              ) [ 0000000]
 </LifeTime>
 
 <model>
@@ -261,7 +261,7 @@ ret_ln330               (ret              ) [ 0000000]
 <pin id="15" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_215"/></StgValue>
+<StgValue><ssdm name="empty_234"/></StgValue>
 </bind>
 </comp>
 
@@ -279,7 +279,7 @@ ret_ln330               (ret              ) [ 0000000]
 <pin id="19" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_219"/></StgValue>
+<StgValue><ssdm name="empty_191"/></StgValue>
 </bind>
 </comp>
 
@@ -446,7 +446,7 @@ ret_ln330               (ret              ) [ 0000000]
 </bind>
 </comp>
 
-<comp id="66" class="1004" name="write_ln324_write_fu_66">
+<comp id="66" class="1004" name="write_ln322_write_fu_66">
 <pin_list>
 <pin id="67" dir="0" index="0" bw="0" slack="0"/>
 <pin id="68" dir="0" index="1" bw="32" slack="0"/>
@@ -455,11 +455,11 @@ ret_ln330               (ret              ) [ 0000000]
 </pin_list>
 <bind>
 <opcode="write(1151) " fcode="write"/>
-<opset="write_ln324/2 "/>
+<opset="write_ln322/2 "/>
 </bind>
 </comp>
 
-<comp id="74" class="1004" name="write_ln326_write_fu_74">
+<comp id="74" class="1004" name="write_ln324_write_fu_74">
 <pin_list>
 <pin id="75" dir="0" index="0" bw="0" slack="0"/>
 <pin id="76" dir="0" index="1" bw="32" slack="0"/>
@@ -468,11 +468,11 @@ ret_ln330               (ret              ) [ 0000000]
 </pin_list>
 <bind>
 <opcode="write(1151) " fcode="write"/>
-<opset="write_ln326/2 "/>
+<opset="write_ln324/2 "/>
 </bind>
 </comp>
 
-<comp id="82" class="1004" name="write_ln329_write_fu_82">
+<comp id="82" class="1004" name="write_ln327_write_fu_82">
 <pin_list>
 <pin id="83" dir="0" index="0" bw="0" slack="0"/>
 <pin id="84" dir="0" index="1" bw="32" slack="0"/>
@@ -481,7 +481,7 @@ ret_ln330               (ret              ) [ 0000000]
 </pin_list>
 <bind>
 <opcode="write(1151) " fcode="write"/>
-<opset="write_ln329/4 "/>
+<opset="write_ln327/4 "/>
 </bind>
 </comp>
 
@@ -509,7 +509,7 @@ ret_ln330               (ret              ) [ 0000000]
 </bind>
 </comp>
 
-<comp id="97" class="1004" name="store_ln310_store_fu_97">
+<comp id="97" class="1004" name="store_ln308_store_fu_97">
 <pin_list>
 <pin id="98" dir="0" index="0" bw="1" slack="0"/>
 <pin id="99" dir="0" index="1" bw="8" slack="0"/>
@@ -517,11 +517,11 @@ ret_ln330               (ret              ) [ 0000000]
 </pin_list>
 <bind>
 <opcode="store(28) " fcode="store"/>
-<opset="store_ln310/1 "/>
+<opset="store_ln308/1 "/>
 </bind>
 </comp>
 
-<comp id="102" class="1004" name="store_ln320_store_fu_102">
+<comp id="102" class="1004" name="store_ln318_store_fu_102">
 <pin_list>
 <pin id="103" dir="0" index="0" bw="32" slack="0"/>
 <pin id="104" dir="0" index="1" bw="32" slack="3"/>
@@ -529,7 +529,7 @@ ret_ln330               (ret              ) [ 0000000]
 </pin_list>
 <bind>
 <opcode="store(28) " fcode="store"/>
-<opset="store_ln320/4 "/>
+<opset="store_ln318/4 "/>
 </bind>
 </comp>
 
@@ -544,7 +544,7 @@ ret_ln330               (ret              ) [ 0000000]
 </bind>
 </comp>
 
-<comp id="110" class="1004" name="icmp_ln310_fu_110">
+<comp id="110" class="1004" name="icmp_ln308_fu_110">
 <pin_list>
 <pin id="111" dir="0" index="0" bw="8" slack="0"/>
 <pin id="112" dir="0" index="1" bw="8" slack="0"/>
@@ -552,7 +552,7 @@ ret_ln330               (ret              ) [ 0000000]
 </pin_list>
 <bind>
 <opcode="icmp(45) " fcode="icmp"/>
-<opset="icmp_ln310/1 "/>
+<opset="icmp_ln308/1 "/>
 </bind>
 </comp>
 
@@ -590,7 +590,7 @@ ret_ln330               (ret              ) [ 0000000]
 </bind>
 </comp>
 
-<comp id="132" class="1004" name="store_ln310_store_fu_132">
+<comp id="132" class="1004" name="store_ln308_store_fu_132">
 <pin_list>
 <pin id="133" dir="0" index="0" bw="8" slack="1"/>
 <pin id="134" dir="0" index="1" bw="8" slack="1"/>
@@ -598,7 +598,7 @@ ret_ln330               (ret              ) [ 0000000]
 </pin_list>
 <bind>
 <opcode="store(28) " fcode="store"/>
-<opset="store_ln310/2 "/>
+<opset="store_ln308/2 "/>
 </bind>
 </comp>
 
@@ -613,7 +613,7 @@ ret_ln330               (ret              ) [ 0000000]
 </bind>
 </comp>
 
-<comp id="140" class="1004" name="store_ln320_store_fu_140">
+<comp id="140" class="1004" name="store_ln318_store_fu_140">
 <pin_list>
 <pin id="141" dir="0" index="0" bw="32" slack="0"/>
 <pin id="142" dir="0" index="1" bw="32" slack="5"/>
@@ -621,7 +621,7 @@ ret_ln330               (ret              ) [ 0000000]
 </pin_list>
 <bind>
 <opcode="store(28) " fcode="store"/>
-<opset="store_ln320/6 "/>
+<opset="store_ln318/6 "/>
 </bind>
 </comp>
 
@@ -656,13 +656,13 @@ ret_ln330               (ret              ) [ 0000000]
 </bind>
 </comp>
 
-<comp id="164" class="1005" name="icmp_ln310_reg_164">
+<comp id="164" class="1005" name="icmp_ln308_reg_164">
 <pin_list>
 <pin id="165" dir="0" index="0" bw="1" slack="1"/>
 <pin id="166" dir="1" index="1" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<opset="icmp_ln310 "/>
+<opset="icmp_ln308 "/>
 </bind>
 </comp>
 
@@ -828,20 +828,20 @@ ret_ln330               (ret              ) [ 0000000]
 	Port: PE_kernel_modulate_7_0.1 : B_fifo_7_0 | {2 }
   - Chain level:
 	State 1
-		store_ln310 : 1
+		store_ln308 : 1
 		k7_1 : 1
-		icmp_ln310 : 2
+		icmp_ln308 : 2
 		k7_2 : 2
-		br_ln310 : 3
+		br_ln308 : 3
 	State 2
 		v162 : 1
 	State 3
 	State 4
 		v164 : 1
-		write_ln329 : 1
+		write_ln327 : 1
 	State 5
 	State 6
-		store_ln320 : 1
+		store_ln318 : 1
 
 
 ============================================================
@@ -856,16 +856,16 @@ ret_ln330               (ret              ) [ 0000000]
 |----------|----------------------------|---------|---------|---------|
 |   fmul   |          grp_fu_93         |    3    |   128   |    77   |
 |----------|----------------------------|---------|---------|---------|
-|   icmp   |      icmp_ln310_fu_110     |    0    |    0    |    15   |
+|   icmp   |      icmp_ln308_fu_110     |    0    |    0    |    15   |
 |----------|----------------------------|---------|---------|---------|
 |    add   |         k7_2_fu_116        |    0    |    0    |    15   |
 |----------|----------------------------|---------|---------|---------|
 |   read   |  A_fifo_7_read_read_fu_54  |    0    |    0    |    0    |
 |          | B_fifo_7_0_read_read_fu_60 |    0    |    0    |    0    |
 |----------|----------------------------|---------|---------|---------|
-|          |   write_ln324_write_fu_66  |    0    |    0    |    0    |
-|   write  |   write_ln326_write_fu_74  |    0    |    0    |    0    |
-|          |   write_ln329_write_fu_82  |    0    |    0    |    0    |
+|          |   write_ln322_write_fu_66  |    0    |    0    |    0    |
+|   write  |   write_ln324_write_fu_74  |    0    |    0    |    0    |
+|          |   write_ln327_write_fu_82  |    0    |    0    |    0    |
 |----------|----------------------------|---------|---------|---------|
 |   Total  |                            |    5    |   305   |   333   |
 |----------|----------------------------|---------|---------|---------|
@@ -877,7 +877,7 @@ N/A
 +-------------------+--------+
 |                   |   FF   |
 +-------------------+--------+
-| icmp_ln310_reg_164|    1   |
+| icmp_ln308_reg_164|    1   |
 |    k7_2_reg_168   |    8   |
 |     k7_reg_157    |    8   |
 |    v156_reg_173   |   32   |

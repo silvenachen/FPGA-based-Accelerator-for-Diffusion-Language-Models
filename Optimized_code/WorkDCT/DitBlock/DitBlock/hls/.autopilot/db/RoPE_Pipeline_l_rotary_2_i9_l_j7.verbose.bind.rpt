@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'RoPE_Pipeline_l_rotary_2_i9_l_j7'
 ================================================================
-* Date:           Wed Feb  5 22:34:18 2025
+* Date:           Mon Feb 17 20:36:26 2025
 
 * Version:        2023.2 (Build 4023990 on Oct 11 2023)
 * Project:        DitBlock
@@ -91,72 +91,72 @@ IsGatedGlobalClock: 0
 * FSM state operations: 
 
 State 1 <SV = 0> <Delay = 0.38>
-ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%j7 = alloca i32 1" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:9642]   --->   Operation 10 'alloca' 'j7' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%i9 = alloca i32 1" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:9641]   --->   Operation 11 'alloca' 'i9' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%indvar_flatten34 = alloca i32 1"   --->   Operation 12 'alloca' 'indvar_flatten34' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 13 [1/1] (0.38ns)   --->   "%store_ln0 = store i16 0, i16 %indvar_flatten34"   --->   Operation 13 'store' 'store_ln0' <Predicate = true> <Delay = 0.38>
-ST_1 : Operation 14 [1/1] (0.38ns)   --->   "%store_ln9641 = store i11 0, i11 %i9" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:9641]   --->   Operation 14 'store' 'store_ln9641' <Predicate = true> <Delay = 0.38>
-ST_1 : Operation 15 [1/1] (0.38ns)   --->   "%store_ln9642 = store i6 0, i6 %j7" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:9642]   --->   Operation 15 'store' 'store_ln9642' <Predicate = true> <Delay = 0.38>
-ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%br_ln0 = br void %for.inc146"   --->   Operation 16 'br' 'br_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%j7 = alloca i32 1" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:9511]   --->   Operation 10 'alloca' 'j7' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%i9 = alloca i32 1" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:9510]   --->   Operation 11 'alloca' 'i9' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%indvar_flatten20 = alloca i32 1"   --->   Operation 12 'alloca' 'indvar_flatten20' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 13 [1/1] (0.38ns)   --->   "%store_ln0 = store i16 0, i16 %indvar_flatten20"   --->   Operation 13 'store' 'store_ln0' <Predicate = true> <Delay = 0.38>
+ST_1 : Operation 14 [1/1] (0.38ns)   --->   "%store_ln9510 = store i11 0, i11 %i9" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:9510]   --->   Operation 14 'store' 'store_ln9510' <Predicate = true> <Delay = 0.38>
+ST_1 : Operation 15 [1/1] (0.38ns)   --->   "%store_ln9511 = store i6 0, i6 %j7" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:9511]   --->   Operation 15 'store' 'store_ln9511' <Predicate = true> <Delay = 0.38>
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%br_ln0 = br void %for.inc110"   --->   Operation 16 'br' 'br_ln0' <Predicate = true> <Delay = 0.00>
 
 State 2 <SV = 1> <Delay = 3.05>
-ST_2 : Operation 17 [1/1] (0.00ns)   --->   "%indvar_flatten34_load = load i16 %indvar_flatten34" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:9641]   --->   Operation 17 'load' 'indvar_flatten34_load' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 18 [1/1] (0.78ns)   --->   "%icmp_ln9641 = icmp_eq  i16 %indvar_flatten34_load, i16 32768" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:9641]   --->   Operation 18 'icmp' 'icmp_ln9641' <Predicate = true> <Delay = 0.78> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.78> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
-ST_2 : Operation 19 [1/1] (0.78ns)   --->   "%add_ln9641_1 = add i16 %indvar_flatten34_load, i16 1" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:9641]   --->   Operation 19 'add' 'add_ln9641_1' <Predicate = true> <Delay = 0.78> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.78> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_2 : Operation 20 [1/1] (0.00ns)   --->   "%br_ln9641 = br i1 %icmp_ln9641, void %for.inc149, void %for.inc170.preheader.exitStub" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:9641]   --->   Operation 20 'br' 'br_ln9641' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 21 [1/1] (0.00ns)   --->   "%j7_load = load i6 %j7" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:9642]   --->   Operation 21 'load' 'j7_load' <Predicate = (!icmp_ln9641)> <Delay = 0.00>
-ST_2 : Operation 22 [1/1] (0.00ns)   --->   "%i9_load = load i11 %i9" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:9641]   --->   Operation 22 'load' 'i9_load' <Predicate = (!icmp_ln9641)> <Delay = 0.00>
-ST_2 : Operation 23 [1/1] (0.73ns)   --->   "%add_ln9641 = add i11 %i9_load, i11 1" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:9641]   --->   Operation 23 'add' 'add_ln9641' <Predicate = (!icmp_ln9641)> <Delay = 0.73> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.73> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_2 : Operation 24 [1/1] (0.70ns)   --->   "%icmp_ln9642 = icmp_eq  i6 %j7_load, i6 32" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:9642]   --->   Operation 24 'icmp' 'icmp_ln9642' <Predicate = (!icmp_ln9641)> <Delay = 0.70> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.70> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
-ST_2 : Operation 25 [1/1] (0.29ns)   --->   "%select_ln9641 = select i1 %icmp_ln9642, i6 0, i6 %j7_load" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:9641]   --->   Operation 25 'select' 'select_ln9641' <Predicate = (!icmp_ln9641)> <Delay = 0.29> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.29> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
-ST_2 : Operation 26 [1/1] (0.30ns)   --->   "%select_ln9641_1 = select i1 %icmp_ln9642, i11 %add_ln9641, i11 %i9_load" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:9641]   --->   Operation 26 'select' 'select_ln9641_1' <Predicate = (!icmp_ln9641)> <Delay = 0.30> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.30> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
-ST_2 : Operation 27 [1/1] (0.00ns)   --->   "%trunc_ln9646 = trunc i11 %select_ln9641_1" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:9646]   --->   Operation 27 'trunc' 'trunc_ln9646' <Predicate = (!icmp_ln9641)> <Delay = 0.00>
-ST_2 : Operation 28 [1/1] (0.00ns)   --->   "%tmp_s = bitconcatenate i15 @_ssdm_op_BitConcatenate.i15.i10.i5, i10 %trunc_ln9646, i5 0" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:9646]   --->   Operation 28 'bitconcatenate' 'tmp_s' <Predicate = (!icmp_ln9641)> <Delay = 0.00>
-ST_2 : Operation 29 [1/1] (0.00ns)   --->   "%zext_ln9646 = zext i6 %select_ln9641" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:9646]   --->   Operation 29 'zext' 'zext_ln9646' <Predicate = (!icmp_ln9641)> <Delay = 0.00>
-ST_2 : Operation 30 [1/1] (0.77ns)   --->   "%add_ln9646 = add i15 %tmp_s, i15 %zext_ln9646" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:9646]   --->   Operation 30 'add' 'add_ln9646' <Predicate = (!icmp_ln9641)> <Delay = 0.77> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.77> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_2 : Operation 31 [1/1] (0.00ns)   --->   "%zext_ln9646_1 = zext i15 %add_ln9646" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:9646]   --->   Operation 31 'zext' 'zext_ln9646_1' <Predicate = (!icmp_ln9641)> <Delay = 0.00>
-ST_2 : Operation 32 [1/1] (0.00ns)   --->   "%v5223_addr = getelementptr i32 %v5223, i64 0, i64 %zext_ln9646_1" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:9646]   --->   Operation 32 'getelementptr' 'v5223_addr' <Predicate = (!icmp_ln9641)> <Delay = 0.00>
-ST_2 : Operation 33 [1/1] (0.00ns)   --->   "%v5224_addr = getelementptr i32 %v5224, i64 0, i64 %zext_ln9646_1" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:9643]   --->   Operation 33 'getelementptr' 'v5224_addr' <Predicate = (!icmp_ln9641)> <Delay = 0.00>
-ST_2 : Operation 34 [1/1] (0.00ns)   --->   "%X_1_h_addr = getelementptr i32 %X_1_h, i64 0, i64 %zext_ln9646_1" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:9644]   --->   Operation 34 'getelementptr' 'X_1_h_addr' <Predicate = (!icmp_ln9641)> <Delay = 0.00>
-ST_2 : Operation 35 [1/1] (0.00ns)   --->   "%X_2_h_addr = getelementptr i32 %X_2_h, i64 0, i64 %zext_ln9646_1" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:9647]   --->   Operation 35 'getelementptr' 'X_2_h_addr' <Predicate = (!icmp_ln9641)> <Delay = 0.00>
-ST_2 : Operation 36 [2/2] (1.24ns)   --->   "%v5252 = load i15 %v5224_addr" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:9643]   --->   Operation 36 'load' 'v5252' <Predicate = (!icmp_ln9641)> <Delay = 1.24> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 1.24> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 32768> <RAM>
-ST_2 : Operation 37 [2/2] (1.24ns)   --->   "%v5253 = load i15 %X_1_h_addr" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:9644]   --->   Operation 37 'load' 'v5253' <Predicate = (!icmp_ln9641)> <Delay = 1.24> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 1.24> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 32768> <RAM>
-ST_2 : Operation 38 [2/2] (1.24ns)   --->   "%v5255 = load i15 %v5223_addr" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:9646]   --->   Operation 38 'load' 'v5255' <Predicate = (!icmp_ln9641)> <Delay = 1.24> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 1.24> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 32768> <RAM>
-ST_2 : Operation 39 [2/2] (1.24ns)   --->   "%v5256 = load i15 %X_2_h_addr" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:9647]   --->   Operation 39 'load' 'v5256' <Predicate = (!icmp_ln9641)> <Delay = 1.24> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 1.24> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 32768> <RAM>
-ST_2 : Operation 40 [1/1] (0.70ns)   --->   "%add_ln9642 = add i6 %select_ln9641, i6 1" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:9642]   --->   Operation 40 'add' 'add_ln9642' <Predicate = (!icmp_ln9641)> <Delay = 0.70> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.70> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_2 : Operation 41 [1/1] (0.38ns)   --->   "%store_ln9641 = store i16 %add_ln9641_1, i16 %indvar_flatten34" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:9641]   --->   Operation 41 'store' 'store_ln9641' <Predicate = (!icmp_ln9641)> <Delay = 0.38>
-ST_2 : Operation 42 [1/1] (0.38ns)   --->   "%store_ln9641 = store i11 %select_ln9641_1, i11 %i9" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:9641]   --->   Operation 42 'store' 'store_ln9641' <Predicate = (!icmp_ln9641)> <Delay = 0.38>
-ST_2 : Operation 43 [1/1] (0.38ns)   --->   "%store_ln9642 = store i6 %add_ln9642, i6 %j7" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:9642]   --->   Operation 43 'store' 'store_ln9642' <Predicate = (!icmp_ln9641)> <Delay = 0.38>
+ST_2 : Operation 17 [1/1] (0.00ns)   --->   "%indvar_flatten20_load = load i16 %indvar_flatten20" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:9510]   --->   Operation 17 'load' 'indvar_flatten20_load' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 18 [1/1] (0.78ns)   --->   "%icmp_ln9510 = icmp_eq  i16 %indvar_flatten20_load, i16 32768" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:9510]   --->   Operation 18 'icmp' 'icmp_ln9510' <Predicate = true> <Delay = 0.78> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.78> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 19 [1/1] (0.78ns)   --->   "%add_ln9510_1 = add i16 %indvar_flatten20_load, i16 1" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:9510]   --->   Operation 19 'add' 'add_ln9510_1' <Predicate = true> <Delay = 0.78> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.78> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 20 [1/1] (0.00ns)   --->   "%br_ln9510 = br i1 %icmp_ln9510, void %for.inc113, void %for.inc134.preheader.exitStub" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:9510]   --->   Operation 20 'br' 'br_ln9510' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 21 [1/1] (0.00ns)   --->   "%j7_load = load i6 %j7" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:9511]   --->   Operation 21 'load' 'j7_load' <Predicate = (!icmp_ln9510)> <Delay = 0.00>
+ST_2 : Operation 22 [1/1] (0.00ns)   --->   "%i9_load = load i11 %i9" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:9510]   --->   Operation 22 'load' 'i9_load' <Predicate = (!icmp_ln9510)> <Delay = 0.00>
+ST_2 : Operation 23 [1/1] (0.73ns)   --->   "%add_ln9510 = add i11 %i9_load, i11 1" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:9510]   --->   Operation 23 'add' 'add_ln9510' <Predicate = (!icmp_ln9510)> <Delay = 0.73> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.73> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 24 [1/1] (0.70ns)   --->   "%icmp_ln9511 = icmp_eq  i6 %j7_load, i6 32" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:9511]   --->   Operation 24 'icmp' 'icmp_ln9511' <Predicate = (!icmp_ln9510)> <Delay = 0.70> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.70> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 25 [1/1] (0.29ns)   --->   "%select_ln9510 = select i1 %icmp_ln9511, i6 0, i6 %j7_load" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:9510]   --->   Operation 25 'select' 'select_ln9510' <Predicate = (!icmp_ln9510)> <Delay = 0.29> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.29> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_2 : Operation 26 [1/1] (0.30ns)   --->   "%select_ln9510_1 = select i1 %icmp_ln9511, i11 %add_ln9510, i11 %i9_load" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:9510]   --->   Operation 26 'select' 'select_ln9510_1' <Predicate = (!icmp_ln9510)> <Delay = 0.30> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.30> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_2 : Operation 27 [1/1] (0.00ns)   --->   "%trunc_ln9515 = trunc i11 %select_ln9510_1" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:9515]   --->   Operation 27 'trunc' 'trunc_ln9515' <Predicate = (!icmp_ln9510)> <Delay = 0.00>
+ST_2 : Operation 28 [1/1] (0.00ns)   --->   "%tmp_s = bitconcatenate i15 @_ssdm_op_BitConcatenate.i15.i10.i5, i10 %trunc_ln9515, i5 0" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:9515]   --->   Operation 28 'bitconcatenate' 'tmp_s' <Predicate = (!icmp_ln9510)> <Delay = 0.00>
+ST_2 : Operation 29 [1/1] (0.00ns)   --->   "%zext_ln9515 = zext i6 %select_ln9510" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:9515]   --->   Operation 29 'zext' 'zext_ln9515' <Predicate = (!icmp_ln9510)> <Delay = 0.00>
+ST_2 : Operation 30 [1/1] (0.77ns)   --->   "%add_ln9515 = add i15 %tmp_s, i15 %zext_ln9515" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:9515]   --->   Operation 30 'add' 'add_ln9515' <Predicate = (!icmp_ln9510)> <Delay = 0.77> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.77> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 31 [1/1] (0.00ns)   --->   "%zext_ln9515_1 = zext i15 %add_ln9515" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:9515]   --->   Operation 31 'zext' 'zext_ln9515_1' <Predicate = (!icmp_ln9510)> <Delay = 0.00>
+ST_2 : Operation 32 [1/1] (0.00ns)   --->   "%v5223_addr = getelementptr i32 %v5223, i64 0, i64 %zext_ln9515_1" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:9515]   --->   Operation 32 'getelementptr' 'v5223_addr' <Predicate = (!icmp_ln9510)> <Delay = 0.00>
+ST_2 : Operation 33 [1/1] (0.00ns)   --->   "%v5224_addr = getelementptr i32 %v5224, i64 0, i64 %zext_ln9515_1" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:9512]   --->   Operation 33 'getelementptr' 'v5224_addr' <Predicate = (!icmp_ln9510)> <Delay = 0.00>
+ST_2 : Operation 34 [1/1] (0.00ns)   --->   "%X_1_h_addr = getelementptr i32 %X_1_h, i64 0, i64 %zext_ln9515_1" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:9513]   --->   Operation 34 'getelementptr' 'X_1_h_addr' <Predicate = (!icmp_ln9510)> <Delay = 0.00>
+ST_2 : Operation 35 [1/1] (0.00ns)   --->   "%X_2_h_addr = getelementptr i32 %X_2_h, i64 0, i64 %zext_ln9515_1" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:9516]   --->   Operation 35 'getelementptr' 'X_2_h_addr' <Predicate = (!icmp_ln9510)> <Delay = 0.00>
+ST_2 : Operation 36 [2/2] (1.24ns)   --->   "%v5252 = load i15 %v5224_addr" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:9512]   --->   Operation 36 'load' 'v5252' <Predicate = (!icmp_ln9510)> <Delay = 1.24> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 1.24> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 32768> <RAM>
+ST_2 : Operation 37 [2/2] (1.24ns)   --->   "%v5253 = load i15 %X_1_h_addr" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:9513]   --->   Operation 37 'load' 'v5253' <Predicate = (!icmp_ln9510)> <Delay = 1.24> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 1.24> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 32768> <RAM>
+ST_2 : Operation 38 [2/2] (1.24ns)   --->   "%v5255 = load i15 %v5223_addr" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:9515]   --->   Operation 38 'load' 'v5255' <Predicate = (!icmp_ln9510)> <Delay = 1.24> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 1.24> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 32768> <RAM>
+ST_2 : Operation 39 [2/2] (1.24ns)   --->   "%v5256 = load i15 %X_2_h_addr" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:9516]   --->   Operation 39 'load' 'v5256' <Predicate = (!icmp_ln9510)> <Delay = 1.24> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 1.24> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 32768> <RAM>
+ST_2 : Operation 40 [1/1] (0.70ns)   --->   "%add_ln9511 = add i6 %select_ln9510, i6 1" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:9511]   --->   Operation 40 'add' 'add_ln9511' <Predicate = (!icmp_ln9510)> <Delay = 0.70> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.70> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 41 [1/1] (0.38ns)   --->   "%store_ln9510 = store i16 %add_ln9510_1, i16 %indvar_flatten20" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:9510]   --->   Operation 41 'store' 'store_ln9510' <Predicate = (!icmp_ln9510)> <Delay = 0.38>
+ST_2 : Operation 42 [1/1] (0.38ns)   --->   "%store_ln9510 = store i11 %select_ln9510_1, i11 %i9" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:9510]   --->   Operation 42 'store' 'store_ln9510' <Predicate = (!icmp_ln9510)> <Delay = 0.38>
+ST_2 : Operation 43 [1/1] (0.38ns)   --->   "%store_ln9511 = store i6 %add_ln9511, i6 %j7" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:9511]   --->   Operation 43 'store' 'store_ln9511' <Predicate = (!icmp_ln9510)> <Delay = 0.38>
 
 State 3 <SV = 2> <Delay = 6.14>
-ST_3 : Operation 44 [1/2] (1.24ns)   --->   "%v5252 = load i15 %v5224_addr" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:9643]   --->   Operation 44 'load' 'v5252' <Predicate = true> <Delay = 1.24> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 1.24> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 32768> <RAM>
-ST_3 : Operation 45 [1/2] (1.24ns)   --->   "%v5253 = load i15 %X_1_h_addr" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:9644]   --->   Operation 45 'load' 'v5253' <Predicate = true> <Delay = 1.24> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 1.24> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 32768> <RAM>
-ST_3 : Operation 46 [2/2] (4.90ns)   --->   "%v5254 = fmul i32 %v5252, i32 %v5253" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:9645]   --->   Operation 46 'fmul' 'v5254' <Predicate = true> <Delay = 4.90> <CoreInst = "FMul_maxdsp">   --->   Core 30 'FMul_maxdsp' <Latency = 1> <II = 1> <Delay = 4.90> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
-ST_3 : Operation 47 [1/2] (1.24ns)   --->   "%v5255 = load i15 %v5223_addr" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:9646]   --->   Operation 47 'load' 'v5255' <Predicate = true> <Delay = 1.24> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 1.24> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 32768> <RAM>
-ST_3 : Operation 48 [1/2] (1.24ns)   --->   "%v5256 = load i15 %X_2_h_addr" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:9647]   --->   Operation 48 'load' 'v5256' <Predicate = true> <Delay = 1.24> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 1.24> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 32768> <RAM>
-ST_3 : Operation 49 [2/2] (4.90ns)   --->   "%v5257 = fmul i32 %v5255, i32 %v5256" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:9648]   --->   Operation 49 'fmul' 'v5257' <Predicate = true> <Delay = 4.90> <CoreInst = "FMul_maxdsp">   --->   Core 30 'FMul_maxdsp' <Latency = 1> <II = 1> <Delay = 4.90> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 44 [1/2] (1.24ns)   --->   "%v5252 = load i15 %v5224_addr" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:9512]   --->   Operation 44 'load' 'v5252' <Predicate = true> <Delay = 1.24> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 1.24> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 32768> <RAM>
+ST_3 : Operation 45 [1/2] (1.24ns)   --->   "%v5253 = load i15 %X_1_h_addr" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:9513]   --->   Operation 45 'load' 'v5253' <Predicate = true> <Delay = 1.24> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 1.24> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 32768> <RAM>
+ST_3 : Operation 46 [2/2] (4.90ns)   --->   "%v5254 = fmul i32 %v5252, i32 %v5253" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:9514]   --->   Operation 46 'fmul' 'v5254' <Predicate = true> <Delay = 4.90> <CoreInst = "FMul_maxdsp">   --->   Core 30 'FMul_maxdsp' <Latency = 1> <II = 1> <Delay = 4.90> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 47 [1/2] (1.24ns)   --->   "%v5255 = load i15 %v5223_addr" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:9515]   --->   Operation 47 'load' 'v5255' <Predicate = true> <Delay = 1.24> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 1.24> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 32768> <RAM>
+ST_3 : Operation 48 [1/2] (1.24ns)   --->   "%v5256 = load i15 %X_2_h_addr" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:9516]   --->   Operation 48 'load' 'v5256' <Predicate = true> <Delay = 1.24> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 1.24> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 32768> <RAM>
+ST_3 : Operation 49 [2/2] (4.90ns)   --->   "%v5257 = fmul i32 %v5255, i32 %v5256" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:9517]   --->   Operation 49 'fmul' 'v5257' <Predicate = true> <Delay = 4.90> <CoreInst = "FMul_maxdsp">   --->   Core 30 'FMul_maxdsp' <Latency = 1> <II = 1> <Delay = 4.90> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
 
 State 4 <SV = 3> <Delay = 4.90>
-ST_4 : Operation 50 [1/2] (4.90ns)   --->   "%v5254 = fmul i32 %v5252, i32 %v5253" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:9645]   --->   Operation 50 'fmul' 'v5254' <Predicate = true> <Delay = 4.90> <CoreInst = "FMul_maxdsp">   --->   Core 30 'FMul_maxdsp' <Latency = 1> <II = 1> <Delay = 4.90> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
-ST_4 : Operation 51 [1/2] (4.90ns)   --->   "%v5257 = fmul i32 %v5255, i32 %v5256" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:9648]   --->   Operation 51 'fmul' 'v5257' <Predicate = true> <Delay = 4.90> <CoreInst = "FMul_maxdsp">   --->   Core 30 'FMul_maxdsp' <Latency = 1> <II = 1> <Delay = 4.90> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 50 [1/2] (4.90ns)   --->   "%v5254 = fmul i32 %v5252, i32 %v5253" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:9514]   --->   Operation 50 'fmul' 'v5254' <Predicate = true> <Delay = 4.90> <CoreInst = "FMul_maxdsp">   --->   Core 30 'FMul_maxdsp' <Latency = 1> <II = 1> <Delay = 4.90> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 51 [1/2] (4.90ns)   --->   "%v5257 = fmul i32 %v5255, i32 %v5256" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:9517]   --->   Operation 51 'fmul' 'v5257' <Predicate = true> <Delay = 4.90> <CoreInst = "FMul_maxdsp">   --->   Core 30 'FMul_maxdsp' <Latency = 1> <II = 1> <Delay = 4.90> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
 
 State 5 <SV = 4> <Delay = 6.14>
-ST_5 : Operation 52 [3/3] (6.14ns)   --->   "%v5258 = fadd i32 %v5254, i32 %v5257" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:9649]   --->   Operation 52 'fadd' 'v5258' <Predicate = true> <Delay = 6.14> <CoreInst = "FAddSub_fulldsp">   --->   Core 18 'FAddSub_fulldsp' <Latency = 2> <II = 1> <Delay = 6.14> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 52 [3/3] (6.14ns)   --->   "%v5258 = fadd i32 %v5254, i32 %v5257" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:9518]   --->   Operation 52 'fadd' 'v5258' <Predicate = true> <Delay = 6.14> <CoreInst = "FAddSub_fulldsp">   --->   Core 18 'FAddSub_fulldsp' <Latency = 2> <II = 1> <Delay = 6.14> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
 
 State 6 <SV = 5> <Delay = 6.14>
-ST_6 : Operation 53 [2/3] (6.14ns)   --->   "%v5258 = fadd i32 %v5254, i32 %v5257" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:9649]   --->   Operation 53 'fadd' 'v5258' <Predicate = true> <Delay = 6.14> <CoreInst = "FAddSub_fulldsp">   --->   Core 18 'FAddSub_fulldsp' <Latency = 2> <II = 1> <Delay = 6.14> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 53 [2/3] (6.14ns)   --->   "%v5258 = fadd i32 %v5254, i32 %v5257" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:9518]   --->   Operation 53 'fadd' 'v5258' <Predicate = true> <Delay = 6.14> <CoreInst = "FAddSub_fulldsp">   --->   Core 18 'FAddSub_fulldsp' <Latency = 2> <II = 1> <Delay = 6.14> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
 
 State 7 <SV = 6> <Delay = 6.14>
-ST_7 : Operation 54 [1/3] (6.14ns)   --->   "%v5258 = fadd i32 %v5254, i32 %v5257" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:9649]   --->   Operation 54 'fadd' 'v5258' <Predicate = true> <Delay = 6.14> <CoreInst = "FAddSub_fulldsp">   --->   Core 18 'FAddSub_fulldsp' <Latency = 2> <II = 1> <Delay = 6.14> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
-ST_7 : Operation 61 [1/1] (0.00ns)   --->   "%ret_ln0 = ret"   --->   Operation 61 'ret' 'ret_ln0' <Predicate = (icmp_ln9641)> <Delay = 0.00>
+ST_7 : Operation 54 [1/3] (6.14ns)   --->   "%v5258 = fadd i32 %v5254, i32 %v5257" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:9518]   --->   Operation 54 'fadd' 'v5258' <Predicate = true> <Delay = 6.14> <CoreInst = "FAddSub_fulldsp">   --->   Core 18 'FAddSub_fulldsp' <Latency = 2> <II = 1> <Delay = 6.14> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_7 : Operation 61 [1/1] (0.00ns)   --->   "%ret_ln0 = ret"   --->   Operation 61 'ret' 'ret_ln0' <Predicate = (icmp_ln9510)> <Delay = 0.00>
 
 State 8 <SV = 7> <Delay = 1.24>
 ST_8 : Operation 55 [1/1] (0.00ns)   --->   "%specloopname_ln0 = specloopname void @_ssdm_op_SpecLoopName, void @l_rotary_2_i9_l_j7_str"   --->   Operation 55 'specloopname' 'specloopname_ln0' <Predicate = true> <Delay = 0.00>
 ST_8 : Operation 56 [1/1] (0.00ns)   --->   "%speclooptripcount_ln0 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 32768, i64 32768, i64 32768"   --->   Operation 56 'speclooptripcount' 'speclooptripcount_ln0' <Predicate = true> <Delay = 0.00>
-ST_8 : Operation 57 [1/1] (0.00ns)   --->   "%X_2_rotary_addr = getelementptr i32 %X_2_rotary, i64 0, i64 %zext_ln9646_1" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:9650]   --->   Operation 57 'getelementptr' 'X_2_rotary_addr' <Predicate = true> <Delay = 0.00>
-ST_8 : Operation 58 [1/1] (0.00ns)   --->   "%specpipeline_ln9642 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_219" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:9642]   --->   Operation 58 'specpipeline' 'specpipeline_ln9642' <Predicate = true> <Delay = 0.00>
-ST_8 : Operation 59 [1/1] (1.24ns)   --->   "%store_ln9650 = store i32 %v5258, i15 %X_2_rotary_addr" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:9650]   --->   Operation 59 'store' 'store_ln9650' <Predicate = true> <Delay = 1.24> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 1.24> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 32768> <RAM>
-ST_8 : Operation 60 [1/1] (0.00ns)   --->   "%br_ln9642 = br void %for.inc146" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:9642]   --->   Operation 60 'br' 'br_ln9642' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 57 [1/1] (0.00ns)   --->   "%X_2_rotary_addr = getelementptr i32 %X_2_rotary, i64 0, i64 %zext_ln9515_1" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:9519]   --->   Operation 57 'getelementptr' 'X_2_rotary_addr' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 58 [1/1] (0.00ns)   --->   "%specpipeline_ln9511 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_191" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:9511]   --->   Operation 58 'specpipeline' 'specpipeline_ln9511' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 59 [1/1] (1.24ns)   --->   "%store_ln9519 = store i32 %v5258, i15 %X_2_rotary_addr" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:9519]   --->   Operation 59 'store' 'store_ln9519' <Predicate = true> <Delay = 1.24> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 1.24> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 32768> <RAM>
+ST_8 : Operation 60 [1/1] (0.00ns)   --->   "%br_ln9511 = br void %for.inc110" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:9511]   --->   Operation 60 'br' 'br_ln9511' <Predicate = true> <Delay = 0.00>
 
 
 ============================================================
@@ -183,34 +183,34 @@ Port [ X_2_rotary]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0;
 <method=bitvector/>
 j7                    (alloca           ) [ 011000000]
 i9                    (alloca           ) [ 011000000]
-indvar_flatten34      (alloca           ) [ 011000000]
+indvar_flatten20      (alloca           ) [ 011000000]
 store_ln0             (store            ) [ 000000000]
-store_ln9641          (store            ) [ 000000000]
-store_ln9642          (store            ) [ 000000000]
+store_ln9510          (store            ) [ 000000000]
+store_ln9511          (store            ) [ 000000000]
 br_ln0                (br               ) [ 000000000]
-indvar_flatten34_load (load             ) [ 000000000]
-icmp_ln9641           (icmp             ) [ 011111110]
-add_ln9641_1          (add              ) [ 000000000]
-br_ln9641             (br               ) [ 000000000]
+indvar_flatten20_load (load             ) [ 000000000]
+icmp_ln9510           (icmp             ) [ 011111110]
+add_ln9510_1          (add              ) [ 000000000]
+br_ln9510             (br               ) [ 000000000]
 j7_load               (load             ) [ 000000000]
 i9_load               (load             ) [ 000000000]
-add_ln9641            (add              ) [ 000000000]
-icmp_ln9642           (icmp             ) [ 000000000]
-select_ln9641         (select           ) [ 000000000]
-select_ln9641_1       (select           ) [ 000000000]
-trunc_ln9646          (trunc            ) [ 000000000]
+add_ln9510            (add              ) [ 000000000]
+icmp_ln9511           (icmp             ) [ 000000000]
+select_ln9510         (select           ) [ 000000000]
+select_ln9510_1       (select           ) [ 000000000]
+trunc_ln9515          (trunc            ) [ 000000000]
 tmp_s                 (bitconcatenate   ) [ 000000000]
-zext_ln9646           (zext             ) [ 000000000]
-add_ln9646            (add              ) [ 000000000]
-zext_ln9646_1         (zext             ) [ 010111111]
+zext_ln9515           (zext             ) [ 000000000]
+add_ln9515            (add              ) [ 000000000]
+zext_ln9515_1         (zext             ) [ 010111111]
 v5223_addr            (getelementptr    ) [ 010100000]
 v5224_addr            (getelementptr    ) [ 010100000]
 X_1_h_addr            (getelementptr    ) [ 010100000]
 X_2_h_addr            (getelementptr    ) [ 010100000]
-add_ln9642            (add              ) [ 000000000]
-store_ln9641          (store            ) [ 000000000]
-store_ln9641          (store            ) [ 000000000]
-store_ln9642          (store            ) [ 000000000]
+add_ln9511            (add              ) [ 000000000]
+store_ln9510          (store            ) [ 000000000]
+store_ln9510          (store            ) [ 000000000]
+store_ln9511          (store            ) [ 000000000]
 v5252                 (load             ) [ 010010000]
 v5253                 (load             ) [ 010010000]
 v5255                 (load             ) [ 010010000]
@@ -221,9 +221,9 @@ v5258                 (fadd             ) [ 010000001]
 specloopname_ln0      (specloopname     ) [ 000000000]
 speclooptripcount_ln0 (speclooptripcount) [ 000000000]
 X_2_rotary_addr       (getelementptr    ) [ 000000000]
-specpipeline_ln9642   (specpipeline     ) [ 000000000]
-store_ln9650          (store            ) [ 000000000]
-br_ln9642             (br               ) [ 000000000]
+specpipeline_ln9511   (specpipeline     ) [ 000000000]
+store_ln9519          (store            ) [ 000000000]
+br_ln9511             (br               ) [ 000000000]
 ret_ln0               (ret              ) [ 000000000]
 </LifeTime>
 
@@ -456,7 +456,7 @@ ret_ln0               (ret              ) [ 000000000]
 <pin id="49" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_219"/></StgValue>
+<StgValue><ssdm name="empty_191"/></StgValue>
 </bind>
 </comp>
 
@@ -482,14 +482,14 @@ ret_ln0               (ret              ) [ 000000000]
 </bind>
 </comp>
 
-<comp id="58" class="1004" name="indvar_flatten34_fu_58">
+<comp id="58" class="1004" name="indvar_flatten20_fu_58">
 <pin_list>
 <pin id="59" dir="0" index="0" bw="1" slack="0"/>
 <pin id="60" dir="1" index="1" bw="16" slack="0"/>
 </pin_list>
 <bind>
 <opcode="alloca(26) " fcode="alloca"/>
-<opset="indvar_flatten34/1 "/>
+<opset="indvar_flatten20/1 "/>
 </bind>
 </comp>
 
@@ -610,7 +610,7 @@ ret_ln0               (ret              ) [ 000000000]
 </bind>
 </comp>
 
-<comp id="121" class="1004" name="store_ln9650_access_fu_121">
+<comp id="121" class="1004" name="store_ln9519_access_fu_121">
 <pin_list>
 <pin id="122" dir="0" index="0" bw="15" slack="0"/>
 <pin id="123" dir="0" index="1" bw="32" slack="1"/>
@@ -619,7 +619,7 @@ ret_ln0               (ret              ) [ 000000000]
 </pin_list>
 <bind>
 <opcode="store(28) " fcode="store"/>
-<opset="store_ln9650/8 "/>
+<opset="store_ln9519/8 "/>
 </bind>
 </comp>
 
@@ -671,7 +671,7 @@ ret_ln0               (ret              ) [ 000000000]
 </bind>
 </comp>
 
-<comp id="148" class="1004" name="store_ln9641_store_fu_148">
+<comp id="148" class="1004" name="store_ln9510_store_fu_148">
 <pin_list>
 <pin id="149" dir="0" index="0" bw="1" slack="0"/>
 <pin id="150" dir="0" index="1" bw="11" slack="0"/>
@@ -679,11 +679,11 @@ ret_ln0               (ret              ) [ 000000000]
 </pin_list>
 <bind>
 <opcode="store(28) " fcode="store"/>
-<opset="store_ln9641/1 "/>
+<opset="store_ln9510/1 "/>
 </bind>
 </comp>
 
-<comp id="153" class="1004" name="store_ln9642_store_fu_153">
+<comp id="153" class="1004" name="store_ln9511_store_fu_153">
 <pin_list>
 <pin id="154" dir="0" index="0" bw="1" slack="0"/>
 <pin id="155" dir="0" index="1" bw="6" slack="0"/>
@@ -691,22 +691,22 @@ ret_ln0               (ret              ) [ 000000000]
 </pin_list>
 <bind>
 <opcode="store(28) " fcode="store"/>
-<opset="store_ln9642/1 "/>
+<opset="store_ln9511/1 "/>
 </bind>
 </comp>
 
-<comp id="158" class="1004" name="indvar_flatten34_load_load_fu_158">
+<comp id="158" class="1004" name="indvar_flatten20_load_load_fu_158">
 <pin_list>
 <pin id="159" dir="0" index="0" bw="16" slack="1"/>
 <pin id="160" dir="1" index="1" bw="16" slack="0"/>
 </pin_list>
 <bind>
 <opcode="load(27) " fcode="load"/>
-<opset="indvar_flatten34_load/2 "/>
+<opset="indvar_flatten20_load/2 "/>
 </bind>
 </comp>
 
-<comp id="161" class="1004" name="icmp_ln9641_fu_161">
+<comp id="161" class="1004" name="icmp_ln9510_fu_161">
 <pin_list>
 <pin id="162" dir="0" index="0" bw="16" slack="0"/>
 <pin id="163" dir="0" index="1" bw="16" slack="0"/>
@@ -714,11 +714,11 @@ ret_ln0               (ret              ) [ 000000000]
 </pin_list>
 <bind>
 <opcode="icmp(45) " fcode="icmp"/>
-<opset="icmp_ln9641/2 "/>
+<opset="icmp_ln9510/2 "/>
 </bind>
 </comp>
 
-<comp id="167" class="1004" name="add_ln9641_1_fu_167">
+<comp id="167" class="1004" name="add_ln9510_1_fu_167">
 <pin_list>
 <pin id="168" dir="0" index="0" bw="16" slack="0"/>
 <pin id="169" dir="0" index="1" bw="1" slack="0"/>
@@ -726,7 +726,7 @@ ret_ln0               (ret              ) [ 000000000]
 </pin_list>
 <bind>
 <opcode="add(8) " fcode="add"/>
-<opset="add_ln9641_1/2 "/>
+<opset="add_ln9510_1/2 "/>
 </bind>
 </comp>
 
@@ -752,7 +752,7 @@ ret_ln0               (ret              ) [ 000000000]
 </bind>
 </comp>
 
-<comp id="179" class="1004" name="add_ln9641_fu_179">
+<comp id="179" class="1004" name="add_ln9510_fu_179">
 <pin_list>
 <pin id="180" dir="0" index="0" bw="11" slack="0"/>
 <pin id="181" dir="0" index="1" bw="1" slack="0"/>
@@ -760,11 +760,11 @@ ret_ln0               (ret              ) [ 000000000]
 </pin_list>
 <bind>
 <opcode="add(8) " fcode="add"/>
-<opset="add_ln9641/2 "/>
+<opset="add_ln9510/2 "/>
 </bind>
 </comp>
 
-<comp id="185" class="1004" name="icmp_ln9642_fu_185">
+<comp id="185" class="1004" name="icmp_ln9511_fu_185">
 <pin_list>
 <pin id="186" dir="0" index="0" bw="6" slack="0"/>
 <pin id="187" dir="0" index="1" bw="6" slack="0"/>
@@ -772,11 +772,11 @@ ret_ln0               (ret              ) [ 000000000]
 </pin_list>
 <bind>
 <opcode="icmp(45) " fcode="icmp"/>
-<opset="icmp_ln9642/2 "/>
+<opset="icmp_ln9511/2 "/>
 </bind>
 </comp>
 
-<comp id="191" class="1004" name="select_ln9641_fu_191">
+<comp id="191" class="1004" name="select_ln9510_fu_191">
 <pin_list>
 <pin id="192" dir="0" index="0" bw="1" slack="0"/>
 <pin id="193" dir="0" index="1" bw="1" slack="0"/>
@@ -785,11 +785,11 @@ ret_ln0               (ret              ) [ 000000000]
 </pin_list>
 <bind>
 <opcode="select(49) " fcode="select"/>
-<opset="select_ln9641/2 "/>
+<opset="select_ln9510/2 "/>
 </bind>
 </comp>
 
-<comp id="199" class="1004" name="select_ln9641_1_fu_199">
+<comp id="199" class="1004" name="select_ln9510_1_fu_199">
 <pin_list>
 <pin id="200" dir="0" index="0" bw="1" slack="0"/>
 <pin id="201" dir="0" index="1" bw="11" slack="0"/>
@@ -798,18 +798,18 @@ ret_ln0               (ret              ) [ 000000000]
 </pin_list>
 <bind>
 <opcode="select(49) " fcode="select"/>
-<opset="select_ln9641_1/2 "/>
+<opset="select_ln9510_1/2 "/>
 </bind>
 </comp>
 
-<comp id="207" class="1004" name="trunc_ln9646_fu_207">
+<comp id="207" class="1004" name="trunc_ln9515_fu_207">
 <pin_list>
 <pin id="208" dir="0" index="0" bw="11" slack="0"/>
 <pin id="209" dir="1" index="1" bw="10" slack="0"/>
 </pin_list>
 <bind>
 <opcode="trunc(33) " fcode="trunc"/>
-<opset="trunc_ln9646/2 "/>
+<opset="trunc_ln9515/2 "/>
 </bind>
 </comp>
 
@@ -826,18 +826,18 @@ ret_ln0               (ret              ) [ 000000000]
 </bind>
 </comp>
 
-<comp id="219" class="1004" name="zext_ln9646_fu_219">
+<comp id="219" class="1004" name="zext_ln9515_fu_219">
 <pin_list>
 <pin id="220" dir="0" index="0" bw="6" slack="0"/>
 <pin id="221" dir="1" index="1" bw="15" slack="0"/>
 </pin_list>
 <bind>
 <opcode="zext(34) " fcode="zext"/>
-<opset="zext_ln9646/2 "/>
+<opset="zext_ln9515/2 "/>
 </bind>
 </comp>
 
-<comp id="223" class="1004" name="add_ln9646_fu_223">
+<comp id="223" class="1004" name="add_ln9515_fu_223">
 <pin_list>
 <pin id="224" dir="0" index="0" bw="15" slack="0"/>
 <pin id="225" dir="0" index="1" bw="6" slack="0"/>
@@ -845,22 +845,22 @@ ret_ln0               (ret              ) [ 000000000]
 </pin_list>
 <bind>
 <opcode="add(8) " fcode="add"/>
-<opset="add_ln9646/2 "/>
+<opset="add_ln9515/2 "/>
 </bind>
 </comp>
 
-<comp id="229" class="1004" name="zext_ln9646_1_fu_229">
+<comp id="229" class="1004" name="zext_ln9515_1_fu_229">
 <pin_list>
 <pin id="230" dir="0" index="0" bw="15" slack="0"/>
 <pin id="231" dir="1" index="1" bw="64" slack="0"/>
 </pin_list>
 <bind>
 <opcode="zext(34) " fcode="zext"/>
-<opset="zext_ln9646_1/2 "/>
+<opset="zext_ln9515_1/2 "/>
 </bind>
 </comp>
 
-<comp id="237" class="1004" name="add_ln9642_fu_237">
+<comp id="237" class="1004" name="add_ln9511_fu_237">
 <pin_list>
 <pin id="238" dir="0" index="0" bw="6" slack="0"/>
 <pin id="239" dir="0" index="1" bw="1" slack="0"/>
@@ -868,11 +868,11 @@ ret_ln0               (ret              ) [ 000000000]
 </pin_list>
 <bind>
 <opcode="add(8) " fcode="add"/>
-<opset="add_ln9642/2 "/>
+<opset="add_ln9511/2 "/>
 </bind>
 </comp>
 
-<comp id="243" class="1004" name="store_ln9641_store_fu_243">
+<comp id="243" class="1004" name="store_ln9510_store_fu_243">
 <pin_list>
 <pin id="244" dir="0" index="0" bw="16" slack="0"/>
 <pin id="245" dir="0" index="1" bw="16" slack="1"/>
@@ -880,11 +880,11 @@ ret_ln0               (ret              ) [ 000000000]
 </pin_list>
 <bind>
 <opcode="store(28) " fcode="store"/>
-<opset="store_ln9641/2 "/>
+<opset="store_ln9510/2 "/>
 </bind>
 </comp>
 
-<comp id="248" class="1004" name="store_ln9641_store_fu_248">
+<comp id="248" class="1004" name="store_ln9510_store_fu_248">
 <pin_list>
 <pin id="249" dir="0" index="0" bw="11" slack="0"/>
 <pin id="250" dir="0" index="1" bw="11" slack="1"/>
@@ -892,11 +892,11 @@ ret_ln0               (ret              ) [ 000000000]
 </pin_list>
 <bind>
 <opcode="store(28) " fcode="store"/>
-<opset="store_ln9641/2 "/>
+<opset="store_ln9510/2 "/>
 </bind>
 </comp>
 
-<comp id="253" class="1004" name="store_ln9642_store_fu_253">
+<comp id="253" class="1004" name="store_ln9511_store_fu_253">
 <pin_list>
 <pin id="254" dir="0" index="0" bw="6" slack="0"/>
 <pin id="255" dir="0" index="1" bw="6" slack="1"/>
@@ -904,7 +904,7 @@ ret_ln0               (ret              ) [ 000000000]
 </pin_list>
 <bind>
 <opcode="store(28) " fcode="store"/>
-<opset="store_ln9642/2 "/>
+<opset="store_ln9511/2 "/>
 </bind>
 </comp>
 
@@ -928,33 +928,33 @@ ret_ln0               (ret              ) [ 000000000]
 </bind>
 </comp>
 
-<comp id="272" class="1005" name="indvar_flatten34_reg_272">
+<comp id="272" class="1005" name="indvar_flatten20_reg_272">
 <pin_list>
 <pin id="273" dir="0" index="0" bw="16" slack="0"/>
 <pin id="274" dir="1" index="1" bw="16" slack="0"/>
 </pin_list>
 <bind>
-<opset="indvar_flatten34 "/>
+<opset="indvar_flatten20 "/>
 </bind>
 </comp>
 
-<comp id="279" class="1005" name="icmp_ln9641_reg_279">
+<comp id="279" class="1005" name="icmp_ln9510_reg_279">
 <pin_list>
 <pin id="280" dir="0" index="0" bw="1" slack="5"/>
 <pin id="281" dir="1" index="1" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<opset="icmp_ln9641 "/>
+<opset="icmp_ln9510 "/>
 </bind>
 </comp>
 
-<comp id="283" class="1005" name="zext_ln9646_1_reg_283">
+<comp id="283" class="1005" name="zext_ln9515_1_reg_283">
 <pin_list>
 <pin id="284" dir="0" index="0" bw="64" slack="6"/>
 <pin id="285" dir="1" index="1" bw="64" slack="6"/>
 </pin_list>
 <bind>
-<opset="zext_ln9646_1 "/>
+<opset="zext_ln9515_1 "/>
 </bind>
 </comp>
 
@@ -1273,21 +1273,21 @@ ret_ln0               (ret              ) [ 000000000]
   - Chain level:
 	State 1
 		store_ln0 : 1
-		store_ln9641 : 1
-		store_ln9642 : 1
+		store_ln9510 : 1
+		store_ln9511 : 1
 	State 2
-		icmp_ln9641 : 1
-		add_ln9641_1 : 1
-		br_ln9641 : 2
-		add_ln9641 : 1
-		icmp_ln9642 : 1
-		select_ln9641 : 2
-		select_ln9641_1 : 2
-		trunc_ln9646 : 3
+		icmp_ln9510 : 1
+		add_ln9510_1 : 1
+		br_ln9510 : 2
+		add_ln9510 : 1
+		icmp_ln9511 : 1
+		select_ln9510 : 2
+		select_ln9510_1 : 2
+		trunc_ln9515 : 3
 		tmp_s : 4
-		zext_ln9646 : 3
-		add_ln9646 : 5
-		zext_ln9646_1 : 6
+		zext_ln9515 : 3
+		add_ln9515 : 5
+		zext_ln9515_1 : 6
 		v5223_addr : 7
 		v5224_addr : 7
 		X_1_h_addr : 7
@@ -1296,10 +1296,10 @@ ret_ln0               (ret              ) [ 000000000]
 		v5253 : 8
 		v5255 : 8
 		v5256 : 8
-		add_ln9642 : 3
-		store_ln9641 : 2
-		store_ln9641 : 3
-		store_ln9642 : 4
+		add_ln9511 : 3
+		store_ln9510 : 2
+		store_ln9510 : 3
+		store_ln9511 : 4
 	State 3
 		v5254 : 1
 		v5257 : 1
@@ -1308,7 +1308,7 @@ ret_ln0               (ret              ) [ 000000000]
 	State 6
 	State 7
 	State 8
-		store_ln9650 : 1
+		store_ln9519 : 1
 
 
 ============================================================
@@ -1324,23 +1324,23 @@ ret_ln0               (ret              ) [ 000000000]
 |----------|------------------------|---------|---------|---------|
 |   fadd   |       grp_fu_127       |    2    |   177   |   226   |
 |----------|------------------------|---------|---------|---------|
-|          |   add_ln9641_1_fu_167  |    0    |    0    |    23   |
-|    add   |    add_ln9641_fu_179   |    0    |    0    |    18   |
-|          |    add_ln9646_fu_223   |    0    |    0    |    22   |
-|          |    add_ln9642_fu_237   |    0    |    0    |    13   |
+|          |   add_ln9510_1_fu_167  |    0    |    0    |    23   |
+|    add   |    add_ln9510_fu_179   |    0    |    0    |    18   |
+|          |    add_ln9515_fu_223   |    0    |    0    |    22   |
+|          |    add_ln9511_fu_237   |    0    |    0    |    13   |
 |----------|------------------------|---------|---------|---------|
-|   icmp   |   icmp_ln9641_fu_161   |    0    |    0    |    23   |
-|          |   icmp_ln9642_fu_185   |    0    |    0    |    13   |
+|   icmp   |   icmp_ln9510_fu_161   |    0    |    0    |    23   |
+|          |   icmp_ln9511_fu_185   |    0    |    0    |    13   |
 |----------|------------------------|---------|---------|---------|
-|  select  |  select_ln9641_fu_191  |    0    |    0    |    6    |
-|          | select_ln9641_1_fu_199 |    0    |    0    |    11   |
+|  select  |  select_ln9510_fu_191  |    0    |    0    |    6    |
+|          | select_ln9510_1_fu_199 |    0    |    0    |    11   |
 |----------|------------------------|---------|---------|---------|
-|   trunc  |   trunc_ln9646_fu_207  |    0    |    0    |    0    |
+|   trunc  |   trunc_ln9515_fu_207  |    0    |    0    |    0    |
 |----------|------------------------|---------|---------|---------|
 |bitconcatenate|      tmp_s_fu_211      |    0    |    0    |    0    |
 |----------|------------------------|---------|---------|---------|
-|   zext   |   zext_ln9646_fu_219   |    0    |    0    |    0    |
-|          |  zext_ln9646_1_fu_229  |    0    |    0    |    0    |
+|   zext   |   zext_ln9515_fu_219   |    0    |    0    |    0    |
+|          |  zext_ln9515_1_fu_229  |    0    |    0    |    0    |
 |----------|------------------------|---------|---------|---------|
 |   Total  |                        |    8    |   433   |   509   |
 |----------|------------------------|---------|---------|---------|
@@ -1355,8 +1355,8 @@ N/A
 |   X_1_h_addr_reg_298   |   15   |
 |   X_2_h_addr_reg_303   |   15   |
 |       i9_reg_265       |   11   |
-|   icmp_ln9641_reg_279  |    1   |
-|indvar_flatten34_reg_272|   16   |
+|   icmp_ln9510_reg_279  |    1   |
+|indvar_flatten20_reg_272|   16   |
 |       j7_reg_258       |    6   |
 |   v5223_addr_reg_288   |   15   |
 |   v5224_addr_reg_293   |   15   |
@@ -1367,7 +1367,7 @@ N/A
 |      v5256_reg_323     |   32   |
 |      v5257_reg_333     |   32   |
 |      v5258_reg_338     |   32   |
-|  zext_ln9646_1_reg_283 |   64   |
+|  zext_ln9515_1_reg_283 |   64   |
 +------------------------+--------+
 |          Total         |   382  |
 +------------------------+--------+

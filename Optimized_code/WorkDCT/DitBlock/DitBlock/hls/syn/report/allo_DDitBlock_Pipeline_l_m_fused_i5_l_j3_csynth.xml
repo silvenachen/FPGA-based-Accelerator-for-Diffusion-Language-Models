@@ -46,13 +46,13 @@
 <SummaryOfViolations>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:678~/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25379</SourceLocation>
+<SourceLocation>/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:546~/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25240</SourceLocation>
 <SummaryOfLoopViolations>
 <l_m_fused_i5_l_j3>
 <Name>l_m_fused_i5_l_j3</Name>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:677~/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25379</SourceLocation>
+<SourceLocation>/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:545~/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25240</SourceLocation>
 </l_m_fused_i5_l_j3>
 </SummaryOfLoopViolations>
 </SummaryOfViolations>
@@ -143,7 +143,7 @@
 <Attribute>control</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_591_p_din0</name>
+<name>grp_fu_590_p_din0</name>
 <Object>allo_DDitBlock_Pipeline_l_m_fused_i5_l_j3</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -154,7 +154,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_591_p_din1</name>
+<name>grp_fu_590_p_din1</name>
 <Object>allo_DDitBlock_Pipeline_l_m_fused_i5_l_j3</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -165,7 +165,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_591_p_opcode</name>
+<name>grp_fu_590_p_opcode</name>
 <Object>allo_DDitBlock_Pipeline_l_m_fused_i5_l_j3</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -176,7 +176,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_591_p_dout0</name>
+<name>grp_fu_590_p_dout0</name>
 <Object>allo_DDitBlock_Pipeline_l_m_fused_i5_l_j3</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -187,7 +187,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_591_p_ce</name>
+<name>grp_fu_590_p_ce</name>
 <Object>allo_DDitBlock_Pipeline_l_m_fused_i5_l_j3</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -198,7 +198,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_595_p_din0</name>
+<name>grp_fu_594_p_din0</name>
 <Object>allo_DDitBlock_Pipeline_l_m_fused_i5_l_j3</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -209,7 +209,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_595_p_din1</name>
+<name>grp_fu_594_p_din1</name>
 <Object>allo_DDitBlock_Pipeline_l_m_fused_i5_l_j3</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -220,7 +220,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_595_p_opcode</name>
+<name>grp_fu_594_p_opcode</name>
 <Object>allo_DDitBlock_Pipeline_l_m_fused_i5_l_j3</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -231,7 +231,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_595_p_dout0</name>
+<name>grp_fu_594_p_dout0</name>
 <Object>allo_DDitBlock_Pipeline_l_m_fused_i5_l_j3</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -242,7 +242,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_595_p_ce</name>
+<name>grp_fu_594_p_ce</name>
 <Object>allo_DDitBlock_Pipeline_l_m_fused_i5_l_j3</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -253,7 +253,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_599_p_din0</name>
+<name>grp_fu_598_p_din0</name>
 <Object>allo_DDitBlock_Pipeline_l_m_fused_i5_l_j3</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -264,7 +264,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_599_p_din1</name>
+<name>grp_fu_598_p_din1</name>
 <Object>allo_DDitBlock_Pipeline_l_m_fused_i5_l_j3</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -275,7 +275,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_599_p_dout0</name>
+<name>grp_fu_598_p_dout0</name>
 <Object>allo_DDitBlock_Pipeline_l_m_fused_i5_l_j3</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -286,7 +286,7 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>grp_fu_599_p_ce</name>
+<name>grp_fu_598_p_ce</name>
 <Object>allo_DDitBlock_Pipeline_l_m_fused_i5_l_j3</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -294,6 +294,39 @@
 <IOConfig></IOConfig>
 <Dir>out</Dir>
 <Bits>1</Bits>
+<Attribute>data</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>buffer_x_address0</name>
+<Object>buffer_x</Object>
+<Type>array</Type>
+<Scope></Scope>
+<IOProtocol>ap_memory</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>19</Bits>
+<Attribute>address</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>buffer_x_ce0</name>
+<Object>buffer_x</Object>
+<Type>array</Type>
+<Scope></Scope>
+<IOProtocol>ap_memory</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>1</Bits>
+<Attribute>control</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>buffer_x_q0</name>
+<Object>buffer_x</Object>
+<Type>array</Type>
+<Scope></Scope>
+<IOProtocol>ap_memory</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>in</Dir>
+<Bits>32</Bits>
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
@@ -337,39 +370,6 @@
 <IOProtocol>ap_memory</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>out</Dir>
-<Bits>32</Bits>
-<Attribute>data</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>buffer_K_address0</name>
-<Object>buffer_K</Object>
-<Type>array</Type>
-<Scope></Scope>
-<IOProtocol>ap_memory</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>19</Bits>
-<Attribute>address</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>buffer_K_ce0</name>
-<Object>buffer_K</Object>
-<Type>array</Type>
-<Scope></Scope>
-<IOProtocol>ap_memory</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>1</Bits>
-<Attribute>control</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>buffer_K_q0</name>
-<Object>buffer_K</Object>
-<Type>array</Type>
-<Scope></Scope>
-<IOProtocol>ap_memory</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>in</Dir>
 <Bits>32</Bits>
 <Attribute>data</Attribute>
 </RtlPorts>

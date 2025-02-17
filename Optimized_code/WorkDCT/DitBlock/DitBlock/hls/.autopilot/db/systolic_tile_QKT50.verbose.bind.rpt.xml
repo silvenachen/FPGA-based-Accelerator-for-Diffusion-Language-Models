@@ -1,0 +1,111 @@
+<profile>
+
+<section name = "Vitis HLS Report for 'systolic_tile_QKT50'" level="0">
+<item name = "Date">Mon Feb 17 20:36:47 2025
+</item>
+<item name = "Version">2023.2 (Build 4023990 on Oct 11 2023)</item>
+<item name = "Project">DitBlock</item>
+<item name = "Solution">hls (Vivado IP Flow Target)</item>
+<item name = "Product family">virtexuplusHBM</item>
+<item name = "Target device">xcu280-fsvh2892-2L-e</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">10.00 ns, 6.536 ns, 2.70 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">148, 148, 1.480 us, 1.480 us, 134, 134, dataflow</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+<column name="grp_systolic_tile_QKT_Loop_l_data_load_k272_proc35122_fu_1178">systolic_tile_QKT_Loop_l_data_load_k272_proc35122, 66, 66, 0.660 us, 0.660 us, 66, 66, no</column>
+<column name="grp_PE_kernel_QKT_0_0_1123_fu_1230">PE_kernel_QKT_0_0_1123, 133, 133, 1.330 us, 1.330 us, 133, 133, no</column>
+<column name="grp_PE_kernel_QKT_1_0_1124_fu_1240">PE_kernel_QKT_1_0_1124, 133, 133, 1.330 us, 1.330 us, 133, 133, no</column>
+<column name="grp_PE_kernel_QKT_0_1_1131_fu_1250">PE_kernel_QKT_0_1_1131, 133, 133, 1.330 us, 1.330 us, 133, 133, no</column>
+<column name="grp_PE_kernel_QKT_2_0_1125_fu_1260">PE_kernel_QKT_2_0_1125, 133, 133, 1.330 us, 1.330 us, 133, 133, no</column>
+<column name="grp_PE_kernel_QKT_1_1_1132_fu_1270">PE_kernel_QKT_1_1_1132, 133, 133, 1.330 us, 1.330 us, 133, 133, no</column>
+<column name="grp_PE_kernel_QKT_0_2_1139_fu_1280">PE_kernel_QKT_0_2_1139, 133, 133, 1.330 us, 1.330 us, 133, 133, no</column>
+<column name="grp_PE_kernel_QKT_3_0_1126_fu_1290">PE_kernel_QKT_3_0_1126, 133, 133, 1.330 us, 1.330 us, 133, 133, no</column>
+<column name="grp_PE_kernel_QKT_2_1_1133_fu_1300">PE_kernel_QKT_2_1_1133, 133, 133, 1.330 us, 1.330 us, 133, 133, no</column>
+<column name="grp_PE_kernel_QKT_1_2_1140_fu_1310">PE_kernel_QKT_1_2_1140, 133, 133, 1.330 us, 1.330 us, 133, 133, no</column>
+<column name="grp_PE_kernel_QKT_0_3_1147_fu_1320">PE_kernel_QKT_0_3_1147, 133, 133, 1.330 us, 1.330 us, 133, 133, no</column>
+<column name="grp_PE_kernel_QKT_4_0_1127_fu_1330">PE_kernel_QKT_4_0_1127, 133, 133, 1.330 us, 1.330 us, 133, 133, no</column>
+<column name="grp_PE_kernel_QKT_3_1_1134_fu_1340">PE_kernel_QKT_3_1_1134, 133, 133, 1.330 us, 1.330 us, 133, 133, no</column>
+<column name="grp_PE_kernel_QKT_2_2_1141_fu_1350">PE_kernel_QKT_2_2_1141, 133, 133, 1.330 us, 1.330 us, 133, 133, no</column>
+<column name="grp_PE_kernel_QKT_1_3_1148_fu_1360">PE_kernel_QKT_1_3_1148, 133, 133, 1.330 us, 1.330 us, 133, 133, no</column>
+<column name="grp_PE_kernel_QKT_0_4_1155_fu_1370">PE_kernel_QKT_0_4_1155, 133, 133, 1.330 us, 1.330 us, 133, 133, no</column>
+<column name="grp_PE_kernel_QKT_5_0_1128_fu_1380">PE_kernel_QKT_5_0_1128, 133, 133, 1.330 us, 1.330 us, 133, 133, no</column>
+<column name="grp_PE_kernel_QKT_4_1_1135_fu_1390">PE_kernel_QKT_4_1_1135, 133, 133, 1.330 us, 1.330 us, 133, 133, no</column>
+<column name="grp_PE_kernel_QKT_3_2_1142_fu_1400">PE_kernel_QKT_3_2_1142, 133, 133, 1.330 us, 1.330 us, 133, 133, no</column>
+<column name="grp_PE_kernel_QKT_2_3_1149_fu_1410">PE_kernel_QKT_2_3_1149, 133, 133, 1.330 us, 1.330 us, 133, 133, no</column>
+<column name="grp_PE_kernel_QKT_1_4_1156_fu_1420">PE_kernel_QKT_1_4_1156, 133, 133, 1.330 us, 1.330 us, 133, 133, no</column>
+<column name="grp_PE_kernel_QKT_0_5_1163_fu_1430">PE_kernel_QKT_0_5_1163, 133, 133, 1.330 us, 1.330 us, 133, 133, no</column>
+<column name="grp_PE_kernel_QKT_6_0_1129_fu_1440">PE_kernel_QKT_6_0_1129, 133, 133, 1.330 us, 1.330 us, 133, 133, no</column>
+<column name="grp_PE_kernel_QKT_5_1_1136_fu_1450">PE_kernel_QKT_5_1_1136, 133, 133, 1.330 us, 1.330 us, 133, 133, no</column>
+<column name="grp_PE_kernel_QKT_4_2_1143_fu_1460">PE_kernel_QKT_4_2_1143, 133, 133, 1.330 us, 1.330 us, 133, 133, no</column>
+<column name="grp_PE_kernel_QKT_3_3_1150_fu_1470">PE_kernel_QKT_3_3_1150, 133, 133, 1.330 us, 1.330 us, 133, 133, no</column>
+<column name="grp_PE_kernel_QKT_2_4_1157_fu_1480">PE_kernel_QKT_2_4_1157, 133, 133, 1.330 us, 1.330 us, 133, 133, no</column>
+<column name="grp_PE_kernel_QKT_1_5_1164_fu_1490">PE_kernel_QKT_1_5_1164, 133, 133, 1.330 us, 1.330 us, 133, 133, no</column>
+<column name="grp_PE_kernel_QKT_0_6_1171_fu_1500">PE_kernel_QKT_0_6_1171, 133, 133, 1.330 us, 1.330 us, 133, 133, no</column>
+<column name="grp_PE_kernel_QKT_7_0_1130_fu_1510">PE_kernel_QKT_7_0_1130, 133, 133, 1.330 us, 1.330 us, 133, 133, no</column>
+<column name="grp_PE_kernel_QKT_6_1_1137_fu_1520">PE_kernel_QKT_6_1_1137, 133, 133, 1.330 us, 1.330 us, 133, 133, no</column>
+<column name="grp_PE_kernel_QKT_5_2_1144_fu_1530">PE_kernel_QKT_5_2_1144, 133, 133, 1.330 us, 1.330 us, 133, 133, no</column>
+<column name="grp_PE_kernel_QKT_4_3_1151_fu_1540">PE_kernel_QKT_4_3_1151, 133, 133, 1.330 us, 1.330 us, 133, 133, no</column>
+<column name="grp_PE_kernel_QKT_3_4_1158_fu_1550">PE_kernel_QKT_3_4_1158, 133, 133, 1.330 us, 1.330 us, 133, 133, no</column>
+<column name="grp_PE_kernel_QKT_2_5_1165_fu_1560">PE_kernel_QKT_2_5_1165, 133, 133, 1.330 us, 1.330 us, 133, 133, no</column>
+<column name="grp_PE_kernel_QKT_1_6_1172_fu_1570">PE_kernel_QKT_1_6_1172, 133, 133, 1.330 us, 1.330 us, 133, 133, no</column>
+<column name="grp_PE_kernel_QKT_0_7_1179_fu_1580">PE_kernel_QKT_0_7_1179, 133, 133, 1.330 us, 1.330 us, 133, 133, no</column>
+<column name="grp_PE_kernel_QKT_7_1_1138_fu_1590">PE_kernel_QKT_7_1_1138, 133, 133, 1.330 us, 1.330 us, 133, 133, no</column>
+<column name="grp_PE_kernel_QKT_6_2_1145_fu_1600">PE_kernel_QKT_6_2_1145, 133, 133, 1.330 us, 1.330 us, 133, 133, no</column>
+<column name="grp_PE_kernel_QKT_5_3_1152_fu_1610">PE_kernel_QKT_5_3_1152, 133, 133, 1.330 us, 1.330 us, 133, 133, no</column>
+<column name="grp_PE_kernel_QKT_4_4_1159_fu_1620">PE_kernel_QKT_4_4_1159, 133, 133, 1.330 us, 1.330 us, 133, 133, no</column>
+<column name="grp_PE_kernel_QKT_3_5_1166_fu_1630">PE_kernel_QKT_3_5_1166, 133, 133, 1.330 us, 1.330 us, 133, 133, no</column>
+<column name="grp_PE_kernel_QKT_2_6_1173_fu_1640">PE_kernel_QKT_2_6_1173, 133, 133, 1.330 us, 1.330 us, 133, 133, no</column>
+<column name="grp_PE_kernel_QKT_1_7_1180_fu_1650">PE_kernel_QKT_1_7_1180, 133, 133, 1.330 us, 1.330 us, 133, 133, no</column>
+<column name="grp_PE_kernel_QKT_7_2_1146_fu_1660">PE_kernel_QKT_7_2_1146, 133, 133, 1.330 us, 1.330 us, 133, 133, no</column>
+<column name="grp_PE_kernel_QKT_6_3_1153_fu_1670">PE_kernel_QKT_6_3_1153, 133, 133, 1.330 us, 1.330 us, 133, 133, no</column>
+<column name="grp_PE_kernel_QKT_5_4_1160_fu_1680">PE_kernel_QKT_5_4_1160, 133, 133, 1.330 us, 1.330 us, 133, 133, no</column>
+<column name="grp_PE_kernel_QKT_4_5_1167_fu_1690">PE_kernel_QKT_4_5_1167, 133, 133, 1.330 us, 1.330 us, 133, 133, no</column>
+<column name="grp_PE_kernel_QKT_3_6_1174_fu_1700">PE_kernel_QKT_3_6_1174, 133, 133, 1.330 us, 1.330 us, 133, 133, no</column>
+<column name="grp_PE_kernel_QKT_2_7_1181_fu_1710">PE_kernel_QKT_2_7_1181, 133, 133, 1.330 us, 1.330 us, 133, 133, no</column>
+<column name="grp_PE_kernel_QKT_7_3_1154_fu_1720">PE_kernel_QKT_7_3_1154, 133, 133, 1.330 us, 1.330 us, 133, 133, no</column>
+<column name="grp_PE_kernel_QKT_6_4_1161_fu_1730">PE_kernel_QKT_6_4_1161, 133, 133, 1.330 us, 1.330 us, 133, 133, no</column>
+<column name="grp_PE_kernel_QKT_5_5_1168_fu_1740">PE_kernel_QKT_5_5_1168, 133, 133, 1.330 us, 1.330 us, 133, 133, no</column>
+<column name="grp_PE_kernel_QKT_4_6_1175_fu_1750">PE_kernel_QKT_4_6_1175, 133, 133, 1.330 us, 1.330 us, 133, 133, no</column>
+<column name="grp_PE_kernel_QKT_3_7_1182_fu_1760">PE_kernel_QKT_3_7_1182, 133, 133, 1.330 us, 1.330 us, 133, 133, no</column>
+<column name="grp_PE_kernel_QKT_7_4_1162_fu_1770">PE_kernel_QKT_7_4_1162, 133, 133, 1.330 us, 1.330 us, 133, 133, no</column>
+<column name="grp_PE_kernel_QKT_6_5_1169_fu_1780">PE_kernel_QKT_6_5_1169, 133, 133, 1.330 us, 1.330 us, 133, 133, no</column>
+<column name="grp_PE_kernel_QKT_5_6_1176_fu_1790">PE_kernel_QKT_5_6_1176, 133, 133, 1.330 us, 1.330 us, 133, 133, no</column>
+<column name="grp_PE_kernel_QKT_4_7_1183_fu_1800">PE_kernel_QKT_4_7_1183, 133, 133, 1.330 us, 1.330 us, 133, 133, no</column>
+<column name="grp_PE_kernel_QKT_7_5_1170_fu_1810">PE_kernel_QKT_7_5_1170, 133, 133, 1.330 us, 1.330 us, 133, 133, no</column>
+<column name="grp_PE_kernel_QKT_6_6_1177_fu_1820">PE_kernel_QKT_6_6_1177, 133, 133, 1.330 us, 1.330 us, 133, 133, no</column>
+<column name="grp_PE_kernel_QKT_5_7_1184_fu_1830">PE_kernel_QKT_5_7_1184, 133, 133, 1.330 us, 1.330 us, 133, 133, no</column>
+<column name="grp_PE_kernel_QKT_7_6_1178_fu_1840">PE_kernel_QKT_7_6_1178, 133, 133, 1.330 us, 1.330 us, 133, 133, no</column>
+<column name="grp_PE_kernel_QKT_6_7_1185_fu_1850">PE_kernel_QKT_6_7_1185, 133, 133, 1.330 us, 1.330 us, 133, 133, no</column>
+<column name="grp_PE_kernel_QKT_7_7_1186_fu_1860">PE_kernel_QKT_7_7_1186, 133, 133, 1.330 us, 1.330 us, 133, 133, no</column>
+<column name="grp_systolic_tile_QKT_Loop_l_data_drain_k273_proc36187_fu_1870">systolic_tile_QKT_Loop_l_data_drain_k273_proc36187, 66, 66, 0.660 us, 0.660 us, 66, 66, no</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+</profile>

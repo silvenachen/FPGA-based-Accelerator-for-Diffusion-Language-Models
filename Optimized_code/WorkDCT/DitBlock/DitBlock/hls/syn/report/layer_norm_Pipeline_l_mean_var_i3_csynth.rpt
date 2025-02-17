@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'layer_norm_Pipeline_l_mean_var_i3'
 ================================================================
-* Date:           Wed Feb  5 22:35:29 2025
+* Date:           Mon Feb 17 20:37:40 2025
 
 * Version:        2023.2 (Build 4023990 on Oct 11 2023)
 * Project:        DitBlock
@@ -96,8 +96,8 @@
     +----------------------+----------+----+---+----+------------+------------+
     |     Variable Name    | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
     +----------------------+----------+----+---+----+------------+------------+
-    |add_ln638_fu_121_p2   |         +|   0|  0|  18|          11|           1|
-    |icmp_ln638_fu_115_p2  |      icmp|   0|  0|  19|          11|          12|
+    |add_ln507_fu_121_p2   |         +|   0|  0|  18|          11|           1|
+    |icmp_ln507_fu_115_p2  |      icmp|   0|  0|  19|          11|          12|
     |ap_enable_pp0         |       xor|   0|  0|   2|           1|           2|
     +----------------------+----------+----+---+----+------------+------------+
     |Total                 |          |   0|  0|  39|          23|          15|
@@ -145,9 +145,9 @@
     |v284_reg_182                      |  32|   0|   32|          0|
     |v287_reg_187                      |  32|   0|   32|          0|
     |v288_reg_192                      |  32|   0|   32|          0|
-    |zext_ln638_reg_149                |  11|   0|   64|         53|
+    |zext_ln507_reg_149                |  11|   0|   64|         53|
     |v284_reg_182                      |  64|  32|   32|          0|
-    |zext_ln638_reg_149                |  64|  32|   64|         53|
+    |zext_ln507_reg_149                |  64|  32|   64|         53|
     +----------------------------------+----+----+-----+-----------+
     |Total                             | 335|  64|  356|        106|
     +----------------------------------+----+----+-----+-----------+
@@ -167,15 +167,15 @@
 |ap_done              |  out|    1|  ap_ctrl_hs|  layer_norm_Pipeline_l_mean_var_i3|  return value|
 |ap_idle              |  out|    1|  ap_ctrl_hs|  layer_norm_Pipeline_l_mean_var_i3|  return value|
 |ap_ready             |  out|    1|  ap_ctrl_hs|  layer_norm_Pipeline_l_mean_var_i3|  return value|
-|grp_fu_251_p_din0    |  out|   32|  ap_ctrl_hs|  layer_norm_Pipeline_l_mean_var_i3|  return value|
-|grp_fu_251_p_din1    |  out|   32|  ap_ctrl_hs|  layer_norm_Pipeline_l_mean_var_i3|  return value|
-|grp_fu_251_p_dout0   |   in|   32|  ap_ctrl_hs|  layer_norm_Pipeline_l_mean_var_i3|  return value|
-|grp_fu_251_p_ce      |  out|    1|  ap_ctrl_hs|  layer_norm_Pipeline_l_mean_var_i3|  return value|
 |grp_fu_247_p_din0    |  out|   32|  ap_ctrl_hs|  layer_norm_Pipeline_l_mean_var_i3|  return value|
 |grp_fu_247_p_din1    |  out|   32|  ap_ctrl_hs|  layer_norm_Pipeline_l_mean_var_i3|  return value|
-|grp_fu_247_p_opcode  |  out|    1|  ap_ctrl_hs|  layer_norm_Pipeline_l_mean_var_i3|  return value|
 |grp_fu_247_p_dout0   |   in|   32|  ap_ctrl_hs|  layer_norm_Pipeline_l_mean_var_i3|  return value|
 |grp_fu_247_p_ce      |  out|    1|  ap_ctrl_hs|  layer_norm_Pipeline_l_mean_var_i3|  return value|
+|grp_fu_243_p_din0    |  out|   32|  ap_ctrl_hs|  layer_norm_Pipeline_l_mean_var_i3|  return value|
+|grp_fu_243_p_din1    |  out|   32|  ap_ctrl_hs|  layer_norm_Pipeline_l_mean_var_i3|  return value|
+|grp_fu_243_p_opcode  |  out|    1|  ap_ctrl_hs|  layer_norm_Pipeline_l_mean_var_i3|  return value|
+|grp_fu_243_p_dout0   |   in|   32|  ap_ctrl_hs|  layer_norm_Pipeline_l_mean_var_i3|  return value|
+|grp_fu_243_p_ce      |  out|    1|  ap_ctrl_hs|  layer_norm_Pipeline_l_mean_var_i3|  return value|
 |mean_address0        |  out|   10|   ap_memory|                               mean|         array|
 |mean_ce0             |  out|    1|   ap_memory|                               mean|         array|
 |mean_we0             |  out|    1|   ap_memory|                               mean|         array|

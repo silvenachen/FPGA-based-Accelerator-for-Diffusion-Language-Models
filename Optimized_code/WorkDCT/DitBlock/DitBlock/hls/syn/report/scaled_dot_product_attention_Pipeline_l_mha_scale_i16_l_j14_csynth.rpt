@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'scaled_dot_product_attention_Pipeline_l_mha_scale_i16_l_j14'
 ================================================================
-* Date:           Wed Feb  5 22:36:23 2025
+* Date:           Mon Feb 17 20:38:34 2025
 
 * Version:        2023.2 (Build 4023990 on Oct 11 2023)
 * Project:        DitBlock
@@ -20,7 +20,7 @@
     +--------+----------+----------+------------+
     |  Clock |  Target  | Estimated| Uncertainty|
     +--------+----------+----------+------------+
-    |ap_clk  |  10.00 ns|  6.149 ns|     2.70 ns|
+    |ap_clk  |  10.00 ns|  4.901 ns|     2.70 ns|
     +--------+----------+----------+------------+
 
 + Latency: 
@@ -29,7 +29,7 @@
     |  Latency (cycles) |   Latency (absolute)  |      Interval     | Pipeline|
     |   min   |   max   |    min    |    max    |   min   |   max   |   Type  |
     +---------+---------+-----------+-----------+---------+---------+---------+
-    |  1048580|  1048580|  10.486 ms|  10.486 ms|  1048580|  1048580|       no|
+    |  1048581|  1048581|  10.486 ms|  10.486 ms|  1048581|  1048581|       no|
     +---------+---------+-----------+-----------+---------+---------+---------+
 
     + Detail: 
@@ -41,7 +41,7 @@
         |                         |  Latency (cycles) | Iteration|  Initiation Interval  |   Trip  |          |
         |        Loop Name        |   min   |   max   |  Latency |  achieved |   target  |  Count  | Pipelined|
         +-------------------------+---------+---------+----------+-----------+-----------+---------+----------+
-        |- l_mha_scale_i16_l_j14  |  1048578|  1048578|         4|          1|          1|  1048576|       yes|
+        |- l_mha_scale_i16_l_j14  |  1048579|  1048579|         5|          1|          1|  1048576|       yes|
         +-------------------------+---------+---------+----------+-----------+-----------+---------+----------+
 
 
@@ -59,9 +59,9 @@
 |Instance             |        -|     -|        -|        -|    -|
 |Memory               |        -|     -|        -|        -|    -|
 |Multiplexer          |        -|     -|        -|       54|    -|
-|Register             |        -|     -|      167|       32|    -|
+|Register             |        -|     -|      201|       32|    -|
 +---------------------+---------+------+---------+---------+-----+
-|Total                |        0|     0|      167|      249|    0|
+|Total                |        0|     0|      201|      249|    0|
 +---------------------+---------+------+---------+---------+-----+
 |Available SLR        |     1344|  3008|   869120|   434560|  320|
 +---------------------+---------+------+---------+---------+-----+
@@ -89,14 +89,14 @@
     +----------------------------+----------+----+---+----+------------+------------+
     |        Variable Name       | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
     +----------------------------+----------+----+---+----+------------+------------+
-    |add_ln15728_1_fu_118_p2     |         +|   0|  0|  28|          21|           1|
-    |add_ln15728_fu_130_p2       |         +|   0|  0|  18|          11|           1|
-    |add_ln15729_fu_185_p2       |         +|   0|  0|  18|          11|           1|
-    |add_ln15730_fu_174_p2       |         +|   0|  0|  27|          20|          20|
-    |icmp_ln15728_fu_112_p2      |      icmp|   0|  0|  29|          21|          22|
-    |icmp_ln15729_fu_136_p2      |      icmp|   0|  0|  19|          11|          12|
-    |select_ln15728_1_fu_150_p3  |    select|   0|  0|  11|           1|          11|
-    |select_ln15728_fu_142_p3    |    select|   0|  0|  11|           1|           1|
+    |add_ln15614_1_fu_106_p2     |         +|   0|  0|  28|          21|           1|
+    |add_ln15614_fu_118_p2       |         +|   0|  0|  18|          11|           1|
+    |add_ln15615_fu_173_p2       |         +|   0|  0|  18|          11|           1|
+    |add_ln15616_fu_162_p2       |         +|   0|  0|  27|          20|          20|
+    |icmp_ln15614_fu_100_p2      |      icmp|   0|  0|  29|          21|          22|
+    |icmp_ln15615_fu_124_p2      |      icmp|   0|  0|  19|          11|          12|
+    |select_ln15614_1_fu_138_p3  |    select|   0|  0|  11|           1|          11|
+    |select_ln15614_fu_130_p3    |    select|   0|  0|  11|           1|           1|
     |ap_enable_pp0               |       xor|   0|  0|   2|           1|           2|
     +----------------------------+----------+----+---+----+------------+------------+
     |Total                       |          |   0|  0| 163|          98|          71|
@@ -109,9 +109,9 @@
     |ap_done_int              |   9|          2|    1|          2|
     |ap_enable_reg_pp0_iter1  |   9|          2|    1|          2|
     |ap_enable_reg_pp0_iter2  |   9|          2|    1|          2|
-    |i16_fu_54                |   9|          2|   11|         22|
-    |indvar_flatten31_fu_58   |   9|          2|   21|         42|
-    |j14_fu_50                |   9|          2|   11|         22|
+    |i16_fu_52                |   9|          2|   11|         22|
+    |indvar_flatten17_fu_56   |   9|          2|   21|         42|
+    |j14_fu_48                |   9|          2|   11|         22|
     +-------------------------+----+-----------+-----+-----------+
     |Total                    |  54|         12|   46|         92|
     +-------------------------+----+-----------+-----+-----------+
@@ -120,22 +120,25 @@
     +----------------------------------+----+----+-----+-----------+
     |               Name               | FF | LUT| Bits| Const Bits|
     +----------------------------------+----+----+-----+-----------+
+    |Y1_addr_reg_219                   |  20|   0|   20|          0|
     |ap_CS_fsm                         |   1|   0|    1|          0|
     |ap_done_reg                       |   1|   0|    1|          0|
     |ap_enable_reg_pp0_iter1           |   1|   0|    1|          0|
     |ap_enable_reg_pp0_iter2           |   1|   0|    1|          0|
     |ap_enable_reg_pp0_iter3           |   1|   0|    1|          0|
     |ap_enable_reg_pp0_iter4           |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter5           |   1|   0|    1|          0|
     |ap_loop_exit_ready_pp0_iter2_reg  |   1|   0|    1|          0|
     |ap_loop_exit_ready_pp0_iter3_reg  |   1|   0|    1|          0|
-    |i16_fu_54                         |  11|   0|   11|          0|
-    |indvar_flatten31_fu_58            |  21|   0|   21|          0|
-    |j14_fu_50                         |  11|   0|   11|          0|
-    |v8588_reg_241                     |  32|   0|   32|          0|
-    |zext_ln15730_1_reg_231            |  20|   0|   64|         44|
-    |zext_ln15730_1_reg_231            |  64|  32|   64|         44|
+    |ap_loop_exit_ready_pp0_iter4_reg  |   1|   0|    1|          0|
+    |i16_fu_52                         |  11|   0|   11|          0|
+    |indvar_flatten17_fu_56            |  21|   0|   21|          0|
+    |j14_fu_48                         |  11|   0|   11|          0|
+    |v8588_reg_225                     |  32|   0|   32|          0|
+    |v8589_reg_230                     |  32|   0|   32|          0|
+    |Y1_addr_reg_219                   |  64|  32|   20|          0|
     +----------------------------------+----+----+-----+-----------+
-    |Total                             | 167|  32|  211|         88|
+    |Total                             | 201|  32|  157|          0|
     +----------------------------------+----+----+-----+-----------+
 
 
@@ -153,16 +156,16 @@
 |ap_done             |  out|    1|  ap_ctrl_hs|  scaled_dot_product_attention_Pipeline_l_mha_scale_i16_l_j14|  return value|
 |ap_idle             |  out|    1|  ap_ctrl_hs|  scaled_dot_product_attention_Pipeline_l_mha_scale_i16_l_j14|  return value|
 |ap_ready            |  out|    1|  ap_ctrl_hs|  scaled_dot_product_attention_Pipeline_l_mha_scale_i16_l_j14|  return value|
-|grp_fu_240_p_din0   |  out|   32|  ap_ctrl_hs|  scaled_dot_product_attention_Pipeline_l_mha_scale_i16_l_j14|  return value|
-|grp_fu_240_p_din1   |  out|   32|  ap_ctrl_hs|  scaled_dot_product_attention_Pipeline_l_mha_scale_i16_l_j14|  return value|
-|grp_fu_240_p_dout0  |   in|   32|  ap_ctrl_hs|  scaled_dot_product_attention_Pipeline_l_mha_scale_i16_l_j14|  return value|
-|grp_fu_240_p_ce     |  out|    1|  ap_ctrl_hs|  scaled_dot_product_attention_Pipeline_l_mha_scale_i16_l_j14|  return value|
+|grp_fu_217_p_din0   |  out|   32|  ap_ctrl_hs|  scaled_dot_product_attention_Pipeline_l_mha_scale_i16_l_j14|  return value|
+|grp_fu_217_p_din1   |  out|   32|  ap_ctrl_hs|  scaled_dot_product_attention_Pipeline_l_mha_scale_i16_l_j14|  return value|
+|grp_fu_217_p_dout0  |   in|   32|  ap_ctrl_hs|  scaled_dot_product_attention_Pipeline_l_mha_scale_i16_l_j14|  return value|
+|grp_fu_217_p_ce     |  out|    1|  ap_ctrl_hs|  scaled_dot_product_attention_Pipeline_l_mha_scale_i16_l_j14|  return value|
 |Y1_address0         |  out|   20|   ap_memory|                                                           Y1|         array|
 |Y1_ce0              |  out|    1|   ap_memory|                                                           Y1|         array|
 |Y1_q0               |   in|   32|   ap_memory|                                                           Y1|         array|
-|Y_t_address0        |  out|   20|   ap_memory|                                                          Y_t|         array|
-|Y_t_ce0             |  out|    1|   ap_memory|                                                          Y_t|         array|
-|Y_t_we0             |  out|    1|   ap_memory|                                                          Y_t|         array|
-|Y_t_d0              |  out|   32|   ap_memory|                                                          Y_t|         array|
+|Y1_address1         |  out|   20|   ap_memory|                                                           Y1|         array|
+|Y1_ce1              |  out|    1|   ap_memory|                                                           Y1|         array|
+|Y1_we1              |  out|    1|   ap_memory|                                                           Y1|         array|
+|Y1_d1               |  out|   32|   ap_memory|                                                           Y1|         array|
 +--------------------+-----+-----+------------+-------------------------------------------------------------+--------------+
 

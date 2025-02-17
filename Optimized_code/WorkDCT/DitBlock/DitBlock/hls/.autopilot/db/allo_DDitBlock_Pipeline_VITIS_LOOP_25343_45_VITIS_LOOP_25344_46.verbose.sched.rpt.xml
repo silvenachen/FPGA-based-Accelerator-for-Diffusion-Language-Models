@@ -1,0 +1,46 @@
+<profile>
+
+<section name = "Vitis HLS Report for 'allo_DDitBlock_Pipeline_VITIS_LOOP_25343_45_VITIS_LOOP_25344_46'" level="0">
+<item name = "Date">Mon Feb 17 20:37:31 2025
+</item>
+<item name = "Version">2023.2 (Build 4023990 on Oct 11 2023)</item>
+<item name = "Project">DitBlock</item>
+<item name = "Solution">hls (Vivado IP Flow Target)</item>
+<item name = "Product family">virtexuplusHBM</item>
+<item name = "Target device">xcu280-fsvh2892-2L-e</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">10.00 ns, 4.503 ns, 2.70 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">524290, 524290, 5.243 ms, 5.243 ms, 524290, 524290, no</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+<column name="- VITIS_LOOP_25343_45_VITIS_LOOP_25344_46">524288, 524288, 2, 1, 1, 524288, yes</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+</profile>

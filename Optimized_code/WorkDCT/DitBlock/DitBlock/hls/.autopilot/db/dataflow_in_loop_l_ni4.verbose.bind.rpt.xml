@@ -1,0 +1,49 @@
+<profile>
+
+<section name = "Vitis HLS Report for 'dataflow_in_loop_l_ni4'" level="0">
+<item name = "Date">Mon Feb 17 20:36:48 2025
+</item>
+<item name = "Version">2023.2 (Build 4023990 on Oct 11 2023)</item>
+<item name = "Project">DitBlock</item>
+<item name = "Solution">hls (Vivado IP Flow Target)</item>
+<item name = "Product family">virtexuplusHBM</item>
+<item name = "Target device">xcu280-fsvh2892-2L-e</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">10.00 ns, 6.536 ns, 2.70 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">732, 732, 7.320 us, 7.320 us, 516, 516, dataflow</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+<column name="grp_dataflow_in_loop_l_ni4_Loop_l_load_A_tile_ak4_proc4828_fu_400">dataflow_in_loop_l_ni4_Loop_l_load_A_tile_ak4_proc4828, 515, 515, 5.150 us, 5.150 us, 515, 515, no</column>
+<column name="grp_dataflow_in_loop_l_ni4_Loop_l_load_B_tile_bk4_proc4929_fu_427">dataflow_in_loop_l_ni4_Loop_l_load_B_tile_bk4_proc4929, 514, 514, 5.140 us, 5.140 us, 514, 514, no</column>
+<column name="grp_systolic_tile_QKT50_fu_450">systolic_tile_QKT50, 148, 148, 1.480 us, 1.480 us, 134, 134, dataflow</column>
+<column name="grp_dataflow_in_loop_l_ni4_Loop_l_store_C_tile_sj4_proc51_fu_534">dataflow_in_loop_l_ni4_Loop_l_store_C_tile_sj4_proc51, 67, 67, 0.670 us, 0.670 us, 67, 67, no</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+</profile>

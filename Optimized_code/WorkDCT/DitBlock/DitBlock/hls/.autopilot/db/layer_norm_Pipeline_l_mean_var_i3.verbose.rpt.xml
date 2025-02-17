@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'layer_norm_Pipeline_l_mean_var_i3'" level="0">
-<item name = "Date">Wed Feb  5 22:35:29 2025
+<item name = "Date">Mon Feb 17 20:37:40 2025
 </item>
 <item name = "Version">2023.2 (Build 4023990 on Oct 11 2023)</item>
 <item name = "Project">DitBlock</item>
@@ -82,8 +82,8 @@
 </item>
 <item name = "Expression"><table name="" hasTotal="1">
 <keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
-<column name="add_ln638_fu_121_p2">+, 0, 0, 18, 11, 1</column>
-<column name="icmp_ln638_fu_115_p2">icmp, 0, 0, 19, 11, 12</column>
+<column name="add_ln507_fu_121_p2">+, 0, 0, 18, 11, 1</column>
+<column name="icmp_ln507_fu_115_p2">icmp, 0, 0, 19, 11, 12</column>
 <column name="ap_enable_pp0">xor, 0, 0, 2, 1, 2</column>
 </table>
 </item>
@@ -123,9 +123,9 @@
 <column name="v284_reg_182">32, 0, 32, 0</column>
 <column name="v287_reg_187">32, 0, 32, 0</column>
 <column name="v288_reg_192">32, 0, 32, 0</column>
-<column name="zext_ln638_reg_149">11, 0, 64, 53</column>
+<column name="zext_ln507_reg_149">11, 0, 64, 53</column>
 <column name="v284_reg_182">64, 32, 32, 0</column>
-<column name="zext_ln638_reg_149">64, 32, 64, 53</column>
+<column name="zext_ln507_reg_149">64, 32, 64, 53</column>
 </table>
 </item>
 </section>
@@ -141,15 +141,15 @@
 <column name="ap_done">out, 1, ap_ctrl_hs, layer_norm_Pipeline_l_mean_var_i3, return value</column>
 <column name="ap_idle">out, 1, ap_ctrl_hs, layer_norm_Pipeline_l_mean_var_i3, return value</column>
 <column name="ap_ready">out, 1, ap_ctrl_hs, layer_norm_Pipeline_l_mean_var_i3, return value</column>
-<column name="grp_fu_251_p_din0">out, 32, ap_ctrl_hs, layer_norm_Pipeline_l_mean_var_i3, return value</column>
-<column name="grp_fu_251_p_din1">out, 32, ap_ctrl_hs, layer_norm_Pipeline_l_mean_var_i3, return value</column>
-<column name="grp_fu_251_p_dout0">in, 32, ap_ctrl_hs, layer_norm_Pipeline_l_mean_var_i3, return value</column>
-<column name="grp_fu_251_p_ce">out, 1, ap_ctrl_hs, layer_norm_Pipeline_l_mean_var_i3, return value</column>
 <column name="grp_fu_247_p_din0">out, 32, ap_ctrl_hs, layer_norm_Pipeline_l_mean_var_i3, return value</column>
 <column name="grp_fu_247_p_din1">out, 32, ap_ctrl_hs, layer_norm_Pipeline_l_mean_var_i3, return value</column>
-<column name="grp_fu_247_p_opcode">out, 1, ap_ctrl_hs, layer_norm_Pipeline_l_mean_var_i3, return value</column>
 <column name="grp_fu_247_p_dout0">in, 32, ap_ctrl_hs, layer_norm_Pipeline_l_mean_var_i3, return value</column>
 <column name="grp_fu_247_p_ce">out, 1, ap_ctrl_hs, layer_norm_Pipeline_l_mean_var_i3, return value</column>
+<column name="grp_fu_243_p_din0">out, 32, ap_ctrl_hs, layer_norm_Pipeline_l_mean_var_i3, return value</column>
+<column name="grp_fu_243_p_din1">out, 32, ap_ctrl_hs, layer_norm_Pipeline_l_mean_var_i3, return value</column>
+<column name="grp_fu_243_p_opcode">out, 1, ap_ctrl_hs, layer_norm_Pipeline_l_mean_var_i3, return value</column>
+<column name="grp_fu_243_p_dout0">in, 32, ap_ctrl_hs, layer_norm_Pipeline_l_mean_var_i3, return value</column>
+<column name="grp_fu_243_p_ce">out, 1, ap_ctrl_hs, layer_norm_Pipeline_l_mean_var_i3, return value</column>
 <column name="mean_address0">out, 10, ap_memory, mean, array</column>
 <column name="mean_ce0">out, 1, ap_memory, mean, array</column>
 <column name="mean_we0">out, 1, ap_memory, mean, array</column>

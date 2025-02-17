@@ -1,0 +1,235 @@
+
+
+================================================================
+== Vitis HLS Report for 'systolic_tile_YV_Loop_l_data_load_k338_proc37188'
+================================================================
+* Date:           Mon Feb 17 20:36:52 2025
+
+* Version:        2023.2 (Build 4023990 on Oct 11 2023)
+* Project:        DitBlock
+* Solution:       hls (Vivado IP Flow Target)
+* Product family: virtexuplusHBM
+* Target device:  xcu280-fsvh2892-2L-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  2.632 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+-----------+-----------+------+------+---------+
+    |  Latency (cycles) |   Latency (absolute)  |   Interval  | Pipeline|
+    |   min   |   max   |    min    |    max    |  min |  max |   Type  |
+    +---------+---------+-----------+-----------+------+------+---------+
+    |     1026|     1026|  10.260 us|  10.260 us|  1026|  1026|       no|
+    +---------+---------+-----------+-----------+------+------+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +--------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |                    |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |      Loop Name     |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +--------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- l_data_load_k338  |     1024|     1024|         2|          1|          1|  1024|       yes|
+        +--------------------+---------+---------+----------+-----------+-----------+------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 2
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 2
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 1, depth = 2
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 2
+* Pipeline : 1
+  Pipeline-0 : II = 1, D = 2, States = { 1 2 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 1.58>
+ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%k338 = alloca i32 1" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:15177]   --->   Operation 5 'alloca' 'k338' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %B_fifo5_63, void @empty_234, i32 0, i32 0, void @empty_191, i32 0, i32 0, void @empty_191, void @empty_191, void @empty_191, i32 0, i32 0, i32 0, i32 0, void @empty_191, void @empty_191, i32 4294967295, i32 0"   --->   Operation 6 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %B_fifo5_54, void @empty_234, i32 0, i32 0, void @empty_191, i32 0, i32 0, void @empty_191, void @empty_191, void @empty_191, i32 0, i32 0, i32 0, i32 0, void @empty_191, void @empty_191, i32 4294967295, i32 0"   --->   Operation 7 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %B_fifo5_45, void @empty_234, i32 0, i32 0, void @empty_191, i32 0, i32 0, void @empty_191, void @empty_191, void @empty_191, i32 0, i32 0, i32 0, i32 0, void @empty_191, void @empty_191, i32 4294967295, i32 0"   --->   Operation 8 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %B_fifo5_36, void @empty_234, i32 0, i32 0, void @empty_191, i32 0, i32 0, void @empty_191, void @empty_191, void @empty_191, i32 0, i32 0, i32 0, i32 0, void @empty_191, void @empty_191, i32 4294967295, i32 0"   --->   Operation 9 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %B_fifo5_27, void @empty_234, i32 0, i32 0, void @empty_191, i32 0, i32 0, void @empty_191, void @empty_191, void @empty_191, i32 0, i32 0, i32 0, i32 0, void @empty_191, void @empty_191, i32 4294967295, i32 0"   --->   Operation 10 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %B_fifo5_18, void @empty_234, i32 0, i32 0, void @empty_191, i32 0, i32 0, void @empty_191, void @empty_191, void @empty_191, i32 0, i32 0, i32 0, i32 0, void @empty_191, void @empty_191, i32 4294967295, i32 0"   --->   Operation 11 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %B_fifo5_9, void @empty_234, i32 0, i32 0, void @empty_191, i32 0, i32 0, void @empty_191, void @empty_191, void @empty_191, i32 0, i32 0, i32 0, i32 0, void @empty_191, void @empty_191, i32 4294967295, i32 0"   --->   Operation 12 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %B_fifo5, void @empty_234, i32 0, i32 0, void @empty_191, i32 0, i32 0, void @empty_191, void @empty_191, void @empty_191, i32 0, i32 0, i32 0, i32 0, void @empty_191, void @empty_191, i32 4294967295, i32 0"   --->   Operation 13 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %A_fifo5_63, void @empty_234, i32 0, i32 0, void @empty_191, i32 0, i32 0, void @empty_191, void @empty_191, void @empty_191, i32 0, i32 0, i32 0, i32 0, void @empty_191, void @empty_191, i32 4294967295, i32 0"   --->   Operation 14 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %A_fifo5_54, void @empty_234, i32 0, i32 0, void @empty_191, i32 0, i32 0, void @empty_191, void @empty_191, void @empty_191, i32 0, i32 0, i32 0, i32 0, void @empty_191, void @empty_191, i32 4294967295, i32 0"   --->   Operation 15 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %A_fifo5_45, void @empty_234, i32 0, i32 0, void @empty_191, i32 0, i32 0, void @empty_191, void @empty_191, void @empty_191, i32 0, i32 0, i32 0, i32 0, void @empty_191, void @empty_191, i32 4294967295, i32 0"   --->   Operation 16 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %A_fifo5_36, void @empty_234, i32 0, i32 0, void @empty_191, i32 0, i32 0, void @empty_191, void @empty_191, void @empty_191, i32 0, i32 0, i32 0, i32 0, void @empty_191, void @empty_191, i32 4294967295, i32 0"   --->   Operation 17 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %A_fifo5_27, void @empty_234, i32 0, i32 0, void @empty_191, i32 0, i32 0, void @empty_191, void @empty_191, void @empty_191, i32 0, i32 0, i32 0, i32 0, void @empty_191, void @empty_191, i32 4294967295, i32 0"   --->   Operation 18 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 19 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %A_fifo5_18, void @empty_234, i32 0, i32 0, void @empty_191, i32 0, i32 0, void @empty_191, void @empty_191, void @empty_191, i32 0, i32 0, i32 0, i32 0, void @empty_191, void @empty_191, i32 4294967295, i32 0"   --->   Operation 19 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 20 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %A_fifo5_9, void @empty_234, i32 0, i32 0, void @empty_191, i32 0, i32 0, void @empty_191, void @empty_191, void @empty_191, i32 0, i32 0, i32 0, i32 0, void @empty_191, void @empty_191, i32 4294967295, i32 0"   --->   Operation 20 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 21 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %A_fifo5, void @empty_234, i32 0, i32 0, void @empty_191, i32 0, i32 0, void @empty_191, void @empty_191, void @empty_191, i32 0, i32 0, i32 0, i32 0, void @empty_191, void @empty_191, i32 4294967295, i32 0"   --->   Operation 21 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 22 [1/1] (0.38ns)   --->   "%store_ln15177 = store i11 0, i11 %k338" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:15177]   --->   Operation 22 'store' 'store_ln15177' <Predicate = true> <Delay = 0.38>
+ST_1 : Operation 23 [1/1] (0.00ns)   --->   "%br_ln0 = br void %for.cond"   --->   Operation 23 'br' 'br_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 24 [1/1] (0.00ns)   --->   "%k338_1 = load i11 %k338" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:15177]   --->   Operation 24 'load' 'k338_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 25 [1/1] (0.73ns)   --->   "%icmp_ln15177 = icmp_eq  i11 %k338_1, i11 1024" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:15177]   --->   Operation 25 'icmp' 'icmp_ln15177' <Predicate = true> <Delay = 0.73> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.73> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 26 [1/1] (0.73ns)   --->   "%add_ln15177 = add i11 %k338_1, i11 1" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:15177]   --->   Operation 26 'add' 'add_ln15177' <Predicate = true> <Delay = 0.73> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.73> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 27 [1/1] (0.00ns)   --->   "%br_ln15177 = br i1 %icmp_ln15177, void %l_S_m_0_m10, void %for.end47.exitStub" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:15177]   --->   Operation 27 'br' 'br_ln15177' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 28 [1/1] (0.00ns)   --->   "%zext_ln15177 = zext i11 %k338_1" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:15177]   --->   Operation 28 'zext' 'zext_ln15177' <Predicate = (!icmp_ln15177)> <Delay = 0.00>
+ST_1 : Operation 29 [1/1] (0.00ns)   --->   "%v8272_0_addr = getelementptr i32 %v8272_0, i64 0, i64 %zext_ln15177" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:15177]   --->   Operation 29 'getelementptr' 'v8272_0_addr' <Predicate = (!icmp_ln15177)> <Delay = 0.00>
+ST_1 : Operation 30 [2/2] (1.20ns)   --->   "%v8281 = load i10 %v8272_0_addr" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:15177]   --->   Operation 30 'load' 'v8281' <Predicate = (!icmp_ln15177)> <Delay = 1.20> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 1.20> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 1024> <RAM>
+ST_1 : Operation 31 [1/1] (0.00ns)   --->   "%v8272_1_addr = getelementptr i32 %v8272_1, i64 0, i64 %zext_ln15177" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:15177]   --->   Operation 31 'getelementptr' 'v8272_1_addr' <Predicate = (!icmp_ln15177)> <Delay = 0.00>
+ST_1 : Operation 32 [2/2] (1.20ns)   --->   "%v8281_1 = load i10 %v8272_1_addr" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:15177]   --->   Operation 32 'load' 'v8281_1' <Predicate = (!icmp_ln15177)> <Delay = 1.20> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 1.20> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 1024> <RAM>
+ST_1 : Operation 33 [1/1] (0.00ns)   --->   "%v8272_2_addr = getelementptr i32 %v8272_2, i64 0, i64 %zext_ln15177" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:15177]   --->   Operation 33 'getelementptr' 'v8272_2_addr' <Predicate = (!icmp_ln15177)> <Delay = 0.00>
+ST_1 : Operation 34 [2/2] (1.20ns)   --->   "%v8281_2 = load i10 %v8272_2_addr" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:15177]   --->   Operation 34 'load' 'v8281_2' <Predicate = (!icmp_ln15177)> <Delay = 1.20> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 1.20> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 1024> <RAM>
+ST_1 : Operation 35 [1/1] (0.00ns)   --->   "%v8272_3_addr = getelementptr i32 %v8272_3, i64 0, i64 %zext_ln15177" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:15177]   --->   Operation 35 'getelementptr' 'v8272_3_addr' <Predicate = (!icmp_ln15177)> <Delay = 0.00>
+ST_1 : Operation 36 [2/2] (1.20ns)   --->   "%v8281_3 = load i10 %v8272_3_addr" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:15177]   --->   Operation 36 'load' 'v8281_3' <Predicate = (!icmp_ln15177)> <Delay = 1.20> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 1.20> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 1024> <RAM>
+ST_1 : Operation 37 [1/1] (0.00ns)   --->   "%v8272_4_addr = getelementptr i32 %v8272_4, i64 0, i64 %zext_ln15177" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:15177]   --->   Operation 37 'getelementptr' 'v8272_4_addr' <Predicate = (!icmp_ln15177)> <Delay = 0.00>
+ST_1 : Operation 38 [2/2] (1.20ns)   --->   "%v8281_4 = load i10 %v8272_4_addr" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:15177]   --->   Operation 38 'load' 'v8281_4' <Predicate = (!icmp_ln15177)> <Delay = 1.20> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 1.20> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 1024> <RAM>
+ST_1 : Operation 39 [1/1] (0.00ns)   --->   "%v8272_5_addr = getelementptr i32 %v8272_5, i64 0, i64 %zext_ln15177" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:15177]   --->   Operation 39 'getelementptr' 'v8272_5_addr' <Predicate = (!icmp_ln15177)> <Delay = 0.00>
+ST_1 : Operation 40 [2/2] (1.20ns)   --->   "%v8281_5 = load i10 %v8272_5_addr" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:15177]   --->   Operation 40 'load' 'v8281_5' <Predicate = (!icmp_ln15177)> <Delay = 1.20> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 1.20> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 1024> <RAM>
+ST_1 : Operation 41 [1/1] (0.00ns)   --->   "%v8272_6_addr = getelementptr i32 %v8272_6, i64 0, i64 %zext_ln15177" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:15177]   --->   Operation 41 'getelementptr' 'v8272_6_addr' <Predicate = (!icmp_ln15177)> <Delay = 0.00>
+ST_1 : Operation 42 [2/2] (1.20ns)   --->   "%v8281_6 = load i10 %v8272_6_addr" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:15177]   --->   Operation 42 'load' 'v8281_6' <Predicate = (!icmp_ln15177)> <Delay = 1.20> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 1.20> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 1024> <RAM>
+ST_1 : Operation 43 [1/1] (0.00ns)   --->   "%v8272_7_addr = getelementptr i32 %v8272_7, i64 0, i64 %zext_ln15177" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:15177]   --->   Operation 43 'getelementptr' 'v8272_7_addr' <Predicate = (!icmp_ln15177)> <Delay = 0.00>
+ST_1 : Operation 44 [2/2] (1.20ns)   --->   "%v8281_7 = load i10 %v8272_7_addr" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:15177]   --->   Operation 44 'load' 'v8281_7' <Predicate = (!icmp_ln15177)> <Delay = 1.20> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 1.20> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 1024> <RAM>
+ST_1 : Operation 45 [1/1] (0.00ns)   --->   "%v8273_0_addr = getelementptr i32 %v8273_0, i64 0, i64 %zext_ln15177" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:15177]   --->   Operation 45 'getelementptr' 'v8273_0_addr' <Predicate = (!icmp_ln15177)> <Delay = 0.00>
+ST_1 : Operation 46 [2/2] (1.20ns)   --->   "%v8283 = load i10 %v8273_0_addr" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:15177]   --->   Operation 46 'load' 'v8283' <Predicate = (!icmp_ln15177)> <Delay = 1.20> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 1.20> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 1024> <RAM>
+ST_1 : Operation 47 [1/1] (0.00ns)   --->   "%v8273_1_addr = getelementptr i32 %v8273_1, i64 0, i64 %zext_ln15177" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:15177]   --->   Operation 47 'getelementptr' 'v8273_1_addr' <Predicate = (!icmp_ln15177)> <Delay = 0.00>
+ST_1 : Operation 48 [2/2] (1.20ns)   --->   "%v8283_1 = load i10 %v8273_1_addr" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:15177]   --->   Operation 48 'load' 'v8283_1' <Predicate = (!icmp_ln15177)> <Delay = 1.20> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 1.20> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 1024> <RAM>
+ST_1 : Operation 49 [1/1] (0.00ns)   --->   "%v8273_2_addr = getelementptr i32 %v8273_2, i64 0, i64 %zext_ln15177" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:15177]   --->   Operation 49 'getelementptr' 'v8273_2_addr' <Predicate = (!icmp_ln15177)> <Delay = 0.00>
+ST_1 : Operation 50 [2/2] (1.20ns)   --->   "%v8283_2 = load i10 %v8273_2_addr" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:15177]   --->   Operation 50 'load' 'v8283_2' <Predicate = (!icmp_ln15177)> <Delay = 1.20> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 1.20> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 1024> <RAM>
+ST_1 : Operation 51 [1/1] (0.00ns)   --->   "%v8273_3_addr = getelementptr i32 %v8273_3, i64 0, i64 %zext_ln15177" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:15177]   --->   Operation 51 'getelementptr' 'v8273_3_addr' <Predicate = (!icmp_ln15177)> <Delay = 0.00>
+ST_1 : Operation 52 [2/2] (1.20ns)   --->   "%v8283_3 = load i10 %v8273_3_addr" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:15177]   --->   Operation 52 'load' 'v8283_3' <Predicate = (!icmp_ln15177)> <Delay = 1.20> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 1.20> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 1024> <RAM>
+ST_1 : Operation 53 [1/1] (0.00ns)   --->   "%v8273_4_addr = getelementptr i32 %v8273_4, i64 0, i64 %zext_ln15177" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:15177]   --->   Operation 53 'getelementptr' 'v8273_4_addr' <Predicate = (!icmp_ln15177)> <Delay = 0.00>
+ST_1 : Operation 54 [2/2] (1.20ns)   --->   "%v8283_4 = load i10 %v8273_4_addr" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:15177]   --->   Operation 54 'load' 'v8283_4' <Predicate = (!icmp_ln15177)> <Delay = 1.20> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 1.20> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 1024> <RAM>
+ST_1 : Operation 55 [1/1] (0.00ns)   --->   "%v8273_5_addr = getelementptr i32 %v8273_5, i64 0, i64 %zext_ln15177" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:15177]   --->   Operation 55 'getelementptr' 'v8273_5_addr' <Predicate = (!icmp_ln15177)> <Delay = 0.00>
+ST_1 : Operation 56 [2/2] (1.20ns)   --->   "%v8283_5 = load i10 %v8273_5_addr" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:15177]   --->   Operation 56 'load' 'v8283_5' <Predicate = (!icmp_ln15177)> <Delay = 1.20> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 1.20> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 1024> <RAM>
+ST_1 : Operation 57 [1/1] (0.00ns)   --->   "%v8273_6_addr = getelementptr i32 %v8273_6, i64 0, i64 %zext_ln15177" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:15177]   --->   Operation 57 'getelementptr' 'v8273_6_addr' <Predicate = (!icmp_ln15177)> <Delay = 0.00>
+ST_1 : Operation 58 [2/2] (1.20ns)   --->   "%v8283_6 = load i10 %v8273_6_addr" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:15177]   --->   Operation 58 'load' 'v8283_6' <Predicate = (!icmp_ln15177)> <Delay = 1.20> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 1.20> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 1024> <RAM>
+ST_1 : Operation 59 [1/1] (0.00ns)   --->   "%v8273_7_addr = getelementptr i32 %v8273_7, i64 0, i64 %zext_ln15177" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:15177]   --->   Operation 59 'getelementptr' 'v8273_7_addr' <Predicate = (!icmp_ln15177)> <Delay = 0.00>
+ST_1 : Operation 60 [2/2] (1.20ns)   --->   "%v8283_7 = load i10 %v8273_7_addr" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:15177]   --->   Operation 60 'load' 'v8283_7' <Predicate = (!icmp_ln15177)> <Delay = 1.20> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 1.20> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 1024> <RAM>
+ST_1 : Operation 61 [1/1] (0.38ns)   --->   "%store_ln15177 = store i11 %add_ln15177, i11 %k338" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:15177]   --->   Operation 61 'store' 'store_ln15177' <Predicate = (!icmp_ln15177)> <Delay = 0.38>
+ST_1 : Operation 114 [1/1] (0.00ns)   --->   "%ret_ln0 = ret"   --->   Operation 114 'ret' 'ret_ln0' <Predicate = (icmp_ln15177)> <Delay = 0.00>
+
+State 2 <SV = 1> <Delay = 2.63>
+ST_2 : Operation 62 [1/1] (0.00ns)   --->   "%specpipeline_ln0 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_191"   --->   Operation 62 'specpipeline' 'specpipeline_ln0' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 63 [1/1] (0.00ns)   --->   "%speclooptripcount_ln0 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 1024, i64 1024, i64 1024"   --->   Operation 63 'speclooptripcount' 'speclooptripcount_ln0' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 64 [1/1] (0.00ns)   --->   "%specloopname_ln15177 = specloopname void @_ssdm_op_SpecLoopName, void @empty_185" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:15177]   --->   Operation 64 'specloopname' 'specloopname_ln15177' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 65 [1/2] (1.20ns)   --->   "%v8281 = load i10 %v8272_0_addr" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:15177]   --->   Operation 65 'load' 'v8281' <Predicate = true> <Delay = 1.20> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 1.20> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 1024> <RAM>
+ST_2 : Operation 66 [1/1] (0.00ns)   --->   "%bitcast_ln15180 = bitcast i32 %v8281" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:15180]   --->   Operation 66 'bitcast' 'bitcast_ln15180' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 67 [1/2] (1.20ns)   --->   "%v8281_1 = load i10 %v8272_1_addr" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:15177]   --->   Operation 67 'load' 'v8281_1' <Predicate = true> <Delay = 1.20> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 1.20> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 1024> <RAM>
+ST_2 : Operation 68 [1/1] (0.00ns)   --->   "%bitcast_ln15180_1 = bitcast i32 %v8281_1" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:15180]   --->   Operation 68 'bitcast' 'bitcast_ln15180_1' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 69 [1/2] (1.20ns)   --->   "%v8281_2 = load i10 %v8272_2_addr" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:15177]   --->   Operation 69 'load' 'v8281_2' <Predicate = true> <Delay = 1.20> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 1.20> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 1024> <RAM>
+ST_2 : Operation 70 [1/1] (0.00ns)   --->   "%bitcast_ln15180_2 = bitcast i32 %v8281_2" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:15180]   --->   Operation 70 'bitcast' 'bitcast_ln15180_2' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 71 [1/2] (1.20ns)   --->   "%v8281_3 = load i10 %v8272_3_addr" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:15177]   --->   Operation 71 'load' 'v8281_3' <Predicate = true> <Delay = 1.20> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 1.20> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 1024> <RAM>
+ST_2 : Operation 72 [1/1] (0.00ns)   --->   "%bitcast_ln15180_3 = bitcast i32 %v8281_3" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:15180]   --->   Operation 72 'bitcast' 'bitcast_ln15180_3' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 73 [1/2] (1.20ns)   --->   "%v8281_4 = load i10 %v8272_4_addr" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:15177]   --->   Operation 73 'load' 'v8281_4' <Predicate = true> <Delay = 1.20> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 1.20> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 1024> <RAM>
+ST_2 : Operation 74 [1/1] (0.00ns)   --->   "%bitcast_ln15180_4 = bitcast i32 %v8281_4" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:15180]   --->   Operation 74 'bitcast' 'bitcast_ln15180_4' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 75 [1/2] (1.20ns)   --->   "%v8281_5 = load i10 %v8272_5_addr" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:15177]   --->   Operation 75 'load' 'v8281_5' <Predicate = true> <Delay = 1.20> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 1.20> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 1024> <RAM>
+ST_2 : Operation 76 [1/1] (0.00ns)   --->   "%bitcast_ln15180_5 = bitcast i32 %v8281_5" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:15180]   --->   Operation 76 'bitcast' 'bitcast_ln15180_5' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 77 [1/2] (1.20ns)   --->   "%v8281_6 = load i10 %v8272_6_addr" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:15177]   --->   Operation 77 'load' 'v8281_6' <Predicate = true> <Delay = 1.20> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 1.20> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 1024> <RAM>
+ST_2 : Operation 78 [1/1] (0.00ns)   --->   "%bitcast_ln15180_6 = bitcast i32 %v8281_6" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:15180]   --->   Operation 78 'bitcast' 'bitcast_ln15180_6' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 79 [1/2] (1.20ns)   --->   "%v8281_7 = load i10 %v8272_7_addr" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:15177]   --->   Operation 79 'load' 'v8281_7' <Predicate = true> <Delay = 1.20> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 1.20> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 1024> <RAM>
+ST_2 : Operation 80 [1/1] (0.00ns)   --->   "%bitcast_ln15180_7 = bitcast i32 %v8281_7" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:15180]   --->   Operation 80 'bitcast' 'bitcast_ln15180_7' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 81 [1/1] (1.43ns)   --->   "%write_ln15180 = write void @_ssdm_op_Write.ap_fifo.volatile.i32P0A, i32 %A_fifo5, i32 %bitcast_ln15180" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:15180]   --->   Operation 81 'write' 'write_ln15180' <Predicate = true> <Delay = 1.43> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.43> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 9> <FIFO>
+ST_2 : Operation 82 [1/1] (1.43ns)   --->   "%write_ln15180 = write void @_ssdm_op_Write.ap_fifo.volatile.i32P0A, i32 %A_fifo5_9, i32 %bitcast_ln15180_1" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:15180]   --->   Operation 82 'write' 'write_ln15180' <Predicate = true> <Delay = 1.43> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.43> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 9> <FIFO>
+ST_2 : Operation 83 [1/1] (1.43ns)   --->   "%write_ln15180 = write void @_ssdm_op_Write.ap_fifo.volatile.i32P0A, i32 %A_fifo5_18, i32 %bitcast_ln15180_2" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:15180]   --->   Operation 83 'write' 'write_ln15180' <Predicate = true> <Delay = 1.43> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.43> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 9> <FIFO>
+ST_2 : Operation 84 [1/1] (1.43ns)   --->   "%write_ln15180 = write void @_ssdm_op_Write.ap_fifo.volatile.i32P0A, i32 %A_fifo5_27, i32 %bitcast_ln15180_3" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:15180]   --->   Operation 84 'write' 'write_ln15180' <Predicate = true> <Delay = 1.43> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.43> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 9> <FIFO>
+ST_2 : Operation 85 [1/1] (1.43ns)   --->   "%write_ln15180 = write void @_ssdm_op_Write.ap_fifo.volatile.i32P0A, i32 %A_fifo5_36, i32 %bitcast_ln15180_4" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:15180]   --->   Operation 85 'write' 'write_ln15180' <Predicate = true> <Delay = 1.43> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.43> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 9> <FIFO>
+ST_2 : Operation 86 [1/1] (1.43ns)   --->   "%write_ln15180 = write void @_ssdm_op_Write.ap_fifo.volatile.i32P0A, i32 %A_fifo5_45, i32 %bitcast_ln15180_5" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:15180]   --->   Operation 86 'write' 'write_ln15180' <Predicate = true> <Delay = 1.43> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.43> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 9> <FIFO>
+ST_2 : Operation 87 [1/1] (1.43ns)   --->   "%write_ln15180 = write void @_ssdm_op_Write.ap_fifo.volatile.i32P0A, i32 %A_fifo5_54, i32 %bitcast_ln15180_6" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:15180]   --->   Operation 87 'write' 'write_ln15180' <Predicate = true> <Delay = 1.43> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.43> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 9> <FIFO>
+ST_2 : Operation 88 [1/1] (1.43ns)   --->   "%write_ln15180 = write void @_ssdm_op_Write.ap_fifo.volatile.i32P0A, i32 %A_fifo5_63, i32 %bitcast_ln15180_7" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:15180]   --->   Operation 88 'write' 'write_ln15180' <Predicate = true> <Delay = 1.43> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.43> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 9> <FIFO>
+ST_2 : Operation 89 [1/2] (1.20ns)   --->   "%v8283 = load i10 %v8273_0_addr" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:15177]   --->   Operation 89 'load' 'v8283' <Predicate = true> <Delay = 1.20> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 1.20> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 1024> <RAM>
+ST_2 : Operation 90 [1/1] (0.00ns)   --->   "%bitcast_ln15184 = bitcast i32 %v8283" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:15184]   --->   Operation 90 'bitcast' 'bitcast_ln15184' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 91 [1/2] (1.20ns)   --->   "%v8283_1 = load i10 %v8273_1_addr" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:15177]   --->   Operation 91 'load' 'v8283_1' <Predicate = true> <Delay = 1.20> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 1.20> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 1024> <RAM>
+ST_2 : Operation 92 [1/1] (0.00ns)   --->   "%bitcast_ln15184_1 = bitcast i32 %v8283_1" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:15184]   --->   Operation 92 'bitcast' 'bitcast_ln15184_1' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 93 [1/2] (1.20ns)   --->   "%v8283_2 = load i10 %v8273_2_addr" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:15177]   --->   Operation 93 'load' 'v8283_2' <Predicate = true> <Delay = 1.20> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 1.20> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 1024> <RAM>
+ST_2 : Operation 94 [1/1] (0.00ns)   --->   "%bitcast_ln15184_2 = bitcast i32 %v8283_2" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:15184]   --->   Operation 94 'bitcast' 'bitcast_ln15184_2' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 95 [1/2] (1.20ns)   --->   "%v8283_3 = load i10 %v8273_3_addr" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:15177]   --->   Operation 95 'load' 'v8283_3' <Predicate = true> <Delay = 1.20> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 1.20> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 1024> <RAM>
+ST_2 : Operation 96 [1/1] (0.00ns)   --->   "%bitcast_ln15184_3 = bitcast i32 %v8283_3" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:15184]   --->   Operation 96 'bitcast' 'bitcast_ln15184_3' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 97 [1/2] (1.20ns)   --->   "%v8283_4 = load i10 %v8273_4_addr" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:15177]   --->   Operation 97 'load' 'v8283_4' <Predicate = true> <Delay = 1.20> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 1.20> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 1024> <RAM>
+ST_2 : Operation 98 [1/1] (0.00ns)   --->   "%bitcast_ln15184_4 = bitcast i32 %v8283_4" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:15184]   --->   Operation 98 'bitcast' 'bitcast_ln15184_4' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 99 [1/2] (1.20ns)   --->   "%v8283_5 = load i10 %v8273_5_addr" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:15177]   --->   Operation 99 'load' 'v8283_5' <Predicate = true> <Delay = 1.20> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 1.20> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 1024> <RAM>
+ST_2 : Operation 100 [1/1] (0.00ns)   --->   "%bitcast_ln15184_5 = bitcast i32 %v8283_5" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:15184]   --->   Operation 100 'bitcast' 'bitcast_ln15184_5' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 101 [1/2] (1.20ns)   --->   "%v8283_6 = load i10 %v8273_6_addr" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:15177]   --->   Operation 101 'load' 'v8283_6' <Predicate = true> <Delay = 1.20> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 1.20> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 1024> <RAM>
+ST_2 : Operation 102 [1/1] (0.00ns)   --->   "%bitcast_ln15184_6 = bitcast i32 %v8283_6" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:15184]   --->   Operation 102 'bitcast' 'bitcast_ln15184_6' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 103 [1/2] (1.20ns)   --->   "%v8283_7 = load i10 %v8273_7_addr" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:15177]   --->   Operation 103 'load' 'v8283_7' <Predicate = true> <Delay = 1.20> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 1.20> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 1024> <RAM>
+ST_2 : Operation 104 [1/1] (0.00ns)   --->   "%bitcast_ln15184_7 = bitcast i32 %v8283_7" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:15184]   --->   Operation 104 'bitcast' 'bitcast_ln15184_7' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 105 [1/1] (1.43ns)   --->   "%write_ln15184 = write void @_ssdm_op_Write.ap_fifo.volatile.i32P0A, i32 %B_fifo5, i32 %bitcast_ln15184" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:15184]   --->   Operation 105 'write' 'write_ln15184' <Predicate = true> <Delay = 1.43> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.43> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 9> <FIFO>
+ST_2 : Operation 106 [1/1] (1.43ns)   --->   "%write_ln15184 = write void @_ssdm_op_Write.ap_fifo.volatile.i32P0A, i32 %B_fifo5_9, i32 %bitcast_ln15184_1" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:15184]   --->   Operation 106 'write' 'write_ln15184' <Predicate = true> <Delay = 1.43> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.43> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 9> <FIFO>
+ST_2 : Operation 107 [1/1] (1.43ns)   --->   "%write_ln15184 = write void @_ssdm_op_Write.ap_fifo.volatile.i32P0A, i32 %B_fifo5_18, i32 %bitcast_ln15184_2" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:15184]   --->   Operation 107 'write' 'write_ln15184' <Predicate = true> <Delay = 1.43> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.43> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 9> <FIFO>
+ST_2 : Operation 108 [1/1] (1.43ns)   --->   "%write_ln15184 = write void @_ssdm_op_Write.ap_fifo.volatile.i32P0A, i32 %B_fifo5_27, i32 %bitcast_ln15184_3" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:15184]   --->   Operation 108 'write' 'write_ln15184' <Predicate = true> <Delay = 1.43> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.43> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 9> <FIFO>
+ST_2 : Operation 109 [1/1] (1.43ns)   --->   "%write_ln15184 = write void @_ssdm_op_Write.ap_fifo.volatile.i32P0A, i32 %B_fifo5_36, i32 %bitcast_ln15184_4" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:15184]   --->   Operation 109 'write' 'write_ln15184' <Predicate = true> <Delay = 1.43> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.43> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 9> <FIFO>
+ST_2 : Operation 110 [1/1] (1.43ns)   --->   "%write_ln15184 = write void @_ssdm_op_Write.ap_fifo.volatile.i32P0A, i32 %B_fifo5_45, i32 %bitcast_ln15184_5" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:15184]   --->   Operation 110 'write' 'write_ln15184' <Predicate = true> <Delay = 1.43> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.43> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 9> <FIFO>
+ST_2 : Operation 111 [1/1] (1.43ns)   --->   "%write_ln15184 = write void @_ssdm_op_Write.ap_fifo.volatile.i32P0A, i32 %B_fifo5_54, i32 %bitcast_ln15184_6" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:15184]   --->   Operation 111 'write' 'write_ln15184' <Predicate = true> <Delay = 1.43> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.43> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 9> <FIFO>
+ST_2 : Operation 112 [1/1] (1.43ns)   --->   "%write_ln15184 = write void @_ssdm_op_Write.ap_fifo.volatile.i32P0A, i32 %B_fifo5_63, i32 %bitcast_ln15184_7" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:15184]   --->   Operation 112 'write' 'write_ln15184' <Predicate = true> <Delay = 1.43> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.43> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 9> <FIFO>
+ST_2 : Operation 113 [1/1] (0.00ns)   --->   "%br_ln15177 = br void %for.cond" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:15177]   --->   Operation 113 'br' 'br_ln15177' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10.000ns, clock uncertainty: 2.700ns.
+
+ <State 1>: 1.587ns
+The critical path consists of the following:
+	'store' operation 0 bit ('store_ln15177', /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:15177) of constant 0 on local variable 'k338', /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:15177 [50]  (0.387 ns)
+	'load' operation 11 bit ('k338', /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:15177) on local variable 'k338', /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:15177 [53]  (0.000 ns)
+	'getelementptr' operation 10 bit ('v8272_0_addr', /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:15177) [62]  (0.000 ns)
+	'load' operation 32 bit ('v8281', /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:15177) on array 'v8272_0' [63]  (1.200 ns)
+
+ <State 2>: 2.632ns
+The critical path consists of the following:
+	'load' operation 32 bit ('v8281', /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:15177) on array 'v8272_0' [63]  (1.200 ns)
+	fifo write operation ('write_ln15180', /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:15180) on port 'A_fifo5' (/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:15180) [86]  (1.432 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

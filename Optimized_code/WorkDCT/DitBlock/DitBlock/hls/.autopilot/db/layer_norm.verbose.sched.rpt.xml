@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'layer_norm'" level="0">
-<item name = "Date">Wed Feb  5 22:34:03 2025
+<item name = "Date">Mon Feb 17 20:36:10 2025
 </item>
 <item name = "Version">2023.2 (Build 4023990 on Oct 11 2023)</item>
 <item name = "Project">DitBlock</item>
@@ -24,7 +24,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">1606681, 1606681, 16.067 ms, 16.067 ms, 1606681, 1606681, no</column>
+<column name="">1603609, 1603609, 16.036 ms, 16.036 ms, 1603609, 1603609, no</column>
 </table>
 </item>
 <item name = "Detail">
@@ -35,7 +35,7 @@
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
-<column name="- l_norm_i4">556032, 556032, 543, -, -, 1024, no</column>
+<column name="- l_norm_i4">552960, 552960, 540, -, -, 1024, no</column>
 </table>
 </item>
 </section>

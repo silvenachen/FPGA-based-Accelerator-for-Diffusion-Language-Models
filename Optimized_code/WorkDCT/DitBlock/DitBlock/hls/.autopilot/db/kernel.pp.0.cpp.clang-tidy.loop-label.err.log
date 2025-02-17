@@ -1,5 +1,5 @@
-32 errors generated.
+30 errors generated.
 Error while processing /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp.
-clang-tidy applied 192 of 192 suggested fixes.
+clang-tidy applied 184 of 184 suggested fixes.
 Suppressed 132 warnings (132 in non-user code).
 Use -header-filter=.* to display errors from all non-system headers. Use -system-headers to display errors from system headers as well.

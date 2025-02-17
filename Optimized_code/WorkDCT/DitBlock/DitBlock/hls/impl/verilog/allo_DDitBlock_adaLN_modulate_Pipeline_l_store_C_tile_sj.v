@@ -13,7 +13,7 @@ module allo_DDitBlock_adaLN_modulate_Pipeline_l_store_C_tile_sj (
         ap_done,
         ap_idle,
         ap_ready,
-        tmp_104,
+        tmp_91,
         local_C_0_load,
         local_C_0_1_load,
         local_C_0_2_load,
@@ -36,7 +36,7 @@ input   ap_start;
 output   ap_done;
 output   ap_idle;
 output   ap_ready;
-input  [8:0] tmp_104;
+input  [8:0] tmp_91;
 input  [31:0] local_C_0_load;
 input  [31:0] local_C_0_1_load;
 input  [31:0] local_C_0_2_load;
@@ -57,17 +57,17 @@ reg Y_0_we0;
 (* fsm_encoding = "none" *) reg   [0:0] ap_CS_fsm;
 wire    ap_CS_fsm_state1;
 reg    ap_block_state1_pp0_stage0_iter0;
-wire   [0:0] icmp_ln444_fu_147_p2;
+wire   [0:0] icmp_ln442_fu_147_p2;
 reg    ap_condition_exit_pp0_iter0_stage0;
 wire    ap_loop_exit_ready;
 reg    ap_ready_int;
-wire   [63:0] zext_ln447_fu_173_p1;
+wire   [63:0] zext_ln445_fu_173_p1;
 reg   [3:0] sj_fu_68;
-wire   [3:0] add_ln444_fu_153_p2;
+wire   [3:0] add_ln442_fu_153_p2;
 wire    ap_loop_init;
 reg   [3:0] ap_sig_allocacmp_sj_1;
 wire   [31:0] v235_fu_178_p19;
-wire   [8:0] zext_ln444_fu_159_p1;
+wire   [8:0] zext_ln442_fu_159_p1;
 wire   [8:0] empty_fu_167_p2;
 wire   [31:0] v235_fu_178_p17;
 wire   [2:0] v235_fu_178_p18;
@@ -167,8 +167,8 @@ end
 
 always @ (posedge ap_clk) begin
     if (((1'b0 == ap_block_state1_pp0_stage0_iter0) & (1'b1 == ap_CS_fsm_state1))) begin
-        if ((icmp_ln444_fu_147_p2 == 1'd0)) begin
-            sj_fu_68 <= add_ln444_fu_153_p2;
+        if ((icmp_ln442_fu_147_p2 == 1'd0)) begin
+            sj_fu_68 <= add_ln442_fu_153_p2;
         end else if ((ap_loop_init == 1'b1)) begin
             sj_fu_68 <= 4'd0;
         end
@@ -184,7 +184,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((icmp_ln444_fu_147_p2 == 1'd0) & (1'b0 == ap_block_state1_pp0_stage0_iter0) & (1'b1 == ap_CS_fsm_state1))) begin
+    if (((icmp_ln442_fu_147_p2 == 1'd0) & (1'b0 == ap_block_state1_pp0_stage0_iter0) & (1'b1 == ap_CS_fsm_state1))) begin
         Y_0_we0 = 1'b1;
     end else begin
         Y_0_we0 = 1'b0;
@@ -200,7 +200,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((icmp_ln444_fu_147_p2 == 1'd1) & (1'b0 == ap_block_state1_pp0_stage0_iter0) & (1'b1 == ap_CS_fsm_state1))) begin
+    if (((icmp_ln442_fu_147_p2 == 1'd1) & (1'b0 == ap_block_state1_pp0_stage0_iter0) & (1'b1 == ap_CS_fsm_state1))) begin
         ap_condition_exit_pp0_iter0_stage0 = 1'b1;
     end else begin
         ap_condition_exit_pp0_iter0_stage0 = 1'b0;
@@ -250,11 +250,11 @@ always @ (*) begin
     endcase
 end
 
-assign Y_0_address0 = zext_ln447_fu_173_p1;
+assign Y_0_address0 = zext_ln445_fu_173_p1;
 
 assign Y_0_d0 = v235_fu_178_p19;
 
-assign add_ln444_fu_153_p2 = (ap_sig_allocacmp_sj_1 + 4'd1);
+assign add_ln442_fu_153_p2 = (ap_sig_allocacmp_sj_1 + 4'd1);
 
 assign ap_CS_fsm_state1 = ap_CS_fsm[32'd0];
 
@@ -264,16 +264,16 @@ end
 
 assign ap_loop_exit_ready = ap_condition_exit_pp0_iter0_stage0;
 
-assign empty_fu_167_p2 = (tmp_104 + zext_ln444_fu_159_p1);
+assign empty_fu_167_p2 = (tmp_91 + zext_ln442_fu_159_p1);
 
-assign icmp_ln444_fu_147_p2 = ((ap_sig_allocacmp_sj_1 == 4'd8) ? 1'b1 : 1'b0);
+assign icmp_ln442_fu_147_p2 = ((ap_sig_allocacmp_sj_1 == 4'd8) ? 1'b1 : 1'b0);
 
 assign v235_fu_178_p17 = 'bx;
 
 assign v235_fu_178_p18 = ap_sig_allocacmp_sj_1[2:0];
 
-assign zext_ln444_fu_159_p1 = ap_sig_allocacmp_sj_1;
+assign zext_ln442_fu_159_p1 = ap_sig_allocacmp_sj_1;
 
-assign zext_ln447_fu_173_p1 = empty_fu_167_p2;
+assign zext_ln445_fu_173_p1 = empty_fu_167_p2;
 
 endmodule //allo_DDitBlock_adaLN_modulate_Pipeline_l_store_C_tile_sj

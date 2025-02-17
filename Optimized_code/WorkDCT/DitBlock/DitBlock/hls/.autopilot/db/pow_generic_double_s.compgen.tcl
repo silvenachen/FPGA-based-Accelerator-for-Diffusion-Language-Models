@@ -96,7 +96,7 @@ if {${::AESL::PGuard_rtl_comp_handler}} {
 }
 
 
-set id 3035
+set id 3491
 set name allo_DDitBlock_mac_muladd_16s_15ns_19s_31_4_1
 set corename simcore_mac
 set op mac
@@ -225,7 +225,7 @@ if {${::AESL::PGuard_autoexp_gen}} {
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 3065 \
+    id 3521 \
     name base_r \
     type other \
     dir I \

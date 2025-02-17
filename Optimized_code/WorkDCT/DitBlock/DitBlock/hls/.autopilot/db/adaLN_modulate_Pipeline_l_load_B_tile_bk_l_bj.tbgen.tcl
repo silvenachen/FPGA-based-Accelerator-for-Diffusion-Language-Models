@@ -23,7 +23,7 @@ set C_modelArgList {
 	{ local_B_5 float 32 regular {array 128 { 0 3 } 0 1 }  }
 	{ local_B_6 float 32 regular {array 128 { 0 3 } 0 1 }  }
 	{ local_B_7 float 32 regular {array 128 { 0 3 } 0 1 }  }
-	{ tmp_104 int 9 regular  }
+	{ tmp_91 int 9 regular  }
 	{ v237 float 32 regular {array 65536 { 1 3 } 1 1 }  }
 }
 set hasAXIMCache 0
@@ -37,7 +37,7 @@ set C_modelArgMapList {[
  	{ "Name" : "local_B_5", "interface" : "memory", "bitwidth" : 32, "direction" : "WRITEONLY"} , 
  	{ "Name" : "local_B_6", "interface" : "memory", "bitwidth" : 32, "direction" : "WRITEONLY"} , 
  	{ "Name" : "local_B_7", "interface" : "memory", "bitwidth" : 32, "direction" : "WRITEONLY"} , 
- 	{ "Name" : "tmp_104", "interface" : "wire", "bitwidth" : 9, "direction" : "READONLY"} , 
+ 	{ "Name" : "tmp_91", "interface" : "wire", "bitwidth" : 9, "direction" : "READONLY"} , 
  	{ "Name" : "v237", "interface" : "memory", "bitwidth" : 32, "direction" : "READONLY"} ]}
 # RTL Port declarations: 
 set portNum 42
@@ -80,7 +80,7 @@ set portList {
 	{ local_B_7_ce0 sc_out sc_logic 1 signal 7 } 
 	{ local_B_7_we0 sc_out sc_logic 1 signal 7 } 
 	{ local_B_7_d0 sc_out sc_lv 32 signal 7 } 
-	{ tmp_104 sc_in sc_lv 9 signal 8 } 
+	{ tmp_91 sc_in sc_lv 9 signal 8 } 
 	{ v237_address0 sc_out sc_lv 16 signal 9 } 
 	{ v237_ce0 sc_out sc_logic 1 signal 9 } 
 	{ v237_q0 sc_in sc_lv 32 signal 9 } 
@@ -124,7 +124,7 @@ set NewPortList {[
  	{ "name": "local_B_7_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "local_B_7", "role": "ce0" }} , 
  	{ "name": "local_B_7_we0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "local_B_7", "role": "we0" }} , 
  	{ "name": "local_B_7_d0", "direction": "out", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "local_B_7", "role": "d0" }} , 
- 	{ "name": "tmp_104", "direction": "in", "datatype": "sc_lv", "bitwidth":9, "type": "signal", "bundle":{"name": "tmp_104", "role": "default" }} , 
+ 	{ "name": "tmp_91", "direction": "in", "datatype": "sc_lv", "bitwidth":9, "type": "signal", "bundle":{"name": "tmp_91", "role": "default" }} , 
  	{ "name": "v237_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":16, "type": "signal", "bundle":{"name": "v237", "role": "address0" }} , 
  	{ "name": "v237_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "v237", "role": "ce0" }} , 
  	{ "name": "v237_q0", "direction": "in", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "v237", "role": "q0" }}  ]}
@@ -153,7 +153,7 @@ set RtlHierarchyInfo {[
 			{"Name" : "local_B_5", "Type" : "Memory", "Direction" : "O"},
 			{"Name" : "local_B_6", "Type" : "Memory", "Direction" : "O"},
 			{"Name" : "local_B_7", "Type" : "Memory", "Direction" : "O"},
-			{"Name" : "tmp_104", "Type" : "None", "Direction" : "I"},
+			{"Name" : "tmp_91", "Type" : "None", "Direction" : "I"},
 			{"Name" : "v237", "Type" : "Memory", "Direction" : "I"}],
 		"Loop" : [
 			{"Name" : "l_load_B_tile_bk_l_bj", "PipelineType" : "UPC",
@@ -171,7 +171,7 @@ set ArgLastReadFirstWriteLatency {
 		local_B_5 {Type O LastRead -1 FirstWrite 1}
 		local_B_6 {Type O LastRead -1 FirstWrite 1}
 		local_B_7 {Type O LastRead -1 FirstWrite 1}
-		tmp_104 {Type I LastRead 0 FirstWrite -1}
+		tmp_91 {Type I LastRead 0 FirstWrite -1}
 		v237 {Type I LastRead 0 FirstWrite -1}}}
 
 set hasDtUnsupportedChannel 0
@@ -194,6 +194,6 @@ set Spec2ImplPortList {
 	local_B_5 { ap_memory {  { local_B_5_address0 mem_address 1 7 }  { local_B_5_ce0 mem_ce 1 1 }  { local_B_5_we0 mem_we 1 1 }  { local_B_5_d0 mem_din 1 32 } } }
 	local_B_6 { ap_memory {  { local_B_6_address0 mem_address 1 7 }  { local_B_6_ce0 mem_ce 1 1 }  { local_B_6_we0 mem_we 1 1 }  { local_B_6_d0 mem_din 1 32 } } }
 	local_B_7 { ap_memory {  { local_B_7_address0 mem_address 1 7 }  { local_B_7_ce0 mem_ce 1 1 }  { local_B_7_we0 mem_we 1 1 }  { local_B_7_d0 mem_din 1 32 } } }
-	tmp_104 { ap_none {  { tmp_104 in_data 0 9 } } }
+	tmp_91 { ap_none {  { tmp_91 in_data 0 9 } } }
 	v237 { ap_memory {  { v237_address0 mem_address 1 16 }  { v237_ce0 mem_ce 1 1 }  { v237_q0 in_data 0 32 } } }
 }

@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'RoPE_Pipeline_l_rope_split_2_i7_l_j5'" level="0">
-<item name = "Date">Wed Feb  5 22:35:54 2025
+<item name = "Date">Mon Feb 17 20:38:06 2025
 </item>
 <item name = "Version">2023.2 (Build 4023990 on Oct 11 2023)</item>
 <item name = "Project">DitBlock</item>
@@ -80,17 +80,17 @@
 </item>
 <item name = "Expression"><table name="" hasTotal="1">
 <keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
-<column name="add_ln9611_1_fu_131_p2">+, 0, 0, 23, 16, 1</column>
-<column name="add_ln9611_fu_143_p2">+, 0, 0, 18, 11, 1</column>
-<column name="add_ln9612_fu_235_p2">+, 0, 0, 13, 6, 1</column>
-<column name="add_ln9613_1_fu_224_p2">+, 0, 0, 26, 19, 19</column>
-<column name="add_ln9613_fu_214_p2">+, 0, 0, 17, 10, 10</column>
-<column name="add_ln9614_fu_195_p2">+, 0, 0, 22, 15, 15</column>
-<column name="icmp_ln9611_fu_125_p2">icmp, 0, 0, 24, 16, 17</column>
-<column name="icmp_ln9612_fu_149_p2">icmp, 0, 0, 14, 6, 7</column>
-<column name="or_ln9613_fu_205_p2">or, 0, 0, 9, 9, 6</column>
-<column name="select_ln9611_1_fu_163_p3">select, 0, 0, 11, 1, 11</column>
-<column name="select_ln9611_fu_155_p3">select, 0, 0, 6, 1, 1</column>
+<column name="add_ln9480_1_fu_131_p2">+, 0, 0, 23, 16, 1</column>
+<column name="add_ln9480_fu_143_p2">+, 0, 0, 18, 11, 1</column>
+<column name="add_ln9481_fu_235_p2">+, 0, 0, 13, 6, 1</column>
+<column name="add_ln9482_1_fu_224_p2">+, 0, 0, 26, 19, 19</column>
+<column name="add_ln9482_fu_214_p2">+, 0, 0, 17, 10, 10</column>
+<column name="add_ln9483_fu_195_p2">+, 0, 0, 22, 15, 15</column>
+<column name="icmp_ln9480_fu_125_p2">icmp, 0, 0, 24, 16, 17</column>
+<column name="icmp_ln9481_fu_149_p2">icmp, 0, 0, 14, 6, 7</column>
+<column name="or_ln9482_fu_205_p2">or, 0, 0, 9, 9, 6</column>
+<column name="select_ln9480_1_fu_163_p3">select, 0, 0, 11, 1, 11</column>
+<column name="select_ln9480_fu_155_p3">select, 0, 0, 6, 1, 1</column>
 <column name="ap_enable_pp0">xor, 0, 0, 2, 1, 2</column>
 </table>
 </item>
@@ -106,7 +106,7 @@
 </item>
 <item name = "Register"><table name="" hasTotal="1">
 <keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
-<column name="add_ln9614_reg_289">15, 0, 15, 0</column>
+<column name="add_ln9483_reg_289">15, 0, 15, 0</column>
 <column name="ap_CS_fsm">1, 0, 1, 0</column>
 <column name="ap_done_reg">1, 0, 1, 0</column>
 <column name="ap_enable_reg_pp0_iter1">1, 0, 1, 0</column>
@@ -133,7 +133,7 @@
 <column name="X_2_h_ce0">out, 1, ap_memory, X_2_h, array</column>
 <column name="X_2_h_we0">out, 1, ap_memory, X_2_h, array</column>
 <column name="X_2_h_d0">out, 32, ap_memory, X_2_h, array</column>
-<column name="tmp_107">in, 9, ap_none, tmp_107, scalar</column>
+<column name="tmp_94">in, 9, ap_none, tmp_94, scalar</column>
 <column name="v5222_address0">out, 19, ap_memory, v5222, array</column>
 <column name="v5222_ce0">out, 1, ap_memory, v5222, array</column>
 <column name="v5222_q0">in, 32, ap_memory, v5222, array</column>

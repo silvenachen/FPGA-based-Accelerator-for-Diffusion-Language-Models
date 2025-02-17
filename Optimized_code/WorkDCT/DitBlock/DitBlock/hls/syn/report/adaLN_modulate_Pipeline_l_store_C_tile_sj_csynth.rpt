@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'adaLN_modulate_Pipeline_l_store_C_tile_sj'
 ================================================================
-* Date:           Wed Feb  5 22:35:25 2025
+* Date:           Mon Feb 17 20:37:37 2025
 
 * Version:        2023.2 (Build 4023990 on Oct 11 2023)
 * Project:        DitBlock
@@ -95,9 +95,9 @@
     +----------------------+----------+----+---+----+------------+------------+
     |     Variable Name    | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
     +----------------------+----------+----+---+----+------------+------------+
-    |add_ln444_fu_153_p2   |         +|   0|  0|  12|           4|           1|
+    |add_ln442_fu_153_p2   |         +|   0|  0|  12|           4|           1|
     |empty_fu_167_p2       |         +|   0|  0|  16|           9|           9|
-    |icmp_ln444_fu_147_p2  |      icmp|   0|  0|  12|           4|           5|
+    |icmp_ln442_fu_147_p2  |      icmp|   0|  0|  12|           4|           5|
     +----------------------+----------+----+---+----+------------+------------+
     |Total                 |          |   0|  0|  40|          17|          15|
     +----------------------+----------+----+---+----+------------+------------+
@@ -139,7 +139,7 @@
 |ap_done           |  out|    1|  ap_ctrl_hs|  adaLN_modulate_Pipeline_l_store_C_tile_sj|  return value|
 |ap_idle           |  out|    1|  ap_ctrl_hs|  adaLN_modulate_Pipeline_l_store_C_tile_sj|  return value|
 |ap_ready          |  out|    1|  ap_ctrl_hs|  adaLN_modulate_Pipeline_l_store_C_tile_sj|  return value|
-|tmp_104           |   in|    9|     ap_none|                                    tmp_104|        scalar|
+|tmp_91            |   in|    9|     ap_none|                                     tmp_91|        scalar|
 |local_C_0_load    |   in|   32|     ap_none|                             local_C_0_load|        scalar|
 |local_C_0_1_load  |   in|   32|     ap_none|                           local_C_0_1_load|        scalar|
 |local_C_0_2_load  |   in|   32|     ap_none|                           local_C_0_2_load|        scalar|

@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'scaled_dot_product_attention'" level="0">
-<item name = "Date">Wed Feb  5 22:35:10 2025
+<item name = "Date">Mon Feb 17 20:37:22 2025
 </item>
 <item name = "Version">2023.2 (Build 4023990 on Oct 11 2023)</item>
 <item name = "Project">DitBlock</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">10.00 ns, 7.069 ns, 2.70 ns</column>
+<column name="ap_clk">10.00 ns, 7.399 ns, 2.70 ns</column>
 </table>
 </item>
 </section>
@@ -24,7 +24,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">240107921, 240107921, 2.401 sec, 2.401 sec, 240107921, 240107921, no</column>
+<column name="">196434329, 196434329, 1.964 sec, 1.964 sec, 196434329, 196434329, no</column>
 </table>
 </item>
 <item name = "Detail">
@@ -35,7 +35,7 @@
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
-<column name="- l_S_h_0_h1">240107920, 240107920, 30013490, -, -, 8, no</column>
+<column name="- l_S_h_0_h1">196434328, 196434328, 24554291, -, -, 8, no</column>
 </table>
 </item>
 </section>

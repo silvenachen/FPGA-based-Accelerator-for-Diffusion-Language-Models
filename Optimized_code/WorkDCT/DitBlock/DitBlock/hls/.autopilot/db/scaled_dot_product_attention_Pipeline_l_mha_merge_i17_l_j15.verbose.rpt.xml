@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'scaled_dot_product_attention_Pipeline_l_mha_merge_i17_l_j15'" level="0">
-<item name = "Date">Wed Feb  5 22:36:54 2025
+<item name = "Date">Mon Feb 17 20:39:05 2025
 </item>
 <item name = "Version">2023.2 (Build 4023990 on Oct 11 2023)</item>
 <item name = "Project">DitBlock</item>
@@ -80,15 +80,15 @@
 </item>
 <item name = "Expression"><table name="" hasTotal="1">
 <keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
-<column name="add_ln15738_1_fu_131_p2">+, 0, 0, 24, 17, 1</column>
-<column name="add_ln15738_fu_143_p2">+, 0, 0, 18, 11, 1</column>
-<column name="add_ln15739_fu_207_p2">+, 0, 0, 14, 7, 1</column>
-<column name="add_ln15740_fu_187_p2">+, 0, 0, 23, 16, 16</column>
-<column name="add_ln15741_fu_202_p2">+, 0, 0, 16, 9, 9</column>
-<column name="icmp_ln15738_fu_125_p2">icmp, 0, 0, 25, 17, 18</column>
-<column name="icmp_ln15739_fu_149_p2">icmp, 0, 0, 15, 7, 8</column>
-<column name="select_ln15738_1_fu_163_p3">select, 0, 0, 11, 1, 11</column>
-<column name="select_ln15738_fu_155_p3">select, 0, 0, 7, 1, 1</column>
+<column name="add_ln15627_1_fu_131_p2">+, 0, 0, 24, 17, 1</column>
+<column name="add_ln15627_fu_143_p2">+, 0, 0, 18, 11, 1</column>
+<column name="add_ln15628_fu_207_p2">+, 0, 0, 14, 7, 1</column>
+<column name="add_ln15629_fu_187_p2">+, 0, 0, 23, 16, 16</column>
+<column name="add_ln15630_fu_202_p2">+, 0, 0, 16, 9, 9</column>
+<column name="icmp_ln15627_fu_125_p2">icmp, 0, 0, 25, 17, 18</column>
+<column name="icmp_ln15628_fu_149_p2">icmp, 0, 0, 15, 7, 8</column>
+<column name="select_ln15627_1_fu_163_p3">select, 0, 0, 11, 1, 11</column>
+<column name="select_ln15627_fu_155_p3">select, 0, 0, 7, 1, 1</column>
 <column name="ap_enable_pp0">xor, 0, 0, 2, 1, 2</column>
 </table>
 </item>
@@ -98,21 +98,21 @@
 <column name="ap_enable_reg_pp0_iter1">9, 2, 1, 2</column>
 <column name="ap_enable_reg_pp0_iter2">9, 2, 1, 2</column>
 <column name="i17_fu_62">9, 2, 11, 22</column>
-<column name="indvar_flatten59_fu_66">9, 2, 17, 34</column>
+<column name="indvar_flatten45_fu_66">9, 2, 17, 34</column>
 <column name="j15_fu_58">9, 2, 7, 14</column>
 </table>
 </item>
 <item name = "Register"><table name="" hasTotal="1">
 <keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
-<column name="add_ln15741_reg_278">9, 0, 9, 0</column>
+<column name="add_ln15630_reg_278">9, 0, 9, 0</column>
 <column name="ap_CS_fsm">1, 0, 1, 0</column>
 <column name="ap_done_reg">1, 0, 1, 0</column>
 <column name="ap_enable_reg_pp0_iter1">1, 0, 1, 0</column>
 <column name="ap_enable_reg_pp0_iter2">1, 0, 1, 0</column>
 <column name="i17_fu_62">11, 0, 11, 0</column>
-<column name="indvar_flatten59_fu_66">17, 0, 17, 0</column>
+<column name="indvar_flatten45_fu_66">17, 0, 17, 0</column>
 <column name="j15_fu_58">7, 0, 7, 0</column>
-<column name="trunc_ln15740_reg_268">10, 0, 10, 0</column>
+<column name="trunc_ln15629_reg_268">10, 0, 10, 0</column>
 </table>
 </item>
 </section>
@@ -128,10 +128,10 @@
 <column name="ap_done">out, 1, ap_ctrl_hs, scaled_dot_product_attention_Pipeline_l_mha_merge_i17_l_j15, return value</column>
 <column name="ap_idle">out, 1, ap_ctrl_hs, scaled_dot_product_attention_Pipeline_l_mha_merge_i17_l_j15, return value</column>
 <column name="ap_ready">out, 1, ap_ctrl_hs, scaled_dot_product_attention_Pipeline_l_mha_merge_i17_l_j15, return value</column>
-<column name="C_h_address0">out, 16, ap_memory, C_h, array</column>
-<column name="C_h_ce0">out, 1, ap_memory, C_h, array</column>
-<column name="C_h_q0">in, 32, ap_memory, C_h, array</column>
-<column name="tmp_27">in, 9, ap_none, tmp_27, scalar</column>
+<column name="Q_h_address0">out, 16, ap_memory, Q_h, array</column>
+<column name="Q_h_ce0">out, 1, ap_memory, Q_h, array</column>
+<column name="Q_h_q0">in, 32, ap_memory, Q_h, array</column>
+<column name="tmp_4">in, 9, ap_none, tmp_4, scalar</column>
 <column name="v8567_address1">out, 19, ap_memory, v8567, array</column>
 <column name="v8567_ce1">out, 1, ap_memory, v8567, array</column>
 <column name="v8567_we1">out, 1, ap_memory, v8567, array</column>

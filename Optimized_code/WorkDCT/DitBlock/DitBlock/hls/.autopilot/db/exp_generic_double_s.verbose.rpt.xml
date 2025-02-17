@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'exp_generic_double_s'" level="0">
-<item name = "Date">Wed Feb  5 22:36:59 2025
+<item name = "Date">Mon Feb 17 20:39:11 2025
 </item>
 <item name = "Version">2023.2 (Build 4023990 on Oct 11 2023)</item>
 <item name = "Project">DitBlock</item>
@@ -63,15 +63,15 @@
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="1">
 <keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
-<column name="mul_13s_71s_71_1_1_U3066">mul_13s_71s_71_1_1, 0, 4, 0, 64, 0</column>
-<column name="mul_43ns_36ns_79_1_1_U3067">mul_43ns_36ns_79_1_1, 0, 4, 0, 19, 0</column>
-<column name="mul_49ns_44ns_93_1_1_U3068">mul_49ns_44ns_93_1_1, 0, 6, 0, 17, 0</column>
-<column name="mul_50ns_50ns_100_1_1_U3069">mul_50ns_50ns_100_1_1, 0, 9, 0, 21, 0</column>
+<column name="mul_13s_71s_71_1_1_U3522">mul_13s_71s_71_1_1, 0, 4, 0, 64, 0</column>
+<column name="mul_43ns_36ns_79_1_1_U3523">mul_43ns_36ns_79_1_1, 0, 4, 0, 19, 0</column>
+<column name="mul_49ns_44ns_93_1_1_U3524">mul_49ns_44ns_93_1_1, 0, 6, 0, 17, 0</column>
+<column name="mul_50ns_50ns_100_1_1_U3525">mul_50ns_50ns_100_1_1, 0, 9, 0, 21, 0</column>
 </table>
 </item>
 <item name = "DSP"><table name="" hasTotal="0">
 <keys size="3">Instance, Module, Expression</keys>
-<column name="mac_muladd_16s_15ns_19s_31_4_1_U3070">mac_muladd_16s_15ns_19s_31_4_1, i0 * i1 + i2</column>
+<column name="mac_muladd_16s_15ns_19s_31_4_1_U3526">mac_muladd_16s_15ns_19s_31_4_1, i0 * i1 + i2</column>
 </table>
 </item>
 <item name = "Memory"><table name="" hasTotal="1">
@@ -179,8 +179,8 @@
 <column name="m_diff_hi_reg_1168">8, 0, 8, 0</column>
 <column name="r_exp_reg_1161">13, 0, 13, 0</column>
 <column name="select_ln224_reg_1123">54, 0, 54, 0</column>
-<column name="tmp_10_reg_1128">1, 0, 1, 0</column>
-<column name="tmp_10_reg_1128_pp0_iter1_reg">1, 0, 1, 0</column>
+<column name="tmp_27_reg_1128">1, 0, 1, 0</column>
+<column name="tmp_27_reg_1128_pp0_iter1_reg">1, 0, 1, 0</column>
 <column name="trunc_ln255_reg_1138">59, 0, 59, 0</column>
 <column name="es_sign_reg_1104">64, 32, 1, 0</column>
 <column name="icmp_ln18_1_reg_1117">64, 32, 1, 0</column>

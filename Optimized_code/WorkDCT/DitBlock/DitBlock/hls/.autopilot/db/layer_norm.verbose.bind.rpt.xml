@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'layer_norm'" level="0">
-<item name = "Date">Wed Feb  5 22:34:03 2025
+<item name = "Date">Mon Feb 17 20:36:10 2025
 </item>
 <item name = "Version">2023.2 (Build 4023990 on Oct 11 2023)</item>
 <item name = "Project">DitBlock</item>
@@ -24,23 +24,23 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">1606681, 1606681, 16.067 ms, 16.067 ms, 1606681, 1606681, no</column>
+<column name="">1603609, 1603609, 16.036 ms, 16.036 ms, 1603609, 1603609, no</column>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="grp_layer_norm_Pipeline_VITIS_LOOP_617_1_fu_90">layer_norm_Pipeline_VITIS_LOOP_617_1, 1026, 1026, 10.260 us, 10.260 us, 1026, 1026, no</column>
-<column name="grp_layer_norm_Pipeline_VITIS_LOOP_621_2_fu_96">layer_norm_Pipeline_VITIS_LOOP_621_2, 1026, 1026, 10.260 us, 10.260 us, 1026, 1026, no</column>
-<column name="grp_layer_norm_Pipeline_l_sum_i2_l_j1_fu_102">layer_norm_Pipeline_l_sum_i2_l_j1, 1048584, 1048584, 10.486 ms, 10.486 ms, 1048584, 1048584, no</column>
-<column name="grp_layer_norm_Pipeline_l_mean_var_i3_fu_110">layer_norm_Pipeline_l_mean_var_i3, 1033, 1033, 10.330 us, 10.330 us, 1033, 1033, no</column>
-<column name="grp_layer_norm_Pipeline_l_j2_fu_117">layer_norm_Pipeline_l_j2, 527, 527, 5.270 us, 5.270 us, 527, 527, no</column>
+<column name="grp_layer_norm_Pipeline_VITIS_LOOP_486_1_fu_88">layer_norm_Pipeline_VITIS_LOOP_486_1, 1026, 1026, 10.260 us, 10.260 us, 1026, 1026, no</column>
+<column name="grp_layer_norm_Pipeline_VITIS_LOOP_490_2_fu_94">layer_norm_Pipeline_VITIS_LOOP_490_2, 1026, 1026, 10.260 us, 10.260 us, 1026, 1026, no</column>
+<column name="grp_layer_norm_Pipeline_l_sum_i2_l_j1_fu_100">layer_norm_Pipeline_l_sum_i2_l_j1, 1048584, 1048584, 10.486 ms, 10.486 ms, 1048584, 1048584, no</column>
+<column name="grp_layer_norm_Pipeline_l_mean_var_i3_fu_108">layer_norm_Pipeline_l_mean_var_i3, 1033, 1033, 10.330 us, 10.330 us, 1033, 1033, no</column>
+<column name="grp_layer_norm_Pipeline_l_j2_fu_115">layer_norm_Pipeline_l_j2, 524, 524, 5.240 us, 5.240 us, 524, 524, no</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
-<column name="- l_norm_i4">556032, 556032, 543, -, -, 1024, no</column>
+<column name="- l_norm_i4">552960, 552960, 540, -, -, 1024, no</column>
 </table>
 </item>
 </section>

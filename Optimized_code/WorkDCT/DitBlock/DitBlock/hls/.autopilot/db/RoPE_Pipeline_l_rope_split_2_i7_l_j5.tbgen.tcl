@@ -16,14 +16,14 @@ set C_modelName {RoPE_Pipeline_l_rope_split_2_i7_l_j5}
 set C_modelType { void 0 }
 set C_modelArgList {
 	{ X_2_h float 32 regular {array 32768 { 0 3 } 0 1 }  }
-	{ tmp_107 int 9 regular  }
+	{ tmp_94 int 9 regular  }
 	{ v5222 float 32 regular {array 524288 { 1 3 } 1 1 }  }
 }
 set hasAXIMCache 0
 set AXIMCacheInstList { }
 set C_modelArgMapList {[ 
 	{ "Name" : "X_2_h", "interface" : "memory", "bitwidth" : 32, "direction" : "WRITEONLY"} , 
- 	{ "Name" : "tmp_107", "interface" : "wire", "bitwidth" : 9, "direction" : "READONLY"} , 
+ 	{ "Name" : "tmp_94", "interface" : "wire", "bitwidth" : 9, "direction" : "READONLY"} , 
  	{ "Name" : "v5222", "interface" : "memory", "bitwidth" : 32, "direction" : "READONLY"} ]}
 # RTL Port declarations: 
 set portNum 14
@@ -38,7 +38,7 @@ set portList {
 	{ X_2_h_ce0 sc_out sc_logic 1 signal 0 } 
 	{ X_2_h_we0 sc_out sc_logic 1 signal 0 } 
 	{ X_2_h_d0 sc_out sc_lv 32 signal 0 } 
-	{ tmp_107 sc_in sc_lv 9 signal 1 } 
+	{ tmp_94 sc_in sc_lv 9 signal 1 } 
 	{ v5222_address0 sc_out sc_lv 19 signal 2 } 
 	{ v5222_ce0 sc_out sc_logic 1 signal 2 } 
 	{ v5222_q0 sc_in sc_lv 32 signal 2 } 
@@ -54,7 +54,7 @@ set NewPortList {[
  	{ "name": "X_2_h_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "X_2_h", "role": "ce0" }} , 
  	{ "name": "X_2_h_we0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "X_2_h", "role": "we0" }} , 
  	{ "name": "X_2_h_d0", "direction": "out", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "X_2_h", "role": "d0" }} , 
- 	{ "name": "tmp_107", "direction": "in", "datatype": "sc_lv", "bitwidth":9, "type": "signal", "bundle":{"name": "tmp_107", "role": "default" }} , 
+ 	{ "name": "tmp_94", "direction": "in", "datatype": "sc_lv", "bitwidth":9, "type": "signal", "bundle":{"name": "tmp_94", "role": "default" }} , 
  	{ "name": "v5222_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":19, "type": "signal", "bundle":{"name": "v5222", "role": "address0" }} , 
  	{ "name": "v5222_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "v5222", "role": "ce0" }} , 
  	{ "name": "v5222_q0", "direction": "in", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "v5222", "role": "q0" }}  ]}
@@ -76,7 +76,7 @@ set RtlHierarchyInfo {[
 		"IsBlackBox" : "0",
 		"Port" : [
 			{"Name" : "X_2_h", "Type" : "Memory", "Direction" : "O"},
-			{"Name" : "tmp_107", "Type" : "None", "Direction" : "I"},
+			{"Name" : "tmp_94", "Type" : "None", "Direction" : "I"},
 			{"Name" : "v5222", "Type" : "Memory", "Direction" : "I"}],
 		"Loop" : [
 			{"Name" : "l_rope_split_2_i7_l_j5", "PipelineType" : "UPC",
@@ -87,7 +87,7 @@ set RtlHierarchyInfo {[
 set ArgLastReadFirstWriteLatency {
 	RoPE_Pipeline_l_rope_split_2_i7_l_j5 {
 		X_2_h {Type O LastRead -1 FirstWrite 2}
-		tmp_107 {Type I LastRead 0 FirstWrite -1}
+		tmp_94 {Type I LastRead 0 FirstWrite -1}
 		v5222 {Type I LastRead 1 FirstWrite -1}}}
 
 set hasDtUnsupportedChannel 0
@@ -103,6 +103,6 @@ set PipelineEnableSignalInfo {[
 
 set Spec2ImplPortList { 
 	X_2_h { ap_memory {  { X_2_h_address0 mem_address 1 15 }  { X_2_h_ce0 mem_ce 1 1 }  { X_2_h_we0 mem_we 1 1 }  { X_2_h_d0 mem_din 1 32 } } }
-	tmp_107 { ap_none {  { tmp_107 in_data 0 9 } } }
+	tmp_94 { ap_none {  { tmp_94 in_data 0 9 } } }
 	v5222 { ap_memory {  { v5222_address0 mem_address 1 19 }  { v5222_ce0 mem_ce 1 1 }  { v5222_q0 in_data 0 32 } } }
 }

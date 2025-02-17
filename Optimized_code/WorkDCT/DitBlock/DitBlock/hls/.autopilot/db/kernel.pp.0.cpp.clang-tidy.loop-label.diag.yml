@@ -7,7 +7,7 @@ Diagnostics:
     FilePath:        /tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/ap_int_base.h
     Replacements:    
       - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
-        Offset:          526554
+        Offset:          526553
         Length:          0
         ReplacementText: 'VITIS_LOOP_1207_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -16,7 +16,7 @@ Diagnostics:
     FilePath:        /tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/ap_int_ref.h
     Replacements:    
       - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
-        Offset:          753962
+        Offset:          753961
         Length:          0
         ReplacementText: 'VITIS_LOOP_676_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -25,7 +25,7 @@ Diagnostics:
     FilePath:        /tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/ap_int_ref.h
     Replacements:    
       - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
-        Offset:          754426
+        Offset:          754425
         Length:          0
         ReplacementText: 'VITIS_LOOP_690_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -34,7 +34,7 @@ Diagnostics:
     FilePath:        /tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/ap_int_ref.h
     Replacements:    
       - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
-        Offset:          754891
+        Offset:          754890
         Length:          0
         ReplacementText: 'VITIS_LOOP_704_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -43,7 +43,7 @@ Diagnostics:
     FilePath:        /tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/ap_fixed_base.h
     Replacements:    
       - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
-        Offset:          1037867
+        Offset:          1037866
         Length:          0
         ReplacementText: 'VITIS_LOOP_1247_1: '
   - DiagnosticName:  clang-diagnostic-error
@@ -182,7 +182,7 @@ Diagnostics:
     FilePath:        /tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_cordic_apfixed.h
     Replacements:    
       - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
-        Offset:          1605915
+        Offset:          1605913
         Length:          0
         ReplacementText: 'VITIS_LOOP_61_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -191,7 +191,7 @@ Diagnostics:
     FilePath:        /tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_cordic_apfixed.h
     Replacements:    
       - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
-        Offset:          1606733
+        Offset:          1606731
         Length:          0
         ReplacementText: 'VITIS_LOOP_117_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -200,7 +200,7 @@ Diagnostics:
     FilePath:        /tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_cordic_apfixed.h
     Replacements:    
       - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
-        Offset:          1609384
+        Offset:          1609382
         Length:          0
         ReplacementText: 'VITIS_LOOP_289_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -209,7 +209,7 @@ Diagnostics:
     FilePath:        /tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_cordic_apfixed.h
     Replacements:    
       - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
-        Offset:          1612111
+        Offset:          1612109
         Length:          0
         ReplacementText: 'VITIS_LOOP_449_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -218,7 +218,7 @@ Diagnostics:
     FilePath:        /tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_cordic_apfixed.h
     Replacements:    
       - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
-        Offset:          1615272
+        Offset:          1615270
         Length:          0
         ReplacementText: 'VITIS_LOOP_629_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -227,7 +227,7 @@ Diagnostics:
     FilePath:        /tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_cordic_apfixed.h
     Replacements:    
       - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
-        Offset:          1615353
+        Offset:          1615351
         Length:          0
         ReplacementText: 'VITIS_LOOP_633_2: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -236,7 +236,7 @@ Diagnostics:
     FilePath:        /tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_cordic_apfixed.h
     Replacements:    
       - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
-        Offset:          1617662
+        Offset:          1617660
         Length:          0
         ReplacementText: 'VITIS_LOOP_743_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -245,7 +245,7 @@ Diagnostics:
     FilePath:        /tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_cordic_apfixed.h
     Replacements:    
       - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
-        Offset:          1619160
+        Offset:          1619158
         Length:          0
         ReplacementText: 'VITIS_LOOP_840_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -254,7 +254,7 @@ Diagnostics:
     FilePath:        /tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_cordic_apfixed.h
     Replacements:    
       - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
-        Offset:          1619390
+        Offset:          1619388
         Length:          0
         ReplacementText: 'VITIS_LOOP_859_2: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -263,7 +263,7 @@ Diagnostics:
     FilePath:        /tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_cordic_apfixed.h
     Replacements:    
       - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
-        Offset:          1625580
+        Offset:          1625578
         Length:          0
         ReplacementText: 'VITIS_LOOP_1173_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -272,7 +272,7 @@ Diagnostics:
     FilePath:        /tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_cordic_apfixed.h
     Replacements:    
       - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
-        Offset:          1627183
+        Offset:          1627181
         Length:          0
         ReplacementText: 'VITIS_LOOP_1256_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -281,7 +281,7 @@ Diagnostics:
     FilePath:        /tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
-        Offset:          1635042
+        Offset:          1635040
         Length:          0
         ReplacementText: 'VITIS_LOOP_68_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -290,7 +290,7 @@ Diagnostics:
     FilePath:        /tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
-        Offset:          1635192
+        Offset:          1635190
         Length:          0
         ReplacementText: 'VITIS_LOOP_74_2: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -299,7 +299,7 @@ Diagnostics:
     FilePath:        /tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
-        Offset:          1635289
+        Offset:          1635287
         Length:          0
         ReplacementText: 'VITIS_LOOP_78_3: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -308,7 +308,7 @@ Diagnostics:
     FilePath:        /tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
-        Offset:          1637153
+        Offset:          1637151
         Length:          0
         ReplacementText: 'VITIS_LOOP_145_4: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -317,7 +317,7 @@ Diagnostics:
     FilePath:        /tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
-        Offset:          1637303
+        Offset:          1637301
         Length:          0
         ReplacementText: 'VITIS_LOOP_151_5: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -326,7 +326,7 @@ Diagnostics:
     FilePath:        /tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
-        Offset:          1637400
+        Offset:          1637398
         Length:          0
         ReplacementText: 'VITIS_LOOP_155_6: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -335,7 +335,7 @@ Diagnostics:
     FilePath:        /tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
-        Offset:          1637781
+        Offset:          1637779
         Length:          0
         ReplacementText: 'VITIS_LOOP_170_7: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -344,7 +344,7 @@ Diagnostics:
     FilePath:        /tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
-        Offset:          1638012
+        Offset:          1638010
         Length:          0
         ReplacementText: 'VITIS_LOOP_178_8: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -353,7 +353,7 @@ Diagnostics:
     FilePath:        /tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
-        Offset:          1641459
+        Offset:          1641457
         Length:          0
         ReplacementText: 'VITIS_LOOP_243_9: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -362,7 +362,7 @@ Diagnostics:
     FilePath:        /tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
-        Offset:          1641611
+        Offset:          1641609
         Length:          0
         ReplacementText: 'VITIS_LOOP_249_10: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -371,7 +371,7 @@ Diagnostics:
     FilePath:        /tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
-        Offset:          1641711
+        Offset:          1641709
         Length:          0
         ReplacementText: 'VITIS_LOOP_253_11: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -380,7 +380,7 @@ Diagnostics:
     FilePath:        /tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
-        Offset:          1642093
+        Offset:          1642091
         Length:          0
         ReplacementText: 'VITIS_LOOP_268_12: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -389,7 +389,7 @@ Diagnostics:
     FilePath:        /tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
-        Offset:          1642331
+        Offset:          1642329
         Length:          0
         ReplacementText: 'VITIS_LOOP_276_13: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -398,7 +398,7 @@ Diagnostics:
     FilePath:        /tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
-        Offset:          1657886
+        Offset:          1657884
         Length:          0
         ReplacementText: 'VITIS_LOOP_505_14: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -407,7 +407,7 @@ Diagnostics:
     FilePath:        /tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
-        Offset:          1658038
+        Offset:          1658036
         Length:          0
         ReplacementText: 'VITIS_LOOP_511_15: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -416,7 +416,7 @@ Diagnostics:
     FilePath:        /tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
-        Offset:          1658137
+        Offset:          1658135
         Length:          0
         ReplacementText: 'VITIS_LOOP_515_16: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -425,7 +425,7 @@ Diagnostics:
     FilePath:        /tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
-        Offset:          1658314
+        Offset:          1658312
         Length:          0
         ReplacementText: 'VITIS_LOOP_525_17: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -434,7 +434,7 @@ Diagnostics:
     FilePath:        /tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
-        Offset:          1658412
+        Offset:          1658410
         Length:          0
         ReplacementText: 'VITIS_LOOP_529_18: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -443,7 +443,7 @@ Diagnostics:
     FilePath:        /tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
-        Offset:          1658697
+        Offset:          1658695
         Length:          0
         ReplacementText: 'VITIS_LOOP_539_19: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -452,7 +452,7 @@ Diagnostics:
     FilePath:        /tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
-        Offset:          1658952
+        Offset:          1658950
         Length:          0
         ReplacementText: 'VITIS_LOOP_547_20: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -461,7 +461,7 @@ Diagnostics:
     FilePath:        /tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
-        Offset:          1691191
+        Offset:          1691189
         Length:          0
         ReplacementText: 'VITIS_LOOP_908_21: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -470,7 +470,7 @@ Diagnostics:
     FilePath:        /tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
-        Offset:          1691343
+        Offset:          1691341
         Length:          0
         ReplacementText: 'VITIS_LOOP_914_22: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -479,7 +479,7 @@ Diagnostics:
     FilePath:        /tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
-        Offset:          1691443
+        Offset:          1691441
         Length:          0
         ReplacementText: 'VITIS_LOOP_918_23: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -488,7 +488,7 @@ Diagnostics:
     FilePath:        /tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
-        Offset:          1694119
+        Offset:          1694117
         Length:          0
         ReplacementText: 'VITIS_LOOP_1034_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -497,7 +497,7 @@ Diagnostics:
     FilePath:        /tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
-        Offset:          1694269
+        Offset:          1694267
         Length:          0
         ReplacementText: 'VITIS_LOOP_1040_2: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -506,7 +506,7 @@ Diagnostics:
     FilePath:        /tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
-        Offset:          1694367
+        Offset:          1694365
         Length:          0
         ReplacementText: 'VITIS_LOOP_1044_3: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -515,7 +515,7 @@ Diagnostics:
     FilePath:        /tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
-        Offset:          1697837
+        Offset:          1697835
         Length:          0
         ReplacementText: 'VITIS_LOOP_1131_4: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -524,7 +524,7 @@ Diagnostics:
     FilePath:        /tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
-        Offset:          1697988
+        Offset:          1697986
         Length:          0
         ReplacementText: 'VITIS_LOOP_1137_5: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -533,7 +533,7 @@ Diagnostics:
     FilePath:        /tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
-        Offset:          1698087
+        Offset:          1698085
         Length:          0
         ReplacementText: 'VITIS_LOOP_1141_6: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -542,7 +542,7 @@ Diagnostics:
     FilePath:        /tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
-        Offset:          1698567
+        Offset:          1698565
         Length:          0
         ReplacementText: 'VITIS_LOOP_1160_7: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -551,7 +551,7 @@ Diagnostics:
     FilePath:        /tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
-        Offset:          1698809
+        Offset:          1698807
         Length:          0
         ReplacementText: 'VITIS_LOOP_1167_8: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -560,7 +560,7 @@ Diagnostics:
     FilePath:        /tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
-        Offset:          1704381
+        Offset:          1704379
         Length:          0
         ReplacementText: 'VITIS_LOOP_1283_9: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -569,7 +569,7 @@ Diagnostics:
     FilePath:        /tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
-        Offset:          1704533
+        Offset:          1704531
         Length:          0
         ReplacementText: 'VITIS_LOOP_1289_10: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -578,7 +578,7 @@ Diagnostics:
     FilePath:        /tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
-        Offset:          1704632
+        Offset:          1704630
         Length:          0
         ReplacementText: 'VITIS_LOOP_1293_11: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -587,7 +587,7 @@ Diagnostics:
     FilePath:        /tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
-        Offset:          1705141
+        Offset:          1705139
         Length:          0
         ReplacementText: 'VITIS_LOOP_1313_12: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -596,7 +596,7 @@ Diagnostics:
     FilePath:        /tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
-        Offset:          1705390
+        Offset:          1705388
         Length:          0
         ReplacementText: 'VITIS_LOOP_1320_13: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -605,7 +605,7 @@ Diagnostics:
     FilePath:        /tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
-        Offset:          1722747
+        Offset:          1722745
         Length:          0
         ReplacementText: 'VITIS_LOOP_1582_14: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -614,7 +614,7 @@ Diagnostics:
     FilePath:        /tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
-        Offset:          1722899
+        Offset:          1722897
         Length:          0
         ReplacementText: 'VITIS_LOOP_1588_15: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -623,7 +623,7 @@ Diagnostics:
     FilePath:        /tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
-        Offset:          1722999
+        Offset:          1722997
         Length:          0
         ReplacementText: 'VITIS_LOOP_1592_16: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -632,7 +632,7 @@ Diagnostics:
     FilePath:        /tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
-        Offset:          1723473
+        Offset:          1723471
         Length:          0
         ReplacementText: 'VITIS_LOOP_1616_17: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -641,7 +641,7 @@ Diagnostics:
     FilePath:        /tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
-        Offset:          1723740
+        Offset:          1723738
         Length:          0
         ReplacementText: 'VITIS_LOOP_1623_18: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -650,7 +650,7 @@ Diagnostics:
     FilePath:        /tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
-        Offset:          1762311
+        Offset:          1762309
         Length:          0
         ReplacementText: 'VITIS_LOOP_2053_19: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -659,7 +659,7 @@ Diagnostics:
     FilePath:        /tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
-        Offset:          1762463
+        Offset:          1762461
         Length:          0
         ReplacementText: 'VITIS_LOOP_2059_20: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -668,7 +668,7 @@ Diagnostics:
     FilePath:        /tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
-        Offset:          1762563
+        Offset:          1762561
         Length:          0
         ReplacementText: 'VITIS_LOOP_2063_21: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -677,7 +677,7 @@ Diagnostics:
     FilePath:        /tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
-        Offset:          1765183
+        Offset:          1765181
         Length:          0
         ReplacementText: 'VITIS_LOOP_2193_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -686,7 +686,7 @@ Diagnostics:
     FilePath:        /tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
-        Offset:          1765346
+        Offset:          1765344
         Length:          0
         ReplacementText: 'VITIS_LOOP_2200_2: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -695,7 +695,7 @@ Diagnostics:
     FilePath:        /tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
-        Offset:          1765438
+        Offset:          1765436
         Length:          0
         ReplacementText: 'VITIS_LOOP_2204_3: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -704,7 +704,7 @@ Diagnostics:
     FilePath:        /tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
-        Offset:          1767047
+        Offset:          1767045
         Length:          0
         ReplacementText: 'VITIS_LOOP_2251_4: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -713,7 +713,7 @@ Diagnostics:
     FilePath:        /tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
-        Offset:          1767209
+        Offset:          1767207
         Length:          0
         ReplacementText: 'VITIS_LOOP_2258_5: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -722,7 +722,7 @@ Diagnostics:
     FilePath:        /tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
-        Offset:          1767301
+        Offset:          1767299
         Length:          0
         ReplacementText: 'VITIS_LOOP_2262_6: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -731,7 +731,7 @@ Diagnostics:
     FilePath:        /tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
-        Offset:          1767674
+        Offset:          1767672
         Length:          0
         ReplacementText: 'VITIS_LOOP_2280_7: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -740,7 +740,7 @@ Diagnostics:
     FilePath:        /tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
-        Offset:          1770140
+        Offset:          1770138
         Length:          0
         ReplacementText: 'VITIS_LOOP_2335_8: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -749,7 +749,7 @@ Diagnostics:
     FilePath:        /tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
-        Offset:          1770307
+        Offset:          1770305
         Length:          0
         ReplacementText: 'VITIS_LOOP_2342_9: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -758,7 +758,7 @@ Diagnostics:
     FilePath:        /tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
-        Offset:          1770400
+        Offset:          1770398
         Length:          0
         ReplacementText: 'VITIS_LOOP_2346_10: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -767,7 +767,7 @@ Diagnostics:
     FilePath:        /tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
-        Offset:          1770781
+        Offset:          1770779
         Length:          0
         ReplacementText: 'VITIS_LOOP_2364_11: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -776,7 +776,7 @@ Diagnostics:
     FilePath:        /tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
-        Offset:          1776222
+        Offset:          1776220
         Length:          0
         ReplacementText: 'VITIS_LOOP_2453_12: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -785,7 +785,7 @@ Diagnostics:
     FilePath:        /tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
-        Offset:          1776390
+        Offset:          1776388
         Length:          0
         ReplacementText: 'VITIS_LOOP_2460_13: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -794,7 +794,7 @@ Diagnostics:
     FilePath:        /tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
-        Offset:          1776484
+        Offset:          1776482
         Length:          0
         ReplacementText: 'VITIS_LOOP_2464_14: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -803,7 +803,7 @@ Diagnostics:
     FilePath:        /tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
-        Offset:          1776655
+        Offset:          1776653
         Length:          0
         ReplacementText: 'VITIS_LOOP_2474_15: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -812,7 +812,7 @@ Diagnostics:
     FilePath:        /tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
-        Offset:          1776746
+        Offset:          1776744
         Length:          0
         ReplacementText: 'VITIS_LOOP_2478_16: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -821,7 +821,7 @@ Diagnostics:
     FilePath:        /tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
-        Offset:          1777028
+        Offset:          1777026
         Length:          0
         ReplacementText: 'VITIS_LOOP_2489_17: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -830,7 +830,7 @@ Diagnostics:
     FilePath:        /tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
-        Offset:          1777215
+        Offset:          1777213
         Length:          0
         ReplacementText: 'VITIS_LOOP_2497_18: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -839,7 +839,7 @@ Diagnostics:
     FilePath:        /tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
-        Offset:          1811685
+        Offset:          1811683
         Length:          0
         ReplacementText: 'VITIS_LOOP_2822_19: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -848,7 +848,7 @@ Diagnostics:
     FilePath:        /tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
-        Offset:          1811853
+        Offset:          1811851
         Length:          0
         ReplacementText: 'VITIS_LOOP_2829_20: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -857,7 +857,7 @@ Diagnostics:
     FilePath:        /tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
-        Offset:          1811947
+        Offset:          1811945
         Length:          0
         ReplacementText: 'VITIS_LOOP_2833_21: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -866,7 +866,7 @@ Diagnostics:
     FilePath:        /tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
-        Offset:          1813749
+        Offset:          1813747
         Length:          0
         ReplacementText: 'VITIS_LOOP_2921_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -875,7 +875,7 @@ Diagnostics:
     FilePath:        /tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
-        Offset:          1813857
+        Offset:          1813855
         Length:          0
         ReplacementText: 'VITIS_LOOP_2928_2: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -884,7 +884,7 @@ Diagnostics:
     FilePath:        /tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
-        Offset:          1813928
+        Offset:          1813926
         Length:          0
         ReplacementText: 'VITIS_LOOP_2932_3: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -893,7 +893,7 @@ Diagnostics:
     FilePath:        /tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
-        Offset:          1814216
+        Offset:          1814214
         Length:          0
         ReplacementText: 'VITIS_LOOP_2947_4: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -902,7 +902,7 @@ Diagnostics:
     FilePath:        /tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
-        Offset:          1815430
+        Offset:          1815428
         Length:          0
         ReplacementText: 'VITIS_LOOP_2979_5: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -911,7 +911,7 @@ Diagnostics:
     FilePath:        /tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
-        Offset:          1815541
+        Offset:          1815539
         Length:          0
         ReplacementText: 'VITIS_LOOP_2986_6: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -920,7 +920,7 @@ Diagnostics:
     FilePath:        /tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
-        Offset:          1815614
+        Offset:          1815612
         Length:          0
         ReplacementText: 'VITIS_LOOP_2990_7: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -929,7 +929,7 @@ Diagnostics:
     FilePath:        /tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
-        Offset:          1815909
+        Offset:          1815907
         Length:          0
         ReplacementText: 'VITIS_LOOP_3005_8: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -938,7 +938,7 @@ Diagnostics:
     FilePath:        /tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
-        Offset:          1819242
+        Offset:          1819240
         Length:          0
         ReplacementText: 'VITIS_LOOP_3055_9: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -947,7 +947,7 @@ Diagnostics:
     FilePath:        /tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
-        Offset:          1819353
+        Offset:          1819351
         Length:          0
         ReplacementText: 'VITIS_LOOP_3062_10: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -956,7 +956,7 @@ Diagnostics:
     FilePath:        /tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
-        Offset:          1819426
+        Offset:          1819424
         Length:          0
         ReplacementText: 'VITIS_LOOP_3066_11: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -965,7 +965,7 @@ Diagnostics:
     FilePath:        /tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
-        Offset:          1819722
+        Offset:          1819720
         Length:          0
         ReplacementText: 'VITIS_LOOP_3081_12: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -974,7 +974,7 @@ Diagnostics:
     FilePath:        /tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
-        Offset:          1839034
+        Offset:          1839032
         Length:          0
         ReplacementText: 'VITIS_LOOP_3218_13: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -983,7 +983,7 @@ Diagnostics:
     FilePath:        /tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
-        Offset:          1839148
+        Offset:          1839146
         Length:          0
         ReplacementText: 'VITIS_LOOP_3225_14: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -992,7 +992,7 @@ Diagnostics:
     FilePath:        /tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
-        Offset:          1839223
+        Offset:          1839221
         Length:          0
         ReplacementText: 'VITIS_LOOP_3229_15: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -1001,7 +1001,7 @@ Diagnostics:
     FilePath:        /tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
-        Offset:          1839510
+        Offset:          1839508
         Length:          0
         ReplacementText: 'VITIS_LOOP_3244_16: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -1010,7 +1010,7 @@ Diagnostics:
     FilePath:        /tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
-        Offset:          1865120
+        Offset:          1865118
         Length:          0
         ReplacementText: 'VITIS_LOOP_3404_17: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -1019,7 +1019,7 @@ Diagnostics:
     FilePath:        /tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
-        Offset:          1865234
+        Offset:          1865232
         Length:          0
         ReplacementText: 'VITIS_LOOP_3411_18: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -1028,7 +1028,7 @@ Diagnostics:
     FilePath:        /tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_exp_apfixed.h
     Replacements:    
       - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
-        Offset:          1865311
+        Offset:          1865309
         Length:          0
         ReplacementText: 'VITIS_LOOP_3415_19: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -1037,7 +1037,7 @@ Diagnostics:
     FilePath:        /tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_log_apfixed.h
     Replacements:    
       - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
-        Offset:          1899394
+        Offset:          1899392
         Length:          0
         ReplacementText: 'VITIS_LOOP_703_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -1046,7 +1046,7 @@ Diagnostics:
     FilePath:        /tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_log_apfixed.h
     Replacements:    
       - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
-        Offset:          1907783
+        Offset:          1907781
         Length:          0
         ReplacementText: 'VITIS_LOOP_921_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -1055,7 +1055,7 @@ Diagnostics:
     FilePath:        /tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_log_apfixed.h
     Replacements:    
       - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
-        Offset:          1926760
+        Offset:          1926758
         Length:          0
         ReplacementText: 'VITIS_LOOP_1345_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -1064,7 +1064,7 @@ Diagnostics:
     FilePath:        /tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_sqrt_apfixed.h
     Replacements:    
       - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
-        Offset:          1941634
+        Offset:          1941632
         Length:          0
         ReplacementText: 'VITIS_LOOP_240_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -1073,7 +1073,7 @@ Diagnostics:
     FilePath:        /tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_sqrt_apfixed.h
     Replacements:    
       - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
-        Offset:          1942155
+        Offset:          1942153
         Length:          0
         ReplacementText: 'VITIS_LOOP_268_2: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -1082,7 +1082,7 @@ Diagnostics:
     FilePath:        /tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_pow_apfixed.h
     Replacements:    
       - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
-        Offset:          1958102
+        Offset:          1958100
         Length:          0
         ReplacementText: 'VITIS_LOOP_48_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -1091,7 +1091,7 @@ Diagnostics:
     FilePath:        /tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_pow_apfixed.h
     Replacements:    
       - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
-        Offset:          1959256
+        Offset:          1959254
         Length:          0
         ReplacementText: 'VITIS_LOOP_109_2: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -1100,7 +1100,7 @@ Diagnostics:
     FilePath:        /tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_pow_apfixed.h
     Replacements:    
       - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
-        Offset:          1959565
+        Offset:          1959563
         Length:          0
         ReplacementText: 'VITIS_LOOP_123_3: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -1109,7 +1109,7 @@ Diagnostics:
     FilePath:        /tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_pow_apfixed.h
     Replacements:    
       - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
-        Offset:          1960075
+        Offset:          1960073
         Length:          0
         ReplacementText: 'VITIS_LOOP_153_4: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -1118,7 +1118,7 @@ Diagnostics:
     FilePath:        /tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_pow_apfixed.h
     Replacements:    
       - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
-        Offset:          1961997
+        Offset:          1961995
         Length:          0
         ReplacementText: 'VITIS_LOOP_281_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -1127,7 +1127,7 @@ Diagnostics:
     FilePath:        /tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_pow_apfixed.h
     Replacements:    
       - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
-        Offset:          1962362
+        Offset:          1962360
         Length:          0
         ReplacementText: 'VITIS_LOOP_301_2: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -1136,7 +1136,7 @@ Diagnostics:
     FilePath:        /tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_pow_apfixed.h
     Replacements:    
       - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
-        Offset:          1962670
+        Offset:          1962668
         Length:          0
         ReplacementText: 'VITIS_LOOP_315_3: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -1145,7 +1145,7 @@ Diagnostics:
     FilePath:        /tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_pow_apfixed.h
     Replacements:    
       - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
-        Offset:          1964502
+        Offset:          1964500
         Length:          0
         ReplacementText: 'VITIS_LOOP_433_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -1154,7 +1154,7 @@ Diagnostics:
     FilePath:        /tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_pow_apfixed.h
     Replacements:    
       - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
-        Offset:          1964827
+        Offset:          1964825
         Length:          0
         ReplacementText: 'VITIS_LOOP_447_2: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -1163,7 +1163,7 @@ Diagnostics:
     FilePath:        /tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_diff_apfixed.h
     Replacements:    
       - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
-        Offset:          1967498
+        Offset:          1967496
         Length:          0
         ReplacementText: 'VITIS_LOOP_33_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -1172,7 +1172,7 @@ Diagnostics:
     FilePath:        /tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_diff_apfixed.h
     Replacements:    
       - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
-        Offset:          1970402
+        Offset:          1970400
         Length:          0
         ReplacementText: 'VITIS_LOOP_183_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -1181,7 +1181,7 @@ Diagnostics:
     FilePath:        /tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_diff_apfixed.h
     Replacements:    
       - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
-        Offset:          1971693
+        Offset:          1971691
         Length:          0
         ReplacementText: 'VITIS_LOOP_248_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -1190,7 +1190,7 @@ Diagnostics:
     FilePath:        /tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_all_any_apfixed.h
     Replacements:    
       - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
-        Offset:          1982653
+        Offset:          1982651
         Length:          0
         ReplacementText: 'VITIS_LOOP_16_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -1199,7 +1199,7 @@ Diagnostics:
     FilePath:        /tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_all_any_apfixed.h
     Replacements:    
       - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
-        Offset:          1982828
+        Offset:          1982826
         Length:          0
         ReplacementText: 'VITIS_LOOP_27_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -1208,7 +1208,7 @@ Diagnostics:
     FilePath:        /tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_all_any_apfixed.h
     Replacements:    
       - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
-        Offset:          1982989
+        Offset:          1982987
         Length:          0
         ReplacementText: 'VITIS_LOOP_38_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -1217,7 +1217,7 @@ Diagnostics:
     FilePath:        /tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_all_any_apfixed.h
     Replacements:    
       - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
-        Offset:          1983151
+        Offset:          1983149
         Length:          0
         ReplacementText: 'VITIS_LOOP_49_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -1226,7 +1226,7 @@ Diagnostics:
     FilePath:        /tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_all_any_apfixed.h
     Replacements:    
       - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
-        Offset:          1983325
+        Offset:          1983323
         Length:          0
         ReplacementText: 'VITIS_LOOP_60_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -1235,7 +1235,7 @@ Diagnostics:
     FilePath:        /tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_all_any_apfixed.h
     Replacements:    
       - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
-        Offset:          1983500
+        Offset:          1983498
         Length:          0
         ReplacementText: 'VITIS_LOOP_71_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -1244,7 +1244,7 @@ Diagnostics:
     FilePath:        /tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_all_any_apfixed.h
     Replacements:    
       - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
-        Offset:          1983661
+        Offset:          1983659
         Length:          0
         ReplacementText: 'VITIS_LOOP_82_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -1253,7 +1253,7 @@ Diagnostics:
     FilePath:        /tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_all_any_apfixed.h
     Replacements:    
       - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
-        Offset:          1983823
+        Offset:          1983821
         Length:          0
         ReplacementText: 'VITIS_LOOP_93_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -1262,7 +1262,7 @@ Diagnostics:
     FilePath:        /tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_mad_apfixed.h
     Replacements:    
       - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
-        Offset:          2054763
+        Offset:          2054761
         Length:          0
         ReplacementText: 'VITIS_LOOP_26_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -1271,7 +1271,7 @@ Diagnostics:
     FilePath:        /tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_cbrt_apfixed.h
     Replacements:    
       - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
-        Offset:          2056518
+        Offset:          2056516
         Length:          0
         ReplacementText: 'VITIS_LOOP_40_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -1280,7 +1280,7 @@ Diagnostics:
     FilePath:        /tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_hypot_apfixed.h
     Replacements:    
       - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
-        Offset:          2061055
+        Offset:          2061053
         Length:          0
         ReplacementText: 'VITIS_LOOP_49_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -1289,7 +1289,7 @@ Diagnostics:
     FilePath:        /tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_hypot_apfixed.h
     Replacements:    
       - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
-        Offset:          2061790
+        Offset:          2061788
         Length:          0
         ReplacementText: 'VITIS_LOOP_81_2: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -1298,595 +1298,513 @@ Diagnostics:
     FilePath:        /tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_hypot_apfixed.h
     Replacements:    
       - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
-        Offset:          2063479
+        Offset:          2063477
         Length:          0
         ReplacementText: 'VITIS_LOOP_169_3: '
   - DiagnosticName:  xilinx-label-all-loops
-    Message:         'Added loop label VITIS_LOOP_521_1:  '
-    FileOffset:      521
+    Message:         'Added loop label VITIS_LOOP_465_1:  '
+    FileOffset:      465
     FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp
     Replacements:    
       - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
-        Offset:          2134527
+        Offset:          2133201
         Length:          0
-        ReplacementText: 'VITIS_LOOP_521_1: '
+        ReplacementText: 'VITIS_LOOP_465_1: '
   - DiagnosticName:  xilinx-label-all-loops
-    Message:         'Added loop label VITIS_LOOP_522_2:  '
-    FileOffset:      522
+    Message:         'Added loop label VITIS_LOOP_466_2:  '
+    FileOffset:      466
     FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp
     Replacements:    
       - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
-        Offset:          2134570
+        Offset:          2133244
         Length:          0
-        ReplacementText: 'VITIS_LOOP_522_2: '
+        ReplacementText: 'VITIS_LOOP_466_2: '
   - DiagnosticName:  xilinx-label-all-loops
-    Message:         'Added loop label VITIS_LOOP_617_1:  '
-    FileOffset:      617
+    Message:         'Added loop label VITIS_LOOP_486_1:  '
+    FileOffset:      486
     FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp
     Replacements:    
       - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
-        Offset:          2135032
+        Offset:          2133538
         Length:          0
-        ReplacementText: 'VITIS_LOOP_617_1: '
+        ReplacementText: 'VITIS_LOOP_486_1: '
   - DiagnosticName:  xilinx-label-all-loops
-    Message:         'Added loop label VITIS_LOOP_621_2:  '
-    FileOffset:      621
+    Message:         'Added loop label VITIS_LOOP_490_2:  '
+    FileOffset:      490
     FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp
     Replacements:    
       - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
-        Offset:          2135128
+        Offset:          2133634
         Length:          0
-        ReplacementText: 'VITIS_LOOP_621_2: '
+        ReplacementText: 'VITIS_LOOP_490_2: '
   - DiagnosticName:  xilinx-label-all-loops
-    Message:         'Added loop label VITIS_LOOP_9618_1:  '
-    FileOffset:      9618
+    Message:         'Added loop label VITIS_LOOP_12557_1:  '
+    FileOffset:      12557
     FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp
     Replacements:    
       - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
-        Offset:          2385565
+        Offset:          2469325
         Length:          0
-        ReplacementText: 'VITIS_LOOP_9618_1: '
+        ReplacementText: 'VITIS_LOOP_12557_1: '
   - DiagnosticName:  xilinx-label-all-loops
-    Message:         'Added loop label VITIS_LOOP_9619_2:  '
-    FileOffset:      9619
+    Message:         'Added loop label VITIS_LOOP_12561_2:  '
+    FileOffset:      12561
     FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp
     Replacements:    
       - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
-        Offset:          2385616
+        Offset:          2469423
         Length:          0
-        ReplacementText: 'VITIS_LOOP_9619_2: '
-  - DiagnosticName:  xilinx-label-all-loops
-    Message:         'Added loop label VITIS_LOOP_9624_3:  '
-    FileOffset:      9624
-    FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp
-    Replacements:    
-      - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
-        Offset:          2385754
-        Length:          0
-        ReplacementText: 'VITIS_LOOP_9624_3: '
-  - DiagnosticName:  xilinx-label-all-loops
-    Message:         'Added loop label VITIS_LOOP_9625_4:  '
-    FileOffset:      9625
-    FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp
-    Replacements:    
-      - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
-        Offset:          2385805
-        Length:          0
-        ReplacementText: 'VITIS_LOOP_9625_4: '
-  - DiagnosticName:  xilinx-label-all-loops
-    Message:         'Added loop label VITIS_LOOP_12688_1:  '
-    FileOffset:      12688
-    FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp
-    Replacements:    
-      - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
-        Offset:          2471143
-        Length:          0
-        ReplacementText: 'VITIS_LOOP_12688_1: '
-  - DiagnosticName:  xilinx-label-all-loops
-    Message:         'Added loop label VITIS_LOOP_12692_2:  '
-    FileOffset:      12692
-    FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp
-    Replacements:    
-      - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
-        Offset:          2471225
-        Length:          0
-        ReplacementText: 'VITIS_LOOP_12692_2: '
-  - DiagnosticName:  xilinx-label-all-loops
-    Message:         'Added loop label VITIS_LOOP_15708_1:  '
-    FileOffset:      15708
-    FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp
-    Replacements:    
-      - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
-        Offset:          2556465
-        Length:          0
-        ReplacementText: 'VITIS_LOOP_15708_1: '
-  - DiagnosticName:  xilinx-label-all-loops
-    Message:         'Added loop label VITIS_LOOP_15709_2:  '
-    FileOffset:      15709
-    FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp
-    Replacements:    
-      - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
-        Offset:          2556516
-        Length:          0
-        ReplacementText: 'VITIS_LOOP_15709_2: '
+        ReplacementText: 'VITIS_LOOP_12561_2: '
   - DiagnosticName:  clang-diagnostic-error
     Message:         'Invalid Directive: for current device, ram_2p + uram is invalid combination for BIND_STORAGE''s option ''type + impl'''
-    FileOffset:      15714
+    FileOffset:      15594
     FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp
     Replacements:    
   - DiagnosticName:  xilinx-label-all-loops
-    Message:         'Added loop label VITIS_LOOP_15716_3:  '
-    FileOffset:      15716
+    Message:         'Added loop label VITIS_LOOP_15595_1:  '
+    FileOffset:      15595
     FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp
     Replacements:    
       - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
-        Offset:          2556698
+        Offset:          2555069
         Length:          0
-        ReplacementText: 'VITIS_LOOP_15716_3: '
+        ReplacementText: 'VITIS_LOOP_15595_1: '
   - DiagnosticName:  xilinx-label-all-loops
-    Message:         'Added loop label VITIS_LOOP_15717_4:  '
-    FileOffset:      15717
+    Message:         'Added loop label VITIS_LOOP_15596_2:  '
+    FileOffset:      15596
     FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp
     Replacements:    
       - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
-        Offset:          2556749
+        Offset:          2555120
         Length:          0
-        ReplacementText: 'VITIS_LOOP_15717_4: '
-  - DiagnosticName:  xilinx-label-all-loops
-    Message:         'Added loop label VITIS_LOOP_15723_5:  '
-    FileOffset:      15723
-    FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp
-    Replacements:    
-      - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
-        Offset:          2556908
-        Length:          0
-        ReplacementText: 'VITIS_LOOP_15723_5: '
-  - DiagnosticName:  xilinx-label-all-loops
-    Message:         'Added loop label VITIS_LOOP_15724_6:  '
-    FileOffset:      15724
-    FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp
-    Replacements:    
-      - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
-        Offset:          2556959
-        Length:          0
-        ReplacementText: 'VITIS_LOOP_15724_6: '
+        ReplacementText: 'VITIS_LOOP_15596_2: '
   - DiagnosticName:  clang-diagnostic-error
     Message:         'Invalid Directive: for current device, ram_2p + uram is invalid combination for BIND_STORAGE''s option ''type + impl'''
-    FileOffset:      25286
+    FileOffset:      25138
     FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp
     Replacements:    
   - DiagnosticName:  clang-diagnostic-error
     Message:         'Invalid Directive: for current device, ram_2p + uram is invalid combination for BIND_STORAGE''s option ''type + impl'''
-    FileOffset:      25287
+    FileOffset:      25139
     FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp
     Replacements:    
   - DiagnosticName:  clang-diagnostic-error
     Message:         'Invalid Directive: for current device, ram_2p + uram is invalid combination for BIND_STORAGE''s option ''type + impl'''
-    FileOffset:      25288
+    FileOffset:      25140
     FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp
     Replacements:    
-  - DiagnosticName:  clang-diagnostic-error
-    Message:         'Invalid Directive: for current device, ram_2p + uram is invalid combination for BIND_STORAGE''s option ''type + impl'''
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_25157_1:  '
+    FileOffset:      25157
+    FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp
+    Replacements:    
+      - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
+        Offset:          2818799
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_25157_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_25158_2:  '
+    FileOffset:      25158
+    FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp
+    Replacements:    
+      - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
+        Offset:          2818833
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_25158_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_25162_3:  '
+    FileOffset:      25162
+    FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp
+    Replacements:    
+      - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
+        Offset:          2818919
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_25162_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_25165_4:  '
+    FileOffset:      25165
+    FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp
+    Replacements:    
+      - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
+        Offset:          2818994
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_25165_4: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_25166_5:  '
+    FileOffset:      25166
+    FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp
+    Replacements:    
+      - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
+        Offset:          2819031
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_25166_5: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_25172_6:  '
+    FileOffset:      25172
+    FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp
+    Replacements:    
+      - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
+        Offset:          2819192
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_25172_6: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_25175_7:  '
+    FileOffset:      25175
+    FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp
+    Replacements:    
+      - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
+        Offset:          2819267
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_25175_7: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_25176_8:  '
+    FileOffset:      25176
+    FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp
+    Replacements:    
+      - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
+        Offset:          2819304
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_25176_8: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_25182_9:  '
+    FileOffset:      25182
+    FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp
+    Replacements:    
+      - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
+        Offset:          2819465
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_25182_9: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_25185_10:  '
+    FileOffset:      25185
+    FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp
+    Replacements:    
+      - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
+        Offset:          2819540
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_25185_10: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_25186_11:  '
+    FileOffset:      25186
+    FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp
+    Replacements:    
+      - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
+        Offset:          2819577
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_25186_11: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_25192_12:  '
+    FileOffset:      25192
+    FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp
+    Replacements:    
+      - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
+        Offset:          2819738
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_25192_12: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_25195_13:  '
+    FileOffset:      25195
+    FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp
+    Replacements:    
+      - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
+        Offset:          2819813
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_25195_13: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_25196_14:  '
+    FileOffset:      25196
+    FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp
+    Replacements:    
+      - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
+        Offset:          2819850
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_25196_14: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_25202_15:  '
+    FileOffset:      25202
+    FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp
+    Replacements:    
+      - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
+        Offset:          2820011
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_25202_15: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_25205_16:  '
+    FileOffset:      25205
+    FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp
+    Replacements:    
+      - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
+        Offset:          2820086
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_25205_16: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_25206_17:  '
+    FileOffset:      25206
+    FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp
+    Replacements:    
+      - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
+        Offset:          2820123
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_25206_17: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_25214_18:  '
+    FileOffset:      25214
+    FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp
+    Replacements:    
+      - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
+        Offset:          2820286
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_25214_18: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_25217_19:  '
+    FileOffset:      25217
+    FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp
+    Replacements:    
+      - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
+        Offset:          2820361
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_25217_19: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_25218_20:  '
+    FileOffset:      25218
+    FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp
+    Replacements:    
+      - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
+        Offset:          2820398
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_25218_20: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_25226_21:  '
+    FileOffset:      25226
+    FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp
+    Replacements:    
+      - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
+        Offset:          2820561
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_25226_21: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_25227_22:  '
+    FileOffset:      25227
+    FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp
+    Replacements:    
+      - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
+        Offset:          2820598
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_25227_22: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_25245_23:  '
+    FileOffset:      25245
+    FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp
+    Replacements:    
+      - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
+        Offset:          2820765
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_25245_23: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_25246_24:  '
+    FileOffset:      25246
+    FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp
+    Replacements:    
+      - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
+        Offset:          2820801
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_25246_24: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_25251_25:  '
+    FileOffset:      25251
+    FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp
+    Replacements:    
+      - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
+        Offset:          2820930
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_25251_25: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_25252_26:  '
+    FileOffset:      25252
+    FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp
+    Replacements:    
+      - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
+        Offset:          2820966
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_25252_26: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_25259_27:  '
+    FileOffset:      25259
+    FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp
+    Replacements:    
+      - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
+        Offset:          2821097
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_25259_27: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_25260_28:  '
+    FileOffset:      25260
+    FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp
+    Replacements:    
+      - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
+        Offset:          2821133
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_25260_28: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_25267_29:  '
+    FileOffset:      25267
+    FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp
+    Replacements:    
+      - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
+        Offset:          2821264
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_25267_29: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_25268_30:  '
+    FileOffset:      25268
+    FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp
+    Replacements:    
+      - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
+        Offset:          2821301
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_25268_30: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_25272_31:  '
+    FileOffset:      25272
+    FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp
+    Replacements:    
+      - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
+        Offset:          2821387
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_25272_31: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_25273_32:  '
+    FileOffset:      25273
+    FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp
+    Replacements:    
+      - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
+        Offset:          2821424
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_25273_32: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_25289_33:  '
     FileOffset:      25289
     FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp
     Replacements:    
-  - DiagnosticName:  clang-diagnostic-error
-    Message:         'Invalid Directive: for current device, ram_2p + uram is invalid combination for BIND_STORAGE''s option ''type + impl'''
+      - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
+        Offset:          2821675
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_25289_33: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_25290_34:  '
     FileOffset:      25290
     FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp
     Replacements:    
+      - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
+        Offset:          2821711
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_25290_34: '
   - DiagnosticName:  xilinx-label-all-loops
-    Message:         'Added loop label VITIS_LOOP_25293_1:  '
-    FileOffset:      25293
+    Message:         'Added loop label VITIS_LOOP_25296_35:  '
+    FileOffset:      25296
     FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp
     Replacements:    
       - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
-        Offset:          2820689
+        Offset:          2821841
         Length:          0
-        ReplacementText: 'VITIS_LOOP_25293_1: '
+        ReplacementText: 'VITIS_LOOP_25296_35: '
   - DiagnosticName:  xilinx-label-all-loops
-    Message:         'Added loop label VITIS_LOOP_25294_2:  '
-    FileOffset:      25294
+    Message:         'Added loop label VITIS_LOOP_25297_36:  '
+    FileOffset:      25297
     FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp
     Replacements:    
       - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
-        Offset:          2820723
+        Offset:          2821878
         Length:          0
-        ReplacementText: 'VITIS_LOOP_25294_2: '
+        ReplacementText: 'VITIS_LOOP_25297_36: '
   - DiagnosticName:  xilinx-label-all-loops
-    Message:         'Added loop label VITIS_LOOP_25298_3:  '
-    FileOffset:      25298
+    Message:         'Added loop label VITIS_LOOP_25304_37:  '
+    FileOffset:      25304
     FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp
     Replacements:    
       - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
-        Offset:          2820809
+        Offset:          2822022
         Length:          0
-        ReplacementText: 'VITIS_LOOP_25298_3: '
+        ReplacementText: 'VITIS_LOOP_25304_37: '
   - DiagnosticName:  xilinx-label-all-loops
-    Message:         'Added loop label VITIS_LOOP_25301_4:  '
-    FileOffset:      25301
+    Message:         'Added loop label VITIS_LOOP_25305_38:  '
+    FileOffset:      25305
     FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp
     Replacements:    
       - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
-        Offset:          2820884
+        Offset:          2822059
         Length:          0
-        ReplacementText: 'VITIS_LOOP_25301_4: '
+        ReplacementText: 'VITIS_LOOP_25305_38: '
   - DiagnosticName:  xilinx-label-all-loops
-    Message:         'Added loop label VITIS_LOOP_25302_5:  '
-    FileOffset:      25302
+    Message:         'Added loop label VITIS_LOOP_25315_39:  '
+    FileOffset:      25315
     FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp
     Replacements:    
       - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
-        Offset:          2820921
+        Offset:          2822243
         Length:          0
-        ReplacementText: 'VITIS_LOOP_25302_5: '
+        ReplacementText: 'VITIS_LOOP_25315_39: '
   - DiagnosticName:  xilinx-label-all-loops
-    Message:         'Added loop label VITIS_LOOP_25308_6:  '
-    FileOffset:      25308
+    Message:         'Added loop label VITIS_LOOP_25316_40:  '
+    FileOffset:      25316
     FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp
     Replacements:    
       - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
-        Offset:          2821082
+        Offset:          2822279
         Length:          0
-        ReplacementText: 'VITIS_LOOP_25308_6: '
+        ReplacementText: 'VITIS_LOOP_25316_40: '
   - DiagnosticName:  xilinx-label-all-loops
-    Message:         'Added loop label VITIS_LOOP_25311_7:  '
-    FileOffset:      25311
+    Message:         'Added loop label VITIS_LOOP_25323_41:  '
+    FileOffset:      25323
     FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp
     Replacements:    
       - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
-        Offset:          2821157
+        Offset:          2822410
         Length:          0
-        ReplacementText: 'VITIS_LOOP_25311_7: '
+        ReplacementText: 'VITIS_LOOP_25323_41: '
   - DiagnosticName:  xilinx-label-all-loops
-    Message:         'Added loop label VITIS_LOOP_25312_8:  '
-    FileOffset:      25312
+    Message:         'Added loop label VITIS_LOOP_25328_42:  '
+    FileOffset:      25328
     FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp
     Replacements:    
       - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
-        Offset:          2821194
+        Offset:          2822545
         Length:          0
-        ReplacementText: 'VITIS_LOOP_25312_8: '
+        ReplacementText: 'VITIS_LOOP_25328_42: '
   - DiagnosticName:  xilinx-label-all-loops
-    Message:         'Added loop label VITIS_LOOP_25318_9:  '
-    FileOffset:      25318
-    FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp
-    Replacements:    
-      - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
-        Offset:          2821355
-        Length:          0
-        ReplacementText: 'VITIS_LOOP_25318_9: '
-  - DiagnosticName:  xilinx-label-all-loops
-    Message:         'Added loop label VITIS_LOOP_25321_10:  '
-    FileOffset:      25321
-    FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp
-    Replacements:    
-      - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
-        Offset:          2821430
-        Length:          0
-        ReplacementText: 'VITIS_LOOP_25321_10: '
-  - DiagnosticName:  xilinx-label-all-loops
-    Message:         'Added loop label VITIS_LOOP_25322_11:  '
-    FileOffset:      25322
-    FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp
-    Replacements:    
-      - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
-        Offset:          2821467
-        Length:          0
-        ReplacementText: 'VITIS_LOOP_25322_11: '
-  - DiagnosticName:  xilinx-label-all-loops
-    Message:         'Added loop label VITIS_LOOP_25329_12:  '
+    Message:         'Added loop label VITIS_LOOP_25329_43:  '
     FileOffset:      25329
     FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp
     Replacements:    
       - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
-        Offset:          2821629
+        Offset:          2822581
         Length:          0
-        ReplacementText: 'VITIS_LOOP_25329_12: '
+        ReplacementText: 'VITIS_LOOP_25329_43: '
   - DiagnosticName:  xilinx-label-all-loops
-    Message:         'Added loop label VITIS_LOOP_25332_13:  '
-    FileOffset:      25332
+    Message:         'Added loop label VITIS_LOOP_25336_44:  '
+    FileOffset:      25336
     FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp
     Replacements:    
       - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
-        Offset:          2821704
+        Offset:          2822712
         Length:          0
-        ReplacementText: 'VITIS_LOOP_25332_13: '
+        ReplacementText: 'VITIS_LOOP_25336_44: '
   - DiagnosticName:  xilinx-label-all-loops
-    Message:         'Added loop label VITIS_LOOP_25333_14:  '
-    FileOffset:      25333
-    FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp
-    Replacements:    
-      - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
-        Offset:          2821741
-        Length:          0
-        ReplacementText: 'VITIS_LOOP_25333_14: '
-  - DiagnosticName:  xilinx-label-all-loops
-    Message:         'Added loop label VITIS_LOOP_25340_15:  '
-    FileOffset:      25340
-    FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp
-    Replacements:    
-      - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
-        Offset:          2821903
-        Length:          0
-        ReplacementText: 'VITIS_LOOP_25340_15: '
-  - DiagnosticName:  xilinx-label-all-loops
-    Message:         'Added loop label VITIS_LOOP_25343_16:  '
+    Message:         'Added loop label VITIS_LOOP_25343_45:  '
     FileOffset:      25343
     FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp
     Replacements:    
       - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
-        Offset:          2821978
+        Offset:          2822878
         Length:          0
-        ReplacementText: 'VITIS_LOOP_25343_16: '
+        ReplacementText: 'VITIS_LOOP_25343_45: '
   - DiagnosticName:  xilinx-label-all-loops
-    Message:         'Added loop label VITIS_LOOP_25344_17:  '
+    Message:         'Added loop label VITIS_LOOP_25344_46:  '
     FileOffset:      25344
     FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp
     Replacements:    
       - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
-        Offset:          2822015
+        Offset:          2822915
         Length:          0
-        ReplacementText: 'VITIS_LOOP_25344_17: '
-  - DiagnosticName:  xilinx-label-all-loops
-    Message:         'Added loop label VITIS_LOOP_25351_18:  '
-    FileOffset:      25351
-    FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp
-    Replacements:    
-      - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
-        Offset:          2822177
-        Length:          0
-        ReplacementText: 'VITIS_LOOP_25351_18: '
-  - DiagnosticName:  xilinx-label-all-loops
-    Message:         'Added loop label VITIS_LOOP_25354_19:  '
-    FileOffset:      25354
-    FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp
-    Replacements:    
-      - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
-        Offset:          2822252
-        Length:          0
-        ReplacementText: 'VITIS_LOOP_25354_19: '
-  - DiagnosticName:  xilinx-label-all-loops
-    Message:         'Added loop label VITIS_LOOP_25355_20:  '
-    FileOffset:      25355
-    FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp
-    Replacements:    
-      - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
-        Offset:          2822289
-        Length:          0
-        ReplacementText: 'VITIS_LOOP_25355_20: '
-  - DiagnosticName:  xilinx-label-all-loops
-    Message:         'Added loop label VITIS_LOOP_25364_21:  '
-    FileOffset:      25364
-    FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp
-    Replacements:    
-      - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
-        Offset:          2822453
-        Length:          0
-        ReplacementText: 'VITIS_LOOP_25364_21: '
-  - DiagnosticName:  xilinx-label-all-loops
-    Message:         'Added loop label VITIS_LOOP_25365_22:  '
-    FileOffset:      25365
-    FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp
-    Replacements:    
-      - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
-        Offset:          2822490
-        Length:          0
-        ReplacementText: 'VITIS_LOOP_25365_22: '
-  - DiagnosticName:  xilinx-label-all-loops
-    Message:         'Added loop label VITIS_LOOP_25381_23:  '
-    FileOffset:      25381
-    FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp
-    Replacements:    
-      - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
-        Offset:          2822738
-        Length:          0
-        ReplacementText: 'VITIS_LOOP_25381_23: '
-  - DiagnosticName:  xilinx-label-all-loops
-    Message:         'Added loop label VITIS_LOOP_25382_24:  '
-    FileOffset:      25382
-    FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp
-    Replacements:    
-      - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
-        Offset:          2822774
-        Length:          0
-        ReplacementText: 'VITIS_LOOP_25382_24: '
-  - DiagnosticName:  xilinx-label-all-loops
-    Message:         'Added loop label VITIS_LOOP_25387_25:  '
-    FileOffset:      25387
-    FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp
-    Replacements:    
-      - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
-        Offset:          2822903
-        Length:          0
-        ReplacementText: 'VITIS_LOOP_25387_25: '
-  - DiagnosticName:  xilinx-label-all-loops
-    Message:         'Added loop label VITIS_LOOP_25388_26:  '
-    FileOffset:      25388
-    FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp
-    Replacements:    
-      - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
-        Offset:          2822939
-        Length:          0
-        ReplacementText: 'VITIS_LOOP_25388_26: '
-  - DiagnosticName:  xilinx-label-all-loops
-    Message:         'Added loop label VITIS_LOOP_25394_27:  '
-    FileOffset:      25394
-    FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp
-    Replacements:    
-      - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
-        Offset:          2823069
-        Length:          0
-        ReplacementText: 'VITIS_LOOP_25394_27: '
-  - DiagnosticName:  xilinx-label-all-loops
-    Message:         'Added loop label VITIS_LOOP_25395_28:  '
-    FileOffset:      25395
-    FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp
-    Replacements:    
-      - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
-        Offset:          2823105
-        Length:          0
-        ReplacementText: 'VITIS_LOOP_25395_28: '
-  - DiagnosticName:  xilinx-label-all-loops
-    Message:         'Added loop label VITIS_LOOP_25401_29:  '
-    FileOffset:      25401
-    FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp
-    Replacements:    
-      - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
-        Offset:          2823235
-        Length:          0
-        ReplacementText: 'VITIS_LOOP_25401_29: '
-  - DiagnosticName:  xilinx-label-all-loops
-    Message:         'Added loop label VITIS_LOOP_25402_30:  '
-    FileOffset:      25402
-    FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp
-    Replacements:    
-      - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
-        Offset:          2823272
-        Length:          0
-        ReplacementText: 'VITIS_LOOP_25402_30: '
-  - DiagnosticName:  xilinx-label-all-loops
-    Message:         'Added loop label VITIS_LOOP_25406_31:  '
-    FileOffset:      25406
-    FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp
-    Replacements:    
-      - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
-        Offset:          2823358
-        Length:          0
-        ReplacementText: 'VITIS_LOOP_25406_31: '
-  - DiagnosticName:  xilinx-label-all-loops
-    Message:         'Added loop label VITIS_LOOP_25407_32:  '
-    FileOffset:      25407
-    FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp
-    Replacements:    
-      - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
-        Offset:          2823395
-        Length:          0
-        ReplacementText: 'VITIS_LOOP_25407_32: '
-  - DiagnosticName:  xilinx-label-all-loops
-    Message:         'Added loop label VITIS_LOOP_25420_33:  '
-    FileOffset:      25420
-    FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp
-    Replacements:    
-      - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
-        Offset:          2823643
-        Length:          0
-        ReplacementText: 'VITIS_LOOP_25420_33: '
-  - DiagnosticName:  xilinx-label-all-loops
-    Message:         'Added loop label VITIS_LOOP_25421_34:  '
-    FileOffset:      25421
-    FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp
-    Replacements:    
-      - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
-        Offset:          2823679
-        Length:          0
-        ReplacementText: 'VITIS_LOOP_25421_34: '
-  - DiagnosticName:  xilinx-label-all-loops
-    Message:         'Added loop label VITIS_LOOP_25427_35:  '
-    FileOffset:      25427
-    FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp
-    Replacements:    
-      - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
-        Offset:          2823809
-        Length:          0
-        ReplacementText: 'VITIS_LOOP_25427_35: '
-  - DiagnosticName:  xilinx-label-all-loops
-    Message:         'Added loop label VITIS_LOOP_25428_36:  '
-    FileOffset:      25428
-    FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp
-    Replacements:    
-      - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
-        Offset:          2823847
-        Length:          0
-        ReplacementText: 'VITIS_LOOP_25428_36: '
-  - DiagnosticName:  xilinx-label-all-loops
-    Message:         'Added loop label VITIS_LOOP_25435_37:  '
-    FileOffset:      25435
-    FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp
-    Replacements:    
-      - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
-        Offset:          2823992
-        Length:          0
-        ReplacementText: 'VITIS_LOOP_25435_37: '
-  - DiagnosticName:  xilinx-label-all-loops
-    Message:         'Added loop label VITIS_LOOP_25436_38:  '
-    FileOffset:      25436
-    FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp
-    Replacements:    
-      - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
-        Offset:          2824029
-        Length:          0
-        ReplacementText: 'VITIS_LOOP_25436_38: '
-  - DiagnosticName:  xilinx-label-all-loops
-    Message:         'Added loop label VITIS_LOOP_25446_39:  '
-    FileOffset:      25446
-    FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp
-    Replacements:    
-      - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
-        Offset:          2824243
-        Length:          0
-        ReplacementText: 'VITIS_LOOP_25446_39: '
-  - DiagnosticName:  xilinx-label-all-loops
-    Message:         'Added loop label VITIS_LOOP_25447_40:  '
-    FileOffset:      25447
-    FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp
-    Replacements:    
-      - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
-        Offset:          2824279
-        Length:          0
-        ReplacementText: 'VITIS_LOOP_25447_40: '
-  - DiagnosticName:  xilinx-label-all-loops
-    Message:         'Added loop label VITIS_LOOP_25454_41:  '
-    FileOffset:      25454
-    FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp
-    Replacements:    
-      - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
-        Offset:          2824410
-        Length:          0
-        ReplacementText: 'VITIS_LOOP_25454_41: '
-  - DiagnosticName:  xilinx-label-all-loops
-    Message:         'Added loop label VITIS_LOOP_25459_42:  '
-    FileOffset:      25459
-    FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp
-    Replacements:    
-      - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
-        Offset:          2824545
-        Length:          0
-        ReplacementText: 'VITIS_LOOP_25459_42: '
-  - DiagnosticName:  xilinx-label-all-loops
-    Message:         'Added loop label VITIS_LOOP_25460_43:  '
-    FileOffset:      25460
-    FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp
-    Replacements:    
-      - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
-        Offset:          2824581
-        Length:          0
-        ReplacementText: 'VITIS_LOOP_25460_43: '
-  - DiagnosticName:  xilinx-label-all-loops
-    Message:         'Added loop label VITIS_LOOP_25467_44:  '
-    FileOffset:      25467
-    FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp
-    Replacements:    
-      - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
-        Offset:          2824712
-        Length:          0
-        ReplacementText: 'VITIS_LOOP_25467_44: '
-  - DiagnosticName:  xilinx-label-all-loops
-    Message:         'Added loop label VITIS_LOOP_25474_45:  '
-    FileOffset:      25474
-    FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp
-    Replacements:    
-      - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
-        Offset:          2824878
-        Length:          0
-        ReplacementText: 'VITIS_LOOP_25474_45: '
-  - DiagnosticName:  xilinx-label-all-loops
-    Message:         'Added loop label VITIS_LOOP_25475_46:  '
-    FileOffset:      25475
-    FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp
-    Replacements:    
-      - FilePath:        /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp
-        Offset:          2824915
-        Length:          0
-        ReplacementText: 'VITIS_LOOP_25475_46: '
+        ReplacementText: 'VITIS_LOOP_25344_46: '
 ...

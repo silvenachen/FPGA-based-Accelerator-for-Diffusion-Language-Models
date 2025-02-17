@@ -106,7 +106,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2070700704</coreId>
+						<coreId>2705993056</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -142,7 +142,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2074980384</coreId>
+						<coreId>909273951</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -178,7 +178,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2073838192</coreId>
+						<coreId>2707421792</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -203,7 +203,7 @@
 						<name>v142</name>
 						<fileName>/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp</fileName>
 						<fileDirectory>/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock</fileDirectory>
-						<lineNumber>281</lineNumber>
+						<lineNumber>279</lineNumber>
 						<contextFuncName>PE_kernel_modulate_6_0</contextFuncName>
 						<contextNormFuncName>PE_kernel_modulate_6_0</contextNormFuncName>
 						<inlineStackInfo>
@@ -219,7 +219,7 @@
 											<first>/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp</first>
 											<second>PE_kernel_modulate_6_0</second>
 										</first>
-										<second>281</second>
+										<second>279</second>
 									</item>
 								</second>
 							</item>
@@ -259,7 +259,7 @@
 						<name>k6</name>
 						<fileName>/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp</fileName>
 						<fileDirectory>/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock</fileDirectory>
-						<lineNumber>271</lineNumber>
+						<lineNumber>269</lineNumber>
 						<contextFuncName>PE_kernel_modulate_6_0</contextFuncName>
 						<contextNormFuncName>PE_kernel_modulate_6_0</contextNormFuncName>
 						<inlineStackInfo>
@@ -275,7 +275,7 @@
 											<first>/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp</first>
 											<second>PE_kernel_modulate_6_0</second>
 										</first>
-										<second>271</second>
+										<second>269</second>
 									</item>
 								</second>
 							</item>
@@ -288,7 +288,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1344741385</coreId>
+						<coreId>694510703</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>8</bitwidth>
@@ -312,10 +312,10 @@
 					<Obj>
 						<type>0</type>
 						<id>12</id>
-						<name>k6_write_ln271</name>
+						<name>k6_write_ln269</name>
 						<fileName>/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp</fileName>
 						<fileDirectory>/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock</fileDirectory>
-						<lineNumber>271</lineNumber>
+						<lineNumber>269</lineNumber>
 						<contextFuncName>PE_kernel_modulate_6_0</contextFuncName>
 						<contextNormFuncName>PE_kernel_modulate_6_0</contextNormFuncName>
 						<inlineStackInfo>
@@ -331,7 +331,7 @@
 											<first>/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp</first>
 											<second>PE_kernel_modulate_6_0</second>
 										</first>
-										<second>271</second>
+										<second>269</second>
 									</item>
 								</second>
 							</item>
@@ -344,7 +344,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1600939374</coreId>
+						<coreId>1766076244</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -369,10 +369,10 @@
 					<Obj>
 						<type>0</type>
 						<id>13</id>
-						<name>v142_write_ln281</name>
+						<name>v142_write_ln279</name>
 						<fileName>/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp</fileName>
 						<fileDirectory>/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock</fileDirectory>
-						<lineNumber>281</lineNumber>
+						<lineNumber>279</lineNumber>
 						<contextFuncName>PE_kernel_modulate_6_0</contextFuncName>
 						<contextNormFuncName>PE_kernel_modulate_6_0</contextNormFuncName>
 						<inlineStackInfo>
@@ -388,7 +388,7 @@
 											<first>/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp</first>
 											<second>PE_kernel_modulate_6_0</second>
 										</first>
-										<second>281</second>
+										<second>279</second>
 									</item>
 								</second>
 							</item>
@@ -401,7 +401,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1801405776</coreId>
+						<coreId>1701737061</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -426,10 +426,10 @@
 					<Obj>
 						<type>0</type>
 						<id>14</id>
-						<name>br_ln271</name>
+						<name>br_ln269</name>
 						<fileName>/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp</fileName>
 						<fileDirectory>/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock</fileDirectory>
-						<lineNumber>271</lineNumber>
+						<lineNumber>269</lineNumber>
 						<contextFuncName>PE_kernel_modulate_6_0</contextFuncName>
 						<contextNormFuncName>PE_kernel_modulate_6_0</contextNormFuncName>
 						<inlineStackInfo>
@@ -445,7 +445,7 @@
 											<first>/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp</first>
 											<second>PE_kernel_modulate_6_0</second>
 										</first>
-										<second>271</second>
+										<second>269</second>
 									</item>
 								</second>
 							</item>
@@ -458,7 +458,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>151660337</coreId>
+						<coreId>1344741385</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -485,7 +485,7 @@
 						<name>k6_1</name>
 						<fileName>/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp</fileName>
 						<fileDirectory>/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock</fileDirectory>
-						<lineNumber>271</lineNumber>
+						<lineNumber>269</lineNumber>
 						<contextFuncName>PE_kernel_modulate_6_0</contextFuncName>
 						<contextNormFuncName>PE_kernel_modulate_6_0</contextNormFuncName>
 						<inlineStackInfo>
@@ -501,7 +501,7 @@
 											<first>/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp</first>
 											<second>PE_kernel_modulate_6_0</second>
 										</first>
-										<second>271</second>
+										<second>269</second>
 									</item>
 								</second>
 							</item>
@@ -514,7 +514,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>537463335</coreId>
+						<coreId>825111647</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>8</bitwidth>
@@ -539,10 +539,10 @@
 					<Obj>
 						<type>0</type>
 						<id>17</id>
-						<name>icmp_ln271</name>
+						<name>icmp_ln269</name>
 						<fileName>/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp</fileName>
 						<fileDirectory>/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock</fileDirectory>
-						<lineNumber>271</lineNumber>
+						<lineNumber>269</lineNumber>
 						<contextFuncName>PE_kernel_modulate_6_0</contextFuncName>
 						<contextNormFuncName>PE_kernel_modulate_6_0</contextNormFuncName>
 						<inlineStackInfo>
@@ -558,7 +558,7 @@
 											<first>/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp</first>
 											<second>PE_kernel_modulate_6_0</second>
 										</first>
-										<second>271</second>
+										<second>269</second>
 									</item>
 								</second>
 							</item>
@@ -571,7 +571,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>828331083</coreId>
+						<coreId>825307438</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -599,7 +599,7 @@
 						<name>k6_2</name>
 						<fileName>/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp</fileName>
 						<fileDirectory>/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock</fileDirectory>
-						<lineNumber>271</lineNumber>
+						<lineNumber>269</lineNumber>
 						<contextFuncName>PE_kernel_modulate_6_0</contextFuncName>
 						<contextNormFuncName>PE_kernel_modulate_6_0</contextNormFuncName>
 						<inlineStackInfo>
@@ -615,7 +615,7 @@
 											<first>/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp</first>
 											<second>PE_kernel_modulate_6_0</second>
 										</first>
-										<second>271</second>
+										<second>269</second>
 									</item>
 								</second>
 							</item>
@@ -628,7 +628,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1852990827</coreId>
+						<coreId>1801405776</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>8</bitwidth>
@@ -653,10 +653,10 @@
 					<Obj>
 						<type>0</type>
 						<id>19</id>
-						<name>br_ln271</name>
+						<name>br_ln269</name>
 						<fileName>/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp</fileName>
 						<fileDirectory>/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock</fileDirectory>
-						<lineNumber>271</lineNumber>
+						<lineNumber>269</lineNumber>
 						<contextFuncName>PE_kernel_modulate_6_0</contextFuncName>
 						<contextNormFuncName>PE_kernel_modulate_6_0</contextNormFuncName>
 						<inlineStackInfo>
@@ -672,7 +672,7 @@
 											<first>/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp</first>
 											<second>PE_kernel_modulate_6_0</second>
 										</first>
-										<second>271</second>
+										<second>269</second>
 									</item>
 								</second>
 							</item>
@@ -685,7 +685,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1920151394</coreId>
+						<coreId>151660345</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -714,7 +714,7 @@
 						<name>v142_load_1</name>
 						<fileName>/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp</fileName>
 						<fileDirectory>/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock</fileDirectory>
-						<lineNumber>282</lineNumber>
+						<lineNumber>280</lineNumber>
 						<contextFuncName>PE_kernel_modulate_6_0</contextFuncName>
 						<contextNormFuncName>PE_kernel_modulate_6_0</contextNormFuncName>
 						<inlineStackInfo>
@@ -730,7 +730,7 @@
 											<first>/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp</first>
 											<second>PE_kernel_modulate_6_0</second>
 										</first>
-										<second>282</second>
+										<second>280</second>
 									</item>
 								</second>
 							</item>
@@ -743,7 +743,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>757083185</coreId>
+						<coreId>875704622</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -771,7 +771,7 @@
 						<name>A_fifo_6_read</name>
 						<fileName>/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp</fileName>
 						<fileDirectory>/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock</fileDirectory>
-						<lineNumber>272</lineNumber>
+						<lineNumber>270</lineNumber>
 						<contextFuncName>PE_kernel_modulate_6_0</contextFuncName>
 						<contextNormFuncName>PE_kernel_modulate_6_0</contextNormFuncName>
 						<inlineStackInfo>
@@ -787,7 +787,7 @@
 											<first>/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp</first>
 											<second>PE_kernel_modulate_6_0</second>
 										</first>
-										<second>272</second>
+										<second>270</second>
 									</item>
 								</second>
 							</item>
@@ -800,7 +800,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1851858985</coreId>
+						<coreId>858861870</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -828,7 +828,7 @@
 						<name>v135</name>
 						<fileName>/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp</fileName>
 						<fileDirectory>/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock</fileDirectory>
-						<lineNumber>272</lineNumber>
+						<lineNumber>270</lineNumber>
 						<contextFuncName>PE_kernel_modulate_6_0</contextFuncName>
 						<contextNormFuncName>PE_kernel_modulate_6_0</contextNormFuncName>
 						<inlineStackInfo>
@@ -844,7 +844,7 @@
 											<first>/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp</first>
 											<second>PE_kernel_modulate_6_0</second>
 										</first>
-										<second>272</second>
+										<second>270</second>
 									</item>
 								</second>
 							</item>
@@ -857,7 +857,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1936024419</coreId>
+						<coreId>878654303</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -884,7 +884,7 @@
 						<name>B_fifo_6_0_read</name>
 						<fileName>/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp</fileName>
 						<fileDirectory>/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock</fileDirectory>
-						<lineNumber>275</lineNumber>
+						<lineNumber>273</lineNumber>
 						<contextFuncName>PE_kernel_modulate_6_0</contextFuncName>
 						<contextNormFuncName>PE_kernel_modulate_6_0</contextNormFuncName>
 						<inlineStackInfo>
@@ -900,7 +900,7 @@
 											<first>/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp</first>
 											<second>PE_kernel_modulate_6_0</second>
 										</first>
-										<second>275</second>
+										<second>273</second>
 									</item>
 								</second>
 							</item>
@@ -913,7 +913,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1952538484</coreId>
+						<coreId>1014199401</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -941,7 +941,7 @@
 						<name>v137</name>
 						<fileName>/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp</fileName>
 						<fileDirectory>/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock</fileDirectory>
-						<lineNumber>275</lineNumber>
+						<lineNumber>273</lineNumber>
 						<contextFuncName>PE_kernel_modulate_6_0</contextFuncName>
 						<contextNormFuncName>PE_kernel_modulate_6_0</contextNormFuncName>
 						<inlineStackInfo>
@@ -957,7 +957,7 @@
 											<first>/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp</first>
 											<second>PE_kernel_modulate_6_0</second>
 										</first>
-										<second>275</second>
+										<second>273</second>
 									</item>
 								</second>
 							</item>
@@ -970,7 +970,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1143952451</coreId>
+						<coreId>1886352491</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -997,7 +997,7 @@
 						<name>v141</name>
 						<fileName>/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp</fileName>
 						<fileDirectory>/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock</fileDirectory>
-						<lineNumber>280</lineNumber>
+						<lineNumber>278</lineNumber>
 						<contextFuncName>PE_kernel_modulate_6_0</contextFuncName>
 						<contextNormFuncName>PE_kernel_modulate_6_0</contextNormFuncName>
 						<inlineStackInfo>
@@ -1013,7 +1013,7 @@
 											<first>/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp</first>
 											<second>PE_kernel_modulate_6_0</second>
 										</first>
-										<second>280</second>
+										<second>278</second>
 									</item>
 								</second>
 							</item>
@@ -1026,7 +1026,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>757935405</coreId>
+						<coreId>1952</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -1054,7 +1054,7 @@
 						<name>v143</name>
 						<fileName>/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp</fileName>
 						<fileDirectory>/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock</fileDirectory>
-						<lineNumber>282</lineNumber>
+						<lineNumber>280</lineNumber>
 						<contextFuncName>PE_kernel_modulate_6_0</contextFuncName>
 						<contextNormFuncName>PE_kernel_modulate_6_0</contextNormFuncName>
 						<inlineStackInfo>
@@ -1070,7 +1070,7 @@
 											<first>/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp</first>
 											<second>PE_kernel_modulate_6_0</second>
 										</first>
-										<second>282</second>
+										<second>280</second>
 									</item>
 								</second>
 							</item>
@@ -1083,7 +1083,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>543236197</coreId>
+						<coreId>1952803952</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -1108,7 +1108,65 @@
 					<Obj>
 						<type>0</type>
 						<id>31</id>
-						<name>A_fifo_7_write_ln285</name>
+						<name>A_fifo_7_write_ln283</name>
+						<fileName>/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp</fileName>
+						<fileDirectory>/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock</fileDirectory>
+						<lineNumber>283</lineNumber>
+						<contextFuncName>PE_kernel_modulate_6_0</contextFuncName>
+						<contextNormFuncName>PE_kernel_modulate_6_0</contextNormFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp</first>
+											<second>PE_kernel_modulate_6_0</second>
+										</first>
+										<second>283</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<control></control>
+						<opType></opType>
+						<implIndex></implIndex>
+						<coreName></coreName>
+						<isStorage>0</isStorage>
+						<storageDepth>0</storageDepth>
+						<coreId>1600939374</coreId>
+						<rtlModuleName></rtlModuleName>
+					</Obj>
+					<bitwidth>0</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>3</count>
+					<item_version>0</item_version>
+					<item>74</item>
+					<item>75</item>
+					<item>76</item>
+				</oprand_edges>
+				<opcode>write</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>1.39</m_delay>
+				<m_topoIndex>14</m_topoIndex>
+				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_23">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>32</id>
+						<name>B_fifo_6_1_write_ln285</name>
 						<fileName>/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp</fileName>
 						<fileDirectory>/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock</fileDirectory>
 						<lineNumber>285</lineNumber>
@@ -1140,65 +1198,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1953198949</coreId>
-						<rtlModuleName></rtlModuleName>
-					</Obj>
-					<bitwidth>0</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>3</count>
-					<item_version>0</item_version>
-					<item>74</item>
-					<item>75</item>
-					<item>76</item>
-				</oprand_edges>
-				<opcode>write</opcode>
-				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.39</m_delay>
-				<m_topoIndex>14</m_topoIndex>
-				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
-			</item>
-			<item class_id_reference="9" object_id="_23">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>32</id>
-						<name>B_fifo_6_1_write_ln287</name>
-						<fileName>/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp</fileName>
-						<fileDirectory>/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock</fileDirectory>
-						<lineNumber>287</lineNumber>
-						<contextFuncName>PE_kernel_modulate_6_0</contextFuncName>
-						<contextNormFuncName>PE_kernel_modulate_6_0</contextNormFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp</first>
-											<second>PE_kernel_modulate_6_0</second>
-										</first>
-										<second>287</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<control></control>
-						<opType></opType>
-						<implIndex></implIndex>
-						<coreName></coreName>
-						<isStorage>0</isStorage>
-						<storageDepth>0</storageDepth>
-						<coreId>576532785</coreId>
+						<coreId>1701737061</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -1224,10 +1224,10 @@
 					<Obj>
 						<type>0</type>
 						<id>33</id>
-						<name>k6_write_ln271</name>
+						<name>k6_write_ln269</name>
 						<fileName>/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp</fileName>
 						<fileDirectory>/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock</fileDirectory>
-						<lineNumber>271</lineNumber>
+						<lineNumber>269</lineNumber>
 						<contextFuncName>PE_kernel_modulate_6_0</contextFuncName>
 						<contextNormFuncName>PE_kernel_modulate_6_0</contextNormFuncName>
 						<inlineStackInfo>
@@ -1243,7 +1243,7 @@
 											<first>/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp</first>
 											<second>PE_kernel_modulate_6_0</second>
 										</first>
-										<second>271</second>
+										<second>269</second>
 									</item>
 								</second>
 							</item>
@@ -1256,7 +1256,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1931502947</coreId>
+						<coreId>1869770847</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -1283,10 +1283,10 @@
 					<Obj>
 						<type>0</type>
 						<id>34</id>
-						<name>v142_write_ln281</name>
+						<name>v142_write_ln279</name>
 						<fileName>/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp</fileName>
 						<fileDirectory>/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock</fileDirectory>
-						<lineNumber>281</lineNumber>
+						<lineNumber>279</lineNumber>
 						<contextFuncName>PE_kernel_modulate_6_0</contextFuncName>
 						<contextNormFuncName>PE_kernel_modulate_6_0</contextNormFuncName>
 						<inlineStackInfo>
@@ -1302,7 +1302,7 @@
 											<first>/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp</first>
 											<second>PE_kernel_modulate_6_0</second>
 										</first>
-										<second>281</second>
+										<second>279</second>
 									</item>
 								</second>
 							</item>
@@ -1315,7 +1315,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>574043956</coreId>
+						<coreId>842083890</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -1343,10 +1343,10 @@
 					<Obj>
 						<type>0</type>
 						<id>35</id>
-						<name>br_ln271</name>
+						<name>br_ln269</name>
 						<fileName>/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp</fileName>
 						<fileDirectory>/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock</fileDirectory>
-						<lineNumber>271</lineNumber>
+						<lineNumber>269</lineNumber>
 						<contextFuncName>PE_kernel_modulate_6_0</contextFuncName>
 						<contextNormFuncName>PE_kernel_modulate_6_0</contextNormFuncName>
 						<inlineStackInfo>
@@ -1362,7 +1362,7 @@
 											<first>/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp</first>
 											<second>PE_kernel_modulate_6_0</second>
 										</first>
-										<second>271</second>
+										<second>269</second>
 									</item>
 								</second>
 							</item>
@@ -1375,7 +1375,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>574453865</coreId>
+						<coreId>1597202262</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -1402,7 +1402,7 @@
 						<name>v142_load</name>
 						<fileName>/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp</fileName>
 						<fileDirectory>/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock</fileDirectory>
-						<lineNumber>290</lineNumber>
+						<lineNumber>288</lineNumber>
 						<contextFuncName>PE_kernel_modulate_6_0</contextFuncName>
 						<contextNormFuncName>PE_kernel_modulate_6_0</contextNormFuncName>
 						<inlineStackInfo>
@@ -1418,7 +1418,7 @@
 											<first>/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp</first>
 											<second>PE_kernel_modulate_6_0</second>
 										</first>
-										<second>290</second>
+										<second>288</second>
 									</item>
 								</second>
 							</item>
@@ -1431,7 +1431,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1684632935</coreId>
+						<coreId>1769234275</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -1456,10 +1456,10 @@
 					<Obj>
 						<type>0</type>
 						<id>38</id>
-						<name>v130_6_0_write_ln290</name>
+						<name>v130_6_0_write_ln288</name>
 						<fileName>/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp</fileName>
 						<fileDirectory>/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock</fileDirectory>
-						<lineNumber>290</lineNumber>
+						<lineNumber>288</lineNumber>
 						<contextFuncName>PE_kernel_modulate_6_0</contextFuncName>
 						<contextNormFuncName>PE_kernel_modulate_6_0</contextNormFuncName>
 						<inlineStackInfo>
@@ -1475,7 +1475,7 @@
 											<first>/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp</first>
 											<second>PE_kernel_modulate_6_0</second>
 										</first>
-										<second>290</second>
+										<second>288</second>
 									</item>
 								</second>
 							</item>
@@ -1488,7 +1488,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>539111732</coreId>
+						<coreId>997420912</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -1514,10 +1514,10 @@
 					<Obj>
 						<type>0</type>
 						<id>39</id>
-						<name>_ln291</name>
+						<name>_ln289</name>
 						<fileName>/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp</fileName>
 						<fileDirectory>/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock</fileDirectory>
-						<lineNumber>291</lineNumber>
+						<lineNumber>289</lineNumber>
 						<contextFuncName>PE_kernel_modulate_6_0</contextFuncName>
 						<contextNormFuncName>PE_kernel_modulate_6_0</contextNormFuncName>
 						<inlineStackInfo>
@@ -1533,7 +1533,7 @@
 											<first>/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp</first>
 											<second>PE_kernel_modulate_6_0</second>
 										</first>
-										<second>291</second>
+										<second>289</second>
 									</item>
 								</second>
 							</item>
@@ -1546,7 +1546,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1701523307</coreId>
+						<coreId>942747953</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -1591,7 +1591,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1330792532</coreId>
+						<coreId>176</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -1622,7 +1622,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1179535650</coreId>
+						<coreId>2708741088</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>8</bitwidth>
@@ -1653,7 +1653,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1226980729</coreId>
+						<coreId>1414750020</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -1684,7 +1684,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>170340654</coreId>
+						<coreId>943273567</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>8</bitwidth>
@@ -1715,7 +1715,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>657534517</coreId>
+						<coreId>1948262966</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>8</bitwidth>
@@ -1784,7 +1784,7 @@
 					<coreName></coreName>
 					<isStorage>0</isStorage>
 					<storageDepth>0</storageDepth>
-					<coreId>537463335</coreId>
+					<coreId>2707769392</coreId>
 					<rtlModuleName></rtlModuleName>
 				</Obj>
 				<node_objs>
@@ -1818,7 +1818,7 @@
 					<coreName></coreName>
 					<isStorage>0</isStorage>
 					<storageDepth>0</storageDepth>
-					<coreId>1869966953</coreId>
+					<coreId>2704690112</coreId>
 					<rtlModuleName></rtlModuleName>
 				</Obj>
 				<node_objs>
@@ -1860,7 +1860,7 @@
 					<coreName></coreName>
 					<isStorage>0</isStorage>
 					<storageDepth>0</storageDepth>
-					<coreId>1836017711</coreId>
+					<coreId>1414222175</coreId>
 					<rtlModuleName></rtlModuleName>
 				</Obj>
 				<node_objs>

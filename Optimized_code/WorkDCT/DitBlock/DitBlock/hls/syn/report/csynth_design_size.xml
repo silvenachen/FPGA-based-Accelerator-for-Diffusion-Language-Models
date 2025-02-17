@@ -5,26 +5,26 @@
     <item name="Total Instructions per Compilation Phase">
         <table>
             <keys size="4">Phase, Step, Instructions, Description</keys>
-            <column name="Compile/Link">, 99755, After all functions are compiled and linked into a single design</column>
+            <column name="Compile/Link">, 99655, After all functions are compiled and linked into a single design</column>
             <column name="">, , </column>
             <column name="Unroll/Inline">, , After user unroll and inline pragmas are applied</column>
-            <column name="">(1) unroll, 31263, user unroll pragmas are applied</column>
-            <column name="">(2) simplification, 24303, simplification of applied user unroll pragmas</column>
-            <column name="">(3) inline, 24040, user inline pragmas are applied</column>
-            <column name="">(4) simplification, 23374, simplification of applied user inline pragmas</column>
+            <column name="">(1) unroll, 31257, user unroll pragmas are applied</column>
+            <column name="">(2) simplification, 24296, simplification of applied user unroll pragmas</column>
+            <column name="">(3) inline, 24045, user inline pragmas are applied</column>
+            <column name="">(4) simplification, 23379, simplification of applied user inline pragmas</column>
             <column name="">, , </column>
             <column name="Array/Struct">, , After user array partition and struct aggregate/disaggregate pragmas are applied</column>
-            <column name="">(1) array partition, 25051, user array partition pragmas are applied</column>
-            <column name="">(2) simplification, 24501, simplification of applied user array partition &amp; struct aggregate/disaggregate pragmas</column>
-            <column name="">(3) aggregate/disaggregate , 24501, user struct aggregate/disaggregate pragmas are applied</column>
-            <column name="">(4) array reshape, 24435, apply array reshape pragmas</column>
-            <column name="">(5) access patterns, 25003, array access pattern optmizations</column>
+            <column name="">(1) array partition, 24992, user array partition pragmas are applied</column>
+            <column name="">(2) simplification, 24442, simplification of applied user array partition &amp; struct aggregate/disaggregate pragmas</column>
+            <column name="">(3) aggregate/disaggregate , 24442, user struct aggregate/disaggregate pragmas are applied</column>
+            <column name="">(4) array reshape, 24376, apply array reshape pragmas</column>
+            <column name="">(5) access patterns, 24944, array access pattern optmizations</column>
             <column name="">, , </column>
             <column name="Performance">, , After transformations are applied to meet performance pragma targets</column>
-            <column name="">(1) loop simplification, 24388, loop and instruction simplification</column>
-            <column name="">(2) parallelization, 23892, loops are unrolled or pipelined to meet performance targets</column>
-            <column name="">(3) array partition, 23892, arrays are partitioned to meet performance targets</column>
-            <column name="">(4) simplification, 23892, simplification of design after performance transformations</column>
+            <column name="">(1) loop simplification, 24329, loop and instruction simplification</column>
+            <column name="">(2) parallelization, 23833, loops are unrolled or pipelined to meet performance targets</column>
+            <column name="">(3) array partition, 23833, arrays are partitioned to meet performance targets</column>
+            <column name="">(4) simplification, 23833, simplification of design after performance transformations</column>
             <column name="">, , </column>
             <column name="HW Transforms">, pending, After hardware transfomations</column>
         </table>
@@ -33,250 +33,250 @@
         <hiertable>
             <header size="6" col0="Function" col1="Location" col2="Compile/Link" col3="Unroll/Inline" col4="Array/Struct" col5="Performance"/>
             <rows>
-                <row id="0" col0="allo_DDitBlock" col1="kernel.cpp:25228" col2="99755" col3="23374" col4="25003" col5="23892">
-                    <row id="208" col0="adaLN_modulate" col1="kernel.cpp:500" col2="6912" col2_disp="6,912 (6 calls)" col3="2472" col3_disp="2,472 (6 calls)" col4="3558" col4_disp="3,558 (6 calls)" col5="3510" col5_disp="3,510 (6 calls)">
-                        <row id="207" col0="systolic_modulate" col1="kernel.cpp:410" col2="6576" col2_disp="6,576 (6 calls)" col3="" col4="" col5="">
-                            <row id="251" col0="systolic_tile_modulate" col1="kernel.cpp:332" col2="5478" col2_disp="5,478 (6 calls)" col3="" col4="" col5="">
-                                <row id="3" col0="PE_kernel_modulate_0_0" col1="kernel.cpp:20" col2="426" col2_disp="  426 (6 calls)" col3="" col4="" col5=""/>
-                                <row id="122" col0="PE_kernel_modulate_1_0" col1="kernel.cpp:59" col2="426" col2_disp="  426 (6 calls)" col3="" col4="" col5=""/>
-                                <row id="90" col0="PE_kernel_modulate_2_0" col1="kernel.cpp:98" col2="426" col2_disp="  426 (6 calls)" col3="" col4="" col5=""/>
-                                <row id="68" col0="PE_kernel_modulate_3_0" col1="kernel.cpp:137" col2="426" col2_disp="  426 (6 calls)" col3="" col4="" col5=""/>
-                                <row id="79" col0="PE_kernel_modulate_4_0" col1="kernel.cpp:176" col2="426" col2_disp="  426 (6 calls)" col3="" col4="" col5=""/>
-                                <row id="35" col0="PE_kernel_modulate_5_0" col1="kernel.cpp:215" col2="426" col2_disp="  426 (6 calls)" col3="" col4="" col5=""/>
-                                <row id="46" col0="PE_kernel_modulate_6_0" col1="kernel.cpp:254" col2="426" col2_disp="  426 (6 calls)" col3="" col4="" col5=""/>
-                                <row id="24" col0="PE_kernel_modulate_7_0" col1="kernel.cpp:293" col2="426" col2_disp="  426 (6 calls)" col3="" col4="" col5=""/>
+                <row id="0" col0="allo_DDitBlock" col1="kernel.cpp:25094" col2="99655" col3="23379" col4="24944" col5="23833">
+                    <row id="121" col0="adaLN_modulate" col1="kernel.cpp:454" col2="6912" col2_disp="6,912 (6 calls)" col3="2472" col3_disp="2,472 (6 calls)" col4="3558" col4_disp="3,558 (6 calls)" col5="3510" col5_disp="3,510 (6 calls)">
+                        <row id="110" col0="systolic_modulate" col1="kernel.cpp:408" col2="6576" col2_disp="6,576 (6 calls)" col3="" col4="" col5="">
+                            <row id="21" col0="systolic_tile_modulate" col1="kernel.cpp:330" col2="5478" col2_disp="5,478 (6 calls)" col3="" col4="" col5="">
+                                <row id="10" col0="PE_kernel_modulate_0_0" col1="kernel.cpp:18" col2="426" col2_disp="  426 (6 calls)" col3="" col4="" col5=""/>
+                                <row id="27" col0="PE_kernel_modulate_1_0" col1="kernel.cpp:57" col2="426" col2_disp="  426 (6 calls)" col3="" col4="" col5=""/>
+                                <row id="26" col0="PE_kernel_modulate_2_0" col1="kernel.cpp:96" col2="426" col2_disp="  426 (6 calls)" col3="" col4="" col5=""/>
+                                <row id="25" col0="PE_kernel_modulate_3_0" col1="kernel.cpp:135" col2="426" col2_disp="  426 (6 calls)" col3="" col4="" col5=""/>
+                                <row id="17" col0="PE_kernel_modulate_4_0" col1="kernel.cpp:174" col2="426" col2_disp="  426 (6 calls)" col3="" col4="" col5=""/>
+                                <row id="16" col0="PE_kernel_modulate_5_0" col1="kernel.cpp:213" col2="426" col2_disp="  426 (6 calls)" col3="" col4="" col5=""/>
+                                <row id="15" col0="PE_kernel_modulate_6_0" col1="kernel.cpp:252" col2="426" col2_disp="  426 (6 calls)" col3="" col4="" col5=""/>
+                                <row id="23" col0="PE_kernel_modulate_7_0" col1="kernel.cpp:291" col2="426" col2_disp="  426 (6 calls)" col3="" col4="" col5=""/>
                             </row>
                         </row>
-                        <row id="251" col0="systolic_tile_modulate" col1="kernel.cpp:332" col2="" col3="1914" col3_disp="1,914 (6 calls)" col4="2226" col4_disp="2,226 (6 calls)" col5="2178" col5_disp="2,178 (6 calls)">
-                            <row id="3" col0="PE_kernel_modulate_0_0" col1="kernel.cpp:20" col2="" col3="90" col3_disp="   90 (6 calls)" col4="96" col4_disp="   96 (6 calls)" col5="90" col5_disp="   90 (6 calls)"/>
-                            <row id="122" col0="PE_kernel_modulate_1_0" col1="kernel.cpp:59" col2="" col3="90" col3_disp="   90 (6 calls)" col4="96" col4_disp="   96 (6 calls)" col5="90" col5_disp="   90 (6 calls)"/>
-                            <row id="90" col0="PE_kernel_modulate_2_0" col1="kernel.cpp:98" col2="" col3="90" col3_disp="   90 (6 calls)" col4="96" col4_disp="   96 (6 calls)" col5="90" col5_disp="   90 (6 calls)"/>
-                            <row id="68" col0="PE_kernel_modulate_3_0" col1="kernel.cpp:137" col2="" col3="90" col3_disp="   90 (6 calls)" col4="96" col4_disp="   96 (6 calls)" col5="90" col5_disp="   90 (6 calls)"/>
-                            <row id="79" col0="PE_kernel_modulate_4_0" col1="kernel.cpp:176" col2="" col3="90" col3_disp="   90 (6 calls)" col4="96" col4_disp="   96 (6 calls)" col5="90" col5_disp="   90 (6 calls)"/>
-                            <row id="35" col0="PE_kernel_modulate_5_0" col1="kernel.cpp:215" col2="" col3="90" col3_disp="   90 (6 calls)" col4="96" col4_disp="   96 (6 calls)" col5="90" col5_disp="   90 (6 calls)"/>
-                            <row id="46" col0="PE_kernel_modulate_6_0" col1="kernel.cpp:254" col2="" col3="90" col3_disp="   90 (6 calls)" col4="96" col4_disp="   96 (6 calls)" col5="90" col5_disp="   90 (6 calls)"/>
-                            <row id="24" col0="PE_kernel_modulate_7_0" col1="kernel.cpp:293" col2="" col3="90" col3_disp="   90 (6 calls)" col4="96" col4_disp="   96 (6 calls)" col5="90" col5_disp="   90 (6 calls)"/>
+                        <row id="21" col0="systolic_tile_modulate" col1="kernel.cpp:330" col2="" col3="1914" col3_disp="1,914 (6 calls)" col4="2226" col4_disp="2,226 (6 calls)" col5="2178" col5_disp="2,178 (6 calls)">
+                            <row id="10" col0="PE_kernel_modulate_0_0" col1="kernel.cpp:18" col2="" col3="90" col3_disp="   90 (6 calls)" col4="96" col4_disp="   96 (6 calls)" col5="90" col5_disp="   90 (6 calls)"/>
+                            <row id="27" col0="PE_kernel_modulate_1_0" col1="kernel.cpp:57" col2="" col3="90" col3_disp="   90 (6 calls)" col4="96" col4_disp="   96 (6 calls)" col5="90" col5_disp="   90 (6 calls)"/>
+                            <row id="26" col0="PE_kernel_modulate_2_0" col1="kernel.cpp:96" col2="" col3="90" col3_disp="   90 (6 calls)" col4="96" col4_disp="   96 (6 calls)" col5="90" col5_disp="   90 (6 calls)"/>
+                            <row id="25" col0="PE_kernel_modulate_3_0" col1="kernel.cpp:135" col2="" col3="90" col3_disp="   90 (6 calls)" col4="96" col4_disp="   96 (6 calls)" col5="90" col5_disp="   90 (6 calls)"/>
+                            <row id="17" col0="PE_kernel_modulate_4_0" col1="kernel.cpp:174" col2="" col3="90" col3_disp="   90 (6 calls)" col4="96" col4_disp="   96 (6 calls)" col5="90" col5_disp="   90 (6 calls)"/>
+                            <row id="16" col0="PE_kernel_modulate_5_0" col1="kernel.cpp:213" col2="" col3="90" col3_disp="   90 (6 calls)" col4="96" col4_disp="   96 (6 calls)" col5="90" col5_disp="   90 (6 calls)"/>
+                            <row id="15" col0="PE_kernel_modulate_6_0" col1="kernel.cpp:252" col2="" col3="90" col3_disp="   90 (6 calls)" col4="96" col4_disp="   96 (6 calls)" col5="90" col5_disp="   90 (6 calls)"/>
+                            <row id="23" col0="PE_kernel_modulate_7_0" col1="kernel.cpp:291" col2="" col3="90" col3_disp="   90 (6 calls)" col4="96" col4_disp="   96 (6 calls)" col5="90" col5_disp="   90 (6 calls)"/>
                         </row>
                     </row>
-                    <row id="206" col0="layer_norm" col1="kernel.cpp:610" col2="495" col2_disp="  495 (3 calls)" col3="279" col3_disp="  279 (3 calls)" col4="285" col4_disp="  285 (3 calls)" col5="279" col5_disp="  279 (3 calls)"/>
-                    <row id="200" col0="modulate_fused" col1="kernel.cpp:671" col2="80" col2_disp="   80 (2 calls)" col3="" col4="" col5=""/>
-                    <row id="63" col0="systolic_Q" col1="kernel.cpp:3611" col2="37284" col2_disp="37,284 (6 calls)" col3="14010" col3_disp="14,010 (6 calls)" col4="14418" col4_disp="14,418 (6 calls)" col5="13662" col5_disp="13,662 (6 calls)">
-                        <row id="65" col0="systolic_tile_Q" col1="kernel.cpp:3250" col2="36162" col2_disp="36,162 (6 calls)" col3="12780" col3_disp="12,780 (6 calls)" col4="12402" col4_disp="12,402 (6 calls)" col5="11646" col5_disp="11,646 (6 calls)">
-                            <row id="199" col0="PE_kernel_Q_0_0" col1="kernel.cpp:690" col2="432" col2_disp="  432 (6 calls)" col3="90" col3_disp="   90 (6 calls)" col4="90" col4_disp="   90 (6 calls)" col5="84" col5_disp="   84 (6 calls)"/>
-                            <row id="198" col0="PE_kernel_Q_1_0" col1="kernel.cpp:730" col2="432" col2_disp="  432 (6 calls)" col3="90" col3_disp="   90 (6 calls)" col4="90" col4_disp="   90 (6 calls)" col5="84" col5_disp="   84 (6 calls)"/>
-                            <row id="160" col0="PE_kernel_Q_2_0" col1="kernel.cpp:770" col2="432" col2_disp="  432 (6 calls)" col3="90" col3_disp="   90 (6 calls)" col4="90" col4_disp="   90 (6 calls)" col5="84" col5_disp="   84 (6 calls)"/>
-                            <row id="161" col0="PE_kernel_Q_3_0" col1="kernel.cpp:810" col2="432" col2_disp="  432 (6 calls)" col3="90" col3_disp="   90 (6 calls)" col4="90" col4_disp="   90 (6 calls)" col5="84" col5_disp="   84 (6 calls)"/>
-                            <row id="162" col0="PE_kernel_Q_4_0" col1="kernel.cpp:850" col2="432" col2_disp="  432 (6 calls)" col3="90" col3_disp="   90 (6 calls)" col4="90" col4_disp="   90 (6 calls)" col5="84" col5_disp="   84 (6 calls)"/>
-                            <row id="164" col0="PE_kernel_Q_5_0" col1="kernel.cpp:890" col2="432" col2_disp="  432 (6 calls)" col3="90" col3_disp="   90 (6 calls)" col4="90" col4_disp="   90 (6 calls)" col5="84" col5_disp="   84 (6 calls)"/>
-                            <row id="165" col0="PE_kernel_Q_6_0" col1="kernel.cpp:930" col2="432" col2_disp="  432 (6 calls)" col3="90" col3_disp="   90 (6 calls)" col4="90" col4_disp="   90 (6 calls)" col5="84" col5_disp="   84 (6 calls)"/>
-                            <row id="172" col0="PE_kernel_Q_7_0" col1="kernel.cpp:970" col2="432" col2_disp="  432 (6 calls)" col3="90" col3_disp="   90 (6 calls)" col4="90" col4_disp="   90 (6 calls)" col5="84" col5_disp="   84 (6 calls)"/>
-                            <row id="173" col0="PE_kernel_Q_0_1" col1="kernel.cpp:1010" col2="432" col2_disp="  432 (6 calls)" col3="90" col3_disp="   90 (6 calls)" col4="90" col4_disp="   90 (6 calls)" col5="84" col5_disp="   84 (6 calls)"/>
-                            <row id="175" col0="PE_kernel_Q_1_1" col1="kernel.cpp:1050" col2="432" col2_disp="  432 (6 calls)" col3="90" col3_disp="   90 (6 calls)" col4="90" col4_disp="   90 (6 calls)" col5="84" col5_disp="   84 (6 calls)"/>
-                            <row id="180" col0="PE_kernel_Q_2_1" col1="kernel.cpp:1090" col2="432" col2_disp="  432 (6 calls)" col3="90" col3_disp="   90 (6 calls)" col4="90" col4_disp="   90 (6 calls)" col5="84" col5_disp="   84 (6 calls)"/>
-                            <row id="181" col0="PE_kernel_Q_3_1" col1="kernel.cpp:1130" col2="432" col2_disp="  432 (6 calls)" col3="90" col3_disp="   90 (6 calls)" col4="90" col4_disp="   90 (6 calls)" col5="84" col5_disp="   84 (6 calls)"/>
-                            <row id="185" col0="PE_kernel_Q_4_1" col1="kernel.cpp:1170" col2="432" col2_disp="  432 (6 calls)" col3="90" col3_disp="   90 (6 calls)" col4="90" col4_disp="   90 (6 calls)" col5="84" col5_disp="   84 (6 calls)"/>
-                            <row id="186" col0="PE_kernel_Q_5_1" col1="kernel.cpp:1210" col2="432" col2_disp="  432 (6 calls)" col3="90" col3_disp="   90 (6 calls)" col4="90" col4_disp="   90 (6 calls)" col5="84" col5_disp="   84 (6 calls)"/>
-                            <row id="189" col0="PE_kernel_Q_6_1" col1="kernel.cpp:1250" col2="432" col2_disp="  432 (6 calls)" col3="90" col3_disp="   90 (6 calls)" col4="90" col4_disp="   90 (6 calls)" col5="84" col5_disp="   84 (6 calls)"/>
-                            <row id="190" col0="PE_kernel_Q_7_1" col1="kernel.cpp:1290" col2="432" col2_disp="  432 (6 calls)" col3="90" col3_disp="   90 (6 calls)" col4="90" col4_disp="   90 (6 calls)" col5="84" col5_disp="   84 (6 calls)"/>
-                            <row id="191" col0="PE_kernel_Q_0_2" col1="kernel.cpp:1330" col2="432" col2_disp="  432 (6 calls)" col3="90" col3_disp="   90 (6 calls)" col4="90" col4_disp="   90 (6 calls)" col5="84" col5_disp="   84 (6 calls)"/>
-                            <row id="117" col0="PE_kernel_Q_1_2" col1="kernel.cpp:1370" col2="432" col2_disp="  432 (6 calls)" col3="90" col3_disp="   90 (6 calls)" col4="90" col4_disp="   90 (6 calls)" col5="84" col5_disp="   84 (6 calls)"/>
-                            <row id="116" col0="PE_kernel_Q_2_2" col1="kernel.cpp:1410" col2="432" col2_disp="  432 (6 calls)" col3="90" col3_disp="   90 (6 calls)" col4="90" col4_disp="   90 (6 calls)" col5="84" col5_disp="   84 (6 calls)"/>
-                            <row id="121" col0="PE_kernel_Q_3_2" col1="kernel.cpp:1450" col2="432" col2_disp="  432 (6 calls)" col3="90" col3_disp="   90 (6 calls)" col4="90" col4_disp="   90 (6 calls)" col5="84" col5_disp="   84 (6 calls)"/>
-                            <row id="118" col0="PE_kernel_Q_4_2" col1="kernel.cpp:1490" col2="432" col2_disp="  432 (6 calls)" col3="90" col3_disp="   90 (6 calls)" col4="90" col4_disp="   90 (6 calls)" col5="84" col5_disp="   84 (6 calls)"/>
-                            <row id="127" col0="PE_kernel_Q_5_2" col1="kernel.cpp:1530" col2="432" col2_disp="  432 (6 calls)" col3="90" col3_disp="   90 (6 calls)" col4="90" col4_disp="   90 (6 calls)" col5="84" col5_disp="   84 (6 calls)"/>
-                            <row id="136" col0="PE_kernel_Q_6_2" col1="kernel.cpp:1570" col2="432" col2_disp="  432 (6 calls)" col3="90" col3_disp="   90 (6 calls)" col4="90" col4_disp="   90 (6 calls)" col5="84" col5_disp="   84 (6 calls)"/>
-                            <row id="135" col0="PE_kernel_Q_7_2" col1="kernel.cpp:1610" col2="432" col2_disp="  432 (6 calls)" col3="90" col3_disp="   90 (6 calls)" col4="90" col4_disp="   90 (6 calls)" col5="84" col5_disp="   84 (6 calls)"/>
-                            <row id="140" col0="PE_kernel_Q_0_3" col1="kernel.cpp:1650" col2="432" col2_disp="  432 (6 calls)" col3="90" col3_disp="   90 (6 calls)" col4="90" col4_disp="   90 (6 calls)" col5="84" col5_disp="   84 (6 calls)"/>
-                            <row id="138" col0="PE_kernel_Q_1_3" col1="kernel.cpp:1690" col2="432" col2_disp="  432 (6 calls)" col3="90" col3_disp="   90 (6 calls)" col4="90" col4_disp="   90 (6 calls)" col5="84" col5_disp="   84 (6 calls)"/>
-                            <row id="141" col0="PE_kernel_Q_2_3" col1="kernel.cpp:1730" col2="432" col2_disp="  432 (6 calls)" col3="90" col3_disp="   90 (6 calls)" col4="90" col4_disp="   90 (6 calls)" col5="84" col5_disp="   84 (6 calls)"/>
-                            <row id="146" col0="PE_kernel_Q_3_3" col1="kernel.cpp:1770" col2="432" col2_disp="  432 (6 calls)" col3="90" col3_disp="   90 (6 calls)" col4="90" col4_disp="   90 (6 calls)" col5="84" col5_disp="   84 (6 calls)"/>
-                            <row id="145" col0="PE_kernel_Q_4_3" col1="kernel.cpp:1810" col2="432" col2_disp="  432 (6 calls)" col3="90" col3_disp="   90 (6 calls)" col4="90" col4_disp="   90 (6 calls)" col5="84" col5_disp="   84 (6 calls)"/>
-                            <row id="149" col0="PE_kernel_Q_5_3" col1="kernel.cpp:1850" col2="432" col2_disp="  432 (6 calls)" col3="90" col3_disp="   90 (6 calls)" col4="90" col4_disp="   90 (6 calls)" col5="84" col5_disp="   84 (6 calls)"/>
-                            <row id="147" col0="PE_kernel_Q_6_3" col1="kernel.cpp:1890" col2="432" col2_disp="  432 (6 calls)" col3="90" col3_disp="   90 (6 calls)" col4="90" col4_disp="   90 (6 calls)" col5="84" col5_disp="   84 (6 calls)"/>
-                            <row id="151" col0="PE_kernel_Q_7_3" col1="kernel.cpp:1930" col2="432" col2_disp="  432 (6 calls)" col3="90" col3_disp="   90 (6 calls)" col4="90" col4_disp="   90 (6 calls)" col5="84" col5_disp="   84 (6 calls)"/>
-                            <row id="154" col0="PE_kernel_Q_0_4" col1="kernel.cpp:1970" col2="432" col2_disp="  432 (6 calls)" col3="90" col3_disp="   90 (6 calls)" col4="90" col4_disp="   90 (6 calls)" col5="84" col5_disp="   84 (6 calls)"/>
-                            <row id="76" col0="PE_kernel_Q_1_4" col1="kernel.cpp:2010" col2="432" col2_disp="  432 (6 calls)" col3="90" col3_disp="   90 (6 calls)" col4="90" col4_disp="   90 (6 calls)" col5="84" col5_disp="   84 (6 calls)"/>
-                            <row id="77" col0="PE_kernel_Q_2_4" col1="kernel.cpp:2050" col2="432" col2_disp="  432 (6 calls)" col3="90" col3_disp="   90 (6 calls)" col4="90" col4_disp="   90 (6 calls)" col5="84" col5_disp="   84 (6 calls)"/>
-                            <row id="72" col0="PE_kernel_Q_3_4" col1="kernel.cpp:2090" col2="432" col2_disp="  432 (6 calls)" col3="90" col3_disp="   90 (6 calls)" col4="90" col4_disp="   90 (6 calls)" col5="84" col5_disp="   84 (6 calls)"/>
-                            <row id="74" col0="PE_kernel_Q_4_4" col1="kernel.cpp:2130" col2="432" col2_disp="  432 (6 calls)" col3="90" col3_disp="   90 (6 calls)" col4="90" col4_disp="   90 (6 calls)" col5="84" col5_disp="   84 (6 calls)"/>
-                            <row id="89" col0="PE_kernel_Q_5_4" col1="kernel.cpp:2170" col2="432" col2_disp="  432 (6 calls)" col3="90" col3_disp="   90 (6 calls)" col4="90" col4_disp="   90 (6 calls)" col5="84" col5_disp="   84 (6 calls)"/>
-                            <row id="82" col0="PE_kernel_Q_6_4" col1="kernel.cpp:2210" col2="432" col2_disp="  432 (6 calls)" col3="90" col3_disp="   90 (6 calls)" col4="90" col4_disp="   90 (6 calls)" col5="84" col5_disp="   84 (6 calls)"/>
-                            <row id="84" col0="PE_kernel_Q_7_4" col1="kernel.cpp:2250" col2="432" col2_disp="  432 (6 calls)" col3="90" col3_disp="   90 (6 calls)" col4="90" col4_disp="   90 (6 calls)" col5="84" col5_disp="   84 (6 calls)"/>
-                            <row id="91" col0="PE_kernel_Q_0_5" col1="kernel.cpp:2290" col2="432" col2_disp="  432 (6 calls)" col3="90" col3_disp="   90 (6 calls)" col4="90" col4_disp="   90 (6 calls)" col5="84" col5_disp="   84 (6 calls)"/>
-                            <row id="92" col0="PE_kernel_Q_1_5" col1="kernel.cpp:2330" col2="432" col2_disp="  432 (6 calls)" col3="90" col3_disp="   90 (6 calls)" col4="90" col4_disp="   90 (6 calls)" col5="84" col5_disp="   84 (6 calls)"/>
-                            <row id="95" col0="PE_kernel_Q_2_5" col1="kernel.cpp:2370" col2="432" col2_disp="  432 (6 calls)" col3="90" col3_disp="   90 (6 calls)" col4="90" col4_disp="   90 (6 calls)" col5="84" col5_disp="   84 (6 calls)"/>
-                            <row id="103" col0="PE_kernel_Q_3_5" col1="kernel.cpp:2410" col2="432" col2_disp="  432 (6 calls)" col3="90" col3_disp="   90 (6 calls)" col4="90" col4_disp="   90 (6 calls)" col5="84" col5_disp="   84 (6 calls)"/>
-                            <row id="104" col0="PE_kernel_Q_4_5" col1="kernel.cpp:2450" col2="432" col2_disp="  432 (6 calls)" col3="90" col3_disp="   90 (6 calls)" col4="90" col4_disp="   90 (6 calls)" col5="84" col5_disp="   84 (6 calls)"/>
-                            <row id="98" col0="PE_kernel_Q_5_5" col1="kernel.cpp:2490" col2="432" col2_disp="  432 (6 calls)" col3="90" col3_disp="   90 (6 calls)" col4="90" col4_disp="   90 (6 calls)" col5="84" col5_disp="   84 (6 calls)"/>
-                            <row id="101" col0="PE_kernel_Q_6_5" col1="kernel.cpp:2530" col2="432" col2_disp="  432 (6 calls)" col3="90" col3_disp="   90 (6 calls)" col4="90" col4_disp="   90 (6 calls)" col5="84" col5_disp="   84 (6 calls)"/>
-                            <row id="108" col0="PE_kernel_Q_7_5" col1="kernel.cpp:2570" col2="432" col2_disp="  432 (6 calls)" col3="90" col3_disp="   90 (6 calls)" col4="90" col4_disp="   90 (6 calls)" col5="84" col5_disp="   84 (6 calls)"/>
-                            <row id="106" col0="PE_kernel_Q_0_6" col1="kernel.cpp:2610" col2="432" col2_disp="  432 (6 calls)" col3="90" col3_disp="   90 (6 calls)" col4="90" col4_disp="   90 (6 calls)" col5="84" col5_disp="   84 (6 calls)"/>
-                            <row id="109" col0="PE_kernel_Q_1_6" col1="kernel.cpp:2650" col2="432" col2_disp="  432 (6 calls)" col3="90" col3_disp="   90 (6 calls)" col4="90" col4_disp="   90 (6 calls)" col5="84" col5_disp="   84 (6 calls)"/>
-                            <row id="38" col0="PE_kernel_Q_2_6" col1="kernel.cpp:2690" col2="432" col2_disp="  432 (6 calls)" col3="90" col3_disp="   90 (6 calls)" col4="90" col4_disp="   90 (6 calls)" col5="84" col5_disp="   84 (6 calls)"/>
-                            <row id="36" col0="PE_kernel_Q_3_6" col1="kernel.cpp:2730" col2="432" col2_disp="  432 (6 calls)" col3="90" col3_disp="   90 (6 calls)" col4="90" col4_disp="   90 (6 calls)" col5="84" col5_disp="   84 (6 calls)"/>
-                            <row id="45" col0="PE_kernel_Q_4_6" col1="kernel.cpp:2770" col2="432" col2_disp="  432 (6 calls)" col3="90" col3_disp="   90 (6 calls)" col4="90" col4_disp="   90 (6 calls)" col5="84" col5_disp="   84 (6 calls)"/>
-                            <row id="44" col0="PE_kernel_Q_5_6" col1="kernel.cpp:2810" col2="432" col2_disp="  432 (6 calls)" col3="90" col3_disp="   90 (6 calls)" col4="90" col4_disp="   90 (6 calls)" col5="84" col5_disp="   84 (6 calls)"/>
-                            <row id="42" col0="PE_kernel_Q_6_6" col1="kernel.cpp:2850" col2="432" col2_disp="  432 (6 calls)" col3="90" col3_disp="   90 (6 calls)" col4="90" col4_disp="   90 (6 calls)" col5="84" col5_disp="   84 (6 calls)"/>
-                            <row id="40" col0="PE_kernel_Q_7_6" col1="kernel.cpp:2890" col2="432" col2_disp="  432 (6 calls)" col3="90" col3_disp="   90 (6 calls)" col4="90" col4_disp="   90 (6 calls)" col5="84" col5_disp="   84 (6 calls)"/>
-                            <row id="48" col0="PE_kernel_Q_0_7" col1="kernel.cpp:2930" col2="432" col2_disp="  432 (6 calls)" col3="90" col3_disp="   90 (6 calls)" col4="90" col4_disp="   90 (6 calls)" col5="84" col5_disp="   84 (6 calls)"/>
-                            <row id="50" col0="PE_kernel_Q_1_7" col1="kernel.cpp:2970" col2="432" col2_disp="  432 (6 calls)" col3="90" col3_disp="   90 (6 calls)" col4="90" col4_disp="   90 (6 calls)" col5="84" col5_disp="   84 (6 calls)"/>
-                            <row id="49" col0="PE_kernel_Q_2_7" col1="kernel.cpp:3010" col2="432" col2_disp="  432 (6 calls)" col3="90" col3_disp="   90 (6 calls)" col4="90" col4_disp="   90 (6 calls)" col5="84" col5_disp="   84 (6 calls)"/>
-                            <row id="58" col0="PE_kernel_Q_3_7" col1="kernel.cpp:3050" col2="432" col2_disp="  432 (6 calls)" col3="90" col3_disp="   90 (6 calls)" col4="90" col4_disp="   90 (6 calls)" col5="84" col5_disp="   84 (6 calls)"/>
-                            <row id="56" col0="PE_kernel_Q_4_7" col1="kernel.cpp:3090" col2="432" col2_disp="  432 (6 calls)" col3="90" col3_disp="   90 (6 calls)" col4="90" col4_disp="   90 (6 calls)" col5="84" col5_disp="   84 (6 calls)"/>
-                            <row id="53" col0="PE_kernel_Q_5_7" col1="kernel.cpp:3130" col2="432" col2_disp="  432 (6 calls)" col3="90" col3_disp="   90 (6 calls)" col4="90" col4_disp="   90 (6 calls)" col5="84" col5_disp="   84 (6 calls)"/>
-                            <row id="71" col0="PE_kernel_Q_6_7" col1="kernel.cpp:3170" col2="432" col2_disp="  432 (6 calls)" col3="90" col3_disp="   90 (6 calls)" col4="90" col4_disp="   90 (6 calls)" col5="84" col5_disp="   84 (6 calls)"/>
-                            <row id="67" col0="PE_kernel_Q_7_7" col1="kernel.cpp:3210" col2="432" col2_disp="  432 (6 calls)" col3="90" col3_disp="   90 (6 calls)" col4="90" col4_disp="   90 (6 calls)" col5="84" col5_disp="   84 (6 calls)"/>
+                    <row id="122" col0="layer_norm" col1="kernel.cpp:481" col2="489" col2_disp="  489 (3 calls)" col3="273" col3_disp="  273 (3 calls)" col4="279" col4_disp="  279 (3 calls)" col5="273" col5_disp="  273 (3 calls)"/>
+                    <row id="82" col0="modulate_fused" col1="kernel.cpp:539" col2="80" col2_disp="   80 (2 calls)" col3="" col4="" col5=""/>
+                    <row id="211" col0="systolic_Q" col1="kernel.cpp:3479" col2="37332" col2_disp="37,332 (6 calls)" col3="14082" col3_disp="14,082 (6 calls)" col4="14442" col4_disp="14,442 (6 calls)" col5="13686" col5_disp="13,686 (6 calls)">
+                        <row id="213" col0="systolic_tile_Q" col1="kernel.cpp:3118" col2="36162" col2_disp="36,162 (6 calls)" col3="12780" col3_disp="12,780 (6 calls)" col4="12402" col4_disp="12,402 (6 calls)" col5="11646" col5_disp="11,646 (6 calls)">
+                            <row id="84" col0="PE_kernel_Q_0_0" col1="kernel.cpp:558" col2="432" col2_disp="  432 (6 calls)" col3="90" col3_disp="   90 (6 calls)" col4="90" col4_disp="   90 (6 calls)" col5="84" col5_disp="   84 (6 calls)"/>
+                            <row id="76" col0="PE_kernel_Q_1_0" col1="kernel.cpp:598" col2="432" col2_disp="  432 (6 calls)" col3="90" col3_disp="   90 (6 calls)" col4="90" col4_disp="   90 (6 calls)" col5="84" col5_disp="   84 (6 calls)"/>
+                            <row id="74" col0="PE_kernel_Q_2_0" col1="kernel.cpp:638" col2="432" col2_disp="  432 (6 calls)" col3="90" col3_disp="   90 (6 calls)" col4="90" col4_disp="   90 (6 calls)" col5="84" col5_disp="   84 (6 calls)"/>
+                            <row id="78" col0="PE_kernel_Q_3_0" col1="kernel.cpp:678" col2="432" col2_disp="  432 (6 calls)" col3="90" col3_disp="   90 (6 calls)" col4="90" col4_disp="   90 (6 calls)" col5="84" col5_disp="   84 (6 calls)"/>
+                            <row id="70" col0="PE_kernel_Q_4_0" col1="kernel.cpp:718" col2="432" col2_disp="  432 (6 calls)" col3="90" col3_disp="   90 (6 calls)" col4="90" col4_disp="   90 (6 calls)" col5="84" col5_disp="   84 (6 calls)"/>
+                            <row id="72" col0="PE_kernel_Q_5_0" col1="kernel.cpp:758" col2="432" col2_disp="  432 (6 calls)" col3="90" col3_disp="   90 (6 calls)" col4="90" col4_disp="   90 (6 calls)" col5="84" col5_disp="   84 (6 calls)"/>
+                            <row id="71" col0="PE_kernel_Q_6_0" col1="kernel.cpp:798" col2="432" col2_disp="  432 (6 calls)" col3="90" col3_disp="   90 (6 calls)" col4="90" col4_disp="   90 (6 calls)" col5="84" col5_disp="   84 (6 calls)"/>
+                            <row id="102" col0="PE_kernel_Q_7_0" col1="kernel.cpp:838" col2="432" col2_disp="  432 (6 calls)" col3="90" col3_disp="   90 (6 calls)" col4="90" col4_disp="   90 (6 calls)" col5="84" col5_disp="   84 (6 calls)"/>
+                            <row id="100" col0="PE_kernel_Q_0_1" col1="kernel.cpp:878" col2="432" col2_disp="  432 (6 calls)" col3="90" col3_disp="   90 (6 calls)" col4="90" col4_disp="   90 (6 calls)" col5="84" col5_disp="   84 (6 calls)"/>
+                            <row id="98" col0="PE_kernel_Q_1_1" col1="kernel.cpp:918" col2="432" col2_disp="  432 (6 calls)" col3="90" col3_disp="   90 (6 calls)" col4="90" col4_disp="   90 (6 calls)" col5="84" col5_disp="   84 (6 calls)"/>
+                            <row id="92" col0="PE_kernel_Q_2_1" col1="kernel.cpp:958" col2="432" col2_disp="  432 (6 calls)" col3="90" col3_disp="   90 (6 calls)" col4="90" col4_disp="   90 (6 calls)" col5="84" col5_disp="   84 (6 calls)"/>
+                            <row id="91" col0="PE_kernel_Q_3_1" col1="kernel.cpp:998" col2="432" col2_disp="  432 (6 calls)" col3="90" col3_disp="   90 (6 calls)" col4="90" col4_disp="   90 (6 calls)" col5="84" col5_disp="   84 (6 calls)"/>
+                            <row id="95" col0="PE_kernel_Q_4_1" col1="kernel.cpp:1038" col2="432" col2_disp="  432 (6 calls)" col3="90" col3_disp="   90 (6 calls)" col4="90" col4_disp="   90 (6 calls)" col5="84" col5_disp="   84 (6 calls)"/>
+                            <row id="94" col0="PE_kernel_Q_5_1" col1="kernel.cpp:1078" col2="432" col2_disp="  432 (6 calls)" col3="90" col3_disp="   90 (6 calls)" col4="90" col4_disp="   90 (6 calls)" col5="84" col5_disp="   84 (6 calls)"/>
+                            <row id="180" col0="PE_kernel_Q_6_1" col1="kernel.cpp:1118" col2="432" col2_disp="  432 (6 calls)" col3="90" col3_disp="   90 (6 calls)" col4="90" col4_disp="   90 (6 calls)" col5="84" col5_disp="   84 (6 calls)"/>
+                            <row id="175" col0="PE_kernel_Q_7_1" col1="kernel.cpp:1158" col2="432" col2_disp="  432 (6 calls)" col3="90" col3_disp="   90 (6 calls)" col4="90" col4_disp="   90 (6 calls)" col5="84" col5_disp="   84 (6 calls)"/>
+                            <row id="176" col0="PE_kernel_Q_0_2" col1="kernel.cpp:1198" col2="432" col2_disp="  432 (6 calls)" col3="90" col3_disp="   90 (6 calls)" col4="90" col4_disp="   90 (6 calls)" col5="84" col5_disp="   84 (6 calls)"/>
+                            <row id="172" col0="PE_kernel_Q_1_2" col1="kernel.cpp:1238" col2="432" col2_disp="  432 (6 calls)" col3="90" col3_disp="   90 (6 calls)" col4="90" col4_disp="   90 (6 calls)" col5="84" col5_disp="   84 (6 calls)"/>
+                            <row id="173" col0="PE_kernel_Q_2_2" col1="kernel.cpp:1278" col2="432" col2_disp="  432 (6 calls)" col3="90" col3_disp="   90 (6 calls)" col4="90" col4_disp="   90 (6 calls)" col5="84" col5_disp="   84 (6 calls)"/>
+                            <row id="166" col0="PE_kernel_Q_3_2" col1="kernel.cpp:1318" col2="432" col2_disp="  432 (6 calls)" col3="90" col3_disp="   90 (6 calls)" col4="90" col4_disp="   90 (6 calls)" col5="84" col5_disp="   84 (6 calls)"/>
+                            <row id="167" col0="PE_kernel_Q_4_2" col1="kernel.cpp:1358" col2="432" col2_disp="  432 (6 calls)" col3="90" col3_disp="   90 (6 calls)" col4="90" col4_disp="   90 (6 calls)" col5="84" col5_disp="   84 (6 calls)"/>
+                            <row id="169" col0="PE_kernel_Q_5_2" col1="kernel.cpp:1398" col2="432" col2_disp="  432 (6 calls)" col3="90" col3_disp="   90 (6 calls)" col4="90" col4_disp="   90 (6 calls)" col5="84" col5_disp="   84 (6 calls)"/>
+                            <row id="163" col0="PE_kernel_Q_6_2" col1="kernel.cpp:1438" col2="432" col2_disp="  432 (6 calls)" col3="90" col3_disp="   90 (6 calls)" col4="90" col4_disp="   90 (6 calls)" col5="84" col5_disp="   84 (6 calls)"/>
+                            <row id="164" col0="PE_kernel_Q_7_2" col1="kernel.cpp:1478" col2="432" col2_disp="  432 (6 calls)" col3="90" col3_disp="   90 (6 calls)" col4="90" col4_disp="   90 (6 calls)" col5="84" col5_disp="   84 (6 calls)"/>
+                            <row id="191" col0="PE_kernel_Q_0_3" col1="kernel.cpp:1518" col2="432" col2_disp="  432 (6 calls)" col3="90" col3_disp="   90 (6 calls)" col4="90" col4_disp="   90 (6 calls)" col5="84" col5_disp="   84 (6 calls)"/>
+                            <row id="193" col0="PE_kernel_Q_1_3" col1="kernel.cpp:1558" col2="432" col2_disp="  432 (6 calls)" col3="90" col3_disp="   90 (6 calls)" col4="90" col4_disp="   90 (6 calls)" col5="84" col5_disp="   84 (6 calls)"/>
+                            <row id="187" col0="PE_kernel_Q_2_3" col1="kernel.cpp:1598" col2="432" col2_disp="  432 (6 calls)" col3="90" col3_disp="   90 (6 calls)" col4="90" col4_disp="   90 (6 calls)" col5="84" col5_disp="   84 (6 calls)"/>
+                            <row id="188" col0="PE_kernel_Q_3_3" col1="kernel.cpp:1638" col2="432" col2_disp="  432 (6 calls)" col3="90" col3_disp="   90 (6 calls)" col4="90" col4_disp="   90 (6 calls)" col5="84" col5_disp="   84 (6 calls)"/>
+                            <row id="184" col0="PE_kernel_Q_4_3" col1="kernel.cpp:1678" col2="432" col2_disp="  432 (6 calls)" col3="90" col3_disp="   90 (6 calls)" col4="90" col4_disp="   90 (6 calls)" col5="84" col5_disp="   84 (6 calls)"/>
+                            <row id="142" col0="PE_kernel_Q_5_3" col1="kernel.cpp:1718" col2="432" col2_disp="  432 (6 calls)" col3="90" col3_disp="   90 (6 calls)" col4="90" col4_disp="   90 (6 calls)" col5="84" col5_disp="   84 (6 calls)"/>
+                            <row id="140" col0="PE_kernel_Q_6_3" col1="kernel.cpp:1758" col2="432" col2_disp="  432 (6 calls)" col3="90" col3_disp="   90 (6 calls)" col4="90" col4_disp="   90 (6 calls)" col5="84" col5_disp="   84 (6 calls)"/>
+                            <row id="139" col0="PE_kernel_Q_7_3" col1="kernel.cpp:1798" col2="432" col2_disp="  432 (6 calls)" col3="90" col3_disp="   90 (6 calls)" col4="90" col4_disp="   90 (6 calls)" col5="84" col5_disp="   84 (6 calls)"/>
+                            <row id="138" col0="PE_kernel_Q_0_4" col1="kernel.cpp:1838" col2="432" col2_disp="  432 (6 calls)" col3="90" col3_disp="   90 (6 calls)" col4="90" col4_disp="   90 (6 calls)" col5="84" col5_disp="   84 (6 calls)"/>
+                            <row id="137" col0="PE_kernel_Q_1_4" col1="kernel.cpp:1878" col2="432" col2_disp="  432 (6 calls)" col3="90" col3_disp="   90 (6 calls)" col4="90" col4_disp="   90 (6 calls)" col5="84" col5_disp="   84 (6 calls)"/>
+                            <row id="134" col0="PE_kernel_Q_2_4" col1="kernel.cpp:1918" col2="432" col2_disp="  432 (6 calls)" col3="90" col3_disp="   90 (6 calls)" col4="90" col4_disp="   90 (6 calls)" col5="84" col5_disp="   84 (6 calls)"/>
+                            <row id="133" col0="PE_kernel_Q_3_4" col1="kernel.cpp:1958" col2="432" col2_disp="  432 (6 calls)" col3="90" col3_disp="   90 (6 calls)" col4="90" col4_disp="   90 (6 calls)" col5="84" col5_disp="   84 (6 calls)"/>
+                            <row id="132" col0="PE_kernel_Q_4_4" col1="kernel.cpp:1998" col2="432" col2_disp="  432 (6 calls)" col3="90" col3_disp="   90 (6 calls)" col4="90" col4_disp="   90 (6 calls)" col5="84" col5_disp="   84 (6 calls)"/>
+                            <row id="131" col0="PE_kernel_Q_5_4" col1="kernel.cpp:2038" col2="432" col2_disp="  432 (6 calls)" col3="90" col3_disp="   90 (6 calls)" col4="90" col4_disp="   90 (6 calls)" col5="84" col5_disp="   84 (6 calls)"/>
+                            <row id="129" col0="PE_kernel_Q_6_4" col1="kernel.cpp:2078" col2="432" col2_disp="  432 (6 calls)" col3="90" col3_disp="   90 (6 calls)" col4="90" col4_disp="   90 (6 calls)" col5="84" col5_disp="   84 (6 calls)"/>
+                            <row id="156" col0="PE_kernel_Q_7_4" col1="kernel.cpp:2118" col2="432" col2_disp="  432 (6 calls)" col3="90" col3_disp="   90 (6 calls)" col4="90" col4_disp="   90 (6 calls)" col5="84" col5_disp="   84 (6 calls)"/>
+                            <row id="155" col0="PE_kernel_Q_0_5" col1="kernel.cpp:2158" col2="432" col2_disp="  432 (6 calls)" col3="90" col3_disp="   90 (6 calls)" col4="90" col4_disp="   90 (6 calls)" col5="84" col5_disp="   84 (6 calls)"/>
+                            <row id="153" col0="PE_kernel_Q_1_5" col1="kernel.cpp:2198" col2="432" col2_disp="  432 (6 calls)" col3="90" col3_disp="   90 (6 calls)" col4="90" col4_disp="   90 (6 calls)" col5="84" col5_disp="   84 (6 calls)"/>
+                            <row id="152" col0="PE_kernel_Q_2_5" col1="kernel.cpp:2238" col2="432" col2_disp="  432 (6 calls)" col3="90" col3_disp="   90 (6 calls)" col4="90" col4_disp="   90 (6 calls)" col5="84" col5_disp="   84 (6 calls)"/>
+                            <row id="150" col0="PE_kernel_Q_3_5" col1="kernel.cpp:2278" col2="432" col2_disp="  432 (6 calls)" col3="90" col3_disp="   90 (6 calls)" col4="90" col4_disp="   90 (6 calls)" col5="84" col5_disp="   84 (6 calls)"/>
+                            <row id="144" col0="PE_kernel_Q_4_5" col1="kernel.cpp:2318" col2="432" col2_disp="  432 (6 calls)" col3="90" col3_disp="   90 (6 calls)" col4="90" col4_disp="   90 (6 calls)" col5="84" col5_disp="   84 (6 calls)"/>
+                            <row id="244" col0="PE_kernel_Q_5_5" col1="kernel.cpp:2358" col2="432" col2_disp="  432 (6 calls)" col3="90" col3_disp="   90 (6 calls)" col4="90" col4_disp="   90 (6 calls)" col5="84" col5_disp="   84 (6 calls)"/>
+                            <row id="245" col0="PE_kernel_Q_6_5" col1="kernel.cpp:2398" col2="432" col2_disp="  432 (6 calls)" col3="90" col3_disp="   90 (6 calls)" col4="90" col4_disp="   90 (6 calls)" col5="84" col5_disp="   84 (6 calls)"/>
+                            <row id="247" col0="PE_kernel_Q_7_5" col1="kernel.cpp:2438" col2="432" col2_disp="  432 (6 calls)" col3="90" col3_disp="   90 (6 calls)" col4="90" col4_disp="   90 (6 calls)" col5="84" col5_disp="   84 (6 calls)"/>
+                            <row id="249" col0="PE_kernel_Q_0_6" col1="kernel.cpp:2478" col2="432" col2_disp="  432 (6 calls)" col3="90" col3_disp="   90 (6 calls)" col4="90" col4_disp="   90 (6 calls)" col5="84" col5_disp="   84 (6 calls)"/>
+                            <row id="257" col0="PE_kernel_Q_1_6" col1="kernel.cpp:2518" col2="432" col2_disp="  432 (6 calls)" col3="90" col3_disp="   90 (6 calls)" col4="90" col4_disp="   90 (6 calls)" col5="84" col5_disp="   84 (6 calls)"/>
+                            <row id="258" col0="PE_kernel_Q_2_6" col1="kernel.cpp:2558" col2="432" col2_disp="  432 (6 calls)" col3="90" col3_disp="   90 (6 calls)" col4="90" col4_disp="   90 (6 calls)" col5="84" col5_disp="   84 (6 calls)"/>
+                            <row id="260" col0="PE_kernel_Q_3_6" col1="kernel.cpp:2598" col2="432" col2_disp="  432 (6 calls)" col3="90" col3_disp="   90 (6 calls)" col4="90" col4_disp="   90 (6 calls)" col5="84" col5_disp="   84 (6 calls)"/>
+                            <row id="262" col0="PE_kernel_Q_4_6" col1="kernel.cpp:2638" col2="432" col2_disp="  432 (6 calls)" col3="90" col3_disp="   90 (6 calls)" col4="90" col4_disp="   90 (6 calls)" col5="84" col5_disp="   84 (6 calls)"/>
+                            <row id="264" col0="PE_kernel_Q_5_6" col1="kernel.cpp:2678" col2="432" col2_disp="  432 (6 calls)" col3="90" col3_disp="   90 (6 calls)" col4="90" col4_disp="   90 (6 calls)" col5="84" col5_disp="   84 (6 calls)"/>
+                            <row id="227" col0="PE_kernel_Q_6_6" col1="kernel.cpp:2718" col2="432" col2_disp="  432 (6 calls)" col3="90" col3_disp="   90 (6 calls)" col4="90" col4_disp="   90 (6 calls)" col5="84" col5_disp="   84 (6 calls)"/>
+                            <row id="228" col0="PE_kernel_Q_7_6" col1="kernel.cpp:2758" col2="432" col2_disp="  432 (6 calls)" col3="90" col3_disp="   90 (6 calls)" col4="90" col4_disp="   90 (6 calls)" col5="84" col5_disp="   84 (6 calls)"/>
+                            <row id="229" col0="PE_kernel_Q_0_7" col1="kernel.cpp:2798" col2="432" col2_disp="  432 (6 calls)" col3="90" col3_disp="   90 (6 calls)" col4="90" col4_disp="   90 (6 calls)" col5="84" col5_disp="   84 (6 calls)"/>
+                            <row id="231" col0="PE_kernel_Q_1_7" col1="kernel.cpp:2838" col2="432" col2_disp="  432 (6 calls)" col3="90" col3_disp="   90 (6 calls)" col4="90" col4_disp="   90 (6 calls)" col5="84" col5_disp="   84 (6 calls)"/>
+                            <row id="233" col0="PE_kernel_Q_2_7" col1="kernel.cpp:2878" col2="432" col2_disp="  432 (6 calls)" col3="90" col3_disp="   90 (6 calls)" col4="90" col4_disp="   90 (6 calls)" col5="84" col5_disp="   84 (6 calls)"/>
+                            <row id="240" col0="PE_kernel_Q_3_7" col1="kernel.cpp:2918" col2="432" col2_disp="  432 (6 calls)" col3="90" col3_disp="   90 (6 calls)" col4="90" col4_disp="   90 (6 calls)" col5="84" col5_disp="   84 (6 calls)"/>
+                            <row id="238" col0="PE_kernel_Q_4_7" col1="kernel.cpp:2958" col2="432" col2_disp="  432 (6 calls)" col3="90" col3_disp="   90 (6 calls)" col4="90" col4_disp="   90 (6 calls)" col5="84" col5_disp="   84 (6 calls)"/>
+                            <row id="242" col0="PE_kernel_Q_5_7" col1="kernel.cpp:2998" col2="432" col2_disp="  432 (6 calls)" col3="90" col3_disp="   90 (6 calls)" col4="90" col4_disp="   90 (6 calls)" col5="84" col5_disp="   84 (6 calls)"/>
+                            <row id="196" col0="PE_kernel_Q_6_7" col1="kernel.cpp:3038" col2="432" col2_disp="  432 (6 calls)" col3="90" col3_disp="   90 (6 calls)" col4="90" col4_disp="   90 (6 calls)" col5="84" col5_disp="   84 (6 calls)"/>
+                            <row id="179" col0="PE_kernel_Q_7_7" col1="kernel.cpp:3078" col2="432" col2_disp="  432 (6 calls)" col3="90" col3_disp="   90 (6 calls)" col4="90" col4_disp="   90 (6 calls)" col5="84" col5_disp="   84 (6 calls)"/>
                         </row>
                     </row>
-                    <row id="268" col0="RoPE" col1="kernel.cpp:9597" col2="580" col2_disp="  580 (2 calls)" col3="310" col3_disp="  310 (2 calls)" col4="318" col4_disp="  318 (2 calls)" col5="318" col5_disp="  318 (2 calls)"/>
-                    <row id="22" col0="scaled_dot_product_attention" col1="kernel.cpp:15687" col2="12812" col3="4879" col4="5019" col5="4765">
-                        <row id="176" col0="systolic_QKT" col1="kernel.cpp:12589" col2="6214" col3="2335" col4="2403" col5="2277">
-                            <row id="174" col0="systolic_tile_QKT" col1="kernel.cpp:12228" col2="6027" col3="2130" col4="2067" col5="1941">
-                                <row id="269" col0="PE_kernel_QKT_0_0" col1="kernel.cpp:9668" col2="72" col3="15" col4="15" col5="14"/>
-                                <row id="265" col0="PE_kernel_QKT_1_0" col1="kernel.cpp:9708" col2="72" col3="15" col4="15" col5="14"/>
-                                <row id="266" col0="PE_kernel_QKT_2_0" col1="kernel.cpp:9748" col2="72" col3="15" col4="15" col5="14"/>
-                                <row id="5" col0="PE_kernel_QKT_3_0" col1="kernel.cpp:9788" col2="72" col3="15" col4="15" col5="14"/>
-                                <row id="7" col0="PE_kernel_QKT_4_0" col1="kernel.cpp:9828" col2="72" col3="15" col4="15" col5="14"/>
-                                <row id="8" col0="PE_kernel_QKT_5_0" col1="kernel.cpp:9868" col2="72" col3="15" col4="15" col5="14"/>
-                                <row id="14" col0="PE_kernel_QKT_6_0" col1="kernel.cpp:9908" col2="72" col3="15" col4="15" col5="14"/>
-                                <row id="15" col0="PE_kernel_QKT_7_0" col1="kernel.cpp:9948" col2="72" col3="15" col4="15" col5="14"/>
-                                <row id="17" col0="PE_kernel_QKT_0_1" col1="kernel.cpp:9988" col2="72" col3="15" col4="15" col5="14"/>
-                                <row id="10" col0="PE_kernel_QKT_1_1" col1="kernel.cpp:10028" col2="72" col3="15" col4="15" col5="14"/>
-                                <row id="12" col0="PE_kernel_QKT_2_1" col1="kernel.cpp:10068" col2="72" col3="15" col4="15" col5="14"/>
-                                <row id="30" col0="PE_kernel_QKT_3_1" col1="kernel.cpp:10108" col2="72" col3="15" col4="15" col5="14"/>
-                                <row id="18" col0="PE_kernel_QKT_4_1" col1="kernel.cpp:10148" col2="72" col3="15" col4="15" col5="14"/>
-                                <row id="21" col0="PE_kernel_QKT_5_1" col1="kernel.cpp:10188" col2="72" col3="15" col4="15" col5="14"/>
-                                <row id="23" col0="PE_kernel_QKT_6_1" col1="kernel.cpp:10228" col2="72" col3="15" col4="15" col5="14"/>
-                                <row id="27" col0="PE_kernel_QKT_7_1" col1="kernel.cpp:10268" col2="72" col3="15" col4="15" col5="14"/>
-                                <row id="220" col0="PE_kernel_QKT_0_2" col1="kernel.cpp:10308" col2="72" col3="15" col4="15" col5="14"/>
-                                <row id="224" col0="PE_kernel_QKT_1_2" col1="kernel.cpp:10348" col2="72" col3="15" col4="15" col5="14"/>
-                                <row id="222" col0="PE_kernel_QKT_2_2" col1="kernel.cpp:10388" col2="72" col3="15" col4="15" col5="14"/>
-                                <row id="237" col0="PE_kernel_QKT_3_2" col1="kernel.cpp:10428" col2="72" col3="15" col4="15" col5="14"/>
-                                <row id="234" col0="PE_kernel_QKT_4_2" col1="kernel.cpp:10468" col2="72" col3="15" col4="15" col5="14"/>
-                                <row id="245" col0="PE_kernel_QKT_5_2" col1="kernel.cpp:10508" col2="72" col3="15" col4="15" col5="14"/>
-                                <row id="244" col0="PE_kernel_QKT_6_2" col1="kernel.cpp:10548" col2="72" col3="15" col4="15" col5="14"/>
-                                <row id="242" col0="PE_kernel_QKT_7_2" col1="kernel.cpp:10588" col2="72" col3="15" col4="15" col5="14"/>
-                                <row id="250" col0="PE_kernel_QKT_0_3" col1="kernel.cpp:10628" col2="72" col3="15" col4="15" col5="14"/>
-                                <row id="247" col0="PE_kernel_QKT_1_3" col1="kernel.cpp:10668" col2="72" col3="15" col4="15" col5="14"/>
-                                <row id="263" col0="PE_kernel_QKT_2_3" col1="kernel.cpp:10708" col2="72" col3="15" col4="15" col5="14"/>
-                                <row id="261" col0="PE_kernel_QKT_3_3" col1="kernel.cpp:10748" col2="72" col3="15" col4="15" col5="14"/>
-                                <row id="254" col0="PE_kernel_QKT_4_3" col1="kernel.cpp:10788" col2="72" col3="15" col4="15" col5="14"/>
-                                <row id="253" col0="PE_kernel_QKT_5_3" col1="kernel.cpp:10828" col2="72" col3="15" col4="15" col5="14"/>
-                                <row id="257" col0="PE_kernel_QKT_6_3" col1="kernel.cpp:10868" col2="72" col3="15" col4="15" col5="14"/>
-                                <row id="195" col0="PE_kernel_QKT_7_3" col1="kernel.cpp:10908" col2="72" col3="15" col4="15" col5="14"/>
-                                <row id="197" col0="PE_kernel_QKT_0_4" col1="kernel.cpp:10948" col2="72" col3="15" col4="15" col5="14"/>
-                                <row id="177" col0="PE_kernel_QKT_1_4" col1="kernel.cpp:10988" col2="72" col3="15" col4="15" col5="14"/>
-                                <row id="188" col0="PE_kernel_QKT_2_4" col1="kernel.cpp:11028" col2="72" col3="15" col4="15" col5="14"/>
-                                <row id="205" col0="PE_kernel_QKT_3_4" col1="kernel.cpp:11068" col2="72" col3="15" col4="15" col5="14"/>
-                                <row id="202" col0="PE_kernel_QKT_4_4" col1="kernel.cpp:11108" col2="72" col3="15" col4="15" col5="14"/>
-                                <row id="203" col0="PE_kernel_QKT_5_4" col1="kernel.cpp:11148" col2="72" col3="15" col4="15" col5="14"/>
-                                <row id="210" col0="PE_kernel_QKT_6_4" col1="kernel.cpp:11188" col2="72" col3="15" col4="15" col5="14"/>
-                                <row id="211" col0="PE_kernel_QKT_7_4" col1="kernel.cpp:11228" col2="72" col3="15" col4="15" col5="14"/>
-                                <row id="209" col0="PE_kernel_QKT_0_5" col1="kernel.cpp:11268" col2="72" col3="15" col4="15" col5="14"/>
-                                <row id="217" col0="PE_kernel_QKT_1_5" col1="kernel.cpp:11308" col2="72" col3="15" col4="15" col5="14"/>
-                                <row id="216" col0="PE_kernel_QKT_2_5" col1="kernel.cpp:11348" col2="72" col3="15" col4="15" col5="14"/>
-                                <row id="213" col0="PE_kernel_QKT_3_5" col1="kernel.cpp:11388" col2="72" col3="15" col4="15" col5="14"/>
-                                <row id="214" col0="PE_kernel_QKT_4_5" col1="kernel.cpp:11428" col2="72" col3="15" col4="15" col5="14"/>
-                                <row id="212" col0="PE_kernel_QKT_5_5" col1="kernel.cpp:11468" col2="72" col3="15" col4="15" col5="14"/>
-                                <row id="229" col0="PE_kernel_QKT_6_5" col1="kernel.cpp:11508" col2="72" col3="15" col4="15" col5="14"/>
-                                <row id="218" col0="PE_kernel_QKT_7_5" col1="kernel.cpp:11548" col2="72" col3="15" col4="15" col5="14"/>
-                                <row id="196" col0="PE_kernel_QKT_0_6" col1="kernel.cpp:11588" col2="72" col3="15" col4="15" col5="14"/>
-                                <row id="110" col0="PE_kernel_QKT_1_6" col1="kernel.cpp:11628" col2="72" col3="15" col4="15" col5="14"/>
-                                <row id="1" col0="PE_kernel_QKT_2_6" col1="kernel.cpp:11668" col2="72" col3="15" col4="15" col5="14"/>
-                                <row id="13" col0="PE_kernel_QKT_3_6" col1="kernel.cpp:11708" col2="72" col3="15" col4="15" col5="14"/>
-                                <row id="2" col0="PE_kernel_QKT_4_6" col1="kernel.cpp:11748" col2="72" col3="15" col4="15" col5="14"/>
-                                <row id="262" col0="PE_kernel_QKT_5_6" col1="kernel.cpp:11788" col2="72" col3="15" col4="15" col5="14"/>
-                                <row id="111" col0="PE_kernel_QKT_6_6" col1="kernel.cpp:11828" col2="72" col3="15" col4="15" col5="14"/>
-                                <row id="100" col0="PE_kernel_QKT_7_6" col1="kernel.cpp:11868" col2="72" col3="15" col4="15" col5="14"/>
-                                <row id="57" col0="PE_kernel_QKT_0_7" col1="kernel.cpp:11908" col2="72" col3="15" col4="15" col5="14"/>
-                                <row id="166" col0="PE_kernel_QKT_1_7" col1="kernel.cpp:11948" col2="72" col3="15" col4="15" col5="14"/>
-                                <row id="155" col0="PE_kernel_QKT_2_7" col1="kernel.cpp:11988" col2="72" col3="15" col4="15" col5="14"/>
-                                <row id="144" col0="PE_kernel_QKT_3_7" col1="kernel.cpp:12028" col2="72" col3="15" col4="15" col5="14"/>
-                                <row id="133" col0="PE_kernel_QKT_4_7" col1="kernel.cpp:12068" col2="72" col3="15" col4="15" col5="14"/>
-                                <row id="169" col0="PE_kernel_QKT_5_7" col1="kernel.cpp:12108" col2="72" col3="15" col4="15" col5="14"/>
-                                <row id="170" col0="PE_kernel_QKT_6_7" col1="kernel.cpp:12148" col2="72" col3="15" col4="15" col5="14"/>
-                                <row id="171" col0="PE_kernel_QKT_7_7" col1="kernel.cpp:12188" col2="72" col3="15" col4="15" col5="14"/>
+                    <row id="218" col0="RoPE" col1="kernel.cpp:9465" col2="488" col2_disp="  488 (2 calls)" col3="262" col3_disp="  262 (2 calls)" col4="270" col4_disp="  270 (2 calls)" col5="270" col5_disp="  270 (2 calls)"/>
+                    <row id="24" col0="scaled_dot_product_attention" col1="kernel.cpp:15567" col2="12769" col3="4868" col4="4992" col5="4738">
+                        <row id="97" col0="systolic_QKT" col1="kernel.cpp:12458" col2="6222" col3="2347" col4="2407" col5="2281">
+                            <row id="99" col0="systolic_tile_QKT" col1="kernel.cpp:12097" col2="6027" col3="2130" col4="2067" col5="1941">
+                                <row id="221" col0="PE_kernel_QKT_0_0" col1="kernel.cpp:9537" col2="72" col3="15" col4="15" col5="14"/>
+                                <row id="215" col0="PE_kernel_QKT_1_0" col1="kernel.cpp:9577" col2="72" col3="15" col4="15" col5="14"/>
+                                <row id="224" col0="PE_kernel_QKT_2_0" col1="kernel.cpp:9617" col2="72" col3="15" col4="15" col5="14"/>
+                                <row id="230" col0="PE_kernel_QKT_3_0" col1="kernel.cpp:9657" col2="72" col3="15" col4="15" col5="14"/>
+                                <row id="220" col0="PE_kernel_QKT_4_0" col1="kernel.cpp:9697" col2="72" col3="15" col4="15" col5="14"/>
+                                <row id="2" col0="PE_kernel_QKT_5_0" col1="kernel.cpp:9737" col2="72" col3="15" col4="15" col5="14"/>
+                                <row id="263" col0="PE_kernel_QKT_6_0" col1="kernel.cpp:9777" col2="72" col3="15" col4="15" col5="14"/>
+                                <row id="46" col0="PE_kernel_QKT_7_0" col1="kernel.cpp:9817" col2="72" col3="15" col4="15" col5="14"/>
+                                <row id="124" col0="PE_kernel_QKT_0_1" col1="kernel.cpp:9857" col2="72" col3="15" col4="15" col5="14"/>
+                                <row id="101" col0="PE_kernel_QKT_1_1" col1="kernel.cpp:9897" col2="72" col3="15" col4="15" col5="14"/>
+                                <row id="157" col0="PE_kernel_QKT_2_1" col1="kernel.cpp:9937" col2="72" col3="15" col4="15" col5="14"/>
+                                <row id="135" col0="PE_kernel_QKT_3_1" col1="kernel.cpp:9977" col2="72" col3="15" col4="15" col5="14"/>
+                                <row id="56" col0="PE_kernel_QKT_4_1" col1="kernel.cpp:10017" col2="72" col3="15" col4="15" col5="14"/>
+                                <row id="59" col0="PE_kernel_QKT_5_1" col1="kernel.cpp:10057" col2="72" col3="15" col4="15" col5="14"/>
+                                <row id="60" col0="PE_kernel_QKT_6_1" col1="kernel.cpp:10097" col2="72" col3="15" col4="15" col5="14"/>
+                                <row id="64" col0="PE_kernel_QKT_7_1" col1="kernel.cpp:10137" col2="72" col3="15" col4="15" col5="14"/>
+                                <row id="67" col0="PE_kernel_QKT_0_2" col1="kernel.cpp:10177" col2="72" col3="15" col4="15" col5="14"/>
+                                <row id="62" col0="PE_kernel_QKT_1_2" col1="kernel.cpp:10217" col2="72" col3="15" col4="15" col5="14"/>
+                                <row id="39" col0="PE_kernel_QKT_2_2" col1="kernel.cpp:10257" col2="72" col3="15" col4="15" col5="14"/>
+                                <row id="33" col0="PE_kernel_QKT_3_2" col1="kernel.cpp:10297" col2="72" col3="15" col4="15" col5="14"/>
+                                <row id="36" col0="PE_kernel_QKT_4_2" col1="kernel.cpp:10337" col2="72" col3="15" col4="15" col5="14"/>
+                                <row id="41" col0="PE_kernel_QKT_5_2" col1="kernel.cpp:10377" col2="72" col3="15" col4="15" col5="14"/>
+                                <row id="42" col0="PE_kernel_QKT_6_2" col1="kernel.cpp:10417" col2="72" col3="15" col4="15" col5="14"/>
+                                <row id="43" col0="PE_kernel_QKT_7_2" col1="kernel.cpp:10457" col2="72" col3="15" col4="15" col5="14"/>
+                                <row id="52" col0="PE_kernel_QKT_0_3" col1="kernel.cpp:10497" col2="72" col3="15" col4="15" col5="14"/>
+                                <row id="53" col0="PE_kernel_QKT_1_3" col1="kernel.cpp:10537" col2="72" col3="15" col4="15" col5="14"/>
+                                <row id="48" col0="PE_kernel_QKT_2_3" col1="kernel.cpp:10577" col2="72" col3="15" col4="15" col5="14"/>
+                                <row id="50" col0="PE_kernel_QKT_3_3" col1="kernel.cpp:10617" col2="72" col3="15" col4="15" col5="14"/>
+                                <row id="22" col0="PE_kernel_QKT_4_3" col1="kernel.cpp:10657" col2="72" col3="15" col4="15" col5="14"/>
+                                <row id="20" col0="PE_kernel_QKT_5_3" col1="kernel.cpp:10697" col2="72" col3="15" col4="15" col5="14"/>
+                                <row id="19" col0="PE_kernel_QKT_6_3" col1="kernel.cpp:10737" col2="72" col3="15" col4="15" col5="14"/>
+                                <row id="30" col0="PE_kernel_QKT_7_3" col1="kernel.cpp:10777" col2="72" col3="15" col4="15" col5="14"/>
+                                <row id="28" col0="PE_kernel_QKT_0_4" col1="kernel.cpp:10817" col2="72" col3="15" col4="15" col5="14"/>
+                                <row id="4" col0="PE_kernel_QKT_1_4" col1="kernel.cpp:10857" col2="72" col3="15" col4="15" col5="14"/>
+                                <row id="3" col0="PE_kernel_QKT_2_4" col1="kernel.cpp:10897" col2="72" col3="15" col4="15" col5="14"/>
+                                <row id="272" col0="PE_kernel_QKT_3_4" col1="kernel.cpp:10937" col2="72" col3="15" col4="15" col5="14"/>
+                                <row id="270" col0="PE_kernel_QKT_4_4" col1="kernel.cpp:10977" col2="72" col3="15" col4="15" col5="14"/>
+                                <row id="269" col0="PE_kernel_QKT_5_4" col1="kernel.cpp:11017" col2="72" col3="15" col4="15" col5="14"/>
+                                <row id="7" col0="PE_kernel_QKT_6_4" col1="kernel.cpp:11057" col2="72" col3="15" col4="15" col5="14"/>
+                                <row id="6" col0="PE_kernel_QKT_7_4" col1="kernel.cpp:11097" col2="72" col3="15" col4="15" col5="14"/>
+                                <row id="14" col0="PE_kernel_QKT_0_5" col1="kernel.cpp:11137" col2="72" col3="15" col4="15" col5="14"/>
+                                <row id="11" col0="PE_kernel_QKT_1_5" col1="kernel.cpp:11177" col2="72" col3="15" col4="15" col5="14"/>
+                                <row id="9" col0="PE_kernel_QKT_2_5" col1="kernel.cpp:11217" col2="72" col3="15" col4="15" col5="14"/>
+                                <row id="117" col0="PE_kernel_QKT_3_5" col1="kernel.cpp:11257" col2="72" col3="15" col4="15" col5="14"/>
+                                <row id="118" col0="PE_kernel_QKT_4_5" col1="kernel.cpp:11297" col2="72" col3="15" col4="15" col5="14"/>
+                                <row id="119" col0="PE_kernel_QKT_5_5" col1="kernel.cpp:11337" col2="72" col3="15" col4="15" col5="14"/>
+                                <row id="120" col0="PE_kernel_QKT_6_5" col1="kernel.cpp:11377" col2="72" col3="15" col4="15" col5="14"/>
+                                <row id="126" col0="PE_kernel_QKT_7_5" col1="kernel.cpp:11417" col2="72" col3="15" col4="15" col5="14"/>
+                                <row id="123" col0="PE_kernel_QKT_0_6" col1="kernel.cpp:11457" col2="72" col3="15" col4="15" col5="14"/>
+                                <row id="125" col0="PE_kernel_QKT_1_6" col1="kernel.cpp:11497" col2="72" col3="15" col4="15" col5="14"/>
+                                <row id="104" col0="PE_kernel_QKT_2_6" col1="kernel.cpp:11537" col2="72" col3="15" col4="15" col5="14"/>
+                                <row id="105" col0="PE_kernel_QKT_3_6" col1="kernel.cpp:11577" col2="72" col3="15" col4="15" col5="14"/>
+                                <row id="106" col0="PE_kernel_QKT_4_6" col1="kernel.cpp:11617" col2="72" col3="15" col4="15" col5="14"/>
+                                <row id="114" col0="PE_kernel_QKT_5_6" col1="kernel.cpp:11657" col2="72" col3="15" col4="15" col5="14"/>
+                                <row id="111" col0="PE_kernel_QKT_6_6" col1="kernel.cpp:11697" col2="72" col3="15" col4="15" col5="14"/>
+                                <row id="115" col0="PE_kernel_QKT_7_6" col1="kernel.cpp:11737" col2="72" col3="15" col4="15" col5="14"/>
+                                <row id="116" col0="PE_kernel_QKT_0_7" col1="kernel.cpp:11777" col2="72" col3="15" col4="15" col5="14"/>
+                                <row id="107" col0="PE_kernel_QKT_1_7" col1="kernel.cpp:11817" col2="72" col3="15" col4="15" col5="14"/>
+                                <row id="93" col0="PE_kernel_QKT_2_7" col1="kernel.cpp:11857" col2="72" col3="15" col4="15" col5="14"/>
+                                <row id="87" col0="PE_kernel_QKT_3_7" col1="kernel.cpp:11897" col2="72" col3="15" col4="15" col5="14"/>
+                                <row id="86" col0="PE_kernel_QKT_4_7" col1="kernel.cpp:11937" col2="72" col3="15" col4="15" col5="14"/>
+                                <row id="89" col0="PE_kernel_QKT_5_7" col1="kernel.cpp:11977" col2="72" col3="15" col4="15" col5="14"/>
+                                <row id="88" col0="PE_kernel_QKT_6_7" col1="kernel.cpp:12017" col2="72" col3="15" col4="15" col5="14"/>
+                                <row id="96" col0="PE_kernel_QKT_7_7" col1="kernel.cpp:12057" col2="72" col3="15" col4="15" col5="14"/>
                             </row>
                         </row>
-                        <row id="163" col0="sft_head" col1="kernel.cpp:12684" col2="149" col3="" col4="" col5=""/>
-                        <row id="20" col0="systolic_YV" col1="kernel.cpp:15639" col2="6214" col3="2335" col4="2403" col5="2277">
-                            <row id="31" col0="systolic_tile_YV" col1="kernel.cpp:15278" col2="6027" col3="2130" col4="2067" col5="1941">
-                                <row id="168" col0="PE_kernel_YV_0_0" col1="kernel.cpp:12718" col2="72" col3="15" col4="15" col5="14"/>
-                                <row id="187" col0="PE_kernel_YV_1_0" col1="kernel.cpp:12758" col2="72" col3="15" col4="15" col5="14"/>
-                                <row id="192" col0="PE_kernel_YV_2_0" col1="kernel.cpp:12798" col2="72" col3="15" col4="15" col5="14"/>
-                                <row id="193" col0="PE_kernel_YV_3_0" col1="kernel.cpp:12838" col2="72" col3="15" col4="15" col5="14"/>
-                                <row id="182" col0="PE_kernel_YV_4_0" col1="kernel.cpp:12878" col2="72" col3="15" col4="15" col5="14"/>
-                                <row id="183" col0="PE_kernel_YV_5_0" col1="kernel.cpp:12918" col2="72" col3="15" col4="15" col5="14"/>
-                                <row id="184" col0="PE_kernel_YV_6_0" col1="kernel.cpp:12958" col2="72" col3="15" col4="15" col5="14"/>
-                                <row id="132" col0="PE_kernel_YV_7_0" col1="kernel.cpp:12998" col2="72" col3="15" col4="15" col5="14"/>
-                                <row id="131" col0="PE_kernel_YV_0_1" col1="kernel.cpp:13038" col2="72" col3="15" col4="15" col5="14"/>
-                                <row id="137" col0="PE_kernel_YV_1_1" col1="kernel.cpp:13078" col2="72" col3="15" col4="15" col5="14"/>
-                                <row id="134" col0="PE_kernel_YV_2_1" col1="kernel.cpp:13118" col2="72" col3="15" col4="15" col5="14"/>
-                                <row id="139" col0="PE_kernel_YV_3_1" col1="kernel.cpp:13158" col2="72" col3="15" col4="15" col5="14"/>
-                                <row id="119" col0="PE_kernel_YV_4_1" col1="kernel.cpp:13198" col2="72" col3="15" col4="15" col5="14"/>
-                                <row id="120" col0="PE_kernel_YV_5_1" col1="kernel.cpp:13238" col2="72" col3="15" col4="15" col5="14"/>
-                                <row id="128" col0="PE_kernel_YV_6_1" col1="kernel.cpp:13278" col2="72" col3="15" col4="15" col5="14"/>
-                                <row id="125" col0="PE_kernel_YV_7_1" col1="kernel.cpp:13318" col2="72" col3="15" col4="15" col5="14"/>
-                                <row id="130" col0="PE_kernel_YV_0_2" col1="kernel.cpp:13358" col2="72" col3="15" col4="15" col5="14"/>
-                                <row id="152" col0="PE_kernel_YV_1_2" col1="kernel.cpp:13398" col2="72" col3="15" col4="15" col5="14"/>
-                                <row id="157" col0="PE_kernel_YV_2_2" col1="kernel.cpp:13438" col2="72" col3="15" col4="15" col5="14"/>
-                                <row id="153" col0="PE_kernel_YV_3_2" col1="kernel.cpp:13478" col2="72" col3="15" col4="15" col5="14"/>
-                                <row id="143" col0="PE_kernel_YV_4_2" col1="kernel.cpp:13518" col2="72" col3="15" col4="15" col5="14"/>
-                                <row id="142" col0="PE_kernel_YV_5_2" col1="kernel.cpp:13558" col2="72" col3="15" col4="15" col5="14"/>
-                                <row id="148" col0="PE_kernel_YV_6_2" col1="kernel.cpp:13598" col2="72" col3="15" col4="15" col5="14"/>
-                                <row id="87" col0="PE_kernel_YV_7_2" col1="kernel.cpp:13638" col2="72" col3="15" col4="15" col5="14"/>
-                                <row id="88" col0="PE_kernel_YV_0_3" col1="kernel.cpp:13678" col2="72" col3="15" col4="15" col5="14"/>
-                                <row id="83" col0="PE_kernel_YV_1_3" col1="kernel.cpp:13718" col2="72" col3="15" col4="15" col5="14"/>
-                                <row id="85" col0="PE_kernel_YV_2_3" col1="kernel.cpp:13758" col2="72" col3="15" col4="15" col5="14"/>
-                                <row id="78" col0="PE_kernel_YV_3_3" col1="kernel.cpp:13798" col2="72" col3="15" col4="15" col5="14"/>
-                                <row id="73" col0="PE_kernel_YV_4_3" col1="kernel.cpp:13838" col2="72" col3="15" col4="15" col5="14"/>
-                                <row id="75" col0="PE_kernel_YV_5_3" col1="kernel.cpp:13878" col2="72" col3="15" col4="15" col5="14"/>
-                                <row id="80" col0="PE_kernel_YV_6_3" col1="kernel.cpp:13918" col2="72" col3="15" col4="15" col5="14"/>
-                                <row id="81" col0="PE_kernel_YV_7_3" col1="kernel.cpp:13958" col2="72" col3="15" col4="15" col5="14"/>
-                                <row id="114" col0="PE_kernel_YV_0_4" col1="kernel.cpp:13998" col2="72" col3="15" col4="15" col5="14"/>
-                                <row id="113" col0="PE_kernel_YV_1_4" col1="kernel.cpp:14038" col2="72" col3="15" col4="15" col5="14"/>
-                                <row id="115" col0="PE_kernel_YV_2_4" col1="kernel.cpp:14078" col2="72" col3="15" col4="15" col5="14"/>
-                                <row id="107" col0="PE_kernel_YV_3_4" col1="kernel.cpp:14118" col2="72" col3="15" col4="15" col5="14"/>
-                                <row id="112" col0="PE_kernel_YV_4_4" col1="kernel.cpp:14158" col2="72" col3="15" col4="15" col5="14"/>
-                                <row id="99" col0="PE_kernel_YV_5_4" col1="kernel.cpp:14198" col2="72" col3="15" col4="15" col5="14"/>
-                                <row id="102" col0="PE_kernel_YV_6_4" col1="kernel.cpp:14238" col2="72" col3="15" col4="15" col5="14"/>
-                                <row id="47" col0="PE_kernel_YV_7_4" col1="kernel.cpp:14278" col2="72" col3="15" col4="15" col5="14"/>
-                                <row id="43" col0="PE_kernel_YV_0_5" col1="kernel.cpp:14318" col2="72" col3="15" col4="15" col5="14"/>
-                                <row id="41" col0="PE_kernel_YV_1_5" col1="kernel.cpp:14358" col2="72" col3="15" col4="15" col5="14"/>
-                                <row id="37" col0="PE_kernel_YV_2_5" col1="kernel.cpp:14398" col2="72" col3="15" col4="15" col5="14"/>
-                                <row id="34" col0="PE_kernel_YV_3_5" col1="kernel.cpp:14438" col2="72" col3="15" col4="15" col5="14"/>
-                                <row id="33" col0="PE_kernel_YV_4_5" col1="kernel.cpp:14478" col2="72" col3="15" col4="15" col5="14"/>
-                                <row id="32" col0="PE_kernel_YV_5_5" col1="kernel.cpp:14518" col2="72" col3="15" col4="15" col5="14"/>
-                                <row id="39" col0="PE_kernel_YV_6_5" col1="kernel.cpp:14558" col2="72" col3="15" col4="15" col5="14"/>
-                                <row id="61" col0="PE_kernel_YV_7_5" col1="kernel.cpp:14598" col2="72" col3="15" col4="15" col5="14"/>
-                                <row id="59" col0="PE_kernel_YV_0_6" col1="kernel.cpp:14638" col2="72" col3="15" col4="15" col5="14"/>
-                                <row id="70" col0="PE_kernel_YV_1_6" col1="kernel.cpp:14678" col2="72" col3="15" col4="15" col5="14"/>
-                                <row id="66" col0="PE_kernel_YV_2_6" col1="kernel.cpp:14718" col2="72" col3="15" col4="15" col5="14"/>
-                                <row id="64" col0="PE_kernel_YV_3_6" col1="kernel.cpp:14758" col2="72" col3="15" col4="15" col5="14"/>
-                                <row id="55" col0="PE_kernel_YV_4_6" col1="kernel.cpp:14798" col2="72" col3="15" col4="15" col5="14"/>
-                                <row id="54" col0="PE_kernel_YV_5_6" col1="kernel.cpp:14838" col2="72" col3="15" col4="15" col5="14"/>
-                                <row id="52" col0="PE_kernel_YV_6_6" col1="kernel.cpp:14878" col2="72" col3="15" col4="15" col5="14"/>
-                                <row id="51" col0="PE_kernel_YV_7_6" col1="kernel.cpp:14918" col2="72" col3="15" col4="15" col5="14"/>
-                                <row id="6" col0="PE_kernel_YV_0_7" col1="kernel.cpp:14958" col2="72" col3="15" col4="15" col5="14"/>
-                                <row id="4" col0="PE_kernel_YV_1_7" col1="kernel.cpp:14998" col2="72" col3="15" col4="15" col5="14"/>
-                                <row id="267" col0="PE_kernel_YV_2_7" col1="kernel.cpp:15038" col2="72" col3="15" col4="15" col5="14"/>
-                                <row id="270" col0="PE_kernel_YV_3_7" col1="kernel.cpp:15078" col2="72" col3="15" col4="15" col5="14"/>
-                                <row id="271" col0="PE_kernel_YV_4_7" col1="kernel.cpp:15118" col2="72" col3="15" col4="15" col5="14"/>
-                                <row id="272" col0="PE_kernel_YV_5_7" col1="kernel.cpp:15158" col2="72" col3="15" col4="15" col5="14"/>
-                                <row id="28" col0="PE_kernel_YV_6_7" col1="kernel.cpp:15198" col2="72" col3="15" col4="15" col5="14"/>
-                                <row id="29" col0="PE_kernel_YV_7_7" col1="kernel.cpp:15238" col2="72" col3="15" col4="15" col5="14"/>
+                        <row id="73" col0="sft_head" col1="kernel.cpp:12553" col2="146" col3="" col4="" col5=""/>
+                        <row id="241" col0="systolic_YV" col1="kernel.cpp:15519" col2="6222" col3="2347" col4="2407" col5="2281">
+                            <row id="252" col0="systolic_tile_YV" col1="kernel.cpp:15158" col2="6027" col3="2130" col4="2067" col5="1941">
+                                <row id="81" col0="PE_kernel_YV_0_0" col1="kernel.cpp:12598" col2="72" col3="15" col4="15" col5="14"/>
+                                <row id="80" col0="PE_kernel_YV_1_0" col1="kernel.cpp:12638" col2="72" col3="15" col4="15" col5="14"/>
+                                <row id="85" col0="PE_kernel_YV_2_0" col1="kernel.cpp:12678" col2="72" col3="15" col4="15" col5="14"/>
+                                <row id="83" col0="PE_kernel_YV_3_0" col1="kernel.cpp:12718" col2="72" col3="15" col4="15" col5="14"/>
+                                <row id="183" col0="PE_kernel_YV_4_0" col1="kernel.cpp:12758" col2="72" col3="15" col4="15" col5="14"/>
+                                <row id="185" col0="PE_kernel_YV_5_0" col1="kernel.cpp:12798" col2="72" col3="15" col4="15" col5="14"/>
+                                <row id="186" col0="PE_kernel_YV_6_0" col1="kernel.cpp:12838" col2="72" col3="15" col4="15" col5="14"/>
+                                <row id="181" col0="PE_kernel_YV_7_0" col1="kernel.cpp:12878" col2="72" col3="15" col4="15" col5="14"/>
+                                <row id="182" col0="PE_kernel_YV_0_1" col1="kernel.cpp:12918" col2="72" col3="15" col4="15" col5="14"/>
+                                <row id="194" col0="PE_kernel_YV_1_1" col1="kernel.cpp:12958" col2="72" col3="15" col4="15" col5="14"/>
+                                <row id="195" col0="PE_kernel_YV_2_1" col1="kernel.cpp:12998" col2="72" col3="15" col4="15" col5="14"/>
+                                <row id="189" col0="PE_kernel_YV_3_1" col1="kernel.cpp:13038" col2="72" col3="15" col4="15" col5="14"/>
+                                <row id="192" col0="PE_kernel_YV_4_1" col1="kernel.cpp:13078" col2="72" col3="15" col4="15" col5="14"/>
+                                <row id="170" col0="PE_kernel_YV_5_1" col1="kernel.cpp:13118" col2="72" col3="15" col4="15" col5="14"/>
+                                <row id="162" col0="PE_kernel_YV_6_1" col1="kernel.cpp:13158" col2="72" col3="15" col4="15" col5="14"/>
+                                <row id="165" col0="PE_kernel_YV_7_1" col1="kernel.cpp:13198" col2="72" col3="15" col4="15" col5="14"/>
+                                <row id="177" col0="PE_kernel_YV_0_2" col1="kernel.cpp:13238" col2="72" col3="15" col4="15" col5="14"/>
+                                <row id="178" col0="PE_kernel_YV_1_2" col1="kernel.cpp:13278" col2="72" col3="15" col4="15" col5="14"/>
+                                <row id="174" col0="PE_kernel_YV_2_2" col1="kernel.cpp:13318" col2="72" col3="15" col4="15" col5="14"/>
+                                <row id="151" col0="PE_kernel_YV_3_2" col1="kernel.cpp:13358" col2="72" col3="15" col4="15" col5="14"/>
+                                <row id="149" col0="PE_kernel_YV_4_2" col1="kernel.cpp:13398" col2="72" col3="15" col4="15" col5="14"/>
+                                <row id="148" col0="PE_kernel_YV_5_2" col1="kernel.cpp:13438" col2="72" col3="15" col4="15" col5="14"/>
+                                <row id="147" col0="PE_kernel_YV_6_2" col1="kernel.cpp:13478" col2="72" col3="15" col4="15" col5="14"/>
+                                <row id="145" col0="PE_kernel_YV_7_2" col1="kernel.cpp:13518" col2="72" col3="15" col4="15" col5="14"/>
+                                <row id="160" col0="PE_kernel_YV_0_3" col1="kernel.cpp:13558" col2="72" col3="15" col4="15" col5="14"/>
+                                <row id="161" col0="PE_kernel_YV_1_3" col1="kernel.cpp:13598" col2="72" col3="15" col4="15" col5="14"/>
+                                <row id="159" col0="PE_kernel_YV_2_3" col1="kernel.cpp:13638" col2="72" col3="15" col4="15" col5="14"/>
+                                <row id="158" col0="PE_kernel_YV_3_3" col1="kernel.cpp:13678" col2="72" col3="15" col4="15" col5="14"/>
+                                <row id="154" col0="PE_kernel_YV_4_3" col1="kernel.cpp:13718" col2="72" col3="15" col4="15" col5="14"/>
+                                <row id="130" col0="PE_kernel_YV_5_3" col1="kernel.cpp:13758" col2="72" col3="15" col4="15" col5="14"/>
+                                <row id="128" col0="PE_kernel_YV_6_3" col1="kernel.cpp:13798" col2="72" col3="15" col4="15" col5="14"/>
+                                <row id="127" col0="PE_kernel_YV_7_3" col1="kernel.cpp:13838" col2="72" col3="15" col4="15" col5="14"/>
+                                <row id="143" col0="PE_kernel_YV_0_4" col1="kernel.cpp:13878" col2="72" col3="15" col4="15" col5="14"/>
+                                <row id="141" col0="PE_kernel_YV_1_4" col1="kernel.cpp:13918" col2="72" col3="15" col4="15" col5="14"/>
+                                <row id="136" col0="PE_kernel_YV_2_4" col1="kernel.cpp:13958" col2="72" col3="15" col4="15" col5="14"/>
+                                <row id="255" col0="PE_kernel_YV_3_4" col1="kernel.cpp:13998" col2="72" col3="15" col4="15" col5="14"/>
+                                <row id="256" col0="PE_kernel_YV_4_4" col1="kernel.cpp:14038" col2="72" col3="15" col4="15" col5="14"/>
+                                <row id="259" col0="PE_kernel_YV_5_4" col1="kernel.cpp:14078" col2="72" col3="15" col4="15" col5="14"/>
+                                <row id="261" col0="PE_kernel_YV_6_4" col1="kernel.cpp:14118" col2="72" col3="15" col4="15" col5="14"/>
+                                <row id="246" col0="PE_kernel_YV_7_4" col1="kernel.cpp:14158" col2="72" col3="15" col4="15" col5="14"/>
+                                <row id="248" col0="PE_kernel_YV_0_5" col1="kernel.cpp:14198" col2="72" col3="15" col4="15" col5="14"/>
+                                <row id="250" col0="PE_kernel_YV_1_5" col1="kernel.cpp:14238" col2="72" col3="15" col4="15" col5="14"/>
+                                <row id="251" col0="PE_kernel_YV_2_5" col1="kernel.cpp:14278" col2="72" col3="15" col4="15" col5="14"/>
+                                <row id="254" col0="PE_kernel_YV_3_5" col1="kernel.cpp:14318" col2="72" col3="15" col4="15" col5="14"/>
+                                <row id="236" col0="PE_kernel_YV_4_5" col1="kernel.cpp:14358" col2="72" col3="15" col4="15" col5="14"/>
+                                <row id="235" col0="PE_kernel_YV_5_5" col1="kernel.cpp:14398" col2="72" col3="15" col4="15" col5="14"/>
+                                <row id="237" col0="PE_kernel_YV_6_5" col1="kernel.cpp:14438" col2="72" col3="15" col4="15" col5="14"/>
+                                <row id="239" col0="PE_kernel_YV_7_5" col1="kernel.cpp:14478" col2="72" col3="15" col4="15" col5="14"/>
+                                <row id="243" col0="PE_kernel_YV_0_6" col1="kernel.cpp:14518" col2="72" col3="15" col4="15" col5="14"/>
+                                <row id="232" col0="PE_kernel_YV_1_6" col1="kernel.cpp:14558" col2="72" col3="15" col4="15" col5="14"/>
+                                <row id="234" col0="PE_kernel_YV_2_6" col1="kernel.cpp:14598" col2="72" col3="15" col4="15" col5="14"/>
+                                <row id="214" col0="PE_kernel_YV_3_6" col1="kernel.cpp:14638" col2="72" col3="15" col4="15" col5="14"/>
+                                <row id="207" col0="PE_kernel_YV_4_6" col1="kernel.cpp:14678" col2="72" col3="15" col4="15" col5="14"/>
+                                <row id="217" col0="PE_kernel_YV_5_6" col1="kernel.cpp:14718" col2="72" col3="15" col4="15" col5="14"/>
+                                <row id="190" col0="PE_kernel_YV_6_6" col1="kernel.cpp:14758" col2="72" col3="15" col4="15" col5="14"/>
+                                <row id="168" col0="PE_kernel_YV_7_6" col1="kernel.cpp:14798" col2="72" col3="15" col4="15" col5="14"/>
+                                <row id="200" col0="PE_kernel_YV_0_7" col1="kernel.cpp:14838" col2="72" col3="15" col4="15" col5="14"/>
+                                <row id="197" col0="PE_kernel_YV_1_7" col1="kernel.cpp:14878" col2="72" col3="15" col4="15" col5="14"/>
+                                <row id="202" col0="PE_kernel_YV_2_7" col1="kernel.cpp:14918" col2="72" col3="15" col4="15" col5="14"/>
+                                <row id="79" col0="PE_kernel_YV_3_7" col1="kernel.cpp:14958" col2="72" col3="15" col4="15" col5="14"/>
+                                <row id="68" col0="PE_kernel_YV_4_7" col1="kernel.cpp:14998" col2="72" col3="15" col4="15" col5="14"/>
+                                <row id="113" col0="PE_kernel_YV_5_7" col1="kernel.cpp:15038" col2="72" col3="15" col4="15" col5="14"/>
+                                <row id="90" col0="PE_kernel_YV_6_7" col1="kernel.cpp:15078" col2="72" col3="15" col4="15" col5="14"/>
+                                <row id="146" col0="PE_kernel_YV_7_7" col1="kernel.cpp:15118" col2="72" col3="15" col4="15" col5="14"/>
                             </row>
                         </row>
                     </row>
-                    <row id="16" col0="bias_add_scale" col1="kernel.cpp:18741" col2="134" col2_disp="  134 (2 calls)" col3="" col4="" col5=""/>
-                    <row id="9" col0="bias_add" col1="kernel.cpp:21734" col2="66" col2_disp="   66 (2 calls)" col3="" col4="" col5=""/>
-                    <row id="11" col0="GeLU" col1="kernel.cpp:21749" col2="40547" col3="" col4="" col5=""/>
-                    <row id="260" col0="pow_generic&lt;double&gt;" col1="hls_pow.h:291" col2="" col3="603" col4="603" col5="556">
-                        <row id="194" col0="to_ieee" col1="x_hls_utils.h:509" col2="" col3="72" col3_disp="   72 (9 calls)" col4="72" col4_disp="   72 (9 calls)" col5="45" col5_disp="   45 (9 calls)"/>
-                        <row id="69" col0="log_range_reduction&lt;71&gt;" col1="hls_pow.h:186" col2="" col3="251" col4="251" col5="250"/>
+                    <row id="13" col0="bias_add_scale" col1="kernel.cpp:18605" col2="134" col2_disp="  134 (2 calls)" col3="" col4="" col5=""/>
+                    <row id="65" col0="bias_add" col1="kernel.cpp:21600" col2="66" col2_disp="   66 (2 calls)" col3="" col4="" col5=""/>
+                    <row id="69" col0="GeLU" col1="kernel.cpp:21615" col2="40547" col3="" col4="" col5=""/>
+                    <row id="75" col0="pow_generic&lt;double&gt;" col1="hls_pow.h:291" col2="" col3="603" col4="603" col5="556">
+                        <row id="12" col0="to_ieee" col1="x_hls_utils.h:509" col2="" col3="72" col3_disp="   72 (9 calls)" col4="72" col4_disp="   72 (9 calls)" col5="45" col5_disp="   45 (9 calls)"/>
+                        <row id="5" col0="log_range_reduction&lt;71&gt;" col1="hls_pow.h:186" col2="" col3="251" col4="251" col5="250"/>
                     </row>
-                    <row id="232" col0="generic_tanh&lt;float&gt;" col1="hls_tanh.h:28" col2="" col3="257" col4="254" col5="254">
-                        <row id="252" col0="exp_generic&lt;double&gt;" col1="hls_exp_.h:156" col2="" col3="201" col4="198" col5="198"/>
+                    <row id="54" col0="generic_tanh&lt;float&gt;" col1="hls_tanh.h:28" col2="" col3="257" col4="254" col5="254">
+                        <row id="40" col0="exp_generic&lt;double&gt;" col1="hls_exp_.h:156" col2="" col3="201" col4="198" col5="198"/>
                     </row>
                 </row>
             </rows>

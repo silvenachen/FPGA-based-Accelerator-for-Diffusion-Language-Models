@@ -7,1814 +7,196 @@
 `timescale 1 ns / 1 ps 
 
 module allo_DDitBlock_systolic_QKT (
+        v6882_address0,
+        v6882_ce0,
+        v6882_d0,
+        v6882_q0,
+        v6882_we0,
+        v6882_address1,
+        v6882_ce1,
+        v6882_d1,
+        v6882_q1,
+        v6882_we1,
+        v6883_address0,
+        v6883_ce0,
+        v6883_d0,
+        v6883_q0,
+        v6883_we0,
+        v6883_address1,
+        v6883_ce1,
+        v6883_d1,
+        v6883_q1,
+        v6883_we1,
+        v6884_address0,
+        v6884_ce0,
+        v6884_d0,
+        v6884_q0,
+        v6884_we0,
+        v6884_address1,
+        v6884_ce1,
+        v6884_d1,
+        v6884_q1,
+        v6884_we1,
         ap_clk,
         ap_rst,
         ap_start,
         ap_done,
-        ap_idle,
         ap_ready,
-        v6882_address0,
-        v6882_ce0,
-        v6882_q0,
-        v6883_address0,
-        v6883_ce0,
-        v6883_q0,
-        v6884_address1,
-        v6884_ce1,
-        v6884_we1,
-        v6884_d1
+        ap_idle,
+        ap_continue
 );
 
-parameter    ap_ST_fsm_state1 = 7'd1;
-parameter    ap_ST_fsm_state2 = 7'd2;
-parameter    ap_ST_fsm_state3 = 7'd4;
-parameter    ap_ST_fsm_state4 = 7'd8;
-parameter    ap_ST_fsm_state5 = 7'd16;
-parameter    ap_ST_fsm_state6 = 7'd32;
-parameter    ap_ST_fsm_state7 = 7'd64;
 
+output  [15:0] v6882_address0;
+output   v6882_ce0;
+output  [31:0] v6882_d0;
+input  [31:0] v6882_q0;
+output   v6882_we0;
+output  [15:0] v6882_address1;
+output   v6882_ce1;
+output  [31:0] v6882_d1;
+input  [31:0] v6882_q1;
+output   v6882_we1;
+output  [15:0] v6883_address0;
+output   v6883_ce0;
+output  [31:0] v6883_d0;
+input  [31:0] v6883_q0;
+output   v6883_we0;
+output  [15:0] v6883_address1;
+output   v6883_ce1;
+output  [31:0] v6883_d1;
+input  [31:0] v6883_q1;
+output   v6883_we1;
+output  [19:0] v6884_address0;
+output   v6884_ce0;
+output  [31:0] v6884_d0;
+input  [31:0] v6884_q0;
+output   v6884_we0;
+output  [19:0] v6884_address1;
+output   v6884_ce1;
+output  [31:0] v6884_d1;
+input  [31:0] v6884_q1;
+output   v6884_we1;
 input   ap_clk;
 input   ap_rst;
 input   ap_start;
 output   ap_done;
-output   ap_idle;
 output   ap_ready;
-output  [15:0] v6882_address0;
-output   v6882_ce0;
-input  [31:0] v6882_q0;
-output  [15:0] v6883_address0;
-output   v6883_ce0;
-input  [31:0] v6883_q0;
-output  [19:0] v6884_address1;
-output   v6884_ce1;
-output   v6884_we1;
-output  [31:0] v6884_d1;
+output   ap_idle;
+input   ap_continue;
 
 reg ap_done;
-reg ap_idle;
 reg ap_ready;
+reg ap_idle;
 
-(* fsm_encoding = "none" *) reg   [6:0] ap_CS_fsm;
-wire    ap_CS_fsm_state1;
-wire   [9:0] p_mid2_fu_637_p3;
-reg   [9:0] p_mid2_reg_1351;
-wire    ap_CS_fsm_state2;
-wire   [0:0] v6893_fu_646_p2;
-reg   [0:0] v6893_reg_1357;
-wire   [9:0] tmp_s_fu_657_p3;
-reg   [9:0] tmp_s_reg_1362;
-reg   [5:0] local_A4_address0;
-reg    local_A4_ce0;
-reg    local_A4_we0;
-wire   [31:0] local_A4_q0;
-reg   [5:0] local_A4_1_address0;
-reg    local_A4_1_ce0;
-reg    local_A4_1_we0;
-wire   [31:0] local_A4_1_q0;
-reg   [5:0] local_A4_2_address0;
-reg    local_A4_2_ce0;
-reg    local_A4_2_we0;
-wire   [31:0] local_A4_2_q0;
-reg   [5:0] local_A4_3_address0;
-reg    local_A4_3_ce0;
-reg    local_A4_3_we0;
-wire   [31:0] local_A4_3_q0;
-reg   [5:0] local_A4_4_address0;
-reg    local_A4_4_ce0;
-reg    local_A4_4_we0;
-wire   [31:0] local_A4_4_q0;
-reg   [5:0] local_A4_5_address0;
-reg    local_A4_5_ce0;
-reg    local_A4_5_we0;
-wire   [31:0] local_A4_5_q0;
-reg   [5:0] local_A4_6_address0;
-reg    local_A4_6_ce0;
-reg    local_A4_6_we0;
-wire   [31:0] local_A4_6_q0;
-reg   [5:0] local_A4_7_address0;
-reg    local_A4_7_ce0;
-reg    local_A4_7_we0;
-wire   [31:0] local_A4_7_q0;
-reg   [5:0] local_B4_address0;
-reg    local_B4_ce0;
-reg    local_B4_we0;
-wire   [31:0] local_B4_q0;
-reg   [5:0] local_B4_1_address0;
-reg    local_B4_1_ce0;
-reg    local_B4_1_we0;
-wire   [31:0] local_B4_1_q0;
-reg   [5:0] local_B4_2_address0;
-reg    local_B4_2_ce0;
-reg    local_B4_2_we0;
-wire   [31:0] local_B4_2_q0;
-reg   [5:0] local_B4_3_address0;
-reg    local_B4_3_ce0;
-reg    local_B4_3_we0;
-wire   [31:0] local_B4_3_q0;
-reg   [5:0] local_B4_4_address0;
-reg    local_B4_4_ce0;
-reg    local_B4_4_we0;
-wire   [31:0] local_B4_4_q0;
-reg   [5:0] local_B4_5_address0;
-reg    local_B4_5_ce0;
-reg    local_B4_5_we0;
-wire   [31:0] local_B4_5_q0;
-reg   [5:0] local_B4_6_address0;
-reg    local_B4_6_ce0;
-reg    local_B4_6_we0;
-wire   [31:0] local_B4_6_q0;
-reg   [5:0] local_B4_7_address0;
-reg    local_B4_7_ce0;
-reg    local_B4_7_we0;
-wire   [31:0] local_B4_7_q0;
-wire    grp_systolic_QKT_Pipeline_l_load_A_tile_ak4_l_ai4_fu_382_ap_start;
-wire    grp_systolic_QKT_Pipeline_l_load_A_tile_ak4_l_ai4_fu_382_ap_done;
-wire    grp_systolic_QKT_Pipeline_l_load_A_tile_ak4_l_ai4_fu_382_ap_idle;
-wire    grp_systolic_QKT_Pipeline_l_load_A_tile_ak4_l_ai4_fu_382_ap_ready;
-wire   [5:0] grp_systolic_QKT_Pipeline_l_load_A_tile_ak4_l_ai4_fu_382_local_A4_address0;
-wire    grp_systolic_QKT_Pipeline_l_load_A_tile_ak4_l_ai4_fu_382_local_A4_ce0;
-wire    grp_systolic_QKT_Pipeline_l_load_A_tile_ak4_l_ai4_fu_382_local_A4_we0;
-wire   [31:0] grp_systolic_QKT_Pipeline_l_load_A_tile_ak4_l_ai4_fu_382_local_A4_d0;
-wire   [5:0] grp_systolic_QKT_Pipeline_l_load_A_tile_ak4_l_ai4_fu_382_local_A4_1_address0;
-wire    grp_systolic_QKT_Pipeline_l_load_A_tile_ak4_l_ai4_fu_382_local_A4_1_ce0;
-wire    grp_systolic_QKT_Pipeline_l_load_A_tile_ak4_l_ai4_fu_382_local_A4_1_we0;
-wire   [31:0] grp_systolic_QKT_Pipeline_l_load_A_tile_ak4_l_ai4_fu_382_local_A4_1_d0;
-wire   [5:0] grp_systolic_QKT_Pipeline_l_load_A_tile_ak4_l_ai4_fu_382_local_A4_2_address0;
-wire    grp_systolic_QKT_Pipeline_l_load_A_tile_ak4_l_ai4_fu_382_local_A4_2_ce0;
-wire    grp_systolic_QKT_Pipeline_l_load_A_tile_ak4_l_ai4_fu_382_local_A4_2_we0;
-wire   [31:0] grp_systolic_QKT_Pipeline_l_load_A_tile_ak4_l_ai4_fu_382_local_A4_2_d0;
-wire   [5:0] grp_systolic_QKT_Pipeline_l_load_A_tile_ak4_l_ai4_fu_382_local_A4_3_address0;
-wire    grp_systolic_QKT_Pipeline_l_load_A_tile_ak4_l_ai4_fu_382_local_A4_3_ce0;
-wire    grp_systolic_QKT_Pipeline_l_load_A_tile_ak4_l_ai4_fu_382_local_A4_3_we0;
-wire   [31:0] grp_systolic_QKT_Pipeline_l_load_A_tile_ak4_l_ai4_fu_382_local_A4_3_d0;
-wire   [5:0] grp_systolic_QKT_Pipeline_l_load_A_tile_ak4_l_ai4_fu_382_local_A4_4_address0;
-wire    grp_systolic_QKT_Pipeline_l_load_A_tile_ak4_l_ai4_fu_382_local_A4_4_ce0;
-wire    grp_systolic_QKT_Pipeline_l_load_A_tile_ak4_l_ai4_fu_382_local_A4_4_we0;
-wire   [31:0] grp_systolic_QKT_Pipeline_l_load_A_tile_ak4_l_ai4_fu_382_local_A4_4_d0;
-wire   [5:0] grp_systolic_QKT_Pipeline_l_load_A_tile_ak4_l_ai4_fu_382_local_A4_5_address0;
-wire    grp_systolic_QKT_Pipeline_l_load_A_tile_ak4_l_ai4_fu_382_local_A4_5_ce0;
-wire    grp_systolic_QKT_Pipeline_l_load_A_tile_ak4_l_ai4_fu_382_local_A4_5_we0;
-wire   [31:0] grp_systolic_QKT_Pipeline_l_load_A_tile_ak4_l_ai4_fu_382_local_A4_5_d0;
-wire   [5:0] grp_systolic_QKT_Pipeline_l_load_A_tile_ak4_l_ai4_fu_382_local_A4_6_address0;
-wire    grp_systolic_QKT_Pipeline_l_load_A_tile_ak4_l_ai4_fu_382_local_A4_6_ce0;
-wire    grp_systolic_QKT_Pipeline_l_load_A_tile_ak4_l_ai4_fu_382_local_A4_6_we0;
-wire   [31:0] grp_systolic_QKT_Pipeline_l_load_A_tile_ak4_l_ai4_fu_382_local_A4_6_d0;
-wire   [5:0] grp_systolic_QKT_Pipeline_l_load_A_tile_ak4_l_ai4_fu_382_local_A4_7_address0;
-wire    grp_systolic_QKT_Pipeline_l_load_A_tile_ak4_l_ai4_fu_382_local_A4_7_ce0;
-wire    grp_systolic_QKT_Pipeline_l_load_A_tile_ak4_l_ai4_fu_382_local_A4_7_we0;
-wire   [31:0] grp_systolic_QKT_Pipeline_l_load_A_tile_ak4_l_ai4_fu_382_local_A4_7_d0;
-wire   [15:0] grp_systolic_QKT_Pipeline_l_load_A_tile_ak4_l_ai4_fu_382_v6882_address0;
-wire    grp_systolic_QKT_Pipeline_l_load_A_tile_ak4_l_ai4_fu_382_v6882_ce0;
-wire    grp_systolic_QKT_Pipeline_l_load_B_tile_bk4_l_bj4_fu_398_ap_start;
-wire    grp_systolic_QKT_Pipeline_l_load_B_tile_bk4_l_bj4_fu_398_ap_done;
-wire    grp_systolic_QKT_Pipeline_l_load_B_tile_bk4_l_bj4_fu_398_ap_idle;
-wire    grp_systolic_QKT_Pipeline_l_load_B_tile_bk4_l_bj4_fu_398_ap_ready;
-wire   [5:0] grp_systolic_QKT_Pipeline_l_load_B_tile_bk4_l_bj4_fu_398_local_B4_address0;
-wire    grp_systolic_QKT_Pipeline_l_load_B_tile_bk4_l_bj4_fu_398_local_B4_ce0;
-wire    grp_systolic_QKT_Pipeline_l_load_B_tile_bk4_l_bj4_fu_398_local_B4_we0;
-wire   [31:0] grp_systolic_QKT_Pipeline_l_load_B_tile_bk4_l_bj4_fu_398_local_B4_d0;
-wire   [5:0] grp_systolic_QKT_Pipeline_l_load_B_tile_bk4_l_bj4_fu_398_local_B4_1_address0;
-wire    grp_systolic_QKT_Pipeline_l_load_B_tile_bk4_l_bj4_fu_398_local_B4_1_ce0;
-wire    grp_systolic_QKT_Pipeline_l_load_B_tile_bk4_l_bj4_fu_398_local_B4_1_we0;
-wire   [31:0] grp_systolic_QKT_Pipeline_l_load_B_tile_bk4_l_bj4_fu_398_local_B4_1_d0;
-wire   [5:0] grp_systolic_QKT_Pipeline_l_load_B_tile_bk4_l_bj4_fu_398_local_B4_2_address0;
-wire    grp_systolic_QKT_Pipeline_l_load_B_tile_bk4_l_bj4_fu_398_local_B4_2_ce0;
-wire    grp_systolic_QKT_Pipeline_l_load_B_tile_bk4_l_bj4_fu_398_local_B4_2_we0;
-wire   [31:0] grp_systolic_QKT_Pipeline_l_load_B_tile_bk4_l_bj4_fu_398_local_B4_2_d0;
-wire   [5:0] grp_systolic_QKT_Pipeline_l_load_B_tile_bk4_l_bj4_fu_398_local_B4_3_address0;
-wire    grp_systolic_QKT_Pipeline_l_load_B_tile_bk4_l_bj4_fu_398_local_B4_3_ce0;
-wire    grp_systolic_QKT_Pipeline_l_load_B_tile_bk4_l_bj4_fu_398_local_B4_3_we0;
-wire   [31:0] grp_systolic_QKT_Pipeline_l_load_B_tile_bk4_l_bj4_fu_398_local_B4_3_d0;
-wire   [5:0] grp_systolic_QKT_Pipeline_l_load_B_tile_bk4_l_bj4_fu_398_local_B4_4_address0;
-wire    grp_systolic_QKT_Pipeline_l_load_B_tile_bk4_l_bj4_fu_398_local_B4_4_ce0;
-wire    grp_systolic_QKT_Pipeline_l_load_B_tile_bk4_l_bj4_fu_398_local_B4_4_we0;
-wire   [31:0] grp_systolic_QKT_Pipeline_l_load_B_tile_bk4_l_bj4_fu_398_local_B4_4_d0;
-wire   [5:0] grp_systolic_QKT_Pipeline_l_load_B_tile_bk4_l_bj4_fu_398_local_B4_5_address0;
-wire    grp_systolic_QKT_Pipeline_l_load_B_tile_bk4_l_bj4_fu_398_local_B4_5_ce0;
-wire    grp_systolic_QKT_Pipeline_l_load_B_tile_bk4_l_bj4_fu_398_local_B4_5_we0;
-wire   [31:0] grp_systolic_QKT_Pipeline_l_load_B_tile_bk4_l_bj4_fu_398_local_B4_5_d0;
-wire   [5:0] grp_systolic_QKT_Pipeline_l_load_B_tile_bk4_l_bj4_fu_398_local_B4_6_address0;
-wire    grp_systolic_QKT_Pipeline_l_load_B_tile_bk4_l_bj4_fu_398_local_B4_6_ce0;
-wire    grp_systolic_QKT_Pipeline_l_load_B_tile_bk4_l_bj4_fu_398_local_B4_6_we0;
-wire   [31:0] grp_systolic_QKT_Pipeline_l_load_B_tile_bk4_l_bj4_fu_398_local_B4_6_d0;
-wire   [5:0] grp_systolic_QKT_Pipeline_l_load_B_tile_bk4_l_bj4_fu_398_local_B4_7_address0;
-wire    grp_systolic_QKT_Pipeline_l_load_B_tile_bk4_l_bj4_fu_398_local_B4_7_ce0;
-wire    grp_systolic_QKT_Pipeline_l_load_B_tile_bk4_l_bj4_fu_398_local_B4_7_we0;
-wire   [31:0] grp_systolic_QKT_Pipeline_l_load_B_tile_bk4_l_bj4_fu_398_local_B4_7_d0;
-wire   [15:0] grp_systolic_QKT_Pipeline_l_load_B_tile_bk4_l_bj4_fu_398_v6883_address0;
-wire    grp_systolic_QKT_Pipeline_l_load_B_tile_bk4_l_bj4_fu_398_v6883_ce0;
-wire   [5:0] grp_systolic_tile_QKT_fu_413_v6609_0_address0;
-wire    grp_systolic_tile_QKT_fu_413_v6609_0_ce0;
-wire   [31:0] grp_systolic_tile_QKT_fu_413_v6609_0_d0;
-wire    grp_systolic_tile_QKT_fu_413_v6609_0_we0;
-wire   [5:0] grp_systolic_tile_QKT_fu_413_v6609_0_address1;
-wire    grp_systolic_tile_QKT_fu_413_v6609_0_ce1;
-wire   [31:0] grp_systolic_tile_QKT_fu_413_v6609_0_d1;
-wire    grp_systolic_tile_QKT_fu_413_v6609_0_we1;
-wire   [5:0] grp_systolic_tile_QKT_fu_413_v6609_1_address0;
-wire    grp_systolic_tile_QKT_fu_413_v6609_1_ce0;
-wire   [31:0] grp_systolic_tile_QKT_fu_413_v6609_1_d0;
-wire    grp_systolic_tile_QKT_fu_413_v6609_1_we0;
-wire   [5:0] grp_systolic_tile_QKT_fu_413_v6609_1_address1;
-wire    grp_systolic_tile_QKT_fu_413_v6609_1_ce1;
-wire   [31:0] grp_systolic_tile_QKT_fu_413_v6609_1_d1;
-wire    grp_systolic_tile_QKT_fu_413_v6609_1_we1;
-wire   [5:0] grp_systolic_tile_QKT_fu_413_v6609_2_address0;
-wire    grp_systolic_tile_QKT_fu_413_v6609_2_ce0;
-wire   [31:0] grp_systolic_tile_QKT_fu_413_v6609_2_d0;
-wire    grp_systolic_tile_QKT_fu_413_v6609_2_we0;
-wire   [5:0] grp_systolic_tile_QKT_fu_413_v6609_2_address1;
-wire    grp_systolic_tile_QKT_fu_413_v6609_2_ce1;
-wire   [31:0] grp_systolic_tile_QKT_fu_413_v6609_2_d1;
-wire    grp_systolic_tile_QKT_fu_413_v6609_2_we1;
-wire   [5:0] grp_systolic_tile_QKT_fu_413_v6609_3_address0;
-wire    grp_systolic_tile_QKT_fu_413_v6609_3_ce0;
-wire   [31:0] grp_systolic_tile_QKT_fu_413_v6609_3_d0;
-wire    grp_systolic_tile_QKT_fu_413_v6609_3_we0;
-wire   [5:0] grp_systolic_tile_QKT_fu_413_v6609_3_address1;
-wire    grp_systolic_tile_QKT_fu_413_v6609_3_ce1;
-wire   [31:0] grp_systolic_tile_QKT_fu_413_v6609_3_d1;
-wire    grp_systolic_tile_QKT_fu_413_v6609_3_we1;
-wire   [5:0] grp_systolic_tile_QKT_fu_413_v6609_4_address0;
-wire    grp_systolic_tile_QKT_fu_413_v6609_4_ce0;
-wire   [31:0] grp_systolic_tile_QKT_fu_413_v6609_4_d0;
-wire    grp_systolic_tile_QKT_fu_413_v6609_4_we0;
-wire   [5:0] grp_systolic_tile_QKT_fu_413_v6609_4_address1;
-wire    grp_systolic_tile_QKT_fu_413_v6609_4_ce1;
-wire   [31:0] grp_systolic_tile_QKT_fu_413_v6609_4_d1;
-wire    grp_systolic_tile_QKT_fu_413_v6609_4_we1;
-wire   [5:0] grp_systolic_tile_QKT_fu_413_v6609_5_address0;
-wire    grp_systolic_tile_QKT_fu_413_v6609_5_ce0;
-wire   [31:0] grp_systolic_tile_QKT_fu_413_v6609_5_d0;
-wire    grp_systolic_tile_QKT_fu_413_v6609_5_we0;
-wire   [5:0] grp_systolic_tile_QKT_fu_413_v6609_5_address1;
-wire    grp_systolic_tile_QKT_fu_413_v6609_5_ce1;
-wire   [31:0] grp_systolic_tile_QKT_fu_413_v6609_5_d1;
-wire    grp_systolic_tile_QKT_fu_413_v6609_5_we1;
-wire   [5:0] grp_systolic_tile_QKT_fu_413_v6609_6_address0;
-wire    grp_systolic_tile_QKT_fu_413_v6609_6_ce0;
-wire   [31:0] grp_systolic_tile_QKT_fu_413_v6609_6_d0;
-wire    grp_systolic_tile_QKT_fu_413_v6609_6_we0;
-wire   [5:0] grp_systolic_tile_QKT_fu_413_v6609_6_address1;
-wire    grp_systolic_tile_QKT_fu_413_v6609_6_ce1;
-wire   [31:0] grp_systolic_tile_QKT_fu_413_v6609_6_d1;
-wire    grp_systolic_tile_QKT_fu_413_v6609_6_we1;
-wire   [5:0] grp_systolic_tile_QKT_fu_413_v6609_7_address0;
-wire    grp_systolic_tile_QKT_fu_413_v6609_7_ce0;
-wire   [31:0] grp_systolic_tile_QKT_fu_413_v6609_7_d0;
-wire    grp_systolic_tile_QKT_fu_413_v6609_7_we0;
-wire   [5:0] grp_systolic_tile_QKT_fu_413_v6609_7_address1;
-wire    grp_systolic_tile_QKT_fu_413_v6609_7_ce1;
-wire   [31:0] grp_systolic_tile_QKT_fu_413_v6609_7_d1;
-wire    grp_systolic_tile_QKT_fu_413_v6609_7_we1;
-wire   [5:0] grp_systolic_tile_QKT_fu_413_v6610_0_address0;
-wire    grp_systolic_tile_QKT_fu_413_v6610_0_ce0;
-wire   [31:0] grp_systolic_tile_QKT_fu_413_v6610_0_d0;
-wire    grp_systolic_tile_QKT_fu_413_v6610_0_we0;
-wire   [5:0] grp_systolic_tile_QKT_fu_413_v6610_0_address1;
-wire    grp_systolic_tile_QKT_fu_413_v6610_0_ce1;
-wire   [31:0] grp_systolic_tile_QKT_fu_413_v6610_0_d1;
-wire    grp_systolic_tile_QKT_fu_413_v6610_0_we1;
-wire   [5:0] grp_systolic_tile_QKT_fu_413_v6610_1_address0;
-wire    grp_systolic_tile_QKT_fu_413_v6610_1_ce0;
-wire   [31:0] grp_systolic_tile_QKT_fu_413_v6610_1_d0;
-wire    grp_systolic_tile_QKT_fu_413_v6610_1_we0;
-wire   [5:0] grp_systolic_tile_QKT_fu_413_v6610_1_address1;
-wire    grp_systolic_tile_QKT_fu_413_v6610_1_ce1;
-wire   [31:0] grp_systolic_tile_QKT_fu_413_v6610_1_d1;
-wire    grp_systolic_tile_QKT_fu_413_v6610_1_we1;
-wire   [5:0] grp_systolic_tile_QKT_fu_413_v6610_2_address0;
-wire    grp_systolic_tile_QKT_fu_413_v6610_2_ce0;
-wire   [31:0] grp_systolic_tile_QKT_fu_413_v6610_2_d0;
-wire    grp_systolic_tile_QKT_fu_413_v6610_2_we0;
-wire   [5:0] grp_systolic_tile_QKT_fu_413_v6610_2_address1;
-wire    grp_systolic_tile_QKT_fu_413_v6610_2_ce1;
-wire   [31:0] grp_systolic_tile_QKT_fu_413_v6610_2_d1;
-wire    grp_systolic_tile_QKT_fu_413_v6610_2_we1;
-wire   [5:0] grp_systolic_tile_QKT_fu_413_v6610_3_address0;
-wire    grp_systolic_tile_QKT_fu_413_v6610_3_ce0;
-wire   [31:0] grp_systolic_tile_QKT_fu_413_v6610_3_d0;
-wire    grp_systolic_tile_QKT_fu_413_v6610_3_we0;
-wire   [5:0] grp_systolic_tile_QKT_fu_413_v6610_3_address1;
-wire    grp_systolic_tile_QKT_fu_413_v6610_3_ce1;
-wire   [31:0] grp_systolic_tile_QKT_fu_413_v6610_3_d1;
-wire    grp_systolic_tile_QKT_fu_413_v6610_3_we1;
-wire   [5:0] grp_systolic_tile_QKT_fu_413_v6610_4_address0;
-wire    grp_systolic_tile_QKT_fu_413_v6610_4_ce0;
-wire   [31:0] grp_systolic_tile_QKT_fu_413_v6610_4_d0;
-wire    grp_systolic_tile_QKT_fu_413_v6610_4_we0;
-wire   [5:0] grp_systolic_tile_QKT_fu_413_v6610_4_address1;
-wire    grp_systolic_tile_QKT_fu_413_v6610_4_ce1;
-wire   [31:0] grp_systolic_tile_QKT_fu_413_v6610_4_d1;
-wire    grp_systolic_tile_QKT_fu_413_v6610_4_we1;
-wire   [5:0] grp_systolic_tile_QKT_fu_413_v6610_5_address0;
-wire    grp_systolic_tile_QKT_fu_413_v6610_5_ce0;
-wire   [31:0] grp_systolic_tile_QKT_fu_413_v6610_5_d0;
-wire    grp_systolic_tile_QKT_fu_413_v6610_5_we0;
-wire   [5:0] grp_systolic_tile_QKT_fu_413_v6610_5_address1;
-wire    grp_systolic_tile_QKT_fu_413_v6610_5_ce1;
-wire   [31:0] grp_systolic_tile_QKT_fu_413_v6610_5_d1;
-wire    grp_systolic_tile_QKT_fu_413_v6610_5_we1;
-wire   [5:0] grp_systolic_tile_QKT_fu_413_v6610_6_address0;
-wire    grp_systolic_tile_QKT_fu_413_v6610_6_ce0;
-wire   [31:0] grp_systolic_tile_QKT_fu_413_v6610_6_d0;
-wire    grp_systolic_tile_QKT_fu_413_v6610_6_we0;
-wire   [5:0] grp_systolic_tile_QKT_fu_413_v6610_6_address1;
-wire    grp_systolic_tile_QKT_fu_413_v6610_6_ce1;
-wire   [31:0] grp_systolic_tile_QKT_fu_413_v6610_6_d1;
-wire    grp_systolic_tile_QKT_fu_413_v6610_6_we1;
-wire   [5:0] grp_systolic_tile_QKT_fu_413_v6610_7_address0;
-wire    grp_systolic_tile_QKT_fu_413_v6610_7_ce0;
-wire   [31:0] grp_systolic_tile_QKT_fu_413_v6610_7_d0;
-wire    grp_systolic_tile_QKT_fu_413_v6610_7_we0;
-wire   [5:0] grp_systolic_tile_QKT_fu_413_v6610_7_address1;
-wire    grp_systolic_tile_QKT_fu_413_v6610_7_ce1;
-wire   [31:0] grp_systolic_tile_QKT_fu_413_v6610_7_d1;
-wire    grp_systolic_tile_QKT_fu_413_v6610_7_we1;
-wire   [31:0] grp_systolic_tile_QKT_fu_413_v6611_0_0;
-wire   [31:0] grp_systolic_tile_QKT_fu_413_v6611_0_1;
-wire   [31:0] grp_systolic_tile_QKT_fu_413_v6611_0_2;
-wire   [31:0] grp_systolic_tile_QKT_fu_413_v6611_0_3;
-wire   [31:0] grp_systolic_tile_QKT_fu_413_v6611_0_4;
-wire   [31:0] grp_systolic_tile_QKT_fu_413_v6611_0_5;
-wire   [31:0] grp_systolic_tile_QKT_fu_413_v6611_0_6;
-wire   [31:0] grp_systolic_tile_QKT_fu_413_v6611_0_7;
-wire   [31:0] grp_systolic_tile_QKT_fu_413_v6611_1_0;
-wire   [31:0] grp_systolic_tile_QKT_fu_413_v6611_1_1;
-wire   [31:0] grp_systolic_tile_QKT_fu_413_v6611_1_2;
-wire   [31:0] grp_systolic_tile_QKT_fu_413_v6611_1_3;
-wire   [31:0] grp_systolic_tile_QKT_fu_413_v6611_1_4;
-wire   [31:0] grp_systolic_tile_QKT_fu_413_v6611_1_5;
-wire   [31:0] grp_systolic_tile_QKT_fu_413_v6611_1_6;
-wire   [31:0] grp_systolic_tile_QKT_fu_413_v6611_1_7;
-wire   [31:0] grp_systolic_tile_QKT_fu_413_v6611_2_0;
-wire   [31:0] grp_systolic_tile_QKT_fu_413_v6611_2_1;
-wire   [31:0] grp_systolic_tile_QKT_fu_413_v6611_2_2;
-wire   [31:0] grp_systolic_tile_QKT_fu_413_v6611_2_3;
-wire   [31:0] grp_systolic_tile_QKT_fu_413_v6611_2_4;
-wire   [31:0] grp_systolic_tile_QKT_fu_413_v6611_2_5;
-wire   [31:0] grp_systolic_tile_QKT_fu_413_v6611_2_6;
-wire   [31:0] grp_systolic_tile_QKT_fu_413_v6611_2_7;
-wire   [31:0] grp_systolic_tile_QKT_fu_413_v6611_3_0;
-wire   [31:0] grp_systolic_tile_QKT_fu_413_v6611_3_1;
-wire   [31:0] grp_systolic_tile_QKT_fu_413_v6611_3_2;
-wire   [31:0] grp_systolic_tile_QKT_fu_413_v6611_3_3;
-wire   [31:0] grp_systolic_tile_QKT_fu_413_v6611_3_4;
-wire   [31:0] grp_systolic_tile_QKT_fu_413_v6611_3_5;
-wire   [31:0] grp_systolic_tile_QKT_fu_413_v6611_3_6;
-wire   [31:0] grp_systolic_tile_QKT_fu_413_v6611_3_7;
-wire   [31:0] grp_systolic_tile_QKT_fu_413_v6611_4_0;
-wire   [31:0] grp_systolic_tile_QKT_fu_413_v6611_4_1;
-wire   [31:0] grp_systolic_tile_QKT_fu_413_v6611_4_2;
-wire   [31:0] grp_systolic_tile_QKT_fu_413_v6611_4_3;
-wire   [31:0] grp_systolic_tile_QKT_fu_413_v6611_4_4;
-wire   [31:0] grp_systolic_tile_QKT_fu_413_v6611_4_5;
-wire   [31:0] grp_systolic_tile_QKT_fu_413_v6611_4_6;
-wire   [31:0] grp_systolic_tile_QKT_fu_413_v6611_4_7;
-wire   [31:0] grp_systolic_tile_QKT_fu_413_v6611_5_0;
-wire   [31:0] grp_systolic_tile_QKT_fu_413_v6611_5_1;
-wire   [31:0] grp_systolic_tile_QKT_fu_413_v6611_5_2;
-wire   [31:0] grp_systolic_tile_QKT_fu_413_v6611_5_3;
-wire   [31:0] grp_systolic_tile_QKT_fu_413_v6611_5_4;
-wire   [31:0] grp_systolic_tile_QKT_fu_413_v6611_5_5;
-wire   [31:0] grp_systolic_tile_QKT_fu_413_v6611_5_6;
-wire   [31:0] grp_systolic_tile_QKT_fu_413_v6611_5_7;
-wire   [31:0] grp_systolic_tile_QKT_fu_413_v6611_6_0;
-wire   [31:0] grp_systolic_tile_QKT_fu_413_v6611_6_1;
-wire   [31:0] grp_systolic_tile_QKT_fu_413_v6611_6_2;
-wire   [31:0] grp_systolic_tile_QKT_fu_413_v6611_6_3;
-wire   [31:0] grp_systolic_tile_QKT_fu_413_v6611_6_4;
-wire   [31:0] grp_systolic_tile_QKT_fu_413_v6611_6_5;
-wire   [31:0] grp_systolic_tile_QKT_fu_413_v6611_6_6;
-wire   [31:0] grp_systolic_tile_QKT_fu_413_v6611_6_7;
-wire   [31:0] grp_systolic_tile_QKT_fu_413_v6611_7_0;
-wire   [31:0] grp_systolic_tile_QKT_fu_413_v6611_7_1;
-wire   [31:0] grp_systolic_tile_QKT_fu_413_v6611_7_2;
-wire   [31:0] grp_systolic_tile_QKT_fu_413_v6611_7_3;
-wire   [31:0] grp_systolic_tile_QKT_fu_413_v6611_7_4;
-wire   [31:0] grp_systolic_tile_QKT_fu_413_v6611_7_5;
-wire   [31:0] grp_systolic_tile_QKT_fu_413_v6611_7_6;
-wire   [31:0] grp_systolic_tile_QKT_fu_413_v6611_7_7;
-wire    grp_systolic_tile_QKT_fu_413_ap_start;
-wire    grp_systolic_tile_QKT_fu_413_v6611_0_0_ap_vld;
-wire    grp_systolic_tile_QKT_fu_413_ap_done;
-wire    grp_systolic_tile_QKT_fu_413_v6611_0_1_ap_vld;
-wire    grp_systolic_tile_QKT_fu_413_v6611_0_2_ap_vld;
-wire    grp_systolic_tile_QKT_fu_413_v6611_0_3_ap_vld;
-wire    grp_systolic_tile_QKT_fu_413_v6611_0_4_ap_vld;
-wire    grp_systolic_tile_QKT_fu_413_v6611_0_5_ap_vld;
-wire    grp_systolic_tile_QKT_fu_413_v6611_0_6_ap_vld;
-wire    grp_systolic_tile_QKT_fu_413_v6611_0_7_ap_vld;
-wire    grp_systolic_tile_QKT_fu_413_v6611_1_0_ap_vld;
-wire    grp_systolic_tile_QKT_fu_413_v6611_1_1_ap_vld;
-wire    grp_systolic_tile_QKT_fu_413_v6611_1_2_ap_vld;
-wire    grp_systolic_tile_QKT_fu_413_v6611_1_3_ap_vld;
-wire    grp_systolic_tile_QKT_fu_413_v6611_1_4_ap_vld;
-wire    grp_systolic_tile_QKT_fu_413_v6611_1_5_ap_vld;
-wire    grp_systolic_tile_QKT_fu_413_v6611_1_6_ap_vld;
-wire    grp_systolic_tile_QKT_fu_413_v6611_1_7_ap_vld;
-wire    grp_systolic_tile_QKT_fu_413_v6611_2_0_ap_vld;
-wire    grp_systolic_tile_QKT_fu_413_v6611_2_1_ap_vld;
-wire    grp_systolic_tile_QKT_fu_413_v6611_2_2_ap_vld;
-wire    grp_systolic_tile_QKT_fu_413_v6611_2_3_ap_vld;
-wire    grp_systolic_tile_QKT_fu_413_v6611_2_4_ap_vld;
-wire    grp_systolic_tile_QKT_fu_413_v6611_2_5_ap_vld;
-wire    grp_systolic_tile_QKT_fu_413_v6611_2_6_ap_vld;
-wire    grp_systolic_tile_QKT_fu_413_v6611_2_7_ap_vld;
-wire    grp_systolic_tile_QKT_fu_413_v6611_3_0_ap_vld;
-wire    grp_systolic_tile_QKT_fu_413_v6611_3_1_ap_vld;
-wire    grp_systolic_tile_QKT_fu_413_v6611_3_2_ap_vld;
-wire    grp_systolic_tile_QKT_fu_413_v6611_3_3_ap_vld;
-wire    grp_systolic_tile_QKT_fu_413_v6611_3_4_ap_vld;
-wire    grp_systolic_tile_QKT_fu_413_v6611_3_5_ap_vld;
-wire    grp_systolic_tile_QKT_fu_413_v6611_3_6_ap_vld;
-wire    grp_systolic_tile_QKT_fu_413_v6611_3_7_ap_vld;
-wire    grp_systolic_tile_QKT_fu_413_v6611_4_0_ap_vld;
-wire    grp_systolic_tile_QKT_fu_413_v6611_4_1_ap_vld;
-wire    grp_systolic_tile_QKT_fu_413_v6611_4_2_ap_vld;
-wire    grp_systolic_tile_QKT_fu_413_v6611_4_3_ap_vld;
-wire    grp_systolic_tile_QKT_fu_413_v6611_4_4_ap_vld;
-wire    grp_systolic_tile_QKT_fu_413_v6611_4_5_ap_vld;
-wire    grp_systolic_tile_QKT_fu_413_v6611_4_6_ap_vld;
-wire    grp_systolic_tile_QKT_fu_413_v6611_4_7_ap_vld;
-wire    grp_systolic_tile_QKT_fu_413_v6611_5_0_ap_vld;
-wire    grp_systolic_tile_QKT_fu_413_v6611_5_1_ap_vld;
-wire    grp_systolic_tile_QKT_fu_413_v6611_5_2_ap_vld;
-wire    grp_systolic_tile_QKT_fu_413_v6611_5_3_ap_vld;
-wire    grp_systolic_tile_QKT_fu_413_v6611_5_4_ap_vld;
-wire    grp_systolic_tile_QKT_fu_413_v6611_5_5_ap_vld;
-wire    grp_systolic_tile_QKT_fu_413_v6611_5_6_ap_vld;
-wire    grp_systolic_tile_QKT_fu_413_v6611_5_7_ap_vld;
-wire    grp_systolic_tile_QKT_fu_413_v6611_6_0_ap_vld;
-wire    grp_systolic_tile_QKT_fu_413_v6611_6_1_ap_vld;
-wire    grp_systolic_tile_QKT_fu_413_v6611_6_2_ap_vld;
-wire    grp_systolic_tile_QKT_fu_413_v6611_6_3_ap_vld;
-wire    grp_systolic_tile_QKT_fu_413_v6611_6_4_ap_vld;
-wire    grp_systolic_tile_QKT_fu_413_v6611_6_5_ap_vld;
-wire    grp_systolic_tile_QKT_fu_413_v6611_6_6_ap_vld;
-wire    grp_systolic_tile_QKT_fu_413_v6611_6_7_ap_vld;
-wire    grp_systolic_tile_QKT_fu_413_v6611_7_0_ap_vld;
-wire    grp_systolic_tile_QKT_fu_413_v6611_7_1_ap_vld;
-wire    grp_systolic_tile_QKT_fu_413_v6611_7_2_ap_vld;
-wire    grp_systolic_tile_QKT_fu_413_v6611_7_3_ap_vld;
-wire    grp_systolic_tile_QKT_fu_413_v6611_7_4_ap_vld;
-wire    grp_systolic_tile_QKT_fu_413_v6611_7_5_ap_vld;
-wire    grp_systolic_tile_QKT_fu_413_v6611_7_6_ap_vld;
-wire    grp_systolic_tile_QKT_fu_413_v6611_7_7_ap_vld;
-wire    grp_systolic_tile_QKT_fu_413_ap_ready;
-wire    grp_systolic_tile_QKT_fu_413_ap_idle;
-reg    grp_systolic_tile_QKT_fu_413_ap_continue;
-wire    grp_systolic_QKT_Pipeline_l_store_C_tile_sj4_l_si4_fu_497_ap_start;
-wire    grp_systolic_QKT_Pipeline_l_store_C_tile_sj4_l_si4_fu_497_ap_done;
-wire    grp_systolic_QKT_Pipeline_l_store_C_tile_sj4_l_si4_fu_497_ap_idle;
-wire    grp_systolic_QKT_Pipeline_l_store_C_tile_sj4_l_si4_fu_497_ap_ready;
-wire   [19:0] grp_systolic_QKT_Pipeline_l_store_C_tile_sj4_l_si4_fu_497_v6884_address1;
-wire    grp_systolic_QKT_Pipeline_l_store_C_tile_sj4_l_si4_fu_497_v6884_ce1;
-wire    grp_systolic_QKT_Pipeline_l_store_C_tile_sj4_l_si4_fu_497_v6884_we1;
-wire   [31:0] grp_systolic_QKT_Pipeline_l_store_C_tile_sj4_l_si4_fu_497_v6884_d1;
-reg    grp_systolic_QKT_Pipeline_l_load_A_tile_ak4_l_ai4_fu_382_ap_start_reg;
-wire   [0:0] icmp_ln12604_fu_587_p2;
-wire    ap_CS_fsm_state3;
-reg    grp_systolic_QKT_Pipeline_l_load_B_tile_bk4_l_bj4_fu_398_ap_start_reg;
-reg    grp_systolic_tile_QKT_fu_413_ap_start_reg;
-wire    ap_CS_fsm_state4;
-wire    ap_CS_fsm_state5;
-wire    ap_sync_grp_systolic_tile_QKT_fu_413_ap_ready;
-wire    ap_sync_grp_systolic_tile_QKT_fu_413_ap_done;
-reg    ap_block_state5_on_subcall_done;
-reg    ap_sync_reg_grp_systolic_tile_QKT_fu_413_ap_ready;
-reg    ap_sync_reg_grp_systolic_tile_QKT_fu_413_ap_done;
-reg   [31:0] local_C4_fu_126;
-reg   [31:0] local_C4_1_fu_130;
-reg   [31:0] local_C4_2_fu_134;
-reg   [31:0] local_C4_3_fu_138;
-reg   [31:0] local_C4_4_fu_142;
-reg   [31:0] local_C4_5_fu_146;
-reg   [31:0] local_C4_6_fu_150;
-reg   [31:0] local_C4_7_fu_154;
-reg   [31:0] local_C4_8_fu_158;
-reg   [31:0] local_C4_9_fu_162;
-reg   [31:0] local_C4_10_fu_166;
-reg   [31:0] local_C4_11_fu_170;
-reg   [31:0] local_C4_12_fu_174;
-reg   [31:0] local_C4_13_fu_178;
-reg   [31:0] local_C4_14_fu_182;
-reg   [31:0] local_C4_15_fu_186;
-reg   [31:0] local_C4_16_fu_190;
-reg   [31:0] local_C4_17_fu_194;
-reg   [31:0] local_C4_18_fu_198;
-reg   [31:0] local_C4_19_fu_202;
-reg   [31:0] local_C4_20_fu_206;
-reg   [31:0] local_C4_21_fu_210;
-reg   [31:0] local_C4_22_fu_214;
-reg   [31:0] local_C4_23_fu_218;
-reg   [31:0] local_C4_24_fu_222;
-reg   [31:0] local_C4_25_fu_226;
-reg   [31:0] local_C4_26_fu_230;
-reg   [31:0] local_C4_27_fu_234;
-reg   [31:0] local_C4_28_fu_238;
-reg   [31:0] local_C4_29_fu_242;
-reg   [31:0] local_C4_30_fu_246;
-reg   [31:0] local_C4_31_fu_250;
-reg   [31:0] local_C4_32_fu_254;
-reg   [31:0] local_C4_33_fu_258;
-reg   [31:0] local_C4_34_fu_262;
-reg   [31:0] local_C4_35_fu_266;
-reg   [31:0] local_C4_36_fu_270;
-reg   [31:0] local_C4_37_fu_274;
-reg   [31:0] local_C4_38_fu_278;
-reg   [31:0] local_C4_39_fu_282;
-reg   [31:0] local_C4_40_fu_286;
-reg   [31:0] local_C4_41_fu_290;
-reg   [31:0] local_C4_42_fu_294;
-reg   [31:0] local_C4_43_fu_298;
-reg   [31:0] local_C4_44_fu_302;
-reg   [31:0] local_C4_45_fu_306;
-reg   [31:0] local_C4_46_fu_310;
-reg   [31:0] local_C4_47_fu_314;
-reg   [31:0] local_C4_48_fu_318;
-reg   [31:0] local_C4_49_fu_322;
-reg   [31:0] local_C4_50_fu_326;
-reg   [31:0] local_C4_51_fu_330;
-reg   [31:0] local_C4_52_fu_334;
-reg   [31:0] local_C4_53_fu_338;
-reg   [31:0] local_C4_54_fu_342;
-reg   [31:0] local_C4_55_fu_346;
-reg   [31:0] local_C4_56_fu_350;
-reg   [31:0] local_C4_57_fu_354;
-reg   [31:0] local_C4_58_fu_358;
-reg   [31:0] local_C4_59_fu_362;
-reg   [31:0] local_C4_60_fu_366;
-reg   [31:0] local_C4_61_fu_370;
-reg   [31:0] local_C4_62_fu_374;
-reg   [31:0] local_C4_63_fu_378;
-reg    grp_systolic_QKT_Pipeline_l_store_C_tile_sj4_l_si4_fu_497_ap_start_reg;
-wire    ap_CS_fsm_state6;
-wire    ap_CS_fsm_state7;
-reg   [7:0] ni4_fu_50;
-wire   [7:0] add_ln12605_fu_666_p2;
-reg   [7:0] mi4_fu_54;
-wire   [7:0] select_ln12604_1_fu_625_p3;
-reg   [14:0] indvar_flatten20_fu_58;
-wire   [14:0] add_ln12604_1_fu_593_p2;
-wire   [0:0] icmp_ln12605_fu_611_p2;
-wire   [7:0] add_ln12604_fu_605_p2;
-wire   [6:0] trunc_ln12604_fu_633_p1;
-wire   [7:0] select_ln12604_fu_617_p3;
-wire   [6:0] empty_fu_653_p1;
-reg   [6:0] ap_NS_fsm;
-reg    ap_ST_fsm_state1_blk;
-wire    ap_ST_fsm_state2_blk;
-reg    ap_block_state3_on_subcall_done;
-reg    ap_ST_fsm_state3_blk;
-wire    ap_ST_fsm_state4_blk;
-reg    ap_ST_fsm_state5_blk;
-wire    ap_ST_fsm_state6_blk;
-reg    ap_ST_fsm_state7_blk;
+wire   [19:0] dataflow_parent_loop_proc42_U0_v6884_address0;
+wire    dataflow_parent_loop_proc42_U0_v6884_ce0;
+wire   [31:0] dataflow_parent_loop_proc42_U0_v6884_d0;
+wire    dataflow_parent_loop_proc42_U0_v6884_we0;
+wire   [19:0] dataflow_parent_loop_proc42_U0_v6884_address1;
+wire    dataflow_parent_loop_proc42_U0_v6884_ce1;
+wire   [31:0] dataflow_parent_loop_proc42_U0_v6884_d1;
+wire    dataflow_parent_loop_proc42_U0_v6884_we1;
+wire   [15:0] dataflow_parent_loop_proc42_U0_v6883_address0;
+wire    dataflow_parent_loop_proc42_U0_v6883_ce0;
+wire   [31:0] dataflow_parent_loop_proc42_U0_v6883_d0;
+wire    dataflow_parent_loop_proc42_U0_v6883_we0;
+wire   [15:0] dataflow_parent_loop_proc42_U0_v6883_address1;
+wire    dataflow_parent_loop_proc42_U0_v6883_ce1;
+wire   [31:0] dataflow_parent_loop_proc42_U0_v6883_d1;
+wire    dataflow_parent_loop_proc42_U0_v6883_we1;
+wire   [15:0] dataflow_parent_loop_proc42_U0_v6882_address0;
+wire    dataflow_parent_loop_proc42_U0_v6882_ce0;
+wire   [31:0] dataflow_parent_loop_proc42_U0_v6882_d0;
+wire    dataflow_parent_loop_proc42_U0_v6882_we0;
+wire   [15:0] dataflow_parent_loop_proc42_U0_v6882_address1;
+wire    dataflow_parent_loop_proc42_U0_v6882_ce1;
+wire   [31:0] dataflow_parent_loop_proc42_U0_v6882_d1;
+wire    dataflow_parent_loop_proc42_U0_v6882_we1;
+wire    dataflow_parent_loop_proc42_U0_ap_start;
+wire    dataflow_parent_loop_proc42_U0_ap_done;
+wire    dataflow_parent_loop_proc42_U0_ap_ready;
+wire    dataflow_parent_loop_proc42_U0_ap_idle;
+reg    dataflow_parent_loop_proc42_U0_ap_continue;
+reg   [7:0] loop_dataflow_input_count;
+reg   [7:0] loop_dataflow_output_count;
+wire   [7:0] bound_minus_1;
 wire    ap_ce_reg;
 
 // power-on initialization
 initial begin
-#0 ap_CS_fsm = 7'd1;
-#0 grp_systolic_QKT_Pipeline_l_load_A_tile_ak4_l_ai4_fu_382_ap_start_reg = 1'b0;
-#0 grp_systolic_QKT_Pipeline_l_load_B_tile_bk4_l_bj4_fu_398_ap_start_reg = 1'b0;
-#0 grp_systolic_tile_QKT_fu_413_ap_start_reg = 1'b0;
-#0 ap_sync_reg_grp_systolic_tile_QKT_fu_413_ap_ready = 1'b0;
-#0 ap_sync_reg_grp_systolic_tile_QKT_fu_413_ap_done = 1'b0;
-#0 grp_systolic_QKT_Pipeline_l_store_C_tile_sj4_l_si4_fu_497_ap_start_reg = 1'b0;
-#0 ni4_fu_50 = 8'd0;
-#0 mi4_fu_54 = 8'd0;
-#0 indvar_flatten20_fu_58 = 15'd0;
+#0 loop_dataflow_input_count = 8'd0;
+#0 loop_dataflow_output_count = 8'd0;
 end
 
-allo_DDitBlock_systolic_QKT_local_A4_RAM_AUTO_1R1W #(
-    .DataWidth( 32 ),
-    .AddressRange( 64 ),
-    .AddressWidth( 6 ))
-local_A4_U(
-    .clk(ap_clk),
-    .reset(ap_rst),
-    .address0(local_A4_address0),
-    .ce0(local_A4_ce0),
-    .we0(local_A4_we0),
-    .d0(grp_systolic_QKT_Pipeline_l_load_A_tile_ak4_l_ai4_fu_382_local_A4_d0),
-    .q0(local_A4_q0)
-);
-
-allo_DDitBlock_systolic_QKT_local_A4_RAM_AUTO_1R1W #(
-    .DataWidth( 32 ),
-    .AddressRange( 64 ),
-    .AddressWidth( 6 ))
-local_A4_1_U(
-    .clk(ap_clk),
-    .reset(ap_rst),
-    .address0(local_A4_1_address0),
-    .ce0(local_A4_1_ce0),
-    .we0(local_A4_1_we0),
-    .d0(grp_systolic_QKT_Pipeline_l_load_A_tile_ak4_l_ai4_fu_382_local_A4_1_d0),
-    .q0(local_A4_1_q0)
-);
-
-allo_DDitBlock_systolic_QKT_local_A4_RAM_AUTO_1R1W #(
-    .DataWidth( 32 ),
-    .AddressRange( 64 ),
-    .AddressWidth( 6 ))
-local_A4_2_U(
-    .clk(ap_clk),
-    .reset(ap_rst),
-    .address0(local_A4_2_address0),
-    .ce0(local_A4_2_ce0),
-    .we0(local_A4_2_we0),
-    .d0(grp_systolic_QKT_Pipeline_l_load_A_tile_ak4_l_ai4_fu_382_local_A4_2_d0),
-    .q0(local_A4_2_q0)
-);
-
-allo_DDitBlock_systolic_QKT_local_A4_RAM_AUTO_1R1W #(
-    .DataWidth( 32 ),
-    .AddressRange( 64 ),
-    .AddressWidth( 6 ))
-local_A4_3_U(
-    .clk(ap_clk),
-    .reset(ap_rst),
-    .address0(local_A4_3_address0),
-    .ce0(local_A4_3_ce0),
-    .we0(local_A4_3_we0),
-    .d0(grp_systolic_QKT_Pipeline_l_load_A_tile_ak4_l_ai4_fu_382_local_A4_3_d0),
-    .q0(local_A4_3_q0)
-);
-
-allo_DDitBlock_systolic_QKT_local_A4_RAM_AUTO_1R1W #(
-    .DataWidth( 32 ),
-    .AddressRange( 64 ),
-    .AddressWidth( 6 ))
-local_A4_4_U(
-    .clk(ap_clk),
-    .reset(ap_rst),
-    .address0(local_A4_4_address0),
-    .ce0(local_A4_4_ce0),
-    .we0(local_A4_4_we0),
-    .d0(grp_systolic_QKT_Pipeline_l_load_A_tile_ak4_l_ai4_fu_382_local_A4_4_d0),
-    .q0(local_A4_4_q0)
-);
-
-allo_DDitBlock_systolic_QKT_local_A4_RAM_AUTO_1R1W #(
-    .DataWidth( 32 ),
-    .AddressRange( 64 ),
-    .AddressWidth( 6 ))
-local_A4_5_U(
-    .clk(ap_clk),
-    .reset(ap_rst),
-    .address0(local_A4_5_address0),
-    .ce0(local_A4_5_ce0),
-    .we0(local_A4_5_we0),
-    .d0(grp_systolic_QKT_Pipeline_l_load_A_tile_ak4_l_ai4_fu_382_local_A4_5_d0),
-    .q0(local_A4_5_q0)
-);
-
-allo_DDitBlock_systolic_QKT_local_A4_RAM_AUTO_1R1W #(
-    .DataWidth( 32 ),
-    .AddressRange( 64 ),
-    .AddressWidth( 6 ))
-local_A4_6_U(
-    .clk(ap_clk),
-    .reset(ap_rst),
-    .address0(local_A4_6_address0),
-    .ce0(local_A4_6_ce0),
-    .we0(local_A4_6_we0),
-    .d0(grp_systolic_QKT_Pipeline_l_load_A_tile_ak4_l_ai4_fu_382_local_A4_6_d0),
-    .q0(local_A4_6_q0)
-);
-
-allo_DDitBlock_systolic_QKT_local_A4_RAM_AUTO_1R1W #(
-    .DataWidth( 32 ),
-    .AddressRange( 64 ),
-    .AddressWidth( 6 ))
-local_A4_7_U(
-    .clk(ap_clk),
-    .reset(ap_rst),
-    .address0(local_A4_7_address0),
-    .ce0(local_A4_7_ce0),
-    .we0(local_A4_7_we0),
-    .d0(grp_systolic_QKT_Pipeline_l_load_A_tile_ak4_l_ai4_fu_382_local_A4_7_d0),
-    .q0(local_A4_7_q0)
-);
-
-allo_DDitBlock_systolic_QKT_local_A4_RAM_AUTO_1R1W #(
-    .DataWidth( 32 ),
-    .AddressRange( 64 ),
-    .AddressWidth( 6 ))
-local_B4_U(
-    .clk(ap_clk),
-    .reset(ap_rst),
-    .address0(local_B4_address0),
-    .ce0(local_B4_ce0),
-    .we0(local_B4_we0),
-    .d0(grp_systolic_QKT_Pipeline_l_load_B_tile_bk4_l_bj4_fu_398_local_B4_d0),
-    .q0(local_B4_q0)
-);
-
-allo_DDitBlock_systolic_QKT_local_A4_RAM_AUTO_1R1W #(
-    .DataWidth( 32 ),
-    .AddressRange( 64 ),
-    .AddressWidth( 6 ))
-local_B4_1_U(
-    .clk(ap_clk),
-    .reset(ap_rst),
-    .address0(local_B4_1_address0),
-    .ce0(local_B4_1_ce0),
-    .we0(local_B4_1_we0),
-    .d0(grp_systolic_QKT_Pipeline_l_load_B_tile_bk4_l_bj4_fu_398_local_B4_1_d0),
-    .q0(local_B4_1_q0)
-);
-
-allo_DDitBlock_systolic_QKT_local_A4_RAM_AUTO_1R1W #(
-    .DataWidth( 32 ),
-    .AddressRange( 64 ),
-    .AddressWidth( 6 ))
-local_B4_2_U(
-    .clk(ap_clk),
-    .reset(ap_rst),
-    .address0(local_B4_2_address0),
-    .ce0(local_B4_2_ce0),
-    .we0(local_B4_2_we0),
-    .d0(grp_systolic_QKT_Pipeline_l_load_B_tile_bk4_l_bj4_fu_398_local_B4_2_d0),
-    .q0(local_B4_2_q0)
-);
-
-allo_DDitBlock_systolic_QKT_local_A4_RAM_AUTO_1R1W #(
-    .DataWidth( 32 ),
-    .AddressRange( 64 ),
-    .AddressWidth( 6 ))
-local_B4_3_U(
-    .clk(ap_clk),
-    .reset(ap_rst),
-    .address0(local_B4_3_address0),
-    .ce0(local_B4_3_ce0),
-    .we0(local_B4_3_we0),
-    .d0(grp_systolic_QKT_Pipeline_l_load_B_tile_bk4_l_bj4_fu_398_local_B4_3_d0),
-    .q0(local_B4_3_q0)
-);
-
-allo_DDitBlock_systolic_QKT_local_A4_RAM_AUTO_1R1W #(
-    .DataWidth( 32 ),
-    .AddressRange( 64 ),
-    .AddressWidth( 6 ))
-local_B4_4_U(
-    .clk(ap_clk),
-    .reset(ap_rst),
-    .address0(local_B4_4_address0),
-    .ce0(local_B4_4_ce0),
-    .we0(local_B4_4_we0),
-    .d0(grp_systolic_QKT_Pipeline_l_load_B_tile_bk4_l_bj4_fu_398_local_B4_4_d0),
-    .q0(local_B4_4_q0)
-);
-
-allo_DDitBlock_systolic_QKT_local_A4_RAM_AUTO_1R1W #(
-    .DataWidth( 32 ),
-    .AddressRange( 64 ),
-    .AddressWidth( 6 ))
-local_B4_5_U(
-    .clk(ap_clk),
-    .reset(ap_rst),
-    .address0(local_B4_5_address0),
-    .ce0(local_B4_5_ce0),
-    .we0(local_B4_5_we0),
-    .d0(grp_systolic_QKT_Pipeline_l_load_B_tile_bk4_l_bj4_fu_398_local_B4_5_d0),
-    .q0(local_B4_5_q0)
-);
-
-allo_DDitBlock_systolic_QKT_local_A4_RAM_AUTO_1R1W #(
-    .DataWidth( 32 ),
-    .AddressRange( 64 ),
-    .AddressWidth( 6 ))
-local_B4_6_U(
-    .clk(ap_clk),
-    .reset(ap_rst),
-    .address0(local_B4_6_address0),
-    .ce0(local_B4_6_ce0),
-    .we0(local_B4_6_we0),
-    .d0(grp_systolic_QKT_Pipeline_l_load_B_tile_bk4_l_bj4_fu_398_local_B4_6_d0),
-    .q0(local_B4_6_q0)
-);
-
-allo_DDitBlock_systolic_QKT_local_A4_RAM_AUTO_1R1W #(
-    .DataWidth( 32 ),
-    .AddressRange( 64 ),
-    .AddressWidth( 6 ))
-local_B4_7_U(
-    .clk(ap_clk),
-    .reset(ap_rst),
-    .address0(local_B4_7_address0),
-    .ce0(local_B4_7_ce0),
-    .we0(local_B4_7_we0),
-    .d0(grp_systolic_QKT_Pipeline_l_load_B_tile_bk4_l_bj4_fu_398_local_B4_7_d0),
-    .q0(local_B4_7_q0)
-);
-
-allo_DDitBlock_systolic_QKT_Pipeline_l_load_A_tile_ak4_l_ai4 grp_systolic_QKT_Pipeline_l_load_A_tile_ak4_l_ai4_fu_382(
+allo_DDitBlock_dataflow_parent_loop_proc42 dataflow_parent_loop_proc42_U0(
+    .mi4(loop_dataflow_input_count),
+    .v6884_address0(dataflow_parent_loop_proc42_U0_v6884_address0),
+    .v6884_ce0(dataflow_parent_loop_proc42_U0_v6884_ce0),
+    .v6884_d0(dataflow_parent_loop_proc42_U0_v6884_d0),
+    .v6884_q0(32'd0),
+    .v6884_we0(dataflow_parent_loop_proc42_U0_v6884_we0),
+    .v6884_address1(dataflow_parent_loop_proc42_U0_v6884_address1),
+    .v6884_ce1(dataflow_parent_loop_proc42_U0_v6884_ce1),
+    .v6884_d1(dataflow_parent_loop_proc42_U0_v6884_d1),
+    .v6884_q1(32'd0),
+    .v6884_we1(dataflow_parent_loop_proc42_U0_v6884_we1),
+    .v6883_address0(dataflow_parent_loop_proc42_U0_v6883_address0),
+    .v6883_ce0(dataflow_parent_loop_proc42_U0_v6883_ce0),
+    .v6883_d0(dataflow_parent_loop_proc42_U0_v6883_d0),
+    .v6883_q0(v6883_q0),
+    .v6883_we0(dataflow_parent_loop_proc42_U0_v6883_we0),
+    .v6883_address1(dataflow_parent_loop_proc42_U0_v6883_address1),
+    .v6883_ce1(dataflow_parent_loop_proc42_U0_v6883_ce1),
+    .v6883_d1(dataflow_parent_loop_proc42_U0_v6883_d1),
+    .v6883_q1(32'd0),
+    .v6883_we1(dataflow_parent_loop_proc42_U0_v6883_we1),
+    .v6882_address0(dataflow_parent_loop_proc42_U0_v6882_address0),
+    .v6882_ce0(dataflow_parent_loop_proc42_U0_v6882_ce0),
+    .v6882_d0(dataflow_parent_loop_proc42_U0_v6882_d0),
+    .v6882_q0(v6882_q0),
+    .v6882_we0(dataflow_parent_loop_proc42_U0_v6882_we0),
+    .v6882_address1(dataflow_parent_loop_proc42_U0_v6882_address1),
+    .v6882_ce1(dataflow_parent_loop_proc42_U0_v6882_ce1),
+    .v6882_d1(dataflow_parent_loop_proc42_U0_v6882_d1),
+    .v6882_q1(32'd0),
+    .v6882_we1(dataflow_parent_loop_proc42_U0_v6882_we1),
     .ap_clk(ap_clk),
     .ap_rst(ap_rst),
-    .ap_start(grp_systolic_QKT_Pipeline_l_load_A_tile_ak4_l_ai4_fu_382_ap_start),
-    .ap_done(grp_systolic_QKT_Pipeline_l_load_A_tile_ak4_l_ai4_fu_382_ap_done),
-    .ap_idle(grp_systolic_QKT_Pipeline_l_load_A_tile_ak4_l_ai4_fu_382_ap_idle),
-    .ap_ready(grp_systolic_QKT_Pipeline_l_load_A_tile_ak4_l_ai4_fu_382_ap_ready),
-    .local_A4_address0(grp_systolic_QKT_Pipeline_l_load_A_tile_ak4_l_ai4_fu_382_local_A4_address0),
-    .local_A4_ce0(grp_systolic_QKT_Pipeline_l_load_A_tile_ak4_l_ai4_fu_382_local_A4_ce0),
-    .local_A4_we0(grp_systolic_QKT_Pipeline_l_load_A_tile_ak4_l_ai4_fu_382_local_A4_we0),
-    .local_A4_d0(grp_systolic_QKT_Pipeline_l_load_A_tile_ak4_l_ai4_fu_382_local_A4_d0),
-    .local_A4_1_address0(grp_systolic_QKT_Pipeline_l_load_A_tile_ak4_l_ai4_fu_382_local_A4_1_address0),
-    .local_A4_1_ce0(grp_systolic_QKT_Pipeline_l_load_A_tile_ak4_l_ai4_fu_382_local_A4_1_ce0),
-    .local_A4_1_we0(grp_systolic_QKT_Pipeline_l_load_A_tile_ak4_l_ai4_fu_382_local_A4_1_we0),
-    .local_A4_1_d0(grp_systolic_QKT_Pipeline_l_load_A_tile_ak4_l_ai4_fu_382_local_A4_1_d0),
-    .local_A4_2_address0(grp_systolic_QKT_Pipeline_l_load_A_tile_ak4_l_ai4_fu_382_local_A4_2_address0),
-    .local_A4_2_ce0(grp_systolic_QKT_Pipeline_l_load_A_tile_ak4_l_ai4_fu_382_local_A4_2_ce0),
-    .local_A4_2_we0(grp_systolic_QKT_Pipeline_l_load_A_tile_ak4_l_ai4_fu_382_local_A4_2_we0),
-    .local_A4_2_d0(grp_systolic_QKT_Pipeline_l_load_A_tile_ak4_l_ai4_fu_382_local_A4_2_d0),
-    .local_A4_3_address0(grp_systolic_QKT_Pipeline_l_load_A_tile_ak4_l_ai4_fu_382_local_A4_3_address0),
-    .local_A4_3_ce0(grp_systolic_QKT_Pipeline_l_load_A_tile_ak4_l_ai4_fu_382_local_A4_3_ce0),
-    .local_A4_3_we0(grp_systolic_QKT_Pipeline_l_load_A_tile_ak4_l_ai4_fu_382_local_A4_3_we0),
-    .local_A4_3_d0(grp_systolic_QKT_Pipeline_l_load_A_tile_ak4_l_ai4_fu_382_local_A4_3_d0),
-    .local_A4_4_address0(grp_systolic_QKT_Pipeline_l_load_A_tile_ak4_l_ai4_fu_382_local_A4_4_address0),
-    .local_A4_4_ce0(grp_systolic_QKT_Pipeline_l_load_A_tile_ak4_l_ai4_fu_382_local_A4_4_ce0),
-    .local_A4_4_we0(grp_systolic_QKT_Pipeline_l_load_A_tile_ak4_l_ai4_fu_382_local_A4_4_we0),
-    .local_A4_4_d0(grp_systolic_QKT_Pipeline_l_load_A_tile_ak4_l_ai4_fu_382_local_A4_4_d0),
-    .local_A4_5_address0(grp_systolic_QKT_Pipeline_l_load_A_tile_ak4_l_ai4_fu_382_local_A4_5_address0),
-    .local_A4_5_ce0(grp_systolic_QKT_Pipeline_l_load_A_tile_ak4_l_ai4_fu_382_local_A4_5_ce0),
-    .local_A4_5_we0(grp_systolic_QKT_Pipeline_l_load_A_tile_ak4_l_ai4_fu_382_local_A4_5_we0),
-    .local_A4_5_d0(grp_systolic_QKT_Pipeline_l_load_A_tile_ak4_l_ai4_fu_382_local_A4_5_d0),
-    .local_A4_6_address0(grp_systolic_QKT_Pipeline_l_load_A_tile_ak4_l_ai4_fu_382_local_A4_6_address0),
-    .local_A4_6_ce0(grp_systolic_QKT_Pipeline_l_load_A_tile_ak4_l_ai4_fu_382_local_A4_6_ce0),
-    .local_A4_6_we0(grp_systolic_QKT_Pipeline_l_load_A_tile_ak4_l_ai4_fu_382_local_A4_6_we0),
-    .local_A4_6_d0(grp_systolic_QKT_Pipeline_l_load_A_tile_ak4_l_ai4_fu_382_local_A4_6_d0),
-    .local_A4_7_address0(grp_systolic_QKT_Pipeline_l_load_A_tile_ak4_l_ai4_fu_382_local_A4_7_address0),
-    .local_A4_7_ce0(grp_systolic_QKT_Pipeline_l_load_A_tile_ak4_l_ai4_fu_382_local_A4_7_ce0),
-    .local_A4_7_we0(grp_systolic_QKT_Pipeline_l_load_A_tile_ak4_l_ai4_fu_382_local_A4_7_we0),
-    .local_A4_7_d0(grp_systolic_QKT_Pipeline_l_load_A_tile_ak4_l_ai4_fu_382_local_A4_7_d0),
-    .v6893(v6893_reg_1357),
-    .p_mid2(p_mid2_reg_1351),
-    .v6882_address0(grp_systolic_QKT_Pipeline_l_load_A_tile_ak4_l_ai4_fu_382_v6882_address0),
-    .v6882_ce0(grp_systolic_QKT_Pipeline_l_load_A_tile_ak4_l_ai4_fu_382_v6882_ce0),
-    .v6882_q0(v6882_q0)
-);
-
-allo_DDitBlock_systolic_QKT_Pipeline_l_load_B_tile_bk4_l_bj4 grp_systolic_QKT_Pipeline_l_load_B_tile_bk4_l_bj4_fu_398(
-    .ap_clk(ap_clk),
-    .ap_rst(ap_rst),
-    .ap_start(grp_systolic_QKT_Pipeline_l_load_B_tile_bk4_l_bj4_fu_398_ap_start),
-    .ap_done(grp_systolic_QKT_Pipeline_l_load_B_tile_bk4_l_bj4_fu_398_ap_done),
-    .ap_idle(grp_systolic_QKT_Pipeline_l_load_B_tile_bk4_l_bj4_fu_398_ap_idle),
-    .ap_ready(grp_systolic_QKT_Pipeline_l_load_B_tile_bk4_l_bj4_fu_398_ap_ready),
-    .local_B4_address0(grp_systolic_QKT_Pipeline_l_load_B_tile_bk4_l_bj4_fu_398_local_B4_address0),
-    .local_B4_ce0(grp_systolic_QKT_Pipeline_l_load_B_tile_bk4_l_bj4_fu_398_local_B4_ce0),
-    .local_B4_we0(grp_systolic_QKT_Pipeline_l_load_B_tile_bk4_l_bj4_fu_398_local_B4_we0),
-    .local_B4_d0(grp_systolic_QKT_Pipeline_l_load_B_tile_bk4_l_bj4_fu_398_local_B4_d0),
-    .local_B4_1_address0(grp_systolic_QKT_Pipeline_l_load_B_tile_bk4_l_bj4_fu_398_local_B4_1_address0),
-    .local_B4_1_ce0(grp_systolic_QKT_Pipeline_l_load_B_tile_bk4_l_bj4_fu_398_local_B4_1_ce0),
-    .local_B4_1_we0(grp_systolic_QKT_Pipeline_l_load_B_tile_bk4_l_bj4_fu_398_local_B4_1_we0),
-    .local_B4_1_d0(grp_systolic_QKT_Pipeline_l_load_B_tile_bk4_l_bj4_fu_398_local_B4_1_d0),
-    .local_B4_2_address0(grp_systolic_QKT_Pipeline_l_load_B_tile_bk4_l_bj4_fu_398_local_B4_2_address0),
-    .local_B4_2_ce0(grp_systolic_QKT_Pipeline_l_load_B_tile_bk4_l_bj4_fu_398_local_B4_2_ce0),
-    .local_B4_2_we0(grp_systolic_QKT_Pipeline_l_load_B_tile_bk4_l_bj4_fu_398_local_B4_2_we0),
-    .local_B4_2_d0(grp_systolic_QKT_Pipeline_l_load_B_tile_bk4_l_bj4_fu_398_local_B4_2_d0),
-    .local_B4_3_address0(grp_systolic_QKT_Pipeline_l_load_B_tile_bk4_l_bj4_fu_398_local_B4_3_address0),
-    .local_B4_3_ce0(grp_systolic_QKT_Pipeline_l_load_B_tile_bk4_l_bj4_fu_398_local_B4_3_ce0),
-    .local_B4_3_we0(grp_systolic_QKT_Pipeline_l_load_B_tile_bk4_l_bj4_fu_398_local_B4_3_we0),
-    .local_B4_3_d0(grp_systolic_QKT_Pipeline_l_load_B_tile_bk4_l_bj4_fu_398_local_B4_3_d0),
-    .local_B4_4_address0(grp_systolic_QKT_Pipeline_l_load_B_tile_bk4_l_bj4_fu_398_local_B4_4_address0),
-    .local_B4_4_ce0(grp_systolic_QKT_Pipeline_l_load_B_tile_bk4_l_bj4_fu_398_local_B4_4_ce0),
-    .local_B4_4_we0(grp_systolic_QKT_Pipeline_l_load_B_tile_bk4_l_bj4_fu_398_local_B4_4_we0),
-    .local_B4_4_d0(grp_systolic_QKT_Pipeline_l_load_B_tile_bk4_l_bj4_fu_398_local_B4_4_d0),
-    .local_B4_5_address0(grp_systolic_QKT_Pipeline_l_load_B_tile_bk4_l_bj4_fu_398_local_B4_5_address0),
-    .local_B4_5_ce0(grp_systolic_QKT_Pipeline_l_load_B_tile_bk4_l_bj4_fu_398_local_B4_5_ce0),
-    .local_B4_5_we0(grp_systolic_QKT_Pipeline_l_load_B_tile_bk4_l_bj4_fu_398_local_B4_5_we0),
-    .local_B4_5_d0(grp_systolic_QKT_Pipeline_l_load_B_tile_bk4_l_bj4_fu_398_local_B4_5_d0),
-    .local_B4_6_address0(grp_systolic_QKT_Pipeline_l_load_B_tile_bk4_l_bj4_fu_398_local_B4_6_address0),
-    .local_B4_6_ce0(grp_systolic_QKT_Pipeline_l_load_B_tile_bk4_l_bj4_fu_398_local_B4_6_ce0),
-    .local_B4_6_we0(grp_systolic_QKT_Pipeline_l_load_B_tile_bk4_l_bj4_fu_398_local_B4_6_we0),
-    .local_B4_6_d0(grp_systolic_QKT_Pipeline_l_load_B_tile_bk4_l_bj4_fu_398_local_B4_6_d0),
-    .local_B4_7_address0(grp_systolic_QKT_Pipeline_l_load_B_tile_bk4_l_bj4_fu_398_local_B4_7_address0),
-    .local_B4_7_ce0(grp_systolic_QKT_Pipeline_l_load_B_tile_bk4_l_bj4_fu_398_local_B4_7_ce0),
-    .local_B4_7_we0(grp_systolic_QKT_Pipeline_l_load_B_tile_bk4_l_bj4_fu_398_local_B4_7_we0),
-    .local_B4_7_d0(grp_systolic_QKT_Pipeline_l_load_B_tile_bk4_l_bj4_fu_398_local_B4_7_d0),
-    .tmp_16(tmp_s_reg_1362),
-    .v6883_address0(grp_systolic_QKT_Pipeline_l_load_B_tile_bk4_l_bj4_fu_398_v6883_address0),
-    .v6883_ce0(grp_systolic_QKT_Pipeline_l_load_B_tile_bk4_l_bj4_fu_398_v6883_ce0),
-    .v6883_q0(v6883_q0)
-);
-
-allo_DDitBlock_systolic_tile_QKT grp_systolic_tile_QKT_fu_413(
-    .v6609_0_address0(grp_systolic_tile_QKT_fu_413_v6609_0_address0),
-    .v6609_0_ce0(grp_systolic_tile_QKT_fu_413_v6609_0_ce0),
-    .v6609_0_d0(grp_systolic_tile_QKT_fu_413_v6609_0_d0),
-    .v6609_0_q0(local_A4_q0),
-    .v6609_0_we0(grp_systolic_tile_QKT_fu_413_v6609_0_we0),
-    .v6609_0_address1(grp_systolic_tile_QKT_fu_413_v6609_0_address1),
-    .v6609_0_ce1(grp_systolic_tile_QKT_fu_413_v6609_0_ce1),
-    .v6609_0_d1(grp_systolic_tile_QKT_fu_413_v6609_0_d1),
-    .v6609_0_q1(32'd0),
-    .v6609_0_we1(grp_systolic_tile_QKT_fu_413_v6609_0_we1),
-    .v6609_1_address0(grp_systolic_tile_QKT_fu_413_v6609_1_address0),
-    .v6609_1_ce0(grp_systolic_tile_QKT_fu_413_v6609_1_ce0),
-    .v6609_1_d0(grp_systolic_tile_QKT_fu_413_v6609_1_d0),
-    .v6609_1_q0(local_A4_1_q0),
-    .v6609_1_we0(grp_systolic_tile_QKT_fu_413_v6609_1_we0),
-    .v6609_1_address1(grp_systolic_tile_QKT_fu_413_v6609_1_address1),
-    .v6609_1_ce1(grp_systolic_tile_QKT_fu_413_v6609_1_ce1),
-    .v6609_1_d1(grp_systolic_tile_QKT_fu_413_v6609_1_d1),
-    .v6609_1_q1(32'd0),
-    .v6609_1_we1(grp_systolic_tile_QKT_fu_413_v6609_1_we1),
-    .v6609_2_address0(grp_systolic_tile_QKT_fu_413_v6609_2_address0),
-    .v6609_2_ce0(grp_systolic_tile_QKT_fu_413_v6609_2_ce0),
-    .v6609_2_d0(grp_systolic_tile_QKT_fu_413_v6609_2_d0),
-    .v6609_2_q0(local_A4_2_q0),
-    .v6609_2_we0(grp_systolic_tile_QKT_fu_413_v6609_2_we0),
-    .v6609_2_address1(grp_systolic_tile_QKT_fu_413_v6609_2_address1),
-    .v6609_2_ce1(grp_systolic_tile_QKT_fu_413_v6609_2_ce1),
-    .v6609_2_d1(grp_systolic_tile_QKT_fu_413_v6609_2_d1),
-    .v6609_2_q1(32'd0),
-    .v6609_2_we1(grp_systolic_tile_QKT_fu_413_v6609_2_we1),
-    .v6609_3_address0(grp_systolic_tile_QKT_fu_413_v6609_3_address0),
-    .v6609_3_ce0(grp_systolic_tile_QKT_fu_413_v6609_3_ce0),
-    .v6609_3_d0(grp_systolic_tile_QKT_fu_413_v6609_3_d0),
-    .v6609_3_q0(local_A4_3_q0),
-    .v6609_3_we0(grp_systolic_tile_QKT_fu_413_v6609_3_we0),
-    .v6609_3_address1(grp_systolic_tile_QKT_fu_413_v6609_3_address1),
-    .v6609_3_ce1(grp_systolic_tile_QKT_fu_413_v6609_3_ce1),
-    .v6609_3_d1(grp_systolic_tile_QKT_fu_413_v6609_3_d1),
-    .v6609_3_q1(32'd0),
-    .v6609_3_we1(grp_systolic_tile_QKT_fu_413_v6609_3_we1),
-    .v6609_4_address0(grp_systolic_tile_QKT_fu_413_v6609_4_address0),
-    .v6609_4_ce0(grp_systolic_tile_QKT_fu_413_v6609_4_ce0),
-    .v6609_4_d0(grp_systolic_tile_QKT_fu_413_v6609_4_d0),
-    .v6609_4_q0(local_A4_4_q0),
-    .v6609_4_we0(grp_systolic_tile_QKT_fu_413_v6609_4_we0),
-    .v6609_4_address1(grp_systolic_tile_QKT_fu_413_v6609_4_address1),
-    .v6609_4_ce1(grp_systolic_tile_QKT_fu_413_v6609_4_ce1),
-    .v6609_4_d1(grp_systolic_tile_QKT_fu_413_v6609_4_d1),
-    .v6609_4_q1(32'd0),
-    .v6609_4_we1(grp_systolic_tile_QKT_fu_413_v6609_4_we1),
-    .v6609_5_address0(grp_systolic_tile_QKT_fu_413_v6609_5_address0),
-    .v6609_5_ce0(grp_systolic_tile_QKT_fu_413_v6609_5_ce0),
-    .v6609_5_d0(grp_systolic_tile_QKT_fu_413_v6609_5_d0),
-    .v6609_5_q0(local_A4_5_q0),
-    .v6609_5_we0(grp_systolic_tile_QKT_fu_413_v6609_5_we0),
-    .v6609_5_address1(grp_systolic_tile_QKT_fu_413_v6609_5_address1),
-    .v6609_5_ce1(grp_systolic_tile_QKT_fu_413_v6609_5_ce1),
-    .v6609_5_d1(grp_systolic_tile_QKT_fu_413_v6609_5_d1),
-    .v6609_5_q1(32'd0),
-    .v6609_5_we1(grp_systolic_tile_QKT_fu_413_v6609_5_we1),
-    .v6609_6_address0(grp_systolic_tile_QKT_fu_413_v6609_6_address0),
-    .v6609_6_ce0(grp_systolic_tile_QKT_fu_413_v6609_6_ce0),
-    .v6609_6_d0(grp_systolic_tile_QKT_fu_413_v6609_6_d0),
-    .v6609_6_q0(local_A4_6_q0),
-    .v6609_6_we0(grp_systolic_tile_QKT_fu_413_v6609_6_we0),
-    .v6609_6_address1(grp_systolic_tile_QKT_fu_413_v6609_6_address1),
-    .v6609_6_ce1(grp_systolic_tile_QKT_fu_413_v6609_6_ce1),
-    .v6609_6_d1(grp_systolic_tile_QKT_fu_413_v6609_6_d1),
-    .v6609_6_q1(32'd0),
-    .v6609_6_we1(grp_systolic_tile_QKT_fu_413_v6609_6_we1),
-    .v6609_7_address0(grp_systolic_tile_QKT_fu_413_v6609_7_address0),
-    .v6609_7_ce0(grp_systolic_tile_QKT_fu_413_v6609_7_ce0),
-    .v6609_7_d0(grp_systolic_tile_QKT_fu_413_v6609_7_d0),
-    .v6609_7_q0(local_A4_7_q0),
-    .v6609_7_we0(grp_systolic_tile_QKT_fu_413_v6609_7_we0),
-    .v6609_7_address1(grp_systolic_tile_QKT_fu_413_v6609_7_address1),
-    .v6609_7_ce1(grp_systolic_tile_QKT_fu_413_v6609_7_ce1),
-    .v6609_7_d1(grp_systolic_tile_QKT_fu_413_v6609_7_d1),
-    .v6609_7_q1(32'd0),
-    .v6609_7_we1(grp_systolic_tile_QKT_fu_413_v6609_7_we1),
-    .v6610_0_address0(grp_systolic_tile_QKT_fu_413_v6610_0_address0),
-    .v6610_0_ce0(grp_systolic_tile_QKT_fu_413_v6610_0_ce0),
-    .v6610_0_d0(grp_systolic_tile_QKT_fu_413_v6610_0_d0),
-    .v6610_0_q0(local_B4_q0),
-    .v6610_0_we0(grp_systolic_tile_QKT_fu_413_v6610_0_we0),
-    .v6610_0_address1(grp_systolic_tile_QKT_fu_413_v6610_0_address1),
-    .v6610_0_ce1(grp_systolic_tile_QKT_fu_413_v6610_0_ce1),
-    .v6610_0_d1(grp_systolic_tile_QKT_fu_413_v6610_0_d1),
-    .v6610_0_q1(32'd0),
-    .v6610_0_we1(grp_systolic_tile_QKT_fu_413_v6610_0_we1),
-    .v6610_1_address0(grp_systolic_tile_QKT_fu_413_v6610_1_address0),
-    .v6610_1_ce0(grp_systolic_tile_QKT_fu_413_v6610_1_ce0),
-    .v6610_1_d0(grp_systolic_tile_QKT_fu_413_v6610_1_d0),
-    .v6610_1_q0(local_B4_1_q0),
-    .v6610_1_we0(grp_systolic_tile_QKT_fu_413_v6610_1_we0),
-    .v6610_1_address1(grp_systolic_tile_QKT_fu_413_v6610_1_address1),
-    .v6610_1_ce1(grp_systolic_tile_QKT_fu_413_v6610_1_ce1),
-    .v6610_1_d1(grp_systolic_tile_QKT_fu_413_v6610_1_d1),
-    .v6610_1_q1(32'd0),
-    .v6610_1_we1(grp_systolic_tile_QKT_fu_413_v6610_1_we1),
-    .v6610_2_address0(grp_systolic_tile_QKT_fu_413_v6610_2_address0),
-    .v6610_2_ce0(grp_systolic_tile_QKT_fu_413_v6610_2_ce0),
-    .v6610_2_d0(grp_systolic_tile_QKT_fu_413_v6610_2_d0),
-    .v6610_2_q0(local_B4_2_q0),
-    .v6610_2_we0(grp_systolic_tile_QKT_fu_413_v6610_2_we0),
-    .v6610_2_address1(grp_systolic_tile_QKT_fu_413_v6610_2_address1),
-    .v6610_2_ce1(grp_systolic_tile_QKT_fu_413_v6610_2_ce1),
-    .v6610_2_d1(grp_systolic_tile_QKT_fu_413_v6610_2_d1),
-    .v6610_2_q1(32'd0),
-    .v6610_2_we1(grp_systolic_tile_QKT_fu_413_v6610_2_we1),
-    .v6610_3_address0(grp_systolic_tile_QKT_fu_413_v6610_3_address0),
-    .v6610_3_ce0(grp_systolic_tile_QKT_fu_413_v6610_3_ce0),
-    .v6610_3_d0(grp_systolic_tile_QKT_fu_413_v6610_3_d0),
-    .v6610_3_q0(local_B4_3_q0),
-    .v6610_3_we0(grp_systolic_tile_QKT_fu_413_v6610_3_we0),
-    .v6610_3_address1(grp_systolic_tile_QKT_fu_413_v6610_3_address1),
-    .v6610_3_ce1(grp_systolic_tile_QKT_fu_413_v6610_3_ce1),
-    .v6610_3_d1(grp_systolic_tile_QKT_fu_413_v6610_3_d1),
-    .v6610_3_q1(32'd0),
-    .v6610_3_we1(grp_systolic_tile_QKT_fu_413_v6610_3_we1),
-    .v6610_4_address0(grp_systolic_tile_QKT_fu_413_v6610_4_address0),
-    .v6610_4_ce0(grp_systolic_tile_QKT_fu_413_v6610_4_ce0),
-    .v6610_4_d0(grp_systolic_tile_QKT_fu_413_v6610_4_d0),
-    .v6610_4_q0(local_B4_4_q0),
-    .v6610_4_we0(grp_systolic_tile_QKT_fu_413_v6610_4_we0),
-    .v6610_4_address1(grp_systolic_tile_QKT_fu_413_v6610_4_address1),
-    .v6610_4_ce1(grp_systolic_tile_QKT_fu_413_v6610_4_ce1),
-    .v6610_4_d1(grp_systolic_tile_QKT_fu_413_v6610_4_d1),
-    .v6610_4_q1(32'd0),
-    .v6610_4_we1(grp_systolic_tile_QKT_fu_413_v6610_4_we1),
-    .v6610_5_address0(grp_systolic_tile_QKT_fu_413_v6610_5_address0),
-    .v6610_5_ce0(grp_systolic_tile_QKT_fu_413_v6610_5_ce0),
-    .v6610_5_d0(grp_systolic_tile_QKT_fu_413_v6610_5_d0),
-    .v6610_5_q0(local_B4_5_q0),
-    .v6610_5_we0(grp_systolic_tile_QKT_fu_413_v6610_5_we0),
-    .v6610_5_address1(grp_systolic_tile_QKT_fu_413_v6610_5_address1),
-    .v6610_5_ce1(grp_systolic_tile_QKT_fu_413_v6610_5_ce1),
-    .v6610_5_d1(grp_systolic_tile_QKT_fu_413_v6610_5_d1),
-    .v6610_5_q1(32'd0),
-    .v6610_5_we1(grp_systolic_tile_QKT_fu_413_v6610_5_we1),
-    .v6610_6_address0(grp_systolic_tile_QKT_fu_413_v6610_6_address0),
-    .v6610_6_ce0(grp_systolic_tile_QKT_fu_413_v6610_6_ce0),
-    .v6610_6_d0(grp_systolic_tile_QKT_fu_413_v6610_6_d0),
-    .v6610_6_q0(local_B4_6_q0),
-    .v6610_6_we0(grp_systolic_tile_QKT_fu_413_v6610_6_we0),
-    .v6610_6_address1(grp_systolic_tile_QKT_fu_413_v6610_6_address1),
-    .v6610_6_ce1(grp_systolic_tile_QKT_fu_413_v6610_6_ce1),
-    .v6610_6_d1(grp_systolic_tile_QKT_fu_413_v6610_6_d1),
-    .v6610_6_q1(32'd0),
-    .v6610_6_we1(grp_systolic_tile_QKT_fu_413_v6610_6_we1),
-    .v6610_7_address0(grp_systolic_tile_QKT_fu_413_v6610_7_address0),
-    .v6610_7_ce0(grp_systolic_tile_QKT_fu_413_v6610_7_ce0),
-    .v6610_7_d0(grp_systolic_tile_QKT_fu_413_v6610_7_d0),
-    .v6610_7_q0(local_B4_7_q0),
-    .v6610_7_we0(grp_systolic_tile_QKT_fu_413_v6610_7_we0),
-    .v6610_7_address1(grp_systolic_tile_QKT_fu_413_v6610_7_address1),
-    .v6610_7_ce1(grp_systolic_tile_QKT_fu_413_v6610_7_ce1),
-    .v6610_7_d1(grp_systolic_tile_QKT_fu_413_v6610_7_d1),
-    .v6610_7_q1(32'd0),
-    .v6610_7_we1(grp_systolic_tile_QKT_fu_413_v6610_7_we1),
-    .v6611_0_0(grp_systolic_tile_QKT_fu_413_v6611_0_0),
-    .v6611_0_1(grp_systolic_tile_QKT_fu_413_v6611_0_1),
-    .v6611_0_2(grp_systolic_tile_QKT_fu_413_v6611_0_2),
-    .v6611_0_3(grp_systolic_tile_QKT_fu_413_v6611_0_3),
-    .v6611_0_4(grp_systolic_tile_QKT_fu_413_v6611_0_4),
-    .v6611_0_5(grp_systolic_tile_QKT_fu_413_v6611_0_5),
-    .v6611_0_6(grp_systolic_tile_QKT_fu_413_v6611_0_6),
-    .v6611_0_7(grp_systolic_tile_QKT_fu_413_v6611_0_7),
-    .v6611_1_0(grp_systolic_tile_QKT_fu_413_v6611_1_0),
-    .v6611_1_1(grp_systolic_tile_QKT_fu_413_v6611_1_1),
-    .v6611_1_2(grp_systolic_tile_QKT_fu_413_v6611_1_2),
-    .v6611_1_3(grp_systolic_tile_QKT_fu_413_v6611_1_3),
-    .v6611_1_4(grp_systolic_tile_QKT_fu_413_v6611_1_4),
-    .v6611_1_5(grp_systolic_tile_QKT_fu_413_v6611_1_5),
-    .v6611_1_6(grp_systolic_tile_QKT_fu_413_v6611_1_6),
-    .v6611_1_7(grp_systolic_tile_QKT_fu_413_v6611_1_7),
-    .v6611_2_0(grp_systolic_tile_QKT_fu_413_v6611_2_0),
-    .v6611_2_1(grp_systolic_tile_QKT_fu_413_v6611_2_1),
-    .v6611_2_2(grp_systolic_tile_QKT_fu_413_v6611_2_2),
-    .v6611_2_3(grp_systolic_tile_QKT_fu_413_v6611_2_3),
-    .v6611_2_4(grp_systolic_tile_QKT_fu_413_v6611_2_4),
-    .v6611_2_5(grp_systolic_tile_QKT_fu_413_v6611_2_5),
-    .v6611_2_6(grp_systolic_tile_QKT_fu_413_v6611_2_6),
-    .v6611_2_7(grp_systolic_tile_QKT_fu_413_v6611_2_7),
-    .v6611_3_0(grp_systolic_tile_QKT_fu_413_v6611_3_0),
-    .v6611_3_1(grp_systolic_tile_QKT_fu_413_v6611_3_1),
-    .v6611_3_2(grp_systolic_tile_QKT_fu_413_v6611_3_2),
-    .v6611_3_3(grp_systolic_tile_QKT_fu_413_v6611_3_3),
-    .v6611_3_4(grp_systolic_tile_QKT_fu_413_v6611_3_4),
-    .v6611_3_5(grp_systolic_tile_QKT_fu_413_v6611_3_5),
-    .v6611_3_6(grp_systolic_tile_QKT_fu_413_v6611_3_6),
-    .v6611_3_7(grp_systolic_tile_QKT_fu_413_v6611_3_7),
-    .v6611_4_0(grp_systolic_tile_QKT_fu_413_v6611_4_0),
-    .v6611_4_1(grp_systolic_tile_QKT_fu_413_v6611_4_1),
-    .v6611_4_2(grp_systolic_tile_QKT_fu_413_v6611_4_2),
-    .v6611_4_3(grp_systolic_tile_QKT_fu_413_v6611_4_3),
-    .v6611_4_4(grp_systolic_tile_QKT_fu_413_v6611_4_4),
-    .v6611_4_5(grp_systolic_tile_QKT_fu_413_v6611_4_5),
-    .v6611_4_6(grp_systolic_tile_QKT_fu_413_v6611_4_6),
-    .v6611_4_7(grp_systolic_tile_QKT_fu_413_v6611_4_7),
-    .v6611_5_0(grp_systolic_tile_QKT_fu_413_v6611_5_0),
-    .v6611_5_1(grp_systolic_tile_QKT_fu_413_v6611_5_1),
-    .v6611_5_2(grp_systolic_tile_QKT_fu_413_v6611_5_2),
-    .v6611_5_3(grp_systolic_tile_QKT_fu_413_v6611_5_3),
-    .v6611_5_4(grp_systolic_tile_QKT_fu_413_v6611_5_4),
-    .v6611_5_5(grp_systolic_tile_QKT_fu_413_v6611_5_5),
-    .v6611_5_6(grp_systolic_tile_QKT_fu_413_v6611_5_6),
-    .v6611_5_7(grp_systolic_tile_QKT_fu_413_v6611_5_7),
-    .v6611_6_0(grp_systolic_tile_QKT_fu_413_v6611_6_0),
-    .v6611_6_1(grp_systolic_tile_QKT_fu_413_v6611_6_1),
-    .v6611_6_2(grp_systolic_tile_QKT_fu_413_v6611_6_2),
-    .v6611_6_3(grp_systolic_tile_QKT_fu_413_v6611_6_3),
-    .v6611_6_4(grp_systolic_tile_QKT_fu_413_v6611_6_4),
-    .v6611_6_5(grp_systolic_tile_QKT_fu_413_v6611_6_5),
-    .v6611_6_6(grp_systolic_tile_QKT_fu_413_v6611_6_6),
-    .v6611_6_7(grp_systolic_tile_QKT_fu_413_v6611_6_7),
-    .v6611_7_0(grp_systolic_tile_QKT_fu_413_v6611_7_0),
-    .v6611_7_1(grp_systolic_tile_QKT_fu_413_v6611_7_1),
-    .v6611_7_2(grp_systolic_tile_QKT_fu_413_v6611_7_2),
-    .v6611_7_3(grp_systolic_tile_QKT_fu_413_v6611_7_3),
-    .v6611_7_4(grp_systolic_tile_QKT_fu_413_v6611_7_4),
-    .v6611_7_5(grp_systolic_tile_QKT_fu_413_v6611_7_5),
-    .v6611_7_6(grp_systolic_tile_QKT_fu_413_v6611_7_6),
-    .v6611_7_7(grp_systolic_tile_QKT_fu_413_v6611_7_7),
-    .ap_clk(ap_clk),
-    .ap_rst(ap_rst),
-    .ap_start(grp_systolic_tile_QKT_fu_413_ap_start),
-    .v6611_0_0_ap_vld(grp_systolic_tile_QKT_fu_413_v6611_0_0_ap_vld),
-    .ap_done(grp_systolic_tile_QKT_fu_413_ap_done),
-    .v6611_0_1_ap_vld(grp_systolic_tile_QKT_fu_413_v6611_0_1_ap_vld),
-    .v6611_0_2_ap_vld(grp_systolic_tile_QKT_fu_413_v6611_0_2_ap_vld),
-    .v6611_0_3_ap_vld(grp_systolic_tile_QKT_fu_413_v6611_0_3_ap_vld),
-    .v6611_0_4_ap_vld(grp_systolic_tile_QKT_fu_413_v6611_0_4_ap_vld),
-    .v6611_0_5_ap_vld(grp_systolic_tile_QKT_fu_413_v6611_0_5_ap_vld),
-    .v6611_0_6_ap_vld(grp_systolic_tile_QKT_fu_413_v6611_0_6_ap_vld),
-    .v6611_0_7_ap_vld(grp_systolic_tile_QKT_fu_413_v6611_0_7_ap_vld),
-    .v6611_1_0_ap_vld(grp_systolic_tile_QKT_fu_413_v6611_1_0_ap_vld),
-    .v6611_1_1_ap_vld(grp_systolic_tile_QKT_fu_413_v6611_1_1_ap_vld),
-    .v6611_1_2_ap_vld(grp_systolic_tile_QKT_fu_413_v6611_1_2_ap_vld),
-    .v6611_1_3_ap_vld(grp_systolic_tile_QKT_fu_413_v6611_1_3_ap_vld),
-    .v6611_1_4_ap_vld(grp_systolic_tile_QKT_fu_413_v6611_1_4_ap_vld),
-    .v6611_1_5_ap_vld(grp_systolic_tile_QKT_fu_413_v6611_1_5_ap_vld),
-    .v6611_1_6_ap_vld(grp_systolic_tile_QKT_fu_413_v6611_1_6_ap_vld),
-    .v6611_1_7_ap_vld(grp_systolic_tile_QKT_fu_413_v6611_1_7_ap_vld),
-    .v6611_2_0_ap_vld(grp_systolic_tile_QKT_fu_413_v6611_2_0_ap_vld),
-    .v6611_2_1_ap_vld(grp_systolic_tile_QKT_fu_413_v6611_2_1_ap_vld),
-    .v6611_2_2_ap_vld(grp_systolic_tile_QKT_fu_413_v6611_2_2_ap_vld),
-    .v6611_2_3_ap_vld(grp_systolic_tile_QKT_fu_413_v6611_2_3_ap_vld),
-    .v6611_2_4_ap_vld(grp_systolic_tile_QKT_fu_413_v6611_2_4_ap_vld),
-    .v6611_2_5_ap_vld(grp_systolic_tile_QKT_fu_413_v6611_2_5_ap_vld),
-    .v6611_2_6_ap_vld(grp_systolic_tile_QKT_fu_413_v6611_2_6_ap_vld),
-    .v6611_2_7_ap_vld(grp_systolic_tile_QKT_fu_413_v6611_2_7_ap_vld),
-    .v6611_3_0_ap_vld(grp_systolic_tile_QKT_fu_413_v6611_3_0_ap_vld),
-    .v6611_3_1_ap_vld(grp_systolic_tile_QKT_fu_413_v6611_3_1_ap_vld),
-    .v6611_3_2_ap_vld(grp_systolic_tile_QKT_fu_413_v6611_3_2_ap_vld),
-    .v6611_3_3_ap_vld(grp_systolic_tile_QKT_fu_413_v6611_3_3_ap_vld),
-    .v6611_3_4_ap_vld(grp_systolic_tile_QKT_fu_413_v6611_3_4_ap_vld),
-    .v6611_3_5_ap_vld(grp_systolic_tile_QKT_fu_413_v6611_3_5_ap_vld),
-    .v6611_3_6_ap_vld(grp_systolic_tile_QKT_fu_413_v6611_3_6_ap_vld),
-    .v6611_3_7_ap_vld(grp_systolic_tile_QKT_fu_413_v6611_3_7_ap_vld),
-    .v6611_4_0_ap_vld(grp_systolic_tile_QKT_fu_413_v6611_4_0_ap_vld),
-    .v6611_4_1_ap_vld(grp_systolic_tile_QKT_fu_413_v6611_4_1_ap_vld),
-    .v6611_4_2_ap_vld(grp_systolic_tile_QKT_fu_413_v6611_4_2_ap_vld),
-    .v6611_4_3_ap_vld(grp_systolic_tile_QKT_fu_413_v6611_4_3_ap_vld),
-    .v6611_4_4_ap_vld(grp_systolic_tile_QKT_fu_413_v6611_4_4_ap_vld),
-    .v6611_4_5_ap_vld(grp_systolic_tile_QKT_fu_413_v6611_4_5_ap_vld),
-    .v6611_4_6_ap_vld(grp_systolic_tile_QKT_fu_413_v6611_4_6_ap_vld),
-    .v6611_4_7_ap_vld(grp_systolic_tile_QKT_fu_413_v6611_4_7_ap_vld),
-    .v6611_5_0_ap_vld(grp_systolic_tile_QKT_fu_413_v6611_5_0_ap_vld),
-    .v6611_5_1_ap_vld(grp_systolic_tile_QKT_fu_413_v6611_5_1_ap_vld),
-    .v6611_5_2_ap_vld(grp_systolic_tile_QKT_fu_413_v6611_5_2_ap_vld),
-    .v6611_5_3_ap_vld(grp_systolic_tile_QKT_fu_413_v6611_5_3_ap_vld),
-    .v6611_5_4_ap_vld(grp_systolic_tile_QKT_fu_413_v6611_5_4_ap_vld),
-    .v6611_5_5_ap_vld(grp_systolic_tile_QKT_fu_413_v6611_5_5_ap_vld),
-    .v6611_5_6_ap_vld(grp_systolic_tile_QKT_fu_413_v6611_5_6_ap_vld),
-    .v6611_5_7_ap_vld(grp_systolic_tile_QKT_fu_413_v6611_5_7_ap_vld),
-    .v6611_6_0_ap_vld(grp_systolic_tile_QKT_fu_413_v6611_6_0_ap_vld),
-    .v6611_6_1_ap_vld(grp_systolic_tile_QKT_fu_413_v6611_6_1_ap_vld),
-    .v6611_6_2_ap_vld(grp_systolic_tile_QKT_fu_413_v6611_6_2_ap_vld),
-    .v6611_6_3_ap_vld(grp_systolic_tile_QKT_fu_413_v6611_6_3_ap_vld),
-    .v6611_6_4_ap_vld(grp_systolic_tile_QKT_fu_413_v6611_6_4_ap_vld),
-    .v6611_6_5_ap_vld(grp_systolic_tile_QKT_fu_413_v6611_6_5_ap_vld),
-    .v6611_6_6_ap_vld(grp_systolic_tile_QKT_fu_413_v6611_6_6_ap_vld),
-    .v6611_6_7_ap_vld(grp_systolic_tile_QKT_fu_413_v6611_6_7_ap_vld),
-    .v6611_7_0_ap_vld(grp_systolic_tile_QKT_fu_413_v6611_7_0_ap_vld),
-    .v6611_7_1_ap_vld(grp_systolic_tile_QKT_fu_413_v6611_7_1_ap_vld),
-    .v6611_7_2_ap_vld(grp_systolic_tile_QKT_fu_413_v6611_7_2_ap_vld),
-    .v6611_7_3_ap_vld(grp_systolic_tile_QKT_fu_413_v6611_7_3_ap_vld),
-    .v6611_7_4_ap_vld(grp_systolic_tile_QKT_fu_413_v6611_7_4_ap_vld),
-    .v6611_7_5_ap_vld(grp_systolic_tile_QKT_fu_413_v6611_7_5_ap_vld),
-    .v6611_7_6_ap_vld(grp_systolic_tile_QKT_fu_413_v6611_7_6_ap_vld),
-    .v6611_7_7_ap_vld(grp_systolic_tile_QKT_fu_413_v6611_7_7_ap_vld),
-    .ap_ready(grp_systolic_tile_QKT_fu_413_ap_ready),
-    .ap_idle(grp_systolic_tile_QKT_fu_413_ap_idle),
-    .ap_continue(grp_systolic_tile_QKT_fu_413_ap_continue)
-);
-
-allo_DDitBlock_systolic_QKT_Pipeline_l_store_C_tile_sj4_l_si4 grp_systolic_QKT_Pipeline_l_store_C_tile_sj4_l_si4_fu_497(
-    .ap_clk(ap_clk),
-    .ap_rst(ap_rst),
-    .ap_start(grp_systolic_QKT_Pipeline_l_store_C_tile_sj4_l_si4_fu_497_ap_start),
-    .ap_done(grp_systolic_QKT_Pipeline_l_store_C_tile_sj4_l_si4_fu_497_ap_done),
-    .ap_idle(grp_systolic_QKT_Pipeline_l_store_C_tile_sj4_l_si4_fu_497_ap_idle),
-    .ap_ready(grp_systolic_QKT_Pipeline_l_store_C_tile_sj4_l_si4_fu_497_ap_ready),
-    .tmp_16(tmp_s_reg_1362),
-    .local_C4_load(local_C4_fu_126),
-    .local_C4_1_load(local_C4_1_fu_130),
-    .local_C4_2_load(local_C4_2_fu_134),
-    .local_C4_3_load(local_C4_3_fu_138),
-    .local_C4_4_load(local_C4_4_fu_142),
-    .local_C4_5_load(local_C4_5_fu_146),
-    .local_C4_6_load(local_C4_6_fu_150),
-    .local_C4_7_load(local_C4_7_fu_154),
-    .local_C4_8_load(local_C4_8_fu_158),
-    .local_C4_9_load(local_C4_9_fu_162),
-    .local_C4_10_load(local_C4_10_fu_166),
-    .local_C4_11_load(local_C4_11_fu_170),
-    .local_C4_12_load(local_C4_12_fu_174),
-    .local_C4_13_load(local_C4_13_fu_178),
-    .local_C4_14_load(local_C4_14_fu_182),
-    .local_C4_15_load(local_C4_15_fu_186),
-    .local_C4_16_load(local_C4_16_fu_190),
-    .local_C4_17_load(local_C4_17_fu_194),
-    .local_C4_18_load(local_C4_18_fu_198),
-    .local_C4_19_load(local_C4_19_fu_202),
-    .local_C4_20_load(local_C4_20_fu_206),
-    .local_C4_21_load(local_C4_21_fu_210),
-    .local_C4_22_load(local_C4_22_fu_214),
-    .local_C4_23_load(local_C4_23_fu_218),
-    .local_C4_24_load(local_C4_24_fu_222),
-    .local_C4_25_load(local_C4_25_fu_226),
-    .local_C4_26_load(local_C4_26_fu_230),
-    .local_C4_27_load(local_C4_27_fu_234),
-    .local_C4_28_load(local_C4_28_fu_238),
-    .local_C4_29_load(local_C4_29_fu_242),
-    .local_C4_30_load(local_C4_30_fu_246),
-    .local_C4_31_load(local_C4_31_fu_250),
-    .local_C4_32_load(local_C4_32_fu_254),
-    .local_C4_33_load(local_C4_33_fu_258),
-    .local_C4_34_load(local_C4_34_fu_262),
-    .local_C4_35_load(local_C4_35_fu_266),
-    .local_C4_36_load(local_C4_36_fu_270),
-    .local_C4_37_load(local_C4_37_fu_274),
-    .local_C4_38_load(local_C4_38_fu_278),
-    .local_C4_39_load(local_C4_39_fu_282),
-    .local_C4_40_load(local_C4_40_fu_286),
-    .local_C4_41_load(local_C4_41_fu_290),
-    .local_C4_42_load(local_C4_42_fu_294),
-    .local_C4_43_load(local_C4_43_fu_298),
-    .local_C4_44_load(local_C4_44_fu_302),
-    .local_C4_45_load(local_C4_45_fu_306),
-    .local_C4_46_load(local_C4_46_fu_310),
-    .local_C4_47_load(local_C4_47_fu_314),
-    .local_C4_48_load(local_C4_48_fu_318),
-    .local_C4_49_load(local_C4_49_fu_322),
-    .local_C4_50_load(local_C4_50_fu_326),
-    .local_C4_51_load(local_C4_51_fu_330),
-    .local_C4_52_load(local_C4_52_fu_334),
-    .local_C4_53_load(local_C4_53_fu_338),
-    .local_C4_54_load(local_C4_54_fu_342),
-    .local_C4_55_load(local_C4_55_fu_346),
-    .local_C4_56_load(local_C4_56_fu_350),
-    .local_C4_57_load(local_C4_57_fu_354),
-    .local_C4_58_load(local_C4_58_fu_358),
-    .local_C4_59_load(local_C4_59_fu_362),
-    .local_C4_60_load(local_C4_60_fu_366),
-    .local_C4_61_load(local_C4_61_fu_370),
-    .local_C4_62_load(local_C4_62_fu_374),
-    .local_C4_63_load(local_C4_63_fu_378),
-    .p_mid2(p_mid2_reg_1351),
-    .v6884_address1(grp_systolic_QKT_Pipeline_l_store_C_tile_sj4_l_si4_fu_497_v6884_address1),
-    .v6884_ce1(grp_systolic_QKT_Pipeline_l_store_C_tile_sj4_l_si4_fu_497_v6884_ce1),
-    .v6884_we1(grp_systolic_QKT_Pipeline_l_store_C_tile_sj4_l_si4_fu_497_v6884_we1),
-    .v6884_d1(grp_systolic_QKT_Pipeline_l_store_C_tile_sj4_l_si4_fu_497_v6884_d1)
+    .mi4_ap_vld(1'b0),
+    .ap_start(dataflow_parent_loop_proc42_U0_ap_start),
+    .ap_done(dataflow_parent_loop_proc42_U0_ap_done),
+    .ap_ready(dataflow_parent_loop_proc42_U0_ap_ready),
+    .ap_idle(dataflow_parent_loop_proc42_U0_ap_idle),
+    .ap_continue(dataflow_parent_loop_proc42_U0_ap_continue)
 );
 
 always @ (posedge ap_clk) begin
     if (ap_rst == 1'b1) begin
-        ap_CS_fsm <= ap_ST_fsm_state1;
+        loop_dataflow_input_count <= 8'd0;
     end else begin
-        ap_CS_fsm <= ap_NS_fsm;
-    end
-end
-
-always @ (posedge ap_clk) begin
-    if (ap_rst == 1'b1) begin
-        ap_sync_reg_grp_systolic_tile_QKT_fu_413_ap_done <= 1'b0;
-    end else begin
-        if (((1'b0 == ap_block_state5_on_subcall_done) & (1'b1 == ap_CS_fsm_state5))) begin
-            ap_sync_reg_grp_systolic_tile_QKT_fu_413_ap_done <= 1'b0;
-        end else if ((grp_systolic_tile_QKT_fu_413_ap_done == 1'b1)) begin
-            ap_sync_reg_grp_systolic_tile_QKT_fu_413_ap_done <= 1'b1;
+        if ((~(loop_dataflow_input_count == bound_minus_1) & (ap_start == 1'b1) & (dataflow_parent_loop_proc42_U0_ap_ready == 1'b1))) begin
+            loop_dataflow_input_count <= (loop_dataflow_input_count + 8'd1);
+        end else if (((loop_dataflow_input_count == bound_minus_1) & (ap_start == 1'b1) & (dataflow_parent_loop_proc42_U0_ap_ready == 1'b1))) begin
+            loop_dataflow_input_count <= 8'd0;
         end
     end
 end
 
 always @ (posedge ap_clk) begin
     if (ap_rst == 1'b1) begin
-        ap_sync_reg_grp_systolic_tile_QKT_fu_413_ap_ready <= 1'b0;
+        loop_dataflow_output_count <= 8'd0;
     end else begin
-        if (((1'b0 == ap_block_state5_on_subcall_done) & (1'b1 == ap_CS_fsm_state5))) begin
-            ap_sync_reg_grp_systolic_tile_QKT_fu_413_ap_ready <= 1'b0;
-        end else if ((grp_systolic_tile_QKT_fu_413_ap_ready == 1'b1)) begin
-            ap_sync_reg_grp_systolic_tile_QKT_fu_413_ap_ready <= 1'b1;
+        if ((~(loop_dataflow_output_count == bound_minus_1) & (dataflow_parent_loop_proc42_U0_ap_continue == 1'b1) & (dataflow_parent_loop_proc42_U0_ap_done == 1'b1))) begin
+            loop_dataflow_output_count <= (loop_dataflow_output_count + 8'd1);
+        end else if (((loop_dataflow_output_count == bound_minus_1) & (dataflow_parent_loop_proc42_U0_ap_continue == 1'b1) & (dataflow_parent_loop_proc42_U0_ap_done == 1'b1))) begin
+            loop_dataflow_output_count <= 8'd0;
         end
-    end
-end
-
-always @ (posedge ap_clk) begin
-    if (ap_rst == 1'b1) begin
-        grp_systolic_QKT_Pipeline_l_load_A_tile_ak4_l_ai4_fu_382_ap_start_reg <= 1'b0;
-    end else begin
-        if (((icmp_ln12604_fu_587_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state2))) begin
-            grp_systolic_QKT_Pipeline_l_load_A_tile_ak4_l_ai4_fu_382_ap_start_reg <= 1'b1;
-        end else if ((grp_systolic_QKT_Pipeline_l_load_A_tile_ak4_l_ai4_fu_382_ap_ready == 1'b1)) begin
-            grp_systolic_QKT_Pipeline_l_load_A_tile_ak4_l_ai4_fu_382_ap_start_reg <= 1'b0;
-        end
-    end
-end
-
-always @ (posedge ap_clk) begin
-    if (ap_rst == 1'b1) begin
-        grp_systolic_QKT_Pipeline_l_load_B_tile_bk4_l_bj4_fu_398_ap_start_reg <= 1'b0;
-    end else begin
-        if (((icmp_ln12604_fu_587_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state2))) begin
-            grp_systolic_QKT_Pipeline_l_load_B_tile_bk4_l_bj4_fu_398_ap_start_reg <= 1'b1;
-        end else if ((grp_systolic_QKT_Pipeline_l_load_B_tile_bk4_l_bj4_fu_398_ap_ready == 1'b1)) begin
-            grp_systolic_QKT_Pipeline_l_load_B_tile_bk4_l_bj4_fu_398_ap_start_reg <= 1'b0;
-        end
-    end
-end
-
-always @ (posedge ap_clk) begin
-    if (ap_rst == 1'b1) begin
-        grp_systolic_QKT_Pipeline_l_store_C_tile_sj4_l_si4_fu_497_ap_start_reg <= 1'b0;
-    end else begin
-        if ((1'b1 == ap_CS_fsm_state6)) begin
-            grp_systolic_QKT_Pipeline_l_store_C_tile_sj4_l_si4_fu_497_ap_start_reg <= 1'b1;
-        end else if ((grp_systolic_QKT_Pipeline_l_store_C_tile_sj4_l_si4_fu_497_ap_ready == 1'b1)) begin
-            grp_systolic_QKT_Pipeline_l_store_C_tile_sj4_l_si4_fu_497_ap_start_reg <= 1'b0;
-        end
-    end
-end
-
-always @ (posedge ap_clk) begin
-    if (ap_rst == 1'b1) begin
-        grp_systolic_tile_QKT_fu_413_ap_start_reg <= 1'b0;
-    end else begin
-        if (((1'b1 == ap_CS_fsm_state4) | ((ap_sync_grp_systolic_tile_QKT_fu_413_ap_ready == 1'b0) & (1'b1 == ap_CS_fsm_state5)))) begin
-            grp_systolic_tile_QKT_fu_413_ap_start_reg <= 1'b1;
-        end else if ((grp_systolic_tile_QKT_fu_413_ap_ready == 1'b1)) begin
-            grp_systolic_tile_QKT_fu_413_ap_start_reg <= 1'b0;
-        end
-    end
-end
-
-always @ (posedge ap_clk) begin
-    if (((1'b1 == ap_CS_fsm_state1) & (ap_start == 1'b1))) begin
-        indvar_flatten20_fu_58 <= 15'd0;
-    end else if (((icmp_ln12604_fu_587_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state2))) begin
-        indvar_flatten20_fu_58 <= add_ln12604_1_fu_593_p2;
-    end
-end
-
-always @ (posedge ap_clk) begin
-    if (((1'b1 == ap_CS_fsm_state1) & (ap_start == 1'b1))) begin
-        mi4_fu_54 <= 8'd0;
-    end else if (((icmp_ln12604_fu_587_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state2))) begin
-        mi4_fu_54 <= select_ln12604_1_fu_625_p3;
-    end
-end
-
-always @ (posedge ap_clk) begin
-    if (((1'b1 == ap_CS_fsm_state1) & (ap_start == 1'b1))) begin
-        ni4_fu_50 <= 8'd0;
-    end else if (((icmp_ln12604_fu_587_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state2))) begin
-        ni4_fu_50 <= add_ln12605_fu_666_p2;
-    end
-end
-
-always @ (posedge ap_clk) begin
-    if (((grp_systolic_tile_QKT_fu_413_v6611_1_2_ap_vld == 1'b1) & (1'b1 == ap_CS_fsm_state5))) begin
-        local_C4_10_fu_166 <= grp_systolic_tile_QKT_fu_413_v6611_1_2;
-    end
-end
-
-always @ (posedge ap_clk) begin
-    if (((grp_systolic_tile_QKT_fu_413_v6611_1_3_ap_vld == 1'b1) & (1'b1 == ap_CS_fsm_state5))) begin
-        local_C4_11_fu_170 <= grp_systolic_tile_QKT_fu_413_v6611_1_3;
-    end
-end
-
-always @ (posedge ap_clk) begin
-    if (((grp_systolic_tile_QKT_fu_413_v6611_1_4_ap_vld == 1'b1) & (1'b1 == ap_CS_fsm_state5))) begin
-        local_C4_12_fu_174 <= grp_systolic_tile_QKT_fu_413_v6611_1_4;
-    end
-end
-
-always @ (posedge ap_clk) begin
-    if (((grp_systolic_tile_QKT_fu_413_v6611_1_5_ap_vld == 1'b1) & (1'b1 == ap_CS_fsm_state5))) begin
-        local_C4_13_fu_178 <= grp_systolic_tile_QKT_fu_413_v6611_1_5;
-    end
-end
-
-always @ (posedge ap_clk) begin
-    if (((grp_systolic_tile_QKT_fu_413_v6611_1_6_ap_vld == 1'b1) & (1'b1 == ap_CS_fsm_state5))) begin
-        local_C4_14_fu_182 <= grp_systolic_tile_QKT_fu_413_v6611_1_6;
-    end
-end
-
-always @ (posedge ap_clk) begin
-    if (((grp_systolic_tile_QKT_fu_413_v6611_1_7_ap_vld == 1'b1) & (1'b1 == ap_CS_fsm_state5))) begin
-        local_C4_15_fu_186 <= grp_systolic_tile_QKT_fu_413_v6611_1_7;
-    end
-end
-
-always @ (posedge ap_clk) begin
-    if (((grp_systolic_tile_QKT_fu_413_v6611_2_0_ap_vld == 1'b1) & (1'b1 == ap_CS_fsm_state5))) begin
-        local_C4_16_fu_190 <= grp_systolic_tile_QKT_fu_413_v6611_2_0;
-    end
-end
-
-always @ (posedge ap_clk) begin
-    if (((grp_systolic_tile_QKT_fu_413_v6611_2_1_ap_vld == 1'b1) & (1'b1 == ap_CS_fsm_state5))) begin
-        local_C4_17_fu_194 <= grp_systolic_tile_QKT_fu_413_v6611_2_1;
-    end
-end
-
-always @ (posedge ap_clk) begin
-    if (((grp_systolic_tile_QKT_fu_413_v6611_2_2_ap_vld == 1'b1) & (1'b1 == ap_CS_fsm_state5))) begin
-        local_C4_18_fu_198 <= grp_systolic_tile_QKT_fu_413_v6611_2_2;
-    end
-end
-
-always @ (posedge ap_clk) begin
-    if (((grp_systolic_tile_QKT_fu_413_v6611_2_3_ap_vld == 1'b1) & (1'b1 == ap_CS_fsm_state5))) begin
-        local_C4_19_fu_202 <= grp_systolic_tile_QKT_fu_413_v6611_2_3;
-    end
-end
-
-always @ (posedge ap_clk) begin
-    if (((grp_systolic_tile_QKT_fu_413_v6611_0_1_ap_vld == 1'b1) & (1'b1 == ap_CS_fsm_state5))) begin
-        local_C4_1_fu_130 <= grp_systolic_tile_QKT_fu_413_v6611_0_1;
-    end
-end
-
-always @ (posedge ap_clk) begin
-    if (((grp_systolic_tile_QKT_fu_413_v6611_2_4_ap_vld == 1'b1) & (1'b1 == ap_CS_fsm_state5))) begin
-        local_C4_20_fu_206 <= grp_systolic_tile_QKT_fu_413_v6611_2_4;
-    end
-end
-
-always @ (posedge ap_clk) begin
-    if (((grp_systolic_tile_QKT_fu_413_v6611_2_5_ap_vld == 1'b1) & (1'b1 == ap_CS_fsm_state5))) begin
-        local_C4_21_fu_210 <= grp_systolic_tile_QKT_fu_413_v6611_2_5;
-    end
-end
-
-always @ (posedge ap_clk) begin
-    if (((grp_systolic_tile_QKT_fu_413_v6611_2_6_ap_vld == 1'b1) & (1'b1 == ap_CS_fsm_state5))) begin
-        local_C4_22_fu_214 <= grp_systolic_tile_QKT_fu_413_v6611_2_6;
-    end
-end
-
-always @ (posedge ap_clk) begin
-    if (((grp_systolic_tile_QKT_fu_413_v6611_2_7_ap_vld == 1'b1) & (1'b1 == ap_CS_fsm_state5))) begin
-        local_C4_23_fu_218 <= grp_systolic_tile_QKT_fu_413_v6611_2_7;
-    end
-end
-
-always @ (posedge ap_clk) begin
-    if (((grp_systolic_tile_QKT_fu_413_v6611_3_0_ap_vld == 1'b1) & (1'b1 == ap_CS_fsm_state5))) begin
-        local_C4_24_fu_222 <= grp_systolic_tile_QKT_fu_413_v6611_3_0;
-    end
-end
-
-always @ (posedge ap_clk) begin
-    if (((grp_systolic_tile_QKT_fu_413_v6611_3_1_ap_vld == 1'b1) & (1'b1 == ap_CS_fsm_state5))) begin
-        local_C4_25_fu_226 <= grp_systolic_tile_QKT_fu_413_v6611_3_1;
-    end
-end
-
-always @ (posedge ap_clk) begin
-    if (((grp_systolic_tile_QKT_fu_413_v6611_3_2_ap_vld == 1'b1) & (1'b1 == ap_CS_fsm_state5))) begin
-        local_C4_26_fu_230 <= grp_systolic_tile_QKT_fu_413_v6611_3_2;
-    end
-end
-
-always @ (posedge ap_clk) begin
-    if (((grp_systolic_tile_QKT_fu_413_v6611_3_3_ap_vld == 1'b1) & (1'b1 == ap_CS_fsm_state5))) begin
-        local_C4_27_fu_234 <= grp_systolic_tile_QKT_fu_413_v6611_3_3;
-    end
-end
-
-always @ (posedge ap_clk) begin
-    if (((grp_systolic_tile_QKT_fu_413_v6611_3_4_ap_vld == 1'b1) & (1'b1 == ap_CS_fsm_state5))) begin
-        local_C4_28_fu_238 <= grp_systolic_tile_QKT_fu_413_v6611_3_4;
-    end
-end
-
-always @ (posedge ap_clk) begin
-    if (((grp_systolic_tile_QKT_fu_413_v6611_3_5_ap_vld == 1'b1) & (1'b1 == ap_CS_fsm_state5))) begin
-        local_C4_29_fu_242 <= grp_systolic_tile_QKT_fu_413_v6611_3_5;
-    end
-end
-
-always @ (posedge ap_clk) begin
-    if (((grp_systolic_tile_QKT_fu_413_v6611_0_2_ap_vld == 1'b1) & (1'b1 == ap_CS_fsm_state5))) begin
-        local_C4_2_fu_134 <= grp_systolic_tile_QKT_fu_413_v6611_0_2;
-    end
-end
-
-always @ (posedge ap_clk) begin
-    if (((grp_systolic_tile_QKT_fu_413_v6611_3_6_ap_vld == 1'b1) & (1'b1 == ap_CS_fsm_state5))) begin
-        local_C4_30_fu_246 <= grp_systolic_tile_QKT_fu_413_v6611_3_6;
-    end
-end
-
-always @ (posedge ap_clk) begin
-    if (((grp_systolic_tile_QKT_fu_413_v6611_3_7_ap_vld == 1'b1) & (1'b1 == ap_CS_fsm_state5))) begin
-        local_C4_31_fu_250 <= grp_systolic_tile_QKT_fu_413_v6611_3_7;
-    end
-end
-
-always @ (posedge ap_clk) begin
-    if (((grp_systolic_tile_QKT_fu_413_v6611_4_0_ap_vld == 1'b1) & (1'b1 == ap_CS_fsm_state5))) begin
-        local_C4_32_fu_254 <= grp_systolic_tile_QKT_fu_413_v6611_4_0;
-    end
-end
-
-always @ (posedge ap_clk) begin
-    if (((grp_systolic_tile_QKT_fu_413_v6611_4_1_ap_vld == 1'b1) & (1'b1 == ap_CS_fsm_state5))) begin
-        local_C4_33_fu_258 <= grp_systolic_tile_QKT_fu_413_v6611_4_1;
-    end
-end
-
-always @ (posedge ap_clk) begin
-    if (((grp_systolic_tile_QKT_fu_413_v6611_4_2_ap_vld == 1'b1) & (1'b1 == ap_CS_fsm_state5))) begin
-        local_C4_34_fu_262 <= grp_systolic_tile_QKT_fu_413_v6611_4_2;
-    end
-end
-
-always @ (posedge ap_clk) begin
-    if (((grp_systolic_tile_QKT_fu_413_v6611_4_3_ap_vld == 1'b1) & (1'b1 == ap_CS_fsm_state5))) begin
-        local_C4_35_fu_266 <= grp_systolic_tile_QKT_fu_413_v6611_4_3;
-    end
-end
-
-always @ (posedge ap_clk) begin
-    if (((grp_systolic_tile_QKT_fu_413_v6611_4_4_ap_vld == 1'b1) & (1'b1 == ap_CS_fsm_state5))) begin
-        local_C4_36_fu_270 <= grp_systolic_tile_QKT_fu_413_v6611_4_4;
-    end
-end
-
-always @ (posedge ap_clk) begin
-    if (((grp_systolic_tile_QKT_fu_413_v6611_4_5_ap_vld == 1'b1) & (1'b1 == ap_CS_fsm_state5))) begin
-        local_C4_37_fu_274 <= grp_systolic_tile_QKT_fu_413_v6611_4_5;
-    end
-end
-
-always @ (posedge ap_clk) begin
-    if (((grp_systolic_tile_QKT_fu_413_v6611_4_6_ap_vld == 1'b1) & (1'b1 == ap_CS_fsm_state5))) begin
-        local_C4_38_fu_278 <= grp_systolic_tile_QKT_fu_413_v6611_4_6;
-    end
-end
-
-always @ (posedge ap_clk) begin
-    if (((grp_systolic_tile_QKT_fu_413_v6611_4_7_ap_vld == 1'b1) & (1'b1 == ap_CS_fsm_state5))) begin
-        local_C4_39_fu_282 <= grp_systolic_tile_QKT_fu_413_v6611_4_7;
-    end
-end
-
-always @ (posedge ap_clk) begin
-    if (((grp_systolic_tile_QKT_fu_413_v6611_0_3_ap_vld == 1'b1) & (1'b1 == ap_CS_fsm_state5))) begin
-        local_C4_3_fu_138 <= grp_systolic_tile_QKT_fu_413_v6611_0_3;
-    end
-end
-
-always @ (posedge ap_clk) begin
-    if (((grp_systolic_tile_QKT_fu_413_v6611_5_0_ap_vld == 1'b1) & (1'b1 == ap_CS_fsm_state5))) begin
-        local_C4_40_fu_286 <= grp_systolic_tile_QKT_fu_413_v6611_5_0;
-    end
-end
-
-always @ (posedge ap_clk) begin
-    if (((grp_systolic_tile_QKT_fu_413_v6611_5_1_ap_vld == 1'b1) & (1'b1 == ap_CS_fsm_state5))) begin
-        local_C4_41_fu_290 <= grp_systolic_tile_QKT_fu_413_v6611_5_1;
-    end
-end
-
-always @ (posedge ap_clk) begin
-    if (((grp_systolic_tile_QKT_fu_413_v6611_5_2_ap_vld == 1'b1) & (1'b1 == ap_CS_fsm_state5))) begin
-        local_C4_42_fu_294 <= grp_systolic_tile_QKT_fu_413_v6611_5_2;
-    end
-end
-
-always @ (posedge ap_clk) begin
-    if (((grp_systolic_tile_QKT_fu_413_v6611_5_3_ap_vld == 1'b1) & (1'b1 == ap_CS_fsm_state5))) begin
-        local_C4_43_fu_298 <= grp_systolic_tile_QKT_fu_413_v6611_5_3;
-    end
-end
-
-always @ (posedge ap_clk) begin
-    if (((grp_systolic_tile_QKT_fu_413_v6611_5_4_ap_vld == 1'b1) & (1'b1 == ap_CS_fsm_state5))) begin
-        local_C4_44_fu_302 <= grp_systolic_tile_QKT_fu_413_v6611_5_4;
-    end
-end
-
-always @ (posedge ap_clk) begin
-    if (((grp_systolic_tile_QKT_fu_413_v6611_5_5_ap_vld == 1'b1) & (1'b1 == ap_CS_fsm_state5))) begin
-        local_C4_45_fu_306 <= grp_systolic_tile_QKT_fu_413_v6611_5_5;
-    end
-end
-
-always @ (posedge ap_clk) begin
-    if (((grp_systolic_tile_QKT_fu_413_v6611_5_6_ap_vld == 1'b1) & (1'b1 == ap_CS_fsm_state5))) begin
-        local_C4_46_fu_310 <= grp_systolic_tile_QKT_fu_413_v6611_5_6;
-    end
-end
-
-always @ (posedge ap_clk) begin
-    if (((grp_systolic_tile_QKT_fu_413_v6611_5_7_ap_vld == 1'b1) & (1'b1 == ap_CS_fsm_state5))) begin
-        local_C4_47_fu_314 <= grp_systolic_tile_QKT_fu_413_v6611_5_7;
-    end
-end
-
-always @ (posedge ap_clk) begin
-    if (((grp_systolic_tile_QKT_fu_413_v6611_6_0_ap_vld == 1'b1) & (1'b1 == ap_CS_fsm_state5))) begin
-        local_C4_48_fu_318 <= grp_systolic_tile_QKT_fu_413_v6611_6_0;
-    end
-end
-
-always @ (posedge ap_clk) begin
-    if (((grp_systolic_tile_QKT_fu_413_v6611_6_1_ap_vld == 1'b1) & (1'b1 == ap_CS_fsm_state5))) begin
-        local_C4_49_fu_322 <= grp_systolic_tile_QKT_fu_413_v6611_6_1;
-    end
-end
-
-always @ (posedge ap_clk) begin
-    if (((grp_systolic_tile_QKT_fu_413_v6611_0_4_ap_vld == 1'b1) & (1'b1 == ap_CS_fsm_state5))) begin
-        local_C4_4_fu_142 <= grp_systolic_tile_QKT_fu_413_v6611_0_4;
-    end
-end
-
-always @ (posedge ap_clk) begin
-    if (((grp_systolic_tile_QKT_fu_413_v6611_6_2_ap_vld == 1'b1) & (1'b1 == ap_CS_fsm_state5))) begin
-        local_C4_50_fu_326 <= grp_systolic_tile_QKT_fu_413_v6611_6_2;
-    end
-end
-
-always @ (posedge ap_clk) begin
-    if (((grp_systolic_tile_QKT_fu_413_v6611_6_3_ap_vld == 1'b1) & (1'b1 == ap_CS_fsm_state5))) begin
-        local_C4_51_fu_330 <= grp_systolic_tile_QKT_fu_413_v6611_6_3;
-    end
-end
-
-always @ (posedge ap_clk) begin
-    if (((grp_systolic_tile_QKT_fu_413_v6611_6_4_ap_vld == 1'b1) & (1'b1 == ap_CS_fsm_state5))) begin
-        local_C4_52_fu_334 <= grp_systolic_tile_QKT_fu_413_v6611_6_4;
-    end
-end
-
-always @ (posedge ap_clk) begin
-    if (((grp_systolic_tile_QKT_fu_413_v6611_6_5_ap_vld == 1'b1) & (1'b1 == ap_CS_fsm_state5))) begin
-        local_C4_53_fu_338 <= grp_systolic_tile_QKT_fu_413_v6611_6_5;
-    end
-end
-
-always @ (posedge ap_clk) begin
-    if (((grp_systolic_tile_QKT_fu_413_v6611_6_6_ap_vld == 1'b1) & (1'b1 == ap_CS_fsm_state5))) begin
-        local_C4_54_fu_342 <= grp_systolic_tile_QKT_fu_413_v6611_6_6;
-    end
-end
-
-always @ (posedge ap_clk) begin
-    if (((grp_systolic_tile_QKT_fu_413_v6611_6_7_ap_vld == 1'b1) & (1'b1 == ap_CS_fsm_state5))) begin
-        local_C4_55_fu_346 <= grp_systolic_tile_QKT_fu_413_v6611_6_7;
-    end
-end
-
-always @ (posedge ap_clk) begin
-    if (((grp_systolic_tile_QKT_fu_413_v6611_7_0_ap_vld == 1'b1) & (1'b1 == ap_CS_fsm_state5))) begin
-        local_C4_56_fu_350 <= grp_systolic_tile_QKT_fu_413_v6611_7_0;
-    end
-end
-
-always @ (posedge ap_clk) begin
-    if (((grp_systolic_tile_QKT_fu_413_v6611_7_1_ap_vld == 1'b1) & (1'b1 == ap_CS_fsm_state5))) begin
-        local_C4_57_fu_354 <= grp_systolic_tile_QKT_fu_413_v6611_7_1;
-    end
-end
-
-always @ (posedge ap_clk) begin
-    if (((grp_systolic_tile_QKT_fu_413_v6611_7_2_ap_vld == 1'b1) & (1'b1 == ap_CS_fsm_state5))) begin
-        local_C4_58_fu_358 <= grp_systolic_tile_QKT_fu_413_v6611_7_2;
-    end
-end
-
-always @ (posedge ap_clk) begin
-    if (((grp_systolic_tile_QKT_fu_413_v6611_7_3_ap_vld == 1'b1) & (1'b1 == ap_CS_fsm_state5))) begin
-        local_C4_59_fu_362 <= grp_systolic_tile_QKT_fu_413_v6611_7_3;
-    end
-end
-
-always @ (posedge ap_clk) begin
-    if (((grp_systolic_tile_QKT_fu_413_v6611_0_5_ap_vld == 1'b1) & (1'b1 == ap_CS_fsm_state5))) begin
-        local_C4_5_fu_146 <= grp_systolic_tile_QKT_fu_413_v6611_0_5;
-    end
-end
-
-always @ (posedge ap_clk) begin
-    if (((grp_systolic_tile_QKT_fu_413_v6611_7_4_ap_vld == 1'b1) & (1'b1 == ap_CS_fsm_state5))) begin
-        local_C4_60_fu_366 <= grp_systolic_tile_QKT_fu_413_v6611_7_4;
-    end
-end
-
-always @ (posedge ap_clk) begin
-    if (((grp_systolic_tile_QKT_fu_413_v6611_7_5_ap_vld == 1'b1) & (1'b1 == ap_CS_fsm_state5))) begin
-        local_C4_61_fu_370 <= grp_systolic_tile_QKT_fu_413_v6611_7_5;
-    end
-end
-
-always @ (posedge ap_clk) begin
-    if (((grp_systolic_tile_QKT_fu_413_v6611_7_6_ap_vld == 1'b1) & (1'b1 == ap_CS_fsm_state5))) begin
-        local_C4_62_fu_374 <= grp_systolic_tile_QKT_fu_413_v6611_7_6;
-    end
-end
-
-always @ (posedge ap_clk) begin
-    if (((grp_systolic_tile_QKT_fu_413_v6611_7_7_ap_vld == 1'b1) & (1'b1 == ap_CS_fsm_state5))) begin
-        local_C4_63_fu_378 <= grp_systolic_tile_QKT_fu_413_v6611_7_7;
-    end
-end
-
-always @ (posedge ap_clk) begin
-    if (((grp_systolic_tile_QKT_fu_413_v6611_0_6_ap_vld == 1'b1) & (1'b1 == ap_CS_fsm_state5))) begin
-        local_C4_6_fu_150 <= grp_systolic_tile_QKT_fu_413_v6611_0_6;
-    end
-end
-
-always @ (posedge ap_clk) begin
-    if (((grp_systolic_tile_QKT_fu_413_v6611_0_7_ap_vld == 1'b1) & (1'b1 == ap_CS_fsm_state5))) begin
-        local_C4_7_fu_154 <= grp_systolic_tile_QKT_fu_413_v6611_0_7;
-    end
-end
-
-always @ (posedge ap_clk) begin
-    if (((grp_systolic_tile_QKT_fu_413_v6611_1_0_ap_vld == 1'b1) & (1'b1 == ap_CS_fsm_state5))) begin
-        local_C4_8_fu_158 <= grp_systolic_tile_QKT_fu_413_v6611_1_0;
-    end
-end
-
-always @ (posedge ap_clk) begin
-    if (((grp_systolic_tile_QKT_fu_413_v6611_1_1_ap_vld == 1'b1) & (1'b1 == ap_CS_fsm_state5))) begin
-        local_C4_9_fu_162 <= grp_systolic_tile_QKT_fu_413_v6611_1_1;
-    end
-end
-
-always @ (posedge ap_clk) begin
-    if (((grp_systolic_tile_QKT_fu_413_v6611_0_0_ap_vld == 1'b1) & (1'b1 == ap_CS_fsm_state5))) begin
-        local_C4_fu_126 <= grp_systolic_tile_QKT_fu_413_v6611_0_0;
-    end
-end
-
-always @ (posedge ap_clk) begin
-    if ((1'b1 == ap_CS_fsm_state2)) begin
-        p_mid2_reg_1351[9 : 3] <= p_mid2_fu_637_p3[9 : 3];
-        tmp_s_reg_1362[9 : 3] <= tmp_s_fu_657_p3[9 : 3];
-        v6893_reg_1357 <= v6893_fu_646_p2;
     end
 end
 
 always @ (*) begin
-    if ((ap_start == 1'b0)) begin
-        ap_ST_fsm_state1_blk = 1'b1;
-    end else begin
-        ap_ST_fsm_state1_blk = 1'b0;
-    end
-end
-
-assign ap_ST_fsm_state2_blk = 1'b0;
-
-always @ (*) begin
-    if ((1'b1 == ap_block_state3_on_subcall_done)) begin
-        ap_ST_fsm_state3_blk = 1'b1;
-    end else begin
-        ap_ST_fsm_state3_blk = 1'b0;
-    end
-end
-
-assign ap_ST_fsm_state4_blk = 1'b0;
-
-always @ (*) begin
-    if ((1'b1 == ap_block_state5_on_subcall_done)) begin
-        ap_ST_fsm_state5_blk = 1'b1;
-    end else begin
-        ap_ST_fsm_state5_blk = 1'b0;
-    end
-end
-
-assign ap_ST_fsm_state6_blk = 1'b0;
-
-always @ (*) begin
-    if ((grp_systolic_QKT_Pipeline_l_store_C_tile_sj4_l_si4_fu_497_ap_done == 1'b0)) begin
-        ap_ST_fsm_state7_blk = 1'b1;
-    end else begin
-        ap_ST_fsm_state7_blk = 1'b0;
-    end
-end
-
-always @ (*) begin
-    if ((((1'b1 == ap_CS_fsm_state1) & (ap_start == 1'b0)) | ((icmp_ln12604_fu_587_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state2)))) begin
+    if (((loop_dataflow_output_count == bound_minus_1) & (dataflow_parent_loop_proc42_U0_ap_done == 1'b1))) begin
         ap_done = 1'b1;
     end else begin
         ap_done = 1'b0;
@@ -1822,7 +204,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state1) & (ap_start == 1'b0))) begin
+    if (((loop_dataflow_output_count == 8'd0) & (ap_start == 1'b0) & (dataflow_parent_loop_proc42_U0_ap_idle == 1'b1))) begin
         ap_idle = 1'b1;
     end else begin
         ap_idle = 1'b0;
@@ -1830,7 +212,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((icmp_ln12604_fu_587_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state2))) begin
+    if (((loop_dataflow_input_count == bound_minus_1) & (ap_start == 1'b1) & (dataflow_parent_loop_proc42_U0_ap_ready == 1'b1))) begin
         ap_ready = 1'b1;
     end else begin
         ap_ready = 1'b0;
@@ -1838,587 +220,63 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((1'b0 == ap_block_state5_on_subcall_done) & (1'b1 == ap_CS_fsm_state5))) begin
-        grp_systolic_tile_QKT_fu_413_ap_continue = 1'b1;
+    if ((~(loop_dataflow_output_count == bound_minus_1) | (ap_continue == 1'b1))) begin
+        dataflow_parent_loop_proc42_U0_ap_continue = 1'b1;
     end else begin
-        grp_systolic_tile_QKT_fu_413_ap_continue = 1'b0;
+        dataflow_parent_loop_proc42_U0_ap_continue = 1'b0;
     end
 end
 
-always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state5)) begin
-        local_A4_1_address0 = grp_systolic_tile_QKT_fu_413_v6609_1_address0;
-    end else if ((1'b1 == ap_CS_fsm_state3)) begin
-        local_A4_1_address0 = grp_systolic_QKT_Pipeline_l_load_A_tile_ak4_l_ai4_fu_382_local_A4_1_address0;
-    end else begin
-        local_A4_1_address0 = 'bx;
-    end
-end
+assign bound_minus_1 = (8'd128 - 8'd1);
 
-always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state5)) begin
-        local_A4_1_ce0 = grp_systolic_tile_QKT_fu_413_v6609_1_ce0;
-    end else if ((1'b1 == ap_CS_fsm_state3)) begin
-        local_A4_1_ce0 = grp_systolic_QKT_Pipeline_l_load_A_tile_ak4_l_ai4_fu_382_local_A4_1_ce0;
-    end else begin
-        local_A4_1_ce0 = 1'b0;
-    end
-end
+assign dataflow_parent_loop_proc42_U0_ap_start = ap_start;
 
-always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state3)) begin
-        local_A4_1_we0 = grp_systolic_QKT_Pipeline_l_load_A_tile_ak4_l_ai4_fu_382_local_A4_1_we0;
-    end else begin
-        local_A4_1_we0 = 1'b0;
-    end
-end
+assign v6882_address0 = dataflow_parent_loop_proc42_U0_v6882_address0;
 
-always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state5)) begin
-        local_A4_2_address0 = grp_systolic_tile_QKT_fu_413_v6609_2_address0;
-    end else if ((1'b1 == ap_CS_fsm_state3)) begin
-        local_A4_2_address0 = grp_systolic_QKT_Pipeline_l_load_A_tile_ak4_l_ai4_fu_382_local_A4_2_address0;
-    end else begin
-        local_A4_2_address0 = 'bx;
-    end
-end
+assign v6882_address1 = 16'd0;
 
-always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state5)) begin
-        local_A4_2_ce0 = grp_systolic_tile_QKT_fu_413_v6609_2_ce0;
-    end else if ((1'b1 == ap_CS_fsm_state3)) begin
-        local_A4_2_ce0 = grp_systolic_QKT_Pipeline_l_load_A_tile_ak4_l_ai4_fu_382_local_A4_2_ce0;
-    end else begin
-        local_A4_2_ce0 = 1'b0;
-    end
-end
+assign v6882_ce0 = dataflow_parent_loop_proc42_U0_v6882_ce0;
 
-always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state3)) begin
-        local_A4_2_we0 = grp_systolic_QKT_Pipeline_l_load_A_tile_ak4_l_ai4_fu_382_local_A4_2_we0;
-    end else begin
-        local_A4_2_we0 = 1'b0;
-    end
-end
+assign v6882_ce1 = 1'b0;
 
-always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state5)) begin
-        local_A4_3_address0 = grp_systolic_tile_QKT_fu_413_v6609_3_address0;
-    end else if ((1'b1 == ap_CS_fsm_state3)) begin
-        local_A4_3_address0 = grp_systolic_QKT_Pipeline_l_load_A_tile_ak4_l_ai4_fu_382_local_A4_3_address0;
-    end else begin
-        local_A4_3_address0 = 'bx;
-    end
-end
+assign v6882_d0 = 32'd0;
 
-always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state5)) begin
-        local_A4_3_ce0 = grp_systolic_tile_QKT_fu_413_v6609_3_ce0;
-    end else if ((1'b1 == ap_CS_fsm_state3)) begin
-        local_A4_3_ce0 = grp_systolic_QKT_Pipeline_l_load_A_tile_ak4_l_ai4_fu_382_local_A4_3_ce0;
-    end else begin
-        local_A4_3_ce0 = 1'b0;
-    end
-end
+assign v6882_d1 = 32'd0;
 
-always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state3)) begin
-        local_A4_3_we0 = grp_systolic_QKT_Pipeline_l_load_A_tile_ak4_l_ai4_fu_382_local_A4_3_we0;
-    end else begin
-        local_A4_3_we0 = 1'b0;
-    end
-end
+assign v6882_we0 = 1'b0;
 
-always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state5)) begin
-        local_A4_4_address0 = grp_systolic_tile_QKT_fu_413_v6609_4_address0;
-    end else if ((1'b1 == ap_CS_fsm_state3)) begin
-        local_A4_4_address0 = grp_systolic_QKT_Pipeline_l_load_A_tile_ak4_l_ai4_fu_382_local_A4_4_address0;
-    end else begin
-        local_A4_4_address0 = 'bx;
-    end
-end
+assign v6882_we1 = 1'b0;
 
-always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state5)) begin
-        local_A4_4_ce0 = grp_systolic_tile_QKT_fu_413_v6609_4_ce0;
-    end else if ((1'b1 == ap_CS_fsm_state3)) begin
-        local_A4_4_ce0 = grp_systolic_QKT_Pipeline_l_load_A_tile_ak4_l_ai4_fu_382_local_A4_4_ce0;
-    end else begin
-        local_A4_4_ce0 = 1'b0;
-    end
-end
+assign v6883_address0 = dataflow_parent_loop_proc42_U0_v6883_address0;
 
-always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state3)) begin
-        local_A4_4_we0 = grp_systolic_QKT_Pipeline_l_load_A_tile_ak4_l_ai4_fu_382_local_A4_4_we0;
-    end else begin
-        local_A4_4_we0 = 1'b0;
-    end
-end
+assign v6883_address1 = 16'd0;
 
-always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state5)) begin
-        local_A4_5_address0 = grp_systolic_tile_QKT_fu_413_v6609_5_address0;
-    end else if ((1'b1 == ap_CS_fsm_state3)) begin
-        local_A4_5_address0 = grp_systolic_QKT_Pipeline_l_load_A_tile_ak4_l_ai4_fu_382_local_A4_5_address0;
-    end else begin
-        local_A4_5_address0 = 'bx;
-    end
-end
+assign v6883_ce0 = dataflow_parent_loop_proc42_U0_v6883_ce0;
 
-always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state5)) begin
-        local_A4_5_ce0 = grp_systolic_tile_QKT_fu_413_v6609_5_ce0;
-    end else if ((1'b1 == ap_CS_fsm_state3)) begin
-        local_A4_5_ce0 = grp_systolic_QKT_Pipeline_l_load_A_tile_ak4_l_ai4_fu_382_local_A4_5_ce0;
-    end else begin
-        local_A4_5_ce0 = 1'b0;
-    end
-end
+assign v6883_ce1 = 1'b0;
 
-always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state3)) begin
-        local_A4_5_we0 = grp_systolic_QKT_Pipeline_l_load_A_tile_ak4_l_ai4_fu_382_local_A4_5_we0;
-    end else begin
-        local_A4_5_we0 = 1'b0;
-    end
-end
+assign v6883_d0 = 32'd0;
 
-always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state5)) begin
-        local_A4_6_address0 = grp_systolic_tile_QKT_fu_413_v6609_6_address0;
-    end else if ((1'b1 == ap_CS_fsm_state3)) begin
-        local_A4_6_address0 = grp_systolic_QKT_Pipeline_l_load_A_tile_ak4_l_ai4_fu_382_local_A4_6_address0;
-    end else begin
-        local_A4_6_address0 = 'bx;
-    end
-end
+assign v6883_d1 = 32'd0;
 
-always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state5)) begin
-        local_A4_6_ce0 = grp_systolic_tile_QKT_fu_413_v6609_6_ce0;
-    end else if ((1'b1 == ap_CS_fsm_state3)) begin
-        local_A4_6_ce0 = grp_systolic_QKT_Pipeline_l_load_A_tile_ak4_l_ai4_fu_382_local_A4_6_ce0;
-    end else begin
-        local_A4_6_ce0 = 1'b0;
-    end
-end
+assign v6883_we0 = 1'b0;
 
-always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state3)) begin
-        local_A4_6_we0 = grp_systolic_QKT_Pipeline_l_load_A_tile_ak4_l_ai4_fu_382_local_A4_6_we0;
-    end else begin
-        local_A4_6_we0 = 1'b0;
-    end
-end
+assign v6883_we1 = 1'b0;
 
-always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state5)) begin
-        local_A4_7_address0 = grp_systolic_tile_QKT_fu_413_v6609_7_address0;
-    end else if ((1'b1 == ap_CS_fsm_state3)) begin
-        local_A4_7_address0 = grp_systolic_QKT_Pipeline_l_load_A_tile_ak4_l_ai4_fu_382_local_A4_7_address0;
-    end else begin
-        local_A4_7_address0 = 'bx;
-    end
-end
+assign v6884_address0 = 20'd0;
 
-always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state5)) begin
-        local_A4_7_ce0 = grp_systolic_tile_QKT_fu_413_v6609_7_ce0;
-    end else if ((1'b1 == ap_CS_fsm_state3)) begin
-        local_A4_7_ce0 = grp_systolic_QKT_Pipeline_l_load_A_tile_ak4_l_ai4_fu_382_local_A4_7_ce0;
-    end else begin
-        local_A4_7_ce0 = 1'b0;
-    end
-end
+assign v6884_address1 = dataflow_parent_loop_proc42_U0_v6884_address1;
 
-always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state3)) begin
-        local_A4_7_we0 = grp_systolic_QKT_Pipeline_l_load_A_tile_ak4_l_ai4_fu_382_local_A4_7_we0;
-    end else begin
-        local_A4_7_we0 = 1'b0;
-    end
-end
+assign v6884_ce0 = 1'b0;
 
-always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state5)) begin
-        local_A4_address0 = grp_systolic_tile_QKT_fu_413_v6609_0_address0;
-    end else if ((1'b1 == ap_CS_fsm_state3)) begin
-        local_A4_address0 = grp_systolic_QKT_Pipeline_l_load_A_tile_ak4_l_ai4_fu_382_local_A4_address0;
-    end else begin
-        local_A4_address0 = 'bx;
-    end
-end
+assign v6884_ce1 = dataflow_parent_loop_proc42_U0_v6884_ce1;
 
-always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state5)) begin
-        local_A4_ce0 = grp_systolic_tile_QKT_fu_413_v6609_0_ce0;
-    end else if ((1'b1 == ap_CS_fsm_state3)) begin
-        local_A4_ce0 = grp_systolic_QKT_Pipeline_l_load_A_tile_ak4_l_ai4_fu_382_local_A4_ce0;
-    end else begin
-        local_A4_ce0 = 1'b0;
-    end
-end
+assign v6884_d0 = 32'd0;
 
-always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state3)) begin
-        local_A4_we0 = grp_systolic_QKT_Pipeline_l_load_A_tile_ak4_l_ai4_fu_382_local_A4_we0;
-    end else begin
-        local_A4_we0 = 1'b0;
-    end
-end
+assign v6884_d1 = dataflow_parent_loop_proc42_U0_v6884_d1;
 
-always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state5)) begin
-        local_B4_1_address0 = grp_systolic_tile_QKT_fu_413_v6610_1_address0;
-    end else if ((1'b1 == ap_CS_fsm_state3)) begin
-        local_B4_1_address0 = grp_systolic_QKT_Pipeline_l_load_B_tile_bk4_l_bj4_fu_398_local_B4_1_address0;
-    end else begin
-        local_B4_1_address0 = 'bx;
-    end
-end
+assign v6884_we0 = 1'b0;
 
-always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state5)) begin
-        local_B4_1_ce0 = grp_systolic_tile_QKT_fu_413_v6610_1_ce0;
-    end else if ((1'b1 == ap_CS_fsm_state3)) begin
-        local_B4_1_ce0 = grp_systolic_QKT_Pipeline_l_load_B_tile_bk4_l_bj4_fu_398_local_B4_1_ce0;
-    end else begin
-        local_B4_1_ce0 = 1'b0;
-    end
-end
-
-always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state3)) begin
-        local_B4_1_we0 = grp_systolic_QKT_Pipeline_l_load_B_tile_bk4_l_bj4_fu_398_local_B4_1_we0;
-    end else begin
-        local_B4_1_we0 = 1'b0;
-    end
-end
-
-always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state5)) begin
-        local_B4_2_address0 = grp_systolic_tile_QKT_fu_413_v6610_2_address0;
-    end else if ((1'b1 == ap_CS_fsm_state3)) begin
-        local_B4_2_address0 = grp_systolic_QKT_Pipeline_l_load_B_tile_bk4_l_bj4_fu_398_local_B4_2_address0;
-    end else begin
-        local_B4_2_address0 = 'bx;
-    end
-end
-
-always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state5)) begin
-        local_B4_2_ce0 = grp_systolic_tile_QKT_fu_413_v6610_2_ce0;
-    end else if ((1'b1 == ap_CS_fsm_state3)) begin
-        local_B4_2_ce0 = grp_systolic_QKT_Pipeline_l_load_B_tile_bk4_l_bj4_fu_398_local_B4_2_ce0;
-    end else begin
-        local_B4_2_ce0 = 1'b0;
-    end
-end
-
-always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state3)) begin
-        local_B4_2_we0 = grp_systolic_QKT_Pipeline_l_load_B_tile_bk4_l_bj4_fu_398_local_B4_2_we0;
-    end else begin
-        local_B4_2_we0 = 1'b0;
-    end
-end
-
-always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state5)) begin
-        local_B4_3_address0 = grp_systolic_tile_QKT_fu_413_v6610_3_address0;
-    end else if ((1'b1 == ap_CS_fsm_state3)) begin
-        local_B4_3_address0 = grp_systolic_QKT_Pipeline_l_load_B_tile_bk4_l_bj4_fu_398_local_B4_3_address0;
-    end else begin
-        local_B4_3_address0 = 'bx;
-    end
-end
-
-always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state5)) begin
-        local_B4_3_ce0 = grp_systolic_tile_QKT_fu_413_v6610_3_ce0;
-    end else if ((1'b1 == ap_CS_fsm_state3)) begin
-        local_B4_3_ce0 = grp_systolic_QKT_Pipeline_l_load_B_tile_bk4_l_bj4_fu_398_local_B4_3_ce0;
-    end else begin
-        local_B4_3_ce0 = 1'b0;
-    end
-end
-
-always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state3)) begin
-        local_B4_3_we0 = grp_systolic_QKT_Pipeline_l_load_B_tile_bk4_l_bj4_fu_398_local_B4_3_we0;
-    end else begin
-        local_B4_3_we0 = 1'b0;
-    end
-end
-
-always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state5)) begin
-        local_B4_4_address0 = grp_systolic_tile_QKT_fu_413_v6610_4_address0;
-    end else if ((1'b1 == ap_CS_fsm_state3)) begin
-        local_B4_4_address0 = grp_systolic_QKT_Pipeline_l_load_B_tile_bk4_l_bj4_fu_398_local_B4_4_address0;
-    end else begin
-        local_B4_4_address0 = 'bx;
-    end
-end
-
-always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state5)) begin
-        local_B4_4_ce0 = grp_systolic_tile_QKT_fu_413_v6610_4_ce0;
-    end else if ((1'b1 == ap_CS_fsm_state3)) begin
-        local_B4_4_ce0 = grp_systolic_QKT_Pipeline_l_load_B_tile_bk4_l_bj4_fu_398_local_B4_4_ce0;
-    end else begin
-        local_B4_4_ce0 = 1'b0;
-    end
-end
-
-always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state3)) begin
-        local_B4_4_we0 = grp_systolic_QKT_Pipeline_l_load_B_tile_bk4_l_bj4_fu_398_local_B4_4_we0;
-    end else begin
-        local_B4_4_we0 = 1'b0;
-    end
-end
-
-always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state5)) begin
-        local_B4_5_address0 = grp_systolic_tile_QKT_fu_413_v6610_5_address0;
-    end else if ((1'b1 == ap_CS_fsm_state3)) begin
-        local_B4_5_address0 = grp_systolic_QKT_Pipeline_l_load_B_tile_bk4_l_bj4_fu_398_local_B4_5_address0;
-    end else begin
-        local_B4_5_address0 = 'bx;
-    end
-end
-
-always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state5)) begin
-        local_B4_5_ce0 = grp_systolic_tile_QKT_fu_413_v6610_5_ce0;
-    end else if ((1'b1 == ap_CS_fsm_state3)) begin
-        local_B4_5_ce0 = grp_systolic_QKT_Pipeline_l_load_B_tile_bk4_l_bj4_fu_398_local_B4_5_ce0;
-    end else begin
-        local_B4_5_ce0 = 1'b0;
-    end
-end
-
-always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state3)) begin
-        local_B4_5_we0 = grp_systolic_QKT_Pipeline_l_load_B_tile_bk4_l_bj4_fu_398_local_B4_5_we0;
-    end else begin
-        local_B4_5_we0 = 1'b0;
-    end
-end
-
-always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state5)) begin
-        local_B4_6_address0 = grp_systolic_tile_QKT_fu_413_v6610_6_address0;
-    end else if ((1'b1 == ap_CS_fsm_state3)) begin
-        local_B4_6_address0 = grp_systolic_QKT_Pipeline_l_load_B_tile_bk4_l_bj4_fu_398_local_B4_6_address0;
-    end else begin
-        local_B4_6_address0 = 'bx;
-    end
-end
-
-always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state5)) begin
-        local_B4_6_ce0 = grp_systolic_tile_QKT_fu_413_v6610_6_ce0;
-    end else if ((1'b1 == ap_CS_fsm_state3)) begin
-        local_B4_6_ce0 = grp_systolic_QKT_Pipeline_l_load_B_tile_bk4_l_bj4_fu_398_local_B4_6_ce0;
-    end else begin
-        local_B4_6_ce0 = 1'b0;
-    end
-end
-
-always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state3)) begin
-        local_B4_6_we0 = grp_systolic_QKT_Pipeline_l_load_B_tile_bk4_l_bj4_fu_398_local_B4_6_we0;
-    end else begin
-        local_B4_6_we0 = 1'b0;
-    end
-end
-
-always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state5)) begin
-        local_B4_7_address0 = grp_systolic_tile_QKT_fu_413_v6610_7_address0;
-    end else if ((1'b1 == ap_CS_fsm_state3)) begin
-        local_B4_7_address0 = grp_systolic_QKT_Pipeline_l_load_B_tile_bk4_l_bj4_fu_398_local_B4_7_address0;
-    end else begin
-        local_B4_7_address0 = 'bx;
-    end
-end
-
-always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state5)) begin
-        local_B4_7_ce0 = grp_systolic_tile_QKT_fu_413_v6610_7_ce0;
-    end else if ((1'b1 == ap_CS_fsm_state3)) begin
-        local_B4_7_ce0 = grp_systolic_QKT_Pipeline_l_load_B_tile_bk4_l_bj4_fu_398_local_B4_7_ce0;
-    end else begin
-        local_B4_7_ce0 = 1'b0;
-    end
-end
-
-always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state3)) begin
-        local_B4_7_we0 = grp_systolic_QKT_Pipeline_l_load_B_tile_bk4_l_bj4_fu_398_local_B4_7_we0;
-    end else begin
-        local_B4_7_we0 = 1'b0;
-    end
-end
-
-always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state5)) begin
-        local_B4_address0 = grp_systolic_tile_QKT_fu_413_v6610_0_address0;
-    end else if ((1'b1 == ap_CS_fsm_state3)) begin
-        local_B4_address0 = grp_systolic_QKT_Pipeline_l_load_B_tile_bk4_l_bj4_fu_398_local_B4_address0;
-    end else begin
-        local_B4_address0 = 'bx;
-    end
-end
-
-always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state5)) begin
-        local_B4_ce0 = grp_systolic_tile_QKT_fu_413_v6610_0_ce0;
-    end else if ((1'b1 == ap_CS_fsm_state3)) begin
-        local_B4_ce0 = grp_systolic_QKT_Pipeline_l_load_B_tile_bk4_l_bj4_fu_398_local_B4_ce0;
-    end else begin
-        local_B4_ce0 = 1'b0;
-    end
-end
-
-always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state3)) begin
-        local_B4_we0 = grp_systolic_QKT_Pipeline_l_load_B_tile_bk4_l_bj4_fu_398_local_B4_we0;
-    end else begin
-        local_B4_we0 = 1'b0;
-    end
-end
-
-always @ (*) begin
-    case (ap_CS_fsm)
-        ap_ST_fsm_state1 : begin
-            if (((1'b1 == ap_CS_fsm_state1) & (ap_start == 1'b1))) begin
-                ap_NS_fsm = ap_ST_fsm_state2;
-            end else begin
-                ap_NS_fsm = ap_ST_fsm_state1;
-            end
-        end
-        ap_ST_fsm_state2 : begin
-            if (((icmp_ln12604_fu_587_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state2))) begin
-                ap_NS_fsm = ap_ST_fsm_state1;
-            end else begin
-                ap_NS_fsm = ap_ST_fsm_state3;
-            end
-        end
-        ap_ST_fsm_state3 : begin
-            if (((1'b0 == ap_block_state3_on_subcall_done) & (1'b1 == ap_CS_fsm_state3))) begin
-                ap_NS_fsm = ap_ST_fsm_state4;
-            end else begin
-                ap_NS_fsm = ap_ST_fsm_state3;
-            end
-        end
-        ap_ST_fsm_state4 : begin
-            ap_NS_fsm = ap_ST_fsm_state5;
-        end
-        ap_ST_fsm_state5 : begin
-            if (((1'b0 == ap_block_state5_on_subcall_done) & (1'b1 == ap_CS_fsm_state5))) begin
-                ap_NS_fsm = ap_ST_fsm_state6;
-            end else begin
-                ap_NS_fsm = ap_ST_fsm_state5;
-            end
-        end
-        ap_ST_fsm_state6 : begin
-            ap_NS_fsm = ap_ST_fsm_state7;
-        end
-        ap_ST_fsm_state7 : begin
-            if (((grp_systolic_QKT_Pipeline_l_store_C_tile_sj4_l_si4_fu_497_ap_done == 1'b1) & (1'b1 == ap_CS_fsm_state7))) begin
-                ap_NS_fsm = ap_ST_fsm_state2;
-            end else begin
-                ap_NS_fsm = ap_ST_fsm_state7;
-            end
-        end
-        default : begin
-            ap_NS_fsm = 'bx;
-        end
-    endcase
-end
-
-assign add_ln12604_1_fu_593_p2 = (indvar_flatten20_fu_58 + 15'd1);
-
-assign add_ln12604_fu_605_p2 = (mi4_fu_54 + 8'd1);
-
-assign add_ln12605_fu_666_p2 = (select_ln12604_fu_617_p3 + 8'd1);
-
-assign ap_CS_fsm_state1 = ap_CS_fsm[32'd0];
-
-assign ap_CS_fsm_state2 = ap_CS_fsm[32'd1];
-
-assign ap_CS_fsm_state3 = ap_CS_fsm[32'd2];
-
-assign ap_CS_fsm_state4 = ap_CS_fsm[32'd3];
-
-assign ap_CS_fsm_state5 = ap_CS_fsm[32'd4];
-
-assign ap_CS_fsm_state6 = ap_CS_fsm[32'd5];
-
-assign ap_CS_fsm_state7 = ap_CS_fsm[32'd6];
-
-always @ (*) begin
-    ap_block_state3_on_subcall_done = ((grp_systolic_QKT_Pipeline_l_load_B_tile_bk4_l_bj4_fu_398_ap_done == 1'b0) | (grp_systolic_QKT_Pipeline_l_load_A_tile_ak4_l_ai4_fu_382_ap_done == 1'b0));
-end
-
-always @ (*) begin
-    ap_block_state5_on_subcall_done = ((ap_sync_grp_systolic_tile_QKT_fu_413_ap_ready & ap_sync_grp_systolic_tile_QKT_fu_413_ap_done) == 1'b0);
-end
-
-assign ap_sync_grp_systolic_tile_QKT_fu_413_ap_done = (grp_systolic_tile_QKT_fu_413_ap_done | ap_sync_reg_grp_systolic_tile_QKT_fu_413_ap_done);
-
-assign ap_sync_grp_systolic_tile_QKT_fu_413_ap_ready = (grp_systolic_tile_QKT_fu_413_ap_ready | ap_sync_reg_grp_systolic_tile_QKT_fu_413_ap_ready);
-
-assign empty_fu_653_p1 = select_ln12604_fu_617_p3[6:0];
-
-assign grp_systolic_QKT_Pipeline_l_load_A_tile_ak4_l_ai4_fu_382_ap_start = grp_systolic_QKT_Pipeline_l_load_A_tile_ak4_l_ai4_fu_382_ap_start_reg;
-
-assign grp_systolic_QKT_Pipeline_l_load_B_tile_bk4_l_bj4_fu_398_ap_start = grp_systolic_QKT_Pipeline_l_load_B_tile_bk4_l_bj4_fu_398_ap_start_reg;
-
-assign grp_systolic_QKT_Pipeline_l_store_C_tile_sj4_l_si4_fu_497_ap_start = grp_systolic_QKT_Pipeline_l_store_C_tile_sj4_l_si4_fu_497_ap_start_reg;
-
-assign grp_systolic_tile_QKT_fu_413_ap_start = grp_systolic_tile_QKT_fu_413_ap_start_reg;
-
-assign icmp_ln12604_fu_587_p2 = ((indvar_flatten20_fu_58 == 15'd16384) ? 1'b1 : 1'b0);
-
-assign icmp_ln12605_fu_611_p2 = ((ni4_fu_50 == 8'd128) ? 1'b1 : 1'b0);
-
-assign p_mid2_fu_637_p3 = {{trunc_ln12604_fu_633_p1}, {3'd0}};
-
-assign select_ln12604_1_fu_625_p3 = ((icmp_ln12605_fu_611_p2[0:0] == 1'b1) ? add_ln12604_fu_605_p2 : mi4_fu_54);
-
-assign select_ln12604_fu_617_p3 = ((icmp_ln12605_fu_611_p2[0:0] == 1'b1) ? 8'd0 : ni4_fu_50);
-
-assign tmp_s_fu_657_p3 = {{empty_fu_653_p1}, {3'd0}};
-
-assign trunc_ln12604_fu_633_p1 = select_ln12604_1_fu_625_p3[6:0];
-
-assign v6882_address0 = grp_systolic_QKT_Pipeline_l_load_A_tile_ak4_l_ai4_fu_382_v6882_address0;
-
-assign v6882_ce0 = grp_systolic_QKT_Pipeline_l_load_A_tile_ak4_l_ai4_fu_382_v6882_ce0;
-
-assign v6883_address0 = grp_systolic_QKT_Pipeline_l_load_B_tile_bk4_l_bj4_fu_398_v6883_address0;
-
-assign v6883_ce0 = grp_systolic_QKT_Pipeline_l_load_B_tile_bk4_l_bj4_fu_398_v6883_ce0;
-
-assign v6884_address1 = grp_systolic_QKT_Pipeline_l_store_C_tile_sj4_l_si4_fu_497_v6884_address1;
-
-assign v6884_ce1 = grp_systolic_QKT_Pipeline_l_store_C_tile_sj4_l_si4_fu_497_v6884_ce1;
-
-assign v6884_d1 = grp_systolic_QKT_Pipeline_l_store_C_tile_sj4_l_si4_fu_497_v6884_d1;
-
-assign v6884_we1 = grp_systolic_QKT_Pipeline_l_store_C_tile_sj4_l_si4_fu_497_v6884_we1;
-
-assign v6893_fu_646_p2 = ((select_ln12604_fu_617_p3 == 8'd0) ? 1'b1 : 1'b0);
-
-always @ (posedge ap_clk) begin
-    p_mid2_reg_1351[2:0] <= 3'b000;
-    tmp_s_reg_1362[2:0] <= 3'b000;
-end
+assign v6884_we1 = dataflow_parent_loop_proc42_U0_v6884_we1;
 
 endmodule //allo_DDitBlock_systolic_QKT

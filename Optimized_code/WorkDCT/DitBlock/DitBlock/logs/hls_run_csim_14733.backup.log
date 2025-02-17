@@ -1,0 +1,64 @@
+INFO: [vitis-run 60-1548] Creating build summary session with primary output /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/DitBlock.hlsrun_csim_summary, at Fri Feb 14 19:11:48 2025
+INFO: [vitis-run 82-31] Launching vitis_hls: vitis_hls -nolog -run csim -work_dir /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock -config /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/hls_config.cfg -cmdlineconfig /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/config.cmdline
+
+****** Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2023.2 (64-bit)
+  **** SW Build 4023990 on Oct 11 2023
+  **** IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+  **** SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source /tools/Xilinx/Vitis_HLS/2023.2/scripts/vitis_hls/hls.tcl -notrace
+INFO: [HLS 200-10] Running '/tools/Xilinx/Vitis_HLS/2023.2/bin/unwrapped/lnx64.o/vitis_hls'
+INFO: [HLS 200-10] For user 'silvenchen' on host 'silvenchen-ASUS-TUF-Gaming-F15-FX507ZM-FX507ZM' (Linux_x86_64 version 5.19.0-32-generic) on Fri Feb 14 19:11:49 CST 2025
+INFO: [HLS 200-10] On os Ubuntu 22.04.2 LTS
+INFO: [HLS 200-10] In directory '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock'
+INFO: [HLS 200-1909] Reading HLS ini file /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/hls_config.cfg
+INFO: [HLS 200-1909] Reading HLS ini file /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/config.cmdline
+INFO: [HLS 200-2005] Using work_dir /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock 
+INFO: [HLS 200-1510] Running: open_project /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock -diskless 
+INFO: [HLS 200-1510] Running: open_solution hls 
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2023.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1510] Running: apply_ini /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/hls_config.cfg 
+INFO: [HLS 200-1909] Reading HLS ini file /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/hls_config.cfg
+INFO: [HLS 200-1465] Applying ini 'syn.file=kernel.cpp' at /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/hls_config.cfg(8)
+INFO: [HLS 200-10] Adding design file '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=kernel.h' at /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/hls_config.cfg(9)
+INFO: [HLS 200-10] Adding design file '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.h' to the project
+INFO: [HLS 200-1465] Applying ini 'tb.file=tb_dit.cpp' at /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/hls_config.cfg(10)
+INFO: [HLS 200-10] Adding test bench file '/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/tb_dit.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.top=allo_DDitBlock' at /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/hls_config.cfg(11)
+INFO: [HLS 200-1465] Applying ini 'flow_target=vivado' at /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/hls_config.cfg(4)
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2023.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying ini 'part=xcu280-fsvh2892-2L-e' at /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/hls_config.cfg(1)
+INFO: [HLS 200-1611] Setting target device to 'xcu280-fsvh2892-2L-e'
+INFO: [HLS 200-1465] Applying ini 'clock=100MHz' at /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/hls_config.cfg(7)
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1465] Applying ini 'package.output.format=ip_catalog' at /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/hls_config.cfg(5)
+INFO: [HLS 200-1510] Running: apply_ini /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/config.cmdline 
+INFO: [HLS 200-1909] Reading HLS ini file /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/config.cmdline
+INFO: [HLS 200-1510] Running: csim_design 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+   Compiling ../../../../kernel.cpp in debug mode
+   Generating csim.exe
+make: Warning: File '/dev/null' has modification time 28171 s in the future
+make: warning:  Clock skew detected.  Your build may be incomplete.
+start loading files
+finish loading files
+Input Address: 0x7fa1d03ff010
+Gamma_arr Address: 0x1172af0
+Beta Address: 0x1173300
+start computing
+0.548637	0.737904	-0.823649	0.449076	-0.140303	-0.409778	0.653539	-1.1397	1.60702	0.9254	0.89725	0.345124	0.149012	-1.00343	-1.2889	0.76222	0.172075	-1.67357	-0.168883	-0.453401	1.06378	-1.7519	-0.995666	2.89821	1.4623	-0.00257934	-1.12033	-0.54115	-0.491397	0.474283	-0.643085	-1.97891	-0.548062	0.644418	0.724151	0.0307161	-0.810088	0.677813	-0.862653	0.0545836	1.2096	-0.0416097	0.0139248	-0.278171	-0.484901	1.43172	-0.459035	1.14045	-0.95472	-0.324205	1.59321	0.791371	-1.26785	0.604025	0.00141913	-0.147156	-0.482285	1.42679	-1.64407	-2.04645	-0.386846	0.368011	0.407114	1.70467	0.640877	-0.822962	1.72803	0.786165	-1.12925	2.91728	0.198007	-0.0127183	0.158289	-0.719151	0.0758286	-1.8459	-0.581749	-1.17398	-2.3538	-0.280746	-1.08293	0.00578369	0.880129	0.358693	-0.412067	-3.8293	0.359445	-0.50461	0.0913007	0.427875	0.259283	1.8412	-0.00866505	-0.096418	0.465852	0.682782	0.0804486	1.20017	-0.688588	-2.20489	0.0830133	0.468736	-0.504375	-0.653963	0.389346	0.644048	-0.954206	-1.44306	1.01878	0.316381	0.0590269	-0.986638	0.72038	-1.17987	0.844271	0.244623	-1.43149	0.373542	-0.135145	0.00704147	0.0494744	-0.0293148	-0.0257724	-0.0877903	0.330576	-0.248787	0.656875	1.44979	-1.11114	-1.06244	-0.841295	-1.54233	-1.25198	0.370191	0.79575	-0.118344	0.635974	0.356808	2.02335	1.64608	0.466668	0.587272	-0.632804	-1.41692	1.23528	1.11933	0.358333	-0.32488	0.556381	-1.05588	-1.28593	0.411934	0.405954	0.379755	-0.254195	0.0414467	0.063307	0.0832935	-1.2272	2.21046	1.46237	0.0626694	-0.385557	-1.58358	0.331091	-0.695763	-0.149683	0.544675	0.709586	-0.354514	0.0859104	-1.36816	-0.461404	0.739918	0.88602	1.02842	-1.42629	-0.430255	-0.463361	0.282606	0.19006	-0.72608	-0.565875	1.14676	-0.174538	2.20572	-1.19525	-1.99284	-1.22739	-0.0315446	0.216241	0.995836	2.02122	1.07893	0.0846228	0.204635	0.978453	0.166316	0.310335	1.64045	2.02032	-0.00748691	-0.345332	0.795049	0.190572	0.541495	0.340596	-0.914783	0.446872	0.309256	0.099095	0.405869	-1.02344	-1.08437	-0.59496	-0.76776	-0.618585	-1.94203	0.511439	1.01242	0.836984	0.215656	-0.779025	-1.4806	0.501028	-1.16804	-0.165815	-0.045456	-0.145552	0.608647	0.841004	1.40288	0.368649	0.579511	-1.53904	0.0313909	-0.672682	-1.18991	0.691935	-0.703533	1.48815	-0.150514	-1.53197	-0.677933	-0.352533	0.306523	0.751805	-0.790208	-0.224305	0.0102727	-0.561932	0.0425141	1.21013	-0.671125	-0.121063	0.215473	0.796952	-0.791821	-1.5669	1.39655	-0.157319	1.0574	0.282475	0.881736	0.861762	0.352642	-0.309024	0.369879	-0.168612	1.13432	0.626515	-0.345579	1.84545	1.46851	-0.890238	-0.634848	-0.159787	0.237711	1.35197	-0.435781	0.442527	0.770625	1.58443	0.497641	-0.487276	0.62988	-0.31016	0.348732	1.56652	-0.611162	0.680567	1.11566	-0.396897	0.283845	-1.20566	-0.39014	-1.19994	-0.280471	0.141447	-0.564684	0.915878	0.313802	-0.0534993	-1.83369	-1.12573	-0.764633	0.0974823	0.724248	-0.700283	1.27508	-0.348277	-1.66076	-2.87216	-0.423862	0.457084	1.28826	-0.5242	2.17808	0.49301	0.63067	-0.108927	0.271664	-0.39042	0.960081	0.00745854	-0.677159	-0.362892	-1.77003	-1.29274	0.754852	0.146444	1.53072	-0.794756	-0.869503	-0.35641	2.71141	-0.123714	-0.729115	-0.798019	-0.259993	0.28306	0.274711	-0.446975	0.327207	1.25149	1.68565	-1.88856	-0.484817	-0.866952	0.436183	1.8162	-0.786721	-1.21437	0.482785	0.174376	-2.75256	-0.0599958	-0.57724	-0.594585	0.735032	1.49211	0.140245	-0.233695	1.0445	1.49316	-0.342052	-0.56683	-0.329498	0.0282689	0.406774	-1.60366	-0.929662	-0.233928	0.956814	0.383737	0.395399	-0.30452	0.71427	0.972506	-0.410336	-0.177086	1.4124	-2.7601	0.128744	1.79624	0.0795358	-0.076519	0.251418	0.243361	1.96424	0.164048	-1.34572	0.194854	-0.953687	0.0543231	-1.20714	-1.21073	0.917383	0.190499	0.466856	-1.55226	-0.358886	0.982734	0.530415	1.42834	-2.85598	-0.052449	-1.40032	0.232649	0.247217	0.741078	1.39608	-0.0840605	-0.950975	1.30502	-0.710266	0.165838	1.26744	-0.64431	0.164122	-2.62558	-0.996732	2.52243	1.79118	1.83807	-1.50732	-0.429601	0.651805	-0.139287	-0.220492	-0.16799	-0.547911	-0.349786	-0.250322	-0.168229	-0.139622	-1.67022	0.363316	-0.762935	0.898575	0.244231	0.53661	-0.487422	-1.33247	-0.841718	0.139736	1.93102	0.139633	0.463634	-0.103884	0.531956	1.44178	0.0766649	-0.962901	-1.63402	0.0122048	-0.630306	-0.415359	0.344837	-0.47555	0.672802	-0.147964	0.129858	-0.692724	-1.20235	-0.771275	-1.73199	0.2414	-0.31836	-0.0793997	1.02482	-0.0880051	-2.0696	0.268875	-0.792285	-0.0124288	-0.091152	1.39267	0.530712	1.15253	0.569402	1.33086	0.169699	1.61885	0.022468	1.9696	-0.614599	0.915026	-1.01286	-2.04338	-0.27258	1.1504	-0.288847	-0.762859	0.980863	0.122875	0.771131	-0.490977	-1.05125	0.169934	0.61406	0.0634952	0.227313	-0.0153598	-0.73172	-1.1175	-0.593899	-1.40332	1.29991	0.920932	-1.98167	0.205889	finishing computing, saving output
+INFO [HLS SIM]: The maximum depth reached by any hls::stream() instance in the design is 1024
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 1740.76 seconds. CPU system time: 0.27 seconds. Elapsed time: 1741.03 seconds; current allocated memory: 0.125 MB.
+INFO: [HLS 200-1510] Running: close_project 
+INFO: [HLS 200-112] Total CPU user time: 1741.84 seconds. Total CPU system time: 0.36 seconds. Total elapsed time: 1742.08 seconds; peak allocated memory: 634.418 MB.
+INFO: [Common 17-206] Exiting vitis_hls at Fri Feb 14 19:40:51 2025...
+INFO: [vitis-run 60-791] Total elapsed time: 0h 29m 5s

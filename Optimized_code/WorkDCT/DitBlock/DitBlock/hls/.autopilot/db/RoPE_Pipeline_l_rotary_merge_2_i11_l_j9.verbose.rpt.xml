@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'RoPE_Pipeline_l_rotary_merge_2_i11_l_j9'" level="0">
-<item name = "Date">Wed Feb  5 22:35:55 2025
+<item name = "Date">Mon Feb 17 20:38:06 2025
 </item>
 <item name = "Version">2023.2 (Build 4023990 on Oct 11 2023)</item>
 <item name = "Project">DitBlock</item>
@@ -80,17 +80,17 @@
 </item>
 <item name = "Expression"><table name="" hasTotal="1">
 <keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
-<column name="add_ln9659_1_fu_135_p2">+, 0, 0, 23, 16, 1</column>
-<column name="add_ln9659_fu_147_p2">+, 0, 0, 18, 11, 1</column>
-<column name="add_ln9660_fu_202_p2">+, 0, 0, 13, 6, 1</column>
-<column name="add_ln9661_fu_191_p2">+, 0, 0, 22, 15, 15</column>
-<column name="add_ln9662_1_fu_252_p2">+, 0, 0, 26, 19, 19</column>
-<column name="add_ln9662_fu_242_p2">+, 0, 0, 17, 10, 10</column>
-<column name="icmp_ln9659_fu_129_p2">icmp, 0, 0, 24, 16, 17</column>
-<column name="icmp_ln9660_fu_153_p2">icmp, 0, 0, 14, 6, 7</column>
-<column name="or_ln9662_fu_233_p2">or, 0, 0, 9, 9, 6</column>
-<column name="select_ln9659_1_fu_167_p3">select, 0, 0, 11, 1, 11</column>
-<column name="select_ln9659_fu_159_p3">select, 0, 0, 6, 1, 1</column>
+<column name="add_ln9528_1_fu_135_p2">+, 0, 0, 23, 16, 1</column>
+<column name="add_ln9528_fu_147_p2">+, 0, 0, 18, 11, 1</column>
+<column name="add_ln9529_fu_202_p2">+, 0, 0, 13, 6, 1</column>
+<column name="add_ln9530_fu_191_p2">+, 0, 0, 22, 15, 15</column>
+<column name="add_ln9531_1_fu_252_p2">+, 0, 0, 26, 19, 19</column>
+<column name="add_ln9531_fu_242_p2">+, 0, 0, 17, 10, 10</column>
+<column name="icmp_ln9528_fu_129_p2">icmp, 0, 0, 24, 16, 17</column>
+<column name="icmp_ln9529_fu_153_p2">icmp, 0, 0, 14, 6, 7</column>
+<column name="or_ln9531_fu_233_p2">or, 0, 0, 9, 9, 6</column>
+<column name="select_ln9528_1_fu_167_p3">select, 0, 0, 11, 1, 11</column>
+<column name="select_ln9528_fu_159_p3">select, 0, 0, 6, 1, 1</column>
 <column name="ap_enable_pp0">xor, 0, 0, 2, 1, 2</column>
 </table>
 </item>
@@ -100,7 +100,7 @@
 <column name="ap_enable_reg_pp0_iter1">9, 2, 1, 2</column>
 <column name="ap_enable_reg_pp0_iter2">9, 2, 1, 2</column>
 <column name="i11_fu_66">9, 2, 11, 22</column>
-<column name="indvar_flatten48_fu_70">9, 2, 16, 32</column>
+<column name="indvar_flatten34_fu_70">9, 2, 16, 32</column>
 <column name="j9_fu_62">9, 2, 6, 12</column>
 </table>
 </item>
@@ -111,10 +111,10 @@
 <column name="ap_enable_reg_pp0_iter1">1, 0, 1, 0</column>
 <column name="ap_enable_reg_pp0_iter2">1, 0, 1, 0</column>
 <column name="i11_fu_66">11, 0, 11, 0</column>
-<column name="indvar_flatten48_fu_70">16, 0, 16, 0</column>
+<column name="indvar_flatten34_fu_70">16, 0, 16, 0</column>
 <column name="j9_fu_62">6, 0, 6, 0</column>
-<column name="select_ln9659_reg_292">6, 0, 6, 0</column>
-<column name="trunc_ln9662_reg_297">10, 0, 10, 0</column>
+<column name="select_ln9528_reg_292">6, 0, 6, 0</column>
+<column name="trunc_ln9531_reg_297">10, 0, 10, 0</column>
 </table>
 </item>
 </section>
@@ -133,7 +133,7 @@
 <column name="X_2_rotary_address0">out, 15, ap_memory, X_2_rotary, array</column>
 <column name="X_2_rotary_ce0">out, 1, ap_memory, X_2_rotary, array</column>
 <column name="X_2_rotary_q0">in, 32, ap_memory, X_2_rotary, array</column>
-<column name="tmp_107">in, 9, ap_none, tmp_107, scalar</column>
+<column name="tmp_94">in, 9, ap_none, tmp_94, scalar</column>
 <column name="v5222_address1">out, 19, ap_memory, v5222, array</column>
 <column name="v5222_ce1">out, 1, ap_memory, v5222, array</column>
 <column name="v5222_we1">out, 1, ap_memory, v5222, array</column>

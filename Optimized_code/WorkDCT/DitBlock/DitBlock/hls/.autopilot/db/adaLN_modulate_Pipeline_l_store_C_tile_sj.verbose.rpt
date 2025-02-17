@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'adaLN_modulate_Pipeline_l_store_C_tile_sj'
 ================================================================
-* Date:           Wed Feb  5 22:35:25 2025
+* Date:           Mon Feb 17 20:37:37 2025
 
 * Version:        2023.2 (Build 4023990 on Oct 11 2023)
 * Project:        DitBlock
@@ -95,9 +95,9 @@
     +----------------------+----------+----+---+----+------------+------------+
     |     Variable Name    | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
     +----------------------+----------+----+---+----+------------+------------+
-    |add_ln444_fu_153_p2   |         +|   0|  0|  12|           4|           1|
+    |add_ln442_fu_153_p2   |         +|   0|  0|  12|           4|           1|
     |empty_fu_167_p2       |         +|   0|  0|  16|           9|           9|
-    |icmp_ln444_fu_147_p2  |      icmp|   0|  0|  12|           4|           5|
+    |icmp_ln442_fu_147_p2  |      icmp|   0|  0|  12|           4|           5|
     +----------------------+----------+----+---+----+------------+------------+
     |Total                 |          |   0|  0|  40|          17|          15|
     +----------------------+----------+----+---+----+------------+------------+
@@ -139,7 +139,7 @@
 |ap_done           |  out|    1|  ap_ctrl_hs|  adaLN_modulate_Pipeline_l_store_C_tile_sj|  return value|
 |ap_idle           |  out|    1|  ap_ctrl_hs|  adaLN_modulate_Pipeline_l_store_C_tile_sj|  return value|
 |ap_ready          |  out|    1|  ap_ctrl_hs|  adaLN_modulate_Pipeline_l_store_C_tile_sj|  return value|
-|tmp_104           |   in|    9|     ap_none|                                    tmp_104|        scalar|
+|tmp_91            |   in|    9|     ap_none|                                     tmp_91|        scalar|
 |local_C_0_load    |   in|   32|     ap_none|                             local_C_0_load|        scalar|
 |local_C_0_1_load  |   in|   32|     ap_none|                           local_C_0_1_load|        scalar|
 |local_C_0_2_load  |   in|   32|     ap_none|                           local_C_0_2_load|        scalar|
@@ -194,7 +194,7 @@ IsGatedGlobalClock: 0
 * FSM state operations: 
 
 State 1 <SV = 0> <Delay = 2.29>
-ST_1 : Operation 4 [1/1] (0.00ns)   --->   "%sj = alloca i32 1" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:444->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:527]   --->   Operation 4 'alloca' 'sj' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 4 [1/1] (0.00ns)   --->   "%sj = alloca i32 1" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:442->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:471]   --->   Operation 4 'alloca' 'sj' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%local_C_0_7_load_read = read i32 @_ssdm_op_Read.ap_auto.float, i32 %local_C_0_7_load"   --->   Operation 5 'read' 'local_C_0_7_load_read' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%local_C_0_6_load_read = read i32 @_ssdm_op_Read.ap_auto.float, i32 %local_C_0_6_load"   --->   Operation 6 'read' 'local_C_0_6_load_read' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%local_C_0_5_load_read = read i32 @_ssdm_op_Read.ap_auto.float, i32 %local_C_0_5_load"   --->   Operation 7 'read' 'local_C_0_5_load_read' <Predicate = true> <Delay = 0.00>
@@ -203,26 +203,26 @@ ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%local_C_0_3_load_read = read i32 @_
 ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%local_C_0_2_load_read = read i32 @_ssdm_op_Read.ap_auto.float, i32 %local_C_0_2_load"   --->   Operation 10 'read' 'local_C_0_2_load_read' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%local_C_0_1_load_read = read i32 @_ssdm_op_Read.ap_auto.float, i32 %local_C_0_1_load"   --->   Operation 11 'read' 'local_C_0_1_load_read' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%local_C_0_load_read = read i32 @_ssdm_op_Read.ap_auto.float, i32 %local_C_0_load"   --->   Operation 12 'read' 'local_C_0_load_read' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%tmp_104_read = read i9 @_ssdm_op_Read.ap_auto.i9, i9 %tmp_104"   --->   Operation 13 'read' 'tmp_104_read' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 14 [1/1] (0.38ns)   --->   "%store_ln444 = store i4 0, i4 %sj" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:444->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:527]   --->   Operation 14 'store' 'store_ln444' <Predicate = true> <Delay = 0.38>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%tmp_91_read = read i9 @_ssdm_op_Read.ap_auto.i9, i9 %tmp_91"   --->   Operation 13 'read' 'tmp_91_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 14 [1/1] (0.38ns)   --->   "%store_ln442 = store i4 0, i4 %sj" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:442->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:471]   --->   Operation 14 'store' 'store_ln442' <Predicate = true> <Delay = 0.38>
 ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%br_ln0 = br void %l_si.i"   --->   Operation 15 'br' 'br_ln0' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%sj_1 = load i4 %sj" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:444->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:527]   --->   Operation 16 'load' 'sj_1' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 17 [1/1] (0.70ns)   --->   "%icmp_ln444 = icmp_eq  i4 %sj_1, i4 8" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:444->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:527]   --->   Operation 17 'icmp' 'icmp_ln444' <Predicate = true> <Delay = 0.70> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.70> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
-ST_1 : Operation 18 [1/1] (0.70ns)   --->   "%add_ln444 = add i4 %sj_1, i4 1" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:444->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:527]   --->   Operation 18 'add' 'add_ln444' <Predicate = true> <Delay = 0.70> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.70> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_1 : Operation 19 [1/1] (0.00ns)   --->   "%br_ln444 = br i1 %icmp_ln444, void %l_si.i.split, void %for.inc72.i.exitStub" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:444->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:527]   --->   Operation 19 'br' 'br_ln444' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 20 [1/1] (0.00ns)   --->   "%zext_ln444 = zext i4 %sj_1" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:444->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:527]   --->   Operation 20 'zext' 'zext_ln444' <Predicate = (!icmp_ln444)> <Delay = 0.00>
-ST_1 : Operation 21 [1/1] (0.00ns)   --->   "%specpipeline_ln445 = specpipeline void @_ssdm_op_SpecPipeline, i32 1, i32 0, i32 0, i32 0, void @empty_219" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:445->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:527]   --->   Operation 21 'specpipeline' 'specpipeline_ln445' <Predicate = (!icmp_ln444)> <Delay = 0.00>
-ST_1 : Operation 22 [1/1] (0.00ns)   --->   "%speclooptripcount_ln444 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 8, i64 8, i64 8" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:444->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:527]   --->   Operation 22 'speclooptripcount' 'speclooptripcount_ln444' <Predicate = (!icmp_ln444)> <Delay = 0.00>
-ST_1 : Operation 23 [1/1] (0.00ns)   --->   "%specloopname_ln444 = specloopname void @_ssdm_op_SpecLoopName, void @empty_226" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:444->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:527]   --->   Operation 23 'specloopname' 'specloopname_ln444' <Predicate = (!icmp_ln444)> <Delay = 0.00>
-ST_1 : Operation 24 [1/1] (0.00ns)   --->   "%trunc_ln444 = trunc i4 %sj_1" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:444->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:527]   --->   Operation 24 'trunc' 'trunc_ln444' <Predicate = (!icmp_ln444)> <Delay = 0.00>
-ST_1 : Operation 25 [1/1] (0.71ns)   --->   "%empty = add i9 %tmp_104_read, i9 %zext_ln444" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:444->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:527]   --->   Operation 25 'add' 'empty' <Predicate = (!icmp_ln444)> <Delay = 0.71> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.71> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_1 : Operation 26 [1/1] (0.00ns)   --->   "%zext_ln447 = zext i9 %empty" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:447->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:527]   --->   Operation 26 'zext' 'zext_ln447' <Predicate = (!icmp_ln444)> <Delay = 0.00>
-ST_1 : Operation 27 [1/1] (0.58ns)   --->   "%v235 = sparsemux i32 @_ssdm_op_SparseMux.ap_auto.8f32.f32.i3, i3 0, i32 %local_C_0_load_read, i3 1, i32 %local_C_0_1_load_read, i3 2, i32 %local_C_0_2_load_read, i3 3, i32 %local_C_0_3_load_read, i3 4, i32 %local_C_0_4_load_read, i3 5, i32 %local_C_0_5_load_read, i3 6, i32 %local_C_0_6_load_read, i3 7, i32 %local_C_0_7_load_read, i32 <undef>, i3 %trunc_ln444" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:447->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:527]   --->   Operation 27 'sparsemux' 'v235' <Predicate = (!icmp_ln444)> <Delay = 0.58> <CoreInst = "SparseMux">   --->   Core 147 'SparseMux' <Latency = 0> <II = 1> <Delay = 0.58> <FuncUnit> <Opcode : 'sparsemux'> <InPorts = 2> <OutPorts = 1>
-ST_1 : Operation 28 [1/1] (0.00ns)   --->   "%Y_0_addr = getelementptr i32 %Y_0, i64 0, i64 %zext_ln447" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:448->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:527]   --->   Operation 28 'getelementptr' 'Y_0_addr' <Predicate = (!icmp_ln444)> <Delay = 0.00>
-ST_1 : Operation 29 [1/1] (1.19ns)   --->   "%store_ln448 = store i32 %v235, i9 %Y_0_addr" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:448->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:527]   --->   Operation 29 'store' 'store_ln448' <Predicate = (!icmp_ln444)> <Delay = 1.19> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 1.19> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 512> <RAM>
-ST_1 : Operation 30 [1/1] (0.38ns)   --->   "%store_ln444 = store i4 %add_ln444, i4 %sj" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:444->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:527]   --->   Operation 30 'store' 'store_ln444' <Predicate = (!icmp_ln444)> <Delay = 0.38>
-ST_1 : Operation 31 [1/1] (0.00ns)   --->   "%br_ln444 = br void %l_si.i" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:444->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:527]   --->   Operation 31 'br' 'br_ln444' <Predicate = (!icmp_ln444)> <Delay = 0.00>
-ST_1 : Operation 32 [1/1] (0.00ns)   --->   "%ret_ln0 = ret"   --->   Operation 32 'ret' 'ret_ln0' <Predicate = (icmp_ln444)> <Delay = 0.00>
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%sj_1 = load i4 %sj" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:442->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:471]   --->   Operation 16 'load' 'sj_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 17 [1/1] (0.70ns)   --->   "%icmp_ln442 = icmp_eq  i4 %sj_1, i4 8" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:442->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:471]   --->   Operation 17 'icmp' 'icmp_ln442' <Predicate = true> <Delay = 0.70> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.70> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 18 [1/1] (0.70ns)   --->   "%add_ln442 = add i4 %sj_1, i4 1" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:442->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:471]   --->   Operation 18 'add' 'add_ln442' <Predicate = true> <Delay = 0.70> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.70> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 19 [1/1] (0.00ns)   --->   "%br_ln442 = br i1 %icmp_ln442, void %l_si.i.split, void %for.inc72.i.exitStub" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:442->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:471]   --->   Operation 19 'br' 'br_ln442' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 20 [1/1] (0.00ns)   --->   "%zext_ln442 = zext i4 %sj_1" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:442->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:471]   --->   Operation 20 'zext' 'zext_ln442' <Predicate = (!icmp_ln442)> <Delay = 0.00>
+ST_1 : Operation 21 [1/1] (0.00ns)   --->   "%specpipeline_ln443 = specpipeline void @_ssdm_op_SpecPipeline, i32 1, i32 0, i32 0, i32 0, void @empty_191" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:443->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:471]   --->   Operation 21 'specpipeline' 'specpipeline_ln443' <Predicate = (!icmp_ln442)> <Delay = 0.00>
+ST_1 : Operation 22 [1/1] (0.00ns)   --->   "%speclooptripcount_ln442 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 8, i64 8, i64 8" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:442->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:471]   --->   Operation 22 'speclooptripcount' 'speclooptripcount_ln442' <Predicate = (!icmp_ln442)> <Delay = 0.00>
+ST_1 : Operation 23 [1/1] (0.00ns)   --->   "%specloopname_ln442 = specloopname void @_ssdm_op_SpecLoopName, void @empty_203" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:442->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:471]   --->   Operation 23 'specloopname' 'specloopname_ln442' <Predicate = (!icmp_ln442)> <Delay = 0.00>
+ST_1 : Operation 24 [1/1] (0.00ns)   --->   "%trunc_ln442 = trunc i4 %sj_1" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:442->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:471]   --->   Operation 24 'trunc' 'trunc_ln442' <Predicate = (!icmp_ln442)> <Delay = 0.00>
+ST_1 : Operation 25 [1/1] (0.71ns)   --->   "%empty = add i9 %tmp_91_read, i9 %zext_ln442" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:442->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:471]   --->   Operation 25 'add' 'empty' <Predicate = (!icmp_ln442)> <Delay = 0.71> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.71> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 26 [1/1] (0.00ns)   --->   "%zext_ln445 = zext i9 %empty" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:445->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:471]   --->   Operation 26 'zext' 'zext_ln445' <Predicate = (!icmp_ln442)> <Delay = 0.00>
+ST_1 : Operation 27 [1/1] (0.58ns)   --->   "%v235 = sparsemux i32 @_ssdm_op_SparseMux.ap_auto.8f32.f32.i3, i3 0, i32 %local_C_0_load_read, i3 1, i32 %local_C_0_1_load_read, i3 2, i32 %local_C_0_2_load_read, i3 3, i32 %local_C_0_3_load_read, i3 4, i32 %local_C_0_4_load_read, i3 5, i32 %local_C_0_5_load_read, i3 6, i32 %local_C_0_6_load_read, i3 7, i32 %local_C_0_7_load_read, i32 <undef>, i3 %trunc_ln442" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:445->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:471]   --->   Operation 27 'sparsemux' 'v235' <Predicate = (!icmp_ln442)> <Delay = 0.58> <CoreInst = "SparseMux">   --->   Core 147 'SparseMux' <Latency = 0> <II = 1> <Delay = 0.58> <FuncUnit> <Opcode : 'sparsemux'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 28 [1/1] (0.00ns)   --->   "%Y_0_addr = getelementptr i32 %Y_0, i64 0, i64 %zext_ln445" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:446->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:471]   --->   Operation 28 'getelementptr' 'Y_0_addr' <Predicate = (!icmp_ln442)> <Delay = 0.00>
+ST_1 : Operation 29 [1/1] (1.19ns)   --->   "%store_ln446 = store i32 %v235, i9 %Y_0_addr" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:446->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:471]   --->   Operation 29 'store' 'store_ln446' <Predicate = (!icmp_ln442)> <Delay = 1.19> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 1.19> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 512> <RAM>
+ST_1 : Operation 30 [1/1] (0.38ns)   --->   "%store_ln442 = store i4 %add_ln442, i4 %sj" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:442->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:471]   --->   Operation 30 'store' 'store_ln442' <Predicate = (!icmp_ln442)> <Delay = 0.38>
+ST_1 : Operation 31 [1/1] (0.00ns)   --->   "%br_ln442 = br void %l_si.i" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:442->/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:471]   --->   Operation 31 'br' 'br_ln442' <Predicate = (!icmp_ln442)> <Delay = 0.00>
+ST_1 : Operation 32 [1/1] (0.00ns)   --->   "%ret_ln0 = ret"   --->   Operation 32 'ret' 'ret_ln0' <Predicate = (icmp_ln442)> <Delay = 0.00>
 
 
 ============================================================
@@ -236,7 +236,7 @@ STG Binding:
 - Is pipelined: 0
 - Is top level: 0
 Port [ Return ] is wired: 1; IO mode=ap_ctrl_hs:ce=0
-Port [ tmp_104]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
+Port [ tmp_91]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
 Port [ local_C_0_load]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
 Port [ local_C_0_1_load]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
 Port [ local_C_0_2_load]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
@@ -261,37 +261,37 @@ local_C_0_3_load_read   (read             ) [ 00]
 local_C_0_2_load_read   (read             ) [ 00]
 local_C_0_1_load_read   (read             ) [ 00]
 local_C_0_load_read     (read             ) [ 00]
-tmp_104_read            (read             ) [ 00]
-store_ln444             (store            ) [ 00]
+tmp_91_read             (read             ) [ 00]
+store_ln442             (store            ) [ 00]
 br_ln0                  (br               ) [ 00]
 sj_1                    (load             ) [ 00]
-icmp_ln444              (icmp             ) [ 01]
-add_ln444               (add              ) [ 00]
-br_ln444                (br               ) [ 00]
-zext_ln444              (zext             ) [ 00]
-specpipeline_ln445      (specpipeline     ) [ 00]
-speclooptripcount_ln444 (speclooptripcount) [ 00]
-specloopname_ln444      (specloopname     ) [ 00]
-trunc_ln444             (trunc            ) [ 00]
+icmp_ln442              (icmp             ) [ 01]
+add_ln442               (add              ) [ 00]
+br_ln442                (br               ) [ 00]
+zext_ln442              (zext             ) [ 00]
+specpipeline_ln443      (specpipeline     ) [ 00]
+speclooptripcount_ln442 (speclooptripcount) [ 00]
+specloopname_ln442      (specloopname     ) [ 00]
+trunc_ln442             (trunc            ) [ 00]
 empty                   (add              ) [ 00]
-zext_ln447              (zext             ) [ 00]
+zext_ln445              (zext             ) [ 00]
 v235                    (sparsemux        ) [ 00]
 Y_0_addr                (getelementptr    ) [ 00]
-store_ln448             (store            ) [ 00]
-store_ln444             (store            ) [ 00]
-br_ln444                (br               ) [ 00]
+store_ln446             (store            ) [ 00]
+store_ln442             (store            ) [ 00]
+br_ln442                (br               ) [ 00]
 ret_ln0                 (ret              ) [ 00]
 </LifeTime>
 
 <model>
 
 <comp_list>
-<comp id="0" class="1000" name="tmp_104">
+<comp id="0" class="1000" name="tmp_91">
 <pin_list>
 <pin id="1" dir="1" index="0" bw="1" slack="0"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="tmp_104"/></StgValue>
+<StgValue><ssdm name="tmp_91"/></StgValue>
 </bind>
 </comp>
 
@@ -454,7 +454,7 @@ ret_ln0                 (ret              ) [ 00]
 <pin id="37" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_219"/></StgValue>
+<StgValue><ssdm name="empty_191"/></StgValue>
 </bind>
 </comp>
 
@@ -490,7 +490,7 @@ ret_ln0                 (ret              ) [ 00]
 <pin id="45" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_226"/></StgValue>
+<StgValue><ssdm name="empty_203"/></StgValue>
 </bind>
 </comp>
 
@@ -700,7 +700,7 @@ ret_ln0                 (ret              ) [ 00]
 </bind>
 </comp>
 
-<comp id="120" class="1004" name="tmp_104_read_read_fu_120">
+<comp id="120" class="1004" name="tmp_91_read_read_fu_120">
 <pin_list>
 <pin id="121" dir="0" index="0" bw="9" slack="0"/>
 <pin id="122" dir="0" index="1" bw="9" slack="0"/>
@@ -708,7 +708,7 @@ ret_ln0                 (ret              ) [ 00]
 </pin_list>
 <bind>
 <opcode="read(1150) " fcode="read"/>
-<opset="tmp_104_read/1 "/>
+<opset="tmp_91_read/1 "/>
 </bind>
 </comp>
 
@@ -725,7 +725,7 @@ ret_ln0                 (ret              ) [ 00]
 </bind>
 </comp>
 
-<comp id="133" class="1004" name="store_ln448_access_fu_133">
+<comp id="133" class="1004" name="store_ln446_access_fu_133">
 <pin_list>
 <pin id="134" dir="0" index="0" bw="9" slack="0"/>
 <pin id="135" dir="0" index="1" bw="32" slack="0"/>
@@ -734,11 +734,11 @@ ret_ln0                 (ret              ) [ 00]
 </pin_list>
 <bind>
 <opcode="store(28) " fcode="store"/>
-<opset="store_ln448/1 "/>
+<opset="store_ln446/1 "/>
 </bind>
 </comp>
 
-<comp id="139" class="1004" name="store_ln444_store_fu_139">
+<comp id="139" class="1004" name="store_ln442_store_fu_139">
 <pin_list>
 <pin id="140" dir="0" index="0" bw="1" slack="0"/>
 <pin id="141" dir="0" index="1" bw="4" slack="0"/>
@@ -746,7 +746,7 @@ ret_ln0                 (ret              ) [ 00]
 </pin_list>
 <bind>
 <opcode="store(28) " fcode="store"/>
-<opset="store_ln444/1 "/>
+<opset="store_ln442/1 "/>
 </bind>
 </comp>
 
@@ -761,7 +761,7 @@ ret_ln0                 (ret              ) [ 00]
 </bind>
 </comp>
 
-<comp id="147" class="1004" name="icmp_ln444_fu_147">
+<comp id="147" class="1004" name="icmp_ln442_fu_147">
 <pin_list>
 <pin id="148" dir="0" index="0" bw="4" slack="0"/>
 <pin id="149" dir="0" index="1" bw="4" slack="0"/>
@@ -769,11 +769,11 @@ ret_ln0                 (ret              ) [ 00]
 </pin_list>
 <bind>
 <opcode="icmp(45) " fcode="icmp"/>
-<opset="icmp_ln444/1 "/>
+<opset="icmp_ln442/1 "/>
 </bind>
 </comp>
 
-<comp id="153" class="1004" name="add_ln444_fu_153">
+<comp id="153" class="1004" name="add_ln442_fu_153">
 <pin_list>
 <pin id="154" dir="0" index="0" bw="4" slack="0"/>
 <pin id="155" dir="0" index="1" bw="1" slack="0"/>
@@ -781,29 +781,29 @@ ret_ln0                 (ret              ) [ 00]
 </pin_list>
 <bind>
 <opcode="add(8) " fcode="add"/>
-<opset="add_ln444/1 "/>
+<opset="add_ln442/1 "/>
 </bind>
 </comp>
 
-<comp id="159" class="1004" name="zext_ln444_fu_159">
+<comp id="159" class="1004" name="zext_ln442_fu_159">
 <pin_list>
 <pin id="160" dir="0" index="0" bw="4" slack="0"/>
 <pin id="161" dir="1" index="1" bw="9" slack="0"/>
 </pin_list>
 <bind>
 <opcode="zext(34) " fcode="zext"/>
-<opset="zext_ln444/1 "/>
+<opset="zext_ln442/1 "/>
 </bind>
 </comp>
 
-<comp id="163" class="1004" name="trunc_ln444_fu_163">
+<comp id="163" class="1004" name="trunc_ln442_fu_163">
 <pin_list>
 <pin id="164" dir="0" index="0" bw="4" slack="0"/>
 <pin id="165" dir="1" index="1" bw="3" slack="0"/>
 </pin_list>
 <bind>
 <opcode="trunc(33) " fcode="trunc"/>
-<opset="trunc_ln444/1 "/>
+<opset="trunc_ln442/1 "/>
 </bind>
 </comp>
 
@@ -819,14 +819,14 @@ ret_ln0                 (ret              ) [ 00]
 </bind>
 </comp>
 
-<comp id="173" class="1004" name="zext_ln447_fu_173">
+<comp id="173" class="1004" name="zext_ln445_fu_173">
 <pin_list>
 <pin id="174" dir="0" index="0" bw="9" slack="0"/>
 <pin id="175" dir="1" index="1" bw="64" slack="0"/>
 </pin_list>
 <bind>
 <opcode="zext(34) " fcode="zext"/>
-<opset="zext_ln447/1 "/>
+<opset="zext_ln445/1 "/>
 </bind>
 </comp>
 
@@ -859,7 +859,7 @@ ret_ln0                 (ret              ) [ 00]
 </bind>
 </comp>
 
-<comp id="219" class="1004" name="store_ln444_store_fu_219">
+<comp id="219" class="1004" name="store_ln442_store_fu_219">
 <pin_list>
 <pin id="220" dir="0" index="0" bw="4" slack="0"/>
 <pin id="221" dir="0" index="1" bw="4" slack="0"/>
@@ -867,7 +867,7 @@ ret_ln0                 (ret              ) [ 00]
 </pin_list>
 <bind>
 <opcode="store(28) " fcode="store"/>
-<opset="store_ln444/1 "/>
+<opset="store_ln442/1 "/>
 </bind>
 </comp>
 
@@ -1009,7 +1009,7 @@ ret_ln0                 (ret              ) [ 00]
   - Output states:
 	Port: Y_0 | {1 }
  - Input state : 
-	Port: adaLN_modulate_Pipeline_l_store_C_tile_sj : tmp_104 | {1 }
+	Port: adaLN_modulate_Pipeline_l_store_C_tile_sj : tmp_91 | {1 }
 	Port: adaLN_modulate_Pipeline_l_store_C_tile_sj : local_C_0_load | {1 }
 	Port: adaLN_modulate_Pipeline_l_store_C_tile_sj : local_C_0_1_load | {1 }
 	Port: adaLN_modulate_Pipeline_l_store_C_tile_sj : local_C_0_2_load | {1 }
@@ -1020,19 +1020,19 @@ ret_ln0                 (ret              ) [ 00]
 	Port: adaLN_modulate_Pipeline_l_store_C_tile_sj : local_C_0_7_load | {1 }
   - Chain level:
 	State 1
-		store_ln444 : 1
+		store_ln442 : 1
 		sj_1 : 1
-		icmp_ln444 : 2
-		add_ln444 : 2
-		br_ln444 : 3
-		zext_ln444 : 2
-		trunc_ln444 : 2
+		icmp_ln442 : 2
+		add_ln442 : 2
+		br_ln442 : 3
+		zext_ln442 : 2
+		trunc_ln442 : 2
 		empty : 3
-		zext_ln447 : 4
+		zext_ln445 : 4
 		v235 : 3
 		Y_0_addr : 5
-		store_ln448 : 6
-		store_ln444 : 3
+		store_ln446 : 6
+		store_ln442 : 3
 
 
 ============================================================
@@ -1045,10 +1045,10 @@ ret_ln0                 (ret              ) [ 00]
 |----------|-----------------------------------|---------|---------|
 | sparsemux|            v235_fu_178            |    0    |    43   |
 |----------|-----------------------------------|---------|---------|
-|    add   |          add_ln444_fu_153         |    0    |    12   |
+|    add   |          add_ln442_fu_153         |    0    |    12   |
 |          |            empty_fu_167           |    0    |    16   |
 |----------|-----------------------------------|---------|---------|
-|   icmp   |         icmp_ln444_fu_147         |    0    |    12   |
+|   icmp   |         icmp_ln442_fu_147         |    0    |    12   |
 |----------|-----------------------------------|---------|---------|
 |          |  local_C_0_7_load_read_read_fu_72 |    0    |    0    |
 |          |  local_C_0_6_load_read_read_fu_78 |    0    |    0    |
@@ -1058,12 +1058,12 @@ ret_ln0                 (ret              ) [ 00]
 |          | local_C_0_2_load_read_read_fu_102 |    0    |    0    |
 |          | local_C_0_1_load_read_read_fu_108 |    0    |    0    |
 |          |  local_C_0_load_read_read_fu_114  |    0    |    0    |
-|          |      tmp_104_read_read_fu_120     |    0    |    0    |
+|          |      tmp_91_read_read_fu_120      |    0    |    0    |
 |----------|-----------------------------------|---------|---------|
-|   zext   |         zext_ln444_fu_159         |    0    |    0    |
-|          |         zext_ln447_fu_173         |    0    |    0    |
+|   zext   |         zext_ln442_fu_159         |    0    |    0    |
+|          |         zext_ln445_fu_173         |    0    |    0    |
 |----------|-----------------------------------|---------|---------|
-|   trunc  |         trunc_ln444_fu_163        |    0    |    0    |
+|   trunc  |         trunc_ln442_fu_163        |    0    |    0    |
 |----------|-----------------------------------|---------|---------|
 |   Total  |                                   |    0    |    83   |
 |----------|-----------------------------------|---------|---------|

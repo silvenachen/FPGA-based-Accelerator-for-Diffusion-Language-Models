@@ -22,22 +22,22 @@
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
 <unit>clock cycles</unit>
-<Best-caseLatency>1606681</Best-caseLatency>
-<Average-caseLatency>1606681</Average-caseLatency>
-<Worst-caseLatency>1606681</Worst-caseLatency>
-<Best-caseRealTimeLatency>16.067 ms</Best-caseRealTimeLatency>
-<Average-caseRealTimeLatency>16.067 ms</Average-caseRealTimeLatency>
-<Worst-caseRealTimeLatency>16.067 ms</Worst-caseRealTimeLatency>
-<Interval-min>1606681</Interval-min>
-<Interval-max>1606681</Interval-max>
+<Best-caseLatency>1603609</Best-caseLatency>
+<Average-caseLatency>1603609</Average-caseLatency>
+<Worst-caseLatency>1603609</Worst-caseLatency>
+<Best-caseRealTimeLatency>16.036 ms</Best-caseRealTimeLatency>
+<Average-caseRealTimeLatency>16.036 ms</Average-caseRealTimeLatency>
+<Worst-caseRealTimeLatency>16.036 ms</Worst-caseRealTimeLatency>
+<Interval-min>1603609</Interval-min>
+<Interval-max>1603609</Interval-max>
 </SummaryOfOverallLatency>
 <SummaryOfLoopLatency>
 <l_norm_i4>
 <Slack>7.30</Slack>
 <TripCount>1024</TripCount>
-<Latency>556032</Latency>
-<AbsoluteTimeLatency>5560320</AbsoluteTimeLatency>
-<IterationLatency>543</IterationLatency>
+<Latency>552960</Latency>
+<AbsoluteTimeLatency>5529600</AbsoluteTimeLatency>
+<IterationLatency>540</IterationLatency>
 <InstanceList>
 </InstanceList>
 </l_norm_i4>
@@ -45,13 +45,13 @@
 <SummaryOfViolations>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:651</SourceLocation>
+<SourceLocation>/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:520</SourceLocation>
 <SummaryOfLoopViolations>
 <l_norm_i4>
 <Name>l_norm_i4</Name>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:651</SourceLocation>
+<SourceLocation>/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:520</SourceLocation>
 </l_norm_i4>
 </SummaryOfLoopViolations>
 </SummaryOfViolations>
@@ -60,9 +60,9 @@
 <AreaEstimates>
 <Resources>
 <BRAM_18K>6</BRAM_18K>
-<DSP>16</DSP>
-<FF>2626</FF>
-<LUT>2848</LUT>
+<DSP>14</DSP>
+<FF>2411</FF>
+<LUT>2640</LUT>
 <URAM>0</URAM>
 </Resources>
 <AvailableResources>
@@ -175,8 +175,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>v265_address1</name>
-<Object>v265</Object>
+<name>v262_address1</name>
+<Object>v262</Object>
 <Type>array</Type>
 <Scope></Scope>
 <IOProtocol>ap_memory</IOProtocol>
@@ -186,8 +186,8 @@
 <Attribute>address</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>v265_ce1</name>
-<Object>v265</Object>
+<name>v262_ce1</name>
+<Object>v262</Object>
 <Type>array</Type>
 <Scope></Scope>
 <IOProtocol>ap_memory</IOProtocol>
@@ -197,8 +197,8 @@
 <Attribute>control</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>v265_we1</name>
-<Object>v265</Object>
+<name>v262_we1</name>
+<Object>v262</Object>
 <Type>array</Type>
 <Scope></Scope>
 <IOProtocol>ap_memory</IOProtocol>
@@ -208,8 +208,8 @@
 <Attribute>control</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>v265_d1</name>
-<Object>v265</Object>
+<name>v262_d1</name>
+<Object>v262</Object>
 <Type>array</Type>
 <Scope></Scope>
 <IOProtocol>ap_memory</IOProtocol>

@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'systolic_tile_modulate'
 ================================================================
-* Date:           Wed Feb  5 22:35:25 2025
+* Date:           Mon Feb 17 20:37:37 2025
 
 * Version:        2023.2 (Build 4023990 on Oct 11 2023)
 * Project:        DitBlock
@@ -38,7 +38,7 @@
         |                                                       |                                                    |  Latency (cycles) |   Latency (absolute)  |   Interval  | Pipeline|
         |                        Instance                       |                       Module                       |   min   |   max   |    min    |    max    |  min |  max |   Type  |
         +-------------------------------------------------------+----------------------------------------------------+---------+---------+-----------+-----------+------+------+---------+
-        |systolic_tile_modulate_Loop_l_data_load_k8_proc22_U0   |systolic_tile_modulate_Loop_l_data_load_k8_proc22   |     1027|     1027|  10.270 us|  10.270 us|  1027|  1027|       no|
+        |systolic_tile_modulate_Loop_l_data_load_k8_proc31_U0   |systolic_tile_modulate_Loop_l_data_load_k8_proc31   |     1027|     1027|  10.270 us|  10.270 us|  1027|  1027|       no|
         |PE_kernel_modulate_0_0_1_U0                            |PE_kernel_modulate_0_0_1                            |      261|      261|   2.610 us|   2.610 us|   261|   261|       no|
         |PE_kernel_modulate_1_0_1_U0                            |PE_kernel_modulate_1_0_1                            |      261|      261|   2.610 us|   2.610 us|   261|   261|       no|
         |PE_kernel_modulate_2_0_1_U0                            |PE_kernel_modulate_2_0_1                            |      261|      261|   2.610 us|   2.610 us|   261|   261|       no|
@@ -47,7 +47,7 @@
         |PE_kernel_modulate_5_0_1_U0                            |PE_kernel_modulate_5_0_1                            |      261|      261|   2.610 us|   2.610 us|   261|   261|       no|
         |PE_kernel_modulate_6_0_1_U0                            |PE_kernel_modulate_6_0_1                            |      261|      261|   2.610 us|   2.610 us|   261|   261|       no|
         |PE_kernel_modulate_7_0_1_U0                            |PE_kernel_modulate_7_0_1                            |      261|      261|   2.610 us|   2.610 us|   261|   261|       no|
-        |systolic_tile_modulate_Loop_l_data_drain_k9_proc23_U0  |systolic_tile_modulate_Loop_l_data_drain_k9_proc23  |     1026|     1026|  10.260 us|  10.260 us|  1026|  1026|       no|
+        |systolic_tile_modulate_Loop_l_data_drain_k9_proc32_U0  |systolic_tile_modulate_Loop_l_data_drain_k9_proc32  |     1026|     1026|  10.260 us|  10.260 us|  1026|  1026|       no|
         +-------------------------------------------------------+----------------------------------------------------+---------+---------+-----------+-----------+------+------+---------+
 
         * Loop: 
@@ -94,8 +94,8 @@
     |PE_kernel_modulate_5_0_1_U0                            |PE_kernel_modulate_5_0_1                            |        0|   5|  427|  487|    0|
     |PE_kernel_modulate_6_0_1_U0                            |PE_kernel_modulate_6_0_1                            |        0|   5|  427|  487|    0|
     |PE_kernel_modulate_7_0_1_U0                            |PE_kernel_modulate_7_0_1                            |        0|   5|  427|  487|    0|
-    |systolic_tile_modulate_Loop_l_data_drain_k9_proc23_U0  |systolic_tile_modulate_Loop_l_data_drain_k9_proc23  |        0|   0|   23|  212|    0|
-    |systolic_tile_modulate_Loop_l_data_load_k8_proc22_U0   |systolic_tile_modulate_Loop_l_data_load_k8_proc22   |        0|   0|  301|  305|    0|
+    |systolic_tile_modulate_Loop_l_data_drain_k9_proc32_U0  |systolic_tile_modulate_Loop_l_data_drain_k9_proc32  |        0|   0|   23|  212|    0|
+    |systolic_tile_modulate_Loop_l_data_load_k8_proc31_U0   |systolic_tile_modulate_Loop_l_data_load_k8_proc31   |        0|   0|  301|  305|    0|
     +-------------------------------------------------------+----------------------------------------------------+---------+----+-----+-----+-----+
     |Total                                                  |                                                    |        0|  40| 3741| 4422|    0|
     +-------------------------------------------------------+----------------------------------------------------+---------+----+-----+-----+-----+
@@ -146,7 +146,7 @@
     |ap_idle                                                            |       and|   0|  0|   2|           1|           1|
     |ap_sync_continue                                                   |       and|   0|  0|   2|           1|           1|
     |ap_sync_done                                                       |       and|   0|  0|   2|           1|           1|
-    |systolic_tile_modulate_Loop_l_data_load_k8_proc22_U0_start_full_n  |       and|   0|  0|   2|           1|           1|
+    |systolic_tile_modulate_Loop_l_data_load_k8_proc31_U0_start_full_n  |       and|   0|  0|   2|           1|           1|
     +-------------------------------------------------------------------+----------+----+---+----+------------+------------+
     |Total                                                              |          |   0|  0|   8|           4|           4|
     +-------------------------------------------------------------------+----------+----+---+----+------------+------------+

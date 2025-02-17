@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'layer_norm_Pipeline_l_mean_var_i3'" level="0">
-<item name = "Date">Wed Feb  5 22:34:02 2025
+<item name = "Date">Mon Feb 17 20:36:10 2025
 </item>
 <item name = "Version">2023.2 (Build 4023990 on Oct 11 2023)</item>
 <item name = "Project">DitBlock</item>

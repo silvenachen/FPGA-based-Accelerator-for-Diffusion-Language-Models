@@ -1,0 +1,210 @@
+<profile>
+
+<section name = "Vitis HLS Report for 'dataflow_in_loop_l_ni1_Loop_l_store_C_tile_sj1_proc47_Pipeline_l_store_C_tile_sj'" level="0">
+<item name = "Date">Mon Feb 17 20:38:01 2025
+</item>
+<item name = "Version">2023.2 (Build 4023990 on Oct 11 2023)</item>
+<item name = "Project">DitBlock</item>
+<item name = "Solution">hls (Vivado IP Flow Target)</item>
+<item name = "Product family">virtexuplusHBM</item>
+<item name = "Target device">xcu280-fsvh2892-2L-e</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">10.00 ns, 5.638 ns, 2.70 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">66, 66, 0.660 us, 0.660 us, 66, 66, no</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+<column name="- l_store_C_tile_sj1_l_si1">64, 64, 1, 1, 1, 64, yes</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Utilization Estimates" level="0">
+<item name = "Summary"><table name="" hasTotal="1">
+<keys size="6">Name, BRAM_18K, DSP, FF, LUT, URAM</keys>
+<column name="DSP">-, -, -, -, -</column>
+<column name="Expression">-, -, 0, 133, -</column>
+<column name="FIFO">-, -, -, -, -</column>
+<column name="Instance">-, -, 0, 387, -</column>
+<column name="Memory">-, -, -, -, -</column>
+<column name="Multiplexer">-, -, -, 63, -</column>
+<column name="Register">-, -, 17, -, -</column>
+<specialColumn name="Available SLR">1344, 3008, 869120, 434560, 320</specialColumn>
+<specialColumn name="Utilization SLR (%)">0, 0, ~0, ~0, 0</specialColumn>
+<specialColumn name="Available">4032, 9024, 2607360, 1303680, 960</specialColumn>
+<specialColumn name="Utilization (%)">0, 0, ~0, ~0, 0</specialColumn>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="1">
+<keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
+<column name="sparsemux_17_3_32_1_1_U1065">sparsemux_17_3_32_1_1, 0, 0, 0, 43, 0</column>
+<column name="sparsemux_17_3_32_1_1_U1066">sparsemux_17_3_32_1_1, 0, 0, 0, 43, 0</column>
+<column name="sparsemux_17_3_32_1_1_U1067">sparsemux_17_3_32_1_1, 0, 0, 0, 43, 0</column>
+<column name="sparsemux_17_3_32_1_1_U1068">sparsemux_17_3_32_1_1, 0, 0, 0, 43, 0</column>
+<column name="sparsemux_17_3_32_1_1_U1069">sparsemux_17_3_32_1_1, 0, 0, 0, 43, 0</column>
+<column name="sparsemux_17_3_32_1_1_U1070">sparsemux_17_3_32_1_1, 0, 0, 0, 43, 0</column>
+<column name="sparsemux_17_3_32_1_1_U1071">sparsemux_17_3_32_1_1, 0, 0, 0, 43, 0</column>
+<column name="sparsemux_17_3_32_1_1_U1072">sparsemux_17_3_32_1_1, 0, 0, 0, 43, 0</column>
+<column name="sparsemux_17_3_32_1_1_U1073">sparsemux_17_3_32_1_1, 0, 0, 0, 43, 0</column>
+</table>
+</item>
+<item name = "DSP"><table name="" hasTotal="0">
+<keys size="3">Instance, Module, Expression</keys>
+</table>
+</item>
+<item name = "Memory"><table name="" hasTotal="1">
+<keys size="10">Memory, Module, BRAM_18K, FF, LUT, URAM, Words, Bits, Banks, W*Bits*Banks</keys>
+</table>
+</item>
+<item name = "FIFO"><table name="" hasTotal="1">
+<keys size="8">Name, BRAM_18K, FF, LUT, URAM, Depth, Bits, Size:D*B</keys>
+</table>
+</item>
+<item name = "Expression"><table name="" hasTotal="1">
+<keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
+<column name="add_ln3516_1_fu_655_p2">+, 0, 0, 14, 7, 1</column>
+<column name="add_ln3516_fu_667_p2">+, 0, 0, 12, 4, 1</column>
+<column name="add_ln3517_fu_1107_p2">+, 0, 0, 12, 4, 1</column>
+<column name="add_ln3520_1_fu_1096_p2">+, 0, 0, 26, 19, 19</column>
+<column name="add_ln3520_fu_1082_p2">+, 0, 0, 17, 10, 10</column>
+<column name="empty_fu_703_p2">+, 0, 0, 17, 10, 10</column>
+<column name="icmp_ln3516_fu_649_p2">icmp, 0, 0, 15, 7, 8</column>
+<column name="icmp_ln3517_fu_673_p2">icmp, 0, 0, 12, 4, 5</column>
+<column name="select_ln3516_1_fu_687_p3">select, 0, 0, 4, 1, 4</column>
+<column name="select_ln3516_fu_679_p3">select, 0, 0, 4, 1, 1</column>
+</table>
+</item>
+<item name = "Multiplexer"><table name="" hasTotal="1">
+<keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
+<column name="ap_done_int">9, 2, 1, 2</column>
+<column name="ap_sig_allocacmp_indvar_flatten_load">9, 2, 7, 14</column>
+<column name="ap_sig_allocacmp_si1_load">9, 2, 4, 8</column>
+<column name="ap_sig_allocacmp_sj1_load">9, 2, 4, 8</column>
+<column name="indvar_flatten_fu_210">9, 2, 7, 14</column>
+<column name="si1_fu_202">9, 2, 4, 8</column>
+<column name="sj1_fu_206">9, 2, 4, 8</column>
+</table>
+</item>
+<item name = "Register"><table name="" hasTotal="1">
+<keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
+<column name="ap_CS_fsm">1, 0, 1, 0</column>
+<column name="ap_done_reg">1, 0, 1, 0</column>
+<column name="indvar_flatten_fu_210">7, 0, 7, 0</column>
+<column name="si1_fu_202">4, 0, 4, 0</column>
+<column name="sj1_fu_206">4, 0, 4, 0</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Interface" level="0">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">RTL Ports, Dir, Bits, Protocol, Source Object, C Type</keys>
+<column name="ap_clk">in, 1, ap_ctrl_hs, dataflow_in_loop_l_ni1_Loop_l_store_C_tile_sj1_proc47_Pipeline_l_store_C_tile_sj, return value</column>
+<column name="ap_rst">in, 1, ap_ctrl_hs, dataflow_in_loop_l_ni1_Loop_l_store_C_tile_sj1_proc47_Pipeline_l_store_C_tile_sj, return value</column>
+<column name="ap_start">in, 1, ap_ctrl_hs, dataflow_in_loop_l_ni1_Loop_l_store_C_tile_sj1_proc47_Pipeline_l_store_C_tile_sj, return value</column>
+<column name="ap_done">out, 1, ap_ctrl_hs, dataflow_in_loop_l_ni1_Loop_l_store_C_tile_sj1_proc47_Pipeline_l_store_C_tile_sj, return value</column>
+<column name="ap_idle">out, 1, ap_ctrl_hs, dataflow_in_loop_l_ni1_Loop_l_store_C_tile_sj1_proc47_Pipeline_l_store_C_tile_sj, return value</column>
+<column name="ap_ready">out, 1, ap_ctrl_hs, dataflow_in_loop_l_ni1_Loop_l_store_C_tile_sj1_proc47_Pipeline_l_store_C_tile_sj, return value</column>
+<column name="p_cast">in, 9, ap_none, p_cast, scalar</column>
+<column name="local_C1_63_i_load">in, 32, ap_none, local_C1_63_i_load, scalar</column>
+<column name="local_C1_62_i_load">in, 32, ap_none, local_C1_62_i_load, scalar</column>
+<column name="local_C1_61_i_load">in, 32, ap_none, local_C1_61_i_load, scalar</column>
+<column name="local_C1_60_i_load">in, 32, ap_none, local_C1_60_i_load, scalar</column>
+<column name="local_C1_59_i_load">in, 32, ap_none, local_C1_59_i_load, scalar</column>
+<column name="local_C1_58_i_load">in, 32, ap_none, local_C1_58_i_load, scalar</column>
+<column name="local_C1_57_i_load">in, 32, ap_none, local_C1_57_i_load, scalar</column>
+<column name="local_C1_56_i_load">in, 32, ap_none, local_C1_56_i_load, scalar</column>
+<column name="local_C1_55_i_load">in, 32, ap_none, local_C1_55_i_load, scalar</column>
+<column name="local_C1_54_i_load">in, 32, ap_none, local_C1_54_i_load, scalar</column>
+<column name="local_C1_53_i_load">in, 32, ap_none, local_C1_53_i_load, scalar</column>
+<column name="local_C1_52_i_load">in, 32, ap_none, local_C1_52_i_load, scalar</column>
+<column name="local_C1_51_i_load">in, 32, ap_none, local_C1_51_i_load, scalar</column>
+<column name="local_C1_50_i_load">in, 32, ap_none, local_C1_50_i_load, scalar</column>
+<column name="local_C1_49_i_load">in, 32, ap_none, local_C1_49_i_load, scalar</column>
+<column name="local_C1_48_i_load">in, 32, ap_none, local_C1_48_i_load, scalar</column>
+<column name="local_C1_47_i_load">in, 32, ap_none, local_C1_47_i_load, scalar</column>
+<column name="local_C1_46_i_load">in, 32, ap_none, local_C1_46_i_load, scalar</column>
+<column name="local_C1_45_i_load">in, 32, ap_none, local_C1_45_i_load, scalar</column>
+<column name="local_C1_44_i_load">in, 32, ap_none, local_C1_44_i_load, scalar</column>
+<column name="local_C1_43_i_load">in, 32, ap_none, local_C1_43_i_load, scalar</column>
+<column name="local_C1_42_i_load">in, 32, ap_none, local_C1_42_i_load, scalar</column>
+<column name="local_C1_41_i_load">in, 32, ap_none, local_C1_41_i_load, scalar</column>
+<column name="local_C1_40_i_load">in, 32, ap_none, local_C1_40_i_load, scalar</column>
+<column name="local_C1_39_i_load">in, 32, ap_none, local_C1_39_i_load, scalar</column>
+<column name="local_C1_38_i_load">in, 32, ap_none, local_C1_38_i_load, scalar</column>
+<column name="local_C1_37_i_load">in, 32, ap_none, local_C1_37_i_load, scalar</column>
+<column name="local_C1_36_i_load">in, 32, ap_none, local_C1_36_i_load, scalar</column>
+<column name="local_C1_35_i_load">in, 32, ap_none, local_C1_35_i_load, scalar</column>
+<column name="local_C1_34_i_load">in, 32, ap_none, local_C1_34_i_load, scalar</column>
+<column name="local_C1_33_i_load">in, 32, ap_none, local_C1_33_i_load, scalar</column>
+<column name="local_C1_32_i_load">in, 32, ap_none, local_C1_32_i_load, scalar</column>
+<column name="local_C1_31_i_load">in, 32, ap_none, local_C1_31_i_load, scalar</column>
+<column name="local_C1_30_i_load">in, 32, ap_none, local_C1_30_i_load, scalar</column>
+<column name="local_C1_29_i_load">in, 32, ap_none, local_C1_29_i_load, scalar</column>
+<column name="local_C1_28_i_load">in, 32, ap_none, local_C1_28_i_load, scalar</column>
+<column name="local_C1_27_i_load">in, 32, ap_none, local_C1_27_i_load, scalar</column>
+<column name="local_C1_26_i_load">in, 32, ap_none, local_C1_26_i_load, scalar</column>
+<column name="local_C1_25_i_load">in, 32, ap_none, local_C1_25_i_load, scalar</column>
+<column name="local_C1_24_i_load">in, 32, ap_none, local_C1_24_i_load, scalar</column>
+<column name="local_C1_23_i_load">in, 32, ap_none, local_C1_23_i_load, scalar</column>
+<column name="local_C1_22_i_load">in, 32, ap_none, local_C1_22_i_load, scalar</column>
+<column name="local_C1_21_i_load">in, 32, ap_none, local_C1_21_i_load, scalar</column>
+<column name="local_C1_20_i_load">in, 32, ap_none, local_C1_20_i_load, scalar</column>
+<column name="local_C1_19_i_load">in, 32, ap_none, local_C1_19_i_load, scalar</column>
+<column name="local_C1_18_i_load">in, 32, ap_none, local_C1_18_i_load, scalar</column>
+<column name="local_C1_17_i_load">in, 32, ap_none, local_C1_17_i_load, scalar</column>
+<column name="local_C1_16_i_load">in, 32, ap_none, local_C1_16_i_load, scalar</column>
+<column name="local_C1_15_i_load">in, 32, ap_none, local_C1_15_i_load, scalar</column>
+<column name="local_C1_14_i_load">in, 32, ap_none, local_C1_14_i_load, scalar</column>
+<column name="local_C1_13_i_load">in, 32, ap_none, local_C1_13_i_load, scalar</column>
+<column name="local_C1_12_i_load">in, 32, ap_none, local_C1_12_i_load, scalar</column>
+<column name="local_C1_11_i_load">in, 32, ap_none, local_C1_11_i_load, scalar</column>
+<column name="local_C1_10_i_load">in, 32, ap_none, local_C1_10_i_load, scalar</column>
+<column name="local_C1_9_i_load">in, 32, ap_none, local_C1_9_i_load, scalar</column>
+<column name="local_C1_8_i_load">in, 32, ap_none, local_C1_8_i_load, scalar</column>
+<column name="local_C1_7_i_load">in, 32, ap_none, local_C1_7_i_load, scalar</column>
+<column name="local_C1_6_i_load">in, 32, ap_none, local_C1_6_i_load, scalar</column>
+<column name="local_C1_5_i_load">in, 32, ap_none, local_C1_5_i_load, scalar</column>
+<column name="local_C1_4_i_load">in, 32, ap_none, local_C1_4_i_load, scalar</column>
+<column name="local_C1_3_i_load">in, 32, ap_none, local_C1_3_i_load, scalar</column>
+<column name="local_C1_2_i_load">in, 32, ap_none, local_C1_2_i_load, scalar</column>
+<column name="local_C1_1_i_load">in, 32, ap_none, local_C1_1_i_load, scalar</column>
+<column name="local_C1_i_load">in, 32, ap_none, local_C1_i_load, scalar</column>
+<column name="tmp">in, 10, ap_none, tmp, scalar</column>
+<column name="v1933_address1">out, 19, ap_memory, v1933, array</column>
+<column name="v1933_ce1">out, 1, ap_memory, v1933, array</column>
+<column name="v1933_we1">out, 1, ap_memory, v1933, array</column>
+<column name="v1933_d1">out, 32, ap_memory, v1933, array</column>
+</table>
+</item>
+</section>
+</profile>

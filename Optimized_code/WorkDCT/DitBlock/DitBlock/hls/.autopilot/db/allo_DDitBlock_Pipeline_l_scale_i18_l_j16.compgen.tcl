@@ -11,17 +11,17 @@ if {${::AESL::PGuard_autoexp_gen}} {
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 2997 \
-    name buffer_x \
+    id 3453 \
+    name buffer_K \
     reset_level 1 \
     sync_rst true \
     dir IO \
-    corename buffer_x \
+    corename buffer_K \
     op interface \
-    ports { buffer_x_address0 { O 19 vector } buffer_x_ce0 { O 1 bit } buffer_x_q0 { I 32 vector } buffer_x_address1 { O 19 vector } buffer_x_ce1 { O 1 bit } buffer_x_we1 { O 1 bit } buffer_x_d1 { O 32 vector } } \
+    ports { buffer_K_address0 { O 19 vector } buffer_K_ce0 { O 1 bit } buffer_K_q0 { I 32 vector } buffer_K_address1 { O 19 vector } buffer_K_ce1 { O 1 bit } buffer_K_we1 { O 1 bit } buffer_K_d1 { O 32 vector } } \
 } "
 } else {
-puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'buffer_x'"
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'buffer_K'"
 }
 }
 
@@ -30,7 +30,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 2998 \
+    id 3454 \
     name buffer2 \
     reset_level 1 \
     sync_rst true \

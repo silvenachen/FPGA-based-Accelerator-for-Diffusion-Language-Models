@@ -18,33 +18,33 @@
 <PipelineType>no</PipelineType>
 <SummaryOfTimingAnalysis>
 <unit>ns</unit>
-<EstimatedClockPeriod>7.279</EstimatedClockPeriod>
+<EstimatedClockPeriod>7.523</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
 <unit>clock cycles</unit>
-<Best-caseLatency>509271231</Best-caseLatency>
-<Average-caseLatency>509271231</Average-caseLatency>
-<Worst-caseLatency>509271231</Worst-caseLatency>
-<Best-caseRealTimeLatency>5.093 sec</Best-caseRealTimeLatency>
-<Average-caseRealTimeLatency>5.093 sec</Average-caseRealTimeLatency>
-<Worst-caseRealTimeLatency>5.093 sec</Worst-caseRealTimeLatency>
-<Interval-min>509271232</Interval-min>
-<Interval-max>509271232</Interval-max>
+<Best-caseLatency>412738002</Best-caseLatency>
+<Average-caseLatency>412738002</Average-caseLatency>
+<Worst-caseLatency>412738002</Worst-caseLatency>
+<Best-caseRealTimeLatency>4.127 sec</Best-caseRealTimeLatency>
+<Average-caseRealTimeLatency>4.127 sec</Average-caseRealTimeLatency>
+<Worst-caseRealTimeLatency>4.127 sec</Worst-caseRealTimeLatency>
+<Interval-min>412738003</Interval-min>
+<Interval-max>412738003</Interval-max>
 </SummaryOfOverallLatency>
 <SummaryOfViolations>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25228</SourceLocation>
+<SourceLocation>/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:25094</SourceLocation>
 </SummaryOfViolations>
 </PerformanceEstimates>
 
 <AreaEstimates>
 <Resources>
-<BRAM_18K>3148</BRAM_18K>
-<DSP>1188</DSP>
-<FF>118726</FF>
-<LUT>168892</LUT>
-<URAM>832</URAM>
+<BRAM_18K>1532</BRAM_18K>
+<DSP>1186</DSP>
+<FF>126044</FF>
+<LUT>170984</LUT>
+<URAM>768</URAM>
 </Resources>
 <AvailableResources>
 <BRAM_18K>4032</BRAM_18K>

@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'RoPE_Pipeline_l_rotary_merge_1_i10_l_j8'" level="0">
-<item name = "Date">Wed Feb  5 22:35:55 2025
+<item name = "Date">Mon Feb 17 20:38:06 2025
 </item>
 <item name = "Version">2023.2 (Build 4023990 on Oct 11 2023)</item>
 <item name = "Project">DitBlock</item>
@@ -80,14 +80,14 @@
 </item>
 <item name = "Expression"><table name="" hasTotal="1">
 <keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
-<column name="add_ln9653_1_fu_131_p2">+, 0, 0, 23, 16, 1</column>
-<column name="add_ln9653_fu_143_p2">+, 0, 0, 18, 11, 1</column>
-<column name="add_ln9654_fu_198_p2">+, 0, 0, 13, 6, 1</column>
-<column name="add_ln9655_fu_187_p2">+, 0, 0, 22, 15, 15</column>
-<column name="icmp_ln9653_fu_125_p2">icmp, 0, 0, 24, 16, 17</column>
-<column name="icmp_ln9654_fu_149_p2">icmp, 0, 0, 14, 6, 7</column>
-<column name="select_ln9653_1_fu_163_p3">select, 0, 0, 11, 1, 11</column>
-<column name="select_ln9653_fu_155_p3">select, 0, 0, 6, 1, 1</column>
+<column name="add_ln9522_1_fu_131_p2">+, 0, 0, 23, 16, 1</column>
+<column name="add_ln9522_fu_143_p2">+, 0, 0, 18, 11, 1</column>
+<column name="add_ln9523_fu_198_p2">+, 0, 0, 13, 6, 1</column>
+<column name="add_ln9524_fu_187_p2">+, 0, 0, 22, 15, 15</column>
+<column name="icmp_ln9522_fu_125_p2">icmp, 0, 0, 24, 16, 17</column>
+<column name="icmp_ln9523_fu_149_p2">icmp, 0, 0, 14, 6, 7</column>
+<column name="select_ln9522_1_fu_163_p3">select, 0, 0, 11, 1, 11</column>
+<column name="select_ln9522_fu_155_p3">select, 0, 0, 6, 1, 1</column>
 <column name="ap_enable_pp0">xor, 0, 0, 2, 1, 2</column>
 </table>
 </item>
@@ -97,7 +97,7 @@
 <column name="ap_enable_reg_pp0_iter1">9, 2, 1, 2</column>
 <column name="ap_enable_reg_pp0_iter2">9, 2, 1, 2</column>
 <column name="i10_fu_62">9, 2, 11, 22</column>
-<column name="indvar_flatten41_fu_66">9, 2, 16, 32</column>
+<column name="indvar_flatten27_fu_66">9, 2, 16, 32</column>
 <column name="j8_fu_58">9, 2, 6, 12</column>
 </table>
 </item>
@@ -108,10 +108,10 @@
 <column name="ap_enable_reg_pp0_iter1">1, 0, 1, 0</column>
 <column name="ap_enable_reg_pp0_iter2">1, 0, 1, 0</column>
 <column name="i10_fu_62">11, 0, 11, 0</column>
-<column name="indvar_flatten41_fu_66">16, 0, 16, 0</column>
+<column name="indvar_flatten27_fu_66">16, 0, 16, 0</column>
 <column name="j8_fu_58">6, 0, 6, 0</column>
-<column name="select_ln9653_reg_260">6, 0, 6, 0</column>
-<column name="trunc_ln9655_reg_265">10, 0, 10, 0</column>
+<column name="select_ln9522_reg_260">6, 0, 6, 0</column>
+<column name="trunc_ln9524_reg_265">10, 0, 10, 0</column>
 </table>
 </item>
 </section>

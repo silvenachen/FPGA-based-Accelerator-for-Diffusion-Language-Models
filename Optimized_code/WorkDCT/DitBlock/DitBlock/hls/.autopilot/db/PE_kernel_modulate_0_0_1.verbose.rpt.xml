@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'PE_kernel_modulate_0_0_1'" level="0">
-<item name = "Date">Wed Feb  5 22:35:22 2025
+<item name = "Date">Mon Feb 17 20:37:34 2025
 </item>
 <item name = "Version">2023.2 (Build 4023990 on Oct 11 2023)</item>
 <item name = "Project">DitBlock</item>
@@ -86,7 +86,7 @@
 <column name="ap_block_pp0_stage1_01001">and, 0, 0, 2, 1, 1</column>
 <column name="ap_condition_269">and, 0, 0, 2, 1, 1</column>
 <column name="ap_condition_272">and, 0, 0, 2, 1, 1</column>
-<column name="icmp_ln37_fu_110_p2">icmp, 0, 0, 16, 8, 9</column>
+<column name="icmp_ln35_fu_110_p2">icmp, 0, 0, 16, 8, 9</column>
 <column name="ap_block_pp0_stage0_11001">or, 0, 0, 2, 1, 1</column>
 <column name="ap_block_state2_pp0_stage1_iter0">or, 0, 0, 2, 1, 1</column>
 <column name="ap_enable_pp0">xor, 0, 0, 2, 1, 2</column>
@@ -120,8 +120,8 @@
 <column name="ap_enable_reg_pp0_iter2">1, 0, 1, 0</column>
 <column name="ap_loop_exit_ready_pp0_iter1_reg">1, 0, 1, 0</column>
 <column name="ap_loop_init_pp0_iter1_reg">1, 0, 1, 0</column>
-<column name="icmp_ln37_reg_164">1, 0, 1, 0</column>
-<column name="icmp_ln37_reg_164_pp0_iter1_reg">1, 0, 1, 0</column>
+<column name="icmp_ln35_reg_164">1, 0, 1, 0</column>
+<column name="icmp_ln35_reg_164_pp0_iter1_reg">1, 0, 1, 0</column>
 <column name="k_2_reg_168">8, 0, 8, 0</column>
 <column name="k_fu_50">8, 0, 8, 0</column>
 <column name="start_once_reg">1, 0, 1, 0</column>

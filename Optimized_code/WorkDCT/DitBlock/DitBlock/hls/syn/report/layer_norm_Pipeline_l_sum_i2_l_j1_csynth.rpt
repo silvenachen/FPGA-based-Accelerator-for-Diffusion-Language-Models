@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'layer_norm_Pipeline_l_sum_i2_l_j1'
 ================================================================
-* Date:           Wed Feb  5 22:35:28 2025
+* Date:           Mon Feb 17 20:37:40 2025
 
 * Version:        2023.2 (Build 4023990 on Oct 11 2023)
 * Project:        DitBlock
@@ -89,16 +89,16 @@
     +--------------------------+----------+----+---+----+------------+------------+
     |       Variable Name      | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
     +--------------------------+----------+----+---+----+------------+------------+
-    |add_ln625_1_fu_170_p2     |         +|   0|  0|  27|          20|           1|
-    |add_ln625_fu_182_p2       |         +|   0|  0|  18|          11|           1|
-    |add_ln626_fu_249_p2       |         +|   0|  0|  17|          10|           1|
-    |add_ln627_fu_238_p2       |         +|   0|  0|  26|          19|          19|
-    |icmp_ln625_fu_164_p2      |      icmp|   0|  0|  28|          20|          21|
-    |icmp_ln626_1_fu_255_p2    |      icmp|   0|  0|  18|          10|          11|
-    |icmp_ln626_fu_188_p2      |      icmp|   0|  0|  18|          10|          11|
-    |or_ln625_fu_194_p2        |        or|   0|  0|   2|           1|           1|
-    |select_ln625_1_fu_208_p3  |    select|   0|  0|  11|           1|          11|
-    |select_ln625_fu_200_p3    |    select|   0|  0|  10|           1|           1|
+    |add_ln494_1_fu_170_p2     |         +|   0|  0|  27|          20|           1|
+    |add_ln494_fu_182_p2       |         +|   0|  0|  18|          11|           1|
+    |add_ln495_fu_249_p2       |         +|   0|  0|  17|          10|           1|
+    |add_ln496_fu_238_p2       |         +|   0|  0|  26|          19|          19|
+    |icmp_ln494_fu_164_p2      |      icmp|   0|  0|  28|          20|          21|
+    |icmp_ln495_1_fu_255_p2    |      icmp|   0|  0|  18|          10|          11|
+    |icmp_ln495_fu_188_p2      |      icmp|   0|  0|  18|          10|          11|
+    |or_ln494_fu_194_p2        |        or|   0|  0|   2|           1|           1|
+    |select_ln494_1_fu_208_p3  |    select|   0|  0|  11|           1|          11|
+    |select_ln494_fu_200_p3    |    select|   0|  0|  10|           1|           1|
     |ap_enable_pp0             |       xor|   0|  0|   2|           1|           2|
     +--------------------------+----------+----+---+----+------------+------------+
     |Total                     |          |   0|  0| 177|         104|          80|
@@ -143,25 +143,25 @@
     |ap_loop_exit_ready_pp0_iter3_reg  |   1|   0|    1|          0|
     |first_iter_0_reg_120              |   1|   0|    1|          0|
     |i2_fu_62                          |  11|   0|   11|          0|
-    |icmp_ln625_reg_337                |   1|   0|    1|          0|
-    |icmp_ln626_1_reg_361              |   1|   0|    1|          0|
+    |icmp_ln494_reg_337                |   1|   0|    1|          0|
+    |icmp_ln495_1_reg_361              |   1|   0|    1|          0|
     |indvar_flatten_fu_66              |  20|   0|   20|          0|
     |j1_fu_58                          |  10|   0|   10|          0|
     |mean2_addr_reg_350                |  10|   0|   10|          0|
     |mean2_load_reg_382                |  32|   0|   32|          0|
     |mean_addr_reg_345                 |  10|   0|   10|          0|
     |mean_load_reg_365                 |  32|   0|   32|          0|
-    |or_ln625_reg_341                  |   1|   0|    1|          0|
+    |or_ln494_reg_341                  |   1|   0|    1|          0|
     |reg_140                           |  32|   0|   32|          0|
     |v273_reg_370                      |  32|   0|   32|          0|
     |v274_fu_70                        |  32|   0|   32|          0|
     |v277_reg_387                      |  32|   0|   32|          0|
     |v278_fu_74                        |  32|   0|   32|          0|
-    |icmp_ln625_reg_337                |  64|  32|    1|          0|
-    |icmp_ln626_1_reg_361              |  64|  32|    1|          0|
+    |icmp_ln494_reg_337                |  64|  32|    1|          0|
+    |icmp_ln495_1_reg_361              |  64|  32|    1|          0|
     |mean2_addr_reg_350                |  64|  32|   10|          0|
     |mean_addr_reg_345                 |  64|  32|   10|          0|
-    |or_ln625_reg_341                  |  64|  32|    1|          0|
+    |or_ln494_reg_341                  |  64|  32|    1|          0|
     +----------------------------------+----+----+-----+-----------+
     |Total                             | 620| 160|  323|          0|
     +----------------------------------+----+----+-----+-----------+
@@ -181,15 +181,15 @@
 |ap_done              |  out|    1|  ap_ctrl_hs|  layer_norm_Pipeline_l_sum_i2_l_j1|  return value|
 |ap_idle              |  out|    1|  ap_ctrl_hs|  layer_norm_Pipeline_l_sum_i2_l_j1|  return value|
 |ap_ready             |  out|    1|  ap_ctrl_hs|  layer_norm_Pipeline_l_sum_i2_l_j1|  return value|
+|grp_fu_243_p_din0    |  out|   32|  ap_ctrl_hs|  layer_norm_Pipeline_l_sum_i2_l_j1|  return value|
+|grp_fu_243_p_din1    |  out|   32|  ap_ctrl_hs|  layer_norm_Pipeline_l_sum_i2_l_j1|  return value|
+|grp_fu_243_p_opcode  |  out|    1|  ap_ctrl_hs|  layer_norm_Pipeline_l_sum_i2_l_j1|  return value|
+|grp_fu_243_p_dout0   |   in|   32|  ap_ctrl_hs|  layer_norm_Pipeline_l_sum_i2_l_j1|  return value|
+|grp_fu_243_p_ce      |  out|    1|  ap_ctrl_hs|  layer_norm_Pipeline_l_sum_i2_l_j1|  return value|
 |grp_fu_247_p_din0    |  out|   32|  ap_ctrl_hs|  layer_norm_Pipeline_l_sum_i2_l_j1|  return value|
 |grp_fu_247_p_din1    |  out|   32|  ap_ctrl_hs|  layer_norm_Pipeline_l_sum_i2_l_j1|  return value|
-|grp_fu_247_p_opcode  |  out|    1|  ap_ctrl_hs|  layer_norm_Pipeline_l_sum_i2_l_j1|  return value|
 |grp_fu_247_p_dout0   |   in|   32|  ap_ctrl_hs|  layer_norm_Pipeline_l_sum_i2_l_j1|  return value|
 |grp_fu_247_p_ce      |  out|    1|  ap_ctrl_hs|  layer_norm_Pipeline_l_sum_i2_l_j1|  return value|
-|grp_fu_251_p_din0    |  out|   32|  ap_ctrl_hs|  layer_norm_Pipeline_l_sum_i2_l_j1|  return value|
-|grp_fu_251_p_din1    |  out|   32|  ap_ctrl_hs|  layer_norm_Pipeline_l_sum_i2_l_j1|  return value|
-|grp_fu_251_p_dout0   |   in|   32|  ap_ctrl_hs|  layer_norm_Pipeline_l_sum_i2_l_j1|  return value|
-|grp_fu_251_p_ce      |  out|    1|  ap_ctrl_hs|  layer_norm_Pipeline_l_sum_i2_l_j1|  return value|
 |v262_address0        |  out|   19|   ap_memory|                               v262|         array|
 |v262_ce0             |  out|    1|   ap_memory|                               v262|         array|
 |v262_q0              |   in|   32|   ap_memory|                               v262|         array|

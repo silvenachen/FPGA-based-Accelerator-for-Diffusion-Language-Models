@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'scaled_dot_product_attention_Pipeline_l_row_max_i12_l_j10'" level="0">
-<item name = "Date">Wed Feb  5 22:36:23 2025
+<item name = "Date">Mon Feb 17 20:38:35 2025
 </item>
 <item name = "Version">2023.2 (Build 4023990 on Oct 11 2023)</item>
 <item name = "Project">DitBlock</item>
@@ -64,7 +64,7 @@
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="1">
 <keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
-<column name="fcmp_32ns_32ns_1_1_no_dsp_1_U2082">fcmp_32ns_32ns_1_1_no_dsp_1, 0, 0, 0, 0, 0</column>
+<column name="fcmp_32ns_32ns_1_1_no_dsp_1_U2383">fcmp_32ns_32ns_1_1_no_dsp_1, 0, 0, 0, 0, 0</column>
 </table>
 </item>
 <item name = "DSP"><table name="" hasTotal="0">
@@ -81,26 +81,26 @@
 </item>
 <item name = "Expression"><table name="" hasTotal="1">
 <keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
-<column name="add_ln12695_1_fu_136_p2">+, 0, 0, 28, 21, 1</column>
-<column name="add_ln12695_fu_148_p2">+, 0, 0, 18, 11, 1</column>
-<column name="add_ln12696_fu_214_p2">+, 0, 0, 18, 11, 1</column>
-<column name="add_ln12697_fu_203_p2">+, 0, 0, 27, 20, 20</column>
-<column name="and_ln12697_fu_320_p2">and, 0, 0, 2, 1, 1</column>
+<column name="add_ln12564_1_fu_144_p2">+, 0, 0, 28, 21, 1</column>
+<column name="add_ln12564_fu_156_p2">+, 0, 0, 18, 11, 1</column>
+<column name="add_ln12565_fu_222_p2">+, 0, 0, 18, 11, 1</column>
+<column name="add_ln12566_fu_211_p2">+, 0, 0, 27, 20, 20</column>
+<column name="and_ln12568_fu_328_p2">and, 0, 0, 2, 1, 1</column>
 <column name="ap_condition_344">and, 0, 0, 2, 1, 1</column>
-<column name="flag_fu_325_p2">and, 0, 0, 2, 1, 1</column>
-<column name="icmp_ln12695_fu_130_p2">icmp, 0, 0, 29, 21, 22</column>
-<column name="icmp_ln12696_1_fu_220_p2">icmp, 0, 0, 19, 11, 12</column>
-<column name="icmp_ln12696_fu_154_p2">icmp, 0, 0, 19, 11, 12</column>
-<column name="icmp_ln12697_1_fu_290_p2">icmp, 0, 0, 30, 23, 1</column>
-<column name="icmp_ln12697_2_fu_302_p2">icmp, 0, 0, 15, 8, 2</column>
-<column name="icmp_ln12697_3_fu_308_p2">icmp, 0, 0, 30, 23, 1</column>
-<column name="icmp_ln12697_fu_284_p2">icmp, 0, 0, 15, 8, 2</column>
-<column name="or_ln12695_fu_160_p2">or, 0, 0, 2, 1, 1</column>
-<column name="or_ln12697_1_fu_314_p2">or, 0, 0, 2, 1, 1</column>
-<column name="or_ln12697_fu_296_p2">or, 0, 0, 2, 1, 1</column>
+<column name="v6912_fu_333_p2">and, 0, 0, 2, 1, 1</column>
+<column name="icmp_ln12564_fu_138_p2">icmp, 0, 0, 29, 21, 22</column>
+<column name="icmp_ln12565_1_fu_228_p2">icmp, 0, 0, 19, 11, 12</column>
+<column name="icmp_ln12565_fu_162_p2">icmp, 0, 0, 19, 11, 12</column>
+<column name="icmp_ln12568_1_fu_298_p2">icmp, 0, 0, 30, 23, 1</column>
+<column name="icmp_ln12568_2_fu_310_p2">icmp, 0, 0, 15, 8, 2</column>
+<column name="icmp_ln12568_3_fu_316_p2">icmp, 0, 0, 30, 23, 1</column>
+<column name="icmp_ln12568_fu_292_p2">icmp, 0, 0, 15, 8, 2</column>
+<column name="or_ln12564_fu_168_p2">or, 0, 0, 2, 1, 1</column>
+<column name="or_ln12568_1_fu_322_p2">or, 0, 0, 2, 1, 1</column>
+<column name="or_ln12568_fu_304_p2">or, 0, 0, 2, 1, 1</column>
 <column name="M_d0">select, 0, 0, 32, 1, 32</column>
-<column name="select_ln12695_1_fu_174_p3">select, 0, 0, 11, 1, 11</column>
-<column name="select_ln12695_fu_166_p3">select, 0, 0, 11, 1, 1</column>
+<column name="select_ln12564_1_fu_182_p3">select, 0, 0, 11, 1, 11</column>
+<column name="select_ln12564_fu_174_p3">select, 0, 0, 11, 1, 1</column>
 <column name="ap_enable_pp0">xor, 0, 0, 2, 1, 2</column>
 </table>
 </item>
@@ -113,36 +113,36 @@
 <column name="ap_enable_reg_pp0_iter1">9, 2, 1, 2</column>
 <column name="ap_enable_reg_pp0_iter2">9, 2, 1, 2</column>
 <column name="ap_loop_exit_ready_pp0_iter1_reg">9, 2, 1, 2</column>
-<column name="ap_phi_mux_first_iter_5_phi_fu_100_p4">9, 2, 1, 2</column>
-<column name="empty_fu_66">9, 2, 32, 64</column>
-<column name="i12_fu_58">9, 2, 11, 22</column>
-<column name="indvar_flatten38_fu_62">9, 2, 21, 42</column>
-<column name="j10_fu_54">9, 2, 11, 22</column>
+<column name="ap_phi_mux_first_iter_3_phi_fu_108_p4">9, 2, 1, 2</column>
+<column name="i12_fu_66">9, 2, 11, 22</column>
+<column name="indvar_flatten24_fu_70">9, 2, 21, 42</column>
+<column name="j10_fu_62">9, 2, 11, 22</column>
+<column name="v6911_fu_74">9, 2, 32, 64</column>
 </table>
 </item>
 <item name = "Register"><table name="" hasTotal="1">
 <keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
-<column name="M_addr_reg_379">10, 0, 10, 0</column>
-<column name="M_addr_reg_379_pp0_iter1_reg">10, 0, 10, 0</column>
-<column name="Y_t_load_reg_393">32, 0, 32, 0</column>
+<column name="M_addr_reg_387">10, 0, 10, 0</column>
+<column name="M_addr_reg_387_pp0_iter1_reg">10, 0, 10, 0</column>
 <column name="ap_CS_fsm">2, 0, 2, 0</column>
 <column name="ap_done_reg">1, 0, 1, 0</column>
 <column name="ap_enable_reg_pp0_iter0_reg">1, 0, 1, 0</column>
 <column name="ap_enable_reg_pp0_iter1">1, 0, 1, 0</column>
 <column name="ap_enable_reg_pp0_iter2">1, 0, 1, 0</column>
 <column name="ap_loop_exit_ready_pp0_iter1_reg">1, 0, 1, 0</column>
-<column name="empty_fu_66">32, 0, 32, 0</column>
-<column name="first_iter_5_reg_96">1, 0, 1, 0</column>
-<column name="i12_fu_58">11, 0, 11, 0</column>
-<column name="icmp_ln12695_reg_371">1, 0, 1, 0</column>
-<column name="icmp_ln12695_reg_371_pp0_iter1_reg">1, 0, 1, 0</column>
-<column name="icmp_ln12696_1_reg_389">1, 0, 1, 0</column>
-<column name="icmp_ln12696_1_reg_389_pp0_iter1_reg">1, 0, 1, 0</column>
-<column name="indvar_flatten38_fu_62">21, 0, 21, 0</column>
-<column name="j10_fu_54">11, 0, 11, 0</column>
-<column name="or_ln12695_reg_375">1, 0, 1, 0</column>
-<column name="p_load_reg_400">32, 0, 32, 0</column>
-<column name="tmp_3_reg_406">1, 0, 1, 0</column>
+<column name="first_iter_3_reg_104">1, 0, 1, 0</column>
+<column name="i12_fu_66">11, 0, 11, 0</column>
+<column name="icmp_ln12564_reg_379">1, 0, 1, 0</column>
+<column name="icmp_ln12564_reg_379_pp0_iter1_reg">1, 0, 1, 0</column>
+<column name="icmp_ln12565_1_reg_397">1, 0, 1, 0</column>
+<column name="icmp_ln12565_1_reg_397_pp0_iter1_reg">1, 0, 1, 0</column>
+<column name="indvar_flatten24_fu_70">21, 0, 21, 0</column>
+<column name="j10_fu_62">11, 0, 11, 0</column>
+<column name="or_ln12564_reg_383">1, 0, 1, 0</column>
+<column name="tmp_2_reg_414">1, 0, 1, 0</column>
+<column name="v6910_reg_401">32, 0, 32, 0</column>
+<column name="v6911_fu_74">32, 0, 32, 0</column>
+<column name="v6911_load_reg_408">32, 0, 32, 0</column>
 </table>
 </item>
 </section>
@@ -158,9 +158,9 @@
 <column name="ap_done">out, 1, ap_ctrl_hs, scaled_dot_product_attention_Pipeline_l_row_max_i12_l_j10, return value</column>
 <column name="ap_idle">out, 1, ap_ctrl_hs, scaled_dot_product_attention_Pipeline_l_row_max_i12_l_j10, return value</column>
 <column name="ap_ready">out, 1, ap_ctrl_hs, scaled_dot_product_attention_Pipeline_l_row_max_i12_l_j10, return value</column>
-<column name="Y_t_address0">out, 20, ap_memory, Y_t, array</column>
-<column name="Y_t_ce0">out, 1, ap_memory, Y_t, array</column>
-<column name="Y_t_q0">in, 32, ap_memory, Y_t, array</column>
+<column name="Y1_address0">out, 20, ap_memory, Y1, array</column>
+<column name="Y1_ce0">out, 1, ap_memory, Y1, array</column>
+<column name="Y1_q0">in, 32, ap_memory, Y1, array</column>
 <column name="M_address0">out, 10, ap_memory, M, array</column>
 <column name="M_ce0">out, 1, ap_memory, M, array</column>
 <column name="M_we0">out, 1, ap_memory, M, array</column>

@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'systolic_tile_modulate'" level="0">
-<item name = "Date">Wed Feb  5 22:34:00 2025
+<item name = "Date">Mon Feb 17 20:36:07 2025
 </item>
 <item name = "Version">2023.2 (Build 4023990 on Oct 11 2023)</item>
 <item name = "Project">DitBlock</item>
@@ -31,7 +31,7 @@
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="grp_systolic_tile_modulate_Loop_l_data_load_k8_proc22_fu_228">systolic_tile_modulate_Loop_l_data_load_k8_proc22, 1027, 1027, 10.270 us, 10.270 us, 1027, 1027, no</column>
+<column name="grp_systolic_tile_modulate_Loop_l_data_load_k8_proc31_fu_228">systolic_tile_modulate_Loop_l_data_load_k8_proc31, 1027, 1027, 10.270 us, 10.270 us, 1027, 1027, no</column>
 <column name="grp_PE_kernel_modulate_0_0_1_fu_259">PE_kernel_modulate_0_0_1, 261, 261, 2.610 us, 2.610 us, 261, 261, no</column>
 <column name="grp_PE_kernel_modulate_1_0_1_fu_269">PE_kernel_modulate_1_0_1, 261, 261, 2.610 us, 2.610 us, 261, 261, no</column>
 <column name="grp_PE_kernel_modulate_2_0_1_fu_279">PE_kernel_modulate_2_0_1, 261, 261, 2.610 us, 2.610 us, 261, 261, no</column>
@@ -40,7 +40,7 @@
 <column name="grp_PE_kernel_modulate_5_0_1_fu_309">PE_kernel_modulate_5_0_1, 261, 261, 2.610 us, 2.610 us, 261, 261, no</column>
 <column name="grp_PE_kernel_modulate_6_0_1_fu_319">PE_kernel_modulate_6_0_1, 261, 261, 2.610 us, 2.610 us, 261, 261, no</column>
 <column name="grp_PE_kernel_modulate_7_0_1_fu_329">PE_kernel_modulate_7_0_1, 261, 261, 2.610 us, 2.610 us, 261, 261, no</column>
-<column name="grp_systolic_tile_modulate_Loop_l_data_drain_k9_proc23_fu_339">systolic_tile_modulate_Loop_l_data_drain_k9_proc23, 1026, 1026, 10.260 us, 10.260 us, 1026, 1026, no</column>
+<column name="grp_systolic_tile_modulate_Loop_l_data_drain_k9_proc32_fu_339">systolic_tile_modulate_Loop_l_data_drain_k9_proc32, 1026, 1026, 10.260 us, 10.260 us, 1026, 1026, no</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">

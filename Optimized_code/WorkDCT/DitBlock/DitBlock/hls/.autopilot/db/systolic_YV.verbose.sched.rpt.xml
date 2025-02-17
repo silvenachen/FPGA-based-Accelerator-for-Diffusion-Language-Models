@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'systolic_YV'" level="0">
-<item name = "Date">Wed Feb  5 22:35:09 2025
+<item name = "Date">Mon Feb 17 20:37:21 2025
 </item>
 <item name = "Version">2023.2 (Build 4023990 on Oct 11 2023)</item>
 <item name = "Project">DitBlock</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">10.00 ns, 6.536 ns, 2.70 ns</column>
+<column name="ap_clk">10.00 ns, 7.399 ns, 2.70 ns</column>
 </table>
 </item>
 </section>
@@ -24,7 +24,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">10582017, 10582017, 0.106 sec, 0.106 sec, 10582017, 10582017, no</column>
+<column name="">8666497, 8666497, 86.665 ms, 86.665 ms, 8666497, 8666497, no</column>
 </table>
 </item>
 <item name = "Detail">
@@ -35,7 +35,7 @@
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
-<column name="- l_outer_tile_mi5_l_ni5">10582016, 10582016, 10334, -, -, 1024, no</column>
+<column name="- l_outer_tile_mi5">8666496, 8666496, 67708, -, -, 128, no</column>
 </table>
 </item>
 </section>

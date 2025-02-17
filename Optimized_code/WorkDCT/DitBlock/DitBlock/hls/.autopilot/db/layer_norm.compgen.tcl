@@ -56,36 +56,17 @@ if {${::AESL::PGuard_autoexp_gen}} {
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 239 \
+    id 237 \
     name v262 \
     reset_level 1 \
     sync_rst true \
-    dir I \
+    dir IO \
     corename v262 \
     op interface \
-    ports { v262_address0 { O 19 vector } v262_ce0 { O 1 bit } v262_q0 { I 32 vector } } \
+    ports { v262_address0 { O 19 vector } v262_ce0 { O 1 bit } v262_q0 { I 32 vector } v262_address1 { O 19 vector } v262_ce1 { O 1 bit } v262_we1 { O 1 bit } v262_d1 { O 32 vector } } \
 } "
 } else {
 puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'v262'"
-}
-}
-
-
-# XIL_BRAM:
-if {${::AESL::PGuard_autoexp_gen}} {
-if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
-eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 240 \
-    name v265 \
-    reset_level 1 \
-    sync_rst true \
-    dir O \
-    corename v265 \
-    op interface \
-    ports { v265_address1 { O 19 vector } v265_ce1 { O 1 bit } v265_we1 { O 1 bit } v265_d1 { O 32 vector } } \
-} "
-} else {
-puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'v265'"
 }
 }
 

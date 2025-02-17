@@ -46,14 +46,14 @@
 <SummaryOfViolations>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:12696~/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:15736</SourceLocation>
+<SourceLocation>/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:12565~/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:15624</SourceLocation>
 <SummaryOfLoopViolations>
 <l_row_max_i12_l_j10>
 <Name>l_row_max_i12_l_j10</Name>
 <IssueType>II Violation</IssueType>
 <ViolationType>Memory Dependency</ViolationType>
 <IterationDistance>1</IterationDistance>
-<SourceLocation>/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:12695~/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:15736</SourceLocation>
+<SourceLocation>/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:12564~/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:15624</SourceLocation>
 </l_row_max_i12_l_j10>
 </SummaryOfLoopViolations>
 </SummaryOfViolations>
@@ -144,8 +144,8 @@
 <Attribute>control</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>Y_t_address0</name>
-<Object>Y_t</Object>
+<name>Y1_address0</name>
+<Object>Y1</Object>
 <Type>array</Type>
 <Scope></Scope>
 <IOProtocol>ap_memory</IOProtocol>
@@ -155,8 +155,8 @@
 <Attribute>address</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>Y_t_ce0</name>
-<Object>Y_t</Object>
+<name>Y1_ce0</name>
+<Object>Y1</Object>
 <Type>array</Type>
 <Scope></Scope>
 <IOProtocol>ap_memory</IOProtocol>
@@ -166,8 +166,8 @@
 <Attribute>control</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>Y_t_q0</name>
-<Object>Y_t</Object>
+<name>Y1_q0</name>
+<Object>Y1</Object>
 <Type>array</Type>
 <Scope></Scope>
 <IOProtocol>ap_memory</IOProtocol>

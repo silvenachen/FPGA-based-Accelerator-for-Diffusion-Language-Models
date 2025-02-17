@@ -1,0 +1,193 @@
+
+
+================================================================
+== Vitis HLS Report for 'dataflow_in_loop_l_ni1_Loop_l_load_A_tile_ak1_proc4426'
+================================================================
+* Date:           Mon Feb 17 20:37:41 2025
+
+* Version:        2023.2 (Build 4023990 on Oct 11 2023)
+* Project:        DitBlock
+* Solution:       hls (Vivado IP Flow Target)
+* Product family: virtexuplusHBM
+* Target device:  xcu280-fsvh2892-2L-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  6.327 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+-----------+-----------+------+------+---------+
+    |  Latency (cycles) |   Latency (absolute)  |   Interval  | Pipeline|
+    |   min   |   max   |    min    |    max    |  min |  max |   Type  |
+    +---------+---------+-----------+-----------+------+------+---------+
+    |     4099|     4099|  40.990 us|  40.990 us|  4099|  4099|       no|
+    +---------+---------+-----------+-----------+------+------+---------+
+
+    + Detail: 
+        * Instance: 
+        +--------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------+---------+---------+-----------+-----------+------+------+---------+
+        |                                                                                            |                                                                                  |  Latency (cycles) |   Latency (absolute)  |   Interval  | Pipeline|
+        |                                          Instance                                          |                                      Module                                      |   min   |   max   |    min    |    max    |  min |  max |   Type  |
+        +--------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------+---------+---------+-----------+-----------+------+------+---------+
+        |grp_dataflow_in_loop_l_ni1_Loop_l_load_A_tile_ak1_proc4426_Pipeline_l_load_A_tile_ak_fu_94  |dataflow_in_loop_l_ni1_Loop_l_load_A_tile_ak1_proc4426_Pipeline_l_load_A_tile_ak  |     4098|     4098|  40.980 us|  40.980 us|  4098|  4098|       no|
+        +--------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------+---------+---------+-----------+-----------+------+------+---------+
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++---------------------+---------+------+---------+---------+-----+
+|         Name        | BRAM_18K|  DSP |    FF   |   LUT   | URAM|
++---------------------+---------+------+---------+---------+-----+
+|DSP                  |        -|     -|        -|        -|    -|
+|Expression           |        -|     -|        0|       15|    -|
+|FIFO                 |        -|     -|        -|        -|    -|
+|Instance             |        -|     -|       43|      213|    -|
+|Memory               |        -|     -|        -|        -|    -|
+|Multiplexer          |        -|     -|        -|       41|    -|
+|Register             |        -|     -|       12|        -|    -|
++---------------------+---------+------+---------+---------+-----+
+|Total                |        0|     0|       55|      269|    0|
++---------------------+---------+------+---------+---------+-----+
+|Available SLR        |     1344|  3008|   869120|   434560|  320|
++---------------------+---------+------+---------+---------+-----+
+|Utilization SLR (%)  |        0|     0|       ~0|       ~0|    0|
++---------------------+---------+------+---------+---------+-----+
+|Available            |     4032|  9024|  2607360|  1303680|  960|
++---------------------+---------+------+---------+---------+-----+
+|Utilization (%)      |        0|     0|       ~0|       ~0|    0|
++---------------------+---------+------+---------+---------+-----+
+
++ Detail: 
+    * Instance: 
+    +--------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------+---------+----+----+-----+-----+
+    |                                          Instance                                          |                                      Module                                      | BRAM_18K| DSP| FF | LUT | URAM|
+    +--------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------+---------+----+----+-----+-----+
+    |grp_dataflow_in_loop_l_ni1_Loop_l_load_A_tile_ak1_proc4426_Pipeline_l_load_A_tile_ak_fu_94  |dataflow_in_loop_l_ni1_Loop_l_load_A_tile_ak1_proc4426_Pipeline_l_load_A_tile_ak  |        0|   0|  43|  213|    0|
+    +--------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------+---------+----+----+-----+-----+
+    |Total                                                                                       |                                                                                  |        0|   0|  43|  213|    0|
+    +--------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------+---------+----+----+-----+-----+
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +-------------------+----------+----+---+----+------------+------------+
+    |   Variable Name   | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +-------------------+----------+----+---+----+------------+------------+
+    |v1942_i_fu_127_p2  |      icmp|   0|  0|  13|           6|           1|
+    |ap_block_state1    |        or|   0|  0|   2|           1|           1|
+    +-------------------+----------+----+---+----+------------+------------+
+    |Total              |          |   0|  0|  15|           7|           2|
+    +-------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +---------------+----+-----------+-----+-----------+
+    |      Name     | LUT| Input Size| Bits| Total Bits|
+    +---------------+----+-----------+-----+-----------+
+    |ap_NS_fsm      |  14|          3|    1|          3|
+    |ap_done        |   9|          2|    1|          2|
+    |mi1_c_i_blk_n  |   9|          2|    1|          2|
+    |ni1_c_i_blk_n  |   9|          2|    1|          2|
+    +---------------+----+-----------+-----+-----------+
+    |Total          |  41|          9|    4|          9|
+    +---------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +---------------------------------------------------------------------------------------------------------+---+----+-----+-----------+
+    |                                                   Name                                                  | FF| LUT| Bits| Const Bits|
+    +---------------------------------------------------------------------------------------------------------+---+----+-----+-----------+
+    |ap_CS_fsm                                                                                                |  2|   0|    2|          0|
+    |ap_done_reg                                                                                              |  1|   0|    1|          0|
+    |grp_dataflow_in_loop_l_ni1_Loop_l_load_A_tile_ak1_proc4426_Pipeline_l_load_A_tile_ak_fu_94_ap_start_reg  |  1|   0|    1|          0|
+    |tmp_i_reg_134                                                                                            |  7|   0|   10|          3|
+    |v1942_i_reg_139                                                                                          |  1|   0|    1|          0|
+    +---------------------------------------------------------------------------------------------------------+---+----+-----+-----------+
+    |Total                                                                                                    | 12|   0|   15|          3|
+    +---------------------------------------------------------------------------------------------------------+---+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++------------------------+-----+-----+------------+--------------------------------------------------------+--------------+
+|        RTL Ports       | Dir | Bits|  Protocol  |                      Source Object                     |    C Type    |
++------------------------+-----+-----+------------+--------------------------------------------------------+--------------+
+|ap_clk                  |   in|    1|  ap_ctrl_hs|  dataflow_in_loop_l_ni1_Loop_l_load_A_tile_ak1_proc4426|  return value|
+|ap_rst                  |   in|    1|  ap_ctrl_hs|  dataflow_in_loop_l_ni1_Loop_l_load_A_tile_ak1_proc4426|  return value|
+|ap_start                |   in|    1|  ap_ctrl_hs|  dataflow_in_loop_l_ni1_Loop_l_load_A_tile_ak1_proc4426|  return value|
+|ap_done                 |  out|    1|  ap_ctrl_hs|  dataflow_in_loop_l_ni1_Loop_l_load_A_tile_ak1_proc4426|  return value|
+|ap_continue             |   in|    1|  ap_ctrl_hs|  dataflow_in_loop_l_ni1_Loop_l_load_A_tile_ak1_proc4426|  return value|
+|ap_idle                 |  out|    1|  ap_ctrl_hs|  dataflow_in_loop_l_ni1_Loop_l_load_A_tile_ak1_proc4426|  return value|
+|ap_ready                |  out|    1|  ap_ctrl_hs|  dataflow_in_loop_l_ni1_Loop_l_load_A_tile_ak1_proc4426|  return value|
+|local_A1_i_address0     |  out|    9|   ap_memory|                                              local_A1_i|         array|
+|local_A1_i_ce0          |  out|    1|   ap_memory|                                              local_A1_i|         array|
+|local_A1_i_we0          |  out|    1|   ap_memory|                                              local_A1_i|         array|
+|local_A1_i_d0           |  out|   32|   ap_memory|                                              local_A1_i|         array|
+|local_A1_1_i_address0   |  out|    9|   ap_memory|                                            local_A1_1_i|         array|
+|local_A1_1_i_ce0        |  out|    1|   ap_memory|                                            local_A1_1_i|         array|
+|local_A1_1_i_we0        |  out|    1|   ap_memory|                                            local_A1_1_i|         array|
+|local_A1_1_i_d0         |  out|   32|   ap_memory|                                            local_A1_1_i|         array|
+|local_A1_2_i_address0   |  out|    9|   ap_memory|                                            local_A1_2_i|         array|
+|local_A1_2_i_ce0        |  out|    1|   ap_memory|                                            local_A1_2_i|         array|
+|local_A1_2_i_we0        |  out|    1|   ap_memory|                                            local_A1_2_i|         array|
+|local_A1_2_i_d0         |  out|   32|   ap_memory|                                            local_A1_2_i|         array|
+|local_A1_3_i_address0   |  out|    9|   ap_memory|                                            local_A1_3_i|         array|
+|local_A1_3_i_ce0        |  out|    1|   ap_memory|                                            local_A1_3_i|         array|
+|local_A1_3_i_we0        |  out|    1|   ap_memory|                                            local_A1_3_i|         array|
+|local_A1_3_i_d0         |  out|   32|   ap_memory|                                            local_A1_3_i|         array|
+|local_A1_4_i_address0   |  out|    9|   ap_memory|                                            local_A1_4_i|         array|
+|local_A1_4_i_ce0        |  out|    1|   ap_memory|                                            local_A1_4_i|         array|
+|local_A1_4_i_we0        |  out|    1|   ap_memory|                                            local_A1_4_i|         array|
+|local_A1_4_i_d0         |  out|   32|   ap_memory|                                            local_A1_4_i|         array|
+|local_A1_5_i_address0   |  out|    9|   ap_memory|                                            local_A1_5_i|         array|
+|local_A1_5_i_ce0        |  out|    1|   ap_memory|                                            local_A1_5_i|         array|
+|local_A1_5_i_we0        |  out|    1|   ap_memory|                                            local_A1_5_i|         array|
+|local_A1_5_i_d0         |  out|   32|   ap_memory|                                            local_A1_5_i|         array|
+|local_A1_6_i_address0   |  out|    9|   ap_memory|                                            local_A1_6_i|         array|
+|local_A1_6_i_ce0        |  out|    1|   ap_memory|                                            local_A1_6_i|         array|
+|local_A1_6_i_we0        |  out|    1|   ap_memory|                                            local_A1_6_i|         array|
+|local_A1_6_i_d0         |  out|   32|   ap_memory|                                            local_A1_6_i|         array|
+|local_A1_7_i_address0   |  out|    9|   ap_memory|                                            local_A1_7_i|         array|
+|local_A1_7_i_ce0        |  out|    1|   ap_memory|                                            local_A1_7_i|         array|
+|local_A1_7_i_we0        |  out|    1|   ap_memory|                                            local_A1_7_i|         array|
+|local_A1_7_i_d0         |  out|   32|   ap_memory|                                            local_A1_7_i|         array|
+|ni1                     |   in|    6|     ap_none|                                                     ni1|        scalar|
+|mi1                     |   in|    7|     ap_none|                                                     mi1|        scalar|
+|v1931_address0          |  out|   19|   ap_memory|                                                   v1931|         array|
+|v1931_ce0               |  out|    1|   ap_memory|                                                   v1931|         array|
+|v1931_q0                |   in|   32|   ap_memory|                                                   v1931|         array|
+|ni1_c_i_din             |  out|    6|     ap_fifo|                                                 ni1_c_i|       pointer|
+|ni1_c_i_num_data_valid  |   in|    3|     ap_fifo|                                                 ni1_c_i|       pointer|
+|ni1_c_i_fifo_cap        |   in|    3|     ap_fifo|                                                 ni1_c_i|       pointer|
+|ni1_c_i_full_n          |   in|    1|     ap_fifo|                                                 ni1_c_i|       pointer|
+|ni1_c_i_write           |  out|    1|     ap_fifo|                                                 ni1_c_i|       pointer|
+|mi1_c_i_din             |  out|    7|     ap_fifo|                                                 mi1_c_i|       pointer|
+|mi1_c_i_num_data_valid  |   in|    3|     ap_fifo|                                                 mi1_c_i|       pointer|
+|mi1_c_i_fifo_cap        |   in|    3|     ap_fifo|                                                 mi1_c_i|       pointer|
+|mi1_c_i_full_n          |   in|    1|     ap_fifo|                                                 mi1_c_i|       pointer|
+|mi1_c_i_write           |  out|    1|     ap_fifo|                                                 mi1_c_i|       pointer|
++------------------------+-----+-----+------------+--------------------------------------------------------+--------------+
+

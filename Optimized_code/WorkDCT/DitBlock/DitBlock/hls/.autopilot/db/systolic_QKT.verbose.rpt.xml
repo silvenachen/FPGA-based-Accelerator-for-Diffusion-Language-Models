@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'systolic_QKT'" level="0">
-<item name = "Date">Wed Feb  5 22:36:22 2025
+<item name = "Date">Mon Feb 17 20:38:34 2025
 </item>
 <item name = "Version">2023.2 (Build 4023990 on Oct 11 2023)</item>
 <item name = "Project">DitBlock</item>
@@ -24,22 +24,19 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">12025857, 12025857, 0.120 sec, 0.120 sec, 12025857, 12025857, no</column>
+<column name="">8482177, 8482177, 84.822 ms, 84.822 ms, 8482177, 8482177, no</column>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="grp_systolic_QKT_Pipeline_l_load_A_tile_ak4_l_ai4_fu_382">systolic_QKT_Pipeline_l_load_A_tile_ak4_l_ai4, 514, 514, 5.140 us, 5.140 us, 514, 514, no</column>
-<column name="grp_systolic_QKT_Pipeline_l_load_B_tile_bk4_l_bj4_fu_398">systolic_QKT_Pipeline_l_load_B_tile_bk4_l_bj4, 514, 514, 5.140 us, 5.140 us, 514, 514, no</column>
-<column name="grp_systolic_tile_QKT_fu_413">systolic_tile_QKT, 148, 148, 1.480 us, 1.480 us, 134, 134, dataflow</column>
-<column name="grp_systolic_QKT_Pipeline_l_store_C_tile_sj4_l_si4_fu_497">systolic_QKT_Pipeline_l_store_C_tile_sj4_l_si4, 66, 66, 0.660 us, 0.660 us, 66, 66, no</column>
+<column name="dataflow_parent_loop_proc42_U0">dataflow_parent_loop_proc42, 66266, 66266, 0.663 ms, 0.663 ms, 66266, 66266, no</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
-<column name="- l_outer_tile_mi4_l_ni4">12025856, 12025856, 734, -, -, 16384, no</column>
+<column name="- l_outer_tile_mi4">8482176, 8482176, 66268, -, -, 128, no</column>
 </table>
 </item>
 </section>
@@ -52,26 +49,23 @@
 <item name = "Summary"><table name="" hasTotal="1">
 <keys size="6">Name, BRAM_18K, DSP, FF, LUT, URAM</keys>
 <column name="DSP">-, -, -, -, -</column>
-<column name="Expression">-, -, 0, 128, -</column>
+<column name="Expression">-, -, 124, 31, -</column>
 <column name="FIFO">-, -, -, -, -</column>
-<column name="Instance">-, 320, 28363, 37184, -</column>
-<column name="Memory">0, -, 512, 528, 0</column>
-<column name="Multiplexer">-, -, -, 662, -</column>
-<column name="Register">-, -, 2107, -, -</column>
+<column name="Instance">0, 320, 33425, 40227, 0</column>
+<column name="Memory">-, -, -, -, -</column>
+<column name="Multiplexer">-, -, -, 18, -</column>
+<column name="Register">-, -, 16, -, -</column>
 <specialColumn name="Available SLR">1344, 3008, 869120, 434560, 320</specialColumn>
-<specialColumn name="Utilization SLR (%)">0, 10, 3, 8, 0</specialColumn>
+<specialColumn name="Utilization SLR (%)">0, 10, 3, 9, 0</specialColumn>
 <specialColumn name="Available">4032, 9024, 2607360, 1303680, 960</specialColumn>
-<specialColumn name="Utilization (%)">0, 3, 1, 2, 0</specialColumn>
+<specialColumn name="Utilization (%)">0, 3, 1, 3, 0</specialColumn>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="1">
 <keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
-<column name="grp_systolic_QKT_Pipeline_l_load_A_tile_ak4_l_ai4_fu_382">systolic_QKT_Pipeline_l_load_A_tile_ak4_l_ai4, 0, 0, 34, 198, 0</column>
-<column name="grp_systolic_QKT_Pipeline_l_load_B_tile_bk4_l_bj4_fu_398">systolic_QKT_Pipeline_l_load_B_tile_bk4_l_bj4, 0, 0, 34, 175, 0</column>
-<column name="grp_systolic_QKT_Pipeline_l_store_C_tile_sj4_l_si4_fu_497">systolic_QKT_Pipeline_l_store_C_tile_sj4_l_si4, 0, 0, 17, 557, 0</column>
-<column name="grp_systolic_tile_QKT_fu_413">systolic_tile_QKT, 0, 320, 28278, 36254, 0</column>
+<column name="dataflow_parent_loop_proc42_U0">dataflow_parent_loop_proc42, 0, 320, 33425, 40227, 0</column>
 </table>
 </item>
 <item name = "DSP"><table name="" hasTotal="0">
@@ -80,22 +74,6 @@
 </item>
 <item name = "Memory"><table name="" hasTotal="1">
 <keys size="10">Memory, Module, BRAM_18K, FF, LUT, URAM, Words, Bits, Banks, W*Bits*Banks</keys>
-<column name="local_A4_U">systolic_QKT_local_A4_RAM_AUTO_1R1W, 0, 32, 33, 0, 64, 32, 1, 2048</column>
-<column name="local_A4_1_U">systolic_QKT_local_A4_RAM_AUTO_1R1W, 0, 32, 33, 0, 64, 32, 1, 2048</column>
-<column name="local_A4_2_U">systolic_QKT_local_A4_RAM_AUTO_1R1W, 0, 32, 33, 0, 64, 32, 1, 2048</column>
-<column name="local_A4_3_U">systolic_QKT_local_A4_RAM_AUTO_1R1W, 0, 32, 33, 0, 64, 32, 1, 2048</column>
-<column name="local_A4_4_U">systolic_QKT_local_A4_RAM_AUTO_1R1W, 0, 32, 33, 0, 64, 32, 1, 2048</column>
-<column name="local_A4_5_U">systolic_QKT_local_A4_RAM_AUTO_1R1W, 0, 32, 33, 0, 64, 32, 1, 2048</column>
-<column name="local_A4_6_U">systolic_QKT_local_A4_RAM_AUTO_1R1W, 0, 32, 33, 0, 64, 32, 1, 2048</column>
-<column name="local_A4_7_U">systolic_QKT_local_A4_RAM_AUTO_1R1W, 0, 32, 33, 0, 64, 32, 1, 2048</column>
-<column name="local_B4_U">systolic_QKT_local_A4_RAM_AUTO_1R1W, 0, 32, 33, 0, 64, 32, 1, 2048</column>
-<column name="local_B4_1_U">systolic_QKT_local_A4_RAM_AUTO_1R1W, 0, 32, 33, 0, 64, 32, 1, 2048</column>
-<column name="local_B4_2_U">systolic_QKT_local_A4_RAM_AUTO_1R1W, 0, 32, 33, 0, 64, 32, 1, 2048</column>
-<column name="local_B4_3_U">systolic_QKT_local_A4_RAM_AUTO_1R1W, 0, 32, 33, 0, 64, 32, 1, 2048</column>
-<column name="local_B4_4_U">systolic_QKT_local_A4_RAM_AUTO_1R1W, 0, 32, 33, 0, 64, 32, 1, 2048</column>
-<column name="local_B4_5_U">systolic_QKT_local_A4_RAM_AUTO_1R1W, 0, 32, 33, 0, 64, 32, 1, 2048</column>
-<column name="local_B4_6_U">systolic_QKT_local_A4_RAM_AUTO_1R1W, 0, 32, 33, 0, 64, 32, 1, 2048</column>
-<column name="local_B4_7_U">systolic_QKT_local_A4_RAM_AUTO_1R1W, 0, 32, 33, 0, 64, 32, 1, 2048</column>
 </table>
 </item>
 <item name = "FIFO"><table name="" hasTotal="1">
@@ -104,154 +82,21 @@
 </item>
 <item name = "Expression"><table name="" hasTotal="1">
 <keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
-<column name="add_ln12604_1_fu_593_p2">+, 0, 0, 22, 15, 1</column>
-<column name="add_ln12604_fu_605_p2">+, 0, 0, 15, 8, 1</column>
-<column name="add_ln12605_fu_666_p2">+, 0, 0, 15, 8, 1</column>
-<column name="icmp_ln12604_fu_587_p2">icmp, 0, 0, 23, 15, 16</column>
-<column name="icmp_ln12605_fu_611_p2">icmp, 0, 0, 16, 8, 9</column>
-<column name="v6893_fu_646_p2">icmp, 0, 0, 15, 8, 1</column>
-<column name="ap_block_state3_on_subcall_done">or, 0, 0, 2, 1, 1</column>
-<column name="ap_sync_grp_systolic_tile_QKT_fu_413_ap_done">or, 0, 0, 2, 1, 1</column>
-<column name="ap_sync_grp_systolic_tile_QKT_fu_413_ap_ready">or, 0, 0, 2, 1, 1</column>
-<column name="select_ln12604_1_fu_625_p3">select, 0, 0, 8, 1, 8</column>
-<column name="select_ln12604_fu_617_p3">select, 0, 0, 8, 1, 1</column>
+<column name="loop_dataflow_input_count">+, 0, 40, 10, 8, 1</column>
+<column name="loop_dataflow_output_count">+, 0, 40, 10, 8, 1</column>
+<column name="bound_minus_1">-, 0, 44, 11, 9, 1</column>
 </table>
 </item>
 <item name = "Multiplexer"><table name="" hasTotal="1">
 <keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
-<column name="ap_NS_fsm">43, 8, 1, 8</column>
-<column name="indvar_flatten20_fu_58">9, 2, 15, 30</column>
-<column name="local_A4_1_address0">14, 3, 6, 18</column>
-<column name="local_A4_1_ce0">14, 3, 1, 3</column>
-<column name="local_A4_1_we0">9, 2, 1, 2</column>
-<column name="local_A4_2_address0">14, 3, 6, 18</column>
-<column name="local_A4_2_ce0">14, 3, 1, 3</column>
-<column name="local_A4_2_we0">9, 2, 1, 2</column>
-<column name="local_A4_3_address0">14, 3, 6, 18</column>
-<column name="local_A4_3_ce0">14, 3, 1, 3</column>
-<column name="local_A4_3_we0">9, 2, 1, 2</column>
-<column name="local_A4_4_address0">14, 3, 6, 18</column>
-<column name="local_A4_4_ce0">14, 3, 1, 3</column>
-<column name="local_A4_4_we0">9, 2, 1, 2</column>
-<column name="local_A4_5_address0">14, 3, 6, 18</column>
-<column name="local_A4_5_ce0">14, 3, 1, 3</column>
-<column name="local_A4_5_we0">9, 2, 1, 2</column>
-<column name="local_A4_6_address0">14, 3, 6, 18</column>
-<column name="local_A4_6_ce0">14, 3, 1, 3</column>
-<column name="local_A4_6_we0">9, 2, 1, 2</column>
-<column name="local_A4_7_address0">14, 3, 6, 18</column>
-<column name="local_A4_7_ce0">14, 3, 1, 3</column>
-<column name="local_A4_7_we0">9, 2, 1, 2</column>
-<column name="local_A4_address0">14, 3, 6, 18</column>
-<column name="local_A4_ce0">14, 3, 1, 3</column>
-<column name="local_A4_we0">9, 2, 1, 2</column>
-<column name="local_B4_1_address0">14, 3, 6, 18</column>
-<column name="local_B4_1_ce0">14, 3, 1, 3</column>
-<column name="local_B4_1_we0">9, 2, 1, 2</column>
-<column name="local_B4_2_address0">14, 3, 6, 18</column>
-<column name="local_B4_2_ce0">14, 3, 1, 3</column>
-<column name="local_B4_2_we0">9, 2, 1, 2</column>
-<column name="local_B4_3_address0">14, 3, 6, 18</column>
-<column name="local_B4_3_ce0">14, 3, 1, 3</column>
-<column name="local_B4_3_we0">9, 2, 1, 2</column>
-<column name="local_B4_4_address0">14, 3, 6, 18</column>
-<column name="local_B4_4_ce0">14, 3, 1, 3</column>
-<column name="local_B4_4_we0">9, 2, 1, 2</column>
-<column name="local_B4_5_address0">14, 3, 6, 18</column>
-<column name="local_B4_5_ce0">14, 3, 1, 3</column>
-<column name="local_B4_5_we0">9, 2, 1, 2</column>
-<column name="local_B4_6_address0">14, 3, 6, 18</column>
-<column name="local_B4_6_ce0">14, 3, 1, 3</column>
-<column name="local_B4_6_we0">9, 2, 1, 2</column>
-<column name="local_B4_7_address0">14, 3, 6, 18</column>
-<column name="local_B4_7_ce0">14, 3, 1, 3</column>
-<column name="local_B4_7_we0">9, 2, 1, 2</column>
-<column name="local_B4_address0">14, 3, 6, 18</column>
-<column name="local_B4_ce0">14, 3, 1, 3</column>
-<column name="local_B4_we0">9, 2, 1, 2</column>
-<column name="mi4_fu_54">9, 2, 8, 16</column>
-<column name="ni4_fu_50">9, 2, 8, 16</column>
+<column name="loop_dataflow_input_count">9, 2, 8, 16</column>
+<column name="loop_dataflow_output_count">9, 2, 8, 16</column>
 </table>
 </item>
 <item name = "Register"><table name="" hasTotal="1">
 <keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
-<column name="ap_CS_fsm">7, 0, 7, 0</column>
-<column name="ap_sync_reg_grp_systolic_tile_QKT_fu_413_ap_done">1, 0, 1, 0</column>
-<column name="ap_sync_reg_grp_systolic_tile_QKT_fu_413_ap_ready">1, 0, 1, 0</column>
-<column name="grp_systolic_QKT_Pipeline_l_load_A_tile_ak4_l_ai4_fu_382_ap_start_reg">1, 0, 1, 0</column>
-<column name="grp_systolic_QKT_Pipeline_l_load_B_tile_bk4_l_bj4_fu_398_ap_start_reg">1, 0, 1, 0</column>
-<column name="grp_systolic_QKT_Pipeline_l_store_C_tile_sj4_l_si4_fu_497_ap_start_reg">1, 0, 1, 0</column>
-<column name="grp_systolic_tile_QKT_fu_413_ap_start_reg">1, 0, 1, 0</column>
-<column name="indvar_flatten20_fu_58">15, 0, 15, 0</column>
-<column name="local_C4_10_fu_166">32, 0, 32, 0</column>
-<column name="local_C4_11_fu_170">32, 0, 32, 0</column>
-<column name="local_C4_12_fu_174">32, 0, 32, 0</column>
-<column name="local_C4_13_fu_178">32, 0, 32, 0</column>
-<column name="local_C4_14_fu_182">32, 0, 32, 0</column>
-<column name="local_C4_15_fu_186">32, 0, 32, 0</column>
-<column name="local_C4_16_fu_190">32, 0, 32, 0</column>
-<column name="local_C4_17_fu_194">32, 0, 32, 0</column>
-<column name="local_C4_18_fu_198">32, 0, 32, 0</column>
-<column name="local_C4_19_fu_202">32, 0, 32, 0</column>
-<column name="local_C4_1_fu_130">32, 0, 32, 0</column>
-<column name="local_C4_20_fu_206">32, 0, 32, 0</column>
-<column name="local_C4_21_fu_210">32, 0, 32, 0</column>
-<column name="local_C4_22_fu_214">32, 0, 32, 0</column>
-<column name="local_C4_23_fu_218">32, 0, 32, 0</column>
-<column name="local_C4_24_fu_222">32, 0, 32, 0</column>
-<column name="local_C4_25_fu_226">32, 0, 32, 0</column>
-<column name="local_C4_26_fu_230">32, 0, 32, 0</column>
-<column name="local_C4_27_fu_234">32, 0, 32, 0</column>
-<column name="local_C4_28_fu_238">32, 0, 32, 0</column>
-<column name="local_C4_29_fu_242">32, 0, 32, 0</column>
-<column name="local_C4_2_fu_134">32, 0, 32, 0</column>
-<column name="local_C4_30_fu_246">32, 0, 32, 0</column>
-<column name="local_C4_31_fu_250">32, 0, 32, 0</column>
-<column name="local_C4_32_fu_254">32, 0, 32, 0</column>
-<column name="local_C4_33_fu_258">32, 0, 32, 0</column>
-<column name="local_C4_34_fu_262">32, 0, 32, 0</column>
-<column name="local_C4_35_fu_266">32, 0, 32, 0</column>
-<column name="local_C4_36_fu_270">32, 0, 32, 0</column>
-<column name="local_C4_37_fu_274">32, 0, 32, 0</column>
-<column name="local_C4_38_fu_278">32, 0, 32, 0</column>
-<column name="local_C4_39_fu_282">32, 0, 32, 0</column>
-<column name="local_C4_3_fu_138">32, 0, 32, 0</column>
-<column name="local_C4_40_fu_286">32, 0, 32, 0</column>
-<column name="local_C4_41_fu_290">32, 0, 32, 0</column>
-<column name="local_C4_42_fu_294">32, 0, 32, 0</column>
-<column name="local_C4_43_fu_298">32, 0, 32, 0</column>
-<column name="local_C4_44_fu_302">32, 0, 32, 0</column>
-<column name="local_C4_45_fu_306">32, 0, 32, 0</column>
-<column name="local_C4_46_fu_310">32, 0, 32, 0</column>
-<column name="local_C4_47_fu_314">32, 0, 32, 0</column>
-<column name="local_C4_48_fu_318">32, 0, 32, 0</column>
-<column name="local_C4_49_fu_322">32, 0, 32, 0</column>
-<column name="local_C4_4_fu_142">32, 0, 32, 0</column>
-<column name="local_C4_50_fu_326">32, 0, 32, 0</column>
-<column name="local_C4_51_fu_330">32, 0, 32, 0</column>
-<column name="local_C4_52_fu_334">32, 0, 32, 0</column>
-<column name="local_C4_53_fu_338">32, 0, 32, 0</column>
-<column name="local_C4_54_fu_342">32, 0, 32, 0</column>
-<column name="local_C4_55_fu_346">32, 0, 32, 0</column>
-<column name="local_C4_56_fu_350">32, 0, 32, 0</column>
-<column name="local_C4_57_fu_354">32, 0, 32, 0</column>
-<column name="local_C4_58_fu_358">32, 0, 32, 0</column>
-<column name="local_C4_59_fu_362">32, 0, 32, 0</column>
-<column name="local_C4_5_fu_146">32, 0, 32, 0</column>
-<column name="local_C4_60_fu_366">32, 0, 32, 0</column>
-<column name="local_C4_61_fu_370">32, 0, 32, 0</column>
-<column name="local_C4_62_fu_374">32, 0, 32, 0</column>
-<column name="local_C4_63_fu_378">32, 0, 32, 0</column>
-<column name="local_C4_6_fu_150">32, 0, 32, 0</column>
-<column name="local_C4_7_fu_154">32, 0, 32, 0</column>
-<column name="local_C4_8_fu_158">32, 0, 32, 0</column>
-<column name="local_C4_9_fu_162">32, 0, 32, 0</column>
-<column name="local_C4_fu_126">32, 0, 32, 0</column>
-<column name="mi4_fu_54">8, 0, 8, 0</column>
-<column name="ni4_fu_50">8, 0, 8, 0</column>
-<column name="p_mid2_reg_1351">7, 0, 10, 3</column>
-<column name="tmp_s_reg_1362">7, 0, 10, 3</column>
-<column name="v6893_reg_1357">1, 0, 1, 0</column>
+<column name="loop_dataflow_input_count">8, 0, 8, 0</column>
+<column name="loop_dataflow_output_count">8, 0, 8, 0</column>
 </table>
 </item>
 </section>
@@ -261,22 +106,43 @@
 <section name = "Interface" level="0">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="6">RTL Ports, Dir, Bits, Protocol, Source Object, C Type</keys>
+<column name="v6882_address0">out, 16, ap_memory, v6882, array</column>
+<column name="v6882_ce0">out, 1, ap_memory, v6882, array</column>
+<column name="v6882_d0">out, 32, ap_memory, v6882, array</column>
+<column name="v6882_q0">in, 32, ap_memory, v6882, array</column>
+<column name="v6882_we0">out, 1, ap_memory, v6882, array</column>
+<column name="v6882_address1">out, 16, ap_memory, v6882, array</column>
+<column name="v6882_ce1">out, 1, ap_memory, v6882, array</column>
+<column name="v6882_d1">out, 32, ap_memory, v6882, array</column>
+<column name="v6882_q1">in, 32, ap_memory, v6882, array</column>
+<column name="v6882_we1">out, 1, ap_memory, v6882, array</column>
+<column name="v6883_address0">out, 16, ap_memory, v6883, array</column>
+<column name="v6883_ce0">out, 1, ap_memory, v6883, array</column>
+<column name="v6883_d0">out, 32, ap_memory, v6883, array</column>
+<column name="v6883_q0">in, 32, ap_memory, v6883, array</column>
+<column name="v6883_we0">out, 1, ap_memory, v6883, array</column>
+<column name="v6883_address1">out, 16, ap_memory, v6883, array</column>
+<column name="v6883_ce1">out, 1, ap_memory, v6883, array</column>
+<column name="v6883_d1">out, 32, ap_memory, v6883, array</column>
+<column name="v6883_q1">in, 32, ap_memory, v6883, array</column>
+<column name="v6883_we1">out, 1, ap_memory, v6883, array</column>
+<column name="v6884_address0">out, 20, ap_memory, v6884, array</column>
+<column name="v6884_ce0">out, 1, ap_memory, v6884, array</column>
+<column name="v6884_d0">out, 32, ap_memory, v6884, array</column>
+<column name="v6884_q0">in, 32, ap_memory, v6884, array</column>
+<column name="v6884_we0">out, 1, ap_memory, v6884, array</column>
+<column name="v6884_address1">out, 20, ap_memory, v6884, array</column>
+<column name="v6884_ce1">out, 1, ap_memory, v6884, array</column>
+<column name="v6884_d1">out, 32, ap_memory, v6884, array</column>
+<column name="v6884_q1">in, 32, ap_memory, v6884, array</column>
+<column name="v6884_we1">out, 1, ap_memory, v6884, array</column>
 <column name="ap_clk">in, 1, ap_ctrl_hs, systolic_QKT, return value</column>
 <column name="ap_rst">in, 1, ap_ctrl_hs, systolic_QKT, return value</column>
 <column name="ap_start">in, 1, ap_ctrl_hs, systolic_QKT, return value</column>
 <column name="ap_done">out, 1, ap_ctrl_hs, systolic_QKT, return value</column>
-<column name="ap_idle">out, 1, ap_ctrl_hs, systolic_QKT, return value</column>
 <column name="ap_ready">out, 1, ap_ctrl_hs, systolic_QKT, return value</column>
-<column name="v6882_address0">out, 16, ap_memory, v6882, array</column>
-<column name="v6882_ce0">out, 1, ap_memory, v6882, array</column>
-<column name="v6882_q0">in, 32, ap_memory, v6882, array</column>
-<column name="v6883_address0">out, 16, ap_memory, v6883, array</column>
-<column name="v6883_ce0">out, 1, ap_memory, v6883, array</column>
-<column name="v6883_q0">in, 32, ap_memory, v6883, array</column>
-<column name="v6884_address1">out, 20, ap_memory, v6884, array</column>
-<column name="v6884_ce1">out, 1, ap_memory, v6884, array</column>
-<column name="v6884_we1">out, 1, ap_memory, v6884, array</column>
-<column name="v6884_d1">out, 32, ap_memory, v6884, array</column>
+<column name="ap_idle">out, 1, ap_ctrl_hs, systolic_QKT, return value</column>
+<column name="ap_continue">in, 1, ap_ctrl_hs, systolic_QKT, return value</column>
 </table>
 </item>
 </section>

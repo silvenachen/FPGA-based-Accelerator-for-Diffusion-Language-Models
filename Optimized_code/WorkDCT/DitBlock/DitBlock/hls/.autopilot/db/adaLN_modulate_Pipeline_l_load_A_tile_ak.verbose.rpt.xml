@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'adaLN_modulate_Pipeline_l_load_A_tile_ak'" level="0">
-<item name = "Date">Wed Feb  5 22:35:21 2025
+<item name = "Date">Mon Feb 17 20:37:33 2025
 </item>
 <item name = "Version">2023.2 (Build 4023990 on Oct 11 2023)</item>
 <item name = "Project">DitBlock</item>
@@ -80,8 +80,8 @@
 </item>
 <item name = "Expression"><table name="" hasTotal="1">
 <keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
-<column name="add_ln425_fu_83_p2">+, 0, 0, 15, 8, 1</column>
-<column name="icmp_ln425_fu_77_p2">icmp, 0, 0, 16, 8, 9</column>
+<column name="add_ln423_fu_83_p2">+, 0, 0, 15, 8, 1</column>
+<column name="icmp_ln423_fu_77_p2">icmp, 0, 0, 16, 8, 9</column>
 <column name="ap_enable_pp0">xor, 0, 0, 2, 1, 2</column>
 </table>
 </item>
@@ -99,7 +99,7 @@
 <column name="ap_CS_fsm">1, 0, 1, 0</column>
 <column name="ap_done_reg">1, 0, 1, 0</column>
 <column name="ap_enable_reg_pp0_iter1">1, 0, 1, 0</column>
-<column name="zext_ln425_reg_113">8, 0, 64, 56</column>
+<column name="zext_ln423_reg_113">8, 0, 64, 56</column>
 </table>
 </item>
 </section>

@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'allo_DDitBlock'" level="0">
-<item name = "Date">Wed Feb  5 22:35:20 2025
+<item name = "Date">Mon Feb 17 20:37:32 2025
 </item>
 <item name = "Version">2023.2 (Build 4023990 on Oct 11 2023)</item>
 <item name = "Project">DitBlock</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">10.00 ns, 7.279 ns, 2.70 ns</column>
+<column name="ap_clk">10.00 ns, 7.523 ns, 2.70 ns</column>
 </table>
 </item>
 </section>
@@ -24,7 +24,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">509271231, 509271231, 5.093 sec, 5.093 sec, 509271232, 509271232, no</column>
+<column name="">412738002, 412738002, 4.127 sec, 4.127 sec, 412738003, 412738003, no</column>
 </table>
 </item>
 <item name = "Detail">

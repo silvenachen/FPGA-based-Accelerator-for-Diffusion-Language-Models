@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'layer_norm'" level="0">
-<item name = "Date">Wed Feb  5 22:35:29 2025
+<item name = "Date">Mon Feb 17 20:37:41 2025
 </item>
 <item name = "Version">2023.2 (Build 4023990 on Oct 11 2023)</item>
 <item name = "Project">DitBlock</item>
@@ -24,23 +24,23 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">1606681, 1606681, 16.067 ms, 16.067 ms, 1606681, 1606681, no</column>
+<column name="">1603609, 1603609, 16.036 ms, 16.036 ms, 1603609, 1603609, no</column>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="grp_layer_norm_Pipeline_VITIS_LOOP_617_1_fu_90">layer_norm_Pipeline_VITIS_LOOP_617_1, 1026, 1026, 10.260 us, 10.260 us, 1026, 1026, no</column>
-<column name="grp_layer_norm_Pipeline_VITIS_LOOP_621_2_fu_96">layer_norm_Pipeline_VITIS_LOOP_621_2, 1026, 1026, 10.260 us, 10.260 us, 1026, 1026, no</column>
-<column name="grp_layer_norm_Pipeline_l_sum_i2_l_j1_fu_102">layer_norm_Pipeline_l_sum_i2_l_j1, 1048584, 1048584, 10.486 ms, 10.486 ms, 1048584, 1048584, no</column>
-<column name="grp_layer_norm_Pipeline_l_mean_var_i3_fu_110">layer_norm_Pipeline_l_mean_var_i3, 1033, 1033, 10.330 us, 10.330 us, 1033, 1033, no</column>
-<column name="grp_layer_norm_Pipeline_l_j2_fu_117">layer_norm_Pipeline_l_j2, 527, 527, 5.270 us, 5.270 us, 527, 527, no</column>
+<column name="grp_layer_norm_Pipeline_VITIS_LOOP_486_1_fu_88">layer_norm_Pipeline_VITIS_LOOP_486_1, 1026, 1026, 10.260 us, 10.260 us, 1026, 1026, no</column>
+<column name="grp_layer_norm_Pipeline_VITIS_LOOP_490_2_fu_94">layer_norm_Pipeline_VITIS_LOOP_490_2, 1026, 1026, 10.260 us, 10.260 us, 1026, 1026, no</column>
+<column name="grp_layer_norm_Pipeline_l_sum_i2_l_j1_fu_100">layer_norm_Pipeline_l_sum_i2_l_j1, 1048584, 1048584, 10.486 ms, 10.486 ms, 1048584, 1048584, no</column>
+<column name="grp_layer_norm_Pipeline_l_mean_var_i3_fu_108">layer_norm_Pipeline_l_mean_var_i3, 1033, 1033, 10.330 us, 10.330 us, 1033, 1033, no</column>
+<column name="grp_layer_norm_Pipeline_l_j2_fu_115">layer_norm_Pipeline_l_j2, 524, 524, 5.240 us, 5.240 us, 524, 524, no</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
-<column name="- l_norm_i4">556032, 556032, 543, -, -, 1024, no</column>
+<column name="- l_norm_i4">552960, 552960, 540, -, -, 1024, no</column>
 </table>
 </item>
 </section>
@@ -55,9 +55,9 @@
 <column name="DSP">-, -, -, -, -</column>
 <column name="Expression">-, -, 0, 39, -</column>
 <column name="FIFO">-, -, -, -, -</column>
-<column name="Instance">-, 16, 2312, 2291, -</column>
+<column name="Instance">-, 14, 2097, 2065, -</column>
 <column name="Memory">6, -, 0, 0, 0</column>
-<column name="Multiplexer">-, -, -, 518, -</column>
+<column name="Multiplexer">-, -, -, 536, -</column>
 <column name="Register">-, -, 314, -, -</column>
 <specialColumn name="Available SLR">1344, 3008, 869120, 434560, 320</specialColumn>
 <specialColumn name="Utilization SLR (%)">~0, ~0, ~0, ~0, 0</specialColumn>
@@ -69,17 +69,17 @@
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="1">
 <keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
-<column name="dadd_64ns_64ns_64_3_full_dsp_1_U228">dadd_64ns_64ns_64_3_full_dsp_1, 0, 3, 343, 708, 0</column>
-<column name="faddfsub_32ns_32ns_32_3_full_dsp_1_U229">faddfsub_32ns_32ns_32_3_full_dsp_1, 0, 2, 177, 226, 0</column>
-<column name="fmul_32ns_32ns_32_2_max_dsp_1_U230">fmul_32ns_32ns_32_2_max_dsp_1, 0, 3, 128, 77, 0</column>
-<column name="fpext_32ns_64_1_no_dsp_1_U226">fpext_32ns_64_1_no_dsp_1, 0, 0, 0, 0, 0</column>
-<column name="fptrunc_64ns_32_2_no_dsp_1_U225">fptrunc_64ns_32_2_no_dsp_1, 0, 0, 0, 0, 0</column>
-<column name="fsqrt_32ns_32ns_32_6_no_dsp_1_U227">fsqrt_32ns_32ns_32_6_no_dsp_1, 0, 0, 0, 0, 0</column>
-<column name="grp_layer_norm_Pipeline_VITIS_LOOP_617_1_fu_90">layer_norm_Pipeline_VITIS_LOOP_617_1, 0, 0, 13, 64, 0</column>
-<column name="grp_layer_norm_Pipeline_VITIS_LOOP_621_2_fu_96">layer_norm_Pipeline_VITIS_LOOP_621_2, 0, 0, 13, 64, 0</column>
-<column name="grp_layer_norm_Pipeline_l_j2_fu_117">layer_norm_Pipeline_l_j2, 0, 2, 427, 357, 0</column>
-<column name="grp_layer_norm_Pipeline_l_mean_var_i3_fu_110">layer_norm_Pipeline_l_mean_var_i3, 0, 6, 591, 293, 0</column>
-<column name="grp_layer_norm_Pipeline_l_sum_i2_l_j1_fu_102">layer_norm_Pipeline_l_sum_i2_l_j1, 0, 0, 620, 502, 0</column>
+<column name="dadd_64ns_64ns_64_3_full_dsp_1_U226">dadd_64ns_64ns_64_3_full_dsp_1, 0, 3, 343, 708, 0</column>
+<column name="faddfsub_32ns_32ns_32_3_full_dsp_1_U227">faddfsub_32ns_32ns_32_3_full_dsp_1, 0, 2, 177, 226, 0</column>
+<column name="fmul_32ns_32ns_32_2_max_dsp_1_U228">fmul_32ns_32ns_32_2_max_dsp_1, 0, 3, 128, 77, 0</column>
+<column name="fpext_32ns_64_1_no_dsp_1_U224">fpext_32ns_64_1_no_dsp_1, 0, 0, 0, 0, 0</column>
+<column name="fptrunc_64ns_32_2_no_dsp_1_U223">fptrunc_64ns_32_2_no_dsp_1, 0, 0, 0, 0, 0</column>
+<column name="fsqrt_32ns_32ns_32_6_no_dsp_1_U225">fsqrt_32ns_32ns_32_6_no_dsp_1, 0, 0, 0, 0, 0</column>
+<column name="grp_layer_norm_Pipeline_VITIS_LOOP_486_1_fu_88">layer_norm_Pipeline_VITIS_LOOP_486_1, 0, 0, 13, 64, 0</column>
+<column name="grp_layer_norm_Pipeline_VITIS_LOOP_490_2_fu_94">layer_norm_Pipeline_VITIS_LOOP_490_2, 0, 0, 13, 64, 0</column>
+<column name="grp_layer_norm_Pipeline_l_j2_fu_115">layer_norm_Pipeline_l_j2, 0, 0, 212, 131, 0</column>
+<column name="grp_layer_norm_Pipeline_l_mean_var_i3_fu_108">layer_norm_Pipeline_l_mean_var_i3, 0, 6, 591, 293, 0</column>
+<column name="grp_layer_norm_Pipeline_l_sum_i2_l_j1_fu_100">layer_norm_Pipeline_l_sum_i2_l_j1, 0, 0, 620, 502, 0</column>
 </table>
 </item>
 <item name = "DSP"><table name="" hasTotal="0">
@@ -99,22 +99,22 @@
 </item>
 <item name = "Expression"><table name="" hasTotal="1">
 <keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
-<column name="add_ln651_fu_162_p2">+, 0, 0, 18, 11, 1</column>
-<column name="icmp_ln651_fu_156_p2">icmp, 0, 0, 19, 11, 12</column>
+<column name="add_ln520_fu_158_p2">+, 0, 0, 18, 11, 1</column>
+<column name="icmp_ln520_fu_152_p2">icmp, 0, 0, 19, 11, 12</column>
 <column name="ap_block_state2_on_subcall_done">or, 0, 0, 2, 1, 1</column>
 </table>
 </item>
 <item name = "Multiplexer"><table name="" hasTotal="1">
 <keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
 <column name="ap_NS_fsm">113, 23, 1, 23</column>
-<column name="grp_fu_247_ce">20, 4, 1, 4</column>
-<column name="grp_fu_247_opcode">20, 4, 2, 8</column>
-<column name="grp_fu_247_p0">20, 4, 32, 128</column>
-<column name="grp_fu_247_p1">20, 4, 32, 128</column>
-<column name="grp_fu_251_ce">14, 3, 1, 3</column>
-<column name="grp_fu_251_p0">14, 3, 32, 96</column>
-<column name="grp_fu_251_p1">14, 3, 32, 96</column>
-<column name="i4_fu_50">9, 2, 11, 22</column>
+<column name="grp_fu_243_ce">20, 4, 1, 4</column>
+<column name="grp_fu_243_opcode">20, 4, 2, 8</column>
+<column name="grp_fu_243_p0">20, 4, 32, 128</column>
+<column name="grp_fu_243_p1">20, 4, 32, 128</column>
+<column name="grp_fu_247_ce">14, 3, 1, 3</column>
+<column name="grp_fu_247_p0">14, 3, 32, 96</column>
+<column name="grp_fu_247_p1">14, 3, 32, 96</column>
+<column name="i4_fu_48">9, 2, 11, 22</column>
 <column name="mean2_address0">20, 4, 10, 40</column>
 <column name="mean2_address1">14, 3, 10, 30</column>
 <column name="mean2_ce0">20, 4, 1, 4</column>
@@ -128,6 +128,8 @@
 <column name="mean_we0">20, 4, 1, 4</column>
 <column name="v262_address0">14, 3, 19, 57</column>
 <column name="v262_ce0">14, 3, 1, 3</column>
+<column name="v262_ce1">9, 2, 1, 2</column>
+<column name="v262_we1">9, 2, 1, 2</column>
 <column name="var_address0">14, 3, 10, 30</column>
 <column name="var_ce0">14, 3, 1, 3</column>
 <column name="var_we0">9, 2, 1, 2</column>
@@ -135,21 +137,21 @@
 </item>
 <item name = "Register"><table name="" hasTotal="1">
 <keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
-<column name="add_reg_227">64, 0, 64, 0</column>
+<column name="add_reg_223">64, 0, 64, 0</column>
 <column name="ap_CS_fsm">22, 0, 22, 0</column>
-<column name="conv_reg_222">64, 0, 64, 0</column>
-<column name="grp_layer_norm_Pipeline_VITIS_LOOP_617_1_fu_90_ap_start_reg">1, 0, 1, 0</column>
-<column name="grp_layer_norm_Pipeline_VITIS_LOOP_621_2_fu_96_ap_start_reg">1, 0, 1, 0</column>
-<column name="grp_layer_norm_Pipeline_l_j2_fu_117_ap_start_reg">1, 0, 1, 0</column>
-<column name="grp_layer_norm_Pipeline_l_mean_var_i3_fu_110_ap_start_reg">1, 0, 1, 0</column>
-<column name="grp_layer_norm_Pipeline_l_sum_i2_l_j1_fu_102_ap_start_reg">1, 0, 1, 0</column>
-<column name="i4_fu_50">11, 0, 11, 0</column>
-<column name="mean_load_reg_212">32, 0, 32, 0</column>
-<column name="tmp_s_reg_242">10, 0, 19, 9</column>
-<column name="trunc_ln651_reg_194">10, 0, 10, 0</column>
-<column name="v1_reg_237">32, 0, 32, 0</column>
-<column name="v_reg_232">32, 0, 32, 0</column>
-<column name="var_load_reg_217">32, 0, 32, 0</column>
+<column name="conv_reg_218">64, 0, 64, 0</column>
+<column name="grp_layer_norm_Pipeline_VITIS_LOOP_486_1_fu_88_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_layer_norm_Pipeline_VITIS_LOOP_490_2_fu_94_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_layer_norm_Pipeline_l_j2_fu_115_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_layer_norm_Pipeline_l_mean_var_i3_fu_108_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_layer_norm_Pipeline_l_sum_i2_l_j1_fu_100_ap_start_reg">1, 0, 1, 0</column>
+<column name="i4_fu_48">11, 0, 11, 0</column>
+<column name="mean_load_reg_208">32, 0, 32, 0</column>
+<column name="tmp_s_reg_238">10, 0, 19, 9</column>
+<column name="trunc_ln520_reg_190">10, 0, 10, 0</column>
+<column name="v1_reg_233">32, 0, 32, 0</column>
+<column name="v_reg_228">32, 0, 32, 0</column>
+<column name="var_load_reg_213">32, 0, 32, 0</column>
 </table>
 </item>
 </section>
@@ -168,10 +170,10 @@
 <column name="v262_address0">out, 19, ap_memory, v262, array</column>
 <column name="v262_ce0">out, 1, ap_memory, v262, array</column>
 <column name="v262_q0">in, 32, ap_memory, v262, array</column>
-<column name="v265_address1">out, 19, ap_memory, v265, array</column>
-<column name="v265_ce1">out, 1, ap_memory, v265, array</column>
-<column name="v265_we1">out, 1, ap_memory, v265, array</column>
-<column name="v265_d1">out, 32, ap_memory, v265, array</column>
+<column name="v262_address1">out, 19, ap_memory, v262, array</column>
+<column name="v262_ce1">out, 1, ap_memory, v262, array</column>
+<column name="v262_we1">out, 1, ap_memory, v262, array</column>
+<column name="v262_d1">out, 32, ap_memory, v262, array</column>
 </table>
 </item>
 </section>

@@ -46,13 +46,13 @@
 <SummaryOfViolations>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:9612</SourceLocation>
+<SourceLocation>/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:9481</SourceLocation>
 <SummaryOfLoopViolations>
 <l_rope_split_2_i7_l_j5>
 <Name>l_rope_split_2_i7_l_j5</Name>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:9611</SourceLocation>
+<SourceLocation>/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:9480</SourceLocation>
 </l_rope_split_2_i7_l_j5>
 </SummaryOfLoopViolations>
 </SummaryOfViolations>
@@ -187,8 +187,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>tmp_107</name>
-<Object>tmp_107</Object>
+<name>tmp_94</name>
+<Object>tmp_94</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>

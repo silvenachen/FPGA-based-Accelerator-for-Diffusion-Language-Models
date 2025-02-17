@@ -1,10 +1,5 @@
 # This script segment is generated automatically by AutoPilot
 
-if {${::AESL::PGuard_rtl_comp_handler}} {
-	::AP::rtl_comp_handler allo_DDitBlock_systolic_Q_local_A1_RAM_AUTO_1R1W BINDTYPE {storage} TYPE {ram} IMPL {auto} LATENCY 2 ALLOW_PRAGMA 1
-}
-
-
 # clear list
 if {${::AESL::PGuard_autoexp_gen}} {
     cg_default_interface_gen_dc_begin
@@ -16,14 +11,14 @@ if {${::AESL::PGuard_autoexp_gen}} {
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 1133 \
+    id 1284 \
     name v1931 \
     reset_level 1 \
     sync_rst true \
     dir I \
     corename v1931 \
     op interface \
-    ports { v1931_address0 { O 19 vector } v1931_ce0 { O 1 bit } v1931_q0 { I 32 vector } } \
+    ports { v1931_address0 { O 19 vector } v1931_ce0 { O 1 bit } v1931_d0 { O 32 vector } v1931_q0 { I 32 vector } v1931_we0 { O 1 bit } v1931_address1 { O 19 vector } v1931_ce1 { O 1 bit } v1931_d1 { O 32 vector } v1931_q1 { I 32 vector } v1931_we1 { O 1 bit } } \
 } "
 } else {
 puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'v1931'"
@@ -35,14 +30,14 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 1134 \
+    id 1285 \
     name v1932 \
     reset_level 1 \
     sync_rst true \
     dir I \
     corename v1932 \
     op interface \
-    ports { v1932_address0 { O 18 vector } v1932_ce0 { O 1 bit } v1932_q0 { I 32 vector } } \
+    ports { v1932_address0 { O 18 vector } v1932_ce0 { O 1 bit } v1932_d0 { O 32 vector } v1932_q0 { I 32 vector } v1932_we0 { O 1 bit } v1932_address1 { O 18 vector } v1932_ce1 { O 1 bit } v1932_d1 { O 32 vector } v1932_q1 { I 32 vector } v1932_we1 { O 1 bit } } \
 } "
 } else {
 puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'v1932'"
@@ -54,14 +49,14 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 1135 \
+    id 1286 \
     name v1933 \
     reset_level 1 \
     sync_rst true \
     dir O \
     corename v1933 \
     op interface \
-    ports { v1933_address1 { O 19 vector } v1933_ce1 { O 1 bit } v1933_we1 { O 1 bit } v1933_d1 { O 32 vector } } \
+    ports { v1933_address0 { O 19 vector } v1933_ce0 { O 1 bit } v1933_d0 { O 32 vector } v1933_q0 { I 32 vector } v1933_we0 { O 1 bit } v1933_address1 { O 19 vector } v1933_ce1 { O 1 bit } v1933_d1 { O 32 vector } v1933_q1 { I 32 vector } v1933_we1 { O 1 bit } } \
 } "
 } else {
 puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'v1933'"
@@ -79,7 +74,7 @@ eval "cg_default_interface_gen_dc { \
     sync_rst true \
     corename ap_ctrl \
     op interface \
-    ports { ap_start { I 1 bit } ap_ready { O 1 bit } ap_done { O 1 bit } ap_idle { O 1 bit } } \
+    ports { ap_start { I 1 bit } ap_ready { O 1 bit } ap_done { O 1 bit } ap_idle { O 1 bit } ap_continue { I 1 bit } } \
 } "
 }
 

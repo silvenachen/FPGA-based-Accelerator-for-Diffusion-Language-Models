@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'RoPE_Pipeline_l_rotary_1_i8_l_j6'
 ================================================================
-* Date:           Wed Feb  5 22:35:54 2025
+* Date:           Mon Feb 17 20:38:06 2025
 
 * Version:        2023.2 (Build 4023990 on Oct 11 2023)
 * Project:        DitBlock
@@ -89,14 +89,14 @@
     +---------------------------+----------+----+---+----+------------+------------+
     |       Variable Name       | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
     +---------------------------+----------+----+---+----+------------+------------+
-    |add_ln9629_1_fu_167_p2     |         +|   0|  0|  23|          16|           1|
-    |add_ln9629_fu_179_p2       |         +|   0|  0|  18|          11|           1|
-    |add_ln9630_fu_237_p2       |         +|   0|  0|  13|           6|           1|
-    |add_ln9631_fu_223_p2       |         +|   0|  0|  22|          15|          15|
-    |icmp_ln9629_fu_161_p2      |      icmp|   0|  0|  24|          16|          17|
-    |icmp_ln9630_fu_185_p2      |      icmp|   0|  0|  14|           6|           7|
-    |select_ln9629_1_fu_199_p3  |    select|   0|  0|  11|           1|          11|
-    |select_ln9629_fu_191_p3    |    select|   0|  0|   6|           1|           1|
+    |add_ln9498_1_fu_167_p2     |         +|   0|  0|  23|          16|           1|
+    |add_ln9498_fu_179_p2       |         +|   0|  0|  18|          11|           1|
+    |add_ln9499_fu_237_p2       |         +|   0|  0|  13|           6|           1|
+    |add_ln9500_fu_223_p2       |         +|   0|  0|  22|          15|          15|
+    |icmp_ln9498_fu_161_p2      |      icmp|   0|  0|  24|          16|          17|
+    |icmp_ln9499_fu_185_p2      |      icmp|   0|  0|  14|           6|           7|
+    |select_ln9498_1_fu_199_p3  |    select|   0|  0|  11|           1|          11|
+    |select_ln9498_fu_191_p3    |    select|   0|  0|   6|           1|           1|
     |ap_enable_pp0              |       xor|   0|  0|   2|           1|           2|
     +---------------------------+----------+----+---+----+------------+------------+
     |Total                      |          |   0|  0| 133|          73|          56|
@@ -110,7 +110,7 @@
     |ap_enable_reg_pp0_iter1  |   9|          2|    1|          2|
     |ap_enable_reg_pp0_iter2  |   9|          2|    1|          2|
     |i8_fu_54                 |   9|          2|   11|         22|
-    |indvar_flatten27_fu_58   |   9|          2|   16|         32|
+    |indvar_flatten13_fu_58   |   9|          2|   16|         32|
     |j6_fu_50                 |   9|          2|    6|         12|
     +-------------------------+----+-----------+-----+-----------+
     |Total                    |  54|         12|   36|         72|
@@ -135,13 +135,13 @@
     |ap_loop_exit_ready_pp0_iter5_reg  |   1|   0|    1|          0|
     |ap_loop_exit_ready_pp0_iter6_reg  |   1|   0|    1|          0|
     |i8_fu_54                          |  11|   0|   11|          0|
-    |indvar_flatten27_fu_58            |  16|   0|   16|          0|
+    |indvar_flatten13_fu_58            |  16|   0|   16|          0|
     |j6_fu_50                          |   6|   0|    6|          0|
     |v5245_reg_328                     |  32|   0|   32|          0|
     |v5248_reg_333                     |  32|   0|   32|          0|
     |v5249_reg_338                     |  32|   0|   32|          0|
-    |zext_ln9631_1_reg_283             |  15|   0|   64|         49|
-    |zext_ln9631_1_reg_283             |  64|  32|   64|         49|
+    |zext_ln9500_1_reg_283             |  15|   0|   64|         49|
+    |zext_ln9500_1_reg_283             |  64|  32|   64|         49|
     +----------------------------------+----+----+-----+-----------+
     |Total                             | 222|  32|  271|         98|
     +----------------------------------+----+----+-----+-----------+
@@ -161,19 +161,19 @@
 |ap_done              |  out|    1|  ap_ctrl_hs|  RoPE_Pipeline_l_rotary_1_i8_l_j6|  return value|
 |ap_idle              |  out|    1|  ap_ctrl_hs|  RoPE_Pipeline_l_rotary_1_i8_l_j6|  return value|
 |ap_ready             |  out|    1|  ap_ctrl_hs|  RoPE_Pipeline_l_rotary_1_i8_l_j6|  return value|
-|grp_fu_197_p_din0    |  out|   32|  ap_ctrl_hs|  RoPE_Pipeline_l_rotary_1_i8_l_j6|  return value|
-|grp_fu_197_p_din1    |  out|   32|  ap_ctrl_hs|  RoPE_Pipeline_l_rotary_1_i8_l_j6|  return value|
-|grp_fu_197_p_opcode  |  out|    1|  ap_ctrl_hs|  RoPE_Pipeline_l_rotary_1_i8_l_j6|  return value|
-|grp_fu_197_p_dout0   |   in|   32|  ap_ctrl_hs|  RoPE_Pipeline_l_rotary_1_i8_l_j6|  return value|
-|grp_fu_197_p_ce      |  out|    1|  ap_ctrl_hs|  RoPE_Pipeline_l_rotary_1_i8_l_j6|  return value|
-|grp_fu_201_p_din0    |  out|   32|  ap_ctrl_hs|  RoPE_Pipeline_l_rotary_1_i8_l_j6|  return value|
-|grp_fu_201_p_din1    |  out|   32|  ap_ctrl_hs|  RoPE_Pipeline_l_rotary_1_i8_l_j6|  return value|
-|grp_fu_201_p_dout0   |   in|   32|  ap_ctrl_hs|  RoPE_Pipeline_l_rotary_1_i8_l_j6|  return value|
-|grp_fu_201_p_ce      |  out|    1|  ap_ctrl_hs|  RoPE_Pipeline_l_rotary_1_i8_l_j6|  return value|
-|grp_fu_205_p_din0    |  out|   32|  ap_ctrl_hs|  RoPE_Pipeline_l_rotary_1_i8_l_j6|  return value|
-|grp_fu_205_p_din1    |  out|   32|  ap_ctrl_hs|  RoPE_Pipeline_l_rotary_1_i8_l_j6|  return value|
-|grp_fu_205_p_dout0   |   in|   32|  ap_ctrl_hs|  RoPE_Pipeline_l_rotary_1_i8_l_j6|  return value|
-|grp_fu_205_p_ce      |  out|    1|  ap_ctrl_hs|  RoPE_Pipeline_l_rotary_1_i8_l_j6|  return value|
+|grp_fu_183_p_din0    |  out|   32|  ap_ctrl_hs|  RoPE_Pipeline_l_rotary_1_i8_l_j6|  return value|
+|grp_fu_183_p_din1    |  out|   32|  ap_ctrl_hs|  RoPE_Pipeline_l_rotary_1_i8_l_j6|  return value|
+|grp_fu_183_p_opcode  |  out|    1|  ap_ctrl_hs|  RoPE_Pipeline_l_rotary_1_i8_l_j6|  return value|
+|grp_fu_183_p_dout0   |   in|   32|  ap_ctrl_hs|  RoPE_Pipeline_l_rotary_1_i8_l_j6|  return value|
+|grp_fu_183_p_ce      |  out|    1|  ap_ctrl_hs|  RoPE_Pipeline_l_rotary_1_i8_l_j6|  return value|
+|grp_fu_187_p_din0    |  out|   32|  ap_ctrl_hs|  RoPE_Pipeline_l_rotary_1_i8_l_j6|  return value|
+|grp_fu_187_p_din1    |  out|   32|  ap_ctrl_hs|  RoPE_Pipeline_l_rotary_1_i8_l_j6|  return value|
+|grp_fu_187_p_dout0   |   in|   32|  ap_ctrl_hs|  RoPE_Pipeline_l_rotary_1_i8_l_j6|  return value|
+|grp_fu_187_p_ce      |  out|    1|  ap_ctrl_hs|  RoPE_Pipeline_l_rotary_1_i8_l_j6|  return value|
+|grp_fu_191_p_din0    |  out|   32|  ap_ctrl_hs|  RoPE_Pipeline_l_rotary_1_i8_l_j6|  return value|
+|grp_fu_191_p_din1    |  out|   32|  ap_ctrl_hs|  RoPE_Pipeline_l_rotary_1_i8_l_j6|  return value|
+|grp_fu_191_p_dout0   |   in|   32|  ap_ctrl_hs|  RoPE_Pipeline_l_rotary_1_i8_l_j6|  return value|
+|grp_fu_191_p_ce      |  out|    1|  ap_ctrl_hs|  RoPE_Pipeline_l_rotary_1_i8_l_j6|  return value|
 |v5223_address0       |  out|   15|   ap_memory|                             v5223|         array|
 |v5223_ce0            |  out|    1|   ap_memory|                             v5223|         array|
 |v5223_q0             |   in|   32|   ap_memory|                             v5223|         array|

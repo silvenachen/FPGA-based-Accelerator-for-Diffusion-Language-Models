@@ -52,7 +52,7 @@ if {${::AESL::PGuard_autoexp_gen}} {
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 3089 \
+    id 3545 \
     name t_in \
     type other \
     dir I \

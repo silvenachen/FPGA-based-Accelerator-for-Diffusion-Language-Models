@@ -166,7 +166,7 @@ if {${::AESL::PGuard_rtl_comp_handler}} {
 
 
 if {${::AESL::PGuard_rtl_comp_handler}} {
-	::AP::rtl_comp_handler allo_DDitBlock_start_for_systolic_tile_modulate_Loop_l_data_drain_k9_proc23_U0 BINDTYPE {storage} TYPE {fifo} IMPL {srl} ALLOW_PRAGMA 1 INSTNAME {start_for_systolic_tile_modulate_Loop_l_data_drain_k9_proc23_U0_U}
+	::AP::rtl_comp_handler allo_DDitBlock_start_for_systolic_tile_modulate_Loop_l_data_drain_k9_proc32_U0 BINDTYPE {storage} TYPE {fifo} IMPL {srl} ALLOW_PRAGMA 1 INSTNAME {start_for_systolic_tile_modulate_Loop_l_data_drain_k9_proc32_U0_U}
 }
 
 

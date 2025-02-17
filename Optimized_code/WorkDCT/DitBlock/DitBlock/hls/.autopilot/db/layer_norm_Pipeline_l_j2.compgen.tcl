@@ -17,14 +17,14 @@ if {${::AESL::PGuard_autoexp_gen}} {
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 221 \
+    id 220 \
     name v262 \
     reset_level 1 \
     sync_rst true \
-    dir I \
+    dir IO \
     corename v262 \
     op interface \
-    ports { v262_address0 { O 19 vector } v262_ce0 { O 1 bit } v262_q0 { I 32 vector } } \
+    ports { v262_address0 { O 19 vector } v262_ce0 { O 1 bit } v262_q0 { I 32 vector } v262_address1 { O 19 vector } v262_ce1 { O 1 bit } v262_we1 { O 1 bit } v262_d1 { O 32 vector } } \
 } "
 } else {
 puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'v262'"
@@ -32,44 +32,25 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 }
 
 
-# XIL_BRAM:
-if {${::AESL::PGuard_autoexp_gen}} {
-if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
-eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 222 \
-    name v265 \
-    reset_level 1 \
-    sync_rst true \
-    dir O \
-    corename v265 \
-    op interface \
-    ports { v265_address1 { O 19 vector } v265_ce1 { O 1 bit } v265_we1 { O 1 bit } v265_d1 { O 32 vector } } \
-} "
-} else {
-puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'v265'"
-}
-}
-
-
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 220 \
-    name zext_ln655 \
+    id 219 \
+    name zext_ln524 \
     type other \
     dir I \
     reset_level 1 \
     sync_rst true \
-    corename dc_zext_ln655 \
+    corename dc_zext_ln524 \
     op interface \
-    ports { zext_ln655 { I 19 vector } } \
+    ports { zext_ln524 { I 19 vector } } \
 } "
 }
 
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 223 \
+    id 221 \
     name v293 \
     type other \
     dir I \
@@ -84,7 +65,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 224 \
+    id 222 \
     name v298 \
     type other \
     dir I \

@@ -458,19 +458,9 @@ void adaLN_modulate(
 //   float v238[3072],
   float v238[512],    // adaLN_bias
 
-  float v239[512]   // v239 is the output vector
-//   float v240[512],
-//   float v241[512],
-//   float v242[512],
-//   float v243[512],
-//   float v244[512]
+  float v239[512]   // output vector
 ) {	// L357
-//   float Y[1][3072];	// L360
-//   for (int v246 = 0; v246 < 1; v246++) {	// L361
-//     for (int v247 = 0; v247 < 3072; v247++) {	// L361
-//       Y[v246][v247] = 0.000000;	// L361
-//     }
-//   }
+
   float Y[1][512];
   for (int v246 = 0; v246 < 1; v246++) {	// L361
     for (int v247 = 0; v247 < 512; v247++) {	// L361
@@ -479,139 +469,18 @@ void adaLN_modulate(
   }
   // (1, 128) * (128, 512) -> 1, 512
   systolic_modulate(v236, v237, Y);	// L362
-//   float Z[3072];	// L363
-//   for (int v249 = 0; v249 < 3072; v249++) {	// L364
-//     Z[v249] = 0.000000;	// L364
-//   }
 
   // modified bias add
   l_bias_add: for(int i = 0; i < 512; i++) {
       Y[0][i] += v238[i];
       v239[i] = Y[0][i];
   }
-
-//   l_bias_add_i: for (int i = 0; i < 1; i++) {	// L365
-//     l_j: for (int j = 0; j < 512; j++) {	// L366
-//       float v252 = Y[i][j];	// L367
-//       float v253 = v238[j];	// L368
-//       float v254 = v252 + v253;	// L369
-//       Z[j] = v254;	// L370
-//     }
-//   }
-//   l_slice_i1: for (int i1 = 0; i1 < 512; i1++) {	// L373
-//     float v256 = Z[i1];	// L374
-//     v239[i1] = v256;	// L375
-//     float v257 = Z[(i1 + 512)];	// L376
-//     v240[i1] = v257;	// L377
-//     float v258 = Z[(i1 + 1024)];	// L378
-//     v241[i1] = v258;	// L379
-//     float v259 = Z[(i1 + 1536)];	// L380
-//     v242[i1] = v259;	// L381
-//     float v260 = Z[(i1 + 2048)];	// L382
-//     v243[i1] = v260;	// L383
-//     float v261 = Z[(i1 + 2560)];	// L384
-//     v244[i1] = v261;	// L385
-//   }
 }
 
 
-
-// void systolic_modulate(
-//   float v217[1][128],
-//   float v218[128][3072],
-//   float v219[1][3072]
-// ) {	// L322
-//   float local_A[1][128];	// L323
-//   float local_B[128][8];	// L324
-//   #pragma HLS array_partition variable=local_B complete dim=2
-
-//   float local_C[1][8];	// L325
-//   #pragma HLS array_partition variable=local_C complete dim=2
-
-//   l_outer_tile_mi: for (int mi = 0; mi < 1; mi++) {	// L326
-//     l_ni: for (int ni = 0; ni < 384; ni++) {	// L327
-//     #pragma HLS dataflow
-//       l_load_A_tile_ak: for (int ak = 0; ak < 128; ak++) {	// L328
-//       #pragma HLS pipeline II=1
-//         l_ai: for (int ai = 0; ai < 1; ai++) {	// L329
-//           ap_int<33> v227 = ni;	// L330
-//           bool v228 = v227 == 0;	// L333
-//           if (v228) {	// L334
-//             float v229 = v217[(mi + ai)][ak];	// L335
-//             local_A[ai][ak] = v229;	// L336
-//           }
-//         }
-//       }
-//       l_load_B_tile_bk: for (int bk = 0; bk < 128; bk++) {	// L340
-//         l_bj: for (int bj = 0; bj < 8; bj++) {	// L341
-//         #pragma HLS pipeline II=1
-//           float v232 = v218[bk][((ni * 8) + bj)];	// L342
-//           local_B[bk][bj] = v232;	// L343
-//         }
-//       }
-//       systolic_tile_modulate(local_A, local_B, local_C);	// L346
-//       l_store_C_tile_sj: for (int sj = 0; sj < 8; sj++) {	// L347
-//       #pragma HLS pipeline II=1
-//         l_si: for (int si = 0; si < 1; si++) {	// L348
-//           float v235 = local_C[si][sj];	// L349
-//           v219[(mi + si)][((ni * 8) + sj)] = v235;	// L350
-//         }
-//       }
-//     }
-//   }
-// }
-
-// void adaLN_modulate(
-//   float v236[1][128],
-//   float v237[128][3072],
-//   float v238[3072],
-//   float v239[512],
-//   float v240[512],
-//   float v241[512],
-//   float v242[512],
-//   float v243[512],
-//   float v244[512]
-// ) {	// L357
-//   float Y[1][3072];	// L360
-//   for (int v246 = 0; v246 < 1; v246++) {	// L361
-//     for (int v247 = 0; v247 < 3072; v247++) {	// L361
-//       Y[v246][v247] = 0.000000;	// L361
-//     }
-//   }
-//   systolic_modulate(v236, v237, Y);	// L362
-//   float Z[3072];	// L363
-//   for (int v249 = 0; v249 < 3072; v249++) {	// L364
-//     Z[v249] = 0.000000;	// L364
-//   }
-//   l_bias_add_i: for (int i = 0; i < 1; i++) {	// L365
-//     l_j: for (int j = 0; j < 3072; j++) {	// L366
-//       float v252 = Y[i][j];	// L367
-//       float v253 = v238[j];	// L368
-//       float v254 = v252 + v253;	// L369
-//       Z[j] = v254;	// L370
-//     }
-//   }
-//   l_slice_i1: for (int i1 = 0; i1 < 512; i1++) {	// L373
-//     float v256 = Z[i1];	// L374
-//     v239[i1] = v256;	// L375
-//     float v257 = Z[(i1 + 512)];	// L376
-//     v240[i1] = v257;	// L377
-//     float v258 = Z[(i1 + 1024)];	// L378
-//     v241[i1] = v258;	// L379
-//     float v259 = Z[(i1 + 1536)];	// L380
-//     v242[i1] = v259;	// L381
-//     float v260 = Z[(i1 + 2048)];	// L382
-//     v243[i1] = v260;	// L383
-//     float v261 = Z[(i1 + 2560)];	// L384
-//     v244[i1] = v261;	// L385
-//   }
-// }
-
 void layer_norm(
-  float v262[1024][512],
-//   float v263[512],
-//   float v264[512],
-  float v265[1024][512]
+  float v262[1024][512]
+//   float v265[1024][512]
 ) {	// L389
   float mean[1024];	// L391
   for (int v267 = 0; v267 < 1024; v267++) {	// L393
@@ -652,19 +521,17 @@ void layer_norm(
     l_j2: for (int j2 = 0; j2 < 512; j2++) {	// L426
 
     //   float v291 = v263[j2];	// L427
-      float v291 = 1.0;
       float v292 = v262[i4][j2];	// L428
       float v293 = mean[i4];	// L429
       float v294 = v292 - v293;	// L430
-      float v295 = v291 * v294;	// L431
+      float v295 = v294;	// L431
       float v296 = var[i4];	// L432
       float v297 = v296 + 0.000010;	// L434
       float v298 = sqrt(v297);	// L435
       float v299 = v295 / v298;	// L436
-      float v300 = 0.0;
-    //   float v300 = v264[j2];	// L437
-      float v301 = v299 + v300;	// L438
-      v265[i4][j2] = v301;	// L439
+      float v301 = v299;	// L438
+    //   v265[i4][j2] = v301;	// L439
+      v262[i4][j2] = v301;
     }
   }
 }
@@ -672,8 +539,8 @@ void layer_norm(
 void modulate_fused(
   float v302[1024][512],
   float v303[512],
-  float v304[512],
-  float v305[1024][512]
+  float v304[512]
+//   float v305[1024][512]
 ) {	// L444
   l_m_fused_i5: for (int i5 = 0; i5 < 1024; i5++) {	// L446
     l_j3: for (int j3 = 0; j3 < 512; j3++) {	// L447
@@ -683,7 +550,7 @@ void modulate_fused(
       float v311 = v308 * v310;	// L453
       float v312 = v304[j3];	// L454
       float v313 = v311 + v312;	// L455
-      v305[i5][j3] = v313;	// L456
+      v302[i5][j3] = v313;	// L456
     }
   }
 }
@@ -9598,8 +9465,8 @@ void systolic_V(
 void RoPE(
   float v5222[1024][512],
   float v5223[1024][32],
-  float v5224[1024][32],
-  float v5225[1024][512]
+  float v5224[1024][32]
+//   float v5225[1024][512]
 ) {	// L6893
   l_S_h_0_h: for (int h = 0; h < 8; h++) {	// L6895
     float X_1_h[1024][32];	// L6896
@@ -9617,17 +9484,17 @@ void RoPE(
       }
     }
     float X_1_rotary[1024][32];	// L6912
-    for (int v5236 = 0; v5236 < 1024; v5236++) {	// L6913
-      for (int v5237 = 0; v5237 < 32; v5237++) {	// L6913
-        X_1_rotary[v5236][v5237] = 0.000000;	// L6913
-      }
-    }
+    // for (int v5236 = 0; v5236 < 1024; v5236++) {	// L6913
+    //   for (int v5237 = 0; v5237 < 32; v5237++) {	// L6913
+    //     X_1_rotary[v5236][v5237] = 0.000000;	// L6913
+    //   }
+    // }
     float X_2_rotary[1024][32];	// L6914
-    for (int v5239 = 0; v5239 < 1024; v5239++) {	// L6915
-      for (int v5240 = 0; v5240 < 32; v5240++) {	// L6915
-        X_2_rotary[v5239][v5240] = 0.000000;	// L6915
-      }
-    }
+    // for (int v5239 = 0; v5239 < 1024; v5239++) {	// L6915
+    //   for (int v5240 = 0; v5240 < 32; v5240++) {	// L6915
+    //     X_2_rotary[v5239][v5240] = 0.000000;	// L6915
+    //   }
+    // }
     l_rotary_1_i8: for (int i8 = 0; i8 < 1024; i8++) {	// L6916
       l_j6: for (int j6 = 0; j6 < 32; j6++) {	// L6917
         float v5243 = v5223[i8][j6];	// L6918
@@ -9655,13 +9522,13 @@ void RoPE(
     l_rotary_merge_1_i10: for (int i10 = 0; i10 < 1024; i10++) {	// L6940
       l_j8: for (int j8 = 0; j8 < 32; j8++) {	// L6941
         float v5261 = X_1_rotary[i10][j8];	// L6942
-        v5225[i10][((h * 64) + j8)] = v5261;	// L6943
+        v5222[i10][((h * 64) + j8)] = v5261;	// L6943
       }
     }
     l_rotary_merge_2_i11: for (int i11 = 0; i11 < 1024; i11++) {	// L6946
       l_j9: for (int j9 = 0; j9 < 32; j9++) {	// L6947
         float v5264 = X_2_rotary[i11][j9];	// L6948
-        v5225[i11][(((h * 64) + j9) + 32)] = v5264;	// L6949
+        v5222[i11][(((h * 64) + j9) + 32)] = v5264;	// L6949
       }
     }
   }
@@ -12636,11 +12503,56 @@ void systolic_QKT(
   }
 }
 
+// void sft_head(
+//   float v6901[1024][1024],  // input matrix
+//   float v6902[1024][1024]   // output matrix
+// ) {	// L9099
+//   float E[1024][1024];	// L9101
+//   float M[1024];	// L9104
+//   for (int v6905 = 0; v6905 < 1024; v6905++) {	// L9105
+//     M[v6905] = -10000.000000;	// L9105
+//   }
+//   float S[1024];	// L9106
+//   for (int v6907 = 0; v6907 < 1024; v6907++) {	// L9108
+//     S[v6907] = 0.000000;	// L9108
+//   }
+//   l_row_max_i12: for (int i12 = 0; i12 < 1024; i12++) {	// L9109
+//     l_j10: for (int j10 = 0; j10 < 1024; j10++) {	// L9110
+//       float v6910 = v6901[i12][j10];	// L9111
+//       float v6911 = M[i12];	// L9112
+//       bool v6912 = v6910 > v6911;	// L9113
+//       if (v6912) {	// L9114
+//         float v6913 = v6901[i12][j10];	// L9115
+//         M[i12] = v6913;	// L9116
+//       }
+//     }
+//   }
+//   l_exp_sum_i13: for (int i13 = 0; i13 < 1024; i13++) {	// L9120
+//     l_j11: for (int j11 = 0; j11 < 1024; j11++) {	// L9121
+//       float v6916 = v6901[i13][j11];	// L9122
+//       float v6917 = M[i13];	// L9123
+//       float v6918 = v6916 - v6917;	// L9124
+//       float v6919 = exp(v6918);	// L9125
+//       E[i13][j11] = v6919;	// L9126
+//       float v6920 = E[i13][j11];	// L9127
+//       float v6921 = S[i13];	// L9128
+//       float v6922 = v6921 + v6920;	// L9129
+//       S[i13] = v6922;	// L9130
+//     }
+//   }
+//   l_update_i14: for (int i14 = 0; i14 < 1024; i14++) {	// L9133
+//     l_j12: for (int j12 = 0; j12 < 1024; j12++) {	// L9134
+//       float v6925 = E[i14][j12];	// L9135
+//       float v6926 = S[i14];	// L9136
+//       float v6927 = v6925 / v6926;	// L9137
+//       v6902[i14][j12] = v6927;	// L9138
+//     }
+//   }
+// }
+
 void sft_head(
-  float v6901[1024][1024],
-  float v6902[1024][1024]
+  float v6901[1024][1024]  // input matrix
 ) {	// L9099
-  float E[1024][1024];	// L9101
   float M[1024];	// L9104
   for (int v6905 = 0; v6905 < 1024; v6905++) {	// L9105
     M[v6905] = -10000.000000;	// L9105
@@ -12666,8 +12578,8 @@ void sft_head(
       float v6917 = M[i13];	// L9123
       float v6918 = v6916 - v6917;	// L9124
       float v6919 = exp(v6918);	// L9125
-      E[i13][j11] = v6919;	// L9126
-      float v6920 = E[i13][j11];	// L9127
+      v6901[i13][j11] = v6919;	// L9126
+      float v6920 = v6919;	// L9127
       float v6921 = S[i13];	// L9128
       float v6922 = v6921 + v6920;	// L9129
       S[i13] = v6922;	// L9130
@@ -12675,10 +12587,10 @@ void sft_head(
   }
   l_update_i14: for (int i14 = 0; i14 < 1024; i14++) {	// L9133
     l_j12: for (int j12 = 0; j12 < 1024; j12++) {	// L9134
-      float v6925 = E[i14][j12];	// L9135
+      float v6925 = v6901[i14][j12];	// L9135
       float v6926 = S[i14];	// L9136
       float v6927 = v6925 / v6926;	// L9137
-      v6902[i14][j12] = v6927;	// L9138
+      v6901[i14][j12] = v6927;	// L9138
     }
   }
 }
@@ -15672,38 +15584,49 @@ void scaled_dot_product_attention(
         V_h[i15][j13] = v8576;	// L11300
       }
     }
-    float C_h[1024][64];	// L11305
-    for (int v8578 = 0; v8578 < 1024; v8578++) {	// L11306
-      for (int v8579 = 0; v8579 < 64; v8579++) {	// L11306
-        C_h[v8578][v8579] = 0.000000;	// L11306
-      }
-    }
+    // float C_h[1024][64];	// L11305
+    // for (int v8578 = 0; v8578 < 1024; v8578++) {	// L11306
+    //   for (int v8579 = 0; v8579 < 64; v8579++) {	// L11306
+    //     C_h[v8578][v8579] = 0.000000;	// L11306
+    //   }
+    // }
     float Y1[1024][1024];	// L11307
+    #pragma HLS bind_storage variable=Y1 type=ram_2p impl=uram
     for (int v8581 = 0; v8581 < 1024; v8581++) {	// L11308
       for (int v8582 = 0; v8582 < 1024; v8582++) {	// L11308
         Y1[v8581][v8582] = 0.000000;	// L11308
       }
     }
     systolic_QKT(Q_h, K_h, Y1);	// L11309
-    float Y_t[1024][1024];	// L11310
-    for (int v8584 = 0; v8584 < 1024; v8584++) {	// L11311
-      for (int v8585 = 0; v8585 < 1024; v8585++) {	// L11311
-        Y_t[v8584][v8585] = 0.000000;	// L11311
-      }
-    }
+    // float Y_t[1024][1024];	// L11310
+    // for (int v8584 = 0; v8584 < 1024; v8584++) {	// L11311
+    //   for (int v8585 = 0; v8585 < 1024; v8585++) {	// L11311
+    //     Y_t[v8584][v8585] = 0.000000;	// L11311
+    //   }
+    // }
+    // l_mha_scale_i16: for (int i16 = 0; i16 < 1024; i16++) {	// L11312
+    //   l_j14: for (int j14 = 0; j14 < 1024; j14++) {	// L11313
+    //     float v8588 = Y1[i16][j14];	// L11314
+    //     float v8589 = v8588 / 8.000000;	// L11316
+    //     Y_t[i16][j14] = v8589;	// L11317
+    //   }
+    // }
     l_mha_scale_i16: for (int i16 = 0; i16 < 1024; i16++) {	// L11312
       l_j14: for (int j14 = 0; j14 < 1024; j14++) {	// L11313
         float v8588 = Y1[i16][j14];	// L11314
         float v8589 = v8588 / 8.000000;	// L11316
-        Y_t[i16][j14] = v8589;	// L11317
+        Y1[i16][j14] = v8589;	// L11317
       }
     }
-    float v8590[1024][1024];
-    sft_head(Y_t, v8590);	// L11320
-    systolic_YV(v8590, V_h, C_h);	// L11321
+    // float v8590[1024][1024];
+    // sft_head(Y_t);	// L11320
+    // systolic_YV(Y_t, V_h, C_h);	// L11321
+    sft_head(Y1);	// L11320
+    // systolic_YV(Y1, V_h, C_h);	// L11321
+    systolic_YV(Y1, V_h, Q_h);	// L11321
     l_mha_merge_i17: for (int i17 = 0; i17 < 1024; i17++) {	// L11322
       l_j15: for (int j15 = 0; j15 < 64; j15++) {	// L11323
-        float v8593 = C_h[i17][j15];	// L11324
+        float v8593 = Q_h[i17][j15];	// L11324
         v8567[i17][((h1 * 64) + j15)] = v8593;	// L11325
       }
     }
@@ -18685,18 +18608,19 @@ void bias_add_scale(
   float v10232[1024][512],
   float v10233[1024][512]
 ) {	// L13475
-  float Y2[1024][512];	// L13476
+//   float Y2[1024][512];	// L13476
   l_scale_i18: for (int i18 = 0; i18 < 1024; i18++) {	// L13477
     l_j16: for (int j16 = 0; j16 < 512; j16++) {	// L13478
       float v10237 = v10230[i18][j16];	// L13479
       float v10238 = v10231[j16];	// L13480
       float v10239 = v10237 * v10238;	// L13481
-      Y2[i18][j16] = v10239;	// L13482
+    //   Y2[i18][j16] = v10239;	// L13482
+      v10230[i18][j16] = v10239;	// L13482
     }
   }
   l_res_add_i19: for (int i19 = 0; i19 < 1024; i19++) {	// L13486
     l_j17: for (int j17 = 0; j17 < 512; j17++) {	// L13487
-      float v10242 = Y2[i19][j17];	// L13488
+      float v10242 = v10230[i19][j17];	// L13488
       float v10243 = v10232[i19][j17];	// L13489
       float v10244 = v10242 + v10243;	// L13490
       v10233[i19][j17] = v10244;	// L13491
@@ -25211,6 +25135,9 @@ void allo_DDitBlock(
   float buffer_Q[1024][512];
   float buffer_K[1024][512];
   float buffer_V[1024][512];
+  #pragma HLS bind_storage variable=buffer_Q type=ram_2p impl=uram
+  #pragma HLS bind_storage variable=buffer_K type=ram_2p impl=uram
+  #pragma HLS bind_storage variable=buffer_V type=ram_2p impl=uram
   //for adaLN computation
   float buffer0[512];
   float buffer1[512];
@@ -25281,9 +25208,6 @@ void allo_DDitBlock(
       }
   }
   adaLN_modulate(buffer_c, adaLN_weight, adaLN_bias, buffer4);
-  for (int i = 0; i < 512; i++){
-      std::cout << buffer4[i] << "\t";
-  }
 
 
 
@@ -25306,32 +25230,39 @@ void allo_DDitBlock(
   }
 //   std::cout << "checkpoint" << std::endl;
 // layernorm should be modified
-  float v13643[1024][512];
-  layer_norm(buffer_x, v13643);	// L17821
+//   float v13643[1024][512];
+//   layer_norm(buffer_x, v13643);	// L17821
+  layer_norm(buffer_x);
 //   std::cout << "checkpoint" << std::endl;
-  float v13644[1024][512];
+//   float v13644[1024][512];
 //   modulate_fused(v13643, buf12, buf11, v13644);	// L17822
-  modulate_fused(v13643, buffer1, buffer0, v13644);	// L17822
+//   modulate_fused(v13643, buffer1, buffer0, v13644);	// L17822
+  modulate_fused(buffer_x, buffer1, buffer0);	// L17822
+
+  // because x still need to be kept
+
 //   std::cout << "checkpoint" << std::endl;
   for(int i = 0; i < 512; i++){
       for(int j = 0; j < 512; j++){
           buffer_w[i][j] = v13543[i][j];
       }
   }
-  systolic_Q(v13644, buffer_w, buffer_Q);	// L17831
+  systolic_Q(buffer_x, buffer_w, buffer_Q);	// L17831
   for(int i = 0; i < 512; i++){
       for(int j = 0; j < 512; j++){
           buffer_w[i][j] = v13544[i][j];
       }
   }
-  systolic_K(v13644, buffer_w, buffer_K);	// L17832
+//   systolic_K(v13644, buffer_w, buffer_K);	// L17832
+  systolic_Q(buffer_x, buffer_w, buffer_K);	// L17832
 //   std::cout << "checkpoint" << std::endl;
   for(int i = 0; i < 512; i++){
       for(int j = 0; j < 512; j++){
           buffer_w[i][j] = v13545[i][j];
       }
   }
-  systolic_V(v13644, buffer_w, buffer_V);	// L17833
+//   systolic_V(v13644, buffer_w, buffer_V);	// L17833
+  systolic_Q(buffer_x, buffer_w, buffer_V);	// L17833
 //   std::cout << "checkpoint" << std::endl;
   for(int i = 0; i < 1024; i++){
       for(int j = 0; j < 32; j++){
@@ -25343,21 +25274,30 @@ void allo_DDitBlock(
           buffer_cos[i][j] = v13542[i][j];
       }
   }
-  float v13654[1024][512];
-  RoPE(buffer_Q, buffer_cos, buffer_sin, v13654);	// L17834
+//   float v13654[1024][512];
+//   RoPE(buffer_Q, buffer_cos, buffer_sin, v13654);	// L17834
+  RoPE(buffer_Q, buffer_cos, buffer_sin);	// L17834
 //   std::cout << "checkpoint" << std::endl;
-  float v13655[1024][512];
-  RoPE(buffer_K, buffer_cos, buffer_sin, v13655);	// L17835
+//   float v13655[1024][512];
+//   RoPE(buffer_K, buffer_cos, buffer_sin, v13655);	// L17835
+  RoPE(buffer_K, buffer_cos, buffer_sin);	// L17835
 //   std::cout << "checkpoint" << std::endl;
 //   float v13656[1024][512];
-  scaled_dot_product_attention(v13654, v13655, buffer_V, buffer_Q);	// L17836
+//   scaled_dot_product_attention(v13654, v13655, buffer_V, buffer_Q);	// L17836
+  scaled_dot_product_attention(buffer_Q, buffer_K, buffer_V, buffer_x);	// L17836
 //   std::cout << "checkpoint" << std::endl;
   for(int i = 0; i < 512; i++){
       for(int j = 0; j < 512; j++){
           buffer_w[i][j] = v13555[i][j];
       }
   }
-  systolic_attn_out(buffer_Q, buffer_w, buffer_K);
+//   systolic_attn_out(buffer_Q, buffer_w, buffer_K);
+  systolic_Q(buffer_x, buffer_w, buffer_K);
+  for(int i = 0; i < 1024; i++){
+      for(int j = 0; j < 512; j++){
+          buffer_x[i][j] = v13538[i][j];
+      }
+  }
   bias_add_scale(buffer_K, buffer2, buffer_x, buffer_Q);
 //   std::cout << "checkpoint" << std::endl;
   //because we are reusing the buffers, the output for bias_add_scale should be restroed
@@ -25366,41 +25306,43 @@ void allo_DDitBlock(
           buffer_x[i][j] = buffer_Q[i][j];
       }
   }
-  layer_norm(buffer_Q, buffer_K);	// L17841
+  layer_norm(buffer_Q);	// L17841
 //   std::cout << "checkpoint" << std::endl;
-  layer_norm(buffer_K, buffer_Q);
+  layer_norm(buffer_Q);
 //   std::cout << "checkpoint" << std::endl;
-  modulate_fused(buffer_Q, buffer4, buffer3, buffer_K);
+  modulate_fused(buffer_Q, buffer4, buffer3);
 //   std::cout << "checkpoint" << std::endl;
   for(int i = 0; i < 512; i++){
       for(int j = 0; j < 512; j++){
           buffer_w[i][j] = v13557[i][j];
       }
   }
-  systolic_mlp1(buffer_K, buffer_w, buffer_Q);	// L17846
+//   systolic_mlp1(buffer_K, buffer_w, buffer_Q);	// L17846
+  systolic_Q(buffer_Q, buffer_w, buffer_K);	// L17846
 //   std::cout << "checkpoint" << std::endl;
   for(int i = 0; i < 512; i++){
       buffer0[i] = v13558[i];
   }
-  bias_add(buffer_Q, buffer0, buffer_K);	// L17847
-  GeLU(buffer_K, buffer_Q);	// L17848
+  bias_add(buffer_K, buffer0, buffer_Q);	// L17847
+  GeLU(buffer_Q, buffer_K);	// L17848
   for(int i = 0; i < 512; i++){
       for(int j = 0; j < 512; j++){
           buffer_w[i][j] = v13559[i][j];
       }
   }  
-  systolic_mlp2(buffer_Q, buffer_w, buffer_K);	// L17851
+//   systolic_mlp2(buffer_Q, buffer_w, buffer_K);	// L17851
+  systolic_Q(buffer_K, buffer_w, buffer_Q);	// L17851
 //   std::cout << "checkpoint" << std::endl;
   for(int i = 0; i < 512; i++){
       buffer0[i] = v13560[i];
   }
-  bias_add(buffer_K, buffer0, buffer_Q);	// L17852
-  bias_add_scale(buffer_Q, buffer5, buffer_x, buffer_K);	// L17853
+  bias_add(buffer_Q, buffer0, buffer_K);	// L17852
+  bias_add_scale(buffer_K, buffer5, buffer_x, buffer_Q);	// L17853
 //   std::cout << "checkpoint" << std::endl;
   //write the output
   for(int i = 0; i < 1024; i++){
       for(int j = 0; j < 512; j++){
-          v13561[i][j] = buffer_K[i][j];
+          v13561[i][j] = buffer_Q[i][j];
         //   std::cout << "the output is " << buffer_K[i][j] << "  ";
       }
   }

@@ -46,13 +46,13 @@
 <SummaryOfViolations>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:444~/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:527</SourceLocation>
+<SourceLocation>/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:442~/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:471</SourceLocation>
 <SummaryOfLoopViolations>
 <l_store_C_tile_sj>
 <Name>l_store_C_tile_sj</Name>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:444~/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:527</SourceLocation>
+<SourceLocation>/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:442~/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:471</SourceLocation>
 </l_store_C_tile_sj>
 </SummaryOfLoopViolations>
 </SummaryOfViolations>
@@ -143,8 +143,8 @@
 <Attribute>control</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>tmp_104</name>
-<Object>tmp_104</Object>
+<name>tmp_91</name>
+<Object>tmp_91</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>

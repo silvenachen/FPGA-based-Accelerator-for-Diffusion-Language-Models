@@ -1,0 +1,234 @@
+
+
+================================================================
+== Vitis HLS Report for 'dataflow_in_loop_l_ni1_Loop_l_store_C_tile_sj1_proc47_Pipeline_l_store_C_tile_sj'
+================================================================
+* Date:           Mon Feb 17 20:38:01 2025
+
+* Version:        2023.2 (Build 4023990 on Oct 11 2023)
+* Project:        DitBlock
+* Solution:       hls (Vivado IP Flow Target)
+* Product family: virtexuplusHBM
+* Target device:  xcu280-fsvh2892-2L-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  5.638 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |       66|       66|  0.660 us|  0.660 us|   66|   66|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +----------------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |                            |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |          Loop Name         |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +----------------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- l_store_C_tile_sj1_l_si1  |       64|       64|         1|          1|          1|    64|       yes|
+        +----------------------------+---------+---------+----------+-----------+-----------+------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++---------------------+---------+------+---------+---------+-----+
+|         Name        | BRAM_18K|  DSP |    FF   |   LUT   | URAM|
++---------------------+---------+------+---------+---------+-----+
+|DSP                  |        -|     -|        -|        -|    -|
+|Expression           |        -|     -|        0|      133|    -|
+|FIFO                 |        -|     -|        -|        -|    -|
+|Instance             |        -|     -|        0|      387|    -|
+|Memory               |        -|     -|        -|        -|    -|
+|Multiplexer          |        -|     -|        -|       63|    -|
+|Register             |        -|     -|       17|        -|    -|
++---------------------+---------+------+---------+---------+-----+
+|Total                |        0|     0|       17|      583|    0|
++---------------------+---------+------+---------+---------+-----+
+|Available SLR        |     1344|  3008|   869120|   434560|  320|
++---------------------+---------+------+---------+---------+-----+
+|Utilization SLR (%)  |        0|     0|       ~0|       ~0|    0|
++---------------------+---------+------+---------+---------+-----+
+|Available            |     4032|  9024|  2607360|  1303680|  960|
++---------------------+---------+------+---------+---------+-----+
+|Utilization (%)      |        0|     0|       ~0|       ~0|    0|
++---------------------+---------+------+---------+---------+-----+
+
++ Detail: 
+    * Instance: 
+    +-----------------------------+-----------------------+---------+----+---+----+-----+
+    |           Instance          |         Module        | BRAM_18K| DSP| FF| LUT| URAM|
+    +-----------------------------+-----------------------+---------+----+---+----+-----+
+    |sparsemux_17_3_32_1_1_U1065  |sparsemux_17_3_32_1_1  |        0|   0|  0|  43|    0|
+    |sparsemux_17_3_32_1_1_U1066  |sparsemux_17_3_32_1_1  |        0|   0|  0|  43|    0|
+    |sparsemux_17_3_32_1_1_U1067  |sparsemux_17_3_32_1_1  |        0|   0|  0|  43|    0|
+    |sparsemux_17_3_32_1_1_U1068  |sparsemux_17_3_32_1_1  |        0|   0|  0|  43|    0|
+    |sparsemux_17_3_32_1_1_U1069  |sparsemux_17_3_32_1_1  |        0|   0|  0|  43|    0|
+    |sparsemux_17_3_32_1_1_U1070  |sparsemux_17_3_32_1_1  |        0|   0|  0|  43|    0|
+    |sparsemux_17_3_32_1_1_U1071  |sparsemux_17_3_32_1_1  |        0|   0|  0|  43|    0|
+    |sparsemux_17_3_32_1_1_U1072  |sparsemux_17_3_32_1_1  |        0|   0|  0|  43|    0|
+    |sparsemux_17_3_32_1_1_U1073  |sparsemux_17_3_32_1_1  |        0|   0|  0|  43|    0|
+    +-----------------------------+-----------------------+---------+----+---+----+-----+
+    |Total                        |                       |        0|   0|  0| 387|    0|
+    +-----------------------------+-----------------------+---------+----+---+----+-----+
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +---------------------------+----------+----+---+----+------------+------------+
+    |       Variable Name       | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +---------------------------+----------+----+---+----+------------+------------+
+    |add_ln3516_1_fu_655_p2     |         +|   0|  0|  14|           7|           1|
+    |add_ln3516_fu_667_p2       |         +|   0|  0|  12|           4|           1|
+    |add_ln3517_fu_1107_p2      |         +|   0|  0|  12|           4|           1|
+    |add_ln3520_1_fu_1096_p2    |         +|   0|  0|  26|          19|          19|
+    |add_ln3520_fu_1082_p2      |         +|   0|  0|  17|          10|          10|
+    |empty_fu_703_p2            |         +|   0|  0|  17|          10|          10|
+    |icmp_ln3516_fu_649_p2      |      icmp|   0|  0|  15|           7|           8|
+    |icmp_ln3517_fu_673_p2      |      icmp|   0|  0|  12|           4|           5|
+    |select_ln3516_1_fu_687_p3  |    select|   0|  0|   4|           1|           4|
+    |select_ln3516_fu_679_p3    |    select|   0|  0|   4|           1|           1|
+    +---------------------------+----------+----+---+----+------------+------------+
+    |Total                      |          |   0|  0| 133|          67|          60|
+    +---------------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +--------------------------------------+----+-----------+-----+-----------+
+    |                 Name                 | LUT| Input Size| Bits| Total Bits|
+    +--------------------------------------+----+-----------+-----+-----------+
+    |ap_done_int                           |   9|          2|    1|          2|
+    |ap_sig_allocacmp_indvar_flatten_load  |   9|          2|    7|         14|
+    |ap_sig_allocacmp_si1_load             |   9|          2|    4|          8|
+    |ap_sig_allocacmp_sj1_load             |   9|          2|    4|          8|
+    |indvar_flatten_fu_210                 |   9|          2|    7|         14|
+    |si1_fu_202                            |   9|          2|    4|          8|
+    |sj1_fu_206                            |   9|          2|    4|          8|
+    +--------------------------------------+----+-----------+-----+-----------+
+    |Total                                 |  63|         14|   31|         62|
+    +--------------------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +-----------------------+---+----+-----+-----------+
+    |          Name         | FF| LUT| Bits| Const Bits|
+    +-----------------------+---+----+-----+-----------+
+    |ap_CS_fsm              |  1|   0|    1|          0|
+    |ap_done_reg            |  1|   0|    1|          0|
+    |indvar_flatten_fu_210  |  7|   0|    7|          0|
+    |si1_fu_202             |  4|   0|    4|          0|
+    |sj1_fu_206             |  4|   0|    4|          0|
+    +-----------------------+---+----+-----+-----------+
+    |Total                  | 17|   0|   17|          0|
+    +-----------------------+---+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++--------------------+-----+-----+------------+----------------------------------------------------------------------------------+--------------+
+|      RTL Ports     | Dir | Bits|  Protocol  |                                   Source Object                                  |    C Type    |
++--------------------+-----+-----+------------+----------------------------------------------------------------------------------+--------------+
+|ap_clk              |   in|    1|  ap_ctrl_hs|  dataflow_in_loop_l_ni1_Loop_l_store_C_tile_sj1_proc47_Pipeline_l_store_C_tile_sj|  return value|
+|ap_rst              |   in|    1|  ap_ctrl_hs|  dataflow_in_loop_l_ni1_Loop_l_store_C_tile_sj1_proc47_Pipeline_l_store_C_tile_sj|  return value|
+|ap_start            |   in|    1|  ap_ctrl_hs|  dataflow_in_loop_l_ni1_Loop_l_store_C_tile_sj1_proc47_Pipeline_l_store_C_tile_sj|  return value|
+|ap_done             |  out|    1|  ap_ctrl_hs|  dataflow_in_loop_l_ni1_Loop_l_store_C_tile_sj1_proc47_Pipeline_l_store_C_tile_sj|  return value|
+|ap_idle             |  out|    1|  ap_ctrl_hs|  dataflow_in_loop_l_ni1_Loop_l_store_C_tile_sj1_proc47_Pipeline_l_store_C_tile_sj|  return value|
+|ap_ready            |  out|    1|  ap_ctrl_hs|  dataflow_in_loop_l_ni1_Loop_l_store_C_tile_sj1_proc47_Pipeline_l_store_C_tile_sj|  return value|
+|p_cast              |   in|    9|     ap_none|                                                                            p_cast|        scalar|
+|local_C1_63_i_load  |   in|   32|     ap_none|                                                                local_C1_63_i_load|        scalar|
+|local_C1_62_i_load  |   in|   32|     ap_none|                                                                local_C1_62_i_load|        scalar|
+|local_C1_61_i_load  |   in|   32|     ap_none|                                                                local_C1_61_i_load|        scalar|
+|local_C1_60_i_load  |   in|   32|     ap_none|                                                                local_C1_60_i_load|        scalar|
+|local_C1_59_i_load  |   in|   32|     ap_none|                                                                local_C1_59_i_load|        scalar|
+|local_C1_58_i_load  |   in|   32|     ap_none|                                                                local_C1_58_i_load|        scalar|
+|local_C1_57_i_load  |   in|   32|     ap_none|                                                                local_C1_57_i_load|        scalar|
+|local_C1_56_i_load  |   in|   32|     ap_none|                                                                local_C1_56_i_load|        scalar|
+|local_C1_55_i_load  |   in|   32|     ap_none|                                                                local_C1_55_i_load|        scalar|
+|local_C1_54_i_load  |   in|   32|     ap_none|                                                                local_C1_54_i_load|        scalar|
+|local_C1_53_i_load  |   in|   32|     ap_none|                                                                local_C1_53_i_load|        scalar|
+|local_C1_52_i_load  |   in|   32|     ap_none|                                                                local_C1_52_i_load|        scalar|
+|local_C1_51_i_load  |   in|   32|     ap_none|                                                                local_C1_51_i_load|        scalar|
+|local_C1_50_i_load  |   in|   32|     ap_none|                                                                local_C1_50_i_load|        scalar|
+|local_C1_49_i_load  |   in|   32|     ap_none|                                                                local_C1_49_i_load|        scalar|
+|local_C1_48_i_load  |   in|   32|     ap_none|                                                                local_C1_48_i_load|        scalar|
+|local_C1_47_i_load  |   in|   32|     ap_none|                                                                local_C1_47_i_load|        scalar|
+|local_C1_46_i_load  |   in|   32|     ap_none|                                                                local_C1_46_i_load|        scalar|
+|local_C1_45_i_load  |   in|   32|     ap_none|                                                                local_C1_45_i_load|        scalar|
+|local_C1_44_i_load  |   in|   32|     ap_none|                                                                local_C1_44_i_load|        scalar|
+|local_C1_43_i_load  |   in|   32|     ap_none|                                                                local_C1_43_i_load|        scalar|
+|local_C1_42_i_load  |   in|   32|     ap_none|                                                                local_C1_42_i_load|        scalar|
+|local_C1_41_i_load  |   in|   32|     ap_none|                                                                local_C1_41_i_load|        scalar|
+|local_C1_40_i_load  |   in|   32|     ap_none|                                                                local_C1_40_i_load|        scalar|
+|local_C1_39_i_load  |   in|   32|     ap_none|                                                                local_C1_39_i_load|        scalar|
+|local_C1_38_i_load  |   in|   32|     ap_none|                                                                local_C1_38_i_load|        scalar|
+|local_C1_37_i_load  |   in|   32|     ap_none|                                                                local_C1_37_i_load|        scalar|
+|local_C1_36_i_load  |   in|   32|     ap_none|                                                                local_C1_36_i_load|        scalar|
+|local_C1_35_i_load  |   in|   32|     ap_none|                                                                local_C1_35_i_load|        scalar|
+|local_C1_34_i_load  |   in|   32|     ap_none|                                                                local_C1_34_i_load|        scalar|
+|local_C1_33_i_load  |   in|   32|     ap_none|                                                                local_C1_33_i_load|        scalar|
+|local_C1_32_i_load  |   in|   32|     ap_none|                                                                local_C1_32_i_load|        scalar|
+|local_C1_31_i_load  |   in|   32|     ap_none|                                                                local_C1_31_i_load|        scalar|
+|local_C1_30_i_load  |   in|   32|     ap_none|                                                                local_C1_30_i_load|        scalar|
+|local_C1_29_i_load  |   in|   32|     ap_none|                                                                local_C1_29_i_load|        scalar|
+|local_C1_28_i_load  |   in|   32|     ap_none|                                                                local_C1_28_i_load|        scalar|
+|local_C1_27_i_load  |   in|   32|     ap_none|                                                                local_C1_27_i_load|        scalar|
+|local_C1_26_i_load  |   in|   32|     ap_none|                                                                local_C1_26_i_load|        scalar|
+|local_C1_25_i_load  |   in|   32|     ap_none|                                                                local_C1_25_i_load|        scalar|
+|local_C1_24_i_load  |   in|   32|     ap_none|                                                                local_C1_24_i_load|        scalar|
+|local_C1_23_i_load  |   in|   32|     ap_none|                                                                local_C1_23_i_load|        scalar|
+|local_C1_22_i_load  |   in|   32|     ap_none|                                                                local_C1_22_i_load|        scalar|
+|local_C1_21_i_load  |   in|   32|     ap_none|                                                                local_C1_21_i_load|        scalar|
+|local_C1_20_i_load  |   in|   32|     ap_none|                                                                local_C1_20_i_load|        scalar|
+|local_C1_19_i_load  |   in|   32|     ap_none|                                                                local_C1_19_i_load|        scalar|
+|local_C1_18_i_load  |   in|   32|     ap_none|                                                                local_C1_18_i_load|        scalar|
+|local_C1_17_i_load  |   in|   32|     ap_none|                                                                local_C1_17_i_load|        scalar|
+|local_C1_16_i_load  |   in|   32|     ap_none|                                                                local_C1_16_i_load|        scalar|
+|local_C1_15_i_load  |   in|   32|     ap_none|                                                                local_C1_15_i_load|        scalar|
+|local_C1_14_i_load  |   in|   32|     ap_none|                                                                local_C1_14_i_load|        scalar|
+|local_C1_13_i_load  |   in|   32|     ap_none|                                                                local_C1_13_i_load|        scalar|
+|local_C1_12_i_load  |   in|   32|     ap_none|                                                                local_C1_12_i_load|        scalar|
+|local_C1_11_i_load  |   in|   32|     ap_none|                                                                local_C1_11_i_load|        scalar|
+|local_C1_10_i_load  |   in|   32|     ap_none|                                                                local_C1_10_i_load|        scalar|
+|local_C1_9_i_load   |   in|   32|     ap_none|                                                                 local_C1_9_i_load|        scalar|
+|local_C1_8_i_load   |   in|   32|     ap_none|                                                                 local_C1_8_i_load|        scalar|
+|local_C1_7_i_load   |   in|   32|     ap_none|                                                                 local_C1_7_i_load|        scalar|
+|local_C1_6_i_load   |   in|   32|     ap_none|                                                                 local_C1_6_i_load|        scalar|
+|local_C1_5_i_load   |   in|   32|     ap_none|                                                                 local_C1_5_i_load|        scalar|
+|local_C1_4_i_load   |   in|   32|     ap_none|                                                                 local_C1_4_i_load|        scalar|
+|local_C1_3_i_load   |   in|   32|     ap_none|                                                                 local_C1_3_i_load|        scalar|
+|local_C1_2_i_load   |   in|   32|     ap_none|                                                                 local_C1_2_i_load|        scalar|
+|local_C1_1_i_load   |   in|   32|     ap_none|                                                                 local_C1_1_i_load|        scalar|
+|local_C1_i_load     |   in|   32|     ap_none|                                                                   local_C1_i_load|        scalar|
+|tmp                 |   in|   10|     ap_none|                                                                               tmp|        scalar|
+|v1933_address1      |  out|   19|   ap_memory|                                                                             v1933|         array|
+|v1933_ce1           |  out|    1|   ap_memory|                                                                             v1933|         array|
+|v1933_we1           |  out|    1|   ap_memory|                                                                             v1933|         array|
+|v1933_d1            |  out|   32|   ap_memory|                                                                             v1933|         array|
++--------------------+-----+-----+------------+----------------------------------------------------------------------------------+--------------+
+

@@ -1,0 +1,198 @@
+<stg><name>dataflow_in_loop_l_ni4_Loop_l_load_A_tile_ak4_proc4828</name>
+
+
+<trans_list>
+
+<trans id="14" from="1" to="2">
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+</trans>
+</trans_list>
+
+
+
+<state_list>
+
+<state id="1" st_id="1">
+
+<operation id="3" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="15" bw="7" op_0_bw="7" op_1_bw="7">
+<![CDATA[
+entry:1 %mi4_read = read i7 @_ssdm_op_Read.ap_auto.i7, i7 %mi4
+
+]]></Node>
+<StgValue><ssdm name="mi4_read"/></StgValue>
+</operation>
+
+<operation id="4" st_id="1" stage="1" lat="1">
+<core>FIFO_SRL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="16" bw="7" op_0_bw="7" op_1_bw="7">
+<![CDATA[
+entry:2 %ni4_read = read i7 @_ssdm_op_Read.ap_auto.i7, i7 %ni4
+
+]]></Node>
+<StgValue><ssdm name="ni4_read"/></StgValue>
+</operation>
+
+<operation id="5" st_id="1" stage="1" lat="1">
+<core>FIFO_SRL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="17" bw="0" op_0_bw="0" op_1_bw="7" op_2_bw="7">
+<![CDATA[
+entry:3 %write_ln0 = write void @_ssdm_op_Write.ap_fifo.i7P0A, i7 %mi4_c_i, i7 %mi4_read
+
+]]></Node>
+<StgValue><ssdm name="write_ln0"/></StgValue>
+</operation>
+
+<operation id="6" st_id="1" stage="1" lat="1">
+<core>FIFO_SRL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="19" bw="0" op_0_bw="0" op_1_bw="7" op_2_bw="7">
+<![CDATA[
+entry:5 %write_ln12473 = write void @_ssdm_op_Write.ap_fifo.i7P0A, i7 %ni4_c_i, i7 %ni4_read
+
+]]></Node>
+<StgValue><ssdm name="write_ln12473"/></StgValue>
+</operation>
+
+<operation id="7" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="20" bw="10" op_0_bw="10" op_1_bw="7" op_2_bw="3">
+<![CDATA[
+entry:6 %tmp_i = bitconcatenate i10 @_ssdm_op_BitConcatenate.i10.i7.i3, i7 %mi4_read, i3 0
+
+]]></Node>
+<StgValue><ssdm name="tmp_i"/></StgValue>
+</operation>
+
+<operation id="8" st_id="1" stage="1" lat="1">
+<core>Cmp</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="21" bw="1" op_0_bw="7" op_1_bw="7">
+<![CDATA[
+entry:7 %v6893_i = icmp_eq  i7 %ni4_read, i7 0
+
+]]></Node>
+<StgValue><ssdm name="v6893_i"/></StgValue>
+</operation>
+
+<operation id="9" st_id="1" stage="2" lat="2">
+<core></core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="22" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="32" op_6_bw="32" op_7_bw="32" op_8_bw="32" op_9_bw="1" op_10_bw="10" op_11_bw="32">
+<![CDATA[
+entry:8 %call_ln0 = call void @dataflow_in_loop_l_ni4_Loop_l_load_A_tile_ak4_proc4828_Pipeline_l_load_A_tile_ak, i32 %local_A4_7_i, i32 %local_A4_6_i, i32 %local_A4_5_i, i32 %local_A4_4_i, i32 %local_A4_3_i, i32 %local_A4_2_i, i32 %local_A4_1_i, i32 %local_A4_i, i1 %v6893_i, i10 %tmp_i, i32 %v6882
+
+]]></Node>
+<StgValue><ssdm name="call_ln0"/></StgValue>
+</operation>
+</state>
+
+<state id="2" st_id="2">
+
+<operation id="10" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="14" bw="0" op_0_bw="0" op_1_bw="7" op_2_bw="0" op_3_bw="32" op_4_bw="32" op_5_bw="0" op_6_bw="32" op_7_bw="32" op_8_bw="0" op_9_bw="0" op_10_bw="0" op_11_bw="32" op_12_bw="32" op_13_bw="32" op_14_bw="32" op_15_bw="0" op_16_bw="0" op_17_bw="32" op_18_bw="32">
+<![CDATA[
+entry:0 %specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i7 %mi4_c_i, void @ap_fifo_str, i32 0, i32 0, void @p_str, i32 0, i32 0, void @p_str, void @p_str, void @p_str, i32 2, i32 2, i32 16, i32 16, void @p_str, void @ScalarProp_str, i32 4294967295, i32 0
+
+]]></Node>
+<StgValue><ssdm name="specinterface_ln0"/></StgValue>
+</operation>
+
+<operation id="11" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="18" bw="0" op_0_bw="0" op_1_bw="7" op_2_bw="0" op_3_bw="32" op_4_bw="32" op_5_bw="0" op_6_bw="32" op_7_bw="32" op_8_bw="0" op_9_bw="0" op_10_bw="0" op_11_bw="32" op_12_bw="32" op_13_bw="32" op_14_bw="32" op_15_bw="0" op_16_bw="0" op_17_bw="32" op_18_bw="32">
+<![CDATA[
+entry:4 %specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i7 %ni4_c_i, void @ap_fifo_str, i32 0, i32 0, void @p_str, i32 0, i32 0, void @p_str, void @p_str, void @p_str, i32 2, i32 2, i32 16, i32 16, void @p_str, void @ScalarProp_str, i32 4294967295, i32 0
+
+]]></Node>
+<StgValue><ssdm name="specinterface_ln0"/></StgValue>
+</operation>
+
+<operation id="12" st_id="2" stage="1" lat="2">
+<core></core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="22" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="32" op_6_bw="32" op_7_bw="32" op_8_bw="32" op_9_bw="1" op_10_bw="10" op_11_bw="32">
+<![CDATA[
+entry:8 %call_ln0 = call void @dataflow_in_loop_l_ni4_Loop_l_load_A_tile_ak4_proc4828_Pipeline_l_load_A_tile_ak, i32 %local_A4_7_i, i32 %local_A4_6_i, i32 %local_A4_5_i, i32 %local_A4_4_i, i32 %local_A4_3_i, i32 %local_A4_2_i, i32 %local_A4_1_i, i32 %local_A4_i, i1 %v6893_i, i10 %tmp_i, i32 %v6882
+
+]]></Node>
+<StgValue><ssdm name="call_ln0"/></StgValue>
+</operation>
+
+<operation id="13" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="23" bw="0">
+<![CDATA[
+entry:9 %ret_ln0 = ret
+
+]]></Node>
+<StgValue><ssdm name="ret_ln0"/></StgValue>
+</operation>
+</state>
+</state_list>
+
+
+<ports>
+</ports>
+
+
+<dataflows>
+</dataflows>
+
+
+</stg>

@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'scaled_dot_product_attention_Pipeline_l_update_i14_l_j12'" level="0">
-<item name = "Date">Wed Feb  5 22:36:24 2025
+<item name = "Date">Mon Feb 17 20:38:35 2025
 </item>
 <item name = "Version">2023.2 (Build 4023990 on Oct 11 2023)</item>
 <item name = "Project">DitBlock</item>
@@ -64,7 +64,7 @@
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="1">
 <keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
-<column name="fdiv_32ns_32ns_32_6_no_dsp_1_U2092">fdiv_32ns_32ns_32_6_no_dsp_1, 0, 0, 0, 0, 0</column>
+<column name="fdiv_32ns_32ns_32_6_no_dsp_1_U2393">fdiv_32ns_32ns_32_6_no_dsp_1, 0, 0, 0, 0, 0</column>
 </table>
 </item>
 <item name = "DSP"><table name="" hasTotal="0">
@@ -81,14 +81,14 @@
 </item>
 <item name = "Expression"><table name="" hasTotal="1">
 <keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
-<column name="add_ln12710_1_fu_110_p2">+, 0, 0, 28, 21, 1</column>
-<column name="add_ln12710_fu_122_p2">+, 0, 0, 18, 11, 1</column>
-<column name="add_ln12711_fu_182_p2">+, 0, 0, 18, 11, 1</column>
-<column name="add_ln12712_fu_171_p2">+, 0, 0, 27, 20, 20</column>
-<column name="icmp_ln12710_fu_104_p2">icmp, 0, 0, 29, 21, 22</column>
-<column name="icmp_ln12711_fu_128_p2">icmp, 0, 0, 19, 11, 12</column>
-<column name="select_ln12710_1_fu_142_p3">select, 0, 0, 11, 1, 11</column>
-<column name="select_ln12710_fu_134_p3">select, 0, 0, 11, 1, 1</column>
+<column name="add_ln12588_1_fu_118_p2">+, 0, 0, 28, 21, 1</column>
+<column name="add_ln12588_fu_130_p2">+, 0, 0, 18, 11, 1</column>
+<column name="add_ln12589_fu_190_p2">+, 0, 0, 18, 11, 1</column>
+<column name="add_ln12590_fu_179_p2">+, 0, 0, 27, 20, 20</column>
+<column name="icmp_ln12588_fu_112_p2">icmp, 0, 0, 29, 21, 22</column>
+<column name="icmp_ln12589_fu_136_p2">icmp, 0, 0, 19, 11, 12</column>
+<column name="select_ln12588_1_fu_150_p3">select, 0, 0, 11, 1, 11</column>
+<column name="select_ln12588_fu_142_p3">select, 0, 0, 11, 1, 1</column>
 <column name="ap_enable_pp0">xor, 0, 0, 2, 1, 2</column>
 </table>
 </item>
@@ -97,16 +97,14 @@
 <column name="ap_done_int">9, 2, 1, 2</column>
 <column name="ap_enable_reg_pp0_iter1">9, 2, 1, 2</column>
 <column name="ap_enable_reg_pp0_iter2">9, 2, 1, 2</column>
-<column name="i14_fu_44">9, 2, 11, 22</column>
-<column name="indvar_flatten52_fu_48">9, 2, 21, 42</column>
-<column name="j12_fu_40">9, 2, 11, 22</column>
+<column name="i14_fu_52">9, 2, 11, 22</column>
+<column name="indvar_flatten38_fu_56">9, 2, 21, 42</column>
+<column name="j12_fu_48">9, 2, 11, 22</column>
 </table>
 </item>
 <item name = "Register"><table name="" hasTotal="1">
 <keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
-<column name="S_load_reg_239">32, 0, 32, 0</column>
-<column name="Y_t_addr_reg_233">20, 0, 20, 0</column>
-<column name="Y_t_load_reg_244">32, 0, 32, 0</column>
+<column name="Y1_addr_reg_241">20, 0, 20, 0</column>
 <column name="ap_CS_fsm">1, 0, 1, 0</column>
 <column name="ap_done_reg">1, 0, 1, 0</column>
 <column name="ap_enable_reg_pp0_iter1">1, 0, 1, 0</column>
@@ -125,11 +123,13 @@
 <column name="ap_loop_exit_ready_pp0_iter6_reg">1, 0, 1, 0</column>
 <column name="ap_loop_exit_ready_pp0_iter7_reg">1, 0, 1, 0</column>
 <column name="ap_loop_exit_ready_pp0_iter8_reg">1, 0, 1, 0</column>
-<column name="i14_fu_44">11, 0, 11, 0</column>
-<column name="indvar_flatten52_fu_48">21, 0, 21, 0</column>
-<column name="j12_fu_40">11, 0, 11, 0</column>
-<column name="v6927_reg_249">32, 0, 32, 0</column>
-<column name="Y_t_addr_reg_233">64, 32, 20, 0</column>
+<column name="i14_fu_52">11, 0, 11, 0</column>
+<column name="indvar_flatten38_fu_56">21, 0, 21, 0</column>
+<column name="j12_fu_48">11, 0, 11, 0</column>
+<column name="v6925_reg_252">32, 0, 32, 0</column>
+<column name="v6926_reg_247">32, 0, 32, 0</column>
+<column name="v6927_reg_257">32, 0, 32, 0</column>
+<column name="Y1_addr_reg_241">64, 32, 20, 0</column>
 </table>
 </item>
 </section>
@@ -148,13 +148,13 @@
 <column name="S_address0">out, 10, ap_memory, S, array</column>
 <column name="S_ce0">out, 1, ap_memory, S, array</column>
 <column name="S_q0">in, 32, ap_memory, S, array</column>
-<column name="Y_t_address0">out, 20, ap_memory, Y_t, array</column>
-<column name="Y_t_ce0">out, 1, ap_memory, Y_t, array</column>
-<column name="Y_t_we0">out, 1, ap_memory, Y_t, array</column>
-<column name="Y_t_d0">out, 32, ap_memory, Y_t, array</column>
-<column name="Y_t_address1">out, 20, ap_memory, Y_t, array</column>
-<column name="Y_t_ce1">out, 1, ap_memory, Y_t, array</column>
-<column name="Y_t_q1">in, 32, ap_memory, Y_t, array</column>
+<column name="Y1_address0">out, 20, ap_memory, Y1, array</column>
+<column name="Y1_ce0">out, 1, ap_memory, Y1, array</column>
+<column name="Y1_q0">in, 32, ap_memory, Y1, array</column>
+<column name="Y1_address1">out, 20, ap_memory, Y1, array</column>
+<column name="Y1_ce1">out, 1, ap_memory, Y1, array</column>
+<column name="Y1_we1">out, 1, ap_memory, Y1, array</column>
+<column name="Y1_d1">out, 32, ap_memory, Y1, array</column>
 </table>
 </item>
 </section>

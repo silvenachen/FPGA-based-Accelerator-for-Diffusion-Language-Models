@@ -1,0 +1,124 @@
+
+
+================================================================
+== Vitis HLS Report for 'dataflow_in_loop_l_ni4_Loop_l_load_A_tile_ak4_proc4828'
+================================================================
+* Date:           Mon Feb 17 20:36:27 2025
+
+* Version:        2023.2 (Build 4023990 on Oct 11 2023)
+* Project:        DitBlock
+* Solution:       hls (Vivado IP Flow Target)
+* Product family: virtexuplusHBM
+* Target device:  xcu280-fsvh2892-2L-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  4.893 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |      515|      515|  5.150 us|  5.150 us|  515|  515|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 2
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 2
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 4.89>
+ST_1 : Operation 3 [1/1] (0.00ns)   --->   "%mi4_read = read i7 @_ssdm_op_Read.ap_auto.i7, i7 %mi4"   --->   Operation 3 'read' 'mi4_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 4 [1/1] (1.42ns)   --->   "%ni4_read = read i7 @_ssdm_op_Read.ap_auto.i7, i7 %ni4"   --->   Operation 4 'read' 'ni4_read' <Predicate = true> <Delay = 1.42> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.42> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
+ST_1 : Operation 5 [1/1] (1.36ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_fifo.i7P0A, i7 %mi4_c_i, i7 %mi4_read"   --->   Operation 5 'write' 'write_ln0' <Predicate = true> <Delay = 1.36> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.36> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 7> <Depth = 3> <FIFO>
+ST_1 : Operation 6 [1/1] (1.36ns)   --->   "%write_ln12473 = write void @_ssdm_op_Write.ap_fifo.i7P0A, i7 %ni4_c_i, i7 %ni4_read" [/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/kernel.cpp:12473]   --->   Operation 6 'write' 'write_ln12473' <Predicate = true> <Delay = 1.36> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.36> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 7> <Depth = 3> <FIFO>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%tmp_i = bitconcatenate i10 @_ssdm_op_BitConcatenate.i10.i7.i3, i7 %mi4_read, i3 0"   --->   Operation 7 'bitconcatenate' 'tmp_i' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (0.70ns)   --->   "%v6893_i = icmp_eq  i7 %ni4_read, i7 0"   --->   Operation 8 'icmp' 'v6893_i' <Predicate = true> <Delay = 0.70> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.70> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 9 [2/2] (2.75ns)   --->   "%call_ln0 = call void @dataflow_in_loop_l_ni4_Loop_l_load_A_tile_ak4_proc4828_Pipeline_l_load_A_tile_ak, i32 %local_A4_7_i, i32 %local_A4_6_i, i32 %local_A4_5_i, i32 %local_A4_4_i, i32 %local_A4_3_i, i32 %local_A4_2_i, i32 %local_A4_1_i, i32 %local_A4_i, i1 %v6893_i, i10 %tmp_i, i32 %v6882"   --->   Operation 9 'call' 'call_ln0' <Predicate = true> <Delay = 2.75> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 2 <SV = 1> <Delay = 0.00>
+ST_2 : Operation 10 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i7 %mi4_c_i, void @ap_fifo_str, i32 0, i32 0, void @p_str, i32 0, i32 0, void @p_str, void @p_str, void @p_str, i32 2, i32 2, i32 16, i32 16, void @p_str, void @ScalarProp_str, i32 4294967295, i32 0"   --->   Operation 10 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 11 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i7 %ni4_c_i, void @ap_fifo_str, i32 0, i32 0, void @p_str, i32 0, i32 0, void @p_str, void @p_str, void @p_str, i32 2, i32 2, i32 16, i32 16, void @p_str, void @ScalarProp_str, i32 4294967295, i32 0"   --->   Operation 11 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 12 [1/2] (0.00ns)   --->   "%call_ln0 = call void @dataflow_in_loop_l_ni4_Loop_l_load_A_tile_ak4_proc4828_Pipeline_l_load_A_tile_ak, i32 %local_A4_7_i, i32 %local_A4_6_i, i32 %local_A4_5_i, i32 %local_A4_4_i, i32 %local_A4_3_i, i32 %local_A4_2_i, i32 %local_A4_1_i, i32 %local_A4_i, i1 %v6893_i, i10 %tmp_i, i32 %v6882"   --->   Operation 12 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_2 : Operation 13 [1/1] (0.00ns)   --->   "%ret_ln0 = ret"   --->   Operation 13 'ret' 'ret_ln0' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10.000ns, clock uncertainty: 2.700ns.
+
+ <State 1>: 4.893ns
+The critical path consists of the following:
+	wire read operation ('ni4_read') on port 'ni4' [16]  (1.429 ns)
+	'icmp' operation 1 bit ('v6893_i') [21]  (0.706 ns)
+	'call' operation 0 bit ('call_ln0') to 'dataflow_in_loop_l_ni4_Loop_l_load_A_tile_ak4_proc4828_Pipeline_l_load_A_tile_ak' [22]  (2.758 ns)
+
+ <State 2>: 0.000ns
+The critical path consists of the following:
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

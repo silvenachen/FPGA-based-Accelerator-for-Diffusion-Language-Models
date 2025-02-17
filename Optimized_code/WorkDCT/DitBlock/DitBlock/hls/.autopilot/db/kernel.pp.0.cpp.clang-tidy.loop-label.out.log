@@ -1,1056 +1,1010 @@
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:18179:7: warning: Added loop label VITIS_LOOP_1207_1:   [xilinx-label-all-loops]
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:18178:7: warning: Added loop label VITIS_LOOP_1207_1:   [xilinx-label-all-loops]
       for (i = 0; i < __N - 1; ++i) {
       ^~~
       VITIS_LOOP_1207_1: 
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:18179:7: note: FIX-IT applied suggested code changes
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:19153:5: warning: Added loop label VITIS_LOOP_676_1:   [xilinx-label-all-loops]
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:18178:7: note: FIX-IT applied suggested code changes
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:19152:5: warning: Added loop label VITIS_LOOP_676_1:   [xilinx-label-all-loops]
     for (unsigned i = low; i != high; ++i) {
     ^~~
     VITIS_LOOP_676_1: 
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:19153:5: note: FIX-IT applied suggested code changes
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:19167:5: warning: Added loop label VITIS_LOOP_690_1:   [xilinx-label-all-loops]
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:19152:5: note: FIX-IT applied suggested code changes
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:19166:5: warning: Added loop label VITIS_LOOP_690_1:   [xilinx-label-all-loops]
     for (unsigned i = low; i != high; ++i) {
     ^~~
     VITIS_LOOP_690_1: 
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:19167:5: note: FIX-IT applied suggested code changes
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:19181:5: warning: Added loop label VITIS_LOOP_704_1:   [xilinx-label-all-loops]
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:19166:5: note: FIX-IT applied suggested code changes
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:19180:5: warning: Added loop label VITIS_LOOP_704_1:   [xilinx-label-all-loops]
     for (unsigned i = low; i != high; ++i) {
     ^~~
     VITIS_LOOP_704_1: 
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:19181:5: note: FIX-IT applied suggested code changes
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:20798:7: warning: Added loop label VITIS_LOOP_1247_1:   [xilinx-label-all-loops]
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:19180:5: note: FIX-IT applied suggested code changes
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:20797:7: warning: Added loop label VITIS_LOOP_1247_1:   [xilinx-label-all-loops]
       for (i = 0; i < __N - 1; ++i) {
       ^~~
       VITIS_LOOP_1247_1: 
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:20798:7: note: FIX-IT applied suggested code changes
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:28934:72: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:20797:7: note: FIX-IT applied suggested code changes
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:28933:72: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
 #pragma HLS BIND_STORAGE variable=fourth_order_double::sin_cos_K0 type=ROM_1P impl=LUTRAM
                                                                        ^
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:28935:72: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:28934:72: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
 #pragma HLS BIND_STORAGE variable=fourth_order_double::sin_cos_K1 type=ROM_1P impl=LUTRAM
                                                                        ^
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:28936:72: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:28935:72: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
 #pragma HLS BIND_STORAGE variable=fourth_order_double::sin_cos_K2 type=ROM_1P impl=LUTRAM
                                                                        ^
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:28937:72: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:28936:72: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
 #pragma HLS BIND_STORAGE variable=fourth_order_double::sin_cos_K3 type=ROM_1P impl=LUTRAM
                                                                        ^
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:28938:72: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:28937:72: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
 #pragma HLS BIND_STORAGE variable=fourth_order_double::sin_cos_K4 type=ROM_1P impl=LUTRAM
                                                                        ^
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:28968:68: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:28967:68: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
 #pragma HLS BIND_STORAGE variable=fourth_order_double::cos_K0 type=ROM_1P impl=LUTRAM
                                                                    ^
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:28969:68: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:28968:68: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
 #pragma HLS BIND_STORAGE variable=fourth_order_double::cos_K1 type=ROM_1P impl=LUTRAM
                                                                    ^
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:28970:68: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:28969:68: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
 #pragma HLS BIND_STORAGE variable=fourth_order_double::cos_K2 type=ROM_1P impl=LUTRAM
                                                                    ^
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:28971:68: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:28970:68: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
 #pragma HLS BIND_STORAGE variable=fourth_order_double::cos_K3 type=ROM_1P impl=LUTRAM
                                                                    ^
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:28972:68: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:28971:68: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
 #pragma HLS BIND_STORAGE variable=fourth_order_double::cos_K4 type=ROM_1P impl=LUTRAM
                                                                    ^
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:28973:68: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:28972:68: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
 #pragma HLS BIND_STORAGE variable=fourth_order_double::sin_K0 type=ROM_1P impl=LUTRAM
                                                                    ^
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:28974:68: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:28973:68: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
 #pragma HLS BIND_STORAGE variable=fourth_order_double::sin_K1 type=ROM_1P impl=LUTRAM
                                                                    ^
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:28975:68: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:28974:68: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
 #pragma HLS BIND_STORAGE variable=fourth_order_double::sin_K2 type=ROM_1P impl=LUTRAM
                                                                    ^
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:28976:68: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:28975:68: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
 #pragma HLS BIND_STORAGE variable=fourth_order_double::sin_K3 type=ROM_1P impl=LUTRAM
                                                                    ^
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:28977:68: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:28976:68: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
 #pragma HLS BIND_STORAGE variable=fourth_order_double::sin_K4 type=ROM_1P impl=LUTRAM
                                                                    ^
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:29027:71: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:29026:71: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
 #pragma HLS BIND_STORAGE variable=second_order_float::sin_cos_K0 type=ROM_1P impl=LUTRAM
                                                                       ^
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:29028:71: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:29027:71: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
 #pragma HLS BIND_STORAGE variable=second_order_float::sin_cos_K1 type=ROM_1P impl=LUTRAM
                                                                       ^
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:29029:71: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:29028:71: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
 #pragma HLS BIND_STORAGE variable=second_order_float::sin_cos_K2 type=ROM_1P impl=LUTRAM
                                                                       ^
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:29056:67: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:29055:67: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
 #pragma HLS BIND_STORAGE variable=second_order_float::cos_K0 type=ROM_1P impl=LUTRAM
                                                                   ^
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:29057:67: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:29056:67: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
 #pragma HLS BIND_STORAGE variable=second_order_float::cos_K1 type=ROM_1P impl=LUTRAM
                                                                   ^
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:29058:67: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:29057:67: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
 #pragma HLS BIND_STORAGE variable=second_order_float::cos_K2 type=ROM_1P impl=LUTRAM
                                                                   ^
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:29059:67: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:29058:67: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
 #pragma HLS BIND_STORAGE variable=second_order_float::sin_K0 type=ROM_1P impl=LUTRAM
                                                                   ^
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:29060:67: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:29059:67: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
 #pragma HLS BIND_STORAGE variable=second_order_float::sin_K1 type=ROM_1P impl=LUTRAM
                                                                   ^
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:29061:67: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:29060:67: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
 #pragma HLS BIND_STORAGE variable=second_order_float::sin_K2 type=ROM_1P impl=LUTRAM
                                                                   ^
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:29097:73: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:29096:73: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
 #pragma HLS BIND_STORAGE variable=first_order_fixed_16::sin_cos_K0 type=ROM_1P impl=LUTRAM
                                                                         ^
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:29098:73: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:29097:73: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
 #pragma HLS BIND_STORAGE variable=first_order_fixed_16::sin_cos_K1 type=ROM_1P impl=LUTRAM
                                                                         ^
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:29372:5: warning: Added loop label VITIS_LOOP_61_1:   [xilinx-label-all-loops]
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:29371:5: warning: Added loop label VITIS_LOOP_61_1:   [xilinx-label-all-loops]
     for (int n=0; n<Nmax; n++){
     ^~~
     VITIS_LOOP_61_1: 
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:29372:5: note: FIX-IT applied suggested code changes
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:29418:5: warning: Added loop label VITIS_LOOP_117_1:   [xilinx-label-all-loops]
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:29371:5: note: FIX-IT applied suggested code changes
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:29417:5: warning: Added loop label VITIS_LOOP_117_1:   [xilinx-label-all-loops]
     for (int n=0; n<Nmax; n++){
     ^~~
     VITIS_LOOP_117_1: 
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:29418:5: note: FIX-IT applied suggested code changes
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:29581:9: warning: Added loop label VITIS_LOOP_289_1:   [xilinx-label-all-loops]
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:29417:5: note: FIX-IT applied suggested code changes
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:29580:9: warning: Added loop label VITIS_LOOP_289_1:   [xilinx-label-all-loops]
         for(int i=0;i<W-1;i++){
         ^~~
         VITIS_LOOP_289_1: 
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:29581:9: note: FIX-IT applied suggested code changes
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:29733:9: warning: Added loop label VITIS_LOOP_449_1:   [xilinx-label-all-loops]
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:29580:9: note: FIX-IT applied suggested code changes
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:29732:9: warning: Added loop label VITIS_LOOP_449_1:   [xilinx-label-all-loops]
         for(int i=0;i<W-1;i++){
         ^~~
         VITIS_LOOP_449_1: 
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:29733:9: note: FIX-IT applied suggested code changes
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:29913:5: warning: Added loop label VITIS_LOOP_629_1:   [xilinx-label-all-loops]
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:29732:9: note: FIX-IT applied suggested code changes
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:29912:5: warning: Added loop label VITIS_LOOP_629_1:   [xilinx-label-all-loops]
     for(int i=0;i<W+1;i++){
     ^~~
     VITIS_LOOP_629_1: 
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:29913:5: note: FIX-IT applied suggested code changes
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:29917:5: warning: Added loop label VITIS_LOOP_633_2:   [xilinx-label-all-loops]
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:29912:5: note: FIX-IT applied suggested code changes
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:29916:5: warning: Added loop label VITIS_LOOP_633_2:   [xilinx-label-all-loops]
     for(int i=0;i<W+1;i++){
     ^~~
     VITIS_LOOP_633_2: 
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:29917:5: note: FIX-IT applied suggested code changes
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:30027:5: warning: Added loop label VITIS_LOOP_743_1:   [xilinx-label-all-loops]
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:29916:5: note: FIX-IT applied suggested code changes
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:30026:5: warning: Added loop label VITIS_LOOP_743_1:   [xilinx-label-all-loops]
     for (int n=0; n<Nmax; n++){
     ^~~
     VITIS_LOOP_743_1: 
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:30027:5: note: FIX-IT applied suggested code changes
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:30117:7: warning: Added loop label VITIS_LOOP_840_1:   [xilinx-label-all-loops]
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:30026:5: note: FIX-IT applied suggested code changes
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:30116:7: warning: Added loop label VITIS_LOOP_840_1:   [xilinx-label-all-loops]
       for(int i=0;i<W-1;i++){
       ^~~
       VITIS_LOOP_840_1: 
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:30117:7: note: FIX-IT applied suggested code changes
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:30136:7: warning: Added loop label VITIS_LOOP_859_2:   [xilinx-label-all-loops]
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:30116:7: note: FIX-IT applied suggested code changes
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:30135:7: warning: Added loop label VITIS_LOOP_859_2:   [xilinx-label-all-loops]
       for(int i=0;i<W-1;i++){
       ^~~
       VITIS_LOOP_859_2: 
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:30136:7: note: FIX-IT applied suggested code changes
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:30426:5: warning: Added loop label VITIS_LOOP_1173_1:   [xilinx-label-all-loops]
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:30135:7: note: FIX-IT applied suggested code changes
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:30425:5: warning: Added loop label VITIS_LOOP_1173_1:   [xilinx-label-all-loops]
     for(int i=0; i<Nmax; i++) {
     ^~~
     VITIS_LOOP_1173_1: 
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:30426:5: note: FIX-IT applied suggested code changes
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:30509:5: warning: Added loop label VITIS_LOOP_1256_1:   [xilinx-label-all-loops]
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:30425:5: note: FIX-IT applied suggested code changes
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:30508:5: warning: Added loop label VITIS_LOOP_1256_1:   [xilinx-label-all-loops]
     for(int i=0; i<Nmax; i++) {
     ^~~
     VITIS_LOOP_1256_1: 
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:30509:5: note: FIX-IT applied suggested code changes
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:30915:13: warning: Added loop label VITIS_LOOP_68_1:   [xilinx-label-all-loops]
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:30508:5: note: FIX-IT applied suggested code changes
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:30914:13: warning: Added loop label VITIS_LOOP_68_1:   [xilinx-label-all-loops]
             for (int j = 3; j >= I_+1; j--) {
             ^~~
             VITIS_LOOP_68_1: 
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:30915:13: note: FIX-IT applied suggested code changes
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:30921:17: warning: Added loop label VITIS_LOOP_74_2:   [xilinx-label-all-loops]
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:30914:13: note: FIX-IT applied suggested code changes
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:30920:17: warning: Added loop label VITIS_LOOP_74_2:   [xilinx-label-all-loops]
                 for (int j = 3; j >= I_+1; j--){
                 ^~~
                 VITIS_LOOP_74_2: 
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:30921:17: note: FIX-IT applied suggested code changes
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:30925:17: warning: Added loop label VITIS_LOOP_78_3:   [xilinx-label-all-loops]
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:30920:17: note: FIX-IT applied suggested code changes
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:30924:17: warning: Added loop label VITIS_LOOP_78_3:   [xilinx-label-all-loops]
                 for (int j = I_; j >= 0; j--){
                 ^~~
                 VITIS_LOOP_78_3: 
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:30925:17: note: FIX-IT applied suggested code changes
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:30973:13: warning: Added loop label VITIS_LOOP_145_4:   [xilinx-label-all-loops]
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:30924:17: note: FIX-IT applied suggested code changes
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:30972:13: warning: Added loop label VITIS_LOOP_145_4:   [xilinx-label-all-loops]
             for (int j = 9; j >= I_+4; j--) {
             ^~~
             VITIS_LOOP_145_4: 
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:30973:13: note: FIX-IT applied suggested code changes
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:30979:17: warning: Added loop label VITIS_LOOP_151_5:   [xilinx-label-all-loops]
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:30972:13: note: FIX-IT applied suggested code changes
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:30978:17: warning: Added loop label VITIS_LOOP_151_5:   [xilinx-label-all-loops]
                 for (int j = 9; j >= I_+4; j--){
                 ^~~
                 VITIS_LOOP_151_5: 
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:30979:17: note: FIX-IT applied suggested code changes
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:30983:17: warning: Added loop label VITIS_LOOP_155_6:   [xilinx-label-all-loops]
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:30978:17: note: FIX-IT applied suggested code changes
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:30982:17: warning: Added loop label VITIS_LOOP_155_6:   [xilinx-label-all-loops]
                 for (int j = I_+3; j >= 0; j--){
                 ^~~
                 VITIS_LOOP_155_6: 
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:30983:17: note: FIX-IT applied suggested code changes
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:30998:9: warning: Added loop label VITIS_LOOP_170_7:   [xilinx-label-all-loops]
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:30982:17: note: FIX-IT applied suggested code changes
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:30997:9: warning: Added loop label VITIS_LOOP_170_7:   [xilinx-label-all-loops]
         for (int j = 14; j < 22; j++){
         ^~~
         VITIS_LOOP_170_7: 
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:30998:9: note: FIX-IT applied suggested code changes
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:31006:17: warning: Added loop label VITIS_LOOP_178_8:   [xilinx-label-all-loops]
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:30997:9: note: FIX-IT applied suggested code changes
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:31005:17: warning: Added loop label VITIS_LOOP_178_8:   [xilinx-label-all-loops]
                 for (int j = 0; j < 22; j++){
                 ^~~
                 VITIS_LOOP_178_8: 
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:31006:17: note: FIX-IT applied suggested code changes
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:31071:13: warning: Added loop label VITIS_LOOP_243_9:   [xilinx-label-all-loops]
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:31005:17: note: FIX-IT applied suggested code changes
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:31070:13: warning: Added loop label VITIS_LOOP_243_9:   [xilinx-label-all-loops]
             for (int j = 21; j >= I_+10; j--) {
             ^~~
             VITIS_LOOP_243_9: 
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:31071:13: note: FIX-IT applied suggested code changes
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:31077:17: warning: Added loop label VITIS_LOOP_249_10:   [xilinx-label-all-loops]
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:31070:13: note: FIX-IT applied suggested code changes
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:31076:17: warning: Added loop label VITIS_LOOP_249_10:   [xilinx-label-all-loops]
                 for (int j = 21; j >= I_+10; j--) {
                 ^~~
                 VITIS_LOOP_249_10: 
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:31077:17: note: FIX-IT applied suggested code changes
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:31081:17: warning: Added loop label VITIS_LOOP_253_11:   [xilinx-label-all-loops]
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:31076:17: note: FIX-IT applied suggested code changes
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:31080:17: warning: Added loop label VITIS_LOOP_253_11:   [xilinx-label-all-loops]
                 for (int j = I_+9; j >= 0; j--) {
                 ^~~
                 VITIS_LOOP_253_11: 
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:31081:17: note: FIX-IT applied suggested code changes
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:31096:9: warning: Added loop label VITIS_LOOP_268_12:   [xilinx-label-all-loops]
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:31080:17: note: FIX-IT applied suggested code changes
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:31095:9: warning: Added loop label VITIS_LOOP_268_12:   [xilinx-label-all-loops]
         for (int j = 27; j < 46; j++){
         ^~~
         VITIS_LOOP_268_12: 
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:31096:9: note: FIX-IT applied suggested code changes
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:31104:17: warning: Added loop label VITIS_LOOP_276_13:   [xilinx-label-all-loops]
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:31095:9: note: FIX-IT applied suggested code changes
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:31103:17: warning: Added loop label VITIS_LOOP_276_13:   [xilinx-label-all-loops]
                 for (int j = 0; j < 46; j++) {
                 ^~~
                 VITIS_LOOP_276_13: 
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:31104:17: note: FIX-IT applied suggested code changes
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:31333:13: warning: Added loop label VITIS_LOOP_505_14:   [xilinx-label-all-loops]
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:31103:17: note: FIX-IT applied suggested code changes
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:31332:13: warning: Added loop label VITIS_LOOP_505_14:   [xilinx-label-all-loops]
             for (int j = 45; j >= I_+22; j--) {
             ^~~
             VITIS_LOOP_505_14: 
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:31333:13: note: FIX-IT applied suggested code changes
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:31339:17: warning: Added loop label VITIS_LOOP_511_15:   [xilinx-label-all-loops]
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:31332:13: note: FIX-IT applied suggested code changes
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:31338:17: warning: Added loop label VITIS_LOOP_511_15:   [xilinx-label-all-loops]
                 for (int j = 45; j >= I_+22; j--){
                 ^~~
                 VITIS_LOOP_511_15: 
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:31339:17: note: FIX-IT applied suggested code changes
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:31343:17: warning: Added loop label VITIS_LOOP_515_16:   [xilinx-label-all-loops]
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:31338:17: note: FIX-IT applied suggested code changes
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:31342:17: warning: Added loop label VITIS_LOOP_515_16:   [xilinx-label-all-loops]
                 for (int j = I_+21; j >= 0; j--) {
                 ^~~
                 VITIS_LOOP_515_16: 
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:31343:17: note: FIX-IT applied suggested code changes
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:31353:9: warning: Added loop label VITIS_LOOP_525_17:   [xilinx-label-all-loops]
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:31342:17: note: FIX-IT applied suggested code changes
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:31352:9: warning: Added loop label VITIS_LOOP_525_17:   [xilinx-label-all-loops]
         for (int j = 32-F_; j < 32+I_; j++){
         ^~~
         VITIS_LOOP_525_17: 
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:31353:9: note: FIX-IT applied suggested code changes
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:31357:9: warning: Added loop label VITIS_LOOP_529_18:   [xilinx-label-all-loops]
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:31352:9: note: FIX-IT applied suggested code changes
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:31356:9: warning: Added loop label VITIS_LOOP_529_18:   [xilinx-label-all-loops]
         for (int j = 32+I_; j <= 64; j++){
         ^~~
         VITIS_LOOP_529_18: 
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:31357:9: note: FIX-IT applied suggested code changes
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:31367:9: warning: Added loop label VITIS_LOOP_539_19:   [xilinx-label-all-loops]
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:31356:9: note: FIX-IT applied suggested code changes
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:31366:9: warning: Added loop label VITIS_LOOP_539_19:   [xilinx-label-all-loops]
         for (int j = 37; j < 64; j++) {
         ^~~
         VITIS_LOOP_539_19: 
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:31367:9: note: FIX-IT applied suggested code changes
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:31375:17: warning: Added loop label VITIS_LOOP_547_20:   [xilinx-label-all-loops]
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:31366:9: note: FIX-IT applied suggested code changes
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:31374:17: warning: Added loop label VITIS_LOOP_547_20:   [xilinx-label-all-loops]
                 for (int j = 0; j < 64; j++){
                 ^~~
                 VITIS_LOOP_547_20: 
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:31375:17: note: FIX-IT applied suggested code changes
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:31736:13: warning: Added loop label VITIS_LOOP_908_21:   [xilinx-label-all-loops]
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:31374:17: note: FIX-IT applied suggested code changes
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:31735:13: warning: Added loop label VITIS_LOOP_908_21:   [xilinx-label-all-loops]
             for (int j = 63; j >= I_+31; j--) {
             ^~~
             VITIS_LOOP_908_21: 
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:31736:13: note: FIX-IT applied suggested code changes
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:31742:17: warning: Added loop label VITIS_LOOP_914_22:   [xilinx-label-all-loops]
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:31735:13: note: FIX-IT applied suggested code changes
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:31741:17: warning: Added loop label VITIS_LOOP_914_22:   [xilinx-label-all-loops]
                 for (int j = 63; j >= I_+31; j--) {
                 ^~~
                 VITIS_LOOP_914_22: 
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:31742:17: note: FIX-IT applied suggested code changes
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:31746:17: warning: Added loop label VITIS_LOOP_918_23:   [xilinx-label-all-loops]
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:31741:17: note: FIX-IT applied suggested code changes
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:31745:17: warning: Added loop label VITIS_LOOP_918_23:   [xilinx-label-all-loops]
                 for (int j = I_+30; j >= 0; j--) {
                 ^~~
                 VITIS_LOOP_918_23: 
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:31746:17: note: FIX-IT applied suggested code changes
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:31862:13: warning: Added loop label VITIS_LOOP_1034_1:   [xilinx-label-all-loops]
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:31745:17: note: FIX-IT applied suggested code changes
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:31861:13: warning: Added loop label VITIS_LOOP_1034_1:   [xilinx-label-all-loops]
             for (int j = 4; j >= I_+1; j--) {
             ^~~
             VITIS_LOOP_1034_1: 
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:31862:13: note: FIX-IT applied suggested code changes
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:31868:17: warning: Added loop label VITIS_LOOP_1040_2:   [xilinx-label-all-loops]
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:31861:13: note: FIX-IT applied suggested code changes
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:31867:17: warning: Added loop label VITIS_LOOP_1040_2:   [xilinx-label-all-loops]
                 for (int j = 4; j >= I_+1; j--) {
                 ^~~
                 VITIS_LOOP_1040_2: 
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:31868:17: note: FIX-IT applied suggested code changes
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:31872:17: warning: Added loop label VITIS_LOOP_1044_3:   [xilinx-label-all-loops]
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:31867:17: note: FIX-IT applied suggested code changes
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:31871:17: warning: Added loop label VITIS_LOOP_1044_3:   [xilinx-label-all-loops]
                 for (int j = I_; j >= 0; j--) {
                 ^~~
                 VITIS_LOOP_1044_3: 
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:31872:17: note: FIX-IT applied suggested code changes
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:31959:13: warning: Added loop label VITIS_LOOP_1131_4:   [xilinx-label-all-loops]
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:31871:17: note: FIX-IT applied suggested code changes
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:31958:13: warning: Added loop label VITIS_LOOP_1131_4:   [xilinx-label-all-loops]
             for (int j = 10; j >= I_+4; j--) {
             ^~~
             VITIS_LOOP_1131_4: 
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:31959:13: note: FIX-IT applied suggested code changes
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:31965:17: warning: Added loop label VITIS_LOOP_1137_5:   [xilinx-label-all-loops]
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:31958:13: note: FIX-IT applied suggested code changes
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:31964:17: warning: Added loop label VITIS_LOOP_1137_5:   [xilinx-label-all-loops]
                 for (int j = 10; j >= I_+4; j--) {
                 ^~~
                 VITIS_LOOP_1137_5: 
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:31965:17: note: FIX-IT applied suggested code changes
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:31969:17: warning: Added loop label VITIS_LOOP_1141_6:   [xilinx-label-all-loops]
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:31964:17: note: FIX-IT applied suggested code changes
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:31968:17: warning: Added loop label VITIS_LOOP_1141_6:   [xilinx-label-all-loops]
                 for (int j = I_+3; j >= 0; j--) {
                 ^~~
                 VITIS_LOOP_1141_6: 
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:31969:17: note: FIX-IT applied suggested code changes
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:31988:9: warning: Added loop label VITIS_LOOP_1160_7:   [xilinx-label-all-loops]
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:31968:17: note: FIX-IT applied suggested code changes
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:31987:9: warning: Added loop label VITIS_LOOP_1160_7:   [xilinx-label-all-loops]
         for (int j = wf+3; j < w-1; j++) {
         ^~~
         VITIS_LOOP_1160_7: 
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:31988:9: note: FIX-IT applied suggested code changes
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:31995:17: warning: Added loop label VITIS_LOOP_1167_8:   [xilinx-label-all-loops]
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:31987:9: note: FIX-IT applied suggested code changes
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:31994:17: warning: Added loop label VITIS_LOOP_1167_8:   [xilinx-label-all-loops]
                 for (int j = 0; j < 22; j++) {
                 ^~~
                 VITIS_LOOP_1167_8: 
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:31995:17: note: FIX-IT applied suggested code changes
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:32111:13: warning: Added loop label VITIS_LOOP_1283_9:   [xilinx-label-all-loops]
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:31994:17: note: FIX-IT applied suggested code changes
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:32110:13: warning: Added loop label VITIS_LOOP_1283_9:   [xilinx-label-all-loops]
             for (int j = 22; j >= I_+10; j--) {
             ^~~
             VITIS_LOOP_1283_9: 
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:32111:13: note: FIX-IT applied suggested code changes
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:32117:17: warning: Added loop label VITIS_LOOP_1289_10:   [xilinx-label-all-loops]
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:32110:13: note: FIX-IT applied suggested code changes
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:32116:17: warning: Added loop label VITIS_LOOP_1289_10:   [xilinx-label-all-loops]
                 for (int j = 22; j >= I_+10; j--){
                 ^~~
                 VITIS_LOOP_1289_10: 
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:32117:17: note: FIX-IT applied suggested code changes
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:32121:17: warning: Added loop label VITIS_LOOP_1293_11:   [xilinx-label-all-loops]
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:32116:17: note: FIX-IT applied suggested code changes
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:32120:17: warning: Added loop label VITIS_LOOP_1293_11:   [xilinx-label-all-loops]
                 for (int j = I_+9; j >= 0; j--) {
                 ^~~
                 VITIS_LOOP_1293_11: 
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:32121:17: note: FIX-IT applied suggested code changes
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:32141:9: warning: Added loop label VITIS_LOOP_1313_12:   [xilinx-label-all-loops]
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:32120:17: note: FIX-IT applied suggested code changes
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:32140:9: warning: Added loop label VITIS_LOOP_1313_12:   [xilinx-label-all-loops]
         for (int j = wf+4; j < w-1; j++){
         ^~~
         VITIS_LOOP_1313_12: 
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:32141:9: note: FIX-IT applied suggested code changes
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:32148:17: warning: Added loop label VITIS_LOOP_1320_13:   [xilinx-label-all-loops]
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:32140:9: note: FIX-IT applied suggested code changes
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:32147:17: warning: Added loop label VITIS_LOOP_1320_13:   [xilinx-label-all-loops]
                 for (int j = 0; j < 46; j++) {
                 ^~~
                 VITIS_LOOP_1320_13: 
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:32148:17: note: FIX-IT applied suggested code changes
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:32410:13: warning: Added loop label VITIS_LOOP_1582_14:   [xilinx-label-all-loops]
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:32147:17: note: FIX-IT applied suggested code changes
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:32409:13: warning: Added loop label VITIS_LOOP_1582_14:   [xilinx-label-all-loops]
             for (int j = 46; j >= I_+22; j--) {
             ^~~
             VITIS_LOOP_1582_14: 
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:32410:13: note: FIX-IT applied suggested code changes
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:32416:17: warning: Added loop label VITIS_LOOP_1588_15:   [xilinx-label-all-loops]
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:32409:13: note: FIX-IT applied suggested code changes
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:32415:17: warning: Added loop label VITIS_LOOP_1588_15:   [xilinx-label-all-loops]
                 for (int j = 46; j >= I_+22; j--) {
                 ^~~
                 VITIS_LOOP_1588_15: 
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:32416:17: note: FIX-IT applied suggested code changes
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:32420:17: warning: Added loop label VITIS_LOOP_1592_16:   [xilinx-label-all-loops]
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:32415:17: note: FIX-IT applied suggested code changes
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:32419:17: warning: Added loop label VITIS_LOOP_1592_16:   [xilinx-label-all-loops]
                 for (int j = I_+21; j >= 0; j--) {
                 ^~~
                 VITIS_LOOP_1592_16: 
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:32420:17: note: FIX-IT applied suggested code changes
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:32444:9: warning: Added loop label VITIS_LOOP_1616_17:   [xilinx-label-all-loops]
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:32419:17: note: FIX-IT applied suggested code changes
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:32443:9: warning: Added loop label VITIS_LOOP_1616_17:   [xilinx-label-all-loops]
         for (int j = wf+5; j < w-1; j++){
         ^~~
         VITIS_LOOP_1616_17: 
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:32444:9: note: FIX-IT applied suggested code changes
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:32451:17: warning: Added loop label VITIS_LOOP_1623_18:   [xilinx-label-all-loops]
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:32443:9: note: FIX-IT applied suggested code changes
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:32450:17: warning: Added loop label VITIS_LOOP_1623_18:   [xilinx-label-all-loops]
                 for (int j = 0; j < 64; j++) {
                 ^~~
                 VITIS_LOOP_1623_18: 
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:32451:17: note: FIX-IT applied suggested code changes
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:32881:13: warning: Added loop label VITIS_LOOP_2053_19:   [xilinx-label-all-loops]
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:32450:17: note: FIX-IT applied suggested code changes
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:32880:13: warning: Added loop label VITIS_LOOP_2053_19:   [xilinx-label-all-loops]
             for (int j = 64; j >= I_+31; j--) {
             ^~~
             VITIS_LOOP_2053_19: 
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:32881:13: note: FIX-IT applied suggested code changes
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:32887:17: warning: Added loop label VITIS_LOOP_2059_20:   [xilinx-label-all-loops]
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:32880:13: note: FIX-IT applied suggested code changes
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:32886:17: warning: Added loop label VITIS_LOOP_2059_20:   [xilinx-label-all-loops]
                 for (int j = 64; j >= I_+31; j--) {
                 ^~~
                 VITIS_LOOP_2059_20: 
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:32887:17: note: FIX-IT applied suggested code changes
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:32891:17: warning: Added loop label VITIS_LOOP_2063_21:   [xilinx-label-all-loops]
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:32886:17: note: FIX-IT applied suggested code changes
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:32890:17: warning: Added loop label VITIS_LOOP_2063_21:   [xilinx-label-all-loops]
                 for (int j = I_+30; j >= 0; j--) {
                 ^~~
                 VITIS_LOOP_2063_21: 
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:32891:17: note: FIX-IT applied suggested code changes
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:33021:13: warning: Added loop label VITIS_LOOP_2193_1:   [xilinx-label-all-loops]
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:32890:17: note: FIX-IT applied suggested code changes
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:33020:13: warning: Added loop label VITIS_LOOP_2193_1:   [xilinx-label-all-loops]
             for(int j=3; j>=I+1; j--) {
             ^~~
             VITIS_LOOP_2193_1: 
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:33021:13: note: FIX-IT applied suggested code changes
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:33028:17: warning: Added loop label VITIS_LOOP_2200_2:   [xilinx-label-all-loops]
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:33020:13: note: FIX-IT applied suggested code changes
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:33027:17: warning: Added loop label VITIS_LOOP_2200_2:   [xilinx-label-all-loops]
                 for(int j=3; j>=I+1; j--) {
                 ^~~
                 VITIS_LOOP_2200_2: 
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:33028:17: note: FIX-IT applied suggested code changes
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:33032:17: warning: Added loop label VITIS_LOOP_2204_3:   [xilinx-label-all-loops]
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:33027:17: note: FIX-IT applied suggested code changes
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:33031:17: warning: Added loop label VITIS_LOOP_2204_3:   [xilinx-label-all-loops]
                 for(int j=I; j>=0; j--) {
                 ^~~
                 VITIS_LOOP_2204_3: 
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:33032:17: note: FIX-IT applied suggested code changes
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:33079:13: warning: Added loop label VITIS_LOOP_2251_4:   [xilinx-label-all-loops]
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:33031:17: note: FIX-IT applied suggested code changes
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:33078:13: warning: Added loop label VITIS_LOOP_2251_4:   [xilinx-label-all-loops]
             for(int j=7; j>=3+I; j--) {
             ^~~
             VITIS_LOOP_2251_4: 
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:33079:13: note: FIX-IT applied suggested code changes
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:33086:17: warning: Added loop label VITIS_LOOP_2258_5:   [xilinx-label-all-loops]
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:33078:13: note: FIX-IT applied suggested code changes
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:33085:17: warning: Added loop label VITIS_LOOP_2258_5:   [xilinx-label-all-loops]
                 for(int j=7; j>=3+I; j--) {
                 ^~~
                 VITIS_LOOP_2258_5: 
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:33086:17: note: FIX-IT applied suggested code changes
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:33090:17: warning: Added loop label VITIS_LOOP_2262_6:   [xilinx-label-all-loops]
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:33085:17: note: FIX-IT applied suggested code changes
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:33089:17: warning: Added loop label VITIS_LOOP_2262_6:   [xilinx-label-all-loops]
                 for(int j=I+2; j>=0; j--) {
                 ^~~
                 VITIS_LOOP_2262_6: 
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:33090:17: note: FIX-IT applied suggested code changes
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:33108:9: warning: Added loop label VITIS_LOOP_2280_7:   [xilinx-label-all-loops]
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:33089:17: note: FIX-IT applied suggested code changes
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:33107:9: warning: Added loop label VITIS_LOOP_2280_7:   [xilinx-label-all-loops]
         for(int j=11; j<16; j++) {
         ^~~
         VITIS_LOOP_2280_7: 
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:33108:9: note: FIX-IT applied suggested code changes
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:33163:13: warning: Added loop label VITIS_LOOP_2335_8:   [xilinx-label-all-loops]
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:33107:9: note: FIX-IT applied suggested code changes
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:33162:13: warning: Added loop label VITIS_LOOP_2335_8:   [xilinx-label-all-loops]
             for(int j=15; j>=7+I; j--) {
             ^~~
             VITIS_LOOP_2335_8: 
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:33163:13: note: FIX-IT applied suggested code changes
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:33170:17: warning: Added loop label VITIS_LOOP_2342_9:   [xilinx-label-all-loops]
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:33162:13: note: FIX-IT applied suggested code changes
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:33169:17: warning: Added loop label VITIS_LOOP_2342_9:   [xilinx-label-all-loops]
                 for(int j=15; j>=7+I; j--) {
                 ^~~
                 VITIS_LOOP_2342_9: 
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:33170:17: note: FIX-IT applied suggested code changes
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:33174:17: warning: Added loop label VITIS_LOOP_2346_10:   [xilinx-label-all-loops]
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:33169:17: note: FIX-IT applied suggested code changes
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:33173:17: warning: Added loop label VITIS_LOOP_2346_10:   [xilinx-label-all-loops]
                 for(int j=6+I; j>=0; j--) {
                 ^~~
                 VITIS_LOOP_2346_10: 
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:33174:17: note: FIX-IT applied suggested code changes
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:33192:9: warning: Added loop label VITIS_LOOP_2364_11:   [xilinx-label-all-loops]
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:33173:17: note: FIX-IT applied suggested code changes
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:33191:9: warning: Added loop label VITIS_LOOP_2364_11:   [xilinx-label-all-loops]
         for(int j=20; j<32; j++) {
         ^~~
         VITIS_LOOP_2364_11: 
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:33192:9: note: FIX-IT applied suggested code changes
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:33281:13: warning: Added loop label VITIS_LOOP_2453_12:   [xilinx-label-all-loops]
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:33191:9: note: FIX-IT applied suggested code changes
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:33280:13: warning: Added loop label VITIS_LOOP_2453_12:   [xilinx-label-all-loops]
             for(int j=31; j>=I+15; j--) {
             ^~~
             VITIS_LOOP_2453_12: 
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:33281:13: note: FIX-IT applied suggested code changes
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:33288:17: warning: Added loop label VITIS_LOOP_2460_13:   [xilinx-label-all-loops]
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:33280:13: note: FIX-IT applied suggested code changes
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:33287:17: warning: Added loop label VITIS_LOOP_2460_13:   [xilinx-label-all-loops]
                 for(int j=31; j>=I+15; j--) {
                 ^~~
                 VITIS_LOOP_2460_13: 
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:33288:17: note: FIX-IT applied suggested code changes
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:33292:17: warning: Added loop label VITIS_LOOP_2464_14:   [xilinx-label-all-loops]
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:33287:17: note: FIX-IT applied suggested code changes
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:33291:17: warning: Added loop label VITIS_LOOP_2464_14:   [xilinx-label-all-loops]
                 for(int j=I+14; j>=0; j--) {
                 ^~~
                 VITIS_LOOP_2464_14: 
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:33292:17: note: FIX-IT applied suggested code changes
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:33302:9: warning: Added loop label VITIS_LOOP_2474_15:   [xilinx-label-all-loops]
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:33291:17: note: FIX-IT applied suggested code changes
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:33301:9: warning: Added loop label VITIS_LOOP_2474_15:   [xilinx-label-all-loops]
         for(int j=32-F; j<32+I; j++) {
         ^~~
         VITIS_LOOP_2474_15: 
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:33302:9: note: FIX-IT applied suggested code changes
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:33306:9: warning: Added loop label VITIS_LOOP_2478_16:   [xilinx-label-all-loops]
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:33301:9: note: FIX-IT applied suggested code changes
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:33305:9: warning: Added loop label VITIS_LOOP_2478_16:   [xilinx-label-all-loops]
         for(int j=32+I; j<=64; j++) {
         ^~~
         VITIS_LOOP_2478_16: 
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:33306:9: note: FIX-IT applied suggested code changes
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:33317:9: warning: Added loop label VITIS_LOOP_2489_17:   [xilinx-label-all-loops]
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:33305:9: note: FIX-IT applied suggested code changes
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:33316:9: warning: Added loop label VITIS_LOOP_2489_17:   [xilinx-label-all-loops]
         for(int j=37; j<64; j++) {
         ^~~
         VITIS_LOOP_2489_17: 
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:33317:9: note: FIX-IT applied suggested code changes
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:33325:17: warning: Added loop label VITIS_LOOP_2497_18:   [xilinx-label-all-loops]
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:33316:9: note: FIX-IT applied suggested code changes
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:33324:17: warning: Added loop label VITIS_LOOP_2497_18:   [xilinx-label-all-loops]
                 for(int j=0; j<64; j++) {
                 ^~~
                 VITIS_LOOP_2497_18: 
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:33325:17: note: FIX-IT applied suggested code changes
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:33650:13: warning: Added loop label VITIS_LOOP_2822_19:   [xilinx-label-all-loops]
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:33324:17: note: FIX-IT applied suggested code changes
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:33649:13: warning: Added loop label VITIS_LOOP_2822_19:   [xilinx-label-all-loops]
             for(int j=63; j>=I+31; j--) {
             ^~~
             VITIS_LOOP_2822_19: 
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:33650:13: note: FIX-IT applied suggested code changes
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:33657:17: warning: Added loop label VITIS_LOOP_2829_20:   [xilinx-label-all-loops]
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:33649:13: note: FIX-IT applied suggested code changes
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:33656:17: warning: Added loop label VITIS_LOOP_2829_20:   [xilinx-label-all-loops]
                 for(int j=63; j>=I+31; j--) {
                 ^~~
                 VITIS_LOOP_2829_20: 
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:33657:17: note: FIX-IT applied suggested code changes
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:33661:17: warning: Added loop label VITIS_LOOP_2833_21:   [xilinx-label-all-loops]
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:33656:17: note: FIX-IT applied suggested code changes
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:33660:17: warning: Added loop label VITIS_LOOP_2833_21:   [xilinx-label-all-loops]
                 for(int j=I+30; j>=0; j--) {
                 ^~~
                 VITIS_LOOP_2833_21: 
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:33661:17: note: FIX-IT applied suggested code changes
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:33749:4: warning: Added loop label VITIS_LOOP_2921_1:   [xilinx-label-all-loops]
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:33660:17: note: FIX-IT applied suggested code changes
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:33748:4: warning: Added loop label VITIS_LOOP_2921_1:   [xilinx-label-all-loops]
    for(int j = 5; j>=I_+2; j--) {
    ^~~
    VITIS_LOOP_2921_1: 
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:33749:4: note: FIX-IT applied suggested code changes
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:33756:5: warning: Added loop label VITIS_LOOP_2928_2:   [xilinx-label-all-loops]
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:33748:4: note: FIX-IT applied suggested code changes
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:33755:5: warning: Added loop label VITIS_LOOP_2928_2:   [xilinx-label-all-loops]
     for(int j = 5; j>=I_+2; j--) {
     ^~~
     VITIS_LOOP_2928_2: 
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:33756:5: note: FIX-IT applied suggested code changes
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:33760:5: warning: Added loop label VITIS_LOOP_2932_3:   [xilinx-label-all-loops]
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:33755:5: note: FIX-IT applied suggested code changes
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:33759:5: warning: Added loop label VITIS_LOOP_2932_3:   [xilinx-label-all-loops]
     for(int j = I_+1; j>=0; j--) {
     ^~~
     VITIS_LOOP_2932_3: 
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:33760:5: note: FIX-IT applied suggested code changes
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:33775:3: warning: Added loop label VITIS_LOOP_2947_4:   [xilinx-label-all-loops]
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:33759:5: note: FIX-IT applied suggested code changes
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:33774:3: warning: Added loop label VITIS_LOOP_2947_4:   [xilinx-label-all-loops]
   for(int j = 11; j >=7; j--) {
   ^~~
   VITIS_LOOP_2947_4: 
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:33775:3: note: FIX-IT applied suggested code changes
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:33807:4: warning: Added loop label VITIS_LOOP_2979_5:   [xilinx-label-all-loops]
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:33774:3: note: FIX-IT applied suggested code changes
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:33806:4: warning: Added loop label VITIS_LOOP_2979_5:   [xilinx-label-all-loops]
    for(int j = 11; j >= I_+5; j--) {
    ^~~
    VITIS_LOOP_2979_5: 
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:33807:4: note: FIX-IT applied suggested code changes
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:33814:5: warning: Added loop label VITIS_LOOP_2986_6:   [xilinx-label-all-loops]
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:33806:4: note: FIX-IT applied suggested code changes
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:33813:5: warning: Added loop label VITIS_LOOP_2986_6:   [xilinx-label-all-loops]
     for(int j = 11; j>= I_+5; j--) {
     ^~~
     VITIS_LOOP_2986_6: 
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:33814:5: note: FIX-IT applied suggested code changes
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:33818:5: warning: Added loop label VITIS_LOOP_2990_7:   [xilinx-label-all-loops]
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:33813:5: note: FIX-IT applied suggested code changes
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:33817:5: warning: Added loop label VITIS_LOOP_2990_7:   [xilinx-label-all-loops]
     for(int j = I_+4; j>=0; j--) {
     ^~~
     VITIS_LOOP_2990_7: 
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:33818:5: note: FIX-IT applied suggested code changes
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:33833:3: warning: Added loop label VITIS_LOOP_3005_8:   [xilinx-label-all-loops]
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:33817:5: note: FIX-IT applied suggested code changes
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:33832:3: warning: Added loop label VITIS_LOOP_3005_8:   [xilinx-label-all-loops]
   for(int j = 25; j>=15; j--) {
   ^~~
   VITIS_LOOP_3005_8: 
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:33833:3: note: FIX-IT applied suggested code changes
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:33883:4: warning: Added loop label VITIS_LOOP_3055_9:   [xilinx-label-all-loops]
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:33832:3: note: FIX-IT applied suggested code changes
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:33882:4: warning: Added loop label VITIS_LOOP_3055_9:   [xilinx-label-all-loops]
    for(int j = 25; j>= I_+12; j--) {
    ^~~
    VITIS_LOOP_3055_9: 
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:33883:4: note: FIX-IT applied suggested code changes
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:33890:5: warning: Added loop label VITIS_LOOP_3062_10:   [xilinx-label-all-loops]
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:33882:4: note: FIX-IT applied suggested code changes
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:33889:5: warning: Added loop label VITIS_LOOP_3062_10:   [xilinx-label-all-loops]
     for(int j = 25; j>=I_+12; j--) {
     ^~~
     VITIS_LOOP_3062_10: 
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:33890:5: note: FIX-IT applied suggested code changes
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:33894:5: warning: Added loop label VITIS_LOOP_3066_11:   [xilinx-label-all-loops]
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:33889:5: note: FIX-IT applied suggested code changes
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:33893:5: warning: Added loop label VITIS_LOOP_3066_11:   [xilinx-label-all-loops]
     for(int j = I_+11; j>=0; j--) {
     ^~~
     VITIS_LOOP_3066_11: 
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:33894:5: note: FIX-IT applied suggested code changes
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:33909:3: warning: Added loop label VITIS_LOOP_3081_12:   [xilinx-label-all-loops]
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:33893:5: note: FIX-IT applied suggested code changes
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:33908:3: warning: Added loop label VITIS_LOOP_3081_12:   [xilinx-label-all-loops]
   for(int j = 51; j >= 29; j--) {
   ^~~
   VITIS_LOOP_3081_12: 
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:33909:3: note: FIX-IT applied suggested code changes
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:34046:4: warning: Added loop label VITIS_LOOP_3218_13:   [xilinx-label-all-loops]
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:33908:3: note: FIX-IT applied suggested code changes
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:34045:4: warning: Added loop label VITIS_LOOP_3218_13:   [xilinx-label-all-loops]
    for(int j = 51; j >= 25 + I_; j--) {
    ^~~
    VITIS_LOOP_3218_13: 
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:34046:4: note: FIX-IT applied suggested code changes
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:34053:5: warning: Added loop label VITIS_LOOP_3225_14:   [xilinx-label-all-loops]
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:34045:4: note: FIX-IT applied suggested code changes
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:34052:5: warning: Added loop label VITIS_LOOP_3225_14:   [xilinx-label-all-loops]
     for(int j = 51; j>=25 + I_; j--) {
     ^~~
     VITIS_LOOP_3225_14: 
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:34053:5: note: FIX-IT applied suggested code changes
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:34057:5: warning: Added loop label VITIS_LOOP_3229_15:   [xilinx-label-all-loops]
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:34052:5: note: FIX-IT applied suggested code changes
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:34056:5: warning: Added loop label VITIS_LOOP_3229_15:   [xilinx-label-all-loops]
     for(int j = 24 + I_; j >= 0; j--) {
     ^~~
     VITIS_LOOP_3229_15: 
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:34057:5: note: FIX-IT applied suggested code changes
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:34072:3: warning: Added loop label VITIS_LOOP_3244_16:   [xilinx-label-all-loops]
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:34056:5: note: FIX-IT applied suggested code changes
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:34071:3: warning: Added loop label VITIS_LOOP_3244_16:   [xilinx-label-all-loops]
   for(int j = 63; j >= 36; j--) {
   ^~~
   VITIS_LOOP_3244_16: 
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:34072:3: note: FIX-IT applied suggested code changes
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:34232:4: warning: Added loop label VITIS_LOOP_3404_17:   [xilinx-label-all-loops]
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:34071:3: note: FIX-IT applied suggested code changes
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:34231:4: warning: Added loop label VITIS_LOOP_3404_17:   [xilinx-label-all-loops]
    for(int j = 63; j >= 31 + I_; j--) {
    ^~~
    VITIS_LOOP_3404_17: 
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:34232:4: note: FIX-IT applied suggested code changes
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:34239:5: warning: Added loop label VITIS_LOOP_3411_18:   [xilinx-label-all-loops]
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:34231:4: note: FIX-IT applied suggested code changes
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:34238:5: warning: Added loop label VITIS_LOOP_3411_18:   [xilinx-label-all-loops]
     for(int j = 63; j >= 31 + I_; j--) {
     ^~~
     VITIS_LOOP_3411_18: 
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:34239:5: note: FIX-IT applied suggested code changes
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:34243:5: warning: Added loop label VITIS_LOOP_3415_19:   [xilinx-label-all-loops]
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:34238:5: note: FIX-IT applied suggested code changes
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:34242:5: warning: Added loop label VITIS_LOOP_3415_19:   [xilinx-label-all-loops]
     for(int j = 30 + I_; j >= 0; j--) {
     ^~~
     VITIS_LOOP_3415_19: 
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:34243:5: note: FIX-IT applied suggested code changes
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:34958:13: warning: Added loop label VITIS_LOOP_703_1:   [xilinx-label-all-loops]
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:34242:5: note: FIX-IT applied suggested code changes
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:34957:13: warning: Added loop label VITIS_LOOP_703_1:   [xilinx-label-all-loops]
             for (b_exp = I_-1; b_exp >= -F_; b_exp--) {
             ^~~
             VITIS_LOOP_703_1: 
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:34958:13: note: FIX-IT applied suggested code changes
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:35176:13: warning: Added loop label VITIS_LOOP_921_1:   [xilinx-label-all-loops]
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:34957:13: note: FIX-IT applied suggested code changes
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:35175:13: warning: Added loop label VITIS_LOOP_921_1:   [xilinx-label-all-loops]
             for (b_exp = I_-1; b_exp >= -F_; b_exp--) {
             ^~~
             VITIS_LOOP_921_1: 
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:35176:13: note: FIX-IT applied suggested code changes
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:35593:13: warning: Added loop label VITIS_LOOP_1345_1:   [xilinx-label-all-loops]
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:35175:13: note: FIX-IT applied suggested code changes
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:35592:13: warning: Added loop label VITIS_LOOP_1345_1:   [xilinx-label-all-loops]
             for (b_exp = I_-1; b_exp >= -F_; b_exp--) {
             ^~~
             VITIS_LOOP_1345_1: 
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:35593:13: note: FIX-IT applied suggested code changes
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:35913:9: warning: Added loop label VITIS_LOOP_240_1:   [xilinx-label-all-loops]
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:35592:13: note: FIX-IT applied suggested code changes
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:35912:9: warning: Added loop label VITIS_LOOP_240_1:   [xilinx-label-all-loops]
         for ( int pos = msbr-1; pos >= 0; pos-- ) {
         ^~~
         VITIS_LOOP_240_1: 
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:35913:9: note: FIX-IT applied suggested code changes
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:35941:9: warning: Added loop label VITIS_LOOP_268_2:   [xilinx-label-all-loops]
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:35912:9: note: FIX-IT applied suggested code changes
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:35940:9: warning: Added loop label VITIS_LOOP_268_2:   [xilinx-label-all-loops]
         for ( int pos = -1; pos >= -F_-1; pos-- ) {
         ^~~
         VITIS_LOOP_268_2: 
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:35941:9: note: FIX-IT applied suggested code changes
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:36643:13: warning: Added loop label VITIS_LOOP_48_1:   [xilinx-label-all-loops]
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:35940:9: note: FIX-IT applied suggested code changes
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:36642:13: warning: Added loop label VITIS_LOOP_48_1:   [xilinx-label-all-loops]
             for (int j = 0; j < W_-1; j++){
             ^~~
             VITIS_LOOP_48_1: 
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:36643:13: note: FIX-IT applied suggested code changes
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:36696:5: warning: Added loop label VITIS_LOOP_109_2:   [xilinx-label-all-loops]
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:36642:13: note: FIX-IT applied suggested code changes
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:36695:5: warning: Added loop label VITIS_LOOP_109_2:   [xilinx-label-all-loops]
     for (int j = F_l+F_+I_m-1; j < F_l+W_+5; j++){
     ^~~
     VITIS_LOOP_109_2: 
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:36696:5: note: FIX-IT applied suggested code changes
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:36710:13: warning: Added loop label VITIS_LOOP_123_3:   [xilinx-label-all-loops]
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:36695:5: note: FIX-IT applied suggested code changes
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:36709:13: warning: Added loop label VITIS_LOOP_123_3:   [xilinx-label-all-loops]
             for (int j = WO_m-1; j >= W_-1; j--) {
             ^~~
             VITIS_LOOP_123_3: 
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:36710:13: note: FIX-IT applied suggested code changes
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:36740:13: warning: Added loop label VITIS_LOOP_153_4:   [xilinx-label-all-loops]
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:36709:13: note: FIX-IT applied suggested code changes
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:36739:13: warning: Added loop label VITIS_LOOP_153_4:   [xilinx-label-all-loops]
             for (int j = W_-2; j >= 0; j--){
             ^~~
             VITIS_LOOP_153_4: 
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:36740:13: note: FIX-IT applied suggested code changes
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:36825:12: warning: Added loop label VITIS_LOOP_281_1:   [xilinx-label-all-loops]
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:36739:13: note: FIX-IT applied suggested code changes
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:36824:12: warning: Added loop label VITIS_LOOP_281_1:   [xilinx-label-all-loops]
            for(int i = wf_log+we_log-2; i > WI_e - 2; --i) {
            ^~~
            VITIS_LOOP_281_1: 
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:36825:12: note: FIX-IT applied suggested code changes
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:36845:16: warning: Added loop label VITIS_LOOP_301_2:   [xilinx-label-all-loops]
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:36824:12: note: FIX-IT applied suggested code changes
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:36844:16: warning: Added loop label VITIS_LOOP_301_2:   [xilinx-label-all-loops]
                for (int j = WO_e-1; j >= W_-1; j--) {
                ^~~
                VITIS_LOOP_301_2: 
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:36845:16: note: FIX-IT applied suggested code changes
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:36859:20: warning: Added loop label VITIS_LOOP_315_3:   [xilinx-label-all-loops]
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:36844:16: note: FIX-IT applied suggested code changes
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:36858:20: warning: Added loop label VITIS_LOOP_315_3:   [xilinx-label-all-loops]
                    for(int i = 0; i < W_-1; ++i) {
                    ^~~
                    VITIS_LOOP_315_3: 
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:36859:20: note: FIX-IT applied suggested code changes
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:36952:12: warning: Added loop label VITIS_LOOP_433_1:   [xilinx-label-all-loops]
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:36858:20: note: FIX-IT applied suggested code changes
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:36951:12: warning: Added loop label VITIS_LOOP_433_1:   [xilinx-label-all-loops]
            for (int j =WO_d-1; j >= W_-1; j--) {
            ^~~
            VITIS_LOOP_433_1: 
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:36952:12: note: FIX-IT applied suggested code changes
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:36966:15: warning: Added loop label VITIS_LOOP_447_2:   [xilinx-label-all-loops]
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:36951:12: note: FIX-IT applied suggested code changes
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:36965:15: warning: Added loop label VITIS_LOOP_447_2:   [xilinx-label-all-loops]
               for(int i = 0; i < W_-1; ++i) {
               ^~~
               VITIS_LOOP_447_2: 
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:36966:15: note: FIX-IT applied suggested code changes
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:37086:13: warning: Added loop label VITIS_LOOP_33_1:   [xilinx-label-all-loops]
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:36965:15: note: FIX-IT applied suggested code changes
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:37085:13: warning: Added loop label VITIS_LOOP_33_1:   [xilinx-label-all-loops]
             for (int i = 0; i < W_-1; i++){
             ^~~
             VITIS_LOOP_33_1: 
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:37086:13: note: FIX-IT applied suggested code changes
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:37210:13: warning: Added loop label VITIS_LOOP_183_1:   [xilinx-label-all-loops]
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:37085:13: note: FIX-IT applied suggested code changes
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:37209:13: warning: Added loop label VITIS_LOOP_183_1:   [xilinx-label-all-loops]
             for (int i = 0; i < W_-1; i++){
             ^~~
             VITIS_LOOP_183_1: 
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:37210:13: note: FIX-IT applied suggested code changes
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:37265:13: warning: Added loop label VITIS_LOOP_248_1:   [xilinx-label-all-loops]
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:37209:13: note: FIX-IT applied suggested code changes
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:37264:13: warning: Added loop label VITIS_LOOP_248_1:   [xilinx-label-all-loops]
             for (int i = 0; i < W_-1; i++){
             ^~~
             VITIS_LOOP_248_1: 
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:37265:13: note: FIX-IT applied suggested code changes
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:37784:2: warning: Added loop label VITIS_LOOP_16_1:   [xilinx-label-all-loops]
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:37264:13: note: FIX-IT applied suggested code changes
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:37783:2: warning: Added loop label VITIS_LOOP_16_1:   [xilinx-label-all-loops]
  for (int i=0; i<W_;i++)
  ^~~
  VITIS_LOOP_16_1: 
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:37784:2: note: FIX-IT applied suggested code changes
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:37795:2: warning: Added loop label VITIS_LOOP_27_1:   [xilinx-label-all-loops]
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:37783:2: note: FIX-IT applied suggested code changes
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:37794:2: warning: Added loop label VITIS_LOOP_27_1:   [xilinx-label-all-loops]
  for (int i=0; i<W_;i++)
  ^~~
  VITIS_LOOP_27_1: 
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:37795:2: note: FIX-IT applied suggested code changes
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:37806:2: warning: Added loop label VITIS_LOOP_38_1:   [xilinx-label-all-loops]
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:37794:2: note: FIX-IT applied suggested code changes
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:37805:2: warning: Added loop label VITIS_LOOP_38_1:   [xilinx-label-all-loops]
  for (int i=0; i<I_;i++)
  ^~~
  VITIS_LOOP_38_1: 
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:37806:2: note: FIX-IT applied suggested code changes
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:37817:2: warning: Added loop label VITIS_LOOP_49_1:   [xilinx-label-all-loops]
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:37805:2: note: FIX-IT applied suggested code changes
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:37816:2: warning: Added loop label VITIS_LOOP_49_1:   [xilinx-label-all-loops]
  for (int i=0; i<I_;i++)
  ^~~
  VITIS_LOOP_49_1: 
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:37817:2: note: FIX-IT applied suggested code changes
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:37828:2: warning: Added loop label VITIS_LOOP_60_1:   [xilinx-label-all-loops]
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:37816:2: note: FIX-IT applied suggested code changes
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:37827:2: warning: Added loop label VITIS_LOOP_60_1:   [xilinx-label-all-loops]
  for (int i=0; i<W_;i++)
  ^~~
  VITIS_LOOP_60_1: 
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:37828:2: note: FIX-IT applied suggested code changes
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:37839:2: warning: Added loop label VITIS_LOOP_71_1:   [xilinx-label-all-loops]
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:37827:2: note: FIX-IT applied suggested code changes
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:37838:2: warning: Added loop label VITIS_LOOP_71_1:   [xilinx-label-all-loops]
  for (int i=0; i<W_;i++)
  ^~~
  VITIS_LOOP_71_1: 
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:37839:2: note: FIX-IT applied suggested code changes
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:37850:2: warning: Added loop label VITIS_LOOP_82_1:   [xilinx-label-all-loops]
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:37838:2: note: FIX-IT applied suggested code changes
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:37849:2: warning: Added loop label VITIS_LOOP_82_1:   [xilinx-label-all-loops]
  for (int i=0; i<I_;i++)
  ^~~
  VITIS_LOOP_82_1: 
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:37850:2: note: FIX-IT applied suggested code changes
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:37861:2: warning: Added loop label VITIS_LOOP_93_1:   [xilinx-label-all-loops]
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:37849:2: note: FIX-IT applied suggested code changes
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:37860:2: warning: Added loop label VITIS_LOOP_93_1:   [xilinx-label-all-loops]
  for (int i=0; i<I_;i++)
  ^~~
  VITIS_LOOP_93_1: 
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:37861:2: note: FIX-IT applied suggested code changes
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:40186:12: warning: Added loop label VITIS_LOOP_26_1:   [xilinx-label-all-loops]
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:37860:2: note: FIX-IT applied suggested code changes
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:40185:12: warning: Added loop label VITIS_LOOP_26_1:   [xilinx-label-all-loops]
            for(int i = 0; i < W_-1; ++i) {
            ^~~
            VITIS_LOOP_26_1: 
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:40186:12: note: FIX-IT applied suggested code changes
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:40250:7: warning: Added loop label VITIS_LOOP_40_1:   [xilinx-label-all-loops]
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:40185:12: note: FIX-IT applied suggested code changes
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:40249:7: warning: Added loop label VITIS_LOOP_40_1:   [xilinx-label-all-loops]
       for(int pos = msbr - 1 ; pos >= -F-1; pos--) {
       ^~~
       VITIS_LOOP_40_1: 
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:40250:7: note: FIX-IT applied suggested code changes
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:40367:9: warning: Added loop label VITIS_LOOP_49_1:   [xilinx-label-all-loops]
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:40249:7: note: FIX-IT applied suggested code changes
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:40366:9: warning: Added loop label VITIS_LOOP_49_1:   [xilinx-label-all-loops]
         for(int pos = msbr - 1; pos >= 0; pos--) {
         ^~~
         VITIS_LOOP_49_1: 
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:40367:9: note: FIX-IT applied suggested code changes
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:40392:5: warning: Added loop label VITIS_LOOP_81_2:   [xilinx-label-all-loops]
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:40366:9: note: FIX-IT applied suggested code changes
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:40391:5: warning: Added loop label VITIS_LOOP_81_2:   [xilinx-label-all-loops]
     for(int pos = -1; pos >= -F-1; pos--) {
     ^~~
     VITIS_LOOP_81_2: 
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:40392:5: note: FIX-IT applied suggested code changes
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:40462:8: warning: Added loop label VITIS_LOOP_169_3:   [xilinx-label-all-loops]
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:40391:5: note: FIX-IT applied suggested code changes
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:40461:8: warning: Added loop label VITIS_LOOP_169_3:   [xilinx-label-all-loops]
        for(int i = 0; i < W - 1; ++i) {
        ^~~
        VITIS_LOOP_169_3: 
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:40462:8: note: FIX-IT applied suggested code changes
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:43408:3: warning: Added loop label VITIS_LOOP_521_1:   [xilinx-label-all-loops]
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:40461:8: note: FIX-IT applied suggested code changes
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:43345:3: warning: Added loop label VITIS_LOOP_465_1:   [xilinx-label-all-loops]
   for (int v246 = 0; v246 < 1; v246++) {
   ^~~
-  VITIS_LOOP_521_1: 
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:43408:3: note: FIX-IT applied suggested code changes
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:43409:5: warning: Added loop label VITIS_LOOP_522_2:   [xilinx-label-all-loops]
+  VITIS_LOOP_465_1: 
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:43345:3: note: FIX-IT applied suggested code changes
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:43346:5: warning: Added loop label VITIS_LOOP_466_2:   [xilinx-label-all-loops]
     for (int v247 = 0; v247 < 512; v247++) {
     ^~~
-    VITIS_LOOP_522_2: 
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:43409:5: note: FIX-IT applied suggested code changes
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:43435:3: warning: Added loop label VITIS_LOOP_617_1:   [xilinx-label-all-loops]
+    VITIS_LOOP_466_2: 
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:43346:5: note: FIX-IT applied suggested code changes
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:43366:3: warning: Added loop label VITIS_LOOP_486_1:   [xilinx-label-all-loops]
   for (int v267 = 0; v267 < 1024; v267++) {
   ^~~
-  VITIS_LOOP_617_1: 
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:43435:3: note: FIX-IT applied suggested code changes
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:43439:3: warning: Added loop label VITIS_LOOP_621_2:   [xilinx-label-all-loops]
+  VITIS_LOOP_486_1: 
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:43366:3: note: FIX-IT applied suggested code changes
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:43370:3: warning: Added loop label VITIS_LOOP_490_2:   [xilinx-label-all-loops]
   for (int v269 = 0; v269 < 1024; v269++) {
   ^~~
-  VITIS_LOOP_621_2: 
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:43439:3: note: FIX-IT applied suggested code changes
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:52436:5: warning: Added loop label VITIS_LOOP_9618_1:   [xilinx-label-all-loops]
-    for (int v5236 = 0; v5236 < 1024; v5236++) {
-    ^~~
-    VITIS_LOOP_9618_1: 
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:52436:5: note: FIX-IT applied suggested code changes
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:52437:7: warning: Added loop label VITIS_LOOP_9619_2:   [xilinx-label-all-loops]
-      for (int v5237 = 0; v5237 < 32; v5237++) {
-      ^~~
-      VITIS_LOOP_9619_2: 
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:52437:7: note: FIX-IT applied suggested code changes
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:52442:5: warning: Added loop label VITIS_LOOP_9624_3:   [xilinx-label-all-loops]
-    for (int v5239 = 0; v5239 < 1024; v5239++) {
-    ^~~
-    VITIS_LOOP_9624_3: 
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:52442:5: note: FIX-IT applied suggested code changes
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:52443:7: warning: Added loop label VITIS_LOOP_9625_4:   [xilinx-label-all-loops]
-      for (int v5240 = 0; v5240 < 32; v5240++) {
-      ^~~
-      VITIS_LOOP_9625_4: 
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:52443:7: note: FIX-IT applied suggested code changes
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:55459:3: warning: Added loop label VITIS_LOOP_12688_1:   [xilinx-label-all-loops]
-  for (int i = 0; i < 1024; i++) {
+  VITIS_LOOP_490_2: 
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:43370:3: note: FIX-IT applied suggested code changes
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:55390:3: warning: Added loop label VITIS_LOOP_12557_1:   [xilinx-label-all-loops]
+  for (int v6905 = 0; v6905 < 1024; v6905++) {
   ^~~
-  VITIS_LOOP_12688_1: 
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:55459:3: note: FIX-IT applied suggested code changes
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:55463:3: warning: Added loop label VITIS_LOOP_12692_2:   [xilinx-label-all-loops]
+  VITIS_LOOP_12557_1: 
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:55390:3: note: FIX-IT applied suggested code changes
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:55394:3: warning: Added loop label VITIS_LOOP_12561_2:   [xilinx-label-all-loops]
   for (int v6907 = 0; v6907 < 1024; v6907++) {
   ^~~
-  VITIS_LOOP_12692_2: 
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:55463:3: note: FIX-IT applied suggested code changes
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:58479:5: warning: Added loop label VITIS_LOOP_15708_1:   [xilinx-label-all-loops]
-    for (int v8578 = 0; v8578 < 1024; v8578++) {
-    ^~~
-    VITIS_LOOP_15708_1: 
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:58479:5: note: FIX-IT applied suggested code changes
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:58480:7: warning: Added loop label VITIS_LOOP_15709_2:   [xilinx-label-all-loops]
-      for (int v8579 = 0; v8579 < 64; v8579++) {
-      ^~~
-      VITIS_LOOP_15709_2: 
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:58480:7: note: FIX-IT applied suggested code changes
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:58485:43: error: Invalid Directive: for current device, ram_2p + uram is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+  VITIS_LOOP_12561_2: 
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:55394:3: note: FIX-IT applied suggested code changes
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:58427:43: error: Invalid Directive: for current device, ram_2p + uram is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
 #pragma HLS bind_storage variable=Y1 type=ram_2p impl=uram
                                           ^
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:58487:2: warning: Added loop label VITIS_LOOP_15716_3:   [xilinx-label-all-loops]
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:58428:2: warning: Added loop label VITIS_LOOP_15595_1:   [xilinx-label-all-loops]
  for (int v8581 = 0; v8581 < 1024; v8581++) {
  ^~~
- VITIS_LOOP_15716_3: 
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:58487:2: note: FIX-IT applied suggested code changes
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:58488:7: warning: Added loop label VITIS_LOOP_15717_4:   [xilinx-label-all-loops]
+ VITIS_LOOP_15595_1: 
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:58428:2: note: FIX-IT applied suggested code changes
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:58429:7: warning: Added loop label VITIS_LOOP_15596_2:   [xilinx-label-all-loops]
       for (int v8582 = 0; v8582 < 1024; v8582++) {
       ^~~
-      VITIS_LOOP_15717_4: 
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:58488:7: note: FIX-IT applied suggested code changes
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:58494:5: warning: Added loop label VITIS_LOOP_15723_5:   [xilinx-label-all-loops]
-    for (int v8584 = 0; v8584 < 1024; v8584++) {
-    ^~~
-    VITIS_LOOP_15723_5: 
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:58494:5: note: FIX-IT applied suggested code changes
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:58495:7: warning: Added loop label VITIS_LOOP_15724_6:   [xilinx-label-all-loops]
-      for (int v8585 = 0; v8585 < 1024; v8585++) {
-      ^~~
-      VITIS_LOOP_15724_6: 
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:58495:7: note: FIX-IT applied suggested code changes
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:67546:49: error: Invalid Directive: for current device, ram_2p + uram is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
-#pragma HLS bind_storage variable=buffer_x type=ram_2p impl=uram
-                                                ^
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:67547:49: error: Invalid Directive: for current device, ram_2p + uram is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+      VITIS_LOOP_15596_2: 
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:58429:7: note: FIX-IT applied suggested code changes
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:67473:49: error: Invalid Directive: for current device, ram_2p + uram is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
 #pragma HLS bind_storage variable=buffer_Q type=ram_2p impl=uram
                                                 ^
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:67548:49: error: Invalid Directive: for current device, ram_2p + uram is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:67474:49: error: Invalid Directive: for current device, ram_2p + uram is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
 #pragma HLS bind_storage variable=buffer_K type=ram_2p impl=uram
                                                 ^
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:67549:49: error: Invalid Directive: for current device, ram_2p + uram is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:67475:49: error: Invalid Directive: for current device, ram_2p + uram is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
 #pragma HLS bind_storage variable=buffer_V type=ram_2p impl=uram
                                                 ^
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:67550:49: error: Invalid Directive: for current device, ram_2p + uram is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
-#pragma HLS bind_storage variable=buffer_w type=ram_2p impl=uram
-                                                ^
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:67553:2: warning: Added loop label VITIS_LOOP_25293_1:   [xilinx-label-all-loops]
- for(int i = 0; i < 1; i++){
- ^~~
- VITIS_LOOP_25293_1: 
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:67553:2: note: FIX-IT applied suggested code changes
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:67554:7: warning: Added loop label VITIS_LOOP_25294_2:   [xilinx-label-all-loops]
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:67492:3: warning: Added loop label VITIS_LOOP_25157_1:   [xilinx-label-all-loops]
+  for(int i = 0; i < 1; i++){
+  ^~~
+  VITIS_LOOP_25157_1: 
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:67492:3: note: FIX-IT applied suggested code changes
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:67493:7: warning: Added loop label VITIS_LOOP_25158_2:   [xilinx-label-all-loops]
       for (int j = 0; j < 128; j++){
       ^~~
-      VITIS_LOOP_25294_2: 
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:67554:7: note: FIX-IT applied suggested code changes
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:67558:3: warning: Added loop label VITIS_LOOP_25298_3:   [xilinx-label-all-loops]
+      VITIS_LOOP_25158_2: 
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:67493:7: note: FIX-IT applied suggested code changes
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:67497:3: warning: Added loop label VITIS_LOOP_25162_3:   [xilinx-label-all-loops]
   for (int i = 0; i < 512; i++){
   ^~~
-  VITIS_LOOP_25298_3: 
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:67558:3: note: FIX-IT applied suggested code changes
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:67561:3: warning: Added loop label VITIS_LOOP_25301_4:   [xilinx-label-all-loops]
+  VITIS_LOOP_25162_3: 
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:67497:3: note: FIX-IT applied suggested code changes
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:67500:3: warning: Added loop label VITIS_LOOP_25165_4:   [xilinx-label-all-loops]
   for (int i = 0; i < 128; i++){
   ^~~
-  VITIS_LOOP_25301_4: 
+  VITIS_LOOP_25165_4: 
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:67500:3: note: FIX-IT applied suggested code changes
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:67501:7: warning: Added loop label VITIS_LOOP_25166_5:   [xilinx-label-all-loops]
+      for (int j = 0; j < 512; j++){
+      ^~~
+      VITIS_LOOP_25166_5: 
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:67501:7: note: FIX-IT applied suggested code changes
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:67507:3: warning: Added loop label VITIS_LOOP_25172_6:   [xilinx-label-all-loops]
+  for (int i = 0; i < 512; i++){
+  ^~~
+  VITIS_LOOP_25172_6: 
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:67507:3: note: FIX-IT applied suggested code changes
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:67510:3: warning: Added loop label VITIS_LOOP_25175_7:   [xilinx-label-all-loops]
+  for (int i = 0; i < 128; i++){
+  ^~~
+  VITIS_LOOP_25175_7: 
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:67510:3: note: FIX-IT applied suggested code changes
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:67511:7: warning: Added loop label VITIS_LOOP_25176_8:   [xilinx-label-all-loops]
+      for (int j = 0; j < 512; j++){
+      ^~~
+      VITIS_LOOP_25176_8: 
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:67511:7: note: FIX-IT applied suggested code changes
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:67517:3: warning: Added loop label VITIS_LOOP_25182_9:   [xilinx-label-all-loops]
+  for (int i = 0; i < 512; i++){
+  ^~~
+  VITIS_LOOP_25182_9: 
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:67517:3: note: FIX-IT applied suggested code changes
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:67520:3: warning: Added loop label VITIS_LOOP_25185_10:   [xilinx-label-all-loops]
+  for (int i = 0; i < 128; i++){
+  ^~~
+  VITIS_LOOP_25185_10: 
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:67520:3: note: FIX-IT applied suggested code changes
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:67521:7: warning: Added loop label VITIS_LOOP_25186_11:   [xilinx-label-all-loops]
+      for (int j = 0; j < 512; j++){
+      ^~~
+      VITIS_LOOP_25186_11: 
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:67521:7: note: FIX-IT applied suggested code changes
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:67527:3: warning: Added loop label VITIS_LOOP_25192_12:   [xilinx-label-all-loops]
+  for (int i = 0; i < 512; i++){
+  ^~~
+  VITIS_LOOP_25192_12: 
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:67527:3: note: FIX-IT applied suggested code changes
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:67530:3: warning: Added loop label VITIS_LOOP_25195_13:   [xilinx-label-all-loops]
+  for (int i = 0; i < 128; i++){
+  ^~~
+  VITIS_LOOP_25195_13: 
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:67530:3: note: FIX-IT applied suggested code changes
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:67531:7: warning: Added loop label VITIS_LOOP_25196_14:   [xilinx-label-all-loops]
+      for (int j = 0; j < 512; j++){
+      ^~~
+      VITIS_LOOP_25196_14: 
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:67531:7: note: FIX-IT applied suggested code changes
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:67537:3: warning: Added loop label VITIS_LOOP_25202_15:   [xilinx-label-all-loops]
+  for (int i = 0; i < 512; i++){
+  ^~~
+  VITIS_LOOP_25202_15: 
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:67537:3: note: FIX-IT applied suggested code changes
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:67540:3: warning: Added loop label VITIS_LOOP_25205_16:   [xilinx-label-all-loops]
+  for (int i = 0; i < 128; i++){
+  ^~~
+  VITIS_LOOP_25205_16: 
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:67540:3: note: FIX-IT applied suggested code changes
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:67541:7: warning: Added loop label VITIS_LOOP_25206_17:   [xilinx-label-all-loops]
+      for (int j = 0; j < 512; j++){
+      ^~~
+      VITIS_LOOP_25206_17: 
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:67541:7: note: FIX-IT applied suggested code changes
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:67549:3: warning: Added loop label VITIS_LOOP_25214_18:   [xilinx-label-all-loops]
+  for (int i = 0; i < 512; i++){
+  ^~~
+  VITIS_LOOP_25214_18: 
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:67549:3: note: FIX-IT applied suggested code changes
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:67552:3: warning: Added loop label VITIS_LOOP_25217_19:   [xilinx-label-all-loops]
+  for (int i = 0; i < 128; i++){
+  ^~~
+  VITIS_LOOP_25217_19: 
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:67552:3: note: FIX-IT applied suggested code changes
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:67553:7: warning: Added loop label VITIS_LOOP_25218_20:   [xilinx-label-all-loops]
+      for (int j = 0; j < 512; j++){
+      ^~~
+      VITIS_LOOP_25218_20: 
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:67553:7: note: FIX-IT applied suggested code changes
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:67561:3: warning: Added loop label VITIS_LOOP_25226_21:   [xilinx-label-all-loops]
+  for(int i = 0; i < 1024; i++){
+  ^~~
+  VITIS_LOOP_25226_21: 
 /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:67561:3: note: FIX-IT applied suggested code changes
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:67562:7: warning: Added loop label VITIS_LOOP_25302_5:   [xilinx-label-all-loops]
-      for (int j = 0; j < 512; j++){
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:67562:7: warning: Added loop label VITIS_LOOP_25227_22:   [xilinx-label-all-loops]
+      for(int j = 0; j < 512; j++){
       ^~~
-      VITIS_LOOP_25302_5: 
+      VITIS_LOOP_25227_22: 
 /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:67562:7: note: FIX-IT applied suggested code changes
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:67568:3: warning: Added loop label VITIS_LOOP_25308_6:   [xilinx-label-all-loops]
-  for (int i = 0; i < 512; i++){
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:67580:3: warning: Added loop label VITIS_LOOP_25245_23:   [xilinx-label-all-loops]
+  for(int i = 0; i < 512; i++){
   ^~~
-  VITIS_LOOP_25308_6: 
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:67568:3: note: FIX-IT applied suggested code changes
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:67571:3: warning: Added loop label VITIS_LOOP_25311_7:   [xilinx-label-all-loops]
-  for (int i = 0; i < 128; i++){
-  ^~~
-  VITIS_LOOP_25311_7: 
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:67571:3: note: FIX-IT applied suggested code changes
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:67572:7: warning: Added loop label VITIS_LOOP_25312_8:   [xilinx-label-all-loops]
-      for (int j = 0; j < 512; j++){
+  VITIS_LOOP_25245_23: 
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:67580:3: note: FIX-IT applied suggested code changes
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:67581:7: warning: Added loop label VITIS_LOOP_25246_24:   [xilinx-label-all-loops]
+      for(int j = 0; j < 512; j++){
       ^~~
-      VITIS_LOOP_25312_8: 
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:67572:7: note: FIX-IT applied suggested code changes
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:67578:3: warning: Added loop label VITIS_LOOP_25318_9:   [xilinx-label-all-loops]
-  for (int i = 0; i < 512; i++){
+      VITIS_LOOP_25246_24: 
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:67581:7: note: FIX-IT applied suggested code changes
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:67586:3: warning: Added loop label VITIS_LOOP_25251_25:   [xilinx-label-all-loops]
+  for(int i = 0; i < 512; i++){
   ^~~
-  VITIS_LOOP_25318_9: 
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:67578:3: note: FIX-IT applied suggested code changes
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:67581:3: warning: Added loop label VITIS_LOOP_25321_10:   [xilinx-label-all-loops]
-  for (int i = 0; i < 128; i++){
-  ^~~
-  VITIS_LOOP_25321_10: 
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:67581:3: note: FIX-IT applied suggested code changes
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:67582:7: warning: Added loop label VITIS_LOOP_25322_11:   [xilinx-label-all-loops]
-      for (int j = 0; j < 512; j++){
+  VITIS_LOOP_25251_25: 
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:67586:3: note: FIX-IT applied suggested code changes
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:67587:7: warning: Added loop label VITIS_LOOP_25252_26:   [xilinx-label-all-loops]
+      for(int j = 0; j < 512; j++){
       ^~~
-      VITIS_LOOP_25322_11: 
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:67582:7: note: FIX-IT applied suggested code changes
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:67589:3: warning: Added loop label VITIS_LOOP_25329_12:   [xilinx-label-all-loops]
-  for (int i = 0; i < 512; i++){
+      VITIS_LOOP_25252_26: 
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:67587:7: note: FIX-IT applied suggested code changes
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:67594:3: warning: Added loop label VITIS_LOOP_25259_27:   [xilinx-label-all-loops]
+  for(int i = 0; i < 512; i++){
   ^~~
-  VITIS_LOOP_25329_12: 
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:67589:3: note: FIX-IT applied suggested code changes
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:67592:3: warning: Added loop label VITIS_LOOP_25332_13:   [xilinx-label-all-loops]
-  for (int i = 0; i < 128; i++){
-  ^~~
-  VITIS_LOOP_25332_13: 
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:67592:3: note: FIX-IT applied suggested code changes
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:67593:7: warning: Added loop label VITIS_LOOP_25333_14:   [xilinx-label-all-loops]
-      for (int j = 0; j < 512; j++){
+  VITIS_LOOP_25259_27: 
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:67594:3: note: FIX-IT applied suggested code changes
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:67595:7: warning: Added loop label VITIS_LOOP_25260_28:   [xilinx-label-all-loops]
+      for(int j = 0; j < 512; j++){
       ^~~
-      VITIS_LOOP_25333_14: 
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:67593:7: note: FIX-IT applied suggested code changes
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:67600:3: warning: Added loop label VITIS_LOOP_25340_15:   [xilinx-label-all-loops]
-  for (int i = 0; i < 512; i++){
-  ^~~
-  VITIS_LOOP_25340_15: 
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:67600:3: note: FIX-IT applied suggested code changes
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:67603:3: warning: Added loop label VITIS_LOOP_25343_16:   [xilinx-label-all-loops]
-  for (int i = 0; i < 128; i++){
-  ^~~
-  VITIS_LOOP_25343_16: 
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:67603:3: note: FIX-IT applied suggested code changes
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:67604:7: warning: Added loop label VITIS_LOOP_25344_17:   [xilinx-label-all-loops]
-      for (int j = 0; j < 512; j++){
-      ^~~
-      VITIS_LOOP_25344_17: 
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:67604:7: note: FIX-IT applied suggested code changes
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:67611:3: warning: Added loop label VITIS_LOOP_25351_18:   [xilinx-label-all-loops]
-  for (int i = 0; i < 512; i++){
-  ^~~
-  VITIS_LOOP_25351_18: 
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:67611:3: note: FIX-IT applied suggested code changes
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:67614:3: warning: Added loop label VITIS_LOOP_25354_19:   [xilinx-label-all-loops]
-  for (int i = 0; i < 128; i++){
-  ^~~
-  VITIS_LOOP_25354_19: 
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:67614:3: note: FIX-IT applied suggested code changes
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:67615:7: warning: Added loop label VITIS_LOOP_25355_20:   [xilinx-label-all-loops]
-      for (int j = 0; j < 512; j++){
-      ^~~
-      VITIS_LOOP_25355_20: 
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:67615:7: note: FIX-IT applied suggested code changes
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:67624:3: warning: Added loop label VITIS_LOOP_25364_21:   [xilinx-label-all-loops]
+      VITIS_LOOP_25260_28: 
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:67595:7: note: FIX-IT applied suggested code changes
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:67602:3: warning: Added loop label VITIS_LOOP_25267_29:   [xilinx-label-all-loops]
   for(int i = 0; i < 1024; i++){
   ^~~
-  VITIS_LOOP_25364_21: 
+  VITIS_LOOP_25267_29: 
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:67602:3: note: FIX-IT applied suggested code changes
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:67603:7: warning: Added loop label VITIS_LOOP_25268_30:   [xilinx-label-all-loops]
+      for(int j = 0; j < 32; j++){
+      ^~~
+      VITIS_LOOP_25268_30: 
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:67603:7: note: FIX-IT applied suggested code changes
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:67607:3: warning: Added loop label VITIS_LOOP_25272_31:   [xilinx-label-all-loops]
+  for(int i = 0; i < 1024; i++){
+  ^~~
+  VITIS_LOOP_25272_31: 
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:67607:3: note: FIX-IT applied suggested code changes
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:67608:7: warning: Added loop label VITIS_LOOP_25273_32:   [xilinx-label-all-loops]
+      for(int j = 0; j < 32; j++){
+      ^~~
+      VITIS_LOOP_25273_32: 
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:67608:7: note: FIX-IT applied suggested code changes
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:67624:3: warning: Added loop label VITIS_LOOP_25289_33:   [xilinx-label-all-loops]
+  for(int i = 0; i < 512; i++){
+  ^~~
+  VITIS_LOOP_25289_33: 
 /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:67624:3: note: FIX-IT applied suggested code changes
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:67625:7: warning: Added loop label VITIS_LOOP_25365_22:   [xilinx-label-all-loops]
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:67625:7: warning: Added loop label VITIS_LOOP_25290_34:   [xilinx-label-all-loops]
       for(int j = 0; j < 512; j++){
       ^~~
-      VITIS_LOOP_25365_22: 
+      VITIS_LOOP_25290_34: 
 /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:67625:7: note: FIX-IT applied suggested code changes
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:67633:3: warning: Added loop label VITIS_LOOP_25381_23:   [xilinx-label-all-loops]
-  for(int i = 0; i < 512; i++){
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:67631:3: warning: Added loop label VITIS_LOOP_25296_35:   [xilinx-label-all-loops]
+  for(int i = 0; i < 1024; i++){
   ^~~
-  VITIS_LOOP_25381_23: 
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:67633:3: note: FIX-IT applied suggested code changes
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:67634:7: warning: Added loop label VITIS_LOOP_25382_24:   [xilinx-label-all-loops]
+  VITIS_LOOP_25296_35: 
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:67631:3: note: FIX-IT applied suggested code changes
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:67632:7: warning: Added loop label VITIS_LOOP_25297_36:   [xilinx-label-all-loops]
       for(int j = 0; j < 512; j++){
       ^~~
-      VITIS_LOOP_25382_24: 
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:67634:7: note: FIX-IT applied suggested code changes
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:67639:3: warning: Added loop label VITIS_LOOP_25387_25:   [xilinx-label-all-loops]
-  for(int i = 0; i < 512; i++){
+      VITIS_LOOP_25297_36: 
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:67632:7: note: FIX-IT applied suggested code changes
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:67639:3: warning: Added loop label VITIS_LOOP_25304_37:   [xilinx-label-all-loops]
+  for(int i = 0; i < 1024; i++){
   ^~~
-  VITIS_LOOP_25387_25: 
+  VITIS_LOOP_25304_37: 
 /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:67639:3: note: FIX-IT applied suggested code changes
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:67640:7: warning: Added loop label VITIS_LOOP_25388_26:   [xilinx-label-all-loops]
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:67640:7: warning: Added loop label VITIS_LOOP_25305_38:   [xilinx-label-all-loops]
       for(int j = 0; j < 512; j++){
       ^~~
-      VITIS_LOOP_25388_26: 
+      VITIS_LOOP_25305_38: 
 /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:67640:7: note: FIX-IT applied suggested code changes
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:67646:3: warning: Added loop label VITIS_LOOP_25394_27:   [xilinx-label-all-loops]
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:67650:3: warning: Added loop label VITIS_LOOP_25315_39:   [xilinx-label-all-loops]
   for(int i = 0; i < 512; i++){
   ^~~
-  VITIS_LOOP_25394_27: 
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:67646:3: note: FIX-IT applied suggested code changes
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:67647:7: warning: Added loop label VITIS_LOOP_25395_28:   [xilinx-label-all-loops]
+  VITIS_LOOP_25315_39: 
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:67650:3: note: FIX-IT applied suggested code changes
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:67651:7: warning: Added loop label VITIS_LOOP_25316_40:   [xilinx-label-all-loops]
       for(int j = 0; j < 512; j++){
       ^~~
-      VITIS_LOOP_25395_28: 
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:67647:7: note: FIX-IT applied suggested code changes
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:67653:3: warning: Added loop label VITIS_LOOP_25401_29:   [xilinx-label-all-loops]
-  for(int i = 0; i < 1024; i++){
+      VITIS_LOOP_25316_40: 
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:67651:7: note: FIX-IT applied suggested code changes
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:67658:3: warning: Added loop label VITIS_LOOP_25323_41:   [xilinx-label-all-loops]
+  for(int i = 0; i < 512; i++){
   ^~~
-  VITIS_LOOP_25401_29: 
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:67653:3: note: FIX-IT applied suggested code changes
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:67654:7: warning: Added loop label VITIS_LOOP_25402_30:   [xilinx-label-all-loops]
-      for(int j = 0; j < 32; j++){
-      ^~~
-      VITIS_LOOP_25402_30: 
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:67654:7: note: FIX-IT applied suggested code changes
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:67658:3: warning: Added loop label VITIS_LOOP_25406_31:   [xilinx-label-all-loops]
-  for(int i = 0; i < 1024; i++){
-  ^~~
-  VITIS_LOOP_25406_31: 
+  VITIS_LOOP_25323_41: 
 /home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:67658:3: note: FIX-IT applied suggested code changes
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:67659:7: warning: Added loop label VITIS_LOOP_25407_32:   [xilinx-label-all-loops]
-      for(int j = 0; j < 32; j++){
-      ^~~
-      VITIS_LOOP_25407_32: 
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:67659:7: note: FIX-IT applied suggested code changes
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:67672:3: warning: Added loop label VITIS_LOOP_25420_33:   [xilinx-label-all-loops]
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:67663:3: warning: Added loop label VITIS_LOOP_25328_42:   [xilinx-label-all-loops]
   for(int i = 0; i < 512; i++){
   ^~~
-  VITIS_LOOP_25420_33: 
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:67672:3: note: FIX-IT applied suggested code changes
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:67673:7: warning: Added loop label VITIS_LOOP_25421_34:   [xilinx-label-all-loops]
+  VITIS_LOOP_25328_42: 
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:67663:3: note: FIX-IT applied suggested code changes
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:67664:7: warning: Added loop label VITIS_LOOP_25329_43:   [xilinx-label-all-loops]
       for(int j = 0; j < 512; j++){
       ^~~
-      VITIS_LOOP_25421_34: 
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:67673:7: note: FIX-IT applied suggested code changes
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:67679:3: warning: Added loop label VITIS_LOOP_25427_35:   [xilinx-label-all-loops]
-  for (int i = 0; i < 1024; i++){
+      VITIS_LOOP_25329_43: 
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:67664:7: note: FIX-IT applied suggested code changes
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:67671:3: warning: Added loop label VITIS_LOOP_25336_44:   [xilinx-label-all-loops]
+  for(int i = 0; i < 512; i++){
   ^~~
-  VITIS_LOOP_25427_35: 
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:67679:3: note: FIX-IT applied suggested code changes
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:67680:7: warning: Added loop label VITIS_LOOP_25428_36:   [xilinx-label-all-loops]
-      for (int j = 0; j < 512; j++){
-      ^~~
-      VITIS_LOOP_25428_36: 
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:67680:7: note: FIX-IT applied suggested code changes
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:67687:3: warning: Added loop label VITIS_LOOP_25435_37:   [xilinx-label-all-loops]
+  VITIS_LOOP_25336_44: 
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:67671:3: note: FIX-IT applied suggested code changes
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:67678:3: warning: Added loop label VITIS_LOOP_25343_45:   [xilinx-label-all-loops]
   for(int i = 0; i < 1024; i++){
   ^~~
-  VITIS_LOOP_25435_37: 
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:67687:3: note: FIX-IT applied suggested code changes
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:67688:7: warning: Added loop label VITIS_LOOP_25436_38:   [xilinx-label-all-loops]
+  VITIS_LOOP_25343_45: 
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:67678:3: note: FIX-IT applied suggested code changes
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:67679:7: warning: Added loop label VITIS_LOOP_25344_46:   [xilinx-label-all-loops]
       for(int j = 0; j < 512; j++){
       ^~~
-      VITIS_LOOP_25436_38: 
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:67688:7: note: FIX-IT applied suggested code changes
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:67698:3: warning: Added loop label VITIS_LOOP_25446_39:   [xilinx-label-all-loops]
-  for(int i = 0; i < 512; i++){
-  ^~~
-  VITIS_LOOP_25446_39: 
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:67698:3: note: FIX-IT applied suggested code changes
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:67699:7: warning: Added loop label VITIS_LOOP_25447_40:   [xilinx-label-all-loops]
-      for(int j = 0; j < 512; j++){
-      ^~~
-      VITIS_LOOP_25447_40: 
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:67699:7: note: FIX-IT applied suggested code changes
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:67706:3: warning: Added loop label VITIS_LOOP_25454_41:   [xilinx-label-all-loops]
-  for(int i = 0; i < 512; i++){
-  ^~~
-  VITIS_LOOP_25454_41: 
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:67706:3: note: FIX-IT applied suggested code changes
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:67711:3: warning: Added loop label VITIS_LOOP_25459_42:   [xilinx-label-all-loops]
-  for(int i = 0; i < 512; i++){
-  ^~~
-  VITIS_LOOP_25459_42: 
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:67711:3: note: FIX-IT applied suggested code changes
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:67712:7: warning: Added loop label VITIS_LOOP_25460_43:   [xilinx-label-all-loops]
-      for(int j = 0; j < 512; j++){
-      ^~~
-      VITIS_LOOP_25460_43: 
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:67712:7: note: FIX-IT applied suggested code changes
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:67719:3: warning: Added loop label VITIS_LOOP_25467_44:   [xilinx-label-all-loops]
-  for(int i = 0; i < 512; i++){
-  ^~~
-  VITIS_LOOP_25467_44: 
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:67719:3: note: FIX-IT applied suggested code changes
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:67726:3: warning: Added loop label VITIS_LOOP_25474_45:   [xilinx-label-all-loops]
-  for(int i = 0; i < 1024; i++){
-  ^~~
-  VITIS_LOOP_25474_45: 
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:67726:3: note: FIX-IT applied suggested code changes
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:67727:7: warning: Added loop label VITIS_LOOP_25475_46:   [xilinx-label-all-loops]
-      for(int j = 0; j < 512; j++){
-      ^~~
-      VITIS_LOOP_25475_46: 
-/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:67727:7: note: FIX-IT applied suggested code changes
+      VITIS_LOOP_25344_46: 
+/home/silvenchen/Desktop/DitBlock/WorkDCT/DitBlock/DitBlock/hls/.autopilot/db/kernel.pp.0.cpp:67679:7: note: FIX-IT applied suggested code changes
