@@ -131,9 +131,7 @@ While the two models initially appears distinct in their design and model struct
 We have successfully extracted the backbones for both MDLM and Diffusion-LM, which are crucial for the next steps in hardware acceleration. The Numpy version of the MDLM DDiTBlock has been verified against the original PyTorch implementation to confirm the functional equivalence. For our Allo implementation, we have passed LLVM and csim verifications. 
 
 ### Tasks Underway
-- C-RTL Co-Simulation and On-board Test
-- Resource Optimization (Unable to fit on-chip due to large DRAM demand)
-- Code and Architecture Refinement
+- On-board Tests and End-to-end deployment on FPGA
 - Other MDLM Components Development
 
 ## References

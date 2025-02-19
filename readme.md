@@ -51,9 +51,9 @@ We present the results for **latency** and **resource usage** comparison between
 | **Version**   | **Latency (ns)** | **BRAM**    | **DSP**    | **FF**      | **LUT**      | **URAM**    |
 |---------------|------------------|-------------|------------|-------------|--------------|-------------|
 | **Baseline**  |  5.1E9           | 36693 (910%) | 2791 (30%) | 273231 (11%)| 369770 (28%) | -           |
-| **Optimized** | 4.127E9          | 3148 (78%)  | 1188 (13%) | 118726 (4%) | 118892 (12%) | 832 (86%)   |
+| **Optimized** | 4.127E9          | 1532 (37%)  | 1186 (13%) | 126044 (4%) | 170984 (13%) | 768 (80%)   |
 
-- The **optimized version** shows significant reductions in resource consumption and improvements in performance, specifically in **BRAM** and **DSP** usage with our memory copy and resource reusing techniques. More details can be found under [documentation](documentation/doc.md)
+- The **optimized version** shows significant reductions in resource consumption and improvements in performance, specifically in **BRAM** and **DSP** usage with our memory copy and resource reusing techniques. More details can be found under[documentation](documentation/doc.md)
 
 
 ## Developers and Contact Information
