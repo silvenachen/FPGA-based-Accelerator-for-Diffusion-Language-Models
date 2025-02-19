@@ -1,6 +1,6 @@
 # Work Summary for Diffusion Language Model Accelerator
 
-## Literature Survey
+## Preliminaries and Literature Survey
 In this section, we will cover three main topics for the literature survey in diffusion language models.
 
 - Traditional latent diffusion model
@@ -34,7 +34,7 @@ One approach transforms the discrete text information into continuous representa
 
 ![](./fig/dlm.png)
 
-Another approach is the use discrete diffusion, as is the case for **MDLM**. The U-Net backbone is replaced with Diffusion Transformers (DiTs for short). DiTs accept conditional inputs (diffusion timesteps) as well as noised input IDs. At each time step, the input IDs are passed through a vocab embedding layer to represent high-dimensional vectors, and the timestep, *t*, is also embedded as a vector. The embedded inputs and timesteps are processed through multiple **DDiTBlocks** and go into a final layer specific  to gradually denoise the inputs. A scheduler is utilized to manage the noise and its schedule, generating meaningful contents in the end. The following figure illustrates the overall architecture in MDLM.
+Another approach is the use discrete diffusion, as is the case for **MDLM**. The U-Net backbone is replaced with Diffusion Transformers (DiTs for short). DiTs adapts the transformer architecture to diffusion models, enabling iterative denoising rather than **sequential token generation** (as in autoregressive models). Despite the differences, DiTs still retain several key aspects in transformer computation, such as the multi-head attetion (MHA), positional encoding (typically Rotary Position Embeddings (RoPE)), and FFN layers. DiTs accept conditional inputs (diffusion timesteps) as well as noised input IDs. At each time step, the input IDs are passed through a vocab embedding layer to represent high-dimensional vectors, and the timestep, *t*, is also embedded as a vector. The embedded inputs and timesteps are processed through multiple **DDiTBlocks** and go into a final layer specific to gradually denoise the inputs. A scheduler is utilized to manage the noise and its schedule, generating meaningful contents in the end. The following figure illustrates the overall architecture in MDLM.
 
 ![](./fig/MDLM.jpg)
 
@@ -44,9 +44,11 @@ A more detailed architecture for DDitBlock is as below. It accepts two inputs: i
 
 To summarize, diffusion language models adopt different (most likely transformer blocks) operators during denoising phase. Some adopts DiT rather than U-Net architecture, and achieves improved performance. Because MDLM is a state-of-the-art work that outperforms Diffusion-LM, and also follows a more reusable DiT architecture, we choose to implement MDLM in Allo. Currently, we are working on the DDitBlock, but we will move on to other components and achives an end-to-end implementation on FPGA.
 
-### Hardware Acceleration for Diffusion
+### Related Hardware Acceleration
 
-#### Architecture
+We study several existing works on diffusion model accelrator as below.
+
+#### SDA: Low-Bit Stable Diffusion Acceleration on Edge FPGAs
 We investigate existing works to realize the efficient hardware acceleration for diffusion models. *SDA: Low-Bit Stable Diffusion Acceleration on Edge FPGAs* [5], claims to be the first hardware accelerator for stable diffusion. It adopts 1) a unified computational array (systolic array) for convolution and matrix multiplication, and 2) a centralized module for non-linear operations. Its overal architecture of SDA is illustrated below.
 
 ![](./fig/sda.png)
@@ -68,6 +70,9 @@ The important workflow of DSP packing and dataflow transitions is illustrated be
 ![](./fig/pack.png)
 
 Currently, our MDLM accelerator only supports float32. Inspired by SDA, we might also consider adopting quantization and DSP packing for improved resource efficiency and performance.
+
+#### SQ-DM: Accelerating Diffusion Models with Aggressive Quantization and Temporal Sparsity
+*SQ-DM: Accelerating Diffusion Models with Aggressive Quantization and Temporal Sparsity* [6], is another accelerator featuring aggressive, low bit-width quantization, as well as activation sparsity to significantly speed up diffusion models. The methods are reported to efficiently address the challenges of generating high-quality content, which is typically slow due to the multiple time steps required in the inference process.
 
 ## GPU Side Profiling 
 In this section, the profiling results on GPUs for both MDLM and Diffusion-LM will be demonstrated and analyized. We are specifically interested in their performance bottlenecks and operator types, which help us develop the accelerator in HLS. 
@@ -126,6 +131,24 @@ Again, **aten::linear** and **aten::addmm** are the most significant, consuming 
 #### Conclusion
 While the two models initially appears distinct in their design and model structure, the profiling and analysis reveals good similarities in their computational matter. By focusing on their shared operators, especially the GEMM and GEMV computations from linear layers and attention computations, we could use optimized Allo systolic arrays to support both models. For our current target, we choose to focus on MDLM, as it has more regular structure and offers better performance. 
 
+## Roofline Model Analysis
+The **Roofline Model** helps analyze the performance of computational workloads by comparing the **number of floating-point operations (FLOPs)** to the available **memory bandwidth** in a system. The performance is determined by the minimum of the **peak throughput (Peak_FLOPS)** and the available memory bandwidth multiplied by the **operation intensity (OI)**. The relationship could be modeled as:
+
+\[
+\frac{\#FP\_ops}{\text{Latency}} = \min\left(\text{Peak\_FLOPS}, \frac{\#FP\_ops}{\#Bytes} \times \text{Peak\_MBW}\right)
+\]
+
+Where:
+- **\#FP_ops** represents the total number of floating-point operations.
+- **Latency** is the computational latency of the operations.
+- **Peak_FLOPS** is the system's peak floating-point operations per second.
+- **Peak_MBW** is the peak memory bandwidth.
+- **OI** is defined as the ratio of **\#FP_ops** to **\#Bytes**. It indicates how many floating-point operations are performed for each byte of data transferred.
+
+As shown in the figure below, a system is considered **memory-bound** if OI is less than the turning point. Otherwise it is **computation-bound** when OI exceeds the turning point.
+
+![](./fig/roofline.png)
+
 ## Project Development
 ### Current Status
 We have successfully extracted the backbones for both MDLM and Diffusion-LM, which are crucial for the next steps in hardware acceleration. The Numpy version of the MDLM DDiTBlock has been verified against the original PyTorch implementation to confirm the functional equivalence. For our Allo implementation, we have passed LLVM and csim verifications. 
@@ -144,3 +167,5 @@ We have successfully extracted the backbones for both MDLM and Diffusion-LM, whi
 [4] Lovelace J, Kishore V, Wan C, et al. Latent diffusion for language generation[J]. Advances in Neural Information Processing Systems, 2024, 36.
 
 [5] Yang G, Xie Y, Xue Z J, et al. SDA: Low-Bit Stable Diffusion Acceleration on Edge FPGAs[J].
+
+[6] Fan Z, Dai S, Venkatesan R, et al. SQ-DM: Accelerating Diffusion Models with Aggressive Quantization and Temporal Sparsity[J]. arXiv preprint arXiv:2501.15448, 2025.
