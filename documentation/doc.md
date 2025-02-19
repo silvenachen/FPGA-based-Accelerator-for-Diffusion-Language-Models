@@ -154,19 +154,15 @@ For the DDitBlock featuring sequential computations through various operators, T
 
 Example analysis is as below:
 - **Step 1: adaLN_modulate**
-  \[
-  \text{FLOPs} = 128 \times 3072 \times 2
-  \]
+  FLOPs = 128 * 3072 * 2
   This step uses a systolic array with 1x8 **PEs**.
 
 - **Step 2: Modulate_fused**
-  - **LayerNorm**: \( 8 \times 1024 \times 512 \) FLOPs
-  - **Scale**: \( 3 \times 1024 \times 512 \) FLOPs
+  - **LayerNorm**: 8 * 1024 * 512 FLOPs
+  - **Scale**: 3 * 1024 * 512 FLOPs
 
 - **Step 3: Q, K, V**
-  \[
-  \text{FLOPs} = 1024 \times 512 \times 512 \times 2 \times 3
-  \]
+    FLOPs = 1024 * 512 * 512 * 2 * 3
   This step is computed with a systolic array of 8x8 PEs (can be reused).
 
   Finally, the **Total FLOPs** is determined as 5.39 GFLOPs, the **Off-chip Memory Access** is approximately 0.014 GB, so **OI** is calculated as 385 FLOPs/Byte. The performance peak achieved by the proposed architecture is 211 GFLOPS. Consider the **Memory Bandwidth**, HBM is 480 GB/s, while DRAM implementation is 38 GB/s according to the U280 datasheet. Therefore, the turning points for HBM is 0.43 FLOPs/Byte, and For DRAM 5.55 GFLOPS/Byte. Either way, The kernel is **computation-bound**, meaning the performance is limited by the compute throughput rather than memory bandwidth on the target FPGA.
