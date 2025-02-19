@@ -134,9 +134,7 @@ While the two models initially appears distinct in their design and model struct
 ## Roofline Model Analysis
 The **Roofline Model** helps analyze the performance of computational workloads by comparing the **number of floating-point operations (FLOPs)** to the available **memory bandwidth** in a system. The performance is determined by the minimum of the **peak throughput (Peak_FLOPS)** and the available memory bandwidth multiplied by the **operation intensity (OI)**. The relationship could be modeled as:
 
-$$
-\frac{\text{FP\_ops}}{\text{Latency}} = \min\left(\text{Peak\_FLOPS}, \frac{\text{FP\_ops}}{\text{Bytes}} \times \text{Peak\_MBW}\right)
-$$
+![](./fig/form.png)
 
 Where:
 - **\#FP_ops** represents the total number of floating-point operations.
