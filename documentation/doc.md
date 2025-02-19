@@ -48,7 +48,7 @@ To summarize, diffusion language models adopt different (most likely transformer
 
 We study several existing works on diffusion model accelrator as below.
 
-#### SDA: Low-Bit Stable Diffusion Acceleration on Edge FPGAs
+#### **SDA: Low-Bit Stable Diffusion Acceleration on Edge FPGAs**
 We investigate existing works to realize the efficient hardware acceleration for diffusion models. *SDA: Low-Bit Stable Diffusion Acceleration on Edge FPGAs* [5], claims to be the first hardware accelerator for stable diffusion. It adopts 1) a unified computational array (systolic array) for convolution and matrix multiplication, and 2) a centralized module for non-linear operations. Its overal architecture of SDA is illustrated below.
 
 ![](./fig/sda.png)
@@ -71,7 +71,7 @@ The important workflow of DSP packing and dataflow transitions is illustrated be
 
 Currently, our MDLM accelerator only supports float32. Inspired by SDA, we might also consider adopting quantization and DSP packing for improved resource efficiency and performance.
 
-#### SQ-DM: Accelerating Diffusion Models with Aggressive Quantization and Temporal Sparsity
+#### **SQ-DM: Accelerating Diffusion Models with Aggressive Quantization and Temporal Sparsity**
 *SQ-DM: Accelerating Diffusion Models with Aggressive Quantization and Temporal Sparsity* [6], is another accelerator featuring a co-design of aggressive, low bit-width quantization, as well as activation sparsity to significantly speed up diffusion models. The methods are reported to efficiently address the challenges of generating high-quality content, which is typically slow due to the multiple time steps required in the inference process.
 
 ##### Key Novelty
