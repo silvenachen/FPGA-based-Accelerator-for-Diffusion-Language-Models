@@ -154,26 +154,65 @@ For the DDitBlock featuring sequential computations through various operators, T
 
 Example analysis is as below:
 - **Step 1: adaLN_modulate**
-  FLOPs = 128 * 3072 * 2
-  This step uses a systolic array with 1x8 **PEs**.
+  - FLOPs = 128 * 3072 * 2
+  - This step uses a systolic array with 1x8 **PEs**.
 
 - **Step 2: Modulate_fused**
   - **LayerNorm**: 8 * 1024 * 512 FLOPs
   - **Scale**: 3 * 1024 * 512 FLOPs
 
 - **Step 3: Q, K, V**
-    FLOPs = 1024 * 512 * 512 * 2 * 3
-  This step is computed with a systolic array of 8x8 PEs (can be reused).
+  - FLOPs = 1024 * 512 * 512 * 2 * 3
+  - This step is computed with a systolic array of 8x8 PEs (can be reused).
 
   Finally, the **Total FLOPs** is determined as 5.39 GFLOPs, the **Off-chip Memory Access** is approximately 0.014 GB, so **OI** is calculated as 385 FLOPs/Byte. The performance peak achieved by the proposed architecture is 211 GFLOPS. Consider the **Memory Bandwidth**, HBM is 480 GB/s, while DRAM implementation is 38 GB/s according to the U280 datasheet. Therefore, the turning points for HBM is 0.43 FLOPs/Byte, and For DRAM 5.55 GFLOPS/Byte. Either way, The kernel is **computation-bound**, meaning the performance is limited by the compute throughput rather than memory bandwidth on the target FPGA.
 
 ## Project Development
 ### Current Status
-We have successfully extracted the backbones for both MDLM and Diffusion-LM, which are crucial for the next steps in hardware acceleration. The Numpy version of the MDLM DDiTBlock has been verified against the original PyTorch implementation to confirm the functional equivalence. For our Allo implementation, we have passed LLVM and csim verifications. 
+We have successfully extracted the backbones for both MDLM and Diffusion-LM, which are crucial for the next steps in hardware acceleration. The Numpy version of the MDLM DDiTBlock has been verified against the original PyTorch implementation to confirm the functional equivalence. For the kernel implementations, we present two versions of the DDitBlock, one autogerated by Allo. However, the large on-chip BRAM usage (more than 900%) makes it unrealistic to directly deploy the baseline on-board. Therefore, we utilized several techniques and improved the HLS code, and the optimized code is able to fit on-chip with reduced latency. 
 
 ### Tasks Underway
 - On-board Tests and End-to-end deployment on FPGA
 - Other MDLM Components Development
+
+### Performance Comparison
+
+The following table summarizes the performance and estimated resources from both versions. The targeted frequency is set as 100 MHz. It could be observed that the original baseline consumes more than 910% percent of BRAM, making direct FPGA deployment unfeasible. In addition, instead of directly assigning each GEMM operators distinct systolic arrays, we reuse systolic arrays that share the same tensor shape in diffusion inference(For instance, MLP1 and MLP2 during FFN utilize the same systolic arrays). This further reduces the computation resources like DSPs and LUTs.
+
+| **Version**   | **Latency (ns)** | **BRAM**    | **DSP**    | **FF**      | **LUT**      | **URAM**    |
+|---------------|------------------|-------------|------------|-------------|--------------|-------------|
+| **Baseline**  |  5.1E9           | 36693 (910%) | 2791 (30%) | 273231 (11%)| 369770 (28%) | -           |
+| **Optimized** | 4.127E9          | 1532 (37%)  | 1186 (13%) | 126044 (4%) | 170984 (13%) | 768 (80%)   |
+
+
+### Optimization Techniques
+
+To address the limitations of the Baseline Version, several optimizations were implemented to reduce memory usage, improve computation efficiency, and enable on-chip deployment. The key improvements are as follows:
+
+### BRAM Optimization and Memory Reduction
+- In the Baseline, Allo tends to copy input data on-chip all at once before initiating computations. A redundant memory copy behavior is evident. The issue lies in the fact that Allo allocates memory for the entire data upfront, even when not all of it is required. To improve memory efficiency. To avoid excessive BRAM usage, the optimized version fetch the necessary data on-chip only when needed. 
+
+- In addition, we also reuse and reallocate buffers to further reduce RAM usage. For instance, instead of storing separate copies of intermediate tensors, we introduce four key buffers—`buffer_Q`, `buffer_K`, `buffer_V`, and `buffer_x`—to store both input and intermediate results. Multiple buffers holding similar or overlapping data are merged, reducing memory fragmentation and avoiding redundant memory usage.
+
+- Utilizing URAM for large tensors: The Alveo U280 FPGA features abundant URAM resources with higher capacity. To take advantage of this, we bind large buffers to URAM using the following directive:
+
+```
+#pragma HLS bind_storage variable=target_variable type=ram_2p impl=uram
+```
+
+to offload pressure from solely BRAM.
+
+### Breaking Down Large Tensors in AdaLN
+
+- Origianlly, the code stores large tensors ([128, 3072]) for AdaLN parameters, which led to excessive memory allocation. Instead of storing AdaLN parameters as a large [128, 3072] tensor, we split it into six [128, 512] blocks, corresponding to each transformation, and calls adaLN computations without changing its functionality.
+
+### Reducing Intermediate and Output Storage
+
+- The original implementation tends to creat separate buffers for intermediate values. For instance, in the multi-head attention computation (`scaled_dot_product_attention`), values like `Y_t` and `C_h` could be directly stored in existing tensors, but Allo still duplicates the storage. To tackle the issue, we eliminated redundant buffers by writing results directly into reused storage, and removes unnecessary memory allocations when they could be reused. This drastically removes several large tensors sized [1024, 1024] amd [1024, 512], which causes large BRAM usage.
+
+### Reusing Systolic Arrays for GEMM Operations
+
+- The baseline implementation allocated separate systolic arrays for every GEMM operation, even when the matrix dimensions were identical. This increased DSP and LUT usage, leading to unnecessary hardware resource consumption. On the contrary, we reused systolic arrays for GEMM operations with the same tensor dimensions.
 
 ## References
 [1] Croitoru F A, Hondru V, Ionescu R T, et al. Diffusion models in vision: A survey[J]. IEEE Transactions on Pattern Analysis and Machine Intelligence, 2023, 45(9): 10850-10869.

@@ -24601,495 +24601,6 @@ void systolic_mlp2(
   }
 }
 
-// void allo_DDitBlock(
-//   float *v13538,   // x
-//   float *v13539,   // gamma
-//   float *v13540,   // beta
-//   float *v13541,   // sin
-//   float *v13542,   // cos
-//   float *v13543,   // qw
-//   float *v13544,   // kw
-//   float *v13545,   // vw
-//   float *v13546,   // c
-//   float *v13547,   // adaLN weight
-//   float *v13548,   // adaLN bias
-//   float *v13549,   // shift
-//   float *v13550,   // scale
-//   float *v13551,   // gate
-//   float *v13552,   // shift mlp
-//   float *v13553,   // scale mlp
-//   float *v13554,   // gate  mlp
-//   float *v13555,   // attn out weight
-//   float *v13556,   // x recurrent
-//   float *v13557,   // mlp1
-//   float *v13558,   // mlp1
-//   float *v13559,   // mlp2
-//   float *v13560,   // mlp2
-//   float *v13561    // output
-// ) {	// L17819
-//   #pragma HLS interface m_axi port=v13538 offset=slave bundle=gmem0
-//   #pragma HLS interface m_axi port=v13539 offset=slave bundle=gmem1
-//   #pragma HLS interface m_axi port=v13540 offset=slave bundle=gmem2
-//   #pragma HLS interface m_axi port=v13541 offset=slave bundle=gmem3
-//   #pragma HLS interface m_axi port=v13542 offset=slave bundle=gmem4
-//   #pragma HLS interface m_axi port=v13543 offset=slave bundle=gmem5
-//   #pragma HLS interface m_axi port=v13544 offset=slave bundle=gmem6
-//   #pragma HLS interface m_axi port=v13545 offset=slave bundle=gmem7
-//   #pragma HLS interface m_axi port=v13546 offset=slave bundle=gmem8
-//   #pragma HLS interface m_axi port=v13547 offset=slave bundle=gmem9
-//   #pragma HLS interface m_axi port=v13548 offset=slave bundle=gmem10
-//   #pragma HLS interface m_axi port=v13549 offset=slave bundle=gmem11
-//   #pragma HLS interface m_axi port=v13550 offset=slave bundle=gmem12
-//   #pragma HLS interface m_axi port=v13551 offset=slave bundle=gmem13
-//   #pragma HLS interface m_axi port=v13552 offset=slave bundle=gmem14
-//   #pragma HLS interface m_axi port=v13553 offset=slave bundle=gmem15
-//   #pragma HLS interface m_axi port=v13554 offset=slave bundle=gmem16
-//   #pragma HLS interface m_axi port=v13555 offset=slave bundle=gmem17
-//   #pragma HLS interface m_axi port=v13556 offset=slave bundle=gmem18
-//   #pragma HLS interface m_axi port=v13557 offset=slave bundle=gmem19
-//   #pragma HLS interface m_axi port=v13558 offset=slave bundle=gmem20
-//   #pragma HLS interface m_axi port=v13559 offset=slave bundle=gmem21
-//   #pragma HLS interface m_axi port=v13560 offset=slave bundle=gmem22
-//   #pragma HLS interface m_axi port=v13561 offset=slave bundle=gmem23
-//   // cout << "checking here" << endl;
-
-//   float buf0[1024][512];	//
-//   // load x 1024, 512
-//   l_S_buf0_buf0_l_0: for (int buf0_l_0 = 0; buf0_l_0 < 1024; buf0_l_0++) {	//
-//     l_buf0_l_1: for (int buf0_l_1 = 0; buf0_l_1 < 512; buf0_l_1++) {	//
-//     #pragma HLS pipeline II=1 rewind
-//       float v13565 = v13538[((buf0_l_0 * 512) + buf0_l_1)];	//
-//       buf0[buf0_l_0][buf0_l_1] = v13565;	//
-//     }
-//   }
-//   float buf1[512];	//
-//   l_S_buf1_buf1_l_0: for (int buf1_l_0 = 0; buf1_l_0 < 512; buf1_l_0++) {	//
-//   #pragma HLS pipeline II=1 rewind
-//     float v13568 = v13539[buf1_l_0];	//
-//     buf1[buf1_l_0] = v13568;	//
-//   }
-//   float buf2[512];	//
-//   l_S_buf2_buf2_l_0: for (int buf2_l_0 = 0; buf2_l_0 < 512; buf2_l_0++) {	//
-//   #pragma HLS pipeline II=1 rewind
-//     float v13571 = v13540[buf2_l_0];	//
-//     buf2[buf2_l_0] = v13571;	//
-//   }
-//   float buf3[1024][32];	//
-//   l_S_buf3_buf3_l_0: for (int buf3_l_0 = 0; buf3_l_0 < 1024; buf3_l_0++) {	//
-//     l_buf3_l_1: for (int buf3_l_1 = 0; buf3_l_1 < 32; buf3_l_1++) {	//
-//     #pragma HLS pipeline II=1 rewind
-//       float v13575 = v13541[((buf3_l_0 * 32) + buf3_l_1)];	//
-//       buf3[buf3_l_0][buf3_l_1] = v13575;	//
-//     }
-//   }
-//   float buf4[1024][32];	//
-//   l_S_buf4_buf4_l_0: for (int buf4_l_0 = 0; buf4_l_0 < 1024; buf4_l_0++) {	//
-//     l_buf4_l_1: for (int buf4_l_1 = 0; buf4_l_1 < 32; buf4_l_1++) {	//
-//     #pragma HLS pipeline II=1 rewind
-//       float v13579 = v13542[((buf4_l_0 * 32) + buf4_l_1)];	//
-//       buf4[buf4_l_0][buf4_l_1] = v13579;	//
-//     }
-//   }
-//   float buf5[512][512];	//
-//   l_S_buf5_buf5_l_0: for (int buf5_l_0 = 0; buf5_l_0 < 512; buf5_l_0++) {	//
-//     l_buf5_l_1: for (int buf5_l_1 = 0; buf5_l_1 < 512; buf5_l_1++) {	//
-//     #pragma HLS pipeline II=1 rewind
-//       float v13583 = v13543[((buf5_l_0 * 512) + buf5_l_1)];	//
-//       buf5[buf5_l_0][buf5_l_1] = v13583;	//
-//     }
-//   }
-//   float buf6[512][512];	//
-//   l_S_buf6_buf6_l_0: for (int buf6_l_0 = 0; buf6_l_0 < 512; buf6_l_0++) {	//
-//     l_buf6_l_1: for (int buf6_l_1 = 0; buf6_l_1 < 512; buf6_l_1++) {	//
-//     #pragma HLS pipeline II=1 rewind
-//       float v13587 = v13544[((buf6_l_0 * 512) + buf6_l_1)];	//
-//       buf6[buf6_l_0][buf6_l_1] = v13587;	//
-//     }
-//   }
-//   float buf7[512][512];	//
-//   l_S_buf7_buf7_l_0: for (int buf7_l_0 = 0; buf7_l_0 < 512; buf7_l_0++) {	//
-//     l_buf7_l_1: for (int buf7_l_1 = 0; buf7_l_1 < 512; buf7_l_1++) {	//
-//     #pragma HLS pipeline II=1 rewind
-//       float v13591 = v13545[((buf7_l_0 * 512) + buf7_l_1)];	//
-//       buf7[buf7_l_0][buf7_l_1] = v13591;	//
-//     }
-//   }
-//   float buf8[1][128];	//
-//   l_S_buf8_buf8_l_0: for (int buf8_l_0 = 0; buf8_l_0 < 1; buf8_l_0++) {	//
-//     l_buf8_l_1: for (int buf8_l_1 = 0; buf8_l_1 < 128; buf8_l_1++) {	//
-//     #pragma HLS pipeline II=1 rewind
-//       float v13595 = v13546[((buf8_l_0 * 128) + buf8_l_1)];	//
-//       buf8[buf8_l_0][buf8_l_1] = v13595;	//
-//     }
-//   }
-//   float buf9[128][3072];	//
-//   l_S_buf9_buf9_l_0: for (int buf9_l_0 = 0; buf9_l_0 < 128; buf9_l_0++) {	//
-//     l_buf9_l_1: for (int buf9_l_1 = 0; buf9_l_1 < 3072; buf9_l_1++) {	//
-//     #pragma HLS pipeline II=1 rewind
-//       float v13599 = v13547[((buf9_l_0 * 3072) + buf9_l_1)];	//
-//       buf9[buf9_l_0][buf9_l_1] = v13599;	//
-//     }
-//   }
-//   float buf10[3072];	//
-//   l_S_buf10_buf10_l_0: for (int buf10_l_0 = 0; buf10_l_0 < 3072; buf10_l_0++) {	//
-//   #pragma HLS pipeline II=1 rewind
-//     float v13602 = v13548[buf10_l_0];	//
-//     buf10[buf10_l_0] = v13602;	//
-//   }
-//   float buf11[512];	//
-//   l_S_buf11_buf11_l_0: for (int buf11_l_0 = 0; buf11_l_0 < 512; buf11_l_0++) {	//
-//   #pragma HLS pipeline II=1 rewind
-//     float v13605 = v13549[buf11_l_0];	//
-//     buf11[buf11_l_0] = v13605;	//
-//   }
-//   float buf12[512];	//
-//   l_S_buf12_buf12_l_0: for (int buf12_l_0 = 0; buf12_l_0 < 512; buf12_l_0++) {	//
-//   #pragma HLS pipeline II=1 rewind
-//     float v13608 = v13550[buf12_l_0];	//
-//     buf12[buf12_l_0] = v13608;	//
-//   }
-//   float buf13[512];	//
-//   l_S_buf13_buf13_l_0: for (int buf13_l_0 = 0; buf13_l_0 < 512; buf13_l_0++) {	//
-//   #pragma HLS pipeline II=1 rewind
-//     float v13611 = v13551[buf13_l_0];	//
-//     buf13[buf13_l_0] = v13611;	//
-//   }
-//   float buf14[512];	//
-//   l_S_buf14_buf14_l_0: for (int buf14_l_0 = 0; buf14_l_0 < 512; buf14_l_0++) {	//
-//   #pragma HLS pipeline II=1 rewind
-//     float v13614 = v13552[buf14_l_0];	//
-//     buf14[buf14_l_0] = v13614;	//
-//   }
-//   float buf15[512];	//
-//   l_S_buf15_buf15_l_0: for (int buf15_l_0 = 0; buf15_l_0 < 512; buf15_l_0++) {	//
-//   #pragma HLS pipeline II=1 rewind
-//     float v13617 = v13553[buf15_l_0];	//
-//     buf15[buf15_l_0] = v13617;	//
-//   }
-//   float buf16[512];	//
-//   l_S_buf16_buf16_l_0: for (int buf16_l_0 = 0; buf16_l_0 < 512; buf16_l_0++) {	//
-//   #pragma HLS pipeline II=1 rewind
-//     float v13620 = v13554[buf16_l_0];	//
-//     buf16[buf16_l_0] = v13620;	//
-//   }
-//   float buf17[512][512];	//
-//   l_S_buf17_buf17_l_0: for (int buf17_l_0 = 0; buf17_l_0 < 512; buf17_l_0++) {	//
-//     l_buf17_l_1: for (int buf17_l_1 = 0; buf17_l_1 < 512; buf17_l_1++) {	//
-//     #pragma HLS pipeline II=1 rewind
-//       float v13624 = v13555[((buf17_l_0 * 512) + buf17_l_1)];	//
-//       buf17[buf17_l_0][buf17_l_1] = v13624;	//
-//     }
-//   }
-//   float buf18[1024][512];	//
-//   l_S_buf18_buf18_l_0: for (int buf18_l_0 = 0; buf18_l_0 < 1024; buf18_l_0++) {	//
-//     l_buf18_l_1: for (int buf18_l_1 = 0; buf18_l_1 < 512; buf18_l_1++) {	//
-//     #pragma HLS pipeline II=1 rewind
-//       float v13628 = v13556[((buf18_l_0 * 512) + buf18_l_1)];	//
-//       buf18[buf18_l_0][buf18_l_1] = v13628;	//
-//     }
-//   }
-//   float buf19[512][512];	//
-//   l_S_buf19_buf19_l_0: for (int buf19_l_0 = 0; buf19_l_0 < 512; buf19_l_0++) {	//
-//     l_buf19_l_1: for (int buf19_l_1 = 0; buf19_l_1 < 512; buf19_l_1++) {	//
-//     #pragma HLS pipeline II=1 rewind
-//       float v13632 = v13557[((buf19_l_0 * 512) + buf19_l_1)];	//
-//       buf19[buf19_l_0][buf19_l_1] = v13632;	//
-//     }
-//   }
-//   float buf20[512];	//
-//   l_S_buf20_buf20_l_0: for (int buf20_l_0 = 0; buf20_l_0 < 512; buf20_l_0++) {	//
-//   #pragma HLS pipeline II=1 rewind
-//     float v13635 = v13558[buf20_l_0];	//
-//     buf20[buf20_l_0] = v13635;	//
-//   }
-//   float buf21[512][512];	//
-//   l_S_buf21_buf21_l_0: for (int buf21_l_0 = 0; buf21_l_0 < 512; buf21_l_0++) {	//
-//     l_buf21_l_1: for (int buf21_l_1 = 0; buf21_l_1 < 512; buf21_l_1++) {	//
-//     #pragma HLS pipeline II=1 rewind
-//       float v13639 = v13559[((buf21_l_0 * 512) + buf21_l_1)];	//
-//       buf21[buf21_l_0][buf21_l_1] = v13639;	//
-//     }
-//   }
-//   float buf22[512];	//
-//   l_S_buf22_buf22_l_0: for (int buf22_l_0 = 0; buf22_l_0 < 512; buf22_l_0++) {	//
-//   #pragma HLS pipeline II=1 rewind
-//     float v13642 = v13560[buf22_l_0];	//
-//     buf22[buf22_l_0] = v13642;	//
-//   }
-//   adaLN_modulate(buf8, buf9, buf10, buf11, buf12, buf13, buf14, buf15, buf16);	// L17820
-//   float v13643[1024][512];
-//   layer_norm(buf0, buf1, buf2, v13643);	// L17821
-//   float v13644[1024][512];
-//   modulate_fused(v13643, buf12, buf11, v13644);	// L17822
-//   float Q[1024][512];	// L17825
-//   for (int v13646 = 0; v13646 < 1024; v13646++) {	// L17826
-//     for (int v13647 = 0; v13647 < 512; v13647++) {	// L17826
-//       Q[v13646][v13647] = 0.000000;	// L17826
-//     }
-//   }
-//   float K[1024][512];	// L17827
-//   for (int v13649 = 0; v13649 < 1024; v13649++) {	// L17828
-//     for (int v13650 = 0; v13650 < 512; v13650++) {	// L17828
-//       K[v13649][v13650] = 0.000000;	// L17828
-//     }
-//   }
-//   float V[1024][512];	// L17829
-//   for (int v13652 = 0; v13652 < 1024; v13652++) {	// L17830
-//     for (int v13653 = 0; v13653 < 512; v13653++) {	// L17830
-//       V[v13652][v13653] = 0.000000;	// L17830
-//     }
-//   }
-//   systolic_Q(v13644, buf5, Q);	// L17831
-//   systolic_K(v13644, buf6, K);	// L17832
-//   systolic_V(v13644, buf7, V);	// L17833
-//   float v13654[1024][512];
-//   RoPE(Q, buf4, buf3, v13654);	// L17834
-//   float v13655[1024][512];
-//   RoPE(K, buf4, buf3, v13655);	// L17835
-//   float v13656[1024][512];
-//   scaled_dot_product_attention(v13654, v13655, V, v13656);	// L17836
-//   float attn_out[1024][512];	// L17837
-//   for (int v13658 = 0; v13658 < 1024; v13658++) {	// L17838
-//     for (int v13659 = 0; v13659 < 512; v13659++) {	// L17838
-//       attn_out[v13658][v13659] = 0.000000;	// L17838
-//     }
-//   }
-//   systolic_attn_out(v13656, buf17, attn_out);	// L17839
-//   float v13660[1024][512];
-//   bias_add_scale(attn_out, buf13, buf18, v13660);	// L17840
-//   float v13661[1024][512];
-//   layer_norm(v13660, buf1, buf2, v13661);	// L17841
-//   float v13662[1024][512];
-//   layer_norm(v13661, buf1, buf2, v13662);	// L17842
-//   float v13663[1024][512];
-//   modulate_fused(v13662, buf15, buf14, v13663);	// L17843
-//   float x_mlp1[1024][512];	// L17844
-//   for (int v13665 = 0; v13665 < 1024; v13665++) {	// L17845
-//     for (int v13666 = 0; v13666 < 512; v13666++) {	// L17845
-//       x_mlp1[v13665][v13666] = 0.000000;	// L17845
-//     }
-//   }
-//   systolic_mlp1(v13663, buf19, x_mlp1);	// L17846
-//   float v13667[1024][512];
-//   bias_add(x_mlp1, buf20, v13667);	// L17847
-//   float v13668[1024][512];
-//   GeLU(v13667, v13668);	// L17848
-//   float x_mlp2[1024][512];	// L17849
-//   for (int v13670 = 0; v13670 < 1024; v13670++) {	// L17850
-//     for (int v13671 = 0; v13671 < 512; v13671++) {	// L17850
-//       x_mlp2[v13670][v13671] = 0.000000;	// L17850
-//     }
-//   }
-//   systolic_mlp2(v13668, buf21, x_mlp2);	// L17851
-//   float v13672[1024][512];
-//   bias_add(x_mlp2, buf22, v13672);	// L17852
-//   float v13673[1024][512];
-//   bias_add_scale(v13672, buf16, v13660, v13673);	// L17853
-//   l_S_result23_result23_l_0: for (int result23_l_0 = 0; result23_l_0 < 1024; result23_l_0++) {	//
-//     l_result23_l_1: for (int result23_l_1 = 0; result23_l_1 < 512; result23_l_1++) {	//
-//     #pragma HLS pipeline II=1 rewind
-//       float v13676 = v13673[result23_l_0][result23_l_1];	//
-//       v13561[((result23_l_0 * 512) + result23_l_1)] = v13676;	//
-//     }
-//   }
-// }
-
-
-// void allo_DDitBlock(
-// //   float *v13538,
-// //   float *v13539,
-// //   float *v13540,
-// //   float *v13541,
-// //   float *v13542,
-// //   float *v13543,
-// //   float *v13544,
-// //   float *v13545,
-// //   float *v13546,
-// //   float *v13547,
-// //   float *v13548,
-// //   float *v13549,
-// //   float *v13550,
-// //   float *v13551,
-// //   float *v13552,
-// //   float *v13553,
-// //   float *v13554,
-// //   float *v13555,
-// //   float *v13556,
-// //   float *v13557,
-// //   float *v13558,
-// //   float *v13559,
-// //   float *v13560,
-// //   float *v13561
-//     float v13538[1024][512],    //x: "Ty[L, D]"
-//     float v13539[512],  //gamma:"Ty[D]", all 1, don't need
-//     float v13540[512],  //beta:"Ty[D], all 0, dont' need
-//     float v13541[1024][32],  //sin: "Ty[L, D//H//2]
-//     float v13542[1024][32],  //cos: "Ty[L, D//H//2]"
-//     float v13543[512][512], //q_weight:"Ty[D, D]"
-//     float v13544[512][512], //k_weight:"Ty[D, D]"
-//     float v13545[512][512], //v_weight:"Ty[D, D]"
-//     float v13546[1][128],   //c:"Ty[1, Cond]"
-//     float v13547[128][3072],    //adaLN_weight:"Ty[Cond, 6*D]"
-//     float v13548[3072],         //adaLN_bias:"Ty[6*D]"
-//     float v13549[512],          //shift_msa:"Ty[D]", scale_msa:"Ty[D]", gate_msa:"Ty[D]", shift_mlp:"Ty[D]", scale_mlp:"Ty[D]", gate_mlp:"Ty[D]",
-//     float v13550[512],
-//     float v13551[512],
-//     float v13552[512],
-//     float v13553[512],
-//     float v13554[512],
-//     float v13555[512][512],     //attn_out_weight: "Ty[D, D]"
-//     float v13556[1024][512],    //x_skip:"Ty[L, D]"     //actually the same as x
-//     float v13557[512][512],     //mlp1_weight:"Ty[D, D]"
-//     float v13558[512],          //mlp1_bias:"Ty[D]"
-//     float v13559[512][512],     //mlp2_weight:"Ty[D,D]"
-//     float v13560[512],          //mlp2_bias:"Ty[D]"
-//     float v13561[1024][512]
-// ) {
-//   float buffer_x[1024][512];
-//   float buffer_w[512][512];
-//   //Q and K have some sort of double-buffer behavior
-//   float buffer_Q[1024][512];
-//   float buffer_K[1024][512];
-//   float buffer_V[1024][512];
-//   //for adaLN computation
-//   float buffer0[512];
-//   float buffer1[512];
-//   float buffer2[512];
-//   float buffer3[512];
-//   float buffer4[512];
-//   float buffer5[512];
-//   float adaLN_weight[128][3072];   
-//   float adaLN_bias[3072];  
-//   float buffer_c[1][128];
-//   //for RoPE
-//   float buffer_sin[1024][32];
-//   float buffer_cos[1024][32];
-
-//   //loading from off-chip and start computation
-//   for(int i = 0; i < 1; i++){
-//       for (int j = 0; j < 128; j++){
-//           buffer_c[i][j] = v13546[i][j];
-//       }
-//   }  
-//   for (int i = 0; i < 3072; i++){
-//       adaLN_bias[i] = v13548[i];
-//   }
-//   for (int i = 0; i < 128; i++){
-//       for (int j = 0; j < 3072; j++){
-//           adaLN_weight[i][j] = v13547[i][j];
-//       }
-//   }
-// //   adaLN_modulate(buf8, buf9, buf10, buf11, buf12, buf13, buf14, buf15, buf16);	// L17820
-//   adaLN_modulate(buffer_c, adaLN_weight, adaLN_bias, buffer0, buffer1, buffer2, buffer3, buffer4, buffer5);
-//   for(int i = 0; i < 1024; i++){
-//       for(int j = 0; j < 512; j++){
-//           buffer_x[i][j] = v13538[i][j];
-//       }
-//   }
-// //   std::cout << "checkpoint" << std::endl;
-//   float v13643[1024][512];
-  
-// //   layer_norm(buffer_x, buffer0, buffer1, v13643);	// L17821
-//     layer_norm(buffer_x, v13643);	// L17821
-// //   std::cout << "checkpoint" << std::endl;
-//   float v13644[1024][512];
-// //   modulate_fused(v13643, buf12, buf11, v13644);	// L17822
-//   modulate_fused(v13643, buffer1, buffer0, v13644);	// L17822
-// //   std::cout << "checkpoint" << std::endl;
-//   for(int i = 0; i < 512; i++){
-//       for(int j = 0; j < 512; j++){
-//           buffer_w[i][j] = v13543[i][j];
-//       }
-//   }
-//   systolic_Q(v13644, buffer_w, buffer_Q);	// L17831
-//   for(int i = 0; i < 512; i++){
-//       for(int j = 0; j < 512; j++){
-//           buffer_w[i][j] = v13544[i][j];
-//       }
-//   }
-//   systolic_K(v13644, buffer_w, buffer_K);	// L17832
-// //   std::cout << "checkpoint" << std::endl;
-//   for(int i = 0; i < 512; i++){
-//       for(int j = 0; j < 512; j++){
-//           buffer_w[i][j] = v13545[i][j];
-//       }
-//   }
-//   systolic_V(v13644, buffer_w, buffer_V);	// L17833
-// //   std::cout << "checkpoint" << std::endl;
-//   for(int i = 0; i < 1024; i++){
-//       for(int j = 0; j < 32; j++){
-//           buffer_sin[i][j] = v13541[i][j];
-//       }
-//   }
-//   for(int i = 0; i < 1024; i++){
-//       for(int j = 0; j < 32; j++){
-//           buffer_cos[i][j] = v13542[i][j];
-//       }
-//   }
-//   float v13654[1024][512];
-//   RoPE(buffer_Q, buffer_cos, buffer_sin, v13654);	// L17834
-// //   std::cout << "checkpoint" << std::endl;
-//   float v13655[1024][512];
-//   RoPE(buffer_K, buffer_cos, buffer_sin, v13655);	// L17835
-// //   std::cout << "checkpoint" << std::endl;
-// //   float v13656[1024][512];
-//   scaled_dot_product_attention(v13654, v13655, buffer_V, buffer_Q);	// L17836
-// //   std::cout << "checkpoint" << std::endl;
-//   for(int i = 0; i < 512; i++){
-//       for(int j = 0; j < 512; j++){
-//           buffer_w[i][j] = v13555[i][j];
-//       }
-//   }
-//   systolic_attn_out(buffer_Q, buffer_w, buffer_K);
-//   bias_add_scale(buffer_K, buffer2, buffer_x, buffer_Q);
-// //   std::cout << "checkpoint" << std::endl;
-//   //because we are reusing the buffers, the output for bias_add_scale should be restroed
-//   for(int i = 0; i < 1024; i++){
-//       for(int j = 0; j < 512; j++){
-//           buffer_x[i][j] = buffer_Q[i][j];
-//       }
-//   }
-// //   layer_norm(buffer_Q, buffer0, buffer1, buffer_K);	// L17841
-//   layer_norm(buffer_Q, buffer_K);	// L17841
-// //   std::cout << "checkpoint" << std::endl;
-// //   layer_norm(buffer_K, buffer0, buffer1, buffer_Q);
-//   layer_norm(buffer_K, buffer_Q);
-// //   std::cout << "checkpoint" << std::endl;
-//   modulate_fused(buffer_Q, buffer4, buffer3, buffer_K);
-// //   std::cout << "checkpoint" << std::endl;
-//   for(int i = 0; i < 512; i++){
-//       for(int j = 0; j < 512; j++){
-//           buffer_w[i][j] = v13557[i][j];
-//       }
-//   }
-//   systolic_mlp1(buffer_K, buffer_w, buffer_Q);	// L17846
-// //   std::cout << "checkpoint" << std::endl;
-//   for(int i = 0; i < 512; i++){
-//       buffer0[i] = v13558[i];
-//   }
-//   bias_add(buffer_Q, buffer0, buffer_K);	// L17847
-//   GeLU(buffer_K, buffer_Q);	// L17848
-//   for(int i = 0; i < 512; i++){
-//       for(int j = 0; j < 512; j++){
-//           buffer_w[i][j] = v13559[i][j];
-//       }
-//   }  
-//   systolic_mlp2(buffer_Q, buffer_w, buffer_K);	// L17851
-// //   std::cout << "checkpoint" << std::endl;
-//   for(int i = 0; i < 512; i++){
-//       buffer0[i] = v13560[i];
-//   }
-//   bias_add(buffer_K, buffer0, buffer_Q);	// L17852
-//   bias_add_scale(buffer_Q, buffer5, buffer_x, buffer_K);	// L17853
-// //   std::cout << "checkpoint" << std::endl;
-//   //write the output
-//   for(int i = 0; i < 1024; i++){
-//       for(int j = 0; j < 512; j++){
-//           v13561[i][j] = buffer_K[i][j];
-//         //   std::cout << "the output is " << buffer_K[i][j] << "  ";
-//       }
-//   }
-// }
 
 void allo_DDitBlock(
     float v13538[1024][512],    //x: "Ty[L, D]"
@@ -25220,24 +24731,13 @@ void allo_DDitBlock(
       }
   }
   adaLN_modulate(buffer_c, adaLN_weight, adaLN_bias, buffer5);
-//   adaLN_modulate(buf8, buf9, buf10, buf11, buf12, buf13, buf14, buf15, buf16);	// L17820
-//   adaLN_modulate(buffer_c, adaLN_weight, adaLN_bias, buffer0, buffer1, buffer2, buffer3, buffer4, buffer5);
   
   for(int i = 0; i < 1024; i++){
       for(int j = 0; j < 512; j++){
           buffer_x[i][j] = v13538[i][j];
       }
   }
-//   std::cout << "checkpoint" << std::endl;
-// layernorm should be modified
-//   float v13643[1024][512];
-//   layer_norm(buffer_x, v13643);	// L17821
   layer_norm(buffer_x);
-//   std::cout << "checkpoint" << std::endl;
-//   float v13644[1024][512];
-//   modulate_fused(v13643, buf12, buf11, v13644);	// L17822
-//   modulate_fused(v13643, buffer1, buffer0, v13644);	// L17822
-  modulate_fused(buffer_x, buffer1, buffer0);	// L17822
 
   // because x still need to be kept
 
@@ -25253,7 +24753,6 @@ void allo_DDitBlock(
           buffer_w[i][j] = v13544[i][j];
       }
   }
-//   systolic_K(v13644, buffer_w, buffer_K);	// L17832
   systolic_Q(buffer_x, buffer_w, buffer_K);	// L17832
 //   std::cout << "checkpoint" << std::endl;
   for(int i = 0; i < 512; i++){
@@ -25261,7 +24760,6 @@ void allo_DDitBlock(
           buffer_w[i][j] = v13545[i][j];
       }
   }
-//   systolic_V(v13644, buffer_w, buffer_V);	// L17833
   systolic_Q(buffer_x, buffer_w, buffer_V);	// L17833
 //   std::cout << "checkpoint" << std::endl;
   for(int i = 0; i < 1024; i++){
@@ -25274,16 +24772,9 @@ void allo_DDitBlock(
           buffer_cos[i][j] = v13542[i][j];
       }
   }
-//   float v13654[1024][512];
-//   RoPE(buffer_Q, buffer_cos, buffer_sin, v13654);	// L17834
+
   RoPE(buffer_Q, buffer_cos, buffer_sin);	// L17834
-//   std::cout << "checkpoint" << std::endl;
-//   float v13655[1024][512];
-//   RoPE(buffer_K, buffer_cos, buffer_sin, v13655);	// L17835
   RoPE(buffer_K, buffer_cos, buffer_sin);	// L17835
-//   std::cout << "checkpoint" << std::endl;
-//   float v13656[1024][512];
-//   scaled_dot_product_attention(v13654, v13655, buffer_V, buffer_Q);	// L17836
   scaled_dot_product_attention(buffer_Q, buffer_K, buffer_V, buffer_x);	// L17836
 //   std::cout << "checkpoint" << std::endl;
   for(int i = 0; i < 512; i++){
@@ -25300,7 +24791,7 @@ void allo_DDitBlock(
   }
   bias_add_scale(buffer_K, buffer2, buffer_x, buffer_Q);
 //   std::cout << "checkpoint" << std::endl;
-  //because we are reusing the buffers, the output for bias_add_scale should be restroed
+// because we are reusing the buffers, the output for bias_add_scale should be restroed
   for(int i = 0; i < 1024; i++){
       for(int j = 0; j < 512; j++){
           buffer_x[i][j] = buffer_Q[i][j];
@@ -25317,9 +24808,7 @@ void allo_DDitBlock(
           buffer_w[i][j] = v13557[i][j];
       }
   }
-//   systolic_mlp1(buffer_K, buffer_w, buffer_Q);	// L17846
   systolic_Q(buffer_Q, buffer_w, buffer_K);	// L17846
-//   std::cout << "checkpoint" << std::endl;
   for(int i = 0; i < 512; i++){
       buffer0[i] = v13558[i];
   }
@@ -25330,15 +24819,12 @@ void allo_DDitBlock(
           buffer_w[i][j] = v13559[i][j];
       }
   }  
-//   systolic_mlp2(buffer_Q, buffer_w, buffer_K);	// L17851
   systolic_Q(buffer_K, buffer_w, buffer_Q);	// L17851
-//   std::cout << "checkpoint" << std::endl;
   for(int i = 0; i < 512; i++){
       buffer0[i] = v13560[i];
   }
   bias_add(buffer_Q, buffer0, buffer_K);	// L17852
   bias_add_scale(buffer_K, buffer5, buffer_x, buffer_Q);	// L17853
-//   std::cout << "checkpoint" << std::endl;
   //write the output
   for(int i = 0; i < 1024; i++){
       for(int j = 0; j < 512; j++){
@@ -25346,125 +24832,6 @@ void allo_DDitBlock(
         //   std::cout << "the output is " << buffer_K[i][j] << "  ";
       }
   }
-
-
-// to further ensure correctness??
-//   for(int i = 0; i < 1024; i++){
-//       for(int j = 0; j < 512; j++){
-//           buffer_x[i][j] = v13538[i][j];
-//       }
-//   }
-// //   std::cout << "checkpoint" << std::endl;
-//   float v13643[1024][512];
-//   layer_norm(buffer_x, v13643);	// L17821
-// //   std::cout << "checkpoint" << std::endl;
-//   float v13644[1024][512];
-// //   modulate_fused(v13643, buf12, buf11, v13644);	// L17822
-//   modulate_fused(v13643, buffer1, buffer0, v13644);	// L17822
-// //   std::cout << "checkpoint" << std::endl;
-
-// //   layer_norm(buffer_x, buffer_K);
-// //   modulate_fused(buffer_K, buffer1, buffer0, buffer_x);
-
-//   for(int i = 0; i < 512; i++){
-//       for(int j = 0; j < 512; j++){
-//           buffer_w[i][j] = v13543[i][j];
-//       }
-//   }
-//   systolic_Q(buffer_x, buffer_w, buffer_Q);	// L17831
-//   for(int i = 0; i < 512; i++){
-//       for(int j = 0; j < 512; j++){
-//           buffer_w[i][j] = v13544[i][j];
-//       }
-//   }
-//   systolic_Q(buffer_x, buffer_w, buffer_K);	// L17832
-// //   std::cout << "checkpoint" << std::endl;
-//   for(int i = 0; i < 512; i++){
-//       for(int j = 0; j < 512; j++){
-//           buffer_w[i][j] = v13545[i][j];
-//       }
-//   }
-//   systolic_Q(buffer_x, buffer_w, buffer_V);	// L17833
-// //   std::cout << "checkpoint" << std::endl;
-//   for(int i = 0; i < 1024; i++){
-//       for(int j = 0; j < 32; j++){
-//           buffer_sin[i][j] = v13541[i][j];
-//       }
-//   }
-//   for(int i = 0; i < 1024; i++){
-//       for(int j = 0; j < 32; j++){
-//           buffer_cos[i][j] = v13542[i][j];
-//       }
-//   }
-
-//   float v13654[1024][512];
-//   RoPE(buffer_Q, buffer_cos, buffer_sin, v13654);	// L17834
-// //   std::cout << "checkpoint" << std::endl;
-//   float v13655[1024][512];
-//   RoPE(buffer_K, buffer_cos, buffer_sin, v13655);	// L17835
-// //   std::cout << "checkpoint" << std::endl;
-// //   float v13656[1024][512];
-
-//   scaled_dot_product_attention(v13654, v13655, buffer_V, buffer_Q);	// L17836
-// //   std::cout << "checkpoint" << std::endl;
-//   for(int i = 0; i < 512; i++){
-//       for(int j = 0; j < 512; j++){
-//           buffer_w[i][j] = v13555[i][j];
-//       }
-//   }
-//   systolic_attn_out(buffer_Q, buffer_w, buffer_K);
-//   for (int i = 0; i < 1024; i++){
-//       for (int j = 0; j < 512; j++){
-//           buffer_x[i][j] = v13538[i][j];
-//       }
-//   }  
-//   bias_add_scale(buffer_K, buffer2, buffer_x, buffer_Q);
-// //   std::cout << "checkpoint" << std::endl;
-//   //because we are reusing the buffers, the output for bias_add_scale should be restroed
-//   for(int i = 0; i < 1024; i++){
-//       for(int j = 0; j < 512; j++){
-//           buffer_x[i][j] = buffer_Q[i][j];
-//       }
-//   }
-//   layer_norm(buffer_Q, buffer_K);	// L17841
-// //   std::cout << "checkpoint" << std::endl;
-//   layer_norm(buffer_K, buffer_Q);
-// //   std::cout << "checkpoint" << std::endl;
-//   modulate_fused(buffer_Q, buffer4, buffer3, buffer_K);
-// //   std::cout << "checkpoint" << std::endl;
-//   for(int i = 0; i < 512; i++){
-//       for(int j = 0; j < 512; j++){
-//           buffer_w[i][j] = v13557[i][j];
-//       }
-//   }
-// //   systolic_mlp1(buffer_K, buffer_w, buffer_Q);	// L17846
-  
-// //   std::cout << "checkpoint" << std::endl;
-//   for(int i = 0; i < 512; i++){
-//       buffer0[i] = v13558[i];
-//   }
-//   bias_add(buffer_Q, buffer0, buffer_K);	// L17847
-//   GeLU(buffer_K, buffer_Q);	// L17848
-//   for(int i = 0; i < 512; i++){
-//       for(int j = 0; j < 512; j++){
-//           buffer_w[i][j] = v13559[i][j];
-//       }
-//   }  
-//   systolic_mlp2(buffer_Q, buffer_w, buffer_K);	// L17851
-// //   std::cout << "checkpoint" << std::endl;
-//   for(int i = 0; i < 512; i++){
-//       buffer0[i] = v13560[i];
-//   }
-//   bias_add(buffer_K, buffer0, buffer_Q);	// L17852
-//   bias_add_scale(buffer_Q, buffer5, buffer_x, buffer_K);	// L17853
-// //   std::cout << "checkpoint" << std::endl;
-//   //write the output
-//   for(int i = 0; i < 1024; i++){
-//       for(int j = 0; j < 512; j++){
-//           v13561[i][j] = buffer_K[i][j];
-//         //   std::cout << "the output is " << buffer_K[i][j] << "  ";
-//       }
-//   }
 }
 
 
