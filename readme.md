@@ -4,7 +4,7 @@ Welcome to the open-sourced repository for our FPGA-based MDLM (Masked Diffusion
 This ongoing project focuses on developing an efficient end-to-end accelerator for **diffusion language models** on FPGAs using the [**Allo**](https://arxiv.org/abs/2404.04815) framework and **High Level Synthesis (HLS)**. Allo is a accelerator design language (ADL) for efficient spatial accelerator design. The specific diffusion language model is based on [**Simple and Effective Masked Diffusion Language Models**](https://arxiv.org/abs/2406.07524). 
 
 ## Documentation
-For more detailed information about the background and preliminary of diffusion mechanism, diffusion language model and our implementation, please refer to the following work summary, which covers a literature review, profiling results for MDLM inference, and our current development status:
+For more detailed information about the background and preliminary of diffusion mechanism, diffusion language model and our implementation, please refer to the following work summary, which covers a literature review, profiling results and roofline model for MDLM inference, our current development status, as well as suggested features for **Allo**:
 
 - [MDLM Accelerator Document](documentation/doc.md)
 
@@ -53,7 +53,7 @@ We present the results for **latency** and **resource usage** comparison between
 | **Baseline**  |  5.1E9           | 36693 (910%) | 2791 (30%) | 273231 (11%)| 369770 (28%) | -           |
 | **Optimized** | 4.127E9          | 3148 (78%)  | 1188 (13%) | 118726 (4%) | 118892 (12%) | 832 (86%)   |
 
-- The **optimized version** shows significant reductions in resource consumption and improvements in performance, specifically in **BRAM** and **DSP** usage with our memory copy and resource reusing techniques. More detailed 
+- The **optimized version** shows significant reductions in resource consumption and improvements in performance, specifically in **BRAM** and **DSP** usage with our memory copy and resource reusing techniques. More details can be found underthe [MDLM Accelerator Document].(documentation/doc.md).
 
 
 ## Developers and Contact Information
