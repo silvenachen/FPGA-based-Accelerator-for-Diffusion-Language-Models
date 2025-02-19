@@ -143,9 +143,33 @@ Where:
 - **Peak_MBW** is the peak memory bandwidth.
 - **OI** is defined as the ratio of **\#FP_ops** to **\#Bytes**. It indicates how many floating-point operations are performed for each byte of data transferred.
 
-As shown in the figure below, a system is considered **memory-bound** if OI is less than the turning point. Otherwise it is **computation-bound** when OI exceeds the turning point.
+The performance of the system is determined by comparing the **Peak_FLOPS** (computational capacity) and **\#FP_ops / \#Bytes × Peak_MBW**. As shown in the figure below, a system is considered **memory-bound** if OI is less than the turning point. Otherwise it is **computation-bound** when OI exceeds the turning point.
 
 ![](./fig/roofline.png)
+
+### Performance Evaluation
+For the DDitBlock featuring sequential computations through various operators, The total **FLOPs** for each step are modeled as below. Specifically, all the GEMM computations are supported by output-stationary styled systolic arrays.
+
+![](./fig/sa.png)
+
+Example analysis is as below:
+- **Step 1: adaLN_modulate**
+  \[
+  \text{FLOPs} = 128 \times 3072 \times 2
+  \]
+  This step uses a systolic array with 1x8 **PEs**.
+
+- **Step 2: Modulate_fused**
+  - **LayerNorm**: \( 8 \times 1024 \times 512 \) FLOPs
+  - **Scale**: \( 3 \times 1024 \times 512 \) FLOPs
+
+- **Step 3: Q, K, V**
+  \[
+  \text{FLOPs} = 1024 \times 512 \times 512 \times 2 \times 3
+  \]
+  This step is computed with a systolic array of 8x8 PEs (can be reused).
+
+  Finally, the **Total FLOPs** is determined as 5.39 GFLOPs, the **Off-chip Memory Access** is approximately 0.014 GB, so **OI** is calculated as 385 FLOPs/Byte. The performance peak achieved by the proposed architecture is 211 GFLOPS. Consider the **Memory Bandwidth**, HBM is 480 GB/s, while DRAM implementation is 38 GB/s according to the U280 datasheet. Therefore, the turning points for HBM is 0.43 FLOPs/Byte, and For DRAM 5.55 GFLOPS/Byte. Either way, The kernel is **computation-bound**, meaning the performance is limited by the compute throughput rather than memory bandwidth on the target FPGA.
 
 ## Project Development
 ### Current Status
