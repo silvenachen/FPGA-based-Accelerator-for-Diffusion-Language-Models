@@ -56,7 +56,7 @@ Here, **Hybrid SA** is a specially designed systolic array to accelerate both co
 
 **Special Function Unit (SFU)** is the non-linear module with fine-grained pipeline, and is connected with Hybrid SA using Shared Tile Buffer.
 
-#### Low-bit Quantization, Hybrid Dataflow switching and DSP Packing 
+##### Low-bit Quantization, Hybrid Dataflow switching and DSP Packing 
 The work uses Quantization-Aware Training(QAT) and applies distinct scaling factors at each denoising step to preserve accuracy. It is able to reduce the weight to 4 bit without degrading the accuracy. For activation, they use 8-bit representation. Evaluation metrics including FID and CLIP score show good results of the quantization scheme. 
 
 ![](./fig/fid.png)
@@ -72,7 +72,34 @@ The important workflow of DSP packing and dataflow transitions is illustrated be
 Currently, our MDLM accelerator only supports float32. Inspired by SDA, we might also consider adopting quantization and DSP packing for improved resource efficiency and performance.
 
 #### SQ-DM: Accelerating Diffusion Models with Aggressive Quantization and Temporal Sparsity
-*SQ-DM: Accelerating Diffusion Models with Aggressive Quantization and Temporal Sparsity* [6], is another accelerator featuring aggressive, low bit-width quantization, as well as activation sparsity to significantly speed up diffusion models. The methods are reported to efficiently address the challenges of generating high-quality content, which is typically slow due to the multiple time steps required in the inference process.
+*SQ-DM: Accelerating Diffusion Models with Aggressive Quantization and Temporal Sparsity* [6], is another accelerator featuring a co-design of aggressive, low bit-width quantization, as well as activation sparsity to significantly speed up diffusion models. The methods are reported to efficiently address the challenges of generating high-quality content, which is typically slow due to the multiple time steps required in the inference process.
+
+##### Key Novelty
+This paper presents new techniques for accelerating diffusion models through a combination of aggressive quantization and structured sparsity. For the diffusion models,  Elucidated Diffusion Models are selected as the baseline. This paper presents a co-designed hardware-software approach for accelerating diffusion models using a combination of: 
+
+- Aggressive 4-bit quantization
+- Temporal per-channel activation sparsity
+- A novel heterogeneous dense/sparse accelerator architecture
+
+**Quantization** The paper directly quantizes both the original weights and activations to 4-bit, and achieves negligible degradation. It could be observed that the sensitivity to quantization across different layers, and only the first and last few blocks are more sensitive to quantization, as shown in the figure below. Therefore, SQ-DM uses block-wise quantization sensitivity analysis to selectively assign 4-bit precision to insensitive blocks while keeping 8-bit precision for sensitive ones.
+
+![](./fig/sens.png)
+
+Apart from that, the paper replaces SiLU with ReLU for hardware efficiency, as SiLU requires signed INT4, leading to underutilization of available bit-width, while ReLU maximizes representation capacity. ReLU-based models achieve comparable image quality to SiLU models while improving activation sparsity.
+
+**Sparsity** Another important observation is the temporal per-channel activation sparsity. The authors analyze sparsity patterns across time steps and observe that different activation channels exhibit varying levels of sparsity at different time steps. Instead of treating all channels equally, they introduce a dynamic sparse-dense execution strategy, where the sparse channels are processed using a **sparse processing unit (SPE)**, and the dense channels are computed using a **dense processing unit (DPE)**.
+
+![](./fig/sparsity.png)
+
+**Proposed Accelerator Architecture** The paper proposes a **Heterogeneous Dense/Sparse Accelerator Architecture**. It essentially involves both Dense Processing Elements (DPEs) and Sparse Processing Elements (SPEs) for dense/sparse computation modes. A sparsity-aware address generator is responsible for dynamically determining sparse/dense channels and fetches only relevant data from memory, and allows parallel execution of dense and sparse computations.
+
+![](./fig/accelerator.png)
+
+Using the Stonne simulator, the accelerator is reported to achieve an overall 6.91× total speed-up compared to an FP16 SiLU-based diffusion model with the 4-bit quantization and sparsity techniques.
+
+
+#### Insights
+From the literature reviews, existing works have been focusing on efficient mixed-precision quantization. Since diffusion inference typically involes many timesteps and gradual denoising, a more careful study to understand the quantization sensitivity of each timestep is useful to achieve minimal quality degradation. Apart from quantization, it is also inspiring to explore DSP packing, more efficient dataflow management, and even sparsity for diffusion accelerator development in general.
 
 ## GPU Side Profiling 
 In this section, the profiling results on GPUs for both MDLM and Diffusion-LM will be demonstrated and analyized. We are specifically interested in their performance bottlenecks and operator types, which help us develop the accelerator in HLS. 
@@ -174,6 +201,7 @@ We have successfully extracted the backbones for both MDLM and Diffusion-LM, whi
 ### Tasks Underway
 - On-board Tests and End-to-end deployment on FPGA
 - Other MDLM Components Development
+- Roofline Model Analysis for the Optimized Version
 
 ### Performance Comparison
 
@@ -213,6 +241,94 @@ to offload pressure from solely BRAM.
 ### Reusing Systolic Arrays for GEMM Operations
 
 - The baseline implementation allocated separate systolic arrays for every GEMM operation, even when the matrix dimensions were identical. This increased DSP and LUT usage, leading to unnecessary hardware resource consumption. On the contrary, we reused systolic arrays for GEMM operations with the same tensor dimensions.
+
+## Allo Feature Suggestions
+The project is developed with a combined efforts of the Allo framework and mannual HLS optimizations. Allo enables fast accelerator construction and verifications, and also provides access to developers with less hardware implementations experiences. However, when dealing with large-sized model, the HLS accelerator generated by Allo almost always cannot be directly fit on-chip. It also lacks a more fine-grained control from the user's perspective. 
+
+### Redundant Memory Copy
+As discussed previously, Allo copies all input data to BRAM upfront before computation begins, even when only a portion of the data is needed. It could be useful to introduce a more efficient memory manage strategy. For instance, if the framework could identifies when the data is needed and fetch from DRAM, or target reusable buffers, it could eliminate redundant memory allocations overhead and enable on-the-fly computations more efficiently.
+
+### Custom Scheduling
+The current DDitBlock kernel is implemented using dsl.grid and a systolic array-based inner product dataflow. The design follows a sequential execution, where multiple GEMM operations from attention and feed forward calculations are processed tile-by-tile sequentailly. While the implementation is straightforward and easy to verify, the current implementation suffers from excessive BRAM usage and limited scalabilty, making it difficult to achieve further performance improvements both mannually or on the Allo side. Without adopting dataflow architecture, however, even the smallest model could not fit on-chip for the Baseline. We have tested mannual tiling following similar logics. 
+
+```
+
+# Mannual Tiling in top function follows similar logics
+def systolic[
+    TyA, TyB, TyC, M: int32, K: int32, N: int32, Mt: int32, Nt: int32
+](A: "TyA[M, K]", B: "TyB[K, N]", C: "TyC[M, N]") -> "Ty[M, N]":
+    local_A: TyA[Mt, K]
+    local_B: TyB[K, Nt]
+    local_C: TyC[Mt, Nt]
+
+    # k needs not be tiled, since it is temporal dimension
+    for mi, ni in dsl.grid(M // Mt, N // Nt, name="outer_tile"):
+        # reversed traversal, better for cascading systolic arrays with FIFOs
+        # corresponds to the order of the previous `store_C_tile` output
+        for ak, ai in dsl.grid(K, Mt, name="load_A_tile"):
+            # reuse along the ni dimension
+            if ni == 0:
+                local_A[ai, ak] = A[mi * Mt + ai, ak]
+        for bk, bj in dsl.grid(K, Nt, name="load_B_tile"):
+            # reuse along the mi dimension
+            # since the inner access order is different from the outer one,
+            # we cannot cache as a line buffer
+            local_B[bk, bj] = B[bk, ni * Nt + bj]
+        systolic_tile[TyA, TyB, TyC, K, Mt, Nt](
+            local_A,
+            local_B,
+            local_C,
+        )
+        # reversed traversal, better for cascading systolic arrays with FIFOs
+        for sj, si in dsl.grid(Nt, Mt, name="store_C_tile"):
+            C[mi * Mt + si, ni * Nt + sj] = local_C[si, sj]
+        return C
+```
+
+However, it is hard to specify the composition and schedules, leading to some errors like incorrect indexing in the HLS code.
+
+Currently, more dataflows are expected to be supported in the improved framework, not limited to inner product, output stationary manner. It should also be beneficial to experiment with a dataflow-based streaming architecture that leverages streaming FIFOs and replace static BRAM allocation. In Allo, the streaming FIFOs are implmented as pipes (`df.pipe`), which enable data streaming between different components without explicit memory access. 
+
+For instance, for the streaming FIFO example below, a producer kernel generates data and pushes it into a streaming FIFO, and a consumer retrieves the data for computation, just as the mannual organization in HLS. Here, the producer kernel reads elements from matrix A and streams them into a pipe. The consumer kernel retrieves each elements and adds 1, storing the results in matrix B. Allo also compiles the dataflow into MLIR, and we could see how the streaming mechanism is defined at a hardware level.
+
+```
+import allo
+from allo.ir.types import float32, Stream
+import allo.dataflow as df
+import numpy as np
+
+Ty = float32
+M, N, K = 16, 16, 16
+
+@df.kernel(mapping=[1])
+def producer(A: Ty[M, N]):
+    pipe: Stream[Ty] = df.pipe(src="producer", dst="consumer")
+    for i, j in allo.grid(M, N):
+        # load data
+        out: Ty = A[i, j]
+        # send data
+        pipe.put(out)
+
+@df.kernel(mapping=[1])
+def consumer(B: Ty[M, N]):
+    pipe: Stream[Ty] = df.pipe(src="producer", dst="consumer")
+    for i, j in allo.grid(M, N):
+        # receive data
+        data = pipe.get()
+        # computation
+        B[i, j] = data + 1
+
+A = np.random.rand(M, N).astype(np.float32)
+B = np.zeros((M, N), dtype=np.float32)
+top = df.build([producer, consumer])
+top(A, B)
+np.testing.assert_allclose(A + 1, B)
+print("Passed!")
+```
+
+The GEMM could also be supported with multiple levels of streaming FIFOs. The input data will be read into HLS streams from off-chip, thus decoupling array size from the input dimensions. Additionally, multiple operators can also be connected through FIFOs, as comparable to "operator fusion". However, to support large and complexed model deployment, such as the entire diffusion transformer block, it is very challenging to ensure that the data flows between operators with correct functionality.
+
+Through a smarter memory management and buffer reuse, combined with flexible dataflow support, these enhancement could make Allo more scalable and user-friendly with less mannual intervention.
 
 ## References
 [1] Croitoru F A, Hondru V, Ionescu R T, et al. Diffusion models in vision: A survey[J]. IEEE Transactions on Pattern Analysis and Machine Intelligence, 2023, 45(9): 10850-10869.
