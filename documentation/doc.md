@@ -287,6 +287,8 @@ def systolic[
 
 However, it is hard to specify the composition and schedules, leading to some errors like incorrect indexing in the HLS code.
 
+### More Efficient Streaming
+
 Currently, more dataflows are expected to be supported in the improved framework, not limited to inner product, output stationary manner. It should also be beneficial to experiment with a dataflow-based streaming architecture that leverages streaming FIFOs and replace static BRAM allocation. In Allo, the streaming FIFOs are implmented as pipes (`df.pipe`), which enable data streaming between different components without explicit memory access. 
 
 For instance, for the streaming FIFO example below, a producer kernel generates data and pushes it into a streaming FIFO, and a consumer retrieves the data for computation, just as the mannual organization in HLS. Here, the producer kernel reads elements from matrix A and streams them into a pipe. The consumer kernel retrieves each elements and adds 1, storing the results in matrix B. Allo also compiles the dataflow into MLIR, and we could see how the streaming mechanism is defined at a hardware level.
