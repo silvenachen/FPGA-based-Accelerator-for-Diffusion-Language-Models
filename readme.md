@@ -7,11 +7,11 @@ This ongoing project focuses on developing an efficient end-to-end accelerator f
 
 For more detailed information about the background and preliminaries of the diffusion mechanism, diffusion language model, and related hardware accelerators, please refer to the following document:
 
-- [Background and Related Works](documentation/background.md)
+- [**Background and Related Works**](documentation/background.md)
 
 For profiling results, the roofline model, the MDLM accelerator implementation details, and suggested features for Allo, please refer to the MDLM Accelerator Document:
 
-- [MDLM Accelerator Documentation](documentation/mdlm.md)
+- [**MDLM Accelerator Documentation**](documentation/mdlm.md)
 
 ## Prerequisites
 Before using this repository, please ensure you have the following prerequisites satisfied:
@@ -81,7 +81,11 @@ We present the results for **latency** and **resource usage** comparison between
 | **Baseline**  |  5.1E9           | 36693 (910%) | 2791 (30%) | 273231 (11%)| 369770 (28%) | -           |
 | **Optimized** | 4.127E9          | 1532 (37%)  | 1186 (13%) | 126044 (4%) | 170984 (13%) | 768 (80%)   |
 
-- The **optimized version** shows significant reductions in resource consumption and improvements in performance, specifically in **BRAM** and **DSP** usage with our memory copy and resource reusing techniques. For more implementation details, please refer to [MDLM Accelerator Documentation](documentation/mdlm.md).
+- The **optimized version** shows significant reductions in resource consumption and improvements in performance, specifically in **BRAM** and **DSP** usage with our memory copy and resource reusing techniques. For more implementation details, please refer to [**MDLM Accelerator Documentation**](documentation/mdlm.md).
+
+### Allo Developer Suggestions
+For detailed optimization methods and Allo feature suggestions, please check [Optimization Techniques](documentation/mdlm.md#optimization-techniques).
+
 
 
 ## Developers and Contact Information
