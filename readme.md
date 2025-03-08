@@ -84,7 +84,7 @@ We present the results for **latency** and **resource usage** comparison between
 - The **optimized version** shows significant reductions in resource consumption and improvements in performance, specifically in **BRAM** and **DSP** usage with our memory copy and resource reusing techniques. For more implementation details, please refer to [**MDLM Accelerator Documentation**](documentation/mdlm.md).
 
 ### For Allo Developers
-For detailed optimization methods and Allo feature suggestions, please check [Optimization Techniques](documentation/mdlm.md#optimization-techniques) and [Allo Feature Suggestions](documentation/mdlm.md#allo-feature-suggestions).
+For detailed optimization methods and Allo feature suggestions, please check [**Optimization Techniques**](documentation/mdlm.md#optimization-techniques) and [**Allo Feature Suggestions**](documentation/mdlm.md#allo-feature-suggestions).
 
 
 

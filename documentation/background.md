@@ -1,17 +1,23 @@
 # Work Summary for Diffusion Language Model Accelerator
 
-## Preliminaries and Literature Survey
-In this section, we will cover three main topics for the literature survey in diffusion language models.
+This document provides a comprehensive summary of the preliminaries and background knowledge of diffusion models. For readers interested in the theoretical background of diffusion models in general, diffusion language models, or hardware accelerators, please refer to this doc.
 
-- Traditional latent diffusion model
-- Diffusion language model and diffusion transformers (DiTs)
+## Preliminaries and Literature Survey
+
+This section covers foundational concepts and key research in diffusion language models as belows.
+
+- Traditional latent diffusion models
+- Diffusion language models and diffusion transformers (DiTs)
 - An edge FPGA accelerator for stable diffusion, [*SDA: Low-Bit Stable Diffusion Acceleration on Edge FPGAs*](https://www.sfu.ca/~zhenman/files/C41-FPL2024-SDA.pdf).
+- A hardware accelerator featuring aggressive low-bit quantization and sparsity exploration, [*SQ-DM: Accelerating Diffusion Models with Aggressive Quantization and Temporal Sparsity*](https://arxiv.org/abs/2501.15448).
 
 ### Latent Diffusion Model in Vision
 
 Diffusion models have been proven very successful in computer vision, such as image generation in image editing. Here, we introduce the widely adopted architecture of diffusion models in vision. In general, a diffusion model consists of a forward noising process and a reverse denoising process, as visualized below[1]. The figure below. The forward process gradually adds noises to data, while the reverse process learns to transform noise back to data. During diffusion inference, only the reverse denoising process is performed. In essence, we need to train a noise estimate network to learn the conditional distribution and predict noise at each time step, so as to recover $X_0$ from $X_T$.
 
 ![](./fig/diffusion.png)
+
+*Figure 1: Forward and reverse process in diffusion models. Adapted from [1].*
 
 A typical diffusion architecture in vision uses a combination of a **Text Encoder** (such as CLIP), a **Noise Estimate Network (NEN)** and **VAE(Variational Autoencoder)**. Typically, NEN using **U-Net** dominates diffusion models in vision. However, diffusion language models don't necessarily involve the U-Net architecture. Even if they do, the operators are not the same as diffusion models for vision, as will be discussed later. U-Net is used for progressive refinement via noise addition, and is considered as the most important part for hardware acceleration.
 
