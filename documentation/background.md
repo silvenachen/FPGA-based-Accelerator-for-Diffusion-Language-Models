@@ -1,4 +1,4 @@
-# Work Summary for Diffusion Language Model Accelerator
+# Preliminaries, Background, and Literature Review of Diffusion Models
 
 This document provides a comprehensive summary of the preliminaries and background knowledge of diffusion models. For readers interested in the theoretical background of diffusion models in general, diffusion language models, or hardware accelerators, please refer to this doc.
 
@@ -17,19 +17,19 @@ Diffusion models have been proven very successful in computer vision, such as im
 
 ![](./fig/diffusion.png)
 
-*Forward and reverse process in diffusion models. Reproduced from [1].*
+*Figure 1: Forward and reverse process in diffusion models. Reproduced from [1].*
 
 A typical diffusion architecture in vision uses a combination of a **Text Encoder** (such as CLIP), a **Noise Estimate Network (NEN)** and **VAE(Variational Autoencoder)**. Typically, NEN using **U-Net** dominates diffusion models in vision. However, diffusion language models don't necessarily involve the U-Net architecture. Even if they do, the operators are not the same as diffusion models for vision, as will be discussed later. U-Net is used for progressive refinement via noise addition, and is considered as the most important part for hardware acceleration.
 
 ![](./fig/vision.png)
 
-*The Stable Diffusion pipeline, illustrating the transformation from a text prompt to an image using CLIP, U-Net, and VAE. Reproduced from [Stable Diffusion (Image Generation)](https://jedrzejwalega.github.io/machine-learning/tutorial/2023/12/31/stable-diffusion.html.)*
+*Figure 2: The Stable Diffusion pipeline, illustrating the transformation from a text prompt to an image using CLIP, U-Net, and VAE. Reproduced from [Stable Diffusion (Image Generation)](https://jedrzejwalega.github.io/machine-learning/tutorial/2023/12/31/stable-diffusion.html.)*
 
 Specifically, U-Net in latent diffusion models mainly comprises **Res Blocks** and **Attention Blocks**. The encoder and decoder parts form a **"U"** shape. The **Res Blocks** are organized with layers including linear, 2D convolution, group norm and non-linear computations. In Attention Blocks, we mainly need to deal with matirx-matrix multiplication.
 
 ![](./fig/unet.png)
 
-*Reverse diffusion for guided diffusion process. Reproduced from https://deepsense.ai/wp-content/uploads/2023/03/xOverview-of-U-Net-architecture.jpeg.pagespeed.ic.oQ86PpsfAk.webp*
+*Figure 3: Reverse diffusion for guided diffusion process. Reproduced from https://deepsense.ai/wp-content/uploads/2023/03/xOverview-of-U-Net-architecture.jpeg.pagespeed.ic.oQ86PpsfAk.webp*
 
 ### Diffusion Language Models
 While diffusion models dominates fields in AIGC for image, video or audios, how to construct diffusion language models is non-trivial due to the discrete nature of text as opposed to the continuous nature of other data types. Works on diffusion models for language generation remain limited, and there is also no specialized hardware accelerator for diffusion language models, either.
@@ -44,19 +44,19 @@ One approach transforms the discrete text information into continuous representa
 
 ![](./fig/dlm.png)
 
-*Typical latent diffusion language model. Reproduced from [Latent Diffusion for Language Generation](https://arxiv.org/abs/2212.09462)*
+*Figure 4: Typical latent diffusion language model. Reproduced from [Latent Diffusion for Language Generation](https://arxiv.org/abs/2212.09462).*
 
 Another approach is the use discrete diffusion, as is the case for **MDLM**. The U-Net backbone is replaced with Diffusion Transformers (DiTs for short). DiTs adapts the transformer architecture to diffusion models, enabling iterative denoising rather than **sequential token generation** (as in autoregressive models). Despite the differences, DiTs still retain several key aspects in transformer computation, such as the multi-head attetion (MHA), positional encoding (typically Rotary Position Embeddings (RoPE)), and FFN layers. DiTs accept conditional inputs (diffusion timesteps) as well as noised input IDs. At each time step, the input IDs are passed through a vocab embedding layer to represent high-dimensional vectors, and the timestep, *t*, is also embedded as a vector. The embedded inputs and timesteps are processed through multiple **DDiTBlocks** and go into a final layer specific to gradually denoise the inputs. A scheduler is utilized to manage the noise and its schedule, generating meaningful contents in the end. The following figure illustrates the overall architecture in MDLM.
 
 ![](./fig/MDLM.jpg)
 
-*Overall Architecture of **Masked Diffsuion Language Model** containing multiple DiTs.*
+*Figure 5: Overall Architecture of **Masked Diffsuion Language Model** containing multiple DiTs.*
 
 A more detailed architecture for DDitBlock is as below. It accepts two inputs: input sequence of embeddings $x$, and the conditioning input $c$. $x$ remains the same dimension [seq_len, hidden_dim], rather than changing size as in autoregressive transformer models. Note that adaptive layer norm layers (adaLN) layer is utilized for $c$ prior to any residual connections within the block, allowing the block to adapt its behavior based on external timestep conditions. The rest part follows similar behavior in a common transformer block.
 
 ![](./fig/DDitBlock.jpg)
 
-*Detailed diffusion transformer computation process in MDLM.*
+*Figure 6: Detailed diffusion transformer computation process in MDLM.*
 
 To summarize, diffusion language models adopt different (most likely transformer blocks) operators during denoising phase. Some adopts DiT rather than U-Net architecture, and achieves improved performance. Because MDLM is a state-of-the-art work that outperforms Diffusion-LM, and also follows a more reusable DiT architecture, we choose to implement MDLM in Allo. Currently, we are working on the DDitBlock, but we will move on to other components and achives an end-to-end implementation on FPGA. 
 
@@ -69,7 +69,7 @@ We investigate existing works to realize the efficient hardware acceleration for
 
 ![](./fig/sda.png)
 
-*Overall architecture of SDA. Reproduced from [5]*
+*Figure 7: Overall architecture of SDA. Reproduced from [5]*
 
 Here, **Hybrid SA** is a specially designed systolic array to accelerate both convolution and matrix multiplication in Attention Blocks. It supports both output-stationary and weight-stationary dataflows, and support different quantization schemes with DSP packing. 
 
@@ -81,7 +81,7 @@ The work uses Quantization-Aware Training(QAT) and applies distinct scaling fact
 
 ![](./fig/fid.png)
 
-*FID and CLIP evaluation. Reproduced from [5]. *
+*Figure 8: FID and CLIP evaluation. Reproduced from [5].*
 
 In addition, the work provides insights that two different dataflows are required by matrix multiplication and convolution. For **MM**, Softmax, LNorm, GeGLU requires a row of data as soon as possible, so output stationary is preferred, while for **Conv**, GNorm requires the first G channels as soon as possible so weight-stationary is better in this case. 
 
@@ -91,7 +91,7 @@ The important workflow of DSP packing and dataflow transitions is illustrated as
 
 ![](./fig/pack.png)
 
-*Different dataflows and DSP packing schemes. Reproduced from [5].*
+*Figure 9: Different dataflows and DSP packing schemes. Reproduced from [5].*
 
 Currently, our MDLM accelerator only supports float32. Inspired by SDA, we might also consider adopting quantization and DSP packing for improved resource efficiency and performance in the future.
 
@@ -109,7 +109,7 @@ This paper presents new techniques for accelerating diffusion models through a c
 
 ![](./fig/sens.png)
 
-*Sensitivity study across different layers indicates the necessity of hybrid quantization during diffusion inference.  Reproduced from [6].*
+*Figure 10: Sensitivity study across different layers indicates the necessity of hybrid quantization during diffusion inference.  Reproduced from [6].*
 
 Apart from that, the paper replaces SiLU with ReLU for hardware efficiency, as SiLU requires signed INT4, leading to underutilization of available bit-width, while ReLU maximizes representation capacity. ReLU-based models achieve comparable image quality to SiLU models while improving activation sparsity.
 
@@ -117,13 +117,13 @@ Apart from that, the paper replaces SiLU with ReLU for hardware efficiency, as S
 
 ![](./fig/sparsity.png)
 
-*Sparsity patterns in different channels at different time steps. Reproduced from [6].*
+*Figure 11: Sparsity patterns in different channels at different time steps. Reproduced from [6].*
 
 **Proposed Accelerator Architecture** The paper proposes a **Heterogeneous Dense/Sparse Accelerator Architecture**. It essentially involves both Dense Processing Elements (DPEs) and Sparse Processing Elements (SPEs) for dense/sparse computation modes. A sparsity-aware address generator is responsible for dynamically determining sparse/dense channels and fetches only relevant data from memory, and allows parallel execution of dense and sparse computations.
 
 ![](./fig/accelerator.png)
 
-*Overall architecture of SQ-DM. Reproduced from [6].*
+*Figure 12: Overall architecture of SQ-DM. Reproduced from [6].*
 Using the Stonne simulator, the accelerator is reported to achieve an overall 6.91× total speed-up compared to an FP16 SiLU-based diffusion model with the 4-bit quantization and sparsity techniques.
 
 
