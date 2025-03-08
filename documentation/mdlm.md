@@ -12,9 +12,9 @@ For simplicity, for the final bottleneck analysis, I choose batch_size=16, times
 
 ### Profiling Analysis
 #### **MDLM**
-CPU Time: 5.708 seconds
+**CPU Time:** 5.708 seconds
 
-CUDA Time: 4.940 seconds
+**CUDA Time:** 4.940 seconds
 
 Top cuda execution time lists is shown in the table.
 | Name | CUDA Total | CPU Total% |
