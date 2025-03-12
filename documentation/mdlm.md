@@ -95,7 +95,7 @@ The performance of the system is determined by comparing the **Peak_FLOPS** (com
 *Figure 10: Roofline model representation showing the relationship between operational intensity (OI) and performance.
 
 ### Performance Evaluation
-For the DDitBlock featuring sequential computations through various operators, The total **FLOPs** for each step are modeled as below. Specifically, all the GEMM computations are supported by output-stationary styled systolic arrays.
+For the DDitBlock featuring sequential computations through various operators, The total **FLOPs** for each step are modeled as below. Specifically, all the GEMM computations are supported by output-stationary styled systolic arrays. For instance, the following figure shows how to model the compute peak of a 4*4 systolic array.
 
 ![](./fig/sa.png)
 
