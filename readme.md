@@ -21,6 +21,15 @@ Before using this repository, please ensure you have the following prerequisites
 - Platform: Xilinx Alveo U280
 - Compiler Framework: **Allo** - [Install here](https://github.com/cornell-zhang/allo)
 
+### Allo Submodule
+This project includes **Allo** as a Git submodule. We are using **Allo** at commit [`b1f6772`](https://github.com/cornell-zhang/allo/commit/b1f6772).
+After cloning this repository, ensure you have the correct version by running:
+```sh
+git submodule update --init --recursive
+```
+
+This ensures that you are using the exact version of Allo required to reproduce this project.
+
 ## Repository Structure
 ```
 MDLM/

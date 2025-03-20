@@ -1,0 +1,3 @@
+[submodule "allo"]
+	path = allo
+	url = https://gitclone.com/github.com/cornell-zhang/allo.git
